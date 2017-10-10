@@ -1,5 +1,4 @@
-#PROTOKOP
-
+# PROTOKOP
 Prototype implementation of building a knowledge network by iteratively querying data sources.
 
 ## Introduction
