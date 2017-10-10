@@ -15,7 +15,7 @@ Beyond this, we add the creation of supporting edges: for each pair of nodes alo
 
 ## Example
 
-One potential query is "Find a genetic condition that may be protective against infection from the Ebola virus."   How could there be such a condition?  If there are particular human genes that are needed for the Ebola virus to infect its host, then a genetic condition that degrades the performance of that gene may also offer protection against infection.  Therefor, we can interpret this in the following way:  "Find a path starting at Ebola Virus, going through a target, and then going to a node for an (unknown) genetic condition".
+One potential query is "Find a genetic condition that may be protective against infection from the Ebola virus."   How could there be such a condition?  If there a particular human gene is needed for the Ebola virus to infect its host, then a genetic condition that degrades the performance of that gene may also offer protection against infection.  Therefore, we can interpret this in the following way:  "Find a path starting at Ebola Virus, going through a target, and then going to a node for an (unknown) genetic condition".
 
 Our query can be schematically represented as: "(D;DOID:4325)-G-GC".  Each dash represents an edge, and the nodes are specified by their type. Here "G" stands for "Gene", "GC" is "Genetic Condition" and "D" is disease.  In addition, the first node in the query is specified by the ID for Ebola infection in the Disease Ontology, DOID:4325.
 
