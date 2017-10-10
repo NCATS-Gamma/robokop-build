@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="support" attr.type="string" for="edge" id="d5" />
+  <key attr.name="key" attr.type="long" for="edge" id="d4" />
+  <key attr.name="data_source" attr.type="string" for="edge" id="d3" />
+  <key attr.name="etype" attr.type="string" for="edge" id="d2" />
+  <key attr.name="layer" attr.type="string" for="node" id="d1" />
+  <key attr.name="node_type" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="DOID:11476">
+      <data key="d0">D</data>
+      <data key="d1">0</data>
+    </node>
+    <node id="HGNC:11766">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:5992">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:9606">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:11892">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:2198">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:6018">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:1516">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="DOID:4997">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_530000">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_146200">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_189466">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_307700">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:9279">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:12347">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_166220">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_166210">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/MESH_C536042">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_130060">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_166200">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_259420">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_225320">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_99875">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_99876">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:699">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_148000">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_160">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_93686">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_614097">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_109650">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:0050745">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:9452">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <edge source="DOID:11476" target="HGNC:11766">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:11476" target="HGNC:5992">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:11476" target="HGNC:9606">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:11476" target="HGNC:11892">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:11476" target="HGNC:2198">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:11476" target="HGNC:6018">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:11476" target="HGNC:1516">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:11476" target="http://www.orpha.net/ORDO/Orphanet_160">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 19970902, 'pmid': 9144766}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:11476" target="DOID:9279">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20120730, 'pmid': 22321654}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:11766" target="DOID:4997">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:5992" target="http://purl.obolibrary.org/obo/OMIM_530000">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:9606" target="http://purl.obolibrary.org/obo/OMIM_146200">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:9606" target="http://purl.obolibrary.org/obo/OMIM_146200">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:9606" target="http://www.orpha.net/ORDO/Orphanet_189466">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:9606" target="http://purl.obolibrary.org/obo/OMIM_307700">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:11892" target="DOID:9279">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="DOID:12347">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="DOID:12347">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:2198" target="DOID:12347">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="HGNC:2198" target="DOID:12347">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://purl.obolibrary.org/obo/OMIM_166220">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://purl.obolibrary.org/obo/OMIM_166210">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://purl.obolibrary.org/obo/MESH_C536042">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://purl.obolibrary.org/obo/OMIM_130060">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://purl.obolibrary.org/obo/OMIM_130060">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://purl.obolibrary.org/obo/OMIM_166200">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://purl.obolibrary.org/obo/OMIM_259420">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://purl.obolibrary.org/obo/OMIM_225320">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://www.orpha.net/ORDO/Orphanet_99875">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2198" target="http://www.orpha.net/ORDO/Orphanet_99876">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:6018" target="DOID:699">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:6018" target="http://purl.obolibrary.org/obo/OMIM_148000">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:6018" target="http://www.orpha.net/ORDO/Orphanet_160">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:6018" target="http://www.orpha.net/ORDO/Orphanet_93686">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:1516" target="http://purl.obolibrary.org/obo/OMIM_614097">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:1516" target="http://purl.obolibrary.org/obo/OMIM_109650">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:1516" target="DOID:0050745">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:1516" target="DOID:9452">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+  </graph>
+</graphml>

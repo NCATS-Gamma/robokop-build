@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="support" attr.type="string" for="edge" id="d5" />
+  <key attr.name="key" attr.type="long" for="edge" id="d4" />
+  <key attr.name="data_source" attr.type="string" for="edge" id="d3" />
+  <key attr.name="etype" attr.type="string" for="edge" id="d2" />
+  <key attr.name="layer" attr.type="string" for="node" id="d1" />
+  <key attr.name="node_type" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="DOID:4325">
+      <data key="d0">D</data>
+      <data key="d1">0</data>
+    </node>
+    <node id="HGNC:7897">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:30922">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:16361">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="DOID:14504">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_646">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:0060308">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:0110827">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:0050439">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_611383">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <edge source="DOID:4325" target="HGNC:7897">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:4325" target="HGNC:30922">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:4325" target="HGNC:16361">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:4325" target="DOID:14504">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20110916, 'pmid': 21866103, 'title': 'Ebola virus entry requires the cholesterol transporter Niemann-Pick C1'}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:7897" target="DOID:14504">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:7897" target="http://www.orpha.net/ORDO/Orphanet_646">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:30922" target="DOID:0060308">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:30922" target="DOID:0060308">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:16361" target="DOID:0110827">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:16361" target="DOID:0110827">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:16361" target="DOID:0050439">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:16361" target="http://purl.obolibrary.org/obo/OMIM_611383">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,34 @@
+/home/bizon/anaconda2/envs/robokop/lib/python3.6/site-packages/cachier/mongo_core.py:24: UserWarning: Cachier warning: pymongo was not found. MongoDB cores will not work.
+  "Cachier warning: pymongo was not found. MongoDB cores will not work.")
+('DOID:4325', {'node_type': 'D', 'layer': 0})
+       [('pharos', 'HGNC:13236'), ('pharos', 'HGNC:17770'), ('pharos', 'HGNC:7897'), ('pharos', 'HGNC:29249'), ('pharos', 'HGNC:13415'), ('pharos', 'HGNC:30922'), ('pharos', 'HGNC:4669'), ('pharos', 'HGNC:7799'), ('pharos', 'HGNC:4441'), ('pharos', 'HGNC:16361')]
+('HGNC:13236', {'node_type': 'G', 'layer': 1})
+       []
+('HGNC:17770', {'node_type': 'G', 'layer': 1})
+       []
+('HGNC:7897', {'node_type': 'G', 'layer': 1})
+       [('biolink', 'DOID:14504'), ('biolink', 'http://www.orpha.net/ORDO/Orphanet_646')]
+('HGNC:29249', {'node_type': 'G', 'layer': 1})
+       []
+('HGNC:13415', {'node_type': 'G', 'layer': 1})
+       []
+('HGNC:30922', {'node_type': 'G', 'layer': 1})
+       [('biolink', 'DOID:0060308'), ('biolink', 'DOID:0060308')]
+('HGNC:4669', {'node_type': 'G', 'layer': 1})
+       []
+('HGNC:7799', {'node_type': 'G', 'layer': 1})
+       []
+('HGNC:4441', {'node_type': 'G', 'layer': 1})
+       []
+('HGNC:16361', {'node_type': 'G', 'layer': 1})
+       [('biolink', 'DOID:0110827'), ('biolink', 'DOID:0050439'), ('biolink', 'DOID:0110827'), ('biolink', 'http://purl.obolibrary.org/obo/OMIM_611383')]
+ DOID:4325
+  HGNC:7897
+   DOID:14504
+   http://www.orpha.net/ORDO/Orphanet_646
+  HGNC:30922
+   DOID:0060308
+  HGNC:16361
+   DOID:0110827
+   DOID:0050439
+   http://purl.obolibrary.org/obo/OMIM_611383

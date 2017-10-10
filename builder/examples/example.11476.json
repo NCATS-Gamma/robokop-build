@@ -1,0 +1,447 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "node_type": "D",
+            "layer": 0,
+            "id": "DOID:11476"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:11766"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:5992"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:9606"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:11892"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:2198"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:6018"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:1516"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:4997"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_530000"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_146200"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_189466"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_307700"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:9279"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:12347"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_166220"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_166210"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/MESH_C536042"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_130060"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_166200"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_259420"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_225320"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_99875"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_99876"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:699"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_148000"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_160"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_93686"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_614097"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_109650"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0050745"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:9452"
+        }
+    ],
+    "links": [
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 1,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 2,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 3,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 4,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 5,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 6,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 7,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 19970902,
+                    "pmid": 9144766
+                }
+            ],
+            "source": 0,
+            "target": 26,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20120730,
+                    "pmid": 22321654
+                }
+            ],
+            "source": 0,
+            "target": 13,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 8,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 2,
+            "target": 9,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 10,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 10,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 11,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 12,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 4,
+            "target": 13,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 14,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 14,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 14,
+            "key": 2
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 14,
+            "key": 3
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 15,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 16,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 17,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 18,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 18,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 19,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 20,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 21,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 22,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 23,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 6,
+            "target": 24,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 6,
+            "target": 25,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 6,
+            "target": 26,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 6,
+            "target": 27,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 7,
+            "target": 28,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 7,
+            "target": 29,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 7,
+            "target": 30,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 7,
+            "target": 31,
+            "key": 0
+        }
+    ]
+}

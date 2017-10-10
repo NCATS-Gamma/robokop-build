@@ -1,0 +1,16 @@
+/home/bizon/anaconda2/envs/robokop/lib/python3.6/site-packages/cachier/mongo_core.py:24: UserWarning: Cachier warning: pymongo was not found. MongoDB cores will not work.
+  "Cachier warning: pymongo was not found. MongoDB cores will not work.")
+Traceback (most recent call last):
+  File "builder.py", line 144, in <module>
+    main()
+  File "builder.py", line 138, in main
+    kgraph.execute()
+  File "builder.py", line 87, in execute
+    self.worldgraph.query( subject, object_type )
+  File "/home/bizon/Projects/robokop/builder/WorldGraph.py", line 26, in query
+    results += qf(subject_node)
+  File "/home/bizon/Projects/robokop/builder/pharos.py", line 22, in disease_get_gene
+    pharosid = translate(subject)
+  File "/home/bizon/Projects/robokop/builder/pharos.py", line 8, in translate
+    return pmap[doid]
+KeyError: 'DOID:4325'

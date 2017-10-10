@@ -1,0 +1,150 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "node_type": "D",
+            "layer": 0,
+            "id": "DOID:4325"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:7897"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:30922"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:16361"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:14504"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_646"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0060308"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0110827"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0050439"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_611383"
+        }
+    ],
+    "links": [
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 1,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 2,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 3,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20110916,
+                    "pmid": 21866103,
+                    "title": "Ebola virus entry requires the cholesterol transporter Niemann-Pick C1"
+                }
+            ],
+            "source": 0,
+            "target": 4,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 4,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 5,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 2,
+            "target": 6,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 2,
+            "target": 6,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 7,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 7,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 8,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 9,
+            "key": 0
+        }
+    ]
+}
