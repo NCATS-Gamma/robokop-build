@@ -19,7 +19,7 @@ def OXOdise_term(term):
     return ':'.join(iri_term.split('_'))
 
 def convert_to_mesh(term):
-    """Use OXO to covnvert an id(doid, etc) to MeSH"""
+    """Use OXO to convert an id(doid, etc) to MeSH"""
     #Check to see if we already have a MeSH curie
     if term[:5].upper() == 'MESH':
         return [term]
@@ -37,10 +37,16 @@ def convert_to_mesh(term):
         logging.getLogger('application').warn('No MeSH ID found for term: %s' % term)
     return meshes
 
-def term_to_term(term_a,term_b, limit = 10):
+def get_mesh_terms(node):
+    MESH_KEY = 'mesh_identifiers'
+    if MESH_KEY not in node.properties:
+        node.properties[MESH_KEY] =  convert_to_mesh( node.identifier ) 
+    return node.properties[MESH_KEY]
+
+def term_to_term(node_a,node_b, limit = 10):
     """Given two terms, find articles in chemotext that connect them"""
-    meshes_a = convert_to_mesh(term_a)
-    meshes_b = convert_to_mesh(term_b)
+    meshes_a = get_mesh_terms(node_a)
+    meshes_b = get_mesh_terms(node_b)
     ctext = Chemotext( )
     articles=[]
     for ma in meshes_a:

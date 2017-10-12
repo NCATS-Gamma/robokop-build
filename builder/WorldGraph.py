@@ -13,7 +13,7 @@ class WorldGraph:
         self.router['D']['G'].append(ph.disease_get_gene)
         self.router['G']['GC'].append(biol.gene_get_genetic_condition)
     def query(self, subject_node, object_type ):
-        """Given a subject node and an object type, return data from the sources. 
+        """Given a subject KNode and an object type, return data from the sources. 
         
         Returns: list of (edge,node) tuples 
                  boolean indicator of whether a query function was found
@@ -27,8 +27,7 @@ class WorldGraph:
         the edge or something similar).  The "properties" key retrieves another
         dict with remaining edge properties.  These properties will be source dependent,
         though in the future we may want to harominze that."""
-        subject_type=subject_node[1]['node_type']
-        subject_id=subject_node[0] 
+        subject_type=subject_node.node_type
         query_functions = self.router[subject_type][object_type]
         if len(query_functions) == 0:
             return [],False

@@ -1,4 +1,5 @@
 from WorldGraph import WorldGraph
+from graph_components import KNode,KEdge,elements_to_json
 import networkx as nx
 from networkx.readwrite.json_graph.node_link import node_link_data
 import json
@@ -45,8 +46,8 @@ class KnowledgeGraph:
         self.worldgraph = wg
         layer_def_list = querystring.split('-')
         self.layer_types = []
-        for layer_num, layer_def in enumerate(layer_def_list):
-            if layer_num == 0:
+        for layer_number, layer_def in enumerate(layer_def_list):
+            if layer_number == 0:
                 #TODO: should be smarter, handle errors
                 layer_type, layer_example = layer_def[1:-1].split(';')
             #TODO: need to handle fixed endpoint
@@ -57,7 +58,8 @@ class KnowledgeGraph:
                 raise Error(layer_type)
             self.layer_types.append(layer_type)
             if layer_example is not None:
-                self.add_node(layer_example, layer_type, layer_num)
+                root = KNode(layer_example, layer_type)
+                self.add_node(root, layer_number)
         self.operations = []
         #This is going to be a sequential set of operations. Right
         # now, it's a bit dumb, but later it may be useful to define.
@@ -66,13 +68,11 @@ class KnowledgeGraph:
         #In the future, we might want to check and amke sure that
         # we have certain node types, but not now
         #validate_operations()
-    def add_node(self,node_id,node_type,layer_number,node_properties={}):
+    def add_node(self,node,layer_number):
         """Add an unattached node to a particular query layer"""
         #TODO: what if the node already exists?
-        self.graph.add_node(node_id, \
-                node_type = node_type, \
-                layer = layer_number, \
-                **node_properties)
+        node.layer_number = layer_number
+        self.graph.add_node(node)
     def execute(self):
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
@@ -93,19 +93,17 @@ class KnowledgeGraph:
         self.logger.debug('Query Complete')
     def get_nodes(self, layer_number):
         """Returns the nodes in the given layer of the graph"""
-        nodes = list(filter(lambda x: x[1]['layer'] == layer_number, \
-                self.graph.nodes(data=True)) )
+        nodes = list(filter(lambda x: x.layer_number == layer_number, \
+                self.graph.nodes()) )
         return nodes
     def add_relationships( self, subject, relations, object_type, object_layer ):
         """Add new relationships and nodes to the graph"""
-        for relation, obj in relations:
-            #Here obj is a tuple like ('hgnc:123', {})
-            object_id = obj[0]
-            self.add_node( object_id, object_type, object_layer, obj[1] )
+        for relation, object_node in relations:
+            self.add_node( object_node, object_layer )
             #We expect relation to be a dict, passing it in as **relation means that the dict
             # will be interpreted as keyword arguments.  That will allow the keys/values to be attributes
             # of the edge.
-            self.graph.add_edge( subject[0], object_id , etype='queried', **relation)
+            self.graph.add_edge( subject, object_node , etype='queried', **relation)
     def prune(self):
         """Backwards prune.
         This is probably overkill - we might want to allow hops over missing nodes, etc
@@ -118,9 +116,9 @@ class KnowledgeGraph:
         for level in range( nlayers -2, 0, -1):
             nodes = self.get_nodes(level)
             for node in nodes:
-                if self.graph.out_degree(node[0]) == 0:
+                if self.graph.out_degree(node) == 0:
                     n_pruned += 1
-                    self.graph.remove_node(node[0])
+                    self.graph.remove_node(node)
         self.logger.debug('Pruned %d nodes.' % n_pruned)
     def support(self):
         """Look for extra information connecting nodes."""
@@ -142,7 +140,7 @@ class KnowledgeGraph:
         links_to_check = set()
         for start_node in start_nodes:
             for end_node in end_nodes:
-                for path in nx.all_shortest_paths(self.graph,source=start_node[0],target=end_node[0]):
+                for path in nx.all_shortest_paths(self.graph,source=start_node,target=end_node):
                     for n_i,source in enumerate(path):
                         for n_j in range(n_i + 1, len(path) ):
                             link=( source, path[n_j] )
@@ -160,13 +158,13 @@ class KnowledgeGraph:
         #TODO: add other output stream
         if root is None:
             [root] = self.get_nodes(0)
-            self.write(root[0], 0)
+            self.write(root, 0)
         else:
             lprefix = []
             for n in range(level):
                 lprefix += [' ']
             prefix = ''.join(lprefix)
-            print( '%s%s' % (prefix, root ) )
+            print( '%s%s' % (prefix, root.get_shortname() ) )
             children = self.graph.successors(root)
             for child in children:
                 self.write(child,level+1)
@@ -182,7 +180,7 @@ class KnowledgeGraph:
         if fmt == 'json':
             js = node_link_data( self.graph )
             with open(output_path,'w') as outf:
-                json.dump(js, outf, indent=4)
+                json.dump(js, outf, indent=4, default=elements_to_json)
         elif fmt == 'graphml':
             #GraphML can't handle structure, so try to escape attributes to write stuff quickndirty
             export_graph = self.graph.copy()
@@ -196,6 +194,7 @@ class KnowledgeGraph:
         else:
             #warn
             pass
+
         
 def main():
     logger = logging.getLogger('application')

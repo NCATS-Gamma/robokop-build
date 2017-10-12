@@ -4,23 +4,55 @@
     "graph": {},
     "nodes": [
         {
-            "node_type": "D",
-            "layer": 0,
-            "id": "DOID:526"
+            "id": {
+                "identifier": "DOID:526",
+                "node_type": "D",
+                "layer_number": 0,
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D015658",
+                        "label": "HIV Infections",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "VO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1
+                    }
+                ]
+            }
         },
         {
-            "node_type": "G",
-            "layer": 1,
-            "id": "HGNC:1602"
+            "id": {
+                "identifier": "HGNC:1602",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "label": "Behcet's syndrome",
-            "mondo_id": [
-                "http://purl.obolibrary.org/obo/OMIM_109650"
-            ],
-            "id": "OMIM:109650"
+            "id": {
+                "identifier": "OMIM:109650",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_109650"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D001528",
+                        "label": "Behcet Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
         }
     ],
     "links": [

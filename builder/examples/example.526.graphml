@@ -1,47 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key attr.name="support" attr.type="string" for="edge" id="d9" />
-  <key attr.name="data_source" attr.type="string" for="edge" id="d8" />
-  <key attr.name="key" attr.type="long" for="edge" id="d7" />
-  <key attr.name="properties" attr.type="string" for="edge" id="d6" />
-  <key attr.name="edge_source" attr.type="string" for="edge" id="d5" />
-  <key attr.name="etype" attr.type="string" for="edge" id="d4" />
-  <key attr.name="mondo_id" attr.type="string" for="node" id="d3" />
-  <key attr.name="label" attr.type="string" for="node" id="d2" />
-  <key attr.name="layer" attr.type="string" for="node" id="d1" />
-  <key attr.name="node_type" attr.type="string" for="node" id="d0" />
+  <key attr.name="support" attr.type="string" for="edge" id="d5" />
+  <key attr.name="data_source" attr.type="string" for="edge" id="d4" />
+  <key attr.name="key" attr.type="long" for="edge" id="d3" />
+  <key attr.name="properties" attr.type="string" for="edge" id="d2" />
+  <key attr.name="edge_source" attr.type="string" for="edge" id="d1" />
+  <key attr.name="etype" attr.type="string" for="edge" id="d0" />
   <graph edgedefault="directed">
-    <node id="DOID:526">
-      <data key="d0">D</data>
-      <data key="d1">0</data>
-    </node>
-    <node id="HGNC:1602">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
-    </node>
-    <node id="OMIM:109650">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-      <data key="d2">Behcet's syndrome</data>
-      <data key="d3">['http://purl.obolibrary.org/obo/OMIM_109650']</data>
-    </node>
-    <edge source="DOID:526" target="HGNC:1602">
-      <data key="d4">queried</data>
-      <data key="d5">pharos</data>
-      <data key="d6">[{'id': 1782, 'label': 'IDG Development Level', 'term': 'Tchem', 'href': None}, {'id': 1783, 'label': 'IDG Target Family', 'term': 'GPCR', 'href': None}, {'id': 1976, 'label': 'Data Source', 'term': 'DrugCentral Indication', 'href': None}]</data>
-      <data key="d7">0</data>
+    <node id="&lt;graph_components.KNode object at 0x7f0dca732208&gt;" />
+    <node id="&lt;graph_components.KNode object at 0x7f0dc46be978&gt;" />
+    <node id="&lt;graph_components.KNode object at 0x7f0dca7192b0&gt;" />
+    <edge source="&lt;graph_components.KNode object at 0x7f0dca732208&gt;" target="&lt;graph_components.KNode object at 0x7f0dc46be978&gt;">
+      <data key="d0">queried</data>
+      <data key="d1">pharos</data>
+      <data key="d2">[{'id': 1782, 'label': 'IDG Development Level', 'term': 'Tchem', 'href': None}, {'id': 1783, 'label': 'IDG Target Family', 'term': 'GPCR', 'href': None}, {'id': 1976, 'label': 'Data Source', 'term': 'DrugCentral Indication', 'href': None}]</data>
+      <data key="d3">0</data>
     </edge>
-    <edge source="DOID:526" target="OMIM:109650">
-      <data key="d4">support</data>
-      <data key="d8">chemotext</data>
-      <data key="d9">[{'date': 20150415, 'pmid': 24912539, 'title': "Behçet's disease diagnosed after acute HIV infection: viral replication activating underlying autoimmunity?"}, {'date': 20121203, 'pmid': 23068309, 'title': "[Behçet's disease revealed by deep vein thrombosis in an HIV-1-infected patient]."}, {'date': 20101004, 'pmid': 20883918, 'title': 'Diagnosis and management of vulvar ulcers.'}, {'date': 20081219, 'pmid': 19094840}, {'date': 20080211, 'pmid': 17945258, 'title': 'Multiple ring enhancing brain lesions on computed tomography: an Indian perspective.'}, {'date': 20070129, 'pmid': 17258677, 'title': '[Potentially reversible dementia].'}, {'date': 20061026, 'pmid': 17065034}, {'date': 20060807, 'pmid': 16889175, 'title': "Behçet's disease in an HIV-1-infected patient treated with highly active antiretroviral therapy."}, {'date': 20060803, 'pmid': 16884078, 'title': 'Evaluation and treatment by general dentists of oral soft-tissue lesions.'}, {'date': 20060105, 'pmid': 16394440}]</data>
-      <data key="d7">0</data>
+    <edge source="&lt;graph_components.KNode object at 0x7f0dca732208&gt;" target="&lt;graph_components.KNode object at 0x7f0dca7192b0&gt;">
+      <data key="d0">support</data>
+      <data key="d4">chemotext</data>
+      <data key="d5">[{'date': 20150415, 'pmid': 24912539, 'title': "Behçet's disease diagnosed after acute HIV infection: viral replication activating underlying autoimmunity?"}, {'date': 20121203, 'pmid': 23068309, 'title': "[Behçet's disease revealed by deep vein thrombosis in an HIV-1-infected patient]."}, {'date': 20101004, 'pmid': 20883918, 'title': 'Diagnosis and management of vulvar ulcers.'}, {'date': 20081219, 'pmid': 19094840}, {'date': 20080211, 'pmid': 17945258, 'title': 'Multiple ring enhancing brain lesions on computed tomography: an Indian perspective.'}, {'date': 20070129, 'pmid': 17258677, 'title': '[Potentially reversible dementia].'}, {'date': 20061026, 'pmid': 17065034}, {'date': 20060807, 'pmid': 16889175, 'title': "Behçet's disease in an HIV-1-infected patient treated with highly active antiretroviral therapy."}, {'date': 20060803, 'pmid': 16884078, 'title': 'Evaluation and treatment by general dentists of oral soft-tissue lesions.'}, {'date': 20060105, 'pmid': 16394440}]</data>
+      <data key="d3">0</data>
     </edge>
-    <edge source="HGNC:1602" target="OMIM:109650">
-      <data key="d4">queried</data>
-      <data key="d5">biolink</data>
-      <data key="d6">{'publications': [{'id': 'PMID:23291587'}], 'relation': {'typeid': 'RO:0002607', 'label': 'is marker for'}}</data>
-      <data key="d7">0</data>
+    <edge source="&lt;graph_components.KNode object at 0x7f0dc46be978&gt;" target="&lt;graph_components.KNode object at 0x7f0dca7192b0&gt;">
+      <data key="d0">queried</data>
+      <data key="d1">biolink</data>
+      <data key="d2">{'publications': [{'id': 'PMID:23291587'}], 'relation': {'typeid': 'RO:0002607', 'label': 'is marker for'}}</data>
+      <data key="d3">0</data>
     </edge>
   </graph>
 </graphml>
