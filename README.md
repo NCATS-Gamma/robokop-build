@@ -21,7 +21,7 @@ Our query can be schematically represented as: "(D;DOID:4325)-G-GC".  Each dash 
 
 PROTOKOP begins at its given node "DOID:4325", and queries its known data sources (in this case Pharos) for genes that are connected to that disease.  It then takes each of these genes and queries its data sources (here Biolink) to look for genetic conditions that are associated with that gene.
 
-Once the graph is built and pruned, chemotext is queried to look for supporting edges.  In this case, one supporting edge is found connecting DOID:4325 (Ebola infection) with DOID:14504 (Niemann-Pick disease). 
+Once the graph is built and pruned, chemotext is queried to look for supporting edges.  In this case, one supporting edge is found connecting DOID:4325 (Ebola infection) with OMIM:257220 (Niemann-Pick Disease, Type C1). 
 
 ![Example network](example1.png)
 

@@ -1,12 +1,18 @@
 import requests
 import logging
+from csv import DictReader
 from graph_components import KNode,KEdge
 
 def translate(subject_node):
     """Convert a subject with a DOID into a Pharos Disease ID"""
-    #TODO: Import from PHAROS
-    pmap = {'DOID:1470': 455, 'DOID:4325': 2742, 'DOID:11476': 4885, 'DOID:12365': 202, 'DOID:10573': 807, \
-            'DOID:9270': 6493, 'DOID:526':7468, 'DOID:1498':1887, 'DOID:13810': 10692}
+    #TODO: This relies on a pretty ridiculous caching of a map between pharos ids and doids.  
+    #      As Pharos improves, this will not be required, but for the moment I don't know a better way.
+    pmap = {}
+    with open('pharos.id.txt','r') as inf:
+        rows = DictReader(inf,dialect='excel-tab')
+        for row in rows:
+            if row['DOID'] != '':
+                pmap[row['DOID']] = row['PharosID']
     doid = subject_node.identifier
     return pmap[doid]
 
@@ -28,7 +34,7 @@ def get_target_hgnc(target_id):
 def disease_get_gene(subject):
     """Given a subject node (with a DOID as the identifier), return targets"""
     pharosid = translate(subject)
-    r = requests.get('https://pharos.nih.gov/idg/api/v1/diseases(%d)?view=full' % pharosid)
+    r = requests.get('https://pharos.nih.gov/idg/api/v1/diseases(%s)?view=full' % pharosid)
     result = r.json()
     original_edge_nodes=[]
     for link in result['links']:
@@ -53,7 +59,22 @@ def disease_get_gene(subject):
 #Poking around on the website there are about 10800 ( a few less )
 def build_disease_translation():
     """Write to disk a table mapping Pharos disease ID to DOID (and other?) so we can reverse lookup"""
-    pass
+    with open('pharos.id.txt','w') as pfile:
+        pfile.write('PharosID\tDOID\n')
+        for pharosid in range(1,10800):
+            r = requests.get('https://pharos.nih.gov/idg/api/v1/diseases(%d)/synonyms' % pharosid).json()
+            doids = []
+            for synonym in r:
+                if synonym['label'] == 'DOID':
+                    doids.append(synonym['term'])
+            if len(doids) > 1:
+                print(doids)
+                import json
+                print( json.dumps(r,indent=4) )
+                exit()
+            elif len(doids) == 0:
+                doids.append('')
+            pfile.write('%d\t%s\n' % (pharosid, doids[0]))
 
 def test_disese_gene_for_output():
     """Call a function so that we can examine the output"""
@@ -74,4 +95,4 @@ def test_hgnc_for_output():
         json.dump(result,outf,indent=4)
     
 if __name__ == '__main__':
-    test_hgnc_for_output()
+    build_disease_translation()
