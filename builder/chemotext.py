@@ -1,9 +1,30 @@
 from greent.chemotext import Chemotext
 from greent.oxo import OXO
 import json
+import logging
+
+def OXOdise_term(term):
+    """Convert IRIs into CURIEs.
+    
+    Sometimes biolink or other sources will give an id like: http://purl.obolibrary.org/obo/OMIM_603903. 
+    OXO expects: OMIM:603903.
+    At least for the ones we've seen so far, the format has been that the last element in the url is
+    the curie, but with : replaced by _."""
+    if not term.startswith('http'):
+        return term
+    iri_term = term.split('/')[-1]
+    if iri_term.count('_') != 1:
+        logging.getLogger('application').warn('Invalid term for OXO: %s' % term)
+        return term
+    return ':'.join(iri_term.split('_'))
 
 def convert_to_mesh(term):
     """Use OXO to covnvert an id(doid, etc) to MeSH"""
+    #Check to see if we already have a MeSH curie
+    if term[:5].upper() == 'MESH':
+        return [term]
+    #sometimes terms are not good for OXO, like http://purl.obolibrary.org/obo/OMIM_603903. OXO expects OMIM:603903
+    term = OXOdise_term(term)
     oxo = OXO()
     response = oxo.query([ term ])
     #ugly, and probably wrong
@@ -12,6 +33,8 @@ def convert_to_mesh(term):
     for result in search_results:
         if result['targetPrefix'] == 'MeSH':
             meshes.append( result )
+    if len(meshes) == 0:
+        logging.getLogger('application').warn('No MeSH ID found for term: %s' % term)
     return meshes
 
 def term_to_term(term_a,term_b, limit = 10):

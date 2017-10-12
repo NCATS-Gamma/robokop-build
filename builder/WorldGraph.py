@@ -15,8 +15,18 @@ class WorldGraph:
     def query(self, subject_node, object_type ):
         """Given a subject node and an object type, return data from the sources. 
         
-        Returns: list of connected node identifiers, 
-                 boolean indicator of whether a query function was found"""
+        Returns: list of (edge,node) tuples 
+                 boolean indicator of whether a query function was found
+                 
+        Nodes are defined as a tuple of two elements.  The first element is the id 
+        of the node (usually a curie).  The second element is a dict of node
+        properties.
+        
+        Edges are defined as a dict with two keys.  The "edge_source" key retrieves
+        a value such as pharos or biolink (later it may be the URI that produced
+        the edge or something similar).  The "properties" key retrieves another
+        dict with remaining edge properties.  These properties will be source dependent,
+        though in the future we may want to harominze that."""
         subject_type=subject_node[1]['node_type']
         subject_id=subject_node[0] 
         query_functions = self.router[subject_type][object_type]

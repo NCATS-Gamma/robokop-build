@@ -66,12 +66,13 @@ class KnowledgeGraph:
         #In the future, we might want to check and amke sure that
         # we have certain node types, but not now
         #validate_operations()
-    def add_node(self,node_id,node_type,layer_number):
+    def add_node(self,node_id,node_type,layer_number,node_properties={}):
         """Add an unattached node to a particular query layer"""
         #TODO: what if the node already exists?
         self.graph.add_node(node_id, \
                 node_type = node_type, \
-                layer = layer_number)
+                layer = layer_number, \
+                **node_properties)
     def execute(self):
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
@@ -97,9 +98,14 @@ class KnowledgeGraph:
         return nodes
     def add_relationships( self, subject, relations, object_type, object_layer ):
         """Add new relationships and nodes to the graph"""
-        for relation, object_id in relations:
-            self.add_node( object_id, object_type, object_layer )
-            self.graph.add_edge( subject[0], object_id , etype='queried', data_source=relation)
+        for relation, obj in relations:
+            #Here obj is a tuple like ('hgnc:123', {})
+            object_id = obj[0]
+            self.add_node( object_id, object_type, object_layer, obj[1] )
+            #We expect relation to be a dict, passing it in as **relation means that the dict
+            # will be interpreted as keyword arguments.  That will allow the keys/values to be attributes
+            # of the edge.
+            self.graph.add_edge( subject[0], object_id , etype='queried', **relation)
     def prune(self):
         """Backwards prune.
         This is probably overkill - we might want to allow hops over missing nodes, etc
@@ -175,7 +181,6 @@ class KnowledgeGraph:
             json arrays in the properties, so we have to escape them."""
         if fmt == 'json':
             js = node_link_data( self.graph )
-            print( js )
             with open(output_path,'w') as outf:
                 json.dump(js, outf, indent=4)
         elif fmt == 'graphml':
@@ -196,9 +201,27 @@ def main():
     logger = logging.getLogger('application')
     logger.setLevel(level = logging.DEBUG)
     worldgraph = WorldGraph('config.std')
-    doid = 4325 #ebola
-    #doid = 1470 #major depressive disorder
+    #doid = 4325  #ebola
+    #doid = 1470  #major depressive disorder
     #doid = 11476 #osteoporosis
+    #doid = 12365  #malaria
+    #doid = 10573 #osteomalacia
+    #doid = 9270  #alkaptonuria
+    doid = 526   #HIV
+    #doid = 1498  #cholera
+    #doid = 13810 #Hypercholesterolemia
+    #doid = 9352  #Diabetes Mellitus, Type 2
+    #doid = 2841  #Asthma
+    #doid = 4989  #Chronic Pancreatitis(?)
+    #doid = 10652 #Alzheimer Disease
+    #doid = 5844  #Myocardial Infarction
+    #doid = 11723 #Duchenne Muscular Dystrophy
+    #doid = 14504 #Niemann Pick Type C
+    #doid = 12858 #Huntington Disease
+    #doid = 10923 #Sickle Cell Disease
+    #doid = 2055  #Post-Truamatic Stress Disorder
+    #doid = 0060728 #Deficiency of N-glycanase 1
+    #doid = 0050741 #Alcohol Dependence
     kgraph = KnowledgeGraph('(D;DOID:%d)-G-GC' % doid, worldgraph)
     kgraph.execute()
     kgraph.prune()

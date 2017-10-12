@@ -1,0 +1,713 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "node_type": "D",
+            "layer": 0,
+            "id": "DOID:1498"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:4379"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:11935"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:9360"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:3331"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:1884"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:8754"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:12811"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:12693"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:27230"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:9817"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:11244"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:4389"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:270"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:1698"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:11450"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:7871"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:7758"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:2605"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0060699"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:445"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_146200"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_300942"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_308230"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0060060"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_267700"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:11726"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_219700"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_277180"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_167800"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_465508"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_263200"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_305700"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_137580"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:14791"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_608940"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0050765"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_59306"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_190685"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_268300"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_269000"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:13636"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_227535"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0050709"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_256730"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_254500"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0050745"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:2583"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:14749"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_300967"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:891"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_256550"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_812"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_213700"
+        }
+    ],
+    "links": [
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 1,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 2,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 3,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 4,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 5,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 6,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 7,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 8,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 9,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 10,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 11,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 12,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 13,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 14,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 15,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 16,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 17,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 18,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 19930713,
+                    "pmid": 8508394,
+                    "title": "Recurrent non-0:1 Vibrio cholerae bacteremia in a patient with multiple myeloma."
+                },
+                {
+                    "date": 19751107,
+                    "pmid": 1151078
+                },
+                {
+                    "date": 19720413,
+                    "title": "Advances in medicine.",
+                    "pmid": 5003262
+                },
+                {
+                    "date": 19700817,
+                    "title": "Secretory IgA in human serum.",
+                    "pmid": 4987529
+                }
+            ],
+            "source": 0,
+            "target": 45,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 19,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 20,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 21,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 2,
+            "target": 22,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 2,
+            "target": 23,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 24,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 25,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 25,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 4,
+            "target": 26,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 27,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 28,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 29,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 30,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 31,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 32,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 33,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 6,
+            "target": 34,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 6,
+            "target": 35,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 7,
+            "target": 36,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 7,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 8,
+            "target": 38,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 39,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 40,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 10,
+            "target": 41,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 10,
+            "target": 41,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 10,
+            "target": 42,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 11,
+            "target": 29,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 12,
+            "target": 43,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 12,
+            "target": 43,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 13,
+            "target": 44,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 13,
+            "target": 45,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 14,
+            "target": 46,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 14,
+            "target": 47,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 14,
+            "target": 47,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 15,
+            "target": 48,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 16,
+            "target": 49,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 17,
+            "target": 50,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 17,
+            "target": 51,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 17,
+            "target": 52,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 18,
+            "target": 53,
+            "key": 0
+        }
+    ]
+}

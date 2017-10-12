@@ -1,0 +1,129 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "node_type": "D",
+            "layer": 0,
+            "id": "DOID:526"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:1602"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "label": "Behcet's syndrome",
+            "mondo_id": [
+                "http://purl.obolibrary.org/obo/OMIM_109650"
+            ],
+            "id": "OMIM:109650"
+        }
+    ],
+    "links": [
+        {
+            "etype": "queried",
+            "edge_source": "pharos",
+            "properties": [
+                {
+                    "id": 1782,
+                    "label": "IDG Development Level",
+                    "term": "Tchem",
+                    "href": null
+                },
+                {
+                    "id": 1783,
+                    "label": "IDG Target Family",
+                    "term": "GPCR",
+                    "href": null
+                },
+                {
+                    "id": 1976,
+                    "label": "Data Source",
+                    "term": "DrugCentral Indication",
+                    "href": null
+                }
+            ],
+            "source": 0,
+            "target": 1,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20150415,
+                    "pmid": 24912539,
+                    "title": "Beh\u00e7et's disease diagnosed after acute HIV infection: viral replication activating underlying autoimmunity?"
+                },
+                {
+                    "date": 20121203,
+                    "pmid": 23068309,
+                    "title": "[Beh\u00e7et's disease revealed by deep vein thrombosis in an HIV-1-infected patient]."
+                },
+                {
+                    "date": 20101004,
+                    "pmid": 20883918,
+                    "title": "Diagnosis and management of vulvar ulcers."
+                },
+                {
+                    "date": 20081219,
+                    "pmid": 19094840
+                },
+                {
+                    "date": 20080211,
+                    "pmid": 17945258,
+                    "title": "Multiple ring enhancing brain lesions on computed tomography: an Indian perspective."
+                },
+                {
+                    "date": 20070129,
+                    "pmid": 17258677,
+                    "title": "[Potentially reversible dementia]."
+                },
+                {
+                    "date": 20061026,
+                    "pmid": 17065034
+                },
+                {
+                    "date": 20060807,
+                    "pmid": 16889175,
+                    "title": "Beh\u00e7et's disease in an HIV-1-infected patient treated with highly active antiretroviral therapy."
+                },
+                {
+                    "date": 20060803,
+                    "pmid": 16884078,
+                    "title": "Evaluation and treatment by general dentists of oral soft-tissue lesions."
+                },
+                {
+                    "date": 20060105,
+                    "pmid": 16394440
+                }
+            ],
+            "source": 0,
+            "target": 2,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "edge_source": "biolink",
+            "properties": {
+                "publications": [
+                    {
+                        "id": "PMID:23291587"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 1,
+            "target": 2,
+            "key": 0
+        }
+    ]
+}

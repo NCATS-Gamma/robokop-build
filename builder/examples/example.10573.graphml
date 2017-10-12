@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="support" attr.type="string" for="edge" id="d5" />
+  <key attr.name="key" attr.type="long" for="edge" id="d4" />
+  <key attr.name="data_source" attr.type="string" for="edge" id="d3" />
+  <key attr.name="etype" attr.type="string" for="edge" id="d2" />
+  <key attr.name="layer" attr.type="string" for="node" id="d1" />
+  <key attr.name="node_type" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="DOID:10573">
+      <data key="d0">D</data>
+      <data key="d1">0</data>
+    </node>
+    <node id="HGNC:8918">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:866">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:1437">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:9606">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:11272">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:2606">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:22140">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:11019">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:3356">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:12679">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:3680">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:10778">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:20305">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:2932">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:6344">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:438">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:4125">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_137580">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/MESH_D053098">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_603903">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_267300">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:14219">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_190685">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_146200">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_189466">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:12971">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:2373">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_266140">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_264700">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_259775">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_612286">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:1062">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_71529">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_615522">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:0050949">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:0050644">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:2738">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_600785">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:1040">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:13189">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://www.orpha.net/ORDO/Orphanet_93160">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_211900">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_193100">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_265900">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_241530">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_241500">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:14213">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_146300">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <edge source="DOID:10573" target="HGNC:8918">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:866">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:1437">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:1437">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:9606">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:11272">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:2606">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:22140">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:11019">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:3356">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:12679">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:3680">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:10778">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:20305">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:2932">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:6344">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:438">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="HGNC:4125">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="DOID:1040">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20060616, 'pmid': 16644301, 'title': 'Elevated serum FGF23 concentrations in plasma cell dyscrasias.'}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="http://purl.obolibrary.org/obo/OMIM_241500">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20160129, 'pmid': 26823351}, {'date': 20150729, 'pmid': 26219711, 'title': 'What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?'}, {'date': 20150818, 'pmid': 25736332, 'title': 'Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment.'}, {'date': 20150105, 'pmid': 25433339}, {'date': 20131206, 'pmid': 24064686, 'title': 'Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure.'}, {'date': 20130311, 'pmid': 23475021}, {'date': 20110909, 'pmid': 21267545, 'title': 'Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis.'}, {'date': 20110617, 'pmid': 21458605}, {'date': 20110427, 'pmid': 20949298}, {'date': 20060704, 'pmid': 16817361}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="http://purl.obolibrary.org/obo/OMIM_146300">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20160129, 'pmid': 26823351}, {'date': 20150729, 'pmid': 26219711, 'title': 'What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?'}, {'date': 20150818, 'pmid': 25736332, 'title': 'Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment.'}, {'date': 20150105, 'pmid': 25433339}, {'date': 20131206, 'pmid': 24064686, 'title': 'Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure.'}, {'date': 20130311, 'pmid': 23475021}, {'date': 20110909, 'pmid': 21267545, 'title': 'Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis.'}, {'date': 20110617, 'pmid': 21458605}, {'date': 20110427, 'pmid': 20949298}, {'date': 20060704, 'pmid': 16817361}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="http://purl.obolibrary.org/obo/OMIM_603903">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20080310, 'pmid': 17924548, 'title': 'Sickle cell bone disease: response to vitamin D and calcium.'}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="DOID:14213">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20160129, 'pmid': 26823351}, {'date': 20150729, 'pmid': 26219711, 'title': 'What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?'}, {'date': 20150818, 'pmid': 25736332, 'title': 'Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment.'}, {'date': 20150105, 'pmid': 25433339}, {'date': 20131206, 'pmid': 24064686, 'title': 'Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure.'}, {'date': 20130311, 'pmid': 23475021}, {'date': 20110909, 'pmid': 21267545, 'title': 'Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis.'}, {'date': 20110617, 'pmid': 21458605}, {'date': 20110427, 'pmid': 20949298}, {'date': 20060704, 'pmid': 16817361}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="http://purl.obolibrary.org/obo/OMIM_600785">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20160127, 'pmid': 26813501}, {'date': 20160127, 'pmid': 26813505}, {'date': 20160204, 'pmid': 26745253}, {'date': 20150729, 'pmid': 26219711, 'title': 'What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?'}, {'date': 20150831, 'pmid': 26156530}, {'date': 20150703, 'pmid': 26138835, 'title': 'Radiology of Osteogenesis Imperfecta, Rickets and Other Bony Fragility States.'}, {'date': 20150703, 'pmid': 26138839, 'title': 'A Practical Approach to Vitamin D Deficiency and Rickets.'}, {'date': 20150608, 'pmid': 26051298}, {'date': 20121108, 'pmid': 22732358, 'title': 'Amelogenesis imperfecta and other biomineralization defects in Fam20a and Fam20c null mice.'}, {'date': 19471201, 'pmid': 20278772, 'title': "Osteomalacia and late rickets; the various etiologies met in the United States with emphasis on that resulting from a specific form of renal acidosis, the therapeutic indications for each etiological sub-group, and the relationship between osteomalacia and Milkman's syndrome."}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="http://purl.obolibrary.org/obo/OMIM_264700">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20160127, 'pmid': 26813501}, {'date': 20160127, 'pmid': 26813505}, {'date': 20160204, 'pmid': 26745253}, {'date': 20150729, 'pmid': 26219711, 'title': 'What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?'}, {'date': 20150831, 'pmid': 26156530}, {'date': 20150703, 'pmid': 26138835, 'title': 'Radiology of Osteogenesis Imperfecta, Rickets and Other Bony Fragility States.'}, {'date': 20150703, 'pmid': 26138839, 'title': 'A Practical Approach to Vitamin D Deficiency and Rickets.'}, {'date': 20150608, 'pmid': 26051298}, {'date': 20121108, 'pmid': 22732358, 'title': 'Amelogenesis imperfecta and other biomineralization defects in Fam20a and Fam20c null mice.'}, {'date': 19471201, 'pmid': 20278772, 'title': "Osteomalacia and late rickets; the various etiologies met in the United States with emphasis on that resulting from a specific form of renal acidosis, the therapeutic indications for each etiological sub-group, and the relationship between osteomalacia and Milkman's syndrome."}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:10573" target="DOID:13189">
+      <data key="d2">support</data>
+      <data key="d3">chemotext</data>
+      <data key="d5">[{'date': 20141215, 'pmid': 25509803, 'title': '[Metabolic bone and joint diseases].'}, {'date': 20110902, 'pmid': 21886301}, {'date': 19950330, 'title': 'Drug induced rheumatic disorders.', 'pmid': 7868494}, {'date': 19841018, 'pmid': 6331980}, {'date': 19750609, 'pmid': 4452289}, {'date': 19690922, 'pmid': 5800553, 'title': '[Chronic feminine gout and postgastrectomy osteomalacia].'}, {'date': 19670329, 'pmid': 5957873, 'title': 'Hypocalciuric effect of benzothiazides.'}]</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:8918" target="http://purl.obolibrary.org/obo/OMIM_137580">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:8918" target="http://purl.obolibrary.org/obo/MESH_D053098">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:8918" target="http://purl.obolibrary.org/obo/OMIM_603903">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:866" target="http://purl.obolibrary.org/obo/OMIM_267300">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:866" target="http://purl.obolibrary.org/obo/OMIM_603903">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:866" target="DOID:14219">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:1437" target="http://purl.obolibrary.org/obo/OMIM_190685">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:9606" target="http://purl.obolibrary.org/obo/OMIM_146200">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:9606" target="http://www.orpha.net/ORDO/Orphanet_189466">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:11272" target="DOID:12971">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:11272" target="DOID:12971">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:11272" target="DOID:2373">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:11272" target="DOID:2373">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:11272" target="http://purl.obolibrary.org/obo/OMIM_266140">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2606" target="http://purl.obolibrary.org/obo/OMIM_264700">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:22140" target="http://purl.obolibrary.org/obo/OMIM_259775">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:11019" target="http://purl.obolibrary.org/obo/OMIM_612286">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:11019" target="http://purl.obolibrary.org/obo/OMIM_612286">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:11019" target="DOID:1062">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:11019" target="DOID:1062">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:3356" target="http://www.orpha.net/ORDO/Orphanet_71529">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:3356" target="http://purl.obolibrary.org/obo/OMIM_615522">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:3356" target="DOID:0050949">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:3356" target="DOID:0050949">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:3356" target="DOID:0050644">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:3356" target="DOID:0050644">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:3356" target="DOID:2738">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:12679" target="http://purl.obolibrary.org/obo/OMIM_600785">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:12679" target="DOID:1040">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:12679" target="DOID:13189">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:12679" target="http://www.orpha.net/ORDO/Orphanet_93160">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:3680" target="http://purl.obolibrary.org/obo/OMIM_211900">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:3680" target="http://purl.obolibrary.org/obo/OMIM_193100">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:10778" target="http://purl.obolibrary.org/obo/OMIM_265900">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:20305" target="http://purl.obolibrary.org/obo/OMIM_241530">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2932" target="DOID:0050949">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:2932" target="DOID:0050949">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:6344" target="http://purl.obolibrary.org/obo/OMIM_211900">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:438" target="http://purl.obolibrary.org/obo/OMIM_241500">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:438" target="DOID:14213">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:438" target="DOID:14213">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:438" target="DOID:14213">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="HGNC:438" target="http://purl.obolibrary.org/obo/OMIM_146300">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:4125" target="http://purl.obolibrary.org/obo/OMIM_211900">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+  </graph>
+</graphml>

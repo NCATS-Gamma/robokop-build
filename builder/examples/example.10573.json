@@ -1,0 +1,1024 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "node_type": "D",
+            "layer": 0,
+            "id": "DOID:10573"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:8918"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:866"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:1437"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:9606"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:11272"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:2606"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:22140"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:11019"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:3356"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:12679"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:3680"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:10778"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:20305"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:2932"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:6344"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:438"
+        },
+        {
+            "node_type": "G",
+            "layer": 1,
+            "id": "HGNC:4125"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_137580"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/MESH_D053098"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_603903"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_267300"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:14219"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_190685"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_146200"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_189466"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:12971"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:2373"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_266140"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_264700"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_259775"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_612286"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:1062"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_71529"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_615522"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0050949"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:0050644"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:2738"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_600785"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:1040"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:13189"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://www.orpha.net/ORDO/Orphanet_93160"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_211900"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_193100"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_265900"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_241530"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_241500"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "DOID:14213"
+        },
+        {
+            "node_type": "GC",
+            "layer": 2,
+            "id": "http://purl.obolibrary.org/obo/OMIM_146300"
+        }
+    ],
+    "links": [
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 1,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 2,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 3,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 3,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 4,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 5,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 6,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 7,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 8,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 9,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 10,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 11,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 12,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 13,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 14,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 15,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 16,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "pharos",
+            "source": 0,
+            "target": 17,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20060616,
+                    "pmid": 16644301,
+                    "title": "Elevated serum FGF23 concentrations in plasma cell dyscrasias."
+                }
+            ],
+            "source": 0,
+            "target": 39,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20160129,
+                    "pmid": 26823351
+                },
+                {
+                    "date": 20150729,
+                    "pmid": 26219711,
+                    "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
+                },
+                {
+                    "date": 20150818,
+                    "pmid": 25736332,
+                    "title": "Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment."
+                },
+                {
+                    "date": 20150105,
+                    "pmid": 25433339
+                },
+                {
+                    "date": 20131206,
+                    "pmid": 24064686,
+                    "title": "Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure."
+                },
+                {
+                    "date": 20130311,
+                    "pmid": 23475021
+                },
+                {
+                    "date": 20110909,
+                    "pmid": 21267545,
+                    "title": "Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis."
+                },
+                {
+                    "date": 20110617,
+                    "pmid": 21458605
+                },
+                {
+                    "date": 20110427,
+                    "pmid": 20949298
+                },
+                {
+                    "date": 20060704,
+                    "pmid": 16817361
+                }
+            ],
+            "source": 0,
+            "target": 46,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20160129,
+                    "pmid": 26823351
+                },
+                {
+                    "date": 20150729,
+                    "pmid": 26219711,
+                    "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
+                },
+                {
+                    "date": 20150818,
+                    "pmid": 25736332,
+                    "title": "Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment."
+                },
+                {
+                    "date": 20150105,
+                    "pmid": 25433339
+                },
+                {
+                    "date": 20131206,
+                    "pmid": 24064686,
+                    "title": "Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure."
+                },
+                {
+                    "date": 20130311,
+                    "pmid": 23475021
+                },
+                {
+                    "date": 20110909,
+                    "pmid": 21267545,
+                    "title": "Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis."
+                },
+                {
+                    "date": 20110617,
+                    "pmid": 21458605
+                },
+                {
+                    "date": 20110427,
+                    "pmid": 20949298
+                },
+                {
+                    "date": 20060704,
+                    "pmid": 16817361
+                }
+            ],
+            "source": 0,
+            "target": 48,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20080310,
+                    "pmid": 17924548,
+                    "title": "Sickle cell bone disease: response to vitamin D and calcium."
+                }
+            ],
+            "source": 0,
+            "target": 20,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20160129,
+                    "pmid": 26823351
+                },
+                {
+                    "date": 20150729,
+                    "pmid": 26219711,
+                    "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
+                },
+                {
+                    "date": 20150818,
+                    "pmid": 25736332,
+                    "title": "Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment."
+                },
+                {
+                    "date": 20150105,
+                    "pmid": 25433339
+                },
+                {
+                    "date": 20131206,
+                    "pmid": 24064686,
+                    "title": "Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure."
+                },
+                {
+                    "date": 20130311,
+                    "pmid": 23475021
+                },
+                {
+                    "date": 20110909,
+                    "pmid": 21267545,
+                    "title": "Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis."
+                },
+                {
+                    "date": 20110617,
+                    "pmid": 21458605
+                },
+                {
+                    "date": 20110427,
+                    "pmid": 20949298
+                },
+                {
+                    "date": 20060704,
+                    "pmid": 16817361
+                }
+            ],
+            "source": 0,
+            "target": 47,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20160127,
+                    "pmid": 26813501
+                },
+                {
+                    "date": 20160127,
+                    "pmid": 26813505
+                },
+                {
+                    "date": 20160204,
+                    "pmid": 26745253
+                },
+                {
+                    "date": 20150729,
+                    "pmid": 26219711,
+                    "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
+                },
+                {
+                    "date": 20150831,
+                    "pmid": 26156530
+                },
+                {
+                    "date": 20150703,
+                    "pmid": 26138835,
+                    "title": "Radiology of Osteogenesis Imperfecta, Rickets and Other Bony Fragility States."
+                },
+                {
+                    "date": 20150703,
+                    "pmid": 26138839,
+                    "title": "A Practical Approach to Vitamin D Deficiency and Rickets."
+                },
+                {
+                    "date": 20150608,
+                    "pmid": 26051298
+                },
+                {
+                    "date": 20121108,
+                    "pmid": 22732358,
+                    "title": "Amelogenesis imperfecta and other biomineralization defects in Fam20a and Fam20c null mice."
+                },
+                {
+                    "date": 19471201,
+                    "pmid": 20278772,
+                    "title": "Osteomalacia and late rickets; the various etiologies met in the United States with emphasis on that resulting from a specific form of renal acidosis, the therapeutic indications for each etiological sub-group, and the relationship between osteomalacia and Milkman's syndrome."
+                }
+            ],
+            "source": 0,
+            "target": 38,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20160127,
+                    "pmid": 26813501
+                },
+                {
+                    "date": 20160127,
+                    "pmid": 26813505
+                },
+                {
+                    "date": 20160204,
+                    "pmid": 26745253
+                },
+                {
+                    "date": 20150729,
+                    "pmid": 26219711,
+                    "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
+                },
+                {
+                    "date": 20150831,
+                    "pmid": 26156530
+                },
+                {
+                    "date": 20150703,
+                    "pmid": 26138835,
+                    "title": "Radiology of Osteogenesis Imperfecta, Rickets and Other Bony Fragility States."
+                },
+                {
+                    "date": 20150703,
+                    "pmid": 26138839,
+                    "title": "A Practical Approach to Vitamin D Deficiency and Rickets."
+                },
+                {
+                    "date": 20150608,
+                    "pmid": 26051298
+                },
+                {
+                    "date": 20121108,
+                    "pmid": 22732358,
+                    "title": "Amelogenesis imperfecta and other biomineralization defects in Fam20a and Fam20c null mice."
+                },
+                {
+                    "date": 19471201,
+                    "pmid": 20278772,
+                    "title": "Osteomalacia and late rickets; the various etiologies met in the United States with emphasis on that resulting from a specific form of renal acidosis, the therapeutic indications for each etiological sub-group, and the relationship between osteomalacia and Milkman's syndrome."
+                }
+            ],
+            "source": 0,
+            "target": 29,
+            "key": 0
+        },
+        {
+            "etype": "support",
+            "data_source": "chemotext",
+            "support": [
+                {
+                    "date": 20141215,
+                    "pmid": 25509803,
+                    "title": "[Metabolic bone and joint diseases]."
+                },
+                {
+                    "date": 20110902,
+                    "pmid": 21886301
+                },
+                {
+                    "date": 19950330,
+                    "title": "Drug induced rheumatic disorders.",
+                    "pmid": 7868494
+                },
+                {
+                    "date": 19841018,
+                    "pmid": 6331980
+                },
+                {
+                    "date": 19750609,
+                    "pmid": 4452289
+                },
+                {
+                    "date": 19690922,
+                    "pmid": 5800553,
+                    "title": "[Chronic feminine gout and postgastrectomy osteomalacia]."
+                },
+                {
+                    "date": 19670329,
+                    "pmid": 5957873,
+                    "title": "Hypocalciuric effect of benzothiazides."
+                }
+            ],
+            "source": 0,
+            "target": 40,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 18,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 19,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 1,
+            "target": 20,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 2,
+            "target": 21,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 2,
+            "target": 20,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 2,
+            "target": 22,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 3,
+            "target": 23,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 4,
+            "target": 24,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 4,
+            "target": 25,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 26,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 26,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 27,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 27,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 5,
+            "target": 28,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 6,
+            "target": 29,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 7,
+            "target": 30,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 8,
+            "target": 31,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 8,
+            "target": 31,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 8,
+            "target": 32,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 8,
+            "target": 32,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 33,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 34,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 35,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 35,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 36,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 36,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 9,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 10,
+            "target": 38,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 10,
+            "target": 39,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 10,
+            "target": 40,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 10,
+            "target": 41,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 11,
+            "target": 42,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 11,
+            "target": 43,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 12,
+            "target": 44,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 13,
+            "target": 45,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 14,
+            "target": 35,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 14,
+            "target": 35,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 15,
+            "target": 42,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 16,
+            "target": 46,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 16,
+            "target": 47,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 16,
+            "target": 47,
+            "key": 1
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 16,
+            "target": 47,
+            "key": 2
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 16,
+            "target": 48,
+            "key": 0
+        },
+        {
+            "etype": "queried",
+            "data_source": "biolink",
+            "source": 17,
+            "target": 42,
+            "key": 0
+        }
+    ]
+}

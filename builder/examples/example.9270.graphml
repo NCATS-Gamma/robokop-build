@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="key" attr.type="long" for="edge" id="d4" />
+  <key attr.name="data_source" attr.type="string" for="edge" id="d3" />
+  <key attr.name="etype" attr.type="string" for="edge" id="d2" />
+  <key attr.name="layer" attr.type="string" for="node" id="d1" />
+  <key attr.name="node_type" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="DOID:9270">
+      <data key="d0">D</data>
+      <data key="d1">0</data>
+    </node>
+    <node id="HGNC:4892">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:18985">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:25419">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="HGNC:5147">
+      <data key="d0">G</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_203500">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_260800">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:0050777">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="http://purl.obolibrary.org/obo/OMIM_140350">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="DOID:9275">
+      <data key="d0">GC</data>
+      <data key="d1">2</data>
+    </node>
+    <edge source="DOID:9270" target="HGNC:4892">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:9270" target="HGNC:18985">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:9270" target="HGNC:25419">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="DOID:9270" target="HGNC:5147">
+      <data key="d2">queried</data>
+      <data key="d3">pharos</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:4892" target="http://purl.obolibrary.org/obo/OMIM_203500">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:18985" target="http://purl.obolibrary.org/obo/OMIM_260800">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:25419" target="DOID:0050777">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:25419" target="DOID:0050777">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="HGNC:5147" target="http://purl.obolibrary.org/obo/OMIM_140350">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="HGNC:5147" target="DOID:9275">
+      <data key="d2">queried</data>
+      <data key="d3">biolink</data>
+      <data key="d4">0</data>
+    </edge>
+  </graph>
+</graphml>
