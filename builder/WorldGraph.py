@@ -36,7 +36,6 @@ class WorldGraph:
             results += qf(subject_node)
         return results,True
     def support_query(self,subject_node,object_node):
-        """Check sources to find links between two specific nodes, for the purpose of support.
-        Right now, this is hitting chemotext to look for articles."""
-        #TODO: check the nodes for mesh names, or pass whole node to chemotext and have it do that?
+        """Check sources to find links between two specific nodes, for the purpose of support."""
+        # Right now, this is hitting chemotext to look for articles.  Want to do some similar routing, I think.
         return ct.term_to_term(subject_node, object_node)

@@ -103,7 +103,8 @@ class KnowledgeGraph:
             #We expect relation to be a dict, passing it in as **relation means that the dict
             # will be interpreted as keyword arguments.  That will allow the keys/values to be attributes
             # of the edge.
-            self.graph.add_edge( subject, object_node , etype='queried', **relation)
+            #self.graph.add_edge( subject, object_node, object = relation )
+            self.graph.add_edge( subject, object_node, object = relation )
     def prune(self):
         """Backwards prune.
         This is probably overkill - we might want to allow hops over missing nodes, etc
@@ -148,10 +149,10 @@ class KnowledgeGraph:
         # Check each edge, add any support found.
         n_supported = 0
         for source,target in links_to_check:
-            data_source, support = self.worldgraph.support_query(source,target)
-            if len(support) > 0:
+            support_edge = self.worldgraph.support_query(source,target)
+            if support_edge is not None:
                 n_supported += 1
-                self.graph.add_edge( source, target, etype='support', data_source= data_source, support = support )
+                self.graph.add_edge( source , target, object = support_edge )
         self.logger.debug('Support Completed.  Added %d edges' % n_supported)
     def write(self,root=None,level=-1):
         """Write the graph as a tree to stdout"""
@@ -182,19 +183,21 @@ class KnowledgeGraph:
             with open(output_path,'w') as outf:
                 json.dump(js, outf, indent=4, default=elements_to_json)
         elif fmt == 'graphml':
-            #GraphML can't handle structure, so try to escape attributes to write stuff quickndirty
-            export_graph = self.graph.copy()
-            for node in export_graph.nodes(data=True):
-                for key in node[1]:
-                    node[1][key] = str(node[1][key])
-            for edge in export_graph.edges(data=True):
-                for key in edge[2]:
-                    edge[2][key] = str(edge[2][key])
+            #GraphML can't handle structure.  The goal here is just to make some simple visualizations
+            # so it won't be a full representation.
+            #TODO:  But maybe we can do json.dumps on the values?
+            export_graph = nx.MultiDiGraph()
+            name_remap = {}
+            for node in self.graph.nodes():
+                node_id, node_props = node.get_exportable()
+                export_graph.add_node(node_id, **node_props)
+                name_remap[node]=node_id
+            for edge in self.graph.edges(data=True):
+                exportable_edge_props = edge[2]['object'].get_exportable()
+                export_graph.add_edge( name_remap[edge[0]], name_remap[edge[1]], **exportable_edge_props)
             nx.write_graphml(export_graph, output_path)
         else:
-            #warn
-            pass
-
+            self.logger.error('Invalid export format: %s' % fmt)
         
 def main():
     logger = logging.getLogger('application')

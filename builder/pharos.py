@@ -36,8 +36,9 @@ def disease_get_gene(subject):
             logging.getLogger('application').info('Pharos disease returning new kind: %s' % link['kind'])
         else:
             pharos_target_id = int(link['refid'])
-            pharos_properties = { 'edge_source':'pharos', 'properties':link['properties'] }
-            original_edge_nodes.append( (pharos_properties, pharos_target_id) )
+            #link['properties'] is a list rather than a dict
+            pharos_edge = KEdge( 'pharos', 'queried', {'properties': link['properties']} )
+            original_edge_nodes.append( (pharos_edge, pharos_target_id) )
     #Pharos returns target ids in its own numbering system. Collect other names for it.
     resolved_edge_nodes = []
     for edge, pharos_target_id  in original_edge_nodes:

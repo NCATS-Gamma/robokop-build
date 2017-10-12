@@ -20,7 +20,8 @@ def gene_get_disease(gene_node):
         obj = KNode(association['object']['id'], 'D', association['object']['label'] )
         rel = { 'typeid': association['relation']['id'], 'label':association['relation']['label'] }
         props = { 'publications': pubs, 'relation':rel }
-        edge_nodes.append( ({'edge_source': 'biolink', 'properties': props }, obj ) )
+        edge = KEdge( 'biolink', 'queried', props )
+        edge_nodes.append( (edge , obj ) )
     #TODO: WARN if no edges found?
     #TODO: DEBUG number of edges found / query.id
     return edge_nodes

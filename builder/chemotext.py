@@ -2,7 +2,9 @@ from greent.chemotext import Chemotext
 from greent.oxo import OXO
 import json
 import logging
+from graph_components import KEdge
 
+#TODO: where is code like this going to go?  Is it up to OXO? greent? something higher?  Built into the nodes?
 def OXOdise_term(term):
     """Convert IRIs into CURIEs.
     
@@ -44,7 +46,8 @@ def get_mesh_terms(node):
     return node.properties[MESH_KEY]
 
 def term_to_term(node_a,node_b, limit = 10):
-    """Given two terms, find articles in chemotext that connect them"""
+    """Given two terms, find articles in chemotext that connect them, and return as a KEdge.
+    If nothing is found, return None"""
     meshes_a = get_mesh_terms(node_a)
     meshes_b = get_mesh_terms(node_b)
     ctext = Chemotext( )
@@ -57,7 +60,9 @@ def term_to_term(node_a,node_b, limit = 10):
             for result in response['results']:
                 for data in result['data']:
                     articles += data['row']
-    return 'chemotext',  articles
+    if len(articles) > 0:
+        return KEdge( 'chemotext', 'support', { 'publications': articles } )
+    return None
 
 if __name__ == '__main__':
     print( term_to_term('DOID:4325', 'DOID:14504') )
