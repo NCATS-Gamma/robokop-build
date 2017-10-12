@@ -1,10 +1,12 @@
 import requests
 import urllib
 from mondo import Mondo
+from graph_components import KNode,KEdge
 
-def gene_get_disease(hgnc):
+def gene_get_disease(gene_node):
     """Given a gene specified as an HGNC curie, return associated diseases. """
-    ehgnc = urllib.parse.quote_plus(hgnc[0])
+    #TODO: we're assuming that gene_node.identifier is a valid curie for calling inti biolink - validate
+    ehgnc = urllib.parse.quote_plus(gene_node.identifier)
     r = requests.get('https://api.monarchinitiative.org/api/bioentity/gene/%s/diseases' % ehgnc).json()
     edge_nodes = []
     #TODO:  Do I just want to suck in everything?  It's probably smarter, but for now it's mostly nulls
@@ -15,10 +17,13 @@ def gene_get_disease(hgnc):
             pubs = [ {'id': pub['id']} for pub in association['publications'] ]
         else:
             pubs = []
-        obj = ( association['object']['id'], {'label': association['object']['label'] } )
+        obj = KNode(association['object']['id'], 'D', association['object']['label'] )
         rel = { 'typeid': association['relation']['id'], 'label':association['relation']['label'] }
         props = { 'publications': pubs, 'relation':rel }
-        edge_nodes.append( ({'edge_source': 'biolink', 'properties': props }, obj ) )
+        edge = KEdge( 'biolink', 'queried', props )
+        edge_nodes.append( (edge , obj ) )
+    #TODO: WARN if no edges found?
+    #TODO: DEBUG number of edges found / query.id
     return edge_nodes
 
 def gene_get_genetic_condition(gene):
@@ -29,10 +34,9 @@ def gene_get_genetic_condition(gene):
     checker = Mondo()
     relations = []
     for relation, obj in disease_relations:
-        is_genetic_condition, obj_id = checker.is_genetic_disease(obj)
+        is_genetic_condition, new_object_ids = checker.is_genetic_disease(obj)
         if is_genetic_condition:
-            #TODO: don't think obj is well represented.
-            obj[1]['mondo_id'] = [obj_id]
+            obj.properties['mondo_identifiers'] = new_object_ids
             relations.append( (relation,obj) )
     return relations
 

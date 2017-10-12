@@ -1,12 +1,13 @@
 import requests
 import logging
+from graph_components import KNode,KEdge
 
-def translate(subject):
+def translate(subject_node):
     """Convert a subject with a DOID into a Pharos Disease ID"""
     #TODO: Import from PHAROS
     pmap = {'DOID:1470': 455, 'DOID:4325': 2742, 'DOID:11476': 4885, 'DOID:12365': 202, 'DOID:10573': 807, \
             'DOID:9270': 6493, 'DOID:526':7468, 'DOID:1498':1887, 'DOID:13810': 10692}
-    doid = subject[0]
+    doid = subject_node.identifier
     return pmap[doid]
 
 
@@ -25,7 +26,7 @@ def get_target_hgnc(target_id):
 #TODO: assuming a DOID, not really valid
 #TODO: clean up, getting ugly
 def disease_get_gene(subject):
-    """Given a subject node (with a DOID), return targets"""
+    """Given a subject node (with a DOID as the identifier), return targets"""
     pharosid = translate(subject)
     r = requests.get('https://pharos.nih.gov/idg/api/v1/diseases(%d)?view=full' % pharosid)
     result = r.json()
@@ -35,14 +36,16 @@ def disease_get_gene(subject):
             logging.getLogger('application').info('Pharos disease returning new kind: %s' % link['kind'])
         else:
             pharos_target_id = int(link['refid'])
-            pharos_properties = { 'edge_source':'pharos', 'properties':link['properties'] }
-            original_edge_nodes.append( (pharos_properties, pharos_target_id) )
+            #link['properties'] is a list rather than a dict
+            pharos_edge = KEdge( 'pharos', 'queried', {'properties': link['properties']} )
+            original_edge_nodes.append( (pharos_edge, pharos_target_id) )
     #Pharos returns target ids in its own numbering system. Collect other names for it.
     resolved_edge_nodes = []
     for edge, pharos_target_id  in original_edge_nodes:
         hgnc = get_target_hgnc(pharos_target_id)
         if hgnc is not None:
-            resolved_edge_nodes.append((edge,(hgnc,{})))
+            hgnc_node = KNode(hgnc, 'G')
+            resolved_edge_nodes.append((edge,hgnc_node))
         else:
             logging.getLogger('application').warn('Did not get HGNC for pharosID %d' % pharos_target_id)
     return resolved_edge_nodes
