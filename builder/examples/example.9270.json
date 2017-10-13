@@ -4,125 +4,658 @@
     "graph": {},
     "nodes": [
         {
-            "node_type": "D",
-            "layer": 0,
-            "id": "DOID:9270"
+            "id": {
+                "identifier": "DOID:9270",
+                "node_type": "D",
+                "layer_number": 0,
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D000474",
+                        "label": "Alkaptonuria",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1
+                    },
+                    {
+                        "curie": "MeSH:C537862",
+                        "label": "Ochronosis, hereditary",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "EFO",
+                            "Orphanet",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
         },
         {
-            "node_type": "G",
-            "layer": 1,
-            "id": "HGNC:4892"
+            "id": {
+                "identifier": "HGNC:4892",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "G",
-            "layer": 1,
-            "id": "HGNC:18985"
+            "id": {
+                "identifier": "HGNC:18985",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "G",
-            "layer": 1,
-            "id": "HGNC:25419"
+            "id": {
+                "identifier": "HGNC:25419",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "G",
-            "layer": 1,
-            "id": "HGNC:5147"
+            "id": {
+                "identifier": "HGNC:5147",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "http://purl.obolibrary.org/obo/OMIM_203500"
+            "id": {
+                "identifier": "HGNC:4892",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "http://purl.obolibrary.org/obo/OMIM_260800"
+            "id": {
+                "identifier": "OMIM:203500",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_203500"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D000474",
+                        "label": "Alkaptonuria",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    },
+                    {
+                        "curie": "MeSH:C537862",
+                        "label": "Ochronosis, hereditary",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "DOID:0050777"
+            "id": {
+                "identifier": "OMIM:260800",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_260800"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C536652",
+                        "label": "Pentosuria",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "http://purl.obolibrary.org/obo/OMIM_140350"
+            "id": {
+                "identifier": "OMIM:612291",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0050777",
+                    "http://purl.obolibrary.org/obo/OMIM_612291"
+                ],
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "DOID:9275"
+            "id": {
+                "identifier": "DOID:0050777",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0050777"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:140350",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_140350"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C535845",
+                        "label": "Hawkinsinuria",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:276710",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:9275",
+                    "http://purl.obolibrary.org/obo/OMIM_276710"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:203500",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_203500"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D000474",
+                        "label": "Alkaptonuria",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    },
+                    {
+                        "curie": "MeSH:C537862",
+                        "label": "Ochronosis, hereditary",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
         }
     ],
     "links": [
         {
-            "etype": "queried",
-            "data_source": "pharos",
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 666,
+                        "label": "Data Source",
+                        "term": "JensenLab Knowledge GHR",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
             "source": 0,
             "target": 1,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "pharos",
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
             "source": 0,
             "target": 2,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "pharos",
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
             "source": 0,
             "target": 3,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "pharos",
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
             "source": 0,
             "target": 4,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 1,
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
             "target": 5,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 2,
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:10970188"
+                    },
+                    {
+                        "id": "PMID:10482952"
+                    },
+                    {
+                        "id": "PMID:23519186"
+                    },
+                    {
+                        "id": "PMID:25525159"
+                    },
+                    {
+                        "id": "PMID:22606059"
+                    },
+                    {
+                        "id": "PMID:10594001"
+                    },
+                    {
+                        "id": "PMID:9154114"
+                    },
+                    {
+                        "id": "PMID:12872836"
+                    },
+                    {
+                        "id": "PMID:25233259"
+                    },
+                    {
+                        "id": "PMID:9529363"
+                    },
+                    {
+                        "id": "PMID:8782815"
+                    },
+                    {
+                        "id": "PMID:25681086"
+                    },
+                    {
+                        "id": "PMID:12114497"
+                    },
+                    {
+                        "id": "PMID:12872815"
+                    },
+                    {
+                        "id": "PMID:1360590"
+                    },
+                    {
+                        "id": "PMID:25804398"
+                    },
+                    {
+                        "id": "PMID:16085442"
+                    },
+                    {
+                        "id": "PMID:10205262"
+                    },
+                    {
+                        "id": "PMID:12501223"
+                    },
+                    {
+                        "id": "PMID:21720873"
+                    },
+                    {
+                        "id": "PMID:9674916"
+                    },
+                    {
+                        "id": "PMID:11001939"
+                    },
+                    {
+                        "id": "PMID:19862842"
+                    },
+                    {
+                        "id": "PMID:23430897"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 1,
             "target": 6,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 3,
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:25526675"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 2,
             "target": 7,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:26092869"
+                    },
+                    {
+                        "id": "PMID:25138100"
+                    },
+                    {
+                        "id": "PMID:18674751"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
             "source": 3,
-            "target": 7,
-            "key": 1
-        },
-        {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 4,
             "target": 8,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 4,
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 3,
             "target": 9,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:858207"
+                    },
+                    {
+                        "id": "PMID:1130176"
+                    },
+                    {
+                        "id": "PMID:11073718"
+                    },
+                    {
+                        "id": "PMID:1519651"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 10,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:10942115"
+                    },
+                    {
+                        "id": "PMID:9343288"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 11,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:10970188"
+                    },
+                    {
+                        "id": "PMID:10482952"
+                    },
+                    {
+                        "id": "PMID:23519186"
+                    },
+                    {
+                        "id": "PMID:25525159"
+                    },
+                    {
+                        "id": "PMID:22606059"
+                    },
+                    {
+                        "id": "PMID:10594001"
+                    },
+                    {
+                        "id": "PMID:9154114"
+                    },
+                    {
+                        "id": "PMID:12872836"
+                    },
+                    {
+                        "id": "PMID:25233259"
+                    },
+                    {
+                        "id": "PMID:9529363"
+                    },
+                    {
+                        "id": "PMID:8782815"
+                    },
+                    {
+                        "id": "PMID:25681086"
+                    },
+                    {
+                        "id": "PMID:12114497"
+                    },
+                    {
+                        "id": "PMID:12872815"
+                    },
+                    {
+                        "id": "PMID:1360590"
+                    },
+                    {
+                        "id": "PMID:25804398"
+                    },
+                    {
+                        "id": "PMID:16085442"
+                    },
+                    {
+                        "id": "PMID:10205262"
+                    },
+                    {
+                        "id": "PMID:12501223"
+                    },
+                    {
+                        "id": "PMID:21720873"
+                    },
+                    {
+                        "id": "PMID:9674916"
+                    },
+                    {
+                        "id": "PMID:11001939"
+                    },
+                    {
+                        "id": "PMID:19862842"
+                    },
+                    {
+                        "id": "PMID:23430897"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 5,
+            "target": 12,
             "key": 0
         }
     ]

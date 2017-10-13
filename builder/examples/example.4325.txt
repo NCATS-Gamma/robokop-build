@@ -1,0 +1,10 @@
+DOID:4325
+ HGNC:7897
+  Niemann-Pick Disease, Type C1 (OMIM:257220)
+ HGNC:30922
+  Mental Retardation, Autosomal Recessive 27 (OMIM:614340)
+  autosomal recessive non-syndromic intellectual disability (DOID:0060308)
+ HGNC:16361
+  Usher syndrome type 2 (DOID:0110827)
+  Usher syndrome type 2D (OMIM:611383)
+ Niemann-Pick Disease, Type C1 (OMIM:257220)

@@ -1,0 +1,238 @@
+DOID:12365
+ HGNC:10718
+  atopic dermatitis (DOID:3310)
+  Hypercholesterolemia (MESH:D006937)
+ HGNC:11935
+  X-linked acrogigantism due to Xq26 microduplication (OMIM:300942)
+  Immunodeficiency with hyper IgM type 1 (OMIM:308230)
+ HGNC:1663
+  Platelet glycoprotein IV deficiency (OMIM:608404)
+ HGNC:18674
+  Acute Undifferentiated Leukemia (OMIM:601626)
+ HGNC:9020
+  Pyruvate kinase deficiency of red cells (OMIM:266200)
+ HGNC:6391
+  Spondyloepimetaphyseal Dysplasia With Joint Laxity, Type 2 (OMIM:603546)
+ HGNC:7562
+  lymphoma (DOID:0060058)
+  Myeloma, Multiple (OMIM:254500)
+  follicular lymphoma (DOID:0050873)
+  Malignant lymphoma, non-Hodgkin (OMIM:605027)
+  Waldenstroem's macroglobulinemia (DOID:0060901)
+  WM1 (OMIM:153600)
+  diffuse large B-cell lymphoma (DOID:0050745)
+  Chronic lymphocytic leukemia (OMIM:151400)
+ HGNC:8487
+  Meier-Gorlin syndrome 1 (OMIM:224690)
+  Meier-Gorlin syndrome (DOID:0060306)
+ HGNC:4704
+  hereditary elliptocytosis (DOID:2373)
+ HGNC:11766
+  Muscular Dystrophy, Duchenne Type (OMIM:310200)
+  dry eye syndrome (DOID:10140)
+  Camurati-Engelmann disease (DOID:4997)
+ HGNC:7523
+  McCune Albright syndrome (DOID:1858)
+  Mulibrey nanism syndrome (OMIM:253250)
+ HGNC:7427
+  Obesity (OMIM:601665)
+  Familial cancer of breast (OMIM:114480)
+  Isolated CoQ-cytochrome C reductase deficiency (Orphanet:1460)
+  Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)
+  Leber's optic atrophy (OMIM:535000)
+ HGNC:11027
+  hereditary spherocytosis (DOID:12971)
+  Ovalocytosis, Southeast Asian (OMIM:166900)
+  hereditary spherocytosis type 4 (OMIM:612653)
+  Autosomal dominant distal renal tubular acidosis (OMIM:179800)
+  Renal Tubular Acidosis, Distal, With Hemolytic Anemia (OMIM:611590)
+  hereditary elliptocytosis (DOID:2373)
+ HGNC:399
+  Ehlers-Danlos Syndrome, Type Vii, Autosomal Dominant (OMIM:130060)
+ HGNC:11740
+  Atransferrinemia (OMIM:209300)
+ HGNC:11763
+  non-Hodgkin lymphoma (DOID:0060060)
+  beta thalassemia (DOID:12241)
+  chronic lymphocytic leukemia (DOID:1040)
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:10637
+  atopic dermatitis (DOID:3310)
+ HGNC:5992
+  mitochondrial myopathy (DOID:699)
+  chronic progressive external ophthalmoplegia (DOID:12558)
+  atopic dermatitis (DOID:3310)
+ HGNC:12811
+  McLeod neuroacanthocytosis syndrome (OMIM:300842)
+  neuroacanthocytosis (DOID:0050765)
+ HGNC:5438
+  Lymphoproliferative syndrome 1, X-linked (OMIM:308240)
+  adrenoleukodystrophy (DOID:10588)
+  adult T-cell leukemia (DOID:0050523)
+  Tuberous sclerosis 2 (OMIM:613254)
+ HGNC:485
+  Microcephaly 1, Primary, Autosomal Recessive (OMIM:251200)
+ HGNC:385
+  polycystic ovary syndrome (DOID:11612)
+  46,XY disorder of sex development due to testicular 17,20-desmolase deficiency (OMIM:614279)
+ HGNC:9912
+  Spermatogenic Failure, Y-Linked, 2 (OMIM:415000)
+ HGNC:25902
+  Muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 8 (OMIM:614830)
+  Muscular Dystrophy-Dystroglycanopathy (Congenital With Brain and Eye Anomalies), Type A, 1 (OMIM:236670)
+ HGNC:1606
+  atopic dermatitis (DOID:3310)
+ HGNC:11892
+  Psoriatic arthritis, susceptibility to (OMIM:607507)
+  mitochondrial myopathy (DOID:699)
+ HGNC:7461
+  Myoclonus with epilepsy with ragged red fibers (OMIM:545000)
+  Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)
+  Leigh syndrome (OMIM:256000)
+  Leber's optic atrophy (OMIM:535000)
+  Maternally-inherited Leigh syndrome (Orphanet:255210)
+ HGNC:6106
+  adult T-cell leukemia (DOID:0050523)
+  Immunodysregulation, Polyendocrinopathy, and Enteropathy, X-Linked (OMIM:304790)
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:7873
+  Takayasu's arteritis (OMIM:207600)
+  psoriatic arthritis (DOID:9008)
+ HGNC:7419
+  Mitochondrial non-syndromic sensorineural deafness (OMIM:500008)
+  cytochrome-c oxidase deficiency disease (OMIM:220110)
+  Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)
+  Myoglobinuria, Recurrent (OMIM:550500)
+  Deafness, Aminoglycoside-Induced (OMIM:580000)
+  Genetic recurrent myoglobinuria (Orphanet:99845)
+ HGNC:2861
+  Megaloblastic anemia due to dihydrofolate reductase deficiency (OMIM:613839)
+ HGNC:3616
+  Cystic Fibrosis (OMIM:219700)
+  Sjogren's syndrome (OMIM:270150)
+ HGNC:3377
+  hereditary elliptocytosis (DOID:2373)
+  Elliptocytosis 1 (OMIM:611804)
+ HGNC:4976
+  Holocarboxylase synthetase deficiency (OMIM:253270)
+ HGNC:7421
+  Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)
+  cytochrome-c oxidase deficiency disease (OMIM:220110)
+ HGNC:5962
+  Wilson disease (OMIM:277900)
+  atopic dermatitis (DOID:3310)
+ HGNC:10585
+  Familial or sporadic hemiplegic migraine (Orphanet:569)
+  Lennox-Gastaut syndrome (OMIM:606369)
+  Migraine, Familial Hemiplegic, 3 (OMIM:609634)
+  Generalized Epilepsy With Febrile Seizures Plus, Type 2 (OMIM:604403)
+  Malignant migrating partial seizures of infancy (Orphanet:293181)
+  Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)
+  generalized epilepsy with febrile seizures plus (DOID:0060170)
+ HGNC:6025
+  fatty liver disease (DOID:9452)
+  psoriatic arthritis (DOID:9008)
+  Behcet's syndrome (OMIM:109650)
+ HGNC:5141
+  hemochromatosis (DOID:2352)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:6001
+  adult T-cell leukemia (DOID:0050523)
+ HGNC:15598
+  Hemochromatosis type 1 (OMIM:235200)
+  Hemochromatosis type 2 (Orphanet:79230)
+  Hemochromatosis, Type 2B (OMIM:613313)
+  hemochromatosis (DOID:2352)
+  beta thalassemia (DOID:12241)
+  Wilson disease (OMIM:277900)
+ HGNC:12825
+  Chronic lymphocytic leukemia (OMIM:151400)
+ HGNC:2625
+  Drug Metabolism, Poor, Cyp2D6-Related (OMIM:608902)
+  neuronal ceroid lipofuscinosis 2 (OMIM:204500)
+ HGNC:2622
+  lymphoblastic lymphoma (DOID:0080147)
+  gout (EFO:0004274)
+ HGNC:6307
+  Hemangioma, capillary infantile (OMIM:602089)
+  Osteochondrodysplasias (MESH:D010009)
+ HGNC:1753
+  multiple myeloma (EFO:0001378)
+ HGNC:4832
+  Cyanosis, transient neonatal (OMIM:613977)
+ HGNC:6014
+  atopic dermatitis (DOID:3310)
+  adult T-cell leukemia (DOID:0050523)
+ HGNC:6016
+  atopic dermatitis (DOID:3310)
+ HGNC:2867
+  hereditary spherocytosis (DOID:12971)
+  Sickle Cell Anemia (OMIM:603903)
+  Postaxial Acrofacial Dysostosis (OMIM:263750)
+  beta thalassemia (DOID:12241)
+ HGNC:2753
+  Lipid Metabolism, Inborn Errors (MESH:D008052)
+  2,4-Dienoyl-CoA reductase deficiency (OMIM:616034)
+ HGNC:12663
+  Hypercholesterolemia (MESH:D006937)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:5237
+  facioscapulohumeral muscular dystrophy (DOID:11727)
+ HGNC:6460
+  Monilethrix (OMIM:158000)
+  Progressive symmetric erythrokeratodermia (Orphanet:316)
+ HGNC:10524
+  Townes syndrome (OMIM:107480)
+ HGNC:10593
+  Atrial standstill (Orphanet:1344)
+  Brugada syndrome (DOID:0050451)
+  Familial progressive cardiac conduction defect (OMIM:113900)
+  Brugada Syndrome 1 (OMIM:601144)
+ HGNC:10588
+  Ohtahara syndrome (DOID:0050709)
+  Benign familial neonatal-infantile seizures (OMIM:607745)
+  Epileptic Encephalopathy, Early Infantile, 11 (OMIM:613721)
+  benign familial infantile epilepsy (DOID:0060169)
+  Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)
+  West syndrome (DOID:0050562)
+  Benign familial neonatal-infantile seizures (Orphanet:140927)
+ HGNC:12705
+  atopic dermatitis (DOID:3310)
+ HGNC:15464
+  Netherton syndrome (OMIM:256500)
+ HGNC:5344
+  Hypercholesterolemia (MESH:D006937)
+ HGNC:4827
+  Sickle Cell Anemia (OMIM:603903)
+  Beta-Thalassemia (OMIM:613985)
+  alpha Thalassemia (OMIM:604131)
+  beta thalassemia (DOID:12241)
+  Beta-Thalassemia, Dominant Inclusion Body Type (OMIM:603902)
+  HBD (OMIM:146350)
+  hemoglobinopathy (DOID:2860)
+  hemoglobin E disease (DOID:5379)
+ diffuse large B-cell lymphoma (DOID:0050745)
+ chronic lymphocytic leukemia (DOID:1040)
+ Obesity (OMIM:601665)
+ Malignant lymphoma, non-Hodgkin (OMIM:605027)
+ gout (EFO:0004274)
+ Sickle Cell Anemia (OMIM:603903)
+ Sickle Cell Anemia (OMIM:603903)
+ Sickle Cell Anemia (OMIM:603903)
+ Sickle Cell Anemia (OMIM:603903)
+ alpha Thalassemia (OMIM:604131)
+ Ovalocytosis, Southeast Asian (OMIM:166900)
+ Chronic lymphocytic leukemia (OMIM:151400)
+ Chronic lymphocytic leukemia (OMIM:151400)
+ lymphoma (DOID:0060058)
+ hereditary elliptocytosis (DOID:2373)
+ hereditary elliptocytosis (DOID:2373)
+ hereditary elliptocytosis (DOID:2373)
+ Myeloma, Multiple (OMIM:254500)
+ hemoglobinopathy (DOID:2860)
+ multiple myeloma (EFO:0001378)
+ Megaloblastic anemia due to dihydrofolate reductase deficiency (OMIM:613839)
+ Elliptocytosis 1 (OMIM:611804)
+ hereditary spherocytosis type 4 (OMIM:612653)
+ hereditary spherocytosis (DOID:12971)
+ hereditary spherocytosis (DOID:12971)

@@ -10,6 +10,31 @@ class Mondo():
         self.ont = ofactory.create('mondo')
         #This seems to be required to make the ontology actually load:
         _ = self.ont.get_level(0)
+    def get_doid(self,identifier):
+        """We have an identifier, and we are going to use MONDO to try to convert it to a DOID"""
+        upper_id = identifier.upper()
+        obj_ids = self.get_mondo_id(upper_id)
+        #Are any of the ids we get back a DOID?
+        doids = []
+        for obj_id in obj_ids:
+            if obj_id.startswith('DOID:'):
+                doids.append(obj_id)
+        if len(doids) > 0:
+            return doids
+        #Didn't get anything, so get the xrefs and find DOIDS
+        for obj_id in obj_ids:
+            xref_ids = self.ont.xrefs(obj_id)
+            for xref_id in xref_ids:
+                if xref_id.startswith('DOID:'):
+                    doids.append( xref_id )
+        return doids
+    def get_mondo_id(self,obj_id):
+        """Given an id, find the main key(s) that mondo uses for the id"""
+        if self.ont.has_node(obj_id):
+            obj_ids = [obj_id]
+        else:
+            obj_ids = self.ont.xrefs(obj_id, bidirectional=True)
+        return obj_ids
     def has_ancestor(self,obj, term):
         """Given an object and a term in MONDO, determine whether the term is an ancestor of the object.
         
@@ -23,10 +48,7 @@ class Mondo():
                  The list of Mondo identifiers for the object, which have the term as an ancestor"""
         #TODO: The return signature is funky, fix it.
         obj_id = obj.identifier
-        if self.ont.has_node(obj_id):
-            obj_ids = [obj_id]
-        else:
-            obj_ids = self.ont.xrefs(obj_id, bidirectional=True)
+        obj_ids = self.get_mondo_id(obj_id)
         return_objects=[]
         for obj_id in obj_ids:
             ancestors = self.ont.ancestors(obj_id)

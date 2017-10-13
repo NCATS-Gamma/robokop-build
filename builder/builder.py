@@ -4,6 +4,7 @@ import networkx as nx
 from networkx.readwrite.json_graph.node_link import node_link_data
 import json
 import logging
+import sys
 
 class Operation():
     def __init__(self, layer0, layer1):
@@ -154,21 +155,21 @@ class KnowledgeGraph:
                 n_supported += 1
                 self.graph.add_edge( source , target, object = support_edge )
         self.logger.debug('Support Completed.  Added %d edges' % n_supported)
-    def write(self,root=None,level=-1):
+    def write(self,root=None,level=-1,output_stream = sys.stdout):
         """Write the graph as a tree to stdout"""
         #TODO: add other output stream
         if root is None:
             [root] = self.get_nodes(0)
-            self.write(root, 0)
+            self.write(root, 0, output_stream)
         else:
             lprefix = []
             for n in range(level):
                 lprefix += [' ']
             prefix = ''.join(lprefix)
-            print( '%s%s' % (prefix, root.get_shortname() ) )
+            output_stream.write( '%s%s\n' % (prefix, root.get_shortname() ) )
             children = self.graph.successors(root)
             for child in children:
-                self.write(child,level+1)
+                self.write(child,level+1, output_stream)
     def export(self, output_path, fmt='json'):
         """Export in a format that can be read by other tools.
 
@@ -198,39 +199,57 @@ class KnowledgeGraph:
             nx.write_graphml(export_graph, output_path)
         else:
             self.logger.error('Invalid export format: %s' % fmt)
-        
-def main():
-    logger = logging.getLogger('application')
-    logger.setLevel(level = logging.DEBUG)
-    worldgraph = WorldGraph('config.std')
-    #doid = 4325  #ebola
-    #doid = 1470  #major depressive disorder
-    #doid = 11476 #osteoporosis
-    #doid = 12365  #malaria
-    #doid = 10573 #osteomalacia
-    #doid = 9270  #alkaptonuria
-    doid = 526   #HIV
-    #doid = 1498  #cholera
-    #doid = 13810 #Hypercholesterolemia
-    #doid = 9352  #Diabetes Mellitus, Type 2
-    #doid = 2841  #Asthma
-    #doid = 4989  #Chronic Pancreatitis(?)
-    #doid = 10652 #Alzheimer Disease
-    #doid = 5844  #Myocardial Infarction
-    #doid = 11723 #Duchenne Muscular Dystrophy
-    #doid = 14504 #Niemann Pick Type C
-    #doid = 12858 #Huntington Disease
-    #doid = 10923 #Sickle Cell Disease
-    #doid = 2055  #Post-Truamatic Stress Disorder
-    #doid = 0060728 #Deficiency of N-glycanase 1
-    #doid = 0050741 #Alcohol Dependence
-    kgraph = KnowledgeGraph('(D;DOID:%d)-G-GC' % doid, worldgraph)
+
+def run_query(query, output_path, worldgraph):
+    kgraph = KnowledgeGraph(query, worldgraph)
     kgraph.execute()
     kgraph.prune()
     kgraph.support()
-    kgraph.export('examples/example.%d.graphml' % doid, 'graphml')
-    kgraph.export('examples/example.%d.json' % doid, 'json')
+    kgraph.export('%s.graphml' % output_path, 'graphml')
+    kgraph.export('%s.json' % output_path, 'json')
+    #Write to both file and stdout
+    with open('%s.txt' % output_path, 'w') as output_stream:
+        kgraph.write(output_stream = output_stream)
     kgraph.write()
+       
+def main_test():
+    logger = logging.getLogger('application')
+    logger.setLevel(level = logging.DEBUG)
+    worldgraph = WorldGraph('config.std')
+    #Our test cases are defined as a doid and a name.  The name is from the NCATS FOA. The DOID
+    # was looked up by hand.
+    test_cases = (('4325',  'ebola'), \
+                  ('1470'  ,'major depressive disorder'), \
+                  ('11476' ,'osteoporosis'), \
+                  ('12365' ,'malaria'), \
+                  ('10573' ,'osteomalacia'), \
+                  ('9270'  ,'alkaptonuria'), \
+                  ('526'   ,'HIV'), \
+                  ('1498'  ,'cholera'), \
+                  ('13810' ,'Hypercholesterolemia'), \
+                  ('9352'  ,'Diabetes Mellitus, Type 2'), \
+                  ('2841'  ,'Asthma'), \
+                  ('4989'  ,'Chronic Pancreatitis(?)'), \
+                  ('10652' ,'Alzheimer Disease'), \
+                  ('5844'  ,'Myocardial Infarction'), \
+                  ('11723' ,'Duchenne Muscular Dystrophy'), \
+                  ('14504' ,'Niemann Pick Type C'), \
+                  ('12858' ,'Huntington Disease'), \
+                  ('10923' ,'Sickle Cell Disease'), \
+                  ('2055'  ,'Post-Truamatic Stress Disorder'), \
+                  ('0060728' ,'Deficiency of N-glycanase 1'), \
+                  ('0050741' ,'Alcohol Dependence') )
+    #Are we able to convert to pharos ids?
+    #import pharos
+    #for doid, dn in test_cases:
+    #    node = KNode('DOID:%s' % doid, 'D')
+    #    print( dn,doid, pharos.translate(node) )
+    #exit()
+    for doid, disease_name in test_cases:
+        print('Running test case: %s (DOID:%s)' % (disease_name,doid) )
+        query = '(D;DOID:%s)-G-GC' % doid
+        output = 'examples/example.%s' % doid
+        run_query(query, output, worldgraph)
 
 if __name__ == '__main__':
-    main()
+    main_test()

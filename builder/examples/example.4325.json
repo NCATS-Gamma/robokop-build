@@ -4,146 +4,554 @@
     "graph": {},
     "nodes": [
         {
-            "node_type": "D",
-            "layer": 0,
-            "id": "DOID:4325"
+            "id": {
+                "identifier": "DOID:4325",
+                "node_type": "D",
+                "layer_number": 0,
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D019142",
+                        "label": "Hemorrhagic Fever, Ebola",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1
+                    }
+                ]
+            }
         },
         {
-            "node_type": "G",
-            "layer": 1,
-            "id": "HGNC:7897"
+            "id": {
+                "identifier": "HGNC:7897",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "G",
-            "layer": 1,
-            "id": "HGNC:30922"
+            "id": {
+                "identifier": "HGNC:30922",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "G",
-            "layer": 1,
-            "id": "HGNC:16361"
+            "id": {
+                "identifier": "HGNC:16361",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "DOID:14504"
+            "id": {
+                "identifier": "OMIM:257220",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:14504",
+                    "http://www.orpha.net/ORDO/Orphanet_646"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009542",
+                        "label": "Niemann-Pick Diseases",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    },
+                    {
+                        "curie": "MeSH:D052556",
+                        "label": "Niemann-Pick Disease, Type C1",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "http://www.orpha.net/ORDO/Orphanet_646"
+            "id": {
+                "identifier": "OMIM:614340",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0060308"
+                ],
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "DOID:0060308"
+            "id": {
+                "identifier": "DOID:0060308",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0060308"
+                ],
+                "mesh_identifiers": []
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "DOID:0110827"
+            "id": {
+                "identifier": "DOID:0110827",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0110827"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D052245",
+                        "label": "Usher Syndromes",
+                        "sourcePrefixes": [
+                            "DOID",
+                            "UMLS"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
         },
         {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "DOID:0050439"
-        },
-        {
-            "node_type": "GC",
-            "layer": 2,
-            "id": "http://purl.obolibrary.org/obo/OMIM_611383"
+            "id": {
+                "identifier": "OMIM:611383",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0050439",
+                    "DOID:0110827",
+                    "http://purl.obolibrary.org/obo/OMIM_611383"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D052245",
+                        "label": "Usher Syndromes",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2
+                    }
+                ]
+            }
         }
     ],
     "links": [
         {
-            "etype": "queried",
-            "data_source": "pharos",
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
             "source": 0,
             "target": 1,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "pharos",
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
             "source": 0,
             "target": 2,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "pharos",
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
             "source": 0,
             "target": 3,
             "key": 0
         },
         {
-            "etype": "support",
-            "data_source": "chemotext",
-            "support": [
-                {
-                    "date": 20110916,
-                    "pmid": 21866103,
-                    "title": "Ebola virus entry requires the cholesterol transporter Niemann-Pick C1"
-                }
-            ],
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20110916,
+                        "pmid": 21866103,
+                        "title": "Ebola virus entry requires the cholesterol transporter Niemann-Pick C1"
+                    }
+                ]
+            },
             "source": 0,
             "target": 4,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:16098014"
+                    },
+                    {
+                        "id": "PMID:22065762"
+                    },
+                    {
+                        "id": "PMID:17160617"
+                    },
+                    {
+                        "id": "PMID:19013089"
+                    },
+                    {
+                        "id": "PMID:11333381"
+                    },
+                    {
+                        "id": "PMID:26206375"
+                    },
+                    {
+                        "id": "PMID:15465421"
+                    },
+                    {
+                        "id": "PMID:25131710"
+                    },
+                    {
+                        "id": "PMID:27139891"
+                    },
+                    {
+                        "id": "PMID:24676439"
+                    },
+                    {
+                        "id": "PMID:20826119"
+                    },
+                    {
+                        "id": "PMID:23653225"
+                    },
+                    {
+                        "id": "PMID:11182931"
+                    },
+                    {
+                        "id": "PMID:12401890"
+                    },
+                    {
+                        "id": "PMID:23430855"
+                    },
+                    {
+                        "id": "PMID:26981555"
+                    },
+                    {
+                        "id": "PMID:11479732"
+                    },
+                    {
+                        "id": "PMID:15459971"
+                    },
+                    {
+                        "id": "PMID:19206179"
+                    },
+                    {
+                        "id": "PMID:15130691"
+                    },
+                    {
+                        "id": "PMID:15596783"
+                    },
+                    {
+                        "id": "PMID:21245028"
+                    },
+                    {
+                        "id": "PMID:23773996"
+                    },
+                    {
+                        "id": "PMID:19744920"
+                    },
+                    {
+                        "id": "PMID:11545687"
+                    },
+                    {
+                        "id": "PMID:19223215"
+                    },
+                    {
+                        "id": "PMID:23142039"
+                    },
+                    {
+                        "id": "PMID:4795418"
+                    },
+                    {
+                        "id": "PMID:24915861"
+                    },
+                    {
+                        "id": "PMID:22326530"
+                    },
+                    {
+                        "id": "PMID:24035292"
+                    },
+                    {
+                        "id": "PMID:20718790"
+                    },
+                    {
+                        "id": "PMID:11754101"
+                    },
+                    {
+                        "id": "PMID:22704015"
+                    },
+                    {
+                        "id": "PMID:24570279"
+                    },
+                    {
+                        "id": "PMID:18216017"
+                    },
+                    {
+                        "id": "PMID:22750297"
+                    },
+                    {
+                        "id": "PMID:10480349"
+                    },
+                    {
+                        "id": "PMID:24386122"
+                    },
+                    {
+                        "id": "PMID:9211849"
+                    },
+                    {
+                        "id": "PMID:26937389"
+                    },
+                    {
+                        "id": "PMID:17003072"
+                    },
+                    {
+                        "id": "PMID:9802331"
+                    },
+                    {
+                        "id": "PMID:23433426"
+                    },
+                    {
+                        "id": "PMID:25236789"
+                    },
+                    {
+                        "id": "PMID:12955717"
+                    },
+                    {
+                        "id": "PMID:22216111"
+                    },
+                    {
+                        "id": "PMID:19609713"
+                    },
+                    {
+                        "id": "PMID:3378364"
+                    },
+                    {
+                        "id": "PMID:16126423"
+                    },
+                    {
+                        "id": "PMID:12205649"
+                    },
+                    {
+                        "id": "PMID:9634529"
+                    },
+                    {
+                        "id": "PMID:11349231"
+                    },
+                    {
+                        "id": "PMID:12408188"
+                    },
+                    {
+                        "id": "PMID:23774949"
+                    },
+                    {
+                        "id": "PMID:23146215"
+                    },
+                    {
+                        "id": "PMID:22505584"
+                    },
+                    {
+                        "id": "PMID:12974729"
+                    },
+                    {
+                        "id": "PMID:22476655"
+                    },
+                    {
+                        "id": "PMID:22676771"
+                    },
+                    {
+                        "id": "PMID:26666848"
+                    },
+                    {
+                        "id": "PMID:16720792"
+                    },
+                    {
+                        "id": "PMID:23427322"
+                    },
+                    {
+                        "id": "PMID:10521297"
+                    },
+                    {
+                        "id": "PMID:19900398"
+                    },
+                    {
+                        "id": "PMID:24001525"
+                    },
+                    {
+                        "id": "PMID:19252935"
+                    },
+                    {
+                        "id": "PMID:12554680"
+                    },
+                    {
+                        "id": "PMID:19307542"
+                    },
+                    {
+                        "id": "PMID:10521290"
+                    },
+                    {
+                        "id": "PMID:16778374"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
             "source": 1,
             "target": 4,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 1,
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21937992"
+                    },
+                    {
+                        "id": "PMID:23773660"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 2,
             "target": 5,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
             "source": 2,
             "target": 6,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 2,
-            "target": 6,
-            "key": 1
-        },
-        {
-            "etype": "queried",
-            "data_source": "biolink",
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
             "source": 3,
             "target": 7,
             "key": 0
         },
         {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 3,
-            "target": 7,
-            "key": 1
-        },
-        {
-            "etype": "queried",
-            "data_source": "biolink",
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:22147658"
+                    },
+                    {
+                        "id": "PMID:17171570"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
             "source": 3,
             "target": 8,
-            "key": 0
-        },
-        {
-            "etype": "queried",
-            "data_source": "biolink",
-            "source": 3,
-            "target": 9,
             "key": 0
         }
     ]

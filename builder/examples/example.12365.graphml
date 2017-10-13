@@ -1,1864 +1,2898 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key attr.name="support" attr.type="string" for="edge" id="d5" />
-  <key attr.name="key" attr.type="long" for="edge" id="d4" />
-  <key attr.name="data_source" attr.type="string" for="edge" id="d3" />
-  <key attr.name="etype" attr.type="string" for="edge" id="d2" />
-  <key attr.name="layer" attr.type="string" for="node" id="d1" />
-  <key attr.name="node_type" attr.type="string" for="node" id="d0" />
+  <key attr.name="relation" attr.type="string" for="edge" id="d11" />
+  <key attr.name="publications" attr.type="string" for="edge" id="d10" />
+  <key attr.name="key" attr.type="long" for="edge" id="d9" />
+  <key attr.name="properties" attr.type="string" for="edge" id="d8" />
+  <key attr.name="edge_source" attr.type="string" for="edge" id="d7" />
+  <key attr.name="edge_type" attr.type="string" for="edge" id="d6" />
+  <key attr.name="mondo_identifiers" attr.type="string" for="node" id="d5" />
+  <key attr.name="label" attr.type="string" for="node" id="d4" />
+  <key attr.name="mesh_identifiers" attr.type="string" for="node" id="d3" />
+  <key attr.name="layer_number" attr.type="long" for="node" id="d2" />
+  <key attr.name="node_type" attr.type="string" for="node" id="d1" />
+  <key attr.name="identifier" attr.type="string" for="node" id="d0" />
   <graph edgedefault="directed">
     <node id="DOID:12365">
-      <data key="d0">D</data>
-      <data key="d1">0</data>
+      <data key="d0">DOID:12365</data>
+      <data key="d1">D</data>
+      <data key="d2">0</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:10718">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:10718</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:11935">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:11935</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:1663">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:1663</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:18674">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:18674</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:9020">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:9020</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:6391">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:6391</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:7562">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:7562</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:8487">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:8487</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:4704">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:4704</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:11766">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:11766</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:7523">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:7523</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:7427">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:7427</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:11027">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:11027</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:399">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:399</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:11740">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:11740</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:11763">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:11763</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:10637">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:10637</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:5992">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:5992</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:12811">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:12811</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:5438">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:5438</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:485">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:485</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:385">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:385</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:9912">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:9912</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:25902">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:25902</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:1606">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:1606</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:11892">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:11892</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:7461">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:7461</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:6106">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:6106</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:7873">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:7873</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:7419">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:7419</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:2861">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:2861</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:3616">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:3616</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:3377">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:3377</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:4976">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:4976</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:7421">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:7421</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:5962">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:5962</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:10585">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:10585</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:6025">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:6025</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:5141">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:5141</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:6001">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:6001</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:15598">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:15598</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:12825">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
-    </node>
-    <node id="HGNC:11850">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:12825</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:2625">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:2625</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:2622">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:2622</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:6307">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:6307</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:1753">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:1753</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:4832">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:4832</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:6014">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:6014</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:6016">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:6016</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:2867">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:2867</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:2753">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:2753</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:12663">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:12663</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:5237">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:5237</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:6460">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:6460</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:10524">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:10524</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:10593">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
-    </node>
-    <node id="HGNC:6018">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:10593</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:10588">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:10588</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:12705">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:12705</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:15464">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:15464</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:5344">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
+      <data key="d0">HGNC:5344</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <node id="HGNC:4827">
-      <data key="d0">G</data>
-      <data key="d1">1</data>
-    </node>
-    <node id="DOID:3310">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:13810">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_300942">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_308230">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_608404">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:9953">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_266200">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_603546">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050745">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0060058">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:1040">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050747">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0060060">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_254500">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0060901">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050873">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0060306">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:2373">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:4997">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_253250">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:1858">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_71529">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_227535">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_124000">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_540000">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/MESH_D029242">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:12971">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_611590">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_166900">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:14219">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_99875">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_209300">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:11612">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:12241">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_530000">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050765">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_59306">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:13515">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_300635">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:10588">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_2512">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:14448">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_1646">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_236670">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050588">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:9279">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_256000">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:3652">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_545000">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050523">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_304790">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_207600">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/MESH_D030401">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_99845">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_500008">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_580000">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_268200">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_613839">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_68367">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_270150">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_219700">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_253270">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_612567">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_277900">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0060170">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:308">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_141500">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_569">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_606369">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_613722">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:9452">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_190685">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:2352">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_603903">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_465508">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_109650">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_608902">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050756">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:13189">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0080147">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_602089">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:12721">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_280615">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_263750">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_616034">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:3146">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:11727">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_158000">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_133200">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_107480">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_113900">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_108770">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050451">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_272120">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:699">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_148000">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://www.orpha.net/ORDO/Orphanet_160">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0060169">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050709">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:0050562">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_607745">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="http://purl.obolibrary.org/obo/OMIM_256500">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:10241">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:5379">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
-    </node>
-    <node id="DOID:2860">
-      <data key="d0">GC</data>
-      <data key="d1">2</data>
+      <data key="d0">HGNC:4827</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="atopic dermatitis (DOID:3310)">
+      <data key="d0">DOID:3310</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">atopic dermatitis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hypercholesterolemia (MESH:D006937)">
+      <data key="d0">MESH:D006937</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hypercholesterolemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="X-linked acrogigantism due to Xq26 microduplication (OMIM:300942)">
+      <data key="d0">OMIM:300942</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">X-linked acrogigantism due to Xq26 microduplication</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Immunodeficiency with hyper IgM type 1 (OMIM:308230)">
+      <data key="d0">OMIM:308230</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Immunodeficiency with hyper IgM type 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Platelet glycoprotein IV deficiency (OMIM:608404)">
+      <data key="d0">OMIM:608404</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Platelet glycoprotein IV deficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Acute Undifferentiated Leukemia (OMIM:601626)">
+      <data key="d0">OMIM:601626</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Acute Undifferentiated Leukemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Pyruvate kinase deficiency of red cells (OMIM:266200)">
+      <data key="d0">OMIM:266200</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Pyruvate kinase deficiency of red cells</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Spondyloepimetaphyseal Dysplasia With Joint Laxity, Type 2 (OMIM:603546)">
+      <data key="d0">OMIM:603546</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Spondyloepimetaphyseal Dysplasia With Joint Laxity, Type 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="lymphoma (DOID:0060058)">
+      <data key="d0">DOID:0060058</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">lymphoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Myeloma, Multiple (OMIM:254500)">
+      <data key="d0">OMIM:254500</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Myeloma, Multiple</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="follicular lymphoma (DOID:0050873)">
+      <data key="d0">DOID:0050873</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">follicular lymphoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Malignant lymphoma, non-Hodgkin (OMIM:605027)">
+      <data key="d0">OMIM:605027</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Malignant lymphoma, non-Hodgkin</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Waldenstroem's macroglobulinemia (DOID:0060901)">
+      <data key="d0">DOID:0060901</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Waldenstroem's macroglobulinemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="WM1 (OMIM:153600)">
+      <data key="d0">OMIM:153600</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">WM1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="diffuse large B-cell lymphoma (DOID:0050745)">
+      <data key="d0">DOID:0050745</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">diffuse large B-cell lymphoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Chronic lymphocytic leukemia (OMIM:151400)">
+      <data key="d0">OMIM:151400</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Chronic lymphocytic leukemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Meier-Gorlin syndrome 1 (OMIM:224690)">
+      <data key="d0">OMIM:224690</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Meier-Gorlin syndrome 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Meier-Gorlin syndrome (DOID:0060306)">
+      <data key="d0">DOID:0060306</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Meier-Gorlin syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="hereditary elliptocytosis (DOID:2373)">
+      <data key="d0">DOID:2373</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">hereditary elliptocytosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Muscular Dystrophy, Duchenne Type (OMIM:310200)">
+      <data key="d0">OMIM:310200</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Muscular Dystrophy, Duchenne Type</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="dry eye syndrome (DOID:10140)">
+      <data key="d0">DOID:10140</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">dry eye syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Camurati-Engelmann disease (DOID:4997)">
+      <data key="d0">DOID:4997</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Camurati-Engelmann disease</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="McCune Albright syndrome (DOID:1858)">
+      <data key="d0">DOID:1858</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">McCune Albright syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Mulibrey nanism syndrome (OMIM:253250)">
+      <data key="d0">OMIM:253250</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Mulibrey nanism syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Obesity (OMIM:601665)">
+      <data key="d0">OMIM:601665</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Obesity</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Familial cancer of breast (OMIM:114480)">
+      <data key="d0">OMIM:114480</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Familial cancer of breast</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Isolated CoQ-cytochrome C reductase deficiency (Orphanet:1460)">
+      <data key="d0">Orphanet:1460</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Isolated CoQ-cytochrome C reductase deficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)">
+      <data key="d0">OMIM:540000</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Leber's optic atrophy (OMIM:535000)">
+      <data key="d0">OMIM:535000</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Leber's optic atrophy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="hereditary spherocytosis (DOID:12971)">
+      <data key="d0">DOID:12971</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">hereditary spherocytosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Ovalocytosis, Southeast Asian (OMIM:166900)">
+      <data key="d0">OMIM:166900</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Ovalocytosis, Southeast Asian</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="hereditary spherocytosis type 4 (OMIM:612653)">
+      <data key="d0">OMIM:612653</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">hereditary spherocytosis type 4</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Autosomal dominant distal renal tubular acidosis (OMIM:179800)">
+      <data key="d0">OMIM:179800</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Autosomal dominant distal renal tubular acidosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Renal Tubular Acidosis, Distal, With Hemolytic Anemia (OMIM:611590)">
+      <data key="d0">OMIM:611590</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Renal Tubular Acidosis, Distal, With Hemolytic Anemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Ehlers-Danlos Syndrome, Type Vii, Autosomal Dominant (OMIM:130060)">
+      <data key="d0">OMIM:130060</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Ehlers-Danlos Syndrome, Type Vii, Autosomal Dominant</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Atransferrinemia (OMIM:209300)">
+      <data key="d0">OMIM:209300</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Atransferrinemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="non-Hodgkin lymphoma (DOID:0060060)">
+      <data key="d0">DOID:0060060</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">non-Hodgkin lymphoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="beta thalassemia (DOID:12241)">
+      <data key="d0">DOID:12241</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">beta thalassemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="chronic lymphocytic leukemia (DOID:1040)">
+      <data key="d0">DOID:1040</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">chronic lymphocytic leukemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="polycystic ovary syndrome (DOID:11612)">
+      <data key="d0">DOID:11612</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">polycystic ovary syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="mitochondrial myopathy (DOID:699)">
+      <data key="d0">DOID:699</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">mitochondrial myopathy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="chronic progressive external ophthalmoplegia (DOID:12558)">
+      <data key="d0">DOID:12558</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">chronic progressive external ophthalmoplegia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="McLeod neuroacanthocytosis syndrome (OMIM:300842)">
+      <data key="d0">OMIM:300842</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">McLeod neuroacanthocytosis syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="neuroacanthocytosis (DOID:0050765)">
+      <data key="d0">DOID:0050765</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">neuroacanthocytosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Lymphoproliferative syndrome 1, X-linked (OMIM:308240)">
+      <data key="d0">OMIM:308240</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Lymphoproliferative syndrome 1, X-linked</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="adrenoleukodystrophy (DOID:10588)">
+      <data key="d0">DOID:10588</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">adrenoleukodystrophy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="adult T-cell leukemia (DOID:0050523)">
+      <data key="d0">DOID:0050523</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">adult T-cell leukemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Tuberous sclerosis 2 (OMIM:613254)">
+      <data key="d0">OMIM:613254</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Tuberous sclerosis 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Microcephaly 1, Primary, Autosomal Recessive (OMIM:251200)">
+      <data key="d0">OMIM:251200</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Microcephaly 1, Primary, Autosomal Recessive</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="46,XY disorder of sex development due to testicular 17,20-desmolase deficiency (OMIM:614279)">
+      <data key="d0">OMIM:614279</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">46,XY disorder of sex development due to testicular 17,20-desmolase deficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Spermatogenic Failure, Y-Linked, 2 (OMIM:415000)">
+      <data key="d0">OMIM:415000</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Spermatogenic Failure, Y-Linked, 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 8 (OMIM:614830)">
+      <data key="d0">OMIM:614830</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 8</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Muscular Dystrophy-Dystroglycanopathy (Congenital With Brain and Eye Anomalies), Type A, 1 (OMIM:236670)">
+      <data key="d0">OMIM:236670</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Muscular Dystrophy-Dystroglycanopathy (Congenital With Brain and Eye Anomalies), Type A, 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Psoriatic arthritis, susceptibility to (OMIM:607507)">
+      <data key="d0">OMIM:607507</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Psoriatic arthritis, susceptibility to</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Myoclonus with epilepsy with ragged red fibers (OMIM:545000)">
+      <data key="d0">OMIM:545000</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Myoclonus with epilepsy with ragged red fibers</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Leigh syndrome (OMIM:256000)">
+      <data key="d0">OMIM:256000</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Leigh syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Maternally-inherited Leigh syndrome (Orphanet:255210)">
+      <data key="d0">Orphanet:255210</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Maternally-inherited Leigh syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Immunodysregulation, Polyendocrinopathy, and Enteropathy, X-Linked (OMIM:304790)">
+      <data key="d0">OMIM:304790</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Immunodysregulation, Polyendocrinopathy, and Enteropathy, X-Linked</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Takayasu's arteritis (OMIM:207600)">
+      <data key="d0">OMIM:207600</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Takayasu's arteritis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="psoriatic arthritis (DOID:9008)">
+      <data key="d0">DOID:9008</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">psoriatic arthritis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Mitochondrial non-syndromic sensorineural deafness (OMIM:500008)">
+      <data key="d0">OMIM:500008</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Mitochondrial non-syndromic sensorineural deafness</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="cytochrome-c oxidase deficiency disease (OMIM:220110)">
+      <data key="d0">OMIM:220110</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">cytochrome-c oxidase deficiency disease</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Myoglobinuria, Recurrent (OMIM:550500)">
+      <data key="d0">OMIM:550500</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Myoglobinuria, Recurrent</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Deafness, Aminoglycoside-Induced (OMIM:580000)">
+      <data key="d0">OMIM:580000</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Deafness, Aminoglycoside-Induced</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Genetic recurrent myoglobinuria (Orphanet:99845)">
+      <data key="d0">Orphanet:99845</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Genetic recurrent myoglobinuria</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Megaloblastic anemia due to dihydrofolate reductase deficiency (OMIM:613839)">
+      <data key="d0">OMIM:613839</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Megaloblastic anemia due to dihydrofolate reductase deficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Cystic Fibrosis (OMIM:219700)">
+      <data key="d0">OMIM:219700</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Cystic Fibrosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Sjogren's syndrome (OMIM:270150)">
+      <data key="d0">OMIM:270150</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Sjogren's syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Elliptocytosis 1 (OMIM:611804)">
+      <data key="d0">OMIM:611804</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Elliptocytosis 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Holocarboxylase synthetase deficiency (OMIM:253270)">
+      <data key="d0">OMIM:253270</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Holocarboxylase synthetase deficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Wilson disease (OMIM:277900)">
+      <data key="d0">OMIM:277900</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Wilson disease</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Familial or sporadic hemiplegic migraine (Orphanet:569)">
+      <data key="d0">Orphanet:569</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Familial or sporadic hemiplegic migraine</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Lennox-Gastaut syndrome (OMIM:606369)">
+      <data key="d0">OMIM:606369</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Lennox-Gastaut syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Migraine, Familial Hemiplegic, 3 (OMIM:609634)">
+      <data key="d0">OMIM:609634</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Migraine, Familial Hemiplegic, 3</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Generalized Epilepsy With Febrile Seizures Plus, Type 2 (OMIM:604403)">
+      <data key="d0">OMIM:604403</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Generalized Epilepsy With Febrile Seizures Plus, Type 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Malignant migrating partial seizures of infancy (Orphanet:293181)">
+      <data key="d0">Orphanet:293181</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Malignant migrating partial seizures of infancy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)">
+      <data key="d0">OMIM:607208</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Epileptic Encephalopathy, Early Infantile, 6</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="generalized epilepsy with febrile seizures plus (DOID:0060170)">
+      <data key="d0">DOID:0060170</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">generalized epilepsy with febrile seizures plus</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="fatty liver disease (DOID:9452)">
+      <data key="d0">DOID:9452</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">fatty liver disease</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Behcet's syndrome (OMIM:109650)">
+      <data key="d0">OMIM:109650</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Behcet's syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="hemochromatosis (DOID:2352)">
+      <data key="d0">DOID:2352</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">hemochromatosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d0">OMIM:603903</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Sickle Cell Anemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hemochromatosis type 1 (OMIM:235200)">
+      <data key="d0">OMIM:235200</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hemochromatosis type 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hemochromatosis type 2 (Orphanet:79230)">
+      <data key="d0">Orphanet:79230</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hemochromatosis type 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hemochromatosis, Type 2B (OMIM:613313)">
+      <data key="d0">OMIM:613313</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hemochromatosis, Type 2B</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Drug Metabolism, Poor, Cyp2D6-Related (OMIM:608902)">
+      <data key="d0">OMIM:608902</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Drug Metabolism, Poor, Cyp2D6-Related</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="neuronal ceroid lipofuscinosis 2 (OMIM:204500)">
+      <data key="d0">OMIM:204500</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">neuronal ceroid lipofuscinosis 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="lymphoblastic lymphoma (DOID:0080147)">
+      <data key="d0">DOID:0080147</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">lymphoblastic lymphoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="gout (EFO:0004274)">
+      <data key="d0">EFO:0004274</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">gout</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hemangioma, capillary infantile (OMIM:602089)">
+      <data key="d0">OMIM:602089</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hemangioma, capillary infantile</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Osteochondrodysplasias (MESH:D010009)">
+      <data key="d0">MESH:D010009</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Osteochondrodysplasias</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="multiple myeloma (EFO:0001378)">
+      <data key="d0">EFO:0001378</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">multiple myeloma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Cyanosis, transient neonatal (OMIM:613977)">
+      <data key="d0">OMIM:613977</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Cyanosis, transient neonatal</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Postaxial Acrofacial Dysostosis (OMIM:263750)">
+      <data key="d0">OMIM:263750</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Postaxial Acrofacial Dysostosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Lipid Metabolism, Inborn Errors (MESH:D008052)">
+      <data key="d0">MESH:D008052</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Lipid Metabolism, Inborn Errors</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="2,4-Dienoyl-CoA reductase deficiency (OMIM:616034)">
+      <data key="d0">OMIM:616034</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">2,4-Dienoyl-CoA reductase deficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="facioscapulohumeral muscular dystrophy (DOID:11727)">
+      <data key="d0">DOID:11727</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">facioscapulohumeral muscular dystrophy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Monilethrix (OMIM:158000)">
+      <data key="d0">OMIM:158000</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Monilethrix</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Progressive symmetric erythrokeratodermia (Orphanet:316)">
+      <data key="d0">Orphanet:316</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Progressive symmetric erythrokeratodermia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Townes syndrome (OMIM:107480)">
+      <data key="d0">OMIM:107480</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Townes syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Atrial standstill (Orphanet:1344)">
+      <data key="d0">Orphanet:1344</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Atrial standstill</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Brugada syndrome (DOID:0050451)">
+      <data key="d0">DOID:0050451</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Brugada syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Familial progressive cardiac conduction defect (OMIM:113900)">
+      <data key="d0">OMIM:113900</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Familial progressive cardiac conduction defect</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Brugada Syndrome 1 (OMIM:601144)">
+      <data key="d0">OMIM:601144</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Brugada Syndrome 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Ohtahara syndrome (DOID:0050709)">
+      <data key="d0">DOID:0050709</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Ohtahara syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Benign familial neonatal-infantile seizures (OMIM:607745)">
+      <data key="d0">OMIM:607745</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Benign familial neonatal-infantile seizures</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Epileptic Encephalopathy, Early Infantile, 11 (OMIM:613721)">
+      <data key="d0">OMIM:613721</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Epileptic Encephalopathy, Early Infantile, 11</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="benign familial infantile epilepsy (DOID:0060169)">
+      <data key="d0">DOID:0060169</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">benign familial infantile epilepsy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="West syndrome (DOID:0050562)">
+      <data key="d0">DOID:0050562</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">West syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Benign familial neonatal-infantile seizures (Orphanet:140927)">
+      <data key="d0">Orphanet:140927</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Benign familial neonatal-infantile seizures</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Netherton syndrome (OMIM:256500)">
+      <data key="d0">OMIM:256500</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Netherton syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Beta-Thalassemia (OMIM:613985)">
+      <data key="d0">OMIM:613985</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Beta-Thalassemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="alpha Thalassemia (OMIM:604131)">
+      <data key="d0">OMIM:604131</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">alpha Thalassemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Beta-Thalassemia, Dominant Inclusion Body Type (OMIM:603902)">
+      <data key="d0">OMIM:603902</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Beta-Thalassemia, Dominant Inclusion Body Type</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HBD (OMIM:146350)">
+      <data key="d0">OMIM:146350</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">HBD</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="hemoglobinopathy (DOID:2860)">
+      <data key="d0">DOID:2860</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">hemoglobinopathy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="hemoglobin E disease (DOID:5379)">
+      <data key="d0">DOID:5379</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">hemoglobin E disease</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
     </node>
     <edge source="DOID:12365" target="HGNC:10718">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:11935">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:1663">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:18674">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:9020">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:6391">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:7562">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:8487">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:4704">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:11766">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:7523">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:7427">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:11027">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:399">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:11740">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:11763">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:10637">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:5992">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:12811">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:5438">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:485">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:385">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:9912">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:25902">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:1606">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:11892">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:7461">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:6106">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:7873">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:7419">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:2861">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:3616">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:3377">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:4976">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:7421">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:5962">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:10585">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:6025">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:5141">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:6001">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:15598">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:12825">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="HGNC:11850">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:2625">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:2622">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:6307">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:1753">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:4832">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:6014">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:6016">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:2867">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:2753">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:12663">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:5237">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:6460">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:10524">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:10593">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="HGNC:6018">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:10588">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:12705">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:15464">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:5344">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:12365" target="HGNC:4827">
-      <data key="d2">queried</data>
-      <data key="d3">pharos</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:2373">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20150808, 'pmid': 26047685}, {'date': 20090701, 'pmid': 19566055}, {'date': 20061013, 'pmid': 17038679}, {'date': 20060828, 'pmid': 16797741}, {'date': 20041022, 'pmid': 15265796, 'title': 'Ability of Plasmodium falciparum to invade Southeast Asian ovalocytes varies between parasite lines.'}, {'date': 20031225, 'pmid': 14695625, 'title': 'Glycophorin C (Gerbich antigen blood group) and band 3 polymorphisms in two malaria holoendemic regions of Papua New Guinea.'}, {'date': 20021007, 'pmid': 12367581}, {'date': 20020716, 'pmid': 12118458}, {'date': 20020218, 'pmid': 11848616, 'title': 'Rapid, sensitive diagnosis of hemolytic anemia using antihemoglobin antibody in hypotonic solution.'}, {'date': 20000407, 'pmid': 10711755, 'title': 'Clinical potential of in vitro measured red cell deformability, a myth?'}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:0060058">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20070726, 'pmid': 17652540}, {'date': 20040916, 'pmid': 15370255, 'title': 'Bcl-2 and immunoglobulin gene rearrangements in patients with malaria related chronic splenomegaly.'}, {'date': 20040706, 'pmid': 15236613, 'title': 'Hepatic pathology in AIDS: a pathological study from Mumbai, India.'}, {'date': 19980205, 'pmid': 9449730}, {'date': 19980205, 'pmid': 9447836}, {'date': 19980106, 'pmid': 9353999}, {'date': 19961112, 'pmid': 8926718}, {'date': 19961030, 'pmid': 8730307, 'title': "Immunoglobulin gene polymerase chain reaction to distinguish hyperreactive malarial splenomegaly from 'African' chronic lymphocytic leukaemia and splenic lymphoma."}, {'date': 19940222, 'title': 'Malaria in splenectomized patients.', 'pmid': 8286651}, {'date': 19900514, 'pmid': 2323841, 'title': "The distribution of non-Burkitt, non-Hodgkin's lymphomas in Uganda in relation to malarial endemicity."}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="http://www.orpha.net/ORDO/Orphanet_68367">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 19930923, 'pmid': 8356459, 'title': 'Lipoproteins and prostacyclin stability.'}, {'date': 19730702, 'pmid': 4701763, 'title': '[Hemolytic anemias--clinical aspects and therapy].'}, {'date': 19681209, 'pmid': 5686480, 'title': 'Methemoglobinemia provoked by malarial chemoprophylaxis in Vietnam.'}, {'date': 19650501, 'pmid': 14254377, 'title': 'DO ADVANCES IN MEDICINE LEAD TO GENETIC DETERIORATION?'}, {'date': 19621201, 'pmid': 13879181}, {'date': 19621201, 'pmid': 13862241, 'title': '[Deficiency of the enzyme glucose-6-phosphate dehydrogenase, favism, malario-resistance and the pathogenesis of certain types of jaundice].'}, {'date': 19611201, 'pmid': 13705321}, {'date': 20111121, 'pmid': 22099434}, {'date': 20031222, 'pmid': 14686548}, {'date': 19940505, 'pmid': 8146132, 'title': 'Impact of malaria on genetic polymorphism and genetic diseases in Africans and African Americans.'}, {'date': 19850916, 'pmid': 4026144, 'title': '[Profile of convulsions in infants and young children in Brazzaville (Congo)].'}, {'date': 19780814, 'pmid': 207479, 'title': 'Neonatal haematological abnormalities associated with maternal disease.'}, {'date': 19760802, 'pmid': 5668, 'title': "[Old and new dangers of blood transfusion (author's transl)]."}, {'date': 19750818, 'pmid': 166446, 'title': 'Hematologic clues to systmeic disease in childhood.'}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="http://purl.obolibrary.org/obo/OMIM_613839">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20080507, 'pmid': 18460245}, {'date': 20071206, 'pmid': 18057166}, {'date': 20060203, 'pmid': 16454396, 'title': 'The aetiology of severe anaemia among antenatal patients of the Port Moresby General Hospital.'}, {'date': 19991020, 'pmid': 10491551, 'title': 'Chronic myeloid leukemia complicated by megaloblastic anemia and malaria: An unusual association confounding the assessment of the phase of CML.'}, {'date': 19910726, 'pmid': 2098429}, {'date': 19820621, 'pmid': 7041264}, {'date': 19820621, 'pmid': 6803362, 'title': 'Recent work concerning anemia in the tropics.'}, {'date': 19811122, 'pmid': 7281211}, {'date': 19770129, 'pmid': 63088}, {'date': 19760706, 'pmid': 1264943}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="http://purl.obolibrary.org/obo/OMIM_254500">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20010307, 'pmid': 11234288, 'title': '[Illness after travel not always due to exotic disease].'}, {'date': 20000619, 'pmid': 10767050}, {'date': 19980106, 'pmid': 9353999}, {'date': 19700810, 'pmid': 4193093}, {'date': 19641001, 'pmid': 14160603}, {'date': 19640201, 'pmid': 14062510}, {'date': 19631201, 'title': 'The cellular elements of the blood.', 'pmid': 13973706}, {'date': 19611201, 'pmid': 13684498}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:9279">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20100311, 'pmid': 20218135, 'title': 'Plasma homocysteine levels in cardiovascular disease, malaria and protein-energy malnutrition in Sudan.'}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="http://purl.obolibrary.org/obo/OMIM_612567">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20110614, 'pmid': 21668307, 'title': 'Conference Scene: T-cell subset phenotype and function.'}, {'date': 20020522, 'pmid': 12022706, 'title': 'Low-molecular-weight protein tyrosine phosphatase and human disease: in search of biochemical mechanisms.'}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:12971">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20120622, 'pmid': 22723917, 'title': 'A Novel ENU-Mutation in Ankyrin-1 Disrupts Malaria Parasite Maturation in Red Blood Cells of Mice'}, {'date': 20120607, 'pmid': 22674320}, {'date': 20120607, 'pmid': 22674306}, {'date': 19950818, 'pmid': 7612181, 'title': 'Genetic disorders of the red cell membrane.'}, {'date': 19901211, 'pmid': 2233937, 'title': 'Red-cell cytoskeletal abnormalities--implications for malaria.'}, {'date': 19800417, 'pmid': 394413}, {'date': 19740507, 'pmid': 4593214, 'title': 'Splenectomy in hereditary spherocytosis: effect on course of relapsing vivax malaria.'}, {'date': 19720418, 'pmid': 4258090, 'title': 'Pathological alterations of cation movements in red blood cells.'}, {'date': 19660615, 'pmid': 5907765, 'title': 'Renal hemosiderosis (blue kidney) in patients with valvular heart disease.'}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:13189">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20140521, 'pmid': 24378761, 'title': 'Hyperuricaemia in the Pacific: why the elevated serum urate levels?'}, {'date': 19750707, 'pmid': 4617210}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="http://purl.obolibrary.org/obo/OMIM_166900">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20150808, 'pmid': 26047685}, {'date': 20090701, 'pmid': 19566055}, {'date': 20061013, 'pmid': 17038679}, {'date': 20060828, 'pmid': 16797741}, {'date': 20041022, 'pmid': 15265796, 'title': 'Ability of Plasmodium falciparum to invade Southeast Asian ovalocytes varies between parasite lines.'}, {'date': 20031225, 'pmid': 14695625, 'title': 'Glycophorin C (Gerbich antigen blood group) and band 3 polymorphisms in two malaria holoendemic regions of Papua New Guinea.'}, {'date': 20021007, 'pmid': 12367581}, {'date': 20020716, 'pmid': 12118458}, {'date': 20020218, 'pmid': 11848616, 'title': 'Rapid, sensitive diagnosis of hemolytic anemia using antihemoglobin antibody in hypotonic solution.'}, {'date': 20000407, 'pmid': 10711755, 'title': 'Clinical potential of in vitro measured red cell deformability, a myth?'}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="http://purl.obolibrary.org/obo/OMIM_148000">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20151016, 'pmid': 26181812}, {'date': 20130513, 'pmid': 23403859, 'title': 'Risk factors for seropositivity to Kaposi sarcoma-associated herpesvirus among children in Uganda.'}, {'date': 20110117, 'pmid': 21238829}, {'date': 20061119, 'pmid': 17097396}, {'date': 20031203, 'pmid': 14651663, 'title': "Reduced seroprevalence of Kaposi's sarcoma-associated herpesvirus (KSHV), human herpesvirus 8 (HHV8), related to suppression of Anopheles density in Italy."}, {'date': 20030218, 'pmid': 12590333}, {'date': 19980108, 'pmid': 9400951, 'title': 'The role of occupation and a past history of malaria in the etiology of classic Kaposis sarcoma: a case-control study in north-east Sardinia.'}, {'date': 19971105, 'pmid': 9378178}, {'date': 19961024, 'pmid': 8804445}, {'date': 19940224, 'title': "Kaposi's sarcoma and volcanic soils.", 'pmid': 7904680}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:0050745">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 19730619, 'pmid': 4572823, 'title': 'Introduction: Modification of immunity and carcinogenesis.'}, {'date': 19680411, 'title': "The epidemiology of Burkitt's tumor.", 'pmid': 4295479}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:3146">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 19720418, 'pmid': 4258090, 'title': 'Pathological alterations of cation movements in red blood cells.'}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="http://purl.obolibrary.org/obo/OMIM_603903">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20151204, 'pmid': 26633928}, {'date': 20150613, 'pmid': 26068416}, {'date': 20150513, 'pmid': 25965586}, {'date': 20131014, 'pmid': 24062524, 'title': 'Prevalence and predictors of hypoxaemia in respiratory and non-respiratory primary diagnoses among emergently ill children at a tertiary hospital in south western Nigeria.'}, {'date': 20121204, 'pmid': 23208475, 'title': 'Clinical features of sickle cell anaemia in northern nigerian children.'}, {'date': 20090518, 'pmid': 19445751}, {'date': 19621201, 'pmid': 13920874}, {'date': 20150724, 'pmid': 25701866, 'title': 'A Randomized Trial to Compare the Safety, Tolerability, and Effectiveness of 3 Antimalarial Regimens for the Prevention of Malaria in Nigerian Patients With Sickle Cell Disease'}, {'date': 20141216, 'pmid': 25511352, 'title': 'Sickle cell disease clinical phenotypes in children from South-Western, Nigeria.'}, {'date': 20141216, 'pmid': 25510137, 'title': '[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease].'}, {'date': 20060323, 'pmid': 16553599, 'title': 'Mixed Plasmodium falciparum-Plasmodium malariae infection and hemoglobin SC disease: a case report.'}, {'date': 19921112, 'pmid': 1383671, 'title': '[Incidence of malaria and S hemoglobinopathy in the pediatric hospital milieu in Bamako, Mali].'}, {'date': 19831220, 'pmid': 6313809}, {'date': 19841025, 'pmid': 6472160}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:10241">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 19631201, 'pmid': 14021010, 'title': 'Three inherited red-cell abnormalities in a district of Greece. Thalassaemia, sickling, and glucose-6-phosphate-dehydrogenase deficiency.'}, {'date': 19581201, 'pmid': 13460008}, {'date': 20141216, 'pmid': 25510137, 'title': '[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease].'}, {'date': 20140214, 'pmid': 24316370}, {'date': 20131217, 'pmid': 22973867, 'title': 'The burden and consequences of inherited blood disorders among young children in western Kenya.'}, {'date': 20111226, 'pmid': 22199098, 'title': 'Sickle cell disease in Middle East Arab countries'}, {'date': 20111207, 'pmid': 22145364}, {'date': 20101115, 'pmid': 21075278, 'title': 'The population genetics and dynamics of the thalassemias.'}, {'date': 20100920, 'pmid': 20655368}, {'date': 20091218, 'pmid': 19955437}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:2860">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20150728, 'pmid': 26215182, 'title': 'The influence of host genetics on erythrocytes and malaria infection: is there therapeutic potential?'}, {'date': 20150613, 'pmid': 26068416}, {'date': 20150428, 'pmid': 25915902, 'title': 'G6PD Deficiency and Hemoglobinopathies: Molecular Epidemiological Characteristics and Healthy Effects on Malaria Endemic Bioko Island, Equatorial Guinea.'}, {'date': 19650901, 'title': 'HAEMOGLOBINOPATHY AND MALARIA.', 'pmid': 14301734}, {'date': 20140812, 'pmid': 24828305, 'title': 'Out with the bad and in with the good; red cell exchange, white cell reduction, and platelet reduction.'}, {'date': 20130619, 'pmid': 23568771, 'title': 'Online biomedical resources for malaria-related red cell disorders.'}, {'date': 20130520, 'pmid': 23587617, 'title': '[From donor to recipient: transfusion chain specificities in the French ultra-marine areas].'}, {'date': 20120906, 'pmid': 22951448, 'title': 'World distribution, population genetics, and health burden of the hemoglobinopathies.'}, {'date': 20120528, 'pmid': 22445353, 'title': 'Balancing act: haemoglobinopathies and malaria.'}, {'date': 20120528, 'pmid': 22445352, 'title': 'Haemoglobinopathies and the clinical epidemiology of malaria: a systematic review and meta-analysis.'}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="DOID:12365" target="DOID:1040">
-      <data key="d2">support</data>
-      <data key="d3">chemotext</data>
-      <data key="d5">[{'date': 20110311, 'pmid': 21391831}, {'date': 19961030, 'pmid': 8730307, 'title': "Immunoglobulin gene polymerase chain reaction to distinguish hyperreactive malarial splenomegaly from 'African' chronic lymphocytic leukaemia and splenic lymphoma."}, {'date': 19910405, 'pmid': 1671888}]</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10718" target="DOID:3310">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10718" target="DOID:13810">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11935" target="http://purl.obolibrary.org/obo/OMIM_300942">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11935" target="http://purl.obolibrary.org/obo/OMIM_308230">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:1663" target="http://purl.obolibrary.org/obo/OMIM_608404">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:18674" target="DOID:9953">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:9020" target="http://purl.obolibrary.org/obo/OMIM_266200">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6391" target="http://purl.obolibrary.org/obo/OMIM_603546">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7562" target="DOID:0050745">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7562" target="DOID:0060058">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7562" target="DOID:1040">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7562" target="DOID:0050747">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7562" target="DOID:0060060">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7562" target="http://purl.obolibrary.org/obo/OMIM_254500">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7562" target="DOID:0060901">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7562" target="DOID:0050873">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:8487" target="DOID:0060306">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:8487" target="DOID:0060306">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">1</data>
-    </edge>
-    <edge source="HGNC:4704" target="DOID:2373">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11766" target="DOID:4997">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7523" target="http://purl.obolibrary.org/obo/OMIM_253250">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7523" target="DOID:1858">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7427" target="http://www.orpha.net/ORDO/Orphanet_71529">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7427" target="http://www.orpha.net/ORDO/Orphanet_227535">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7427" target="http://purl.obolibrary.org/obo/OMIM_124000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7427" target="http://purl.obolibrary.org/obo/OMIM_540000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7427" target="http://purl.obolibrary.org/obo/MESH_D029242">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11027" target="DOID:12971">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11027" target="DOID:12971">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">1</data>
-    </edge>
-    <edge source="HGNC:11027" target="http://purl.obolibrary.org/obo/OMIM_611590">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11027" target="http://purl.obolibrary.org/obo/OMIM_166900">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11027" target="DOID:14219">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11027" target="DOID:2373">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:399" target="http://www.orpha.net/ORDO/Orphanet_99875">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11740" target="http://purl.obolibrary.org/obo/OMIM_209300">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11763" target="DOID:11612">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11763" target="DOID:1040">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11763" target="DOID:0060060">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11763" target="DOID:12241">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10637" target="DOID:3310">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5992" target="http://purl.obolibrary.org/obo/OMIM_530000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:12811" target="DOID:0050765">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:12811" target="http://www.orpha.net/ORDO/Orphanet_59306">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5438" target="DOID:13515">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5438" target="http://purl.obolibrary.org/obo/OMIM_300635">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5438" target="DOID:10588">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:485" target="http://www.orpha.net/ORDO/Orphanet_2512">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:385" target="DOID:11612">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:385" target="DOID:14448">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:9912" target="http://www.orpha.net/ORDO/Orphanet_1646">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:25902" target="http://purl.obolibrary.org/obo/OMIM_236670">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:25902" target="DOID:0050588">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:1606" target="DOID:3310">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11892" target="DOID:9279">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7461" target="http://purl.obolibrary.org/obo/OMIM_256000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7461" target="http://purl.obolibrary.org/obo/OMIM_540000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7461" target="DOID:3652">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7461" target="http://purl.obolibrary.org/obo/MESH_D029242">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7461" target="http://purl.obolibrary.org/obo/OMIM_545000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6106" target="DOID:0050523">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6106" target="DOID:11612">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6106" target="http://purl.obolibrary.org/obo/OMIM_304790">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7873" target="http://purl.obolibrary.org/obo/OMIM_207600">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7419" target="http://purl.obolibrary.org/obo/MESH_D030401">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7419" target="http://www.orpha.net/ORDO/Orphanet_99845">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7419" target="http://purl.obolibrary.org/obo/OMIM_500008">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7419" target="http://purl.obolibrary.org/obo/OMIM_580000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7419" target="http://purl.obolibrary.org/obo/OMIM_268200">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7419" target="http://purl.obolibrary.org/obo/OMIM_540000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2861" target="http://purl.obolibrary.org/obo/OMIM_613839">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2861" target="http://www.orpha.net/ORDO/Orphanet_68367">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:3616" target="http://purl.obolibrary.org/obo/OMIM_270150">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:3616" target="http://purl.obolibrary.org/obo/OMIM_219700">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:3377" target="DOID:2373">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:3377" target="DOID:2373">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">1</data>
-    </edge>
-    <edge source="HGNC:4976" target="http://purl.obolibrary.org/obo/OMIM_253270">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7421" target="http://purl.obolibrary.org/obo/MESH_D030401">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:7421" target="http://purl.obolibrary.org/obo/OMIM_540000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5962" target="http://purl.obolibrary.org/obo/OMIM_612567">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5962" target="http://purl.obolibrary.org/obo/OMIM_277900">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5962" target="DOID:3310">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5962" target="DOID:0050523">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10585" target="DOID:0060170">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10585" target="DOID:0060170">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">1</data>
-    </edge>
-    <edge source="HGNC:10585" target="DOID:308">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10585" target="http://purl.obolibrary.org/obo/OMIM_141500">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10585" target="http://www.orpha.net/ORDO/Orphanet_569">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10585" target="http://purl.obolibrary.org/obo/OMIM_606369">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10585" target="http://purl.obolibrary.org/obo/OMIM_613722">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6025" target="DOID:9452">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6025" target="http://purl.obolibrary.org/obo/OMIM_190685">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6025" target="http://purl.obolibrary.org/obo/OMIM_277900">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5141" target="DOID:2352">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5141" target="http://purl.obolibrary.org/obo/OMIM_603903">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6001" target="DOID:0050523">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:15598" target="DOID:12241">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:15598" target="http://www.orpha.net/ORDO/Orphanet_465508">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:15598" target="DOID:2352">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:15598" target="DOID:2352">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">1</data>
-    </edge>
-    <edge source="HGNC:15598" target="DOID:2352">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">2</data>
-    </edge>
-    <edge source="HGNC:15598" target="http://purl.obolibrary.org/obo/OMIM_277900">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:12825" target="DOID:1040">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11850" target="DOID:9452">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:11850" target="http://purl.obolibrary.org/obo/OMIM_109650">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2625" target="http://purl.obolibrary.org/obo/OMIM_608902">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2625" target="DOID:0050756">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2622" target="DOID:13189">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2622" target="DOID:0080147">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6307" target="http://purl.obolibrary.org/obo/OMIM_602089">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6307" target="DOID:12721">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:1753" target="http://purl.obolibrary.org/obo/OMIM_254500">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:4832" target="http://www.orpha.net/ORDO/Orphanet_280615">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6014" target="DOID:0050523">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6014" target="DOID:3310">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6016" target="DOID:3310">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2867" target="DOID:12241">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2867" target="http://purl.obolibrary.org/obo/OMIM_263750">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2867" target="DOID:12971">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2867" target="http://purl.obolibrary.org/obo/OMIM_603903">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2753" target="http://purl.obolibrary.org/obo/OMIM_616034">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:2753" target="DOID:3146">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:12663" target="http://purl.obolibrary.org/obo/OMIM_603903">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:12663" target="DOID:13810">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5237" target="DOID:11727">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6460" target="http://purl.obolibrary.org/obo/OMIM_158000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6460" target="http://purl.obolibrary.org/obo/OMIM_133200">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10524" target="http://purl.obolibrary.org/obo/OMIM_107480">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10593" target="http://purl.obolibrary.org/obo/OMIM_113900">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10593" target="http://purl.obolibrary.org/obo/OMIM_108770">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10593" target="DOID:0050451">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10593" target="http://purl.obolibrary.org/obo/OMIM_272120">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6018" target="DOID:699">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6018" target="http://purl.obolibrary.org/obo/OMIM_148000">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:6018" target="http://www.orpha.net/ORDO/Orphanet_160">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10588" target="DOID:0060169">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10588" target="DOID:0060169">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">1</data>
-    </edge>
-    <edge source="HGNC:10588" target="DOID:0050709">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10588" target="DOID:0050709">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">1</data>
-    </edge>
-    <edge source="HGNC:10588" target="DOID:0050562">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10588" target="DOID:308">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:10588" target="http://purl.obolibrary.org/obo/OMIM_607745">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:12705" target="DOID:3310">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:15464" target="http://purl.obolibrary.org/obo/OMIM_256500">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5344" target="DOID:13810">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:5344" target="http://purl.obolibrary.org/obo/OMIM_109650">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:4827" target="DOID:10241">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:4827" target="DOID:12241">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:4827" target="DOID:12241">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">1</data>
-    </edge>
-    <edge source="HGNC:4827" target="DOID:12241">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">2</data>
-    </edge>
-    <edge source="HGNC:4827" target="http://purl.obolibrary.org/obo/OMIM_603903">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:4827" target="DOID:5379">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
-    </edge>
-    <edge source="HGNC:4827" target="DOID:2860">
-      <data key="d2">queried</data>
-      <data key="d3">biolink</data>
-      <data key="d4">0</data>
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="diffuse large B-cell lymphoma (DOID:0050745)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="chronic lymphocytic leukemia (DOID:1040)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Obesity (OMIM:601665)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Malignant lymphoma, non-Hodgkin (OMIM:605027)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="gout (EFO:0004274)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:12365" target="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">2</data>
+    </edge>
+    <edge source="DOID:12365" target="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">3</data>
+    </edge>
+    <edge source="DOID:12365" target="alpha Thalassemia (OMIM:604131)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Ovalocytosis, Southeast Asian (OMIM:166900)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Chronic lymphocytic leukemia (OMIM:151400)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Chronic lymphocytic leukemia (OMIM:151400)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:12365" target="lymphoma (DOID:0060058)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="hereditary elliptocytosis (DOID:2373)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="hereditary elliptocytosis (DOID:2373)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:12365" target="hereditary elliptocytosis (DOID:2373)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">2</data>
+    </edge>
+    <edge source="DOID:12365" target="Myeloma, Multiple (OMIM:254500)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="hemoglobinopathy (DOID:2860)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="multiple myeloma (EFO:0001378)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Megaloblastic anemia due to dihydrofolate reductase deficiency (OMIM:613839)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="Elliptocytosis 1 (OMIM:611804)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="hereditary spherocytosis type 4 (OMIM:612653)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="hereditary spherocytosis (DOID:12971)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:12365" target="hereditary spherocytosis (DOID:12971)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="HGNC:10718" target="atopic dermatitis (DOID:3310)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10718" target="Hypercholesterolemia (MESH:D006937)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11935" target="X-linked acrogigantism due to Xq26 microduplication (OMIM:300942)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11935" target="Immunodeficiency with hyper IgM type 1 (OMIM:308230)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1663" target="Platelet glycoprotein IV deficiency (OMIM:608404)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:18674" target="Acute Undifferentiated Leukemia (OMIM:601626)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9020" target="Pyruvate kinase deficiency of red cells (OMIM:266200)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6391" target="Spondyloepimetaphyseal Dysplasia With Joint Laxity, Type 2 (OMIM:603546)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7562" target="lymphoma (DOID:0060058)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7562" target="Myeloma, Multiple (OMIM:254500)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7562" target="follicular lymphoma (DOID:0050873)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7562" target="Malignant lymphoma, non-Hodgkin (OMIM:605027)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7562" target="Waldenstroem's macroglobulinemia (DOID:0060901)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7562" target="WM1 (OMIM:153600)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7562" target="diffuse large B-cell lymphoma (DOID:0050745)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7562" target="Chronic lymphocytic leukemia (OMIM:151400)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:8487" target="Meier-Gorlin syndrome 1 (OMIM:224690)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:8487" target="Meier-Gorlin syndrome (DOID:0060306)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4704" target="hereditary elliptocytosis (DOID:2373)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11766" target="Muscular Dystrophy, Duchenne Type (OMIM:310200)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11766" target="dry eye syndrome (DOID:10140)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11766" target="Camurati-Engelmann disease (DOID:4997)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7523" target="McCune Albright syndrome (DOID:1858)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7523" target="Mulibrey nanism syndrome (OMIM:253250)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7427" target="Obesity (OMIM:601665)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7427" target="Familial cancer of breast (OMIM:114480)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7427" target="Isolated CoQ-cytochrome C reductase deficiency (Orphanet:1460)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7427" target="Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7427" target="Leber's optic atrophy (OMIM:535000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11027" target="hereditary spherocytosis (DOID:12971)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11027" target="Ovalocytosis, Southeast Asian (OMIM:166900)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11027" target="hereditary spherocytosis type 4 (OMIM:612653)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11027" target="Autosomal dominant distal renal tubular acidosis (OMIM:179800)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11027" target="Renal Tubular Acidosis, Distal, With Hemolytic Anemia (OMIM:611590)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11027" target="hereditary elliptocytosis (DOID:2373)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:399" target="Ehlers-Danlos Syndrome, Type Vii, Autosomal Dominant (OMIM:130060)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11740" target="Atransferrinemia (OMIM:209300)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11763" target="non-Hodgkin lymphoma (DOID:0060060)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11763" target="beta thalassemia (DOID:12241)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11763" target="chronic lymphocytic leukemia (DOID:1040)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11763" target="polycystic ovary syndrome (DOID:11612)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10637" target="atopic dermatitis (DOID:3310)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5992" target="mitochondrial myopathy (DOID:699)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5992" target="chronic progressive external ophthalmoplegia (DOID:12558)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5992" target="atopic dermatitis (DOID:3310)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:12811" target="McLeod neuroacanthocytosis syndrome (OMIM:300842)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:12811" target="neuroacanthocytosis (DOID:0050765)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5438" target="Lymphoproliferative syndrome 1, X-linked (OMIM:308240)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5438" target="adrenoleukodystrophy (DOID:10588)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5438" target="adult T-cell leukemia (DOID:0050523)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5438" target="Tuberous sclerosis 2 (OMIM:613254)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:485" target="Microcephaly 1, Primary, Autosomal Recessive (OMIM:251200)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:385" target="polycystic ovary syndrome (DOID:11612)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:385" target="46,XY disorder of sex development due to testicular 17,20-desmolase deficiency (OMIM:614279)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9912" target="Spermatogenic Failure, Y-Linked, 2 (OMIM:415000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:25902" target="Muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 8 (OMIM:614830)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:25902" target="Muscular Dystrophy-Dystroglycanopathy (Congenital With Brain and Eye Anomalies), Type A, 1 (OMIM:236670)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1606" target="atopic dermatitis (DOID:3310)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11892" target="Psoriatic arthritis, susceptibility to (OMIM:607507)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11892" target="mitochondrial myopathy (DOID:699)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7461" target="Myoclonus with epilepsy with ragged red fibers (OMIM:545000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7461" target="Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7461" target="Leigh syndrome (OMIM:256000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7461" target="Leber's optic atrophy (OMIM:535000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7461" target="Maternally-inherited Leigh syndrome (Orphanet:255210)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6106" target="adult T-cell leukemia (DOID:0050523)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6106" target="Immunodysregulation, Polyendocrinopathy, and Enteropathy, X-Linked (OMIM:304790)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6106" target="polycystic ovary syndrome (DOID:11612)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7873" target="Takayasu's arteritis (OMIM:207600)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7873" target="psoriatic arthritis (DOID:9008)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7419" target="Mitochondrial non-syndromic sensorineural deafness (OMIM:500008)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7419" target="cytochrome-c oxidase deficiency disease (OMIM:220110)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7419" target="Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7419" target="Myoglobinuria, Recurrent (OMIM:550500)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7419" target="Deafness, Aminoglycoside-Induced (OMIM:580000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7419" target="Genetic recurrent myoglobinuria (Orphanet:99845)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2861" target="Megaloblastic anemia due to dihydrofolate reductase deficiency (OMIM:613839)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3616" target="Cystic Fibrosis (OMIM:219700)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3616" target="Sjogren's syndrome (OMIM:270150)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3377" target="hereditary elliptocytosis (DOID:2373)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3377" target="Elliptocytosis 1 (OMIM:611804)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4976" target="Holocarboxylase synthetase deficiency (OMIM:253270)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7421" target="Mitochondrial Myopathy, Encephalopathy, Lactic Acidosis, and Stroke-Like Episodes (OMIM:540000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7421" target="cytochrome-c oxidase deficiency disease (OMIM:220110)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5962" target="Wilson disease (OMIM:277900)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5962" target="atopic dermatitis (DOID:3310)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10585" target="Familial or sporadic hemiplegic migraine (Orphanet:569)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10585" target="Lennox-Gastaut syndrome (OMIM:606369)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10585" target="Migraine, Familial Hemiplegic, 3 (OMIM:609634)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10585" target="Generalized Epilepsy With Febrile Seizures Plus, Type 2 (OMIM:604403)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10585" target="Malignant migrating partial seizures of infancy (Orphanet:293181)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10585" target="Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10585" target="generalized epilepsy with febrile seizures plus (DOID:0060170)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6025" target="fatty liver disease (DOID:9452)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6025" target="psoriatic arthritis (DOID:9008)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6025" target="Behcet's syndrome (OMIM:109650)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5141" target="hemochromatosis (DOID:2352)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5141" target="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6001" target="adult T-cell leukemia (DOID:0050523)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:15598" target="Hemochromatosis type 1 (OMIM:235200)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:15598" target="Hemochromatosis type 2 (Orphanet:79230)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:15598" target="Hemochromatosis, Type 2B (OMIM:613313)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:15598" target="hemochromatosis (DOID:2352)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:15598" target="beta thalassemia (DOID:12241)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:15598" target="Wilson disease (OMIM:277900)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:12825" target="Chronic lymphocytic leukemia (OMIM:151400)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2625" target="Drug Metabolism, Poor, Cyp2D6-Related (OMIM:608902)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2625" target="neuronal ceroid lipofuscinosis 2 (OMIM:204500)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2622" target="lymphoblastic lymphoma (DOID:0080147)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2622" target="gout (EFO:0004274)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6307" target="Hemangioma, capillary infantile (OMIM:602089)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6307" target="Osteochondrodysplasias (MESH:D010009)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1753" target="multiple myeloma (EFO:0001378)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4832" target="Cyanosis, transient neonatal (OMIM:613977)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6014" target="atopic dermatitis (DOID:3310)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6014" target="adult T-cell leukemia (DOID:0050523)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6016" target="atopic dermatitis (DOID:3310)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2867" target="hereditary spherocytosis (DOID:12971)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2867" target="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2867" target="Postaxial Acrofacial Dysostosis (OMIM:263750)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2867" target="beta thalassemia (DOID:12241)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2753" target="Lipid Metabolism, Inborn Errors (MESH:D008052)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2753" target="2,4-Dienoyl-CoA reductase deficiency (OMIM:616034)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:12663" target="Hypercholesterolemia (MESH:D006937)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:12663" target="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5237" target="facioscapulohumeral muscular dystrophy (DOID:11727)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6460" target="Monilethrix (OMIM:158000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6460" target="Progressive symmetric erythrokeratodermia (Orphanet:316)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10524" target="Townes syndrome (OMIM:107480)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10593" target="Atrial standstill (Orphanet:1344)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10593" target="Brugada syndrome (DOID:0050451)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10593" target="Familial progressive cardiac conduction defect (OMIM:113900)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10593" target="Brugada Syndrome 1 (OMIM:601144)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10588" target="Ohtahara syndrome (DOID:0050709)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10588" target="Benign familial neonatal-infantile seizures (OMIM:607745)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10588" target="Epileptic Encephalopathy, Early Infantile, 11 (OMIM:613721)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10588" target="benign familial infantile epilepsy (DOID:0060169)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10588" target="Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10588" target="West syndrome (DOID:0050562)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10588" target="Benign familial neonatal-infantile seizures (Orphanet:140927)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:12705" target="atopic dermatitis (DOID:3310)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:15464" target="Netherton syndrome (OMIM:256500)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5344" target="Hypercholesterolemia (MESH:D006937)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4827" target="Sickle Cell Anemia (OMIM:603903)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4827" target="Beta-Thalassemia (OMIM:613985)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4827" target="alpha Thalassemia (OMIM:604131)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4827" target="beta thalassemia (DOID:12241)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4827" target="Beta-Thalassemia, Dominant Inclusion Body Type (OMIM:603902)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4827" target="HBD (OMIM:146350)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4827" target="hemoglobinopathy (DOID:2860)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4827" target="hemoglobin E disease (DOID:5379)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
   </graph>
 </graphml>
