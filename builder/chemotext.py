@@ -24,6 +24,7 @@ def OXOdise_term(term):
 
 def convert_to_mesh(term):
     """Use OXO to convert an id(doid, etc) to MeSH"""
+    logging.getLogger('application').debug('convert_to_mesh %s' % term)
     #Check to see if we already have a MeSH curie
     if term[:5].upper() == 'MESH':
         return [term]
@@ -37,6 +38,7 @@ def convert_to_mesh(term):
     for result in search_results:
         if result['targetPrefix'] == 'MeSH':
             meshes.append( result )
+            logging.getLogger('application').debug('  got %s(%s)' % (result['label'], result['curie']))
     if len(meshes) == 0:
         logging.getLogger('application').warn('No MeSH ID found for term: %s' % term)
     for mesh in meshes:
@@ -51,6 +53,7 @@ def add_chemotext_term(mesh_info):
     appear as a member of chemotext's "synonym" field.  So for a mesh id, we are going to 
     see if its a "name" in chemotext, and if not, then look for the name that has this as a
     synonym."""
+    logging.getLogger('application').debug(' Check chemotext for %s' % mesh_info['label'])
     ctext = Chemotext( )
     label = mesh_info['label']
     #First, see if we get back anything using the term as a name
@@ -71,10 +74,10 @@ def add_chemotext_term(mesh_info):
         if len(names) == 1:
             mesh_info[CHEMOTEXT_MESH_KEY] = names[0]
         elif len(names) > 1:
-            logging.getLogger.warn("Unusual amount of synonyms in chemotext for %s" % label)
+            logging.getLogger('application').warn("Unusual amount of synonyms in chemotext for %s" % label)
             mesh_info[CHEMOTEXT_MESH_KEY] = names[0]
         else:
-            logging.getLogger.warn("Cannot find chemotext synonym for %s" % label)
+            logging.getLogger('application').warn("Cannot find chemotext synonym for %s" % label)
             mesh_info[CHEMOTEXT_MESH_KEY] = ''
 
 def get_mesh_terms(node):
@@ -102,7 +105,15 @@ def term_to_term(node_a,node_b, limit = 10):
         return KEdge( 'chemotext', 'support', { 'publications': articles } )
     return None
 
+def test_mesh_conversion(nodeid):
+    from graph_components import KNode
+    node = KNode(nodeid, 'D')
+    get_mesh_terms(node)
+    print(node.properties)
+    get_mesh_terms(node)
+
 if __name__ == '__main__':
-    add_chemotext_term({'label': 'Marble Bone Disease'})
+    test_mesh_conversion('DOID:1470')
+    #add_chemotext_term({'label': 'Marble Bone Disease'})
     #print( term_to_term('DOID:4325', 'DOID:14504') )
     #print term_to_term('DOID:4325', 'http://www.orpha.net/ORDO/Orphanet_646')

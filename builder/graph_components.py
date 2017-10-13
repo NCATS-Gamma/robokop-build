@@ -13,7 +13,11 @@ class KNode():
         self.properties = {}
     def __hash__(self):
         """Class needs __hash__ in order to be used as a node in networkx"""
-        return self.identifier.__hash__()
+        if self.layer_number is None:
+            return self.identifier.__hash__()
+        else: 
+            s = '%s:%d' % (self.identifier,self.layer_number)
+            return s.__hash__()
     def to_json(self):
         """Used to serialize a node to JSON."""
         j = { 'identifier': self.identifier, \

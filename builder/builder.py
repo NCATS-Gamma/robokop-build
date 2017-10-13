@@ -70,10 +70,20 @@ class KnowledgeGraph:
         # we have certain node types, but not now
         #validate_operations()
     def add_node(self,node,layer_number):
-        """Add an unattached node to a particular query layer"""
+        """Add an unattached node to a particular query layer.
+        
+        If the node already exists, we don't want to add it, we just
+        return the node that was in the graph already.  If it isn't then
+        we add it and return newly added node"""
         #TODO: what if the node already exists?
+        previous = list(filter(lambda x: x.identifier == node.identifier, \
+                self.graph.nodes()) )
+        if len(previous) == 1:
+            if previous[0].layer_number == layer_number:
+                return previous[0]
         node.layer_number = layer_number
         self.graph.add_node(node)
+        return node
     def execute(self):
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
@@ -220,8 +230,9 @@ def main_test():
     worldgraph = WorldGraph('config.std')
     #Our test cases are defined as a doid and a name.  The name is from the NCATS FOA. The DOID
     # was looked up by hand.
-    test_cases = (('4325',  'ebola'), \
+    test_cases = ( \
                   ('1470'  ,'major depressive disorder'), \
+                  ('4325',  'ebola'), \
                   ('11476' ,'osteoporosis'), \
                   ('12365' ,'malaria'), \
                   ('10573' ,'osteomalacia'), \
