@@ -1,0 +1,682 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "id": {
+                "identifier": "DOID:2055",
+                "node_type": "D",
+                "layer_number": 0,
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D013313",
+                        "label": "Chronic Post-Traumatic Stress Disorder",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:3796",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:1033",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:2159",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:2228",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:2355",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:11050",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:1858",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:1858"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D005357",
+                        "label": "Fibrous Dysplasia of Bone",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Fibrous Dysplasia of Bone"
+                    },
+                    {
+                        "curie": "MeSH:D005359",
+                        "label": "Albright Syndrome",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Fibrous Dysplasia, Polyostotic"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:11712",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:11712"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D003923",
+                        "label": "Diabetes Mellitus, Lipoatrophic",
+                        "sourcePrefixes": [
+                            "ONTONEO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Diabetes Mellitus, Lipoatrophic"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:209880",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_209880",
+                    "http://www.orpha.net/ORDO/Orphanet_99803"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C536209",
+                        "label": "Cchs With Hirschsprung Disease",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Congenital central hypoventilation syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:194072",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_194072"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C538295",
+                        "label": "Monosomy 11 p11 p12",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Chromosome 11p, partial deletion"
+                    },
+                    {
+                        "curie": "MeSH:D017624",
+                        "label": "WAGR Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "WAGR Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:143100",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_143100",
+                    "http://www.orpha.net/ORDO/Orphanet_248111"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D006816",
+                        "label": "Juvenile Huntington Disease",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Huntington Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:171300",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_171300",
+                    "http://www.orpha.net/ORDO/Orphanet_29072"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D010673",
+                        "label": "Pheochromocytoma, Extra-Adrenal",
+                        "sourcePrefixes": [
+                            "EFO"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Pheochromocytoma"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:567",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_188400",
+                    "http://purl.obolibrary.org/obo/OMIM_192430"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D004062",
+                        "label": "Velocardiofacial Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "UMLS",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "DiGeorge Syndrome"
+                    },
+                    {
+                        "curie": "MeSH:D058165",
+                        "label": "22q11 Deletion Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "22q11 Deletion Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:188400",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_188400",
+                    "http://www.orpha.net/ORDO/Orphanet_567"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D004062",
+                        "label": "Velocardiofacial Syndrome",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "DiGeorge Syndrome"
+                    },
+                    {
+                        "curie": "MeSH:D058165",
+                        "label": "22q11 Deletion Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "22q11 Deletion Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:0060681",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0060681"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:272120",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_272120"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D013398",
+                        "label": "Sudden Infant Death",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Sudden Infant Death"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 229,
+                        "label": "IDG Target Family",
+                        "term": "Transcription Factor",
+                        "href": null
+                    },
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 1,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 2,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1783,
+                        "label": "IDG Target Family",
+                        "term": "GPCR",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 3,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 4,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 5,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    },
+                    {
+                        "id": 84288,
+                        "label": "IDG Target Family",
+                        "term": "Transporter",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 6,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:7739708"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 1,
+            "target": 7,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 1,
+            "target": 8,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 2,
+            "target": 9,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 2,
+            "target": 10,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:20929960"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 3,
+            "target": 11,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:22569243"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 12,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 4,
+            "target": 13,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:8886163"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 14,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 5,
+            "target": 15,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:12599191"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 6,
+            "target": 16,
+            "key": 0
+        }
+    ]
+}

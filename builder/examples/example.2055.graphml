@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="relation" attr.type="string" for="edge" id="d11" />
+  <key attr.name="publications" attr.type="string" for="edge" id="d10" />
+  <key attr.name="key" attr.type="long" for="edge" id="d9" />
+  <key attr.name="properties" attr.type="string" for="edge" id="d8" />
+  <key attr.name="edge_source" attr.type="string" for="edge" id="d7" />
+  <key attr.name="edge_type" attr.type="string" for="edge" id="d6" />
+  <key attr.name="mondo_identifiers" attr.type="string" for="node" id="d5" />
+  <key attr.name="label" attr.type="string" for="node" id="d4" />
+  <key attr.name="mesh_identifiers" attr.type="string" for="node" id="d3" />
+  <key attr.name="layer_number" attr.type="long" for="node" id="d2" />
+  <key attr.name="node_type" attr.type="string" for="node" id="d1" />
+  <key attr.name="identifier" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="DOID:2055">
+      <data key="d0">DOID:2055</data>
+      <data key="d1">D</data>
+      <data key="d2">0</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:3796">
+      <data key="d0">HGNC:3796</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:1033">
+      <data key="d0">HGNC:1033</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:2159">
+      <data key="d0">HGNC:2159</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:2228">
+      <data key="d0">HGNC:2228</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:2355">
+      <data key="d0">HGNC:2355</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:11050">
+      <data key="d0">HGNC:11050</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="McCune Albright syndrome (DOID:1858)">
+      <data key="d0">DOID:1858</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">McCune Albright syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="lipoatrophic diabetes (DOID:11712)">
+      <data key="d0">DOID:11712</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">lipoatrophic diabetes</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="congenital central hypoventilation syndrome (OMIM:209880)">
+      <data key="d0">OMIM:209880</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">congenital central hypoventilation syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="WAGR syndrome (OMIM:194072)">
+      <data key="d0">OMIM:194072</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">WAGR syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Huntington Disease (OMIM:143100)">
+      <data key="d0">OMIM:143100</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Huntington Disease</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Pheochromocytoma (OMIM:171300)">
+      <data key="d0">OMIM:171300</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Pheochromocytoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="22q11.2 deletion syndrome (Orphanet:567)">
+      <data key="d0">Orphanet:567</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">22q11.2 deletion syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="DiGeorge syndrome (OMIM:188400)">
+      <data key="d0">OMIM:188400</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">DiGeorge syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="autosomal dominant nocturnal frontal lobe epilepsy (DOID:0060681)">
+      <data key="d0">DOID:0060681</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">autosomal dominant nocturnal frontal lobe epilepsy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="sudden infant death syndrome (OMIM:272120)">
+      <data key="d0">OMIM:272120</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">sudden infant death syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <edge source="DOID:2055" target="HGNC:3796">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:2055" target="HGNC:1033">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:2055" target="HGNC:2159">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:2055" target="HGNC:2228">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:2055" target="HGNC:2355">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:2055" target="HGNC:11050">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3796" target="McCune Albright syndrome (DOID:1858)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3796" target="lipoatrophic diabetes (DOID:11712)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1033" target="congenital central hypoventilation syndrome (OMIM:209880)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1033" target="WAGR syndrome (OMIM:194072)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2159" target="Huntington Disease (OMIM:143100)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2228" target="Pheochromocytoma (OMIM:171300)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2228" target="22q11.2 deletion syndrome (Orphanet:567)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2228" target="DiGeorge syndrome (OMIM:188400)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2355" target="autosomal dominant nocturnal frontal lobe epilepsy (DOID:0060681)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11050" target="sudden infant death syndrome (OMIM:272120)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+  </graph>
+</graphml>

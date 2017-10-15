@@ -13,327 +13,331 @@
   <key attr.name="node_type" attr.type="string" for="node" id="d1" />
   <key attr.name="identifier" attr.type="string" for="node" id="d0" />
   <graph edgedefault="directed">
-    <node id="DOID:10573">
-      <data key="d0">DOID:10573</data>
+    <node id="DOID:13810">
+      <data key="d0">DOID:13810</data>
       <data key="d1">D</data>
       <data key="d2">0</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:8918">
-      <data key="d0">HGNC:8918</data>
+    <node id="HGNC:9204">
+      <data key="d0">HGNC:9204</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:866">
-      <data key="d0">HGNC:866</data>
+    <node id="HGNC:6547">
+      <data key="d0">HGNC:6547</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:1437">
-      <data key="d0">HGNC:1437</data>
+    <node id="HGNC:24133">
+      <data key="d0">HGNC:24133</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:9606">
-      <data key="d0">HGNC:9606</data>
+    <node id="HGNC:20001">
+      <data key="d0">HGNC:20001</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:11272">
-      <data key="d0">HGNC:11272</data>
+    <node id="HGNC:613">
+      <data key="d0">HGNC:613</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:2606">
-      <data key="d0">HGNC:2606</data>
+    <node id="HGNC:610">
+      <data key="d0">HGNC:610</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:22140">
-      <data key="d0">HGNC:22140</data>
+    <node id="HGNC:601">
+      <data key="d0">HGNC:601</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:11019">
-      <data key="d0">HGNC:11019</data>
+    <node id="HGNC:6619">
+      <data key="d0">HGNC:6619</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:3356">
-      <data key="d0">HGNC:3356</data>
+    <node id="HGNC:1869">
+      <data key="d0">HGNC:1869</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:12679">
-      <data key="d0">HGNC:12679</data>
+    <node id="HGNC:4263">
+      <data key="d0">HGNC:4263</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:3680">
-      <data key="d0">HGNC:3680</data>
+    <node id="HGNC:3402">
+      <data key="d0">HGNC:3402</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:10778">
-      <data key="d0">HGNC:10778</data>
+    <node id="HGNC:9205">
+      <data key="d0">HGNC:9205</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:20305">
-      <data key="d0">HGNC:20305</data>
+    <node id="HGNC:603">
+      <data key="d0">HGNC:603</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:2932">
-      <data key="d0">HGNC:2932</data>
+    <node id="HGNC:602">
+      <data key="d0">HGNC:602</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:6344">
-      <data key="d0">HGNC:6344</data>
+    <node id="HGNC:6677">
+      <data key="d0">HGNC:6677</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:438">
-      <data key="d0">HGNC:438</data>
+    <node id="HGNC:29">
+      <data key="d0">HGNC:29</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:4125">
-      <data key="d0">HGNC:4125</data>
+    <node id="HGNC:16973">
+      <data key="d0">HGNC:16973</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Sickle Cell Anemia (OMIM:603903)">
-      <data key="d0">OMIM:603903</data>
+    <node id="HGNC:6169">
+      <data key="d0">HGNC:6169</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:18640">
+      <data key="d0">HGNC:18640</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hyperlipoproteinemias (MESH:D006951)">
+      <data key="d0">MESH:D006951</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Sickle Cell Anemia</data>
+      <data key="d4">Hyperlipoproteinemias</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Tourette syndrome (EFO:0004895)">
-      <data key="d0">EFO:0004895</data>
+    <node id="Hypercholesterolemia (MESH:D006937)">
+      <data key="d0">MESH:D006937</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Tourette syndrome</data>
+      <data key="d4">Hypercholesterolemia</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Hypophosphatemic Rickets, X-Linked Dominant (OMIM:307800)">
-      <data key="d0">OMIM:307800</data>
+    <node id="hyperhomocysteinemia (DOID:9279)">
+      <data key="d0">DOID:9279</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Hypophosphatemic Rickets, X-Linked Dominant</data>
+      <data key="d4">hyperhomocysteinemia</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Renal tubular acidosis, distal, autosomal recessive (OMIM:602722)">
-      <data key="d0">OMIM:602722</data>
+    <node id="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
+      <data key="d0">OMIM:144010</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Renal tubular acidosis, distal, autosomal recessive</data>
+      <data key="d4">Hypercholesterolemia, Autosomal Dominant, Type B</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Autosomal recessive distal renal tubular acidosis (Orphanet:402041)">
-      <data key="d0">Orphanet:402041</data>
+    <node id="Hypercholesterolemia, Familial (OMIM:143890)">
+      <data key="d0">OMIM:143890</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Autosomal recessive distal renal tubular acidosis</data>
+      <data key="d4">Hypercholesterolemia, Familial</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Down Syndrome (OMIM:190685)">
-      <data key="d0">OMIM:190685</data>
+    <node id="familial hyperlipidemia (DOID:1168)">
+      <data key="d0">DOID:1168</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Down Syndrome</data>
+      <data key="d4">familial hyperlipidemia</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Hypoparathyroidism, Familial Isolated (OMIM:146200)">
-      <data key="d0">OMIM:146200</data>
+    <node id="fatty liver disease (DOID:9452)">
+      <data key="d0">DOID:9452</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Hypoparathyroidism, Familial Isolated</data>
+      <data key="d4">fatty liver disease</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Familial isolated hypoparathyroidism due to impaired PTH secretion (Orphanet:189466)">
-      <data key="d0">Orphanet:189466</data>
+    <node id="Homozygous familial hypercholesterolemia (Orphanet:391665)">
+      <data key="d0">Orphanet:391665</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Familial isolated hypoparathyroidism due to impaired PTH secretion</data>
+      <data key="d4">Homozygous familial hypercholesterolemia</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Elliptocytosis 2 (OMIM:130600)">
-      <data key="d0">OMIM:130600</data>
+    <node id="nephroblastoma (OMIM:194070)">
+      <data key="d0">OMIM:194070</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Elliptocytosis 2</data>
+      <data key="d4">nephroblastoma</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Pyropoikilocytosis, Hereditary (OMIM:266140)">
-      <data key="d0">OMIM:266140</data>
+    <node id="Hypercholesterolemia, autosomal dominant, 3 (OMIM:603776)">
+      <data key="d0">OMIM:603776</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Pyropoikilocytosis, Hereditary</data>
+      <data key="d4">Hypercholesterolemia, autosomal dominant, 3</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Spherocytosis type 3 (OMIM:270970)">
-      <data key="d0">OMIM:270970</data>
+    <node id="cerebral amyloid angiopathy (DOID:9246)">
+      <data key="d0">DOID:9246</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Spherocytosis type 3</data>
+      <data key="d4">cerebral amyloid angiopathy</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="hereditary spherocytosis (DOID:12971)">
-      <data key="d0">DOID:12971</data>
+    <node id="hyperlipoproteinemia type III (DOID:3145)">
+      <data key="d0">DOID:3145</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">hereditary spherocytosis</data>
+      <data key="d4">hyperlipoproteinemia type III</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="hereditary elliptocytosis (DOID:2373)">
-      <data key="d0">DOID:2373</data>
+    <node id="Wilson disease (OMIM:277900)">
+      <data key="d0">OMIM:277900</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">hereditary elliptocytosis</data>
+      <data key="d4">Wilson disease</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Hypocalcemic vitamin D-dependent rickets (OMIM:264700)">
-      <data key="d0">OMIM:264700</data>
+    <node id="Alzheimer Disease 4 (OMIM:606889)">
+      <data key="d0">OMIM:606889</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Hypocalcemic vitamin D-dependent rickets</data>
+      <data key="d4">Alzheimer Disease 4</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Lethal osteosclerotic bone dysplasia (OMIM:259775)">
-      <data key="d0">OMIM:259775</data>
+    <node id="Alzheimer's disease 2 (OMIM:104310)">
+      <data key="d0">OMIM:104310</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Lethal osteosclerotic bone dysplasia</data>
+      <data key="d4">Alzheimer's disease 2</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="FRTS1 (OMIM:134600)">
-      <data key="d0">OMIM:134600</data>
+    <node id="Apolipoprotein C-Iii Deficiency (OMIM:614028)">
+      <data key="d0">OMIM:614028</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">FRTS1</data>
+      <data key="d4">Apolipoprotein C-Iii Deficiency</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="hypophosphatemic nephrolithiasis/osteoporosis 1 (OMIM:612286)">
-      <data key="d0">OMIM:612286</data>
+    <node id="Hyperalphalipoproteinemia 1 (OMIM:143470)">
+      <data key="d0">OMIM:143470</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">hypophosphatemic nephrolithiasis/osteoporosis 1</data>
+      <data key="d4">Hyperalphalipoproteinemia 1</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Dominant hypophosphatemia with nephrolithiasis or osteoporosis (Orphanet:244305)">
-      <data key="d0">Orphanet:244305</data>
+    <node id="Hepatic lipase deficiency (OMIM:614025)">
+      <data key="d0">OMIM:614025</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Dominant hypophosphatemia with nephrolithiasis or osteoporosis</data>
+      <data key="d4">Hepatic lipase deficiency</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Fanconi Renotubular Syndrome 2 (OMIM:613388)">
-      <data key="d0">OMIM:613388</data>
+    <node id="Lipid Metabolism, Inborn Errors (MESH:D008052)">
+      <data key="d0">MESH:D008052</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Fanconi Renotubular Syndrome 2</data>
+      <data key="d4">Lipid Metabolism, Inborn Errors</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Obesity (OMIM:601665)">
-      <data key="d0">OMIM:601665</data>
+    <node id="Laron-type isolated somatotropin defect (OMIM:262500)">
+      <data key="d0">OMIM:262500</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Obesity</data>
+      <data key="d4">Laron-type isolated somatotropin defect</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="arterial calcification of infancy (DOID:0050644)">
-      <data key="d0">DOID:0050644</data>
+    <node id="Short stature due to partial GHR deficiency (OMIM:604271)">
+      <data key="d0">OMIM:604271</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">arterial calcification of infancy</data>
+      <data key="d4">Short stature due to partial GHR deficiency</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Arterial Calcification, Generalized, of Infancy, 1 (OMIM:208000)">
-      <data key="d0">OMIM:208000</data>
+    <node id="Behcet's syndrome (OMIM:109650)">
+      <data key="d0">OMIM:109650</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Arterial Calcification, Generalized, of Infancy, 1</data>
+      <data key="d4">Behcet's syndrome</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="pseudoxanthoma elasticum (DOID:2738)">
-      <data key="d0">DOID:2738</data>
+    <node id="Vitamin E, Familial Isolated Deficiency of (OMIM:277460)">
+      <data key="d0">OMIM:277460</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">pseudoxanthoma elasticum</data>
+      <data key="d4">Vitamin E, Familial Isolated Deficiency of</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="autosomal recessive hypophosphatemic rickets (DOID:0050949)">
-      <data key="d0">DOID:0050949</data>
+    <node id="hyperlipoproteinemia type V (OMIM:144650)">
+      <data key="d0">OMIM:144650</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">autosomal recessive hypophosphatemic rickets</data>
+      <data key="d4">hyperlipoproteinemia type V</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Hypophosphatemic Rickets, Autosomal Recessive, 2 (OMIM:613312)">
-      <data key="d0">OMIM:613312</data>
+    <node id="Hyperlipidemia, Familial Combined (OMIM:144250)">
+      <data key="d0">OMIM:144250</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Hypophosphatemic Rickets, Autosomal Recessive, 2</data>
+      <data key="d4">Hyperlipidemia, Familial Combined</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Cole Disease (OMIM:615522)">
-      <data key="d0">OMIM:615522</data>
+    <node id="familial lipoprotein lipase deficiency (OMIM:238600)">
+      <data key="d0">OMIM:238600</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Cole Disease</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="Vitamin D-Dependent Rickets, Type 2A (OMIM:277440)">
-      <data key="d0">OMIM:277440</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Vitamin D-Dependent Rickets, Type 2A</data>
+      <data key="d4">familial lipoprotein lipase deficiency</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -345,608 +349,727 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="chronic lymphocytic leukemia (DOID:1040)">
-      <data key="d0">DOID:1040</data>
+    <node id="Tangier Disease (OMIM:205400)">
+      <data key="d0">OMIM:205400</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">chronic lymphocytic leukemia</data>
+      <data key="d4">Tangier Disease</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Hypocalcemic vitamin D-resistant rickets (Orphanet:93160)">
-      <data key="d0">Orphanet:93160</data>
+    <node id="Familial hypoalphalipoproteinemia (OMIM:604091)">
+      <data key="d0">OMIM:604091</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Hypocalcemic vitamin D-resistant rickets</data>
+      <data key="d4">Familial hypoalphalipoproteinemia</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Hypophosphatemic Rickets, Autosomal Dominant (OMIM:193100)">
-      <data key="d0">OMIM:193100</data>
+    <node id="familial adenomatous polyposis (DOID:0050424)">
+      <data key="d0">DOID:0050424</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Hypophosphatemic Rickets, Autosomal Dominant</data>
+      <data key="d4">familial adenomatous polyposis</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Familial hyperphosphatemic tumoral calcinosis/Hyperphosphatemic hyperostosis syndrome (OMIM:211900)">
-      <data key="d0">OMIM:211900</data>
+    <node id="Hypercholesterolemia, Autosomal Recessive (OMIM:603813)">
+      <data key="d0">OMIM:603813</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Familial hyperphosphatemic tumoral calcinosis/Hyperphosphatemic hyperostosis syndrome</data>
+      <data key="d4">Hypercholesterolemia, Autosomal Recessive</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Pyle metaphyseal dysplasia (OMIM:265900)">
-      <data key="d0">OMIM:265900</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Pyle metaphyseal dysplasia</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="Hypophosphatemic Rickets With Hypercalciuria, Hereditary (OMIM:241530)">
-      <data key="d0">OMIM:241530</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Hypophosphatemic Rickets With Hypercalciuria, Hereditary</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="Autosomal recessive hypophosphatemic vitamin D refractory rickets (OMIM:241520)">
-      <data key="d0">OMIM:241520</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Autosomal recessive hypophosphatemic vitamin D refractory rickets</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="Infantile hypophosphatasia (OMIM:241500)">
-      <data key="d0">OMIM:241500</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Infantile hypophosphatasia</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="Odontohypophosphatasia (Orphanet:247685)">
-      <data key="d0">Orphanet:247685</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Odontohypophosphatasia</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="Perinatal lethal hypophosphatasia (Orphanet:247623)">
-      <data key="d0">Orphanet:247623</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Perinatal lethal hypophosphatasia</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="Hypophosphatasia, Childhood (OMIM:241510)">
-      <data key="d0">OMIM:241510</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Hypophosphatasia, Childhood</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="adult hypophosphatasia (OMIM:146300)">
-      <data key="d0">OMIM:146300</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">adult hypophosphatasia</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <edge source="DOID:10573" target="HGNC:8918">
+    <edge source="DOID:13810" target="HGNC:9204">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:866">
+    <edge source="DOID:13810" target="HGNC:6547">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:1437">
-      <data key="d6">queried</data>
-      <data key="d7">pharos</data>
-      <data key="d8">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:10573" target="HGNC:1437">
+    <edge source="DOID:13810" target="HGNC:6547">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">1</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:9606">
+    <edge source="DOID:13810" target="HGNC:24133">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:11272">
+    <edge source="DOID:13810" target="HGNC:20001">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:2606">
+    <edge source="DOID:13810" target="HGNC:613">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:22140">
+    <edge source="DOID:13810" target="HGNC:610">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:11019">
+    <edge source="DOID:13810" target="HGNC:601">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:3356">
+    <edge source="DOID:13810" target="HGNC:601">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:13810" target="HGNC:6619">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:12679">
+    <edge source="DOID:13810" target="HGNC:1869">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:3680">
+    <edge source="DOID:13810" target="HGNC:4263">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:10778">
+    <edge source="DOID:13810" target="HGNC:4263">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:13810" target="HGNC:3402">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:20305">
+    <edge source="DOID:13810" target="HGNC:3402">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:13810" target="HGNC:9205">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:2932">
+    <edge source="DOID:13810" target="HGNC:603">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:6344">
+    <edge source="DOID:13810" target="HGNC:603">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:13810" target="HGNC:602">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:438">
+    <edge source="DOID:13810" target="HGNC:6677">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="HGNC:4125">
+    <edge source="DOID:13810" target="HGNC:29">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Sickle Cell Anemia (OMIM:603903)">
+    <edge source="DOID:13810" target="HGNC:29">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:13810" target="HGNC:16973">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:13810" target="HGNC:6169">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:13810" target="HGNC:18640">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:13810" target="hyperlipoproteinemia type V (OMIM:144650)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Vitamin D-Dependent Rickets, Type 2A (OMIM:277440)">
+    <edge source="DOID:13810" target="fatty liver disease (DOID:9452)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Hypophosphatemic Rickets, X-Linked Dominant (OMIM:307800)">
+    <edge source="DOID:13810" target="Alzheimer Disease 4 (OMIM:606889)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Infantile hypophosphatasia (OMIM:241500)">
+    <edge source="DOID:13810" target="familial lipoprotein lipase deficiency (OMIM:238600)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Renal tubular acidosis, distal, autosomal recessive (OMIM:602722)">
+    <edge source="DOID:13810" target="familial adenomatous polyposis (DOID:0050424)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="FRTS1 (OMIM:134600)">
+    <edge source="DOID:13810" target="Hyperlipidemia, Familial Combined (OMIM:144250)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Obesity (OMIM:601665)">
+    <edge source="DOID:13810" target="gout (EFO:0004274)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="gout (EFO:0004274)">
+    <edge source="DOID:13810" target="Wilson disease (OMIM:277900)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="chronic lymphocytic leukemia (DOID:1040)">
+    <edge source="DOID:13810" target="Behcet's syndrome (OMIM:109650)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="pseudoxanthoma elasticum (DOID:2738)">
+    <edge source="DOID:13810" target="hyperhomocysteinemia (DOID:9279)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Hypoparathyroidism, Familial Isolated (OMIM:146200)">
+    <edge source="DOID:13810" target="Alzheimer's disease 2 (OMIM:104310)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Hypophosphatasia, Childhood (OMIM:241510)">
+    <edge source="DOID:13810" target="Familial hypoalphalipoproteinemia (OMIM:604091)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Down Syndrome (OMIM:190685)">
+    <edge source="DOID:13810" target="familial hyperlipidemia (DOID:1168)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="adult hypophosphatasia (OMIM:146300)">
+    <edge source="DOID:13810" target="Tangier Disease (OMIM:205400)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Hypocalcemic vitamin D-dependent rickets (OMIM:264700)">
+    <edge source="DOID:13810" target="hyperlipoproteinemia type III (DOID:3145)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:10573" target="Fanconi Renotubular Syndrome 2 (OMIM:613388)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="HGNC:8918" target="Sickle Cell Anemia (OMIM:603903)">
+    <edge source="HGNC:9204" target="Hyperlipoproteinemias (MESH:D006951)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:8918" target="Tourette syndrome (EFO:0004895)">
+    <edge source="HGNC:9204" target="Hypercholesterolemia (MESH:D006937)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:8918" target="Hypophosphatemic Rickets, X-Linked Dominant (OMIM:307800)">
+    <edge source="HGNC:9204" target="hyperhomocysteinemia (DOID:9279)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:866" target="Renal tubular acidosis, distal, autosomal recessive (OMIM:602722)">
+    <edge source="HGNC:9204" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:866" target="Autosomal recessive distal renal tubular acidosis (Orphanet:402041)">
+    <edge source="HGNC:6547" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:866" target="Sickle Cell Anemia (OMIM:603903)">
+    <edge source="HGNC:6547" target="Hypercholesterolemia, Familial (OMIM:143890)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:1437" target="Down Syndrome (OMIM:190685)">
+    <edge source="HGNC:6547" target="familial hyperlipidemia (DOID:1168)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:9606" target="Hypoparathyroidism, Familial Isolated (OMIM:146200)">
+    <edge source="HGNC:6547" target="Hypercholesterolemia (MESH:D006937)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:9606" target="Familial isolated hypoparathyroidism due to impaired PTH secretion (Orphanet:189466)">
+    <edge source="HGNC:6547" target="fatty liver disease (DOID:9452)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11272" target="Elliptocytosis 2 (OMIM:130600)">
+    <edge source="HGNC:6547" target="Homozygous familial hypercholesterolemia (Orphanet:391665)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11272" target="Pyropoikilocytosis, Hereditary (OMIM:266140)">
+    <edge source="HGNC:24133" target="Hypercholesterolemia, Familial (OMIM:143890)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11272" target="Spherocytosis type 3 (OMIM:270970)">
+    <edge source="HGNC:20001" target="nephroblastoma (OMIM:194070)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11272" target="hereditary spherocytosis (DOID:12971)">
+    <edge source="HGNC:20001" target="Hypercholesterolemia (MESH:D006937)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11272" target="hereditary elliptocytosis (DOID:2373)">
+    <edge source="HGNC:20001" target="Hypercholesterolemia, Familial (OMIM:143890)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:2606" target="Hypocalcemic vitamin D-dependent rickets (OMIM:264700)">
+    <edge source="HGNC:20001" target="Hypercholesterolemia, autosomal dominant, 3 (OMIM:603776)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:22140" target="Lethal osteosclerotic bone dysplasia (OMIM:259775)">
+    <edge source="HGNC:20001" target="Homozygous familial hypercholesterolemia (Orphanet:391665)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11019" target="FRTS1 (OMIM:134600)">
+    <edge source="HGNC:613" target="cerebral amyloid angiopathy (DOID:9246)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11019" target="hypophosphatemic nephrolithiasis/osteoporosis 1 (OMIM:612286)">
+    <edge source="HGNC:613" target="hyperlipoproteinemia type III (DOID:3145)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11019" target="Dominant hypophosphatemia with nephrolithiasis or osteoporosis (Orphanet:244305)">
+    <edge source="HGNC:613" target="Wilson disease (OMIM:277900)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11019" target="Fanconi Renotubular Syndrome 2 (OMIM:613388)">
+    <edge source="HGNC:613" target="Alzheimer Disease 4 (OMIM:606889)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3356" target="Obesity (OMIM:601665)">
+    <edge source="HGNC:613" target="Alzheimer's disease 2 (OMIM:104310)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3356" target="arterial calcification of infancy (DOID:0050644)">
+    <edge source="HGNC:613" target="familial hyperlipidemia (DOID:1168)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3356" target="Arterial Calcification, Generalized, of Infancy, 1 (OMIM:208000)">
+    <edge source="HGNC:610" target="Apolipoprotein C-Iii Deficiency (OMIM:614028)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3356" target="pseudoxanthoma elasticum (DOID:2738)">
+    <edge source="HGNC:610" target="Hyperlipoproteinemias (MESH:D006951)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3356" target="autosomal recessive hypophosphatemic rickets (DOID:0050949)">
+    <edge source="HGNC:610" target="Hyperalphalipoproteinemia 1 (OMIM:143470)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3356" target="Hypophosphatemic Rickets, Autosomal Recessive, 2 (OMIM:613312)">
+    <edge source="HGNC:610" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3356" target="Cole Disease (OMIM:615522)">
+    <edge source="HGNC:601" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:12679" target="Vitamin D-Dependent Rickets, Type 2A (OMIM:277440)">
+    <edge source="HGNC:601" target="Hypercholesterolemia, Familial (OMIM:143890)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:12679" target="gout (EFO:0004274)">
+    <edge source="HGNC:6619" target="Hepatic lipase deficiency (OMIM:614025)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:12679" target="chronic lymphocytic leukemia (DOID:1040)">
+    <edge source="HGNC:6619" target="Lipid Metabolism, Inborn Errors (MESH:D008052)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:12679" target="Hypocalcemic vitamin D-resistant rickets (Orphanet:93160)">
+    <edge source="HGNC:6619" target="Hyperlipoproteinemias (MESH:D006951)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3680" target="Hypophosphatemic Rickets, Autosomal Dominant (OMIM:193100)">
+    <edge source="HGNC:6619" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3680" target="Familial hyperphosphatemic tumoral calcinosis/Hyperphosphatemic hyperostosis syndrome (OMIM:211900)">
+    <edge source="HGNC:1869" target="Hyperalphalipoproteinemia 1 (OMIM:143470)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:10778" target="Pyle metaphyseal dysplasia (OMIM:265900)">
+    <edge source="HGNC:1869" target="Hyperlipoproteinemias (MESH:D006951)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:20305" target="Hypophosphatemic Rickets With Hypercalciuria, Hereditary (OMIM:241530)">
+    <edge source="HGNC:1869" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:2932" target="autosomal recessive hypophosphatemic rickets (DOID:0050949)">
+    <edge source="HGNC:1869" target="familial hyperlipidemia (DOID:1168)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:2932" target="Autosomal recessive hypophosphatemic vitamin D refractory rickets (OMIM:241520)">
+    <edge source="HGNC:4263" target="Laron-type isolated somatotropin defect (OMIM:262500)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:6344" target="Familial hyperphosphatemic tumoral calcinosis/Hyperphosphatemic hyperostosis syndrome (OMIM:211900)">
+    <edge source="HGNC:4263" target="Short stature due to partial GHR deficiency (OMIM:604271)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:438" target="Infantile hypophosphatasia (OMIM:241500)">
+    <edge source="HGNC:4263" target="Hypercholesterolemia, Familial (OMIM:143890)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:438" target="Odontohypophosphatasia (Orphanet:247685)">
+    <edge source="HGNC:3402" target="Hypercholesterolemia, Familial (OMIM:143890)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:438" target="Perinatal lethal hypophosphatasia (Orphanet:247623)">
+    <edge source="HGNC:9205" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:438" target="Hypophosphatasia, Childhood (OMIM:241510)">
+    <edge source="HGNC:603" target="Hypercholesterolemia, Familial (OMIM:143890)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:438" target="adult hypophosphatasia (OMIM:146300)">
+    <edge source="HGNC:603" target="familial hyperlipidemia (DOID:1168)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:4125" target="Familial hyperphosphatemic tumoral calcinosis/Hyperphosphatemic hyperostosis syndrome (OMIM:211900)">
+    <edge source="HGNC:603" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:603" target="Hypercholesterolemia (MESH:D006937)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:603" target="Behcet's syndrome (OMIM:109650)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:603" target="fatty liver disease (DOID:9452)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:603" target="Homozygous familial hypercholesterolemia (Orphanet:391665)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:603" target="Vitamin E, Familial Isolated Deficiency of (OMIM:277460)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:602" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6677" target="hyperlipoproteinemia type V (OMIM:144650)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6677" target="Hyperlipidemia, Familial Combined (OMIM:144250)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6677" target="familial hyperlipidemia (DOID:1168)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6677" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6677" target="familial lipoprotein lipase deficiency (OMIM:238600)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6677" target="Hypercholesterolemia (MESH:D006937)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:29" target="gout (EFO:0004274)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:29" target="Tangier Disease (OMIM:205400)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:29" target="Familial hypoalphalipoproteinemia (OMIM:604091)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:29" target="Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:16973" target="Hypercholesterolemia, Familial (OMIM:143890)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6169" target="familial adenomatous polyposis (DOID:0050424)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:6169" target="Hypercholesterolemia, Familial (OMIM:143890)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:18640" target="Homozygous familial hypercholesterolemia (Orphanet:391665)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:18640" target="Hypercholesterolemia, Autosomal Recessive (OMIM:603813)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>

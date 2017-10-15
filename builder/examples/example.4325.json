@@ -17,7 +17,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Hemorrhagic Fever, Ebola"
                     }
                 ]
             }
@@ -64,7 +65,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Diseases"
                     },
                     {
                         "curie": "MeSH:D052556",
@@ -76,7 +78,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type C"
                     }
                 ]
             }
@@ -120,7 +123,8 @@
                             "UMLS"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Usher Syndromes"
                     }
                 ]
             }
@@ -146,7 +150,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Usher Syndromes"
                     }
                 ]
             }

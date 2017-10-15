@@ -16,7 +16,8 @@
                             "BAO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Osteomalacia"
                     }
                 ]
             }
@@ -135,14 +136,6 @@
         },
         {
             "id": {
-                "identifier": "HGNC:1437",
-                "node_type": "G",
-                "layer_number": 1,
-                "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
                 "identifier": "HGNC:6344",
                 "node_type": "G",
                 "layer_number": 1,
@@ -184,7 +177,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Anemia, Sickle Cell"
                     },
                     {
                         "curie": "MeSH:D006450",
@@ -194,7 +188,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemoglobin SC Disease"
                     }
                 ]
             }
@@ -215,7 +210,8 @@
                             "EFO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Tourette Syndrome"
                     }
                 ]
             }
@@ -238,7 +234,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Familial Hypophosphatemic Rickets"
                     }
                 ]
             }
@@ -261,7 +258,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Acidosis, Renal Tubular"
                     }
                 ]
             }
@@ -276,40 +274,6 @@
                     "http://purl.obolibrary.org/obo/OMIM_602722"
                 ],
                 "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:603903",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_603903"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D000755",
-                        "label": "Anemia, Sickle Cell",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    },
-                    {
-                        "curie": "MeSH:D006450",
-                        "label": "Hemoglobin SC Disease",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
             }
         },
         {
@@ -330,7 +294,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Down Syndrome"
                     }
                 ]
             }
@@ -354,7 +319,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypoparathyroidism"
                     },
                     {
                         "curie": "MeSH:C537156",
@@ -364,7 +330,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypoparathyroidism familial isolated"
                     }
                 ]
             }
@@ -400,7 +367,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Elliptocytosis, Hereditary"
                     }
                 ]
             }
@@ -422,7 +390,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Elliptocytosis, Hereditary"
                     }
                 ]
             }
@@ -445,7 +414,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Anemia, hereditary spherocytic hemolytic"
                     },
                     {
                         "curie": "MeSH:D013103",
@@ -457,7 +427,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Spherocytosis, Hereditary"
                     }
                 ]
             }
@@ -479,7 +450,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Spherocytosis, Hereditary"
                     },
                     {
                         "curie": "MeSH:C536356",
@@ -491,7 +463,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Anemia, hereditary spherocytic hemolytic"
                     }
                 ]
             }
@@ -513,7 +486,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Elliptocytosis, Hereditary"
                     }
                 ]
             }
@@ -535,7 +509,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Rickets"
                     }
                 ]
             }
@@ -569,7 +544,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Fanconi Syndrome"
                     }
                 ]
             }
@@ -616,7 +592,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Fanconi Syndrome"
                     }
                 ]
             }
@@ -640,7 +617,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Obesity"
                     }
                 ]
             }
@@ -664,7 +642,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Arterial calcification of infancy"
                     }
                 ]
             }
@@ -686,7 +665,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Arterial calcification of infancy"
                     }
                 ]
             }
@@ -708,7 +688,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Pseudoxanthoma Elasticum"
                     }
                 ]
             }
@@ -765,7 +746,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Rickets"
                     }
                 ]
             }
@@ -788,7 +770,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Arthritis, Gouty"
                     },
                     {
                         "curie": "MeSH:D006073",
@@ -797,7 +780,8 @@
                             "EFO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Gout"
                     }
                 ]
             }
@@ -820,7 +804,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Leukemia, Lymphocytic, Chronic, B-Cell"
                     }
                 ]
             }
@@ -876,7 +861,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Pyle disease"
                     }
                 ]
             }
@@ -894,57 +880,12 @@
         },
         {
             "id": {
-                "identifier": "DOID:0050949",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:0050949"
-                ],
-                "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
                 "identifier": "OMIM:241520",
                 "node_type": "D",
                 "layer_number": 2,
                 "mondo_identifiers": [
                     "DOID:0050949",
                     "http://purl.obolibrary.org/obo/OMIM_241520"
-                ],
-                "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:190685",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_190685"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D004314",
-                        "label": "Trisomy 21, Meiotic Nondisjunction",
-                        "sourcePrefixes": [
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:211900",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_211900"
                 ],
                 "mesh_identifiers": []
             }
@@ -970,7 +911,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypophosphatasia"
                     },
                     {
                         "curie": "MeSH:C562440",
@@ -980,7 +922,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypophosphatasia, Childhood"
                     }
                 ]
             }
@@ -1025,7 +968,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypophosphatasia, Childhood"
                     },
                     {
                         "curie": "MeSH:D007014",
@@ -1037,7 +981,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypophosphatasia"
                     }
                 ]
             }
@@ -1061,7 +1006,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypophosphatasia, Childhood"
                     },
                     {
                         "curie": "MeSH:D007014",
@@ -1073,20 +1019,10 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypophosphatasia"
                     }
                 ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:211900",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_211900"
-                ],
-                "mesh_identifiers": []
             }
         }
     ],
@@ -1177,6 +1113,35 @@
             "source": 0,
             "target": 3,
             "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 3,
+            "key": 1
         },
         {
             "object": {
@@ -1515,15 +1480,15 @@
                         "href": "http://diseases.jensenlab.org"
                     },
                     {
-                        "id": 636,
-                        "label": "IDG Target Family",
-                        "term": "Non-IDG",
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
                         "href": null
                     },
                     {
-                        "id": 1782,
-                        "label": "IDG Development Level",
-                        "term": "Tchem",
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
                         "href": null
                     }
                 ]
@@ -1544,9 +1509,9 @@
                         "href": "http://diseases.jensenlab.org"
                     },
                     {
-                        "id": 635,
+                        "id": 1782,
                         "label": "IDG Development Level",
-                        "term": "Tbio",
+                        "term": "Tchem",
                         "href": null
                     },
                     {
@@ -1573,9 +1538,9 @@
                         "href": "http://diseases.jensenlab.org"
                     },
                     {
-                        "id": 1782,
+                        "id": 635,
                         "label": "IDG Development Level",
-                        "term": "Tchem",
+                        "term": "Tbio",
                         "href": null
                     },
                     {
@@ -1592,79 +1557,18 @@
         },
         {
             "object": {
-                "edge_source": "pharos",
-                "edge_type": "queried",
-                "properties": [
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
                     {
-                        "id": 250,
-                        "label": "Data Source",
-                        "term": "JensenLab Text Mining",
-                        "href": "http://diseases.jensenlab.org"
-                    },
-                    {
-                        "id": 635,
-                        "label": "IDG Development Level",
-                        "term": "Tbio",
-                        "href": null
-                    },
-                    {
-                        "id": 3795,
-                        "label": "IDG Target Family",
-                        "term": "Enzyme",
-                        "href": null
+                        "date": 20080310,
+                        "pmid": 17924548,
+                        "title": "Sickle cell bone disease: response to vitamin D and calcium."
                     }
                 ]
             },
             "source": 0,
             "target": 18,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20080310,
-                        "pmid": 17924548,
-                        "title": "Sickle cell bone disease: response to vitamin D and calcium."
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 24,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20080310,
-                        "pmid": 17924548,
-                        "title": "Sickle cell bone disease: response to vitamin D and calcium."
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 19,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20060616,
-                        "pmid": 16644301,
-                        "title": "Elevated serum FGF23 concentrations in plasma cell dyscrasias."
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 48,
             "key": 0
         },
         {
@@ -1716,6 +1620,234 @@
                         "date": 19471201,
                         "pmid": 20278772,
                         "title": "Osteomalacia and late rickets; the various etiologies met in the United States with emphasis on that resulting from a specific form of renal acidosis, the therapeutic indications for each etiological sub-group, and the relationship between osteomalacia and Milkman's syndrome."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 44,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19581201,
+                        "pmid": 13555135,
+                        "title": "[Vitamin D-resistent rickets and osteomalacia in diseases of the renal tubules]."
+                    },
+                    {
+                        "date": 20140606,
+                        "pmid": 24848934,
+                        "title": "Anti-fibroblast growth factor 23 antibody therapy."
+                    },
+                    {
+                        "date": 20140519,
+                        "pmid": 24836714,
+                        "title": "Identification of two novel mutations in the PHEX gene in Chinese patients with hypophosphatemic rickets/osteomalacia."
+                    },
+                    {
+                        "date": 20140728,
+                        "pmid": 25065874,
+                        "title": "[Anti-FGF23 antibody therapy for patients with tumor-induced osteomalacia]."
+                    },
+                    {
+                        "date": 20140129,
+                        "pmid": 24473349,
+                        "title": "[Regulation and disorders of calcium and phosphate metabolism]."
+                    },
+                    {
+                        "date": 20140128,
+                        "pmid": 24157604
+                    },
+                    {
+                        "date": 20131210,
+                        "pmid": 24269824,
+                        "title": "Increased Col10a1 expression is not causative for the phenotype of Phex-deficient Hyp mice."
+                    },
+                    {
+                        "date": 20130711,
+                        "pmid": 23841927
+                    },
+                    {
+                        "date": 20130522,
+                        "pmid": 23362135,
+                        "title": "Tumor localization and biochemical response to cure in tumor-induced osteomalacia."
+                    },
+                    {
+                        "date": 20120326,
+                        "pmid": 22430770,
+                        "title": "Striking pathology gold: a singular experience with daily reverberations: sinonasal hemangiopericytoma (glomangiopericytoma) and oncogenic osteomalacia."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 20,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20160129,
+                        "pmid": 26823351
+                    },
+                    {
+                        "date": 20150729,
+                        "pmid": 26219711,
+                        "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
+                    },
+                    {
+                        "date": 20150818,
+                        "pmid": 25736332,
+                        "title": "Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment."
+                    },
+                    {
+                        "date": 20150105,
+                        "pmid": 25433339
+                    },
+                    {
+                        "date": 20131206,
+                        "pmid": 24064686,
+                        "title": "Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure."
+                    },
+                    {
+                        "date": 20130311,
+                        "pmid": 23475021
+                    },
+                    {
+                        "date": 20110909,
+                        "pmid": 21267545,
+                        "title": "Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis."
+                    },
+                    {
+                        "date": 20110617,
+                        "pmid": 21458605
+                    },
+                    {
+                        "date": 20110427,
+                        "pmid": 20949298
+                    },
+                    {
+                        "date": 20060704,
+                        "pmid": 16817361
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 53,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150703,
+                        "pmid": 26138839,
+                        "title": "A Practical Approach to Vitamin D Deficiency and Rickets."
+                    },
+                    {
+                        "date": 19521201,
+                        "pmid": 14877835,
+                        "title": "Renal tubular acidosis with osteomalacia; report of 3 cases."
+                    },
+                    {
+                        "date": 19631201,
+                        "pmid": 13942329,
+                        "title": "[Renal tubular acidosis. Hyperchloremic acidosis and osteomalacia with hyperkalemia and hypercalciuria and hypophosphaturia]."
+                    },
+                    {
+                        "date": 19591201,
+                        "pmid": 13608754,
+                        "title": "Osteomalacia due to renal tubular acidosis with multiple spontaneous and symmetrical fractures."
+                    },
+                    {
+                        "date": 19571201,
+                        "pmid": 13386596,
+                        "title": "Hyperchloraemic renal acidosis with osteomalacia and hypokalaemia."
+                    },
+                    {
+                        "date": 20140906,
+                        "pmid": 25193912,
+                        "title": "Osteomalacia complicating renal tubular acidosis in association with Sjogren's syndrome."
+                    },
+                    {
+                        "date": 20130906,
+                        "pmid": 24008889,
+                        "title": "[Sjogren's syndrome revealed by Mikulicz's syndrome and complicated with tubulopathy and osteomalacia]."
+                    },
+                    {
+                        "date": 20130312,
+                        "pmid": 22740247
+                    },
+                    {
+                        "date": 20110311,
+                        "pmid": 21391382
+                    },
+                    {
+                        "date": 20110119,
+                        "pmid": 21245819
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 21,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20151111,
+                        "pmid": 26554665
+                    },
+                    {
+                        "date": 20150627,
+                        "pmid": 25906239,
+                        "title": "Hypophosphatemic osteomalacia: an unusual clinical presentation of multiple myeloma."
+                    },
+                    {
+                        "date": 20150422,
+                        "pmid": 25721615,
+                        "title": "Osteomalacia and Fanconi's syndrome caused by long-term low-dose adefovir dipivoxil."
+                    },
+                    {
+                        "date": 19521201,
+                        "pmid": 14900385,
+                        "title": "Osteomalacia and renal glycosuria in adults; metabolic investigation of a case with particular reference to its relation to the Fanconi syndrome and to treatment."
+                    },
+                    {
+                        "date": 19640601,
+                        "pmid": 14116401
+                    },
+                    {
+                        "date": 19621201,
+                        "pmid": 13916186
+                    },
+                    {
+                        "date": 19591201,
+                        "pmid": 13658682
+                    },
+                    {
+                        "date": 19571201,
+                        "pmid": 13443043,
+                        "title": "[Fanconi's syndrome: anomalous renal tubular reabsorption with aminoaciduria and osteomalacia]."
+                    },
+                    {
+                        "date": 19561201,
+                        "pmid": 13347331,
+                        "title": "[Renal diabetes with incurable osteomalacic rachitism (Toni-Fanconi-Debr\u00e9 syndrome)]."
+                    },
+                    {
+                        "date": 19541201,
+                        "pmid": 13091744
                     }
                 ]
             },
@@ -1774,7 +1906,138 @@
                 ]
             },
             "source": 0,
-            "target": 39,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20141215,
+                        "pmid": 25509803,
+                        "title": "[Metabolic bone and joint diseases]."
+                    },
+                    {
+                        "date": 20110902,
+                        "pmid": 21886301
+                    },
+                    {
+                        "date": 19950330,
+                        "title": "Drug induced rheumatic disorders.",
+                        "pmid": 7868494
+                    },
+                    {
+                        "date": 19841018,
+                        "pmid": 6331980
+                    },
+                    {
+                        "date": 19750609,
+                        "pmid": 4452289
+                    },
+                    {
+                        "date": 19690922,
+                        "pmid": 5800553,
+                        "title": "[Chronic feminine gout and postgastrectomy osteomalacia]."
+                    },
+                    {
+                        "date": 19670329,
+                        "pmid": 5957873,
+                        "title": "Hypocalciuric effect of benzothiazides."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 45,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20060616,
+                        "pmid": 16644301,
+                        "title": "Elevated serum FGF23 concentrations in plasma cell dyscrasias."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 46,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19710812,
+                        "pmid": 4932832
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 40,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19561201,
+                        "pmid": 13295374,
+                        "title": "Hypoparathyroidism as a cause of osteomalacia."
+                    },
+                    {
+                        "date": 20141216,
+                        "pmid": 25504229,
+                        "title": "Genomic study of ossification of the posterior longitudinal ligament of the spine."
+                    },
+                    {
+                        "date": 20070516,
+                        "pmid": 17352646
+                    },
+                    {
+                        "date": 20030116,
+                        "pmid": 12528474,
+                        "title": "[Pharmacological action and clinical effects of falecalcitriol, a highly potent derivative of active vitamin D3]."
+                    },
+                    {
+                        "date": 20010207,
+                        "pmid": 11073269
+                    },
+                    {
+                        "date": 19981001,
+                        "pmid": 9684690
+                    },
+                    {
+                        "date": 19950505,
+                        "title": "Acquired osteomalacia.",
+                        "pmid": 7704780
+                    },
+                    {
+                        "date": 19921224,
+                        "pmid": 1447486,
+                        "title": "Conventional and new diagnostic applications of a two-site immunochemiluminometric assay for parathyroid hormone."
+                    },
+                    {
+                        "date": 19921201,
+                        "pmid": 1424188
+                    },
+                    {
+                        "date": 19880217,
+                        "pmid": 3689925,
+                        "title": "Patients with thalassemia develop osteoporosis, osteomalacia, and hypoparathyroidism, all of which are corrected by transfusion."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 24,
             "key": 0
         },
         {
@@ -1829,7 +2092,86 @@
                 ]
             },
             "source": 0,
-            "target": 58,
+            "target": 56,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19860703,
+                        "pmid": 2940082,
+                        "title": "Metabolism and possible health effects of aluminum."
+                    },
+                    {
+                        "date": 19830729,
+                        "pmid": 6222491
+                    },
+                    {
+                        "date": 19650301,
+                        "pmid": 14225571
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 23,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20160129,
+                        "pmid": 26823351
+                    },
+                    {
+                        "date": 20150729,
+                        "pmid": 26219711,
+                        "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
+                    },
+                    {
+                        "date": 20150818,
+                        "pmid": 25736332,
+                        "title": "Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment."
+                    },
+                    {
+                        "date": 20150105,
+                        "pmid": 25433339
+                    },
+                    {
+                        "date": 20131206,
+                        "pmid": 24064686,
+                        "title": "Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure."
+                    },
+                    {
+                        "date": 20130311,
+                        "pmid": 23475021
+                    },
+                    {
+                        "date": 20110909,
+                        "pmid": 21267545,
+                        "title": "Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis."
+                    },
+                    {
+                        "date": 20110617,
+                        "pmid": 21458605
+                    },
+                    {
+                        "date": 20110427,
+                        "pmid": 20949298
+                    },
+                    {
+                        "date": 20060704,
+                        "pmid": 16817361
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 57,
             "key": 0
         },
         {
@@ -1885,7 +2227,7 @@
                 ]
             },
             "source": 0,
-            "target": 46,
+            "target": 31,
             "key": 0
         },
         {
@@ -1894,151 +2236,54 @@
                 "edge_type": "support",
                 "publications": [
                     {
-                        "date": 20160129,
-                        "pmid": 26823351
+                        "date": 20151111,
+                        "pmid": 26554665
                     },
                     {
-                        "date": 20150729,
-                        "pmid": 26219711,
-                        "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
+                        "date": 20150627,
+                        "pmid": 25906239,
+                        "title": "Hypophosphatemic osteomalacia: an unusual clinical presentation of multiple myeloma."
                     },
                     {
-                        "date": 20150818,
-                        "pmid": 25736332,
-                        "title": "Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment."
+                        "date": 20150422,
+                        "pmid": 25721615,
+                        "title": "Osteomalacia and Fanconi's syndrome caused by long-term low-dose adefovir dipivoxil."
                     },
                     {
-                        "date": 20150105,
-                        "pmid": 25433339
+                        "date": 19521201,
+                        "pmid": 14900385,
+                        "title": "Osteomalacia and renal glycosuria in adults; metabolic investigation of a case with particular reference to its relation to the Fanconi syndrome and to treatment."
                     },
                     {
-                        "date": 20131206,
-                        "pmid": 24064686,
-                        "title": "Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure."
+                        "date": 19640601,
+                        "pmid": 14116401
                     },
                     {
-                        "date": 20130311,
-                        "pmid": 23475021
+                        "date": 19621201,
+                        "pmid": 13916186
                     },
                     {
-                        "date": 20110909,
-                        "pmid": 21267545,
-                        "title": "Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis."
+                        "date": 19591201,
+                        "pmid": 13658682
                     },
                     {
-                        "date": 20110617,
-                        "pmid": 21458605
+                        "date": 19571201,
+                        "pmid": 13443043,
+                        "title": "[Fanconi's syndrome: anomalous renal tubular reabsorption with aminoaciduria and osteomalacia]."
                     },
                     {
-                        "date": 20110427,
-                        "pmid": 20949298
+                        "date": 19561201,
+                        "pmid": 13347331,
+                        "title": "[Renal diabetes with incurable osteomalacic rachitism (Toni-Fanconi-Debr\u00e9 syndrome)]."
                     },
                     {
-                        "date": 20060704,
-                        "pmid": 16817361
+                        "date": 19541201,
+                        "pmid": 13091744
                     }
                 ]
             },
             "source": 0,
-            "target": 61,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20141215,
-                        "pmid": 25509803,
-                        "title": "[Metabolic bone and joint diseases]."
-                    },
-                    {
-                        "date": 20110902,
-                        "pmid": 21886301
-                    },
-                    {
-                        "date": 19950330,
-                        "title": "Drug induced rheumatic disorders.",
-                        "pmid": 7868494
-                    },
-                    {
-                        "date": 19841018,
-                        "pmid": 6331980
-                    },
-                    {
-                        "date": 19750609,
-                        "pmid": 4452289
-                    },
-                    {
-                        "date": 19690922,
-                        "pmid": 5800553,
-                        "title": "[Chronic feminine gout and postgastrectomy osteomalacia]."
-                    },
-                    {
-                        "date": 19670329,
-                        "pmid": 5957873,
-                        "title": "Hypocalciuric effect of benzothiazides."
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 47,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20160129,
-                        "pmid": 26823351
-                    },
-                    {
-                        "date": 20150729,
-                        "pmid": 26219711,
-                        "title": "What Can We Learn About the Neural Functions of TNAP from Studies on Other Organs and Tissues?"
-                    },
-                    {
-                        "date": 20150818,
-                        "pmid": 25736332,
-                        "title": "Reversible Deterioration in Hypophosphatasia Caused by Renal Failure With Bisphosphonate Treatment."
-                    },
-                    {
-                        "date": 20150105,
-                        "pmid": 25433339
-                    },
-                    {
-                        "date": 20131206,
-                        "pmid": 24064686,
-                        "title": "Acute severe hypercalcemia after traumatic fractures and immobilization in hypophosphatasia complicated by chronic renal failure."
-                    },
-                    {
-                        "date": 20130311,
-                        "pmid": 23475021
-                    },
-                    {
-                        "date": 20110909,
-                        "pmid": 21267545,
-                        "title": "Skeletal mineralization defects in adult hypophosphatasia--a clinical and histological analysis."
-                    },
-                    {
-                        "date": 20110617,
-                        "pmid": 21458605
-                    },
-                    {
-                        "date": 20110427,
-                        "pmid": 20949298
-                    },
-                    {
-                        "date": 20060704,
-                        "pmid": 16817361
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 62,
+            "target": 36,
             "key": 0
         },
         {
@@ -2056,7 +2301,7 @@
                 }
             },
             "source": 1,
-            "target": 19,
+            "target": 18,
             "key": 0
         },
         {
@@ -2074,7 +2319,7 @@
                 }
             },
             "source": 1,
-            "target": 20,
+            "target": 19,
             "key": 0
         },
         {
@@ -2113,7 +2358,7 @@
                 }
             },
             "source": 1,
-            "target": 21,
+            "target": 20,
             "key": 0
         },
         {
@@ -2131,7 +2376,7 @@
                 }
             },
             "source": 2,
-            "target": 22,
+            "target": 21,
             "key": 0
         },
         {
@@ -2145,7 +2390,7 @@
                 }
             },
             "source": 2,
-            "target": 23,
+            "target": 22,
             "key": 0
         },
         {
@@ -2163,7 +2408,7 @@
                 }
             },
             "source": 2,
-            "target": 24,
+            "target": 18,
             "key": 0
         },
         {
@@ -2181,7 +2426,7 @@
                 }
             },
             "source": 3,
-            "target": 25,
+            "target": 23,
             "key": 0
         },
         {
@@ -2211,7 +2456,7 @@
                 }
             },
             "source": 4,
-            "target": 26,
+            "target": 24,
             "key": 0
         },
         {
@@ -2225,7 +2470,7 @@
                 }
             },
             "source": 4,
-            "target": 27,
+            "target": 25,
             "key": 0
         },
         {
@@ -2315,7 +2560,7 @@
                 }
             },
             "source": 5,
-            "target": 28,
+            "target": 26,
             "key": 0
         },
         {
@@ -2378,7 +2623,7 @@
                 }
             },
             "source": 5,
-            "target": 29,
+            "target": 27,
             "key": 0
         },
         {
@@ -2396,35 +2641,35 @@
                 }
             },
             "source": 5,
+            "target": 28,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 5,
+            "target": 29,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 5,
             "target": 30,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [],
-                "relation": {
-                    "typeid": "RO:0002200",
-                    "label": "has phenotype"
-                }
-            },
-            "source": 5,
-            "target": 31,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [],
-                "relation": {
-                    "typeid": "RO:0002200",
-                    "label": "has phenotype"
-                }
-            },
-            "source": 5,
-            "target": 32,
             "key": 0
         },
         {
@@ -2463,7 +2708,7 @@
                 }
             },
             "source": 6,
-            "target": 33,
+            "target": 31,
             "key": 0
         },
         {
@@ -2496,6 +2741,38 @@
                 }
             },
             "source": 7,
+            "target": 32,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 8,
+            "target": 33,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:12324554"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 8,
             "target": 34,
             "key": 0
         },
@@ -2519,38 +2796,6 @@
                 "edge_type": "queried",
                 "publications": [
                     {
-                        "id": "PMID:12324554"
-                    }
-                ],
-                "relation": {
-                    "typeid": "GENO:0000840",
-                    "label": "pathogenic_for_condition"
-                }
-            },
-            "source": 8,
-            "target": 36,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [],
-                "relation": {
-                    "typeid": "RO:0002200",
-                    "label": "has phenotype"
-                }
-            },
-            "source": 8,
-            "target": 37,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [
-                    {
                         "id": "PMID:20335586"
                     },
                     {
@@ -2563,7 +2808,7 @@
                 }
             },
             "source": 8,
-            "target": 38,
+            "target": 36,
             "key": 0
         },
         {
@@ -2620,7 +2865,7 @@
                 }
             },
             "source": 9,
-            "target": 39,
+            "target": 37,
             "key": 0
         },
         {
@@ -2634,7 +2879,7 @@
                 }
             },
             "source": 9,
-            "target": 40,
+            "target": 38,
             "key": 0
         },
         {
@@ -2679,35 +2924,35 @@
                 }
             },
             "source": 9,
+            "target": 39,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 9,
+            "target": 40,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 9,
             "target": 41,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [],
-                "relation": {
-                    "typeid": "RO:0002200",
-                    "label": "has phenotype"
-                }
-            },
-            "source": 9,
-            "target": 42,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [],
-                "relation": {
-                    "typeid": "RO:0002200",
-                    "label": "has phenotype"
-                }
-            },
-            "source": 9,
-            "target": 43,
             "key": 0
         },
         {
@@ -2725,7 +2970,7 @@
                 }
             },
             "source": 9,
-            "target": 44,
+            "target": 42,
             "key": 0
         },
         {
@@ -2746,7 +2991,7 @@
                 }
             },
             "source": 9,
-            "target": 45,
+            "target": 43,
             "key": 0
         },
         {
@@ -2809,7 +3054,7 @@
                 }
             },
             "source": 10,
-            "target": 46,
+            "target": 44,
             "key": 0
         },
         {
@@ -2827,7 +3072,7 @@
                 }
             },
             "source": 10,
-            "target": 47,
+            "target": 45,
             "key": 0
         },
         {
@@ -2845,7 +3090,7 @@
                 }
             },
             "source": 10,
-            "target": 48,
+            "target": 46,
             "key": 0
         },
         {
@@ -2859,7 +3104,7 @@
                 }
             },
             "source": 10,
-            "target": 49,
+            "target": 47,
             "key": 0
         },
         {
@@ -2892,7 +3137,7 @@
                 }
             },
             "source": 11,
-            "target": 50,
+            "target": 48,
             "key": 0
         },
         {
@@ -2913,7 +3158,7 @@
                 }
             },
             "source": 11,
-            "target": 51,
+            "target": 49,
             "key": 0
         },
         {
@@ -2931,7 +3176,7 @@
                 }
             },
             "source": 12,
-            "target": 52,
+            "target": 50,
             "key": 0
         },
         {
@@ -2958,7 +3203,7 @@
                 }
             },
             "source": 13,
-            "target": 53,
+            "target": 51,
             "key": 0
         },
         {
@@ -2972,7 +3217,7 @@
                 }
             },
             "source": 14,
-            "target": 54,
+            "target": 41,
             "key": 0
         },
         {
@@ -2993,25 +3238,7 @@
                 }
             },
             "source": 14,
-            "target": 55,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [
-                    {
-                        "id": "PMID:16289943"
-                    }
-                ],
-                "relation": {
-                    "typeid": "RO:0002607",
-                    "label": "is marker for"
-                }
-            },
-            "source": 15,
-            "target": 56,
+            "target": 52,
             "key": 0
         },
         {
@@ -3024,8 +3251,8 @@
                     "label": "has phenotype"
                 }
             },
-            "source": 16,
-            "target": 57,
+            "source": 15,
+            "target": 49,
             "key": 0
         },
         {
@@ -3213,8 +3440,8 @@
                     "label": "has phenotype"
                 }
             },
-            "source": 17,
-            "target": 58,
+            "source": 16,
+            "target": 53,
             "key": 0
         },
         {
@@ -3227,8 +3454,8 @@
                     "label": "has phenotype"
                 }
             },
-            "source": 17,
-            "target": 59,
+            "source": 16,
+            "target": 54,
             "key": 0
         },
         {
@@ -3241,8 +3468,8 @@
                     "label": "has phenotype"
                 }
             },
-            "source": 17,
-            "target": 60,
+            "source": 16,
+            "target": 55,
             "key": 0
         },
         {
@@ -3292,8 +3519,8 @@
                     "label": "is marker for"
                 }
             },
-            "source": 17,
-            "target": 61,
+            "source": 16,
+            "target": 56,
             "key": 0
         },
         {
@@ -3328,8 +3555,8 @@
                     "label": "has phenotype"
                 }
             },
-            "source": 17,
-            "target": 62,
+            "source": 16,
+            "target": 57,
             "key": 0
         },
         {
@@ -3382,8 +3609,8 @@
                     "label": "has phenotype"
                 }
             },
-            "source": 18,
-            "target": 63,
+            "source": 17,
+            "target": 49,
             "key": 0
         }
     ]

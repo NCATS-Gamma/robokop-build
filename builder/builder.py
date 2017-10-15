@@ -70,10 +70,20 @@ class KnowledgeGraph:
         # we have certain node types, but not now
         #validate_operations()
     def add_node(self,node,layer_number):
-        """Add an unattached node to a particular query layer"""
+        """Add an unattached node to a particular query layer.
+        
+        If the node already exists, we don't want to add it, we just
+        return the node that was in the graph already.  If it isn't then
+        we add it and return newly added node"""
         #TODO: what if the node already exists?
+        previous = list(filter(lambda x: x.identifier == node.identifier, \
+                self.graph.nodes()) )
+        if len(previous) == 1:
+            if previous[0].layer_number == layer_number:
+                return previous[0]
         node.layer_number = layer_number
         self.graph.add_node(node)
+        return node
     def execute(self):
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
@@ -100,11 +110,9 @@ class KnowledgeGraph:
     def add_relationships( self, subject, relations, object_type, object_layer ):
         """Add new relationships and nodes to the graph"""
         for relation, object_node in relations:
-            self.add_node( object_node, object_layer )
-            #We expect relation to be a dict, passing it in as **relation means that the dict
-            # will be interpreted as keyword arguments.  That will allow the keys/values to be attributes
-            # of the edge.
-            #self.graph.add_edge( subject, object_node, object = relation )
+            # The thing we want to add might already exist in the
+            # graph.  Whatever we get back is the right thing to use.
+            object_node = self.add_node( object_node, object_layer )
             self.graph.add_edge( subject, object_node, object = relation )
     def prune(self):
         """Backwards prune.
@@ -201,6 +209,7 @@ class KnowledgeGraph:
             self.logger.error('Invalid export format: %s' % fmt)
 
 def run_query(query, output_path, worldgraph):
+    """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
     kgraph = KnowledgeGraph(query, worldgraph)
     kgraph.execute()
     kgraph.prune()
@@ -213,12 +222,14 @@ def run_query(query, output_path, worldgraph):
     kgraph.write()
        
 def main_test():
+    """Run a series of test cases from the NCATS FOA"""
     logger = logging.getLogger('application')
     logger.setLevel(level = logging.DEBUG)
     worldgraph = WorldGraph('config.std')
     #Our test cases are defined as a doid and a name.  The name is from the NCATS FOA. The DOID
     # was looked up by hand.
-    test_cases = (('4325',  'ebola'), \
+    test_cases = ( \
+                  ('4325',  'ebola'), \
                   ('1470'  ,'major depressive disorder'), \
                   ('11476' ,'osteoporosis'), \
                   ('12365' ,'malaria'), \
@@ -239,12 +250,6 @@ def main_test():
                   ('2055'  ,'Post-Truamatic Stress Disorder'), \
                   ('0060728' ,'Deficiency of N-glycanase 1'), \
                   ('0050741' ,'Alcohol Dependence') )
-    #Are we able to convert to pharos ids?
-    #import pharos
-    #for doid, dn in test_cases:
-    #    node = KNode('DOID:%s' % doid, 'D')
-    #    print( dn,doid, pharos.translate(node) )
-    #exit()
     for doid, disease_name in test_cases:
         print('Running test case: %s (DOID:%s)' % (disease_name,doid) )
         query = '(D;DOID:%s)-G-GC' % doid

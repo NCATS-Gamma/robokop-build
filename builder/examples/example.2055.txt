@@ -1,0 +1,17 @@
+DOID:2055
+ HGNC:3796
+  McCune Albright syndrome (DOID:1858)
+  lipoatrophic diabetes (DOID:11712)
+ HGNC:1033
+  congenital central hypoventilation syndrome (OMIM:209880)
+  WAGR syndrome (OMIM:194072)
+ HGNC:2159
+  Huntington Disease (OMIM:143100)
+ HGNC:2228
+  Pheochromocytoma (OMIM:171300)
+  22q11.2 deletion syndrome (Orphanet:567)
+  DiGeorge syndrome (OMIM:188400)
+ HGNC:2355
+  autosomal dominant nocturnal frontal lobe epilepsy (DOID:0060681)
+ HGNC:11050
+  sudden infant death syndrome (OMIM:272120)

@@ -1,0 +1,159 @@
+DOID:0050741
+ HGNC:6834
+  Huntington Disease (OMIM:143100)
+  Pheochromocytoma (OMIM:171300)
+ HGNC:4162
+  Charcot-Marie-Tooth Disease, Axonal, Type 2D (OMIM:601472)
+  Distal hereditary motor neuronopathy type 5 (OMIM:600794)
+  Distal hereditary motor neuropathy type 5 (Orphanet:139536)
+ HGNC:30521
+  Congenital defect of folate absorption (OMIM:229050)
+  hyperhomocysteinemia (DOID:9279)
+ HGNC:4585
+  Epilepsy, Rolandic (MESH:D019305)
+  Landau-Kleffner syndrome (OMIM:245570)
+  Rolandic epilepsy-speech dyspraxia syndrome (Orphanet:163721)
+  Continuous spikes and waves during sleep (Orphanet:725)
+  benign epilepsy with centrotemporal spikes (OMIM:117100)
+ HGNC:11927
+  common variable immunodeficiency (DOID:12177)
+ HGNC:9201
+  fatty liver disease (DOID:9452)
+ HGNC:3023
+  Hyperprolactinemia (OMIM:615555)
+  Dystonia 11, Myoclonic (OMIM:159900)
+ HGNC:11049
+  Parkinsonism-Dystonia, Infantile (OMIM:613135)
+ HGNC:399
+  Ehlers-Danlos Syndrome, Type Vii, Autosomal Dominant (OMIM:130060)
+ HGNC:11740
+  Atransferrinemia (OMIM:209300)
+ HGNC:4251
+  Glutathionuria (OMIM:231950)
+ HGNC:238
+  common variable immunodeficiency (DOID:12177)
+ HGNC:4075
+  Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)
+  Epileptic Encephalopathy, Early Infantile, 19 (OMIM:615744)
+  Epilepsy, Myoclonic Juvenile (OMIM:254770)
+  Epilepsy, Idiopathic Generalized, Susceptibility To, 13 (OMIM:611136)
+ HGNC:3373
+  Rubinstein-Taybi syndrome due to EP300 haploinsufficiency (OMIM:613684)
+  Rubinstein-Taybi Syndrome 1 (OMIM:180849)
+  Rubinstein-Taybi syndrome (DOID:1933)
+ HGNC:8820
+  Spinocerebellar Ataxia 23 (OMIM:610245)
+ HGNC:6267
+  Keppen-Lubinsky syndrome (OMIM:614098)
+ HGNC:8156
+  chronic lymphocytic leukemia (EFO:0000095)
+ HGNC:251
+  Parkinson disease, mitochondrial (OMIM:556500)
+ HGNC:3024
+  Tourette Syndrome (MESH:D005879)
+ HGNC:1033
+  congenital central hypoventilation syndrome (OMIM:209880)
+  WAGR syndrome (OMIM:194072)
+ HGNC:2159
+  Huntington Disease (OMIM:143100)
+ HGNC:24039
+  Congenital Short Bowel Syndrome (OMIM:615237)
+ HGNC:6833
+  Monoamine oxidase A deficiency (OMIM:300615)
+  Huntington Disease (OMIM:143100)
+  Pheochromocytoma (OMIM:171300)
+ HGNC:2228
+  Pheochromocytoma (OMIM:171300)
+  22q11.2 deletion syndrome (Orphanet:567)
+  DiGeorge syndrome (OMIM:188400)
+ HGNC:18129
+  Obesity (OMIM:601665)
+ HGNC:10940
+  Epileptic encephalopathy, early infantile, 41 (OMIM:617105)
+ HGNC:4250
+  Glutathionuria (OMIM:231950)
+ HGNC:1958
+  autosomal dominant nocturnal frontal lobe epilepsy (DOID:0060681)
+  Epilepsy, nocturnal frontal lobe, type 1 (OMIM:600513)
+ HGNC:2355
+  autosomal dominant nocturnal frontal lobe epilepsy (DOID:0060681)
+ HGNC:4586
+  Mental Retardation, Autosomal Dominant 6, With or Without Seizures (OMIM:613970)
+  Epileptic encephalopathy, early infantile, 27 (OMIM:616139)
+  West syndrome (DOID:0050562)
+  autosomal dominant non-syndromic intellectual disability (DOID:0060307)
+ HGNC:16714
+  gout (EFO:0004274)
+ HGNC:4081
+  Epileptic Encephalopathy, Early Infantile, 45 (OMIM:617153)
+ HGNC:4087
+  benign epilepsy with centrotemporal spikes (OMIM:117100)
+  Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)
+  generalized epilepsy with febrile seizures plus (DOID:0060170)
+  Epilepsy, childhood absence 2 (OMIM:607681)
+  Generalized Epilepsy With Febrile Seizures Plus, Type 3 (OMIM:611277)
+ HGNC:2631
+  non-Hodgkin lymphoma (DOID:0060060)
+  gout (EFO:0004274)
+  fatty liver disease (DOID:9452)
+  Fatty Liver, Alcoholic (MESH:D005235)
+ HGNC:11050
+  sudden infant death syndrome (OMIM:272120)
+ HGNC:18243
+  Retinitis Pigmentosa (OMIM:268000)
+  Reticular dystrophy of the retinal pigment epithelium (OMIM:267800)
+  Retinal dystrophy with or without extraocular anomalies (OMIM:617175)
+  Coats disease (OMIM:300216)
+ HGNC:6584
+  polycystic ovary syndrome (DOID:11612)
+  hypogonadotropic hypogonadism 23 with or without anosmia (OMIM:228300)
+  Hyperprolactinemia (OMIM:615555)
+ HGNC:3964
+  Follicle-stimulating hormone deficiency, isolated (OMIM:229070)
+ HGNC:11138
+  Parkinson disease 1 (OMIM:168601)
+  autosomal recessive early-onset Parkinson disease 15 (OMIM:260300)
+  Gaucher's disease (DOID:1926)
+  Wilson disease (OMIM:277900)
+ HGNC:8781
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:4267
+  Short stature due to partial GHR deficiency (OMIM:604271)
+ HGNC:11596
+  Acth Deficiency, Isolated (OMIM:201400)
+ HGNC:11528
+  Kallmann syndrome (DOID:3614)
+  hypogonadotropic hypogonadism (DOID:0090070)
+  Hypogonadotropic hypogonadism 11 with or without anosmia (OMIM:614840)
+ HGNC:4173
+  46,XY partial gonadal dysgenesis (Orphanet:251510)
+  Testicular anomalies with or without congenital heart disease (OMIM:615542)
+ HGNC:15465
+  Retinal dystrophy, juvenile cataracts, and short stature syndrome (OMIM:616108)
+  Hereditary hyperekplexia (Orphanet:3197)
+  Retinitis Pigmentosa (OMIM:268000)
+  Molybdenum Cofactor Deficiency, Complementation Group C (OMIM:615501)
+  Hyperekplexia, Hereditary 1 (OMIM:149400)
+  Leber Congenital Amaurosis 13 (OMIM:612712)
+ Leber Congenital Amaurosis 13 (OMIM:612712)
+ polycystic ovary syndrome (DOID:11612)
+ chronic lymphocytic leukemia (EFO:0000095)
+ common variable immunodeficiency (DOID:12177)
+ gout (EFO:0004274)
+ 22q11.2 deletion syndrome (Orphanet:567)
+ Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)
+ Retinitis Pigmentosa (OMIM:268000)
+ Parkinson disease, mitochondrial (OMIM:556500)
+ hyperhomocysteinemia (DOID:9279)
+ acute lymphoblastic leukemia (EFO:0000220)
+ Pheochromocytoma (OMIM:171300)
+ fatty liver disease (DOID:9452)
+ Obesity (OMIM:601665)
+ autosomal recessive early-onset Parkinson disease 15 (OMIM:260300)
+ Epileptic Encephalopathy, Early Infantile, 19 (OMIM:615744)
+ Wilson disease (OMIM:277900)
+ Epilepsy, Idiopathic Generalized, Susceptibility To, 13 (OMIM:611136)
+ sudden infant death syndrome (OMIM:272120)
+ Huntington Disease (OMIM:143100)
+ Gaucher's disease (DOID:1926)
+ DiGeorge syndrome (OMIM:188400)

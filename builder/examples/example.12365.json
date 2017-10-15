@@ -18,7 +18,8 @@
                             "VO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Malaria"
                     }
                 ]
             }
@@ -528,7 +529,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Dermatitis, Atopic"
                     }
                 ]
             }
@@ -572,7 +574,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hyper-IgM Immunodeficiency Syndrome"
                     }
                 ]
             }
@@ -608,7 +611,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Leukemia, Myeloid, Acute"
                     }
                 ]
             }
@@ -641,7 +645,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Spondyloepimetaphyseal dysplasia with multiple dislocations"
                     }
                 ]
             }
@@ -664,7 +669,8 @@
                             "CLO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Lymphoma"
                     }
                 ]
             }
@@ -690,7 +696,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Multiple Myeloma"
                     },
                     {
                         "curie": "MeSH:C531616",
@@ -700,7 +707,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Primary amyloidosis"
                     }
                 ]
             }
@@ -721,7 +729,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Lymphoma, Follicular"
                     }
                 ]
             }
@@ -742,7 +751,8 @@
                             "EFO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Lymphoma"
                     },
                     {
                         "curie": "MeSH:D008228",
@@ -751,7 +761,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Lymphoma, Non-Hodgkin"
                     }
                 ]
             }
@@ -786,7 +797,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": ""
                     }
                 ]
             }
@@ -807,7 +819,8 @@
                             "EFO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Lymphoma, Large B-Cell, Diffuse"
                     }
                 ]
             }
@@ -832,7 +845,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Leukemia, Lymphocytic, Chronic, B-Cell"
                     }
                 ]
             }
@@ -855,7 +869,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Meier-Gorlin syndrome"
                     }
                 ]
             }
@@ -876,7 +891,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Meier-Gorlin syndrome"
                     }
                 ]
             }
@@ -898,7 +914,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Elliptocytosis, Hereditary"
                     }
                 ]
             }
@@ -922,7 +939,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Muscular Dystrophy, Duchenne"
                     }
                 ]
             }
@@ -944,7 +962,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Dry Eye Syndromes"
                     }
                 ]
             }
@@ -966,7 +985,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Camurati-Engelmann Syndrome"
                     }
                 ]
             }
@@ -988,7 +1008,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Fibrous Dysplasia of Bone"
                     },
                     {
                         "curie": "MeSH:D005359",
@@ -998,7 +1019,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Fibrous Dysplasia, Polyostotic"
                     }
                 ]
             }
@@ -1020,7 +1042,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Pericardial constriction with growth failure"
                     },
                     {
                         "curie": "MeSH:D050336",
@@ -1032,7 +1055,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Mulibrey Nanism"
                     }
                 ]
             }
@@ -1056,7 +1080,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Obesity"
                     }
                 ]
             }
@@ -1080,7 +1105,8 @@
                             "CLO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Breast Neoplasms"
                     }
                 ]
             }
@@ -1123,7 +1149,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "MELAS Syndrome"
                     }
                 ]
             }
@@ -1148,7 +1175,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Optic Atrophy, Hereditary, Leber"
                     }
                 ]
             }
@@ -1170,7 +1198,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Spherocytosis, Hereditary"
                     },
                     {
                         "curie": "MeSH:C536356",
@@ -1182,7 +1211,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Anemia, hereditary spherocytic hemolytic"
                     }
                 ]
             }
@@ -1204,7 +1234,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Elliptocytosis, Hereditary"
                     }
                 ]
             }
@@ -1227,7 +1258,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Anemia, hereditary spherocytic hemolytic"
                     },
                     {
                         "curie": "MeSH:D013103",
@@ -1239,7 +1271,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Spherocytosis, Hereditary"
                     }
                 ]
             }
@@ -1262,7 +1295,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": ""
                     }
                 ]
             }
@@ -1276,28 +1310,6 @@
                     "http://purl.obolibrary.org/obo/OMIM_611590"
                 ],
                 "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:2373",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:2373"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D004612",
-                        "label": "Elliptocytosis, Hereditary",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
             }
         },
         {
@@ -1318,7 +1330,8 @@
                             "UMLS"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "EDS VIIB"
                     }
                 ]
             }
@@ -1340,7 +1353,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Congenital atransferrinemia"
                     }
                 ]
             }
@@ -1372,7 +1386,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "beta-Thalassemia"
                     }
                 ]
             }
@@ -1395,7 +1410,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Leukemia, Lymphocytic, Chronic, B-Cell"
                     }
                 ]
             }
@@ -1417,29 +1433,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:3310",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:3310"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D003876",
-                        "label": "Eczema, Infantile",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Polycystic Ovary Syndrome"
                     }
                 ]
             }
@@ -1461,7 +1456,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Mitochondrial Myopathies"
                     }
                 ]
             }
@@ -1483,29 +1479,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:3310",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:3310"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D003876",
-                        "label": "Eczema, Infantile",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Ophthalmoplegia, Chronic Progressive External"
                     }
                 ]
             }
@@ -1549,7 +1524,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Lymphoproliferative Disorders"
                     }
                 ]
             }
@@ -1571,7 +1547,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Diffuse Cerebral Sclerosis of Schilder"
                     },
                     {
                         "curie": "MeSH:C538676",
@@ -1580,7 +1557,8 @@
                             "BAO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": ""
                     },
                     {
                         "curie": "MeSH:D000326",
@@ -1590,7 +1568,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Adrenoleukodystrophy"
                     }
                 ]
             }
@@ -1612,7 +1591,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Leukemia-Lymphoma, Adult T-Cell"
                     }
                 ]
             }
@@ -1637,7 +1617,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Tuberous Sclerosis"
                     }
                 ]
             }
@@ -1661,29 +1642,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:11612",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:11612"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D011085",
-                        "label": "Sclerocystic Ovaries",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 2,
+                        "chemotext_mesh_label": "Microcephaly"
                     }
                 ]
             }
@@ -1705,7 +1665,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Gonadal Dysgenesis, 46,XY"
                     }
                 ]
             }
@@ -1728,7 +1689,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Azoospermia"
                     },
                     {
                         "curie": "MeSH:C536297",
@@ -1738,7 +1700,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Male sterility due to Y-chromosome deletions"
                     }
                 ]
             }
@@ -1761,7 +1724,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Walker-Warburg Syndrome"
                     }
                 ]
             }
@@ -1784,29 +1748,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:3310",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:3310"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D003876",
-                        "label": "Eczema, Infantile",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 2,
+                        "chemotext_mesh_label": "Walker-Warburg Syndrome"
                     }
                 ]
             }
@@ -1827,29 +1770,8 @@
                             "EFO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:699",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:699"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D017240",
-                        "label": "Luft Disease",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 2,
+                        "chemotext_mesh_label": "Arthritis, Psoriatic"
                     }
                 ]
             }
@@ -1872,31 +1794,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:540000",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_540000"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D017241",
-                        "label": "MELAS Syndrome",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "MERRF Syndrome"
                     }
                 ]
             }
@@ -1923,32 +1822,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:535000",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/MESH_D029242",
-                    "http://purl.obolibrary.org/obo/OMIM_535000"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D029242",
-                        "label": "Optic Atrophy, Hereditary, Leber",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Leigh Disease"
                     }
                 ]
             }
@@ -1971,29 +1846,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:0050523",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:0050523"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D015459",
-                        "label": "Leukemia-Lymphoma, Adult T-Cell",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 2,
+                        "chemotext_mesh_label": "Maternally Inherited Leigh Syndrome"
                     }
                 ]
             }
@@ -2007,28 +1861,6 @@
                     "http://purl.obolibrary.org/obo/OMIM_304790"
                 ],
                 "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:11612",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:11612"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D011085",
-                        "label": "Sclerocystic Ovaries",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
             }
         },
         {
@@ -2048,7 +1880,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Aortic Arch Syndromes"
                     },
                     {
                         "curie": "MeSH:D013625",
@@ -2060,7 +1893,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Takayasu Arteritis"
                     }
                 ]
             }
@@ -2082,7 +1916,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Arthritis, Psoriatic"
                     }
                 ]
             }
@@ -2115,31 +1950,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:540000",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_540000"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D017241",
-                        "label": "MELAS Syndrome",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Cytochrome-c Oxidase Deficiency"
                     }
                 ]
             }
@@ -2196,7 +2008,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Anemia, Megaloblastic"
                     }
                 ]
             }
@@ -2220,7 +2033,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Cystic Fibrosis"
                     }
                 ]
             }
@@ -2243,29 +2057,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:2373",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:2373"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D004612",
-                        "label": "Elliptocytosis, Hereditary",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 2,
+                        "chemotext_mesh_label": "Sjogren's Syndrome"
                     }
                 ]
             }
@@ -2290,7 +2083,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Elliptocytosis, Hereditary"
                     }
                 ]
             }
@@ -2314,53 +2108,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:540000",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_540000"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D017241",
-                        "label": "MELAS Syndrome",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:220110",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/MESH_D030401",
-                    "http://purl.obolibrary.org/obo/OMIM_220110"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D030401",
-                        "label": "Cytochrome-c Oxidase Deficiency",
-                        "sourcePrefixes": [
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Holocarboxylase Synthetase Deficiency"
                     }
                 ]
             }
@@ -2384,29 +2133,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:3310",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:3310"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D003876",
-                        "label": "Eczema, Infantile",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hepatolenticular Degeneration"
                     }
                 ]
             }
@@ -2489,7 +2217,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Spasms, Infantile"
                     },
                     {
                         "curie": "MeSH:D004831",
@@ -2499,7 +2228,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Epilepsies, Myoclonic"
                     }
                 ]
             }
@@ -2532,7 +2262,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Fatty Liver"
                     },
                     {
                         "curie": "MeSH:D005235",
@@ -2542,29 +2273,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:9008",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:9008"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D015535",
-                        "label": "Arthritis, Psoriatic",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Fatty Liver, Alcoholic"
                     }
                 ]
             }
@@ -2587,7 +2297,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Behcet Syndrome"
                     }
                 ]
             }
@@ -2611,7 +2322,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemochromatosis, type 2"
                     },
                     {
                         "curie": "MeSH:C537248",
@@ -2623,7 +2335,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemochromatosis, type 3"
                     },
                     {
                         "curie": "MeSH:C537249",
@@ -2635,7 +2348,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemochromatosis, type 4"
                     },
                     {
                         "curie": "MeSH:D006432",
@@ -2645,7 +2359,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Hemochromatosis"
                     }
                 ]
             }
@@ -2669,7 +2384,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Anemia, Sickle Cell"
                     },
                     {
                         "curie": "MeSH:D006450",
@@ -2679,29 +2395,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:0050523",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:0050523"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D015459",
-                        "label": "Leukemia-Lymphoma, Adult T-Cell",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemoglobin SC Disease"
                     }
                 ]
             }
@@ -2724,7 +2419,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemochromatosis"
                     }
                 ]
             }
@@ -2748,7 +2444,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Hemochromatosis, type 2"
                     },
                     {
                         "curie": "MeSH:D006432",
@@ -2758,7 +2455,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemochromatosis"
                     }
                 ]
             }
@@ -2782,7 +2480,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemochromatosis, type 2"
                     },
                     {
                         "curie": "MeSH:D006432",
@@ -2792,135 +2491,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:2352",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:2352"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:C537247",
-                        "label": "Hemochromatosis, Type 2A",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "EFO",
-                            "Orphanet",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    },
-                    {
-                        "curie": "MeSH:C537248",
-                        "label": "Hemochromatosis, type 3",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "EFO",
-                            "Orphanet",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    },
-                    {
-                        "curie": "MeSH:C537249",
-                        "label": "Hemochromatosis, type 4",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "EFO",
-                            "Orphanet",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    },
-                    {
-                        "curie": "MeSH:D006432",
-                        "label": "Familial Hemochromatosis",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:12241",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:12241"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D017086",
-                        "label": "Thalassemia Major",
-                        "sourcePrefixes": [
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:277900",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_277900"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D006527",
-                        "label": "Hepatic Form of Wilson Disease",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:151400",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:1040"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D015451",
-                        "label": "Leukemia, Lymphocytic, Chronic, B-Cell",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "CLO",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hemochromatosis"
                     }
                 ]
             }
@@ -2955,7 +2527,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Neuronal Ceroid-Lipofuscinoses"
                     }
                 ]
             }
@@ -2989,7 +2562,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Arthritis, Gouty"
                     },
                     {
                         "curie": "MeSH:D006073",
@@ -2998,7 +2572,8 @@
                             "EFO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Gout"
                     }
                 ]
             }
@@ -3043,7 +2618,8 @@
                             "EFO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Multiple Myeloma"
                     }
                 ]
             }
@@ -3061,140 +2637,6 @@
         },
         {
             "id": {
-                "identifier": "DOID:3310",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:3310"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D003876",
-                        "label": "Eczema, Infantile",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:0050523",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:0050523"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D015459",
-                        "label": "Leukemia-Lymphoma, Adult T-Cell",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:3310",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:3310"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D003876",
-                        "label": "Eczema, Infantile",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:12971",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:12971"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D013103",
-                        "label": "Spherocytosis, Hereditary",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    },
-                    {
-                        "curie": "MeSH:C536356",
-                        "label": "Anemia, hereditary spherocytic hemolytic",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "EFO",
-                            "Orphanet",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:603903",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_603903"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D000755",
-                        "label": "Anemia, Sickle Cell",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    },
-                    {
-                        "curie": "MeSH:D006450",
-                        "label": "Hemoglobin SC Disease",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
                 "identifier": "OMIM:263750",
                 "node_type": "D",
                 "layer_number": 2,
@@ -3202,27 +2644,6 @@
                     "http://purl.obolibrary.org/obo/OMIM_263750"
                 ],
                 "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:12241",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:12241"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D017086",
-                        "label": "Thalassemia Major",
-                        "sourcePrefixes": [
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
             }
         },
         {
@@ -3249,51 +2670,6 @@
         },
         {
             "id": {
-                "identifier": "MESH:D006937",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:13810"
-                ],
-                "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:603903",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_603903"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D000755",
-                        "label": "Anemia, Sickle Cell",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    },
-                    {
-                        "curie": "MeSH:D006450",
-                        "label": "Hemoglobin SC Disease",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
                 "identifier": "DOID:11727",
                 "node_type": "D",
                 "layer_number": 2,
@@ -3309,7 +2685,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Muscular Dystrophy, Facioscapulohumeral"
                     }
                 ]
             }
@@ -3333,7 +2710,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Monilethrix"
                     }
                 ]
             }
@@ -3366,7 +2744,8 @@
                             "Orphanet"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Townes-Brocks syndrome"
                     }
                 ]
             }
@@ -3399,7 +2778,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Brugada Syndrome"
                     }
                 ]
             }
@@ -3420,7 +2800,8 @@
                             "EFO"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Bundle-Branch Block"
                     }
                 ]
             }
@@ -3445,7 +2826,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Brugada Syndrome"
                     }
                 ]
             }
@@ -3491,7 +2873,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Spasms, Infantile"
                     }
                 ]
             }
@@ -3505,38 +2888,6 @@
                     "DOID:0060169"
                 ],
                 "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:607208",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:308",
-                    "http://purl.obolibrary.org/obo/OMIM_607208"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D013036",
-                        "label": "Symptomatic Infantile Spasms",
-                        "sourcePrefixes": [
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    },
-                    {
-                        "curie": "MeSH:D004831",
-                        "label": "Symptomatic Myoclonic Epilepsy",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
             }
         },
         {
@@ -3563,28 +2914,6 @@
         },
         {
             "id": {
-                "identifier": "DOID:3310",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:3310"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D003876",
-                        "label": "Eczema, Infantile",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
                 "identifier": "OMIM:256500",
                 "node_type": "D",
                 "layer_number": 2,
@@ -3600,52 +2929,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "MESH:D006937",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:13810"
-                ],
-                "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:603903",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "http://purl.obolibrary.org/obo/OMIM_603903"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D000755",
-                        "label": "Anemia, Sickle Cell",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
-                    },
-                    {
-                        "curie": "MeSH:D006450",
-                        "label": "Hemoglobin SC Disease",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Netherton Syndrome"
                     }
                 ]
             }
@@ -3670,7 +2955,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "beta-Thalassemia"
                     }
                 ]
             }
@@ -3693,7 +2979,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "Thalassemia"
                     },
                     {
                         "curie": "MeSH:D017085",
@@ -3705,28 +2992,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:12241",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:12241"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D017086",
-                        "label": "Thalassemia Major",
-                        "sourcePrefixes": [
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 2,
+                        "chemotext_mesh_label": "alpha-Thalassemia"
                     }
                 ]
             }
@@ -3750,7 +3017,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 2
+                        "distance": 2,
+                        "chemotext_mesh_label": "beta-Thalassemia"
                     }
                 ]
             }
@@ -3783,7 +3051,8 @@
                             "DOID"
                         ],
                         "targetPrefix": "MeSH",
-                        "distance": 1
+                        "distance": 1,
+                        "chemotext_mesh_label": "Hemoglobinopathies"
                     }
                 ]
             }
@@ -5618,576 +4887,46 @@
                 "edge_type": "support",
                 "publications": [
                     {
-                        "date": 19730619,
-                        "pmid": 4572823,
-                        "title": "Introduction: Modification of immunity and carcinogenesis."
+                        "date": 19551201,
+                        "pmid": 14377724
                     },
                     {
-                        "date": 19680411,
-                        "title": "The epidemiology of Burkitt's tumor.",
-                        "pmid": 4295479
+                        "date": 19990209,
+                        "pmid": 9929030
+                    },
+                    {
+                        "date": 19810513,
+                        "pmid": 7010998
+                    },
+                    {
+                        "date": 19760823,
+                        "pmid": 819657,
+                        "title": "Malarial infections in Aotus trivirgatus with special reference to liver pathology."
+                    },
+                    {
+                        "date": 19750122,
+                        "pmid": 4427203
+                    },
+                    {
+                        "date": 19720720,
+                        "pmid": 5025613
+                    },
+                    {
+                        "date": 19690709,
+                        "pmid": 5305717
+                    },
+                    {
+                        "date": 19661223,
+                        "pmid": 4288182
+                    },
+                    {
+                        "date": 19810613,
+                        "pmid": 7013601
                     }
                 ]
             },
             "source": 0,
-            "target": 76,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20110311,
-                        "pmid": 21391831
-                    },
-                    {
-                        "date": 19961030,
-                        "pmid": 8730307,
-                        "title": "Immunoglobulin gene polymerase chain reaction to distinguish hyperreactive malarial splenomegaly from 'African' chronic lymphocytic leukaemia and splenic lymphoma."
-                    },
-                    {
-                        "date": 19910405,
-                        "pmid": 1671888
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 101,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20150821,
-                        "pmid": 26292718,
-                        "title": "Association of maternal anemia with other risk factors in occurrence of Great obstetrical syndromes at university clinics, Kinshasa, DR Congo."
-                    },
-                    {
-                        "date": 20151013,
-                        "pmid": 26239414
-                    },
-                    {
-                        "date": 20141021,
-                        "pmid": 25330010
-                    },
-                    {
-                        "date": 20110719,
-                        "pmid": 21695397,
-                        "title": "The health of the \"older women\" in Accra, Ghana: results of the Women's Health Study of Accra."
-                    },
-                    {
-                        "date": 20090527,
-                        "pmid": 19469445
-                    },
-                    {
-                        "date": 20080904,
-                        "pmid": 18593304
-                    },
-                    {
-                        "date": 20080408,
-                        "pmid": 18390933,
-                        "title": "Growth generates health care challenges in booming India."
-                    },
-                    {
-                        "date": 20070530,
-                        "pmid": 17472433,
-                        "title": "Malnutrition and Infection: Complex Mechanisms and Global Impacts"
-                    },
-                    {
-                        "date": 20060130,
-                        "title": "The patient's page.",
-                        "pmid": 16440933
-                    },
-                    {
-                        "date": 20050801,
-                        "pmid": 15915156,
-                        "title": "Nutritional status following malaria control in a Vietnamese ethnic minority commune."
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 86,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20070726,
-                        "pmid": 17652540
-                    },
-                    {
-                        "date": 20040916,
-                        "pmid": 15370255,
-                        "title": "Bcl-2 and immunoglobulin gene rearrangements in patients with malaria related chronic splenomegaly."
-                    },
-                    {
-                        "date": 20040706,
-                        "pmid": 15236613,
-                        "title": "Hepatic pathology in AIDS: a pathological study from Mumbai, India."
-                    },
-                    {
-                        "date": 19980205,
-                        "pmid": 9449730
-                    },
-                    {
-                        "date": 19980205,
-                        "pmid": 9447836
-                    },
-                    {
-                        "date": 19980106,
-                        "pmid": 9353999
-                    },
-                    {
-                        "date": 19961112,
-                        "pmid": 8926718
-                    },
-                    {
-                        "date": 19961030,
-                        "pmid": 8730307,
-                        "title": "Immunoglobulin gene polymerase chain reaction to distinguish hyperreactive malarial splenomegaly from 'African' chronic lymphocytic leukaemia and splenic lymphoma."
-                    },
-                    {
-                        "date": 19940222,
-                        "title": "Malaria in splenectomized patients.",
-                        "pmid": 8286651
-                    },
-                    {
-                        "date": 19900514,
-                        "pmid": 2323841,
-                        "title": "The distribution of non-Burkitt, non-Hodgkin's lymphomas in Uganda in relation to malarial endemicity."
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 73,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20140521,
-                        "pmid": 24378761,
-                        "title": "Hyperuricaemia in the Pacific: why the elevated serum urate levels?"
-                    },
-                    {
-                        "date": 19750707,
-                        "pmid": 4617210
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 171,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20151204,
-                        "pmid": 26633928
-                    },
-                    {
-                        "date": 20150613,
-                        "pmid": 26068416
-                    },
-                    {
-                        "date": 20150513,
-                        "pmid": 25965586
-                    },
-                    {
-                        "date": 20131014,
-                        "pmid": 24062524,
-                        "title": "Prevalence and predictors of hypoxaemia in respiratory and non-respiratory primary diagnoses among emergently ill children at a tertiary hospital in south western Nigeria."
-                    },
-                    {
-                        "date": 20121204,
-                        "pmid": 23208475,
-                        "title": "Clinical features of sickle cell anaemia in northern nigerian children."
-                    },
-                    {
-                        "date": 20090518,
-                        "pmid": 19445751
-                    },
-                    {
-                        "date": 19621201,
-                        "pmid": 13920874
-                    },
-                    {
-                        "date": 20150724,
-                        "pmid": 25701866,
-                        "title": "A Randomized Trial to Compare the Safety, Tolerability, and Effectiveness of 3 Antimalarial Regimens for the Prevention of Malaria in Nigerian Patients With Sickle Cell Disease"
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25511352,
-                        "title": "Sickle cell disease clinical phenotypes in children from South-Western, Nigeria."
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25510137,
-                        "title": "[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease]."
-                    },
-                    {
-                        "date": 20060323,
-                        "pmid": 16553599,
-                        "title": "Mixed Plasmodium falciparum-Plasmodium malariae infection and hemoglobin SC disease: a case report."
-                    },
-                    {
-                        "date": 19921112,
-                        "pmid": 1383671,
-                        "title": "[Incidence of malaria and S hemoglobinopathy in the pediatric hospital milieu in Bamako, Mali]."
-                    },
-                    {
-                        "date": 19831220,
-                        "pmid": 6313809
-                    },
-                    {
-                        "date": 19841025,
-                        "pmid": 6472160
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 159,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20151204,
-                        "pmid": 26633928
-                    },
-                    {
-                        "date": 20150613,
-                        "pmid": 26068416
-                    },
-                    {
-                        "date": 20150513,
-                        "pmid": 25965586
-                    },
-                    {
-                        "date": 20131014,
-                        "pmid": 24062524,
-                        "title": "Prevalence and predictors of hypoxaemia in respiratory and non-respiratory primary diagnoses among emergently ill children at a tertiary hospital in south western Nigeria."
-                    },
-                    {
-                        "date": 20121204,
-                        "pmid": 23208475,
-                        "title": "Clinical features of sickle cell anaemia in northern nigerian children."
-                    },
-                    {
-                        "date": 20090518,
-                        "pmid": 19445751
-                    },
-                    {
-                        "date": 19621201,
-                        "pmid": 13920874
-                    },
-                    {
-                        "date": 20150724,
-                        "pmid": 25701866,
-                        "title": "A Randomized Trial to Compare the Safety, Tolerability, and Effectiveness of 3 Antimalarial Regimens for the Prevention of Malaria in Nigerian Patients With Sickle Cell Disease"
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25511352,
-                        "title": "Sickle cell disease clinical phenotypes in children from South-Western, Nigeria."
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25510137,
-                        "title": "[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease]."
-                    },
-                    {
-                        "date": 20060323,
-                        "pmid": 16553599,
-                        "title": "Mixed Plasmodium falciparum-Plasmodium malariae infection and hemoglobin SC disease: a case report."
-                    },
-                    {
-                        "date": 19921112,
-                        "pmid": 1383671,
-                        "title": "[Incidence of malaria and S hemoglobinopathy in the pediatric hospital milieu in Bamako, Mali]."
-                    },
-                    {
-                        "date": 19831220,
-                        "pmid": 6313809
-                    },
-                    {
-                        "date": 19841025,
-                        "pmid": 6472160
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 180,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20151204,
-                        "pmid": 26633928
-                    },
-                    {
-                        "date": 20150613,
-                        "pmid": 26068416
-                    },
-                    {
-                        "date": 20150513,
-                        "pmid": 25965586
-                    },
-                    {
-                        "date": 20131014,
-                        "pmid": 24062524,
-                        "title": "Prevalence and predictors of hypoxaemia in respiratory and non-respiratory primary diagnoses among emergently ill children at a tertiary hospital in south western Nigeria."
-                    },
-                    {
-                        "date": 20121204,
-                        "pmid": 23208475,
-                        "title": "Clinical features of sickle cell anaemia in northern nigerian children."
-                    },
-                    {
-                        "date": 20090518,
-                        "pmid": 19445751
-                    },
-                    {
-                        "date": 19621201,
-                        "pmid": 13920874
-                    },
-                    {
-                        "date": 20150724,
-                        "pmid": 25701866,
-                        "title": "A Randomized Trial to Compare the Safety, Tolerability, and Effectiveness of 3 Antimalarial Regimens for the Prevention of Malaria in Nigerian Patients With Sickle Cell Disease"
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25511352,
-                        "title": "Sickle cell disease clinical phenotypes in children from South-Western, Nigeria."
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25510137,
-                        "title": "[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease]."
-                    },
-                    {
-                        "date": 20060323,
-                        "pmid": 16553599,
-                        "title": "Mixed Plasmodium falciparum-Plasmodium malariae infection and hemoglobin SC disease: a case report."
-                    },
-                    {
-                        "date": 19921112,
-                        "pmid": 1383671,
-                        "title": "[Incidence of malaria and S hemoglobinopathy in the pediatric hospital milieu in Bamako, Mali]."
-                    },
-                    {
-                        "date": 19831220,
-                        "pmid": 6313809
-                    },
-                    {
-                        "date": 19841025,
-                        "pmid": 6472160
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 186,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20151204,
-                        "pmid": 26633928
-                    },
-                    {
-                        "date": 20150613,
-                        "pmid": 26068416
-                    },
-                    {
-                        "date": 20150513,
-                        "pmid": 25965586
-                    },
-                    {
-                        "date": 20131014,
-                        "pmid": 24062524,
-                        "title": "Prevalence and predictors of hypoxaemia in respiratory and non-respiratory primary diagnoses among emergently ill children at a tertiary hospital in south western Nigeria."
-                    },
-                    {
-                        "date": 20121204,
-                        "pmid": 23208475,
-                        "title": "Clinical features of sickle cell anaemia in northern nigerian children."
-                    },
-                    {
-                        "date": 20090518,
-                        "pmid": 19445751
-                    },
-                    {
-                        "date": 19621201,
-                        "pmid": 13920874
-                    },
-                    {
-                        "date": 20150724,
-                        "pmid": 25701866,
-                        "title": "A Randomized Trial to Compare the Safety, Tolerability, and Effectiveness of 3 Antimalarial Regimens for the Prevention of Malaria in Nigerian Patients With Sickle Cell Disease"
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25511352,
-                        "title": "Sickle cell disease clinical phenotypes in children from South-Western, Nigeria."
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25510137,
-                        "title": "[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease]."
-                    },
-                    {
-                        "date": 20060323,
-                        "pmid": 16553599,
-                        "title": "Mixed Plasmodium falciparum-Plasmodium malariae infection and hemoglobin SC disease: a case report."
-                    },
-                    {
-                        "date": 19921112,
-                        "pmid": 1383671,
-                        "title": "[Incidence of malaria and S hemoglobinopathy in the pediatric hospital milieu in Bamako, Mali]."
-                    },
-                    {
-                        "date": 19831220,
-                        "pmid": 6313809
-                    },
-                    {
-                        "date": 19841025,
-                        "pmid": 6472160
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 205,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 19631201,
-                        "pmid": 14021010,
-                        "title": "Three inherited red-cell abnormalities in a district of Greece. Thalassaemia, sickling, and glucose-6-phosphate-dehydrogenase deficiency."
-                    },
-                    {
-                        "date": 19581201,
-                        "pmid": 13460008
-                    },
-                    {
-                        "date": 20141216,
-                        "pmid": 25510137,
-                        "title": "[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease]."
-                    },
-                    {
-                        "date": 20140214,
-                        "pmid": 24316370
-                    },
-                    {
-                        "date": 20131217,
-                        "pmid": 22973867,
-                        "title": "The burden and consequences of inherited blood disorders among young children in western Kenya."
-                    },
-                    {
-                        "date": 20111226,
-                        "pmid": 22199098,
-                        "title": "Sickle cell disease in Middle East Arab countries"
-                    },
-                    {
-                        "date": 20111207,
-                        "pmid": 22145364
-                    },
-                    {
-                        "date": 20101115,
-                        "pmid": 21075278,
-                        "title": "The population genetics and dynamics of the thalassemias."
-                    },
-                    {
-                        "date": 20100920,
-                        "pmid": 20655368
-                    },
-                    {
-                        "date": 20091218,
-                        "pmid": 19955437
-                    },
-                    {
-                        "date": 20151202,
-                        "pmid": 26629542
-                    },
-                    {
-                        "date": 20150402,
-                        "pmid": 25604491
-                    },
-                    {
-                        "date": 20130416,
-                        "pmid": 23497175,
-                        "title": "Evidence of recent natural selection on the Southeast Asian deletion (--SEA) causing &#x003b1;-thalassemia in South China"
-                    },
-                    {
-                        "date": 20130404,
-                        "pmid": 23382166,
-                        "title": "Determinants of anemia among preschool children in rural, western Kenya."
-                    },
-                    {
-                        "date": 20121213,
-                        "pmid": 23057857,
-                        "title": "The association between malaria parasitaemia, erythrocyte polymorphisms, malnutrition and anaemia in children less than 10 years in Senegal: a case control study."
-                    },
-                    {
-                        "date": 20120528,
-                        "pmid": 22445352,
-                        "title": "Haemoglobinopathies and the clinical epidemiology of malaria: a systematic review and meta-analysis."
-                    },
-                    {
-                        "date": 20111205,
-                        "pmid": 22018599,
-                        "title": "Prevalence of classic erythrocyte polymorphisms among 749 children in southern highland Rwanda."
-                    },
-                    {
-                        "date": 20111202,
-                        "pmid": 22133230,
-                        "title": "NEGATIVE EPISTASIS BETWEEN &#x003b1;+ THALASSAEMIA AND SICKLE CELL TRAIT CAN EXPLAIN INTERPOPULATION VARIATION IN SOUTH ASIA"
-                    },
-                    {
-                        "date": 20111117,
-                        "pmid": 22089616,
-                        "title": "Hb E/beta-thalassaemia: a common &amp; clinically diverse disorder."
-                    },
-                    {
-                        "date": 20111017,
-                        "pmid": 21939508,
-                        "title": "Effect of \u03b1(+)-thalassaemia on episodes of fever due to malaria and other causes: a community-based cohort study in Tanzania."
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 207,
+            "target": 140,
             "key": 0
         },
         {
@@ -6242,7 +4981,734 @@
                 ]
             },
             "source": 0,
-            "target": 92,
+            "target": 80,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20151204,
+                        "pmid": 26633928
+                    },
+                    {
+                        "date": 20150613,
+                        "pmid": 26068416
+                    },
+                    {
+                        "date": 20150513,
+                        "pmid": 25965586
+                    },
+                    {
+                        "date": 20131014,
+                        "pmid": 24062524,
+                        "title": "Prevalence and predictors of hypoxaemia in respiratory and non-respiratory primary diagnoses among emergently ill children at a tertiary hospital in south western Nigeria."
+                    },
+                    {
+                        "date": 20121204,
+                        "pmid": 23208475,
+                        "title": "Clinical features of sickle cell anaemia in northern nigerian children."
+                    },
+                    {
+                        "date": 20090518,
+                        "pmid": 19445751
+                    },
+                    {
+                        "date": 19621201,
+                        "pmid": 13920874
+                    },
+                    {
+                        "date": 20150724,
+                        "pmid": 25701866,
+                        "title": "A Randomized Trial to Compare the Safety, Tolerability, and Effectiveness of 3 Antimalarial Regimens for the Prevention of Malaria in Nigerian Patients With Sickle Cell Disease"
+                    },
+                    {
+                        "date": 20141216,
+                        "pmid": 25511352,
+                        "title": "Sickle cell disease clinical phenotypes in children from South-Western, Nigeria."
+                    },
+                    {
+                        "date": 20141216,
+                        "pmid": 25510137,
+                        "title": "[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease]."
+                    },
+                    {
+                        "date": 20060323,
+                        "pmid": 16553599,
+                        "title": "Mixed Plasmodium falciparum-Plasmodium malariae infection and hemoglobin SC disease: a case report."
+                    },
+                    {
+                        "date": 19921112,
+                        "pmid": 1383671,
+                        "title": "[Incidence of malaria and S hemoglobinopathy in the pediatric hospital milieu in Bamako, Mali]."
+                    },
+                    {
+                        "date": 19831220,
+                        "pmid": 6313809
+                    },
+                    {
+                        "date": 19841025,
+                        "pmid": 6472160
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 143,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20051003,
+                        "title": "Founder mutations.",
+                        "pmid": 16196257
+                    },
+                    {
+                        "date": 20000619,
+                        "pmid": 10767050
+                    },
+                    {
+                        "date": 19920602,
+                        "pmid": 1575704
+                    },
+                    {
+                        "date": 19710807,
+                        "pmid": 4932601
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 146,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20051003,
+                        "title": "Founder mutations.",
+                        "pmid": 16196257
+                    },
+                    {
+                        "date": 20000619,
+                        "pmid": 10767050
+                    },
+                    {
+                        "date": 19920602,
+                        "pmid": 1575704
+                    },
+                    {
+                        "date": 19710807,
+                        "pmid": 4932601
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 145,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20151114,
+                        "pmid": 26394108
+                    },
+                    {
+                        "date": 20150127,
+                        "pmid": 25523871,
+                        "title": "\u03b2-globin genes: mutation hot-spots in the global thalassemia belt."
+                    },
+                    {
+                        "date": 20150417,
+                        "pmid": 25883737,
+                        "title": "Hyper-reactive malarial splenomegaly (HMS) in a patient with \u03b2 thalassaemia syndrome."
+                    },
+                    {
+                        "date": 20131108,
+                        "pmid": 24205432,
+                        "title": "Oxidative stress and \u03b2-thalassemic erythroid cells behind the molecular defect."
+                    },
+                    {
+                        "date": 20130104,
+                        "pmid": 23118217
+                    },
+                    {
+                        "date": 20111117,
+                        "pmid": 22089616,
+                        "title": "Hb E/beta-thalassaemia: a common &amp; clinically diverse disorder."
+                    },
+                    {
+                        "date": 20091105,
+                        "pmid": 19841268,
+                        "title": "Interaction of malaria with a common form of severe thalassemia in an Asian population."
+                    },
+                    {
+                        "date": 20090903,
+                        "pmid": 19725348
+                    },
+                    {
+                        "date": 20071121,
+                        "pmid": 18027811,
+                        "title": "Genetic benefits of consanguinity through selection of genotypes protective against malaria."
+                    },
+                    {
+                        "date": 20060508,
+                        "pmid": 16603161,
+                        "title": "Do tribal communities show an inverse relationship between sickle cell disorders and glucose-6-phosphate dehydrogenase deficiency in malaria endemic areas of Central-Eastern India?"
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 173,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20140909,
+                        "pmid": 24976451,
+                        "title": "Plasmodium berghei infection ameliorates atopic dermatitis-like skin lesions in NC/Nga mice"
+                    },
+                    {
+                        "date": 20101109,
+                        "pmid": 20456550,
+                        "title": "Allergic characteristics of urban schoolchildren with atopic eczema in Ghana."
+                    },
+                    {
+                        "date": 19970429,
+                        "pmid": 9025985,
+                        "title": "Serum levels of eosinophil cationic protein, eosinophil-derived neurotoxin and myeloperoxidase in infections with filariae and schistosomes."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 62,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20010307,
+                        "pmid": 11234288,
+                        "title": "[Illness after travel not always due to exotic disease]."
+                    },
+                    {
+                        "date": 20000619,
+                        "pmid": 10767050
+                    },
+                    {
+                        "date": 19980106,
+                        "pmid": 9353999
+                    },
+                    {
+                        "date": 19700810,
+                        "pmid": 4193093
+                    },
+                    {
+                        "date": 19641001,
+                        "pmid": 14160603
+                    },
+                    {
+                        "date": 19640201,
+                        "pmid": 14062510
+                    },
+                    {
+                        "date": 19631201,
+                        "title": "The cellular elements of the blood.",
+                        "pmid": 13973706
+                    },
+                    {
+                        "date": 19611201,
+                        "pmid": 13684498
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 153,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20120622,
+                        "pmid": 22723917,
+                        "title": "A Novel ENU-Mutation in Ankyrin-1 Disrupts Malaria Parasite Maturation in Red Blood Cells of Mice"
+                    },
+                    {
+                        "date": 20120607,
+                        "pmid": 22674320
+                    },
+                    {
+                        "date": 20120607,
+                        "pmid": 22674306
+                    },
+                    {
+                        "date": 19950818,
+                        "pmid": 7612181,
+                        "title": "Genetic disorders of the red cell membrane."
+                    },
+                    {
+                        "date": 19901211,
+                        "pmid": 2233937,
+                        "title": "Red-cell cytoskeletal abnormalities--implications for malaria."
+                    },
+                    {
+                        "date": 19800417,
+                        "pmid": 394413
+                    },
+                    {
+                        "date": 19740507,
+                        "pmid": 4593214,
+                        "title": "Splenectomy in hereditary spherocytosis: effect on course of relapsing vivax malaria."
+                    },
+                    {
+                        "date": 19720418,
+                        "pmid": 4258090,
+                        "title": "Pathological alterations of cation movements in red blood cells."
+                    },
+                    {
+                        "date": 19660615,
+                        "pmid": 5907765,
+                        "title": "Renal hemosiderosis (blue kidney) in patients with valvular heart disease."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 93,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20151223,
+                        "pmid": 26621750
+                    },
+                    {
+                        "date": 20091014,
+                        "pmid": 19826486,
+                        "title": "Absence of erythrocyte sequestration and lack of multicopy gene family expression in Plasmodium falciparum from a splenectomized malaria patient."
+                    },
+                    {
+                        "date": 20030627,
+                        "pmid": 12828005,
+                        "title": "[New concepts in hyperactive malarial splenomegaly]."
+                    },
+                    {
+                        "date": 20020920,
+                        "pmid": 12241718,
+                        "title": "Causes of massive tropical splenomegaly in Ghana."
+                    },
+                    {
+                        "date": 19880922,
+                        "pmid": 3043151
+                    },
+                    {
+                        "date": 19841022,
+                        "pmid": 6089444
+                    },
+                    {
+                        "date": 19830715,
+                        "pmid": 6304867
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 106,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20080507,
+                        "pmid": 18460245
+                    },
+                    {
+                        "date": 20071206,
+                        "pmid": 18057166
+                    },
+                    {
+                        "date": 20060203,
+                        "pmid": 16454396,
+                        "title": "The aetiology of severe anaemia among antenatal patients of the Port Moresby General Hospital."
+                    },
+                    {
+                        "date": 19991020,
+                        "pmid": 10491551,
+                        "title": "Chronic myeloid leukemia complicated by megaloblastic anemia and malaria: An unusual association confounding the assessment of the phase of CML."
+                    },
+                    {
+                        "date": 19910726,
+                        "pmid": 2098429
+                    },
+                    {
+                        "date": 19820621,
+                        "pmid": 7041264
+                    },
+                    {
+                        "date": 19820621,
+                        "pmid": 6803362,
+                        "title": "Recent work concerning anemia in the tropics."
+                    },
+                    {
+                        "date": 19811122,
+                        "pmid": 7281211
+                    },
+                    {
+                        "date": 19770129,
+                        "pmid": 63088
+                    },
+                    {
+                        "date": 19760706,
+                        "pmid": 1264943
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 127,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19730619,
+                        "pmid": 4572823,
+                        "title": "Introduction: Modification of immunity and carcinogenesis."
+                    },
+                    {
+                        "date": 19680411,
+                        "title": "The epidemiology of Burkitt's tumor.",
+                        "pmid": 4295479
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 76,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20070726,
+                        "pmid": 17652540
+                    },
+                    {
+                        "date": 20040916,
+                        "pmid": 15370255,
+                        "title": "Bcl-2 and immunoglobulin gene rearrangements in patients with malaria related chronic splenomegaly."
+                    },
+                    {
+                        "date": 20040706,
+                        "pmid": 15236613,
+                        "title": "Hepatic pathology in AIDS: a pathological study from Mumbai, India."
+                    },
+                    {
+                        "date": 19980205,
+                        "pmid": 9449730
+                    },
+                    {
+                        "date": 19980205,
+                        "pmid": 9447836
+                    },
+                    {
+                        "date": 19980106,
+                        "pmid": 9353999
+                    },
+                    {
+                        "date": 19961112,
+                        "pmid": 8926718
+                    },
+                    {
+                        "date": 19961030,
+                        "pmid": 8730307,
+                        "title": "Immunoglobulin gene polymerase chain reaction to distinguish hyperreactive malarial splenomegaly from 'African' chronic lymphocytic leukaemia and splenic lymphoma."
+                    },
+                    {
+                        "date": 19940222,
+                        "title": "Malaria in splenectomized patients.",
+                        "pmid": 8286651
+                    },
+                    {
+                        "date": 19900514,
+                        "pmid": 2323841,
+                        "title": "The distribution of non-Burkitt, non-Hodgkin's lymphomas in Uganda in relation to malarial endemicity."
+                    },
+                    {
+                        "date": 20000719,
+                        "pmid": 10818118,
+                        "title": "Haematopoietic cancer and medical history: a multicentre case control study."
+                    },
+                    {
+                        "date": 19910214,
+                        "pmid": 2267448,
+                        "title": "[Dacie syndrome and other splenomegalies without apparent cause]."
+                    },
+                    {
+                        "date": 19900514,
+                        "pmid": 2323841,
+                        "title": "The distribution of non-Burkitt, non-Hodgkin's lymphomas in Uganda in relation to malarial endemicity."
+                    },
+                    {
+                        "date": 19820313,
+                        "pmid": 6895690,
+                        "title": "The effect of malaria on the growth of two syngeneic transplantable murine tumours."
+                    },
+                    {
+                        "date": 19730926,
+                        "pmid": 4352664,
+                        "title": "Epidemiologic and immunologic considerations on the pathogenesis of Burkitt's Tumor."
+                    },
+                    {
+                        "date": 19680411,
+                        "title": "The epidemiology of Burkitt's tumor.",
+                        "pmid": 4295479
+                    },
+                    {
+                        "date": 19650101,
+                        "pmid": 14201808,
+                        "title": "AN EPIDEMIOLOGIC APPROACH TO THE LYMPHOMAS OF AFRICAN CHILDREN AND BURKITT'S SACROMA OF THE JAWS."
+                    },
+                    {
+                        "date": 19641001,
+                        "pmid": 14163929
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 73,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20141105,
+                        "pmid": 24919211
+                    },
+                    {
+                        "date": 20060815,
+                        "pmid": 16909059,
+                        "title": "Brugada-type electrocardiographic changes in a febrile patient of african descent."
+                    },
+                    {
+                        "date": 19860513,
+                        "pmid": 3964168,
+                        "title": "Cases from the aerospace medicine residents' teaching files. Case #11. New left bundle block on screening exam."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 164,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20051003,
+                        "title": "Founder mutations.",
+                        "pmid": 16196257
+                    },
+                    {
+                        "date": 20000619,
+                        "pmid": 10767050
+                    },
+                    {
+                        "date": 19920602,
+                        "pmid": 1575704
+                    },
+                    {
+                        "date": 19710807,
+                        "pmid": 4932601
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 142,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150728,
+                        "pmid": 26215182,
+                        "title": "The influence of host genetics on erythrocytes and malaria infection: is there therapeutic potential?"
+                    },
+                    {
+                        "date": 20150613,
+                        "pmid": 26068416
+                    },
+                    {
+                        "date": 20150428,
+                        "pmid": 25915902,
+                        "title": "G6PD Deficiency and Hemoglobinopathies: Molecular Epidemiological Characteristics and Healthy Effects on Malaria Endemic Bioko Island, Equatorial Guinea."
+                    },
+                    {
+                        "date": 19650901,
+                        "title": "HAEMOGLOBINOPATHY AND MALARIA.",
+                        "pmid": 14301734
+                    },
+                    {
+                        "date": 20140812,
+                        "pmid": 24828305,
+                        "title": "Out with the bad and in with the good; red cell exchange, white cell reduction, and platelet reduction."
+                    },
+                    {
+                        "date": 20130619,
+                        "pmid": 23568771,
+                        "title": "Online biomedical resources for malaria-related red cell disorders."
+                    },
+                    {
+                        "date": 20130520,
+                        "pmid": 23587617,
+                        "title": "[From donor to recipient: transfusion chain specificities in the French ultra-marine areas]."
+                    },
+                    {
+                        "date": 20120906,
+                        "pmid": 22951448,
+                        "title": "World distribution, population genetics, and health burden of the hemoglobinopathies."
+                    },
+                    {
+                        "date": 20120528,
+                        "pmid": 22445353,
+                        "title": "Balancing act: haemoglobinopathies and malaria."
+                    },
+                    {
+                        "date": 20120528,
+                        "pmid": 22445352,
+                        "title": "Haemoglobinopathies and the clinical epidemiology of malaria: a systematic review and meta-analysis."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 177,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20010307,
+                        "pmid": 11234288,
+                        "title": "[Illness after travel not always due to exotic disease]."
+                    },
+                    {
+                        "date": 20000619,
+                        "pmid": 10767050
+                    },
+                    {
+                        "date": 19980106,
+                        "pmid": 9353999
+                    },
+                    {
+                        "date": 19700810,
+                        "pmid": 4193093
+                    },
+                    {
+                        "date": 19641001,
+                        "pmid": 14160603
+                    },
+                    {
+                        "date": 19640201,
+                        "pmid": 14062510
+                    },
+                    {
+                        "date": 19631201,
+                        "title": "The cellular elements of the blood.",
+                        "pmid": 13973706
+                    },
+                    {
+                        "date": 19611201,
+                        "pmid": 13684498
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 71,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19830610,
+                        "pmid": 6341001,
+                        "title": "Glycophorins and red cell invasion by Plasmodium falciparum."
+                    },
+                    {
+                        "date": 19780517,
+                        "pmid": 273209,
+                        "title": "Aplasia and leukaemia following chloroquine therapy."
+                    },
+                    {
+                        "date": 19760823,
+                        "pmid": 1065254
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 67,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19511201,
+                        "pmid": 14818732
+                    },
+                    {
+                        "date": 20131101,
+                        "pmid": 23999240,
+                        "title": "Brugada ECG disclosed by acute malaria: is it all about fever and propofol?"
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 165,
             "key": 0
         },
         {
@@ -6267,30 +5733,6 @@
             },
             "source": 0,
             "target": 77,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20110311,
-                        "pmid": 21391831
-                    },
-                    {
-                        "date": 19961030,
-                        "pmid": 8730307,
-                        "title": "Immunoglobulin gene polymerase chain reaction to distinguish hyperreactive malarial splenomegaly from 'African' chronic lymphocytic leukaemia and splenic lymphoma."
-                    },
-                    {
-                        "date": 19910405,
-                        "pmid": 1671888
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 167,
             "key": 0
         },
         {
@@ -6401,7 +5843,27 @@
                 ]
             },
             "source": 0,
-            "target": 80,
+            "target": 92,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19511201,
+                        "pmid": 14818732
+                    },
+                    {
+                        "date": 20131101,
+                        "pmid": 23999240,
+                        "title": "Brugada ECG disclosed by acute malaria: is it all about fever and propofol?"
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 163,
             "key": 0
         },
         {
@@ -6456,7 +5918,7 @@
                 ]
             },
             "source": 0,
-            "target": 96,
+            "target": 130,
             "key": 0
         },
         {
@@ -6465,252 +5927,8 @@
                 "edge_type": "support",
                 "publications": [
                     {
-                        "date": 20150808,
-                        "pmid": 26047685
-                    },
-                    {
-                        "date": 20090701,
-                        "pmid": 19566055
-                    },
-                    {
-                        "date": 20061013,
-                        "pmid": 17038679
-                    },
-                    {
-                        "date": 20060828,
-                        "pmid": 16797741
-                    },
-                    {
-                        "date": 20041022,
-                        "pmid": 15265796,
-                        "title": "Ability of Plasmodium falciparum to invade Southeast Asian ovalocytes varies between parasite lines."
-                    },
-                    {
-                        "date": 20031225,
-                        "pmid": 14695625,
-                        "title": "Glycophorin C (Gerbich antigen blood group) and band 3 polymorphisms in two malaria holoendemic regions of Papua New Guinea."
-                    },
-                    {
-                        "date": 20021007,
-                        "pmid": 12367581
-                    },
-                    {
-                        "date": 20020716,
-                        "pmid": 12118458
-                    },
-                    {
-                        "date": 20020218,
-                        "pmid": 11848616,
-                        "title": "Rapid, sensitive diagnosis of hemolytic anemia using antihemoglobin antibody in hypotonic solution."
-                    },
-                    {
-                        "date": 20000407,
-                        "pmid": 10711755,
-                        "title": "Clinical potential of in vitro measured red cell deformability, a myth?"
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 141,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20010307,
-                        "pmid": 11234288,
-                        "title": "[Illness after travel not always due to exotic disease]."
-                    },
-                    {
-                        "date": 20000619,
-                        "pmid": 10767050
-                    },
-                    {
-                        "date": 19980106,
-                        "pmid": 9353999
-                    },
-                    {
-                        "date": 19700810,
-                        "pmid": 4193093
-                    },
-                    {
-                        "date": 19641001,
-                        "pmid": 14160603
-                    },
-                    {
-                        "date": 19640201,
-                        "pmid": 14062510
-                    },
-                    {
-                        "date": 19631201,
-                        "title": "The cellular elements of the blood.",
-                        "pmid": 13973706
-                    },
-                    {
-                        "date": 19611201,
-                        "pmid": 13684498
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 71,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20150728,
-                        "pmid": 26215182,
-                        "title": "The influence of host genetics on erythrocytes and malaria infection: is there therapeutic potential?"
-                    },
-                    {
-                        "date": 20150613,
-                        "pmid": 26068416
-                    },
-                    {
-                        "date": 20150428,
-                        "pmid": 25915902,
-                        "title": "G6PD Deficiency and Hemoglobinopathies: Molecular Epidemiological Characteristics and Healthy Effects on Malaria Endemic Bioko Island, Equatorial Guinea."
-                    },
-                    {
-                        "date": 19650901,
-                        "title": "HAEMOGLOBINOPATHY AND MALARIA.",
-                        "pmid": 14301734
-                    },
-                    {
-                        "date": 20140812,
-                        "pmid": 24828305,
-                        "title": "Out with the bad and in with the good; red cell exchange, white cell reduction, and platelet reduction."
-                    },
-                    {
-                        "date": 20130619,
-                        "pmid": 23568771,
-                        "title": "Online biomedical resources for malaria-related red cell disorders."
-                    },
-                    {
-                        "date": 20130520,
-                        "pmid": 23587617,
-                        "title": "[From donor to recipient: transfusion chain specificities in the French ultra-marine areas]."
-                    },
-                    {
-                        "date": 20120906,
-                        "pmid": 22951448,
-                        "title": "World distribution, population genetics, and health burden of the hemoglobinopathies."
-                    },
-                    {
-                        "date": 20120528,
-                        "pmid": 22445353,
-                        "title": "Balancing act: haemoglobinopathies and malaria."
-                    },
-                    {
-                        "date": 20120528,
-                        "pmid": 22445352,
-                        "title": "Haemoglobinopathies and the clinical epidemiology of malaria: a systematic review and meta-analysis."
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 211,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20010307,
-                        "pmid": 11234288,
-                        "title": "[Illness after travel not always due to exotic disease]."
-                    },
-                    {
-                        "date": 20000619,
-                        "pmid": 10767050
-                    },
-                    {
-                        "date": 19980106,
-                        "pmid": 9353999
-                    },
-                    {
-                        "date": 19700810,
-                        "pmid": 4193093
-                    },
-                    {
-                        "date": 19641001,
-                        "pmid": 14160603
-                    },
-                    {
-                        "date": 19640201,
-                        "pmid": 14062510
-                    },
-                    {
-                        "date": 19631201,
-                        "title": "The cellular elements of the blood.",
-                        "pmid": 13973706
-                    },
-                    {
-                        "date": 19611201,
-                        "pmid": 13684498
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 174,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20080507,
-                        "pmid": 18460245
-                    },
-                    {
-                        "date": 20071206,
-                        "pmid": 18057166
-                    },
-                    {
-                        "date": 20060203,
-                        "pmid": 16454396,
-                        "title": "The aetiology of severe anaemia among antenatal patients of the Port Moresby General Hospital."
-                    },
-                    {
-                        "date": 19991020,
-                        "pmid": 10491551,
-                        "title": "Chronic myeloid leukemia complicated by megaloblastic anemia and malaria: An unusual association confounding the assessment of the phase of CML."
-                    },
-                    {
-                        "date": 19910726,
-                        "pmid": 2098429
-                    },
-                    {
-                        "date": 19820621,
-                        "pmid": 7041264
-                    },
-                    {
-                        "date": 19820621,
-                        "pmid": 6803362,
-                        "title": "Recent work concerning anemia in the tropics."
-                    },
-                    {
-                        "date": 19811122,
-                        "pmid": 7281211
-                    },
-                    {
-                        "date": 19770129,
-                        "pmid": 63088
-                    },
-                    {
-                        "date": 19760706,
-                        "pmid": 1264943
+                        "date": 19920403,
+                        "pmid": 1795756
                     }
                 ]
             },
@@ -6724,53 +5942,102 @@
                 "edge_type": "support",
                 "publications": [
                     {
-                        "date": 20150808,
-                        "pmid": 26047685
+                        "date": 19631201,
+                        "pmid": 14021010,
+                        "title": "Three inherited red-cell abnormalities in a district of Greece. Thalassaemia, sickling, and glucose-6-phosphate-dehydrogenase deficiency."
                     },
                     {
-                        "date": 20090701,
-                        "pmid": 19566055
+                        "date": 19581201,
+                        "pmid": 13460008
                     },
                     {
-                        "date": 20061013,
-                        "pmid": 17038679
+                        "date": 20141216,
+                        "pmid": 25510137,
+                        "title": "[Hemoglobin disorders: an advantage against malaria, but the risk of severe disease]."
                     },
                     {
-                        "date": 20060828,
-                        "pmid": 16797741
+                        "date": 20140214,
+                        "pmid": 24316370
                     },
                     {
-                        "date": 20041022,
-                        "pmid": 15265796,
-                        "title": "Ability of Plasmodium falciparum to invade Southeast Asian ovalocytes varies between parasite lines."
+                        "date": 20131217,
+                        "pmid": 22973867,
+                        "title": "The burden and consequences of inherited blood disorders among young children in western Kenya."
                     },
                     {
-                        "date": 20031225,
-                        "pmid": 14695625,
-                        "title": "Glycophorin C (Gerbich antigen blood group) and band 3 polymorphisms in two malaria holoendemic regions of Papua New Guinea."
+                        "date": 20111226,
+                        "pmid": 22199098,
+                        "title": "Sickle cell disease in Middle East Arab countries"
                     },
                     {
-                        "date": 20021007,
-                        "pmid": 12367581
+                        "date": 20111207,
+                        "pmid": 22145364
                     },
                     {
-                        "date": 20020716,
-                        "pmid": 12118458
+                        "date": 20101115,
+                        "pmid": 21075278,
+                        "title": "The population genetics and dynamics of the thalassemias."
                     },
                     {
-                        "date": 20020218,
-                        "pmid": 11848616,
-                        "title": "Rapid, sensitive diagnosis of hemolytic anemia using antihemoglobin antibody in hypotonic solution."
+                        "date": 20100920,
+                        "pmid": 20655368
                     },
                     {
-                        "date": 20000407,
-                        "pmid": 10711755,
-                        "title": "Clinical potential of in vitro measured red cell deformability, a myth?"
+                        "date": 20091218,
+                        "pmid": 19955437
+                    },
+                    {
+                        "date": 20151202,
+                        "pmid": 26629542
+                    },
+                    {
+                        "date": 20150402,
+                        "pmid": 25604491
+                    },
+                    {
+                        "date": 20130416,
+                        "pmid": 23497175,
+                        "title": "Evidence of recent natural selection on the Southeast Asian deletion (--SEA) causing &#x003b1;-thalassemia in South China"
+                    },
+                    {
+                        "date": 20130404,
+                        "pmid": 23382166,
+                        "title": "Determinants of anemia among preschool children in rural, western Kenya."
+                    },
+                    {
+                        "date": 20121213,
+                        "pmid": 23057857,
+                        "title": "The association between malaria parasitaemia, erythrocyte polymorphisms, malnutrition and anaemia in children less than 10 years in Senegal: a case control study."
+                    },
+                    {
+                        "date": 20120528,
+                        "pmid": 22445352,
+                        "title": "Haemoglobinopathies and the clinical epidemiology of malaria: a systematic review and meta-analysis."
+                    },
+                    {
+                        "date": 20111205,
+                        "pmid": 22018599,
+                        "title": "Prevalence of classic erythrocyte polymorphisms among 749 children in southern highland Rwanda."
+                    },
+                    {
+                        "date": 20111202,
+                        "pmid": 22133230,
+                        "title": "NEGATIVE EPISTASIS BETWEEN &#x003b1;+ THALASSAEMIA AND SICKLE CELL TRAIT CAN EXPLAIN INTERPOPULATION VARIATION IN SOUTH ASIA"
+                    },
+                    {
+                        "date": 20111117,
+                        "pmid": 22089616,
+                        "title": "Hb E/beta-thalassaemia: a common &amp; clinically diverse disorder."
+                    },
+                    {
+                        "date": 20111017,
+                        "pmid": 21939508,
+                        "title": "Effect of \u03b1(+)-thalassaemia on episodes of fever due to malaria and other causes: a community-based cohort study in Tanzania."
                     }
                 ]
             },
             "source": 0,
-            "target": 142,
+            "target": 174,
             "key": 0
         },
         {
@@ -6779,51 +6046,56 @@
                 "edge_type": "support",
                 "publications": [
                     {
-                        "date": 20120622,
-                        "pmid": 22723917,
-                        "title": "A Novel ENU-Mutation in Ankyrin-1 Disrupts Malaria Parasite Maturation in Red Blood Cells of Mice"
+                        "date": 20151114,
+                        "pmid": 26394108
                     },
                     {
-                        "date": 20120607,
-                        "pmid": 22674320
+                        "date": 20150127,
+                        "pmid": 25523871,
+                        "title": "\u03b2-globin genes: mutation hot-spots in the global thalassemia belt."
                     },
                     {
-                        "date": 20120607,
-                        "pmid": 22674306
+                        "date": 20150417,
+                        "pmid": 25883737,
+                        "title": "Hyper-reactive malarial splenomegaly (HMS) in a patient with \u03b2 thalassaemia syndrome."
                     },
                     {
-                        "date": 19950818,
-                        "pmid": 7612181,
-                        "title": "Genetic disorders of the red cell membrane."
+                        "date": 20131108,
+                        "pmid": 24205432,
+                        "title": "Oxidative stress and \u03b2-thalassemic erythroid cells behind the molecular defect."
                     },
                     {
-                        "date": 19901211,
-                        "pmid": 2233937,
-                        "title": "Red-cell cytoskeletal abnormalities--implications for malaria."
+                        "date": 20130104,
+                        "pmid": 23118217
                     },
                     {
-                        "date": 19800417,
-                        "pmid": 394413
+                        "date": 20111117,
+                        "pmid": 22089616,
+                        "title": "Hb E/beta-thalassaemia: a common &amp; clinically diverse disorder."
                     },
                     {
-                        "date": 19740507,
-                        "pmid": 4593214,
-                        "title": "Splenectomy in hereditary spherocytosis: effect on course of relapsing vivax malaria."
+                        "date": 20091105,
+                        "pmid": 19841268,
+                        "title": "Interaction of malaria with a common form of severe thalassemia in an Asian population."
                     },
                     {
-                        "date": 19720418,
-                        "pmid": 4258090,
-                        "title": "Pathological alterations of cation movements in red blood cells."
+                        "date": 20090903,
+                        "pmid": 19725348
                     },
                     {
-                        "date": 19660615,
-                        "pmid": 5907765,
-                        "title": "Renal hemosiderosis (blue kidney) in patients with valvular heart disease."
+                        "date": 20071121,
+                        "pmid": 18027811,
+                        "title": "Genetic benefits of consanguinity through selection of genotypes protective against malaria."
+                    },
+                    {
+                        "date": 20060508,
+                        "pmid": 16603161,
+                        "title": "Do tribal communities show an inverse relationship between sickle cell disorders and glucose-6-phosphate dehydrogenase deficiency in malaria endemic areas of Central-Eastern India?"
                     }
                 ]
             },
             "source": 0,
-            "target": 93,
+            "target": 99,
             "key": 0
         },
         {
@@ -6832,51 +6104,276 @@
                 "edge_type": "support",
                 "publications": [
                     {
-                        "date": 20120622,
-                        "pmid": 22723917,
-                        "title": "A Novel ENU-Mutation in Ankyrin-1 Disrupts Malaria Parasite Maturation in Red Blood Cells of Mice"
+                        "date": 20151114,
+                        "pmid": 26394108
                     },
                     {
-                        "date": 20120607,
-                        "pmid": 22674320
+                        "date": 20150127,
+                        "pmid": 25523871,
+                        "title": "\u03b2-globin genes: mutation hot-spots in the global thalassemia belt."
                     },
                     {
-                        "date": 20120607,
-                        "pmid": 22674306
+                        "date": 20150417,
+                        "pmid": 25883737,
+                        "title": "Hyper-reactive malarial splenomegaly (HMS) in a patient with \u03b2 thalassaemia syndrome."
                     },
                     {
-                        "date": 19950818,
-                        "pmid": 7612181,
-                        "title": "Genetic disorders of the red cell membrane."
+                        "date": 20131108,
+                        "pmid": 24205432,
+                        "title": "Oxidative stress and \u03b2-thalassemic erythroid cells behind the molecular defect."
                     },
                     {
-                        "date": 19901211,
-                        "pmid": 2233937,
-                        "title": "Red-cell cytoskeletal abnormalities--implications for malaria."
+                        "date": 20130104,
+                        "pmid": 23118217
                     },
                     {
-                        "date": 19800417,
-                        "pmid": 394413
+                        "date": 20111117,
+                        "pmid": 22089616,
+                        "title": "Hb E/beta-thalassaemia: a common &amp; clinically diverse disorder."
                     },
                     {
-                        "date": 19740507,
-                        "pmid": 4593214,
-                        "title": "Splenectomy in hereditary spherocytosis: effect on course of relapsing vivax malaria."
+                        "date": 20091105,
+                        "pmid": 19841268,
+                        "title": "Interaction of malaria with a common form of severe thalassemia in an Asian population."
                     },
                     {
-                        "date": 19720418,
-                        "pmid": 4258090,
-                        "title": "Pathological alterations of cation movements in red blood cells."
+                        "date": 20090903,
+                        "pmid": 19725348
                     },
                     {
-                        "date": 19660615,
-                        "pmid": 5907765,
-                        "title": "Renal hemosiderosis (blue kidney) in patients with valvular heart disease."
+                        "date": 20071121,
+                        "pmid": 18027811,
+                        "title": "Genetic benefits of consanguinity through selection of genotypes protective against malaria."
+                    },
+                    {
+                        "date": 20060508,
+                        "pmid": 16603161,
+                        "title": "Do tribal communities show an inverse relationship between sickle cell disorders and glucose-6-phosphate dehydrogenase deficiency in malaria endemic areas of Central-Eastern India?"
                     }
                 ]
             },
             "source": 0,
-            "target": 179,
+            "target": 175,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150305,
+                        "pmid": 25739770,
+                        "title": "Too much medicine: the challenge of finding common ground."
+                    },
+                    {
+                        "date": 20130522,
+                        "pmid": 23652789
+                    },
+                    {
+                        "date": 20110810,
+                        "pmid": 21827267
+                    },
+                    {
+                        "date": 20100114,
+                        "pmid": 20072940,
+                        "title": "Cytochrome P450 enzymes and genotype-guided drug therapy."
+                    },
+                    {
+                        "date": 20090113,
+                        "pmid": 19059470,
+                        "title": "Screening of antiplasmodial properties among some traditionally used Iranian plants."
+                    },
+                    {
+                        "date": 20061011,
+                        "pmid": 17033960,
+                        "title": "Test for interaction between two unlinked loci."
+                    },
+                    {
+                        "date": 19970326,
+                        "pmid": 8793339,
+                        "title": "Is DDT use a public health problem in Mexico?"
+                    },
+                    {
+                        "date": 19940808,
+                        "pmid": 8025316
+                    },
+                    {
+                        "date": 19771229,
+                        "pmid": 918117
+                    },
+                    {
+                        "date": 19730619,
+                        "pmid": 4572823,
+                        "title": "Introduction: Modification of immunity and carcinogenesis."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 87,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19650401,
+                        "pmid": 14236786
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 109,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150821,
+                        "pmid": 26292718,
+                        "title": "Association of maternal anemia with other risk factors in occurrence of Great obstetrical syndromes at university clinics, Kinshasa, DR Congo."
+                    },
+                    {
+                        "date": 20151013,
+                        "pmid": 26239414
+                    },
+                    {
+                        "date": 20141021,
+                        "pmid": 25330010
+                    },
+                    {
+                        "date": 20110719,
+                        "pmid": 21695397,
+                        "title": "The health of the \"older women\" in Accra, Ghana: results of the Women's Health Study of Accra."
+                    },
+                    {
+                        "date": 20090527,
+                        "pmid": 19469445
+                    },
+                    {
+                        "date": 20080904,
+                        "pmid": 18593304
+                    },
+                    {
+                        "date": 20080408,
+                        "pmid": 18390933,
+                        "title": "Growth generates health care challenges in booming India."
+                    },
+                    {
+                        "date": 20070530,
+                        "pmid": 17472433,
+                        "title": "Malnutrition and Infection: Complex Mechanisms and Global Impacts"
+                    },
+                    {
+                        "date": 20060130,
+                        "title": "The patient's page.",
+                        "pmid": 16440933
+                    },
+                    {
+                        "date": 20050801,
+                        "pmid": 15915156,
+                        "title": "Nutritional status following malaria control in a Vietnamese ethnic minority commune."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 86,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20110311,
+                        "pmid": 21391831
+                    },
+                    {
+                        "date": 19961030,
+                        "pmid": 8730307,
+                        "title": "Immunoglobulin gene polymerase chain reaction to distinguish hyperreactive malarial splenomegaly from 'African' chronic lymphocytic leukaemia and splenic lymphoma."
+                    },
+                    {
+                        "date": 19910405,
+                        "pmid": 1671888
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 100,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20140521,
+                        "pmid": 24378761,
+                        "title": "Hyperuricaemia in the Pacific: why the elevated serum urate levels?"
+                    },
+                    {
+                        "date": 19750707,
+                        "pmid": 4617210
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 150,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20111207,
+                        "pmid": 22145364
+                    },
+                    {
+                        "date": 20110905,
+                        "pmid": 21888766
+                    },
+                    {
+                        "date": 20040323,
+                        "pmid": 15034964,
+                        "title": "[The advantage of heterozygotes]."
+                    },
+                    {
+                        "date": 20040308,
+                        "pmid": 14679190
+                    },
+                    {
+                        "date": 20020826,
+                        "pmid": 12142357,
+                        "title": "Balanced polymorphism selected by genetic versus infectious human disease."
+                    },
+                    {
+                        "date": 20010927,
+                        "pmid": 11574203,
+                        "title": "New perspectives on macrolide antibiotics."
+                    },
+                    {
+                        "date": 20000519,
+                        "title": "'Infectious web'.",
+                        "pmid": 10841636
+                    },
+                    {
+                        "date": 19791121,
+                        "pmid": 38925
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 128,
             "key": 0
         },
         {
@@ -6930,6 +6427,34 @@
             },
             "source": 0,
             "target": 91,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20051003,
+                        "title": "Founder mutations.",
+                        "pmid": 16196257
+                    },
+                    {
+                        "date": 20000619,
+                        "pmid": 10767050
+                    },
+                    {
+                        "date": 19920602,
+                        "pmid": 1575704
+                    },
+                    {
+                        "date": 19710807,
+                        "pmid": 4932601
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 144,
             "key": 0
         },
         {
@@ -7773,7 +7298,7 @@
                 }
             },
             "source": 13,
-            "target": 96,
+            "target": 80,
             "key": 0
         },
         {
@@ -7794,7 +7319,7 @@
                 }
             },
             "source": 14,
-            "target": 97,
+            "target": 96,
             "key": 0
         },
         {
@@ -7833,7 +7358,7 @@
                 }
             },
             "source": 15,
-            "target": 98,
+            "target": 97,
             "key": 0
         },
         {
@@ -7851,7 +7376,7 @@
                 }
             },
             "source": 16,
-            "target": 99,
+            "target": 98,
             "key": 0
         },
         {
@@ -7869,7 +7394,7 @@
                 }
             },
             "source": 16,
-            "target": 100,
+            "target": 99,
             "key": 0
         },
         {
@@ -7887,7 +7412,7 @@
                 }
             },
             "source": 16,
-            "target": 101,
+            "target": 100,
             "key": 0
         },
         {
@@ -7905,7 +7430,7 @@
                 }
             },
             "source": 16,
-            "target": 102,
+            "target": 101,
             "key": 0
         },
         {
@@ -7923,43 +7448,43 @@
                 }
             },
             "source": 17,
+            "target": 62,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:7979221"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 18,
+            "target": 102,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:7979221"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 18,
             "target": 103,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [
-                    {
-                        "id": "PMID:7979221"
-                    }
-                ],
-                "relation": {
-                    "typeid": "RO:0002607",
-                    "label": "is marker for"
-                }
-            },
-            "source": 18,
-            "target": 104,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [
-                    {
-                        "id": "PMID:7979221"
-                    }
-                ],
-                "relation": {
-                    "typeid": "RO:0002607",
-                    "label": "is marker for"
-                }
-            },
-            "source": 18,
-            "target": 105,
             "key": 0
         },
         {
@@ -7977,7 +7502,7 @@
                 }
             },
             "source": 18,
-            "target": 106,
+            "target": 62,
             "key": 0
         },
         {
@@ -8013,7 +7538,7 @@
                 }
             },
             "source": 19,
-            "target": 107,
+            "target": 104,
             "key": 0
         },
         {
@@ -8034,7 +7559,7 @@
                 }
             },
             "source": 19,
-            "target": 108,
+            "target": 105,
             "key": 0
         },
         {
@@ -8052,7 +7577,7 @@
                 }
             },
             "source": 20,
-            "target": 109,
+            "target": 106,
             "key": 0
         },
         {
@@ -8070,7 +7595,7 @@
                 }
             },
             "source": 20,
-            "target": 110,
+            "target": 107,
             "key": 0
         },
         {
@@ -8088,7 +7613,7 @@
                 }
             },
             "source": 20,
-            "target": 111,
+            "target": 108,
             "key": 0
         },
         {
@@ -8102,7 +7627,7 @@
                 }
             },
             "source": 20,
-            "target": 112,
+            "target": 109,
             "key": 0
         },
         {
@@ -8116,7 +7641,7 @@
                 }
             },
             "source": 21,
-            "target": 113,
+            "target": 110,
             "key": 0
         },
         {
@@ -8134,7 +7659,7 @@
                 }
             },
             "source": 22,
-            "target": 114,
+            "target": 101,
             "key": 0
         },
         {
@@ -8155,7 +7680,7 @@
                 }
             },
             "source": 22,
-            "target": 115,
+            "target": 111,
             "key": 0
         },
         {
@@ -8169,7 +7694,7 @@
                 }
             },
             "source": 23,
-            "target": 116,
+            "target": 112,
             "key": 0
         },
         {
@@ -8187,7 +7712,7 @@
                 }
             },
             "source": 24,
-            "target": 117,
+            "target": 113,
             "key": 0
         },
         {
@@ -8201,7 +7726,7 @@
                 }
             },
             "source": 24,
-            "target": 118,
+            "target": 114,
             "key": 0
         },
         {
@@ -8219,7 +7744,7 @@
                 }
             },
             "source": 25,
-            "target": 119,
+            "target": 62,
             "key": 0
         },
         {
@@ -8273,7 +7798,7 @@
                 }
             },
             "source": 26,
-            "target": 120,
+            "target": 115,
             "key": 0
         },
         {
@@ -8291,7 +7816,7 @@
                 }
             },
             "source": 26,
-            "target": 121,
+            "target": 102,
             "key": 0
         },
         {
@@ -8312,7 +7837,7 @@
                 }
             },
             "source": 27,
-            "target": 122,
+            "target": 116,
             "key": 0
         },
         {
@@ -8339,7 +7864,7 @@
                 }
             },
             "source": 27,
-            "target": 123,
+            "target": 89,
             "key": 0
         },
         {
@@ -8360,7 +7885,7 @@
                 }
             },
             "source": 27,
-            "target": 124,
+            "target": 117,
             "key": 0
         },
         {
@@ -8387,7 +7912,7 @@
                 }
             },
             "source": 27,
-            "target": 125,
+            "target": 90,
             "key": 0
         },
         {
@@ -8401,7 +7926,7 @@
                 }
             },
             "source": 27,
-            "target": 126,
+            "target": 118,
             "key": 0
         },
         {
@@ -8419,7 +7944,7 @@
                 }
             },
             "source": 28,
-            "target": 127,
+            "target": 108,
             "key": 0
         },
         {
@@ -8461,7 +7986,7 @@
                 }
             },
             "source": 28,
-            "target": 128,
+            "target": 119,
             "key": 0
         },
         {
@@ -8479,7 +8004,7 @@
                 }
             },
             "source": 28,
-            "target": 129,
+            "target": 101,
             "key": 0
         },
         {
@@ -8497,7 +8022,7 @@
                 }
             },
             "source": 29,
-            "target": 130,
+            "target": 120,
             "key": 0
         },
         {
@@ -8515,7 +8040,7 @@
                 }
             },
             "source": 29,
-            "target": 131,
+            "target": 121,
             "key": 0
         },
         {
@@ -8529,7 +8054,7 @@
                 }
             },
             "source": 30,
-            "target": 132,
+            "target": 122,
             "key": 0
         },
         {
@@ -8550,7 +8075,7 @@
                 }
             },
             "source": 30,
-            "target": 133,
+            "target": 123,
             "key": 0
         },
         {
@@ -8564,7 +8089,7 @@
                 }
             },
             "source": 30,
-            "target": 134,
+            "target": 89,
             "key": 0
         },
         {
@@ -8582,7 +8107,7 @@
                 }
             },
             "source": 30,
-            "target": 135,
+            "target": 124,
             "key": 0
         },
         {
@@ -8596,7 +8121,7 @@
                 }
             },
             "source": 30,
-            "target": 136,
+            "target": 125,
             "key": 0
         },
         {
@@ -8610,7 +8135,7 @@
                 }
             },
             "source": 30,
-            "target": 137,
+            "target": 126,
             "key": 0
         },
         {
@@ -8631,7 +8156,7 @@
                 }
             },
             "source": 31,
-            "target": 138,
+            "target": 127,
             "key": 0
         },
         {
@@ -8645,7 +8170,7 @@
                 }
             },
             "source": 32,
-            "target": 139,
+            "target": 128,
             "key": 0
         },
         {
@@ -8663,7 +8188,7 @@
                 }
             },
             "source": 32,
-            "target": 140,
+            "target": 129,
             "key": 0
         },
         {
@@ -8677,7 +8202,7 @@
                 }
             },
             "source": 33,
-            "target": 141,
+            "target": 80,
             "key": 0
         },
         {
@@ -8725,7 +8250,7 @@
                 }
             },
             "source": 33,
-            "target": 142,
+            "target": 130,
             "key": 0
         },
         {
@@ -8782,7 +8307,7 @@
                 }
             },
             "source": 34,
-            "target": 143,
+            "target": 131,
             "key": 0
         },
         {
@@ -8796,7 +8321,7 @@
                 }
             },
             "source": 35,
-            "target": 144,
+            "target": 89,
             "key": 0
         },
         {
@@ -8823,7 +8348,7 @@
                 }
             },
             "source": 35,
-            "target": 145,
+            "target": 123,
             "key": 0
         },
         {
@@ -8841,7 +8366,7 @@
                 }
             },
             "source": 36,
-            "target": 146,
+            "target": 132,
             "key": 0
         },
         {
@@ -8859,7 +8384,7 @@
                 }
             },
             "source": 36,
-            "target": 147,
+            "target": 62,
             "key": 0
         },
         {
@@ -8873,7 +8398,7 @@
                 }
             },
             "source": 37,
-            "target": 148,
+            "target": 133,
             "key": 0
         },
         {
@@ -8887,7 +8412,7 @@
                 }
             },
             "source": 37,
-            "target": 149,
+            "target": 134,
             "key": 0
         },
         {
@@ -8901,7 +8426,7 @@
                 }
             },
             "source": 37,
-            "target": 150,
+            "target": 135,
             "key": 0
         },
         {
@@ -9003,7 +8528,7 @@
                 }
             },
             "source": 37,
-            "target": 151,
+            "target": 136,
             "key": 0
         },
         {
@@ -9017,7 +8542,7 @@
                 }
             },
             "source": 37,
-            "target": 152,
+            "target": 137,
             "key": 0
         },
         {
@@ -9167,7 +8692,7 @@
                 }
             },
             "source": 37,
-            "target": 153,
+            "target": 138,
             "key": 0
         },
         {
@@ -9181,7 +8706,7 @@
                 }
             },
             "source": 37,
-            "target": 154,
+            "target": 139,
             "key": 0
         },
         {
@@ -9199,7 +8724,7 @@
                 }
             },
             "source": 38,
-            "target": 155,
+            "target": 140,
             "key": 0
         },
         {
@@ -9217,7 +8742,7 @@
                 }
             },
             "source": 38,
-            "target": 156,
+            "target": 121,
             "key": 0
         },
         {
@@ -9235,7 +8760,7 @@
                 }
             },
             "source": 38,
-            "target": 157,
+            "target": 141,
             "key": 0
         },
         {
@@ -9253,7 +8778,7 @@
                 }
             },
             "source": 39,
-            "target": 158,
+            "target": 142,
             "key": 0
         },
         {
@@ -9271,7 +8796,7 @@
                 }
             },
             "source": 39,
-            "target": 159,
+            "target": 143,
             "key": 0
         },
         {
@@ -9289,7 +8814,7 @@
                 }
             },
             "source": 40,
-            "target": 160,
+            "target": 108,
             "key": 0
         },
         {
@@ -9303,7 +8828,7 @@
                 }
             },
             "source": 41,
-            "target": 161,
+            "target": 144,
             "key": 0
         },
         {
@@ -9317,7 +8842,7 @@
                 }
             },
             "source": 41,
-            "target": 162,
+            "target": 145,
             "key": 0
         },
         {
@@ -9338,7 +8863,7 @@
                 }
             },
             "source": 41,
-            "target": 163,
+            "target": 146,
             "key": 0
         },
         {
@@ -9371,7 +8896,7 @@
                 }
             },
             "source": 41,
-            "target": 164,
+            "target": 142,
             "key": 0
         },
         {
@@ -9389,7 +8914,7 @@
                 }
             },
             "source": 41,
-            "target": 165,
+            "target": 99,
             "key": 0
         },
         {
@@ -9407,7 +8932,7 @@
                 }
             },
             "source": 41,
-            "target": 166,
+            "target": 132,
             "key": 0
         },
         {
@@ -9425,7 +8950,7 @@
                 }
             },
             "source": 42,
-            "target": 167,
+            "target": 77,
             "key": 0
         },
         {
@@ -9439,7 +8964,7 @@
                 }
             },
             "source": 43,
-            "target": 168,
+            "target": 147,
             "key": 0
         },
         {
@@ -9453,7 +8978,7 @@
                 }
             },
             "source": 43,
-            "target": 169,
+            "target": 148,
             "key": 0
         },
         {
@@ -9471,7 +8996,7 @@
                 }
             },
             "source": 44,
-            "target": 170,
+            "target": 149,
             "key": 0
         },
         {
@@ -9489,7 +9014,7 @@
                 }
             },
             "source": 44,
-            "target": 171,
+            "target": 150,
             "key": 0
         },
         {
@@ -9507,7 +9032,7 @@
                 }
             },
             "source": 45,
-            "target": 172,
+            "target": 151,
             "key": 0
         },
         {
@@ -9525,7 +9050,7 @@
                 }
             },
             "source": 45,
-            "target": 173,
+            "target": 152,
             "key": 0
         },
         {
@@ -9546,7 +9071,7 @@
                 }
             },
             "source": 46,
-            "target": 174,
+            "target": 153,
             "key": 0
         },
         {
@@ -9588,7 +9113,7 @@
                 }
             },
             "source": 47,
-            "target": 175,
+            "target": 154,
             "key": 0
         },
         {
@@ -9612,7 +9137,7 @@
                 }
             },
             "source": 48,
-            "target": 176,
+            "target": 62,
             "key": 0
         },
         {
@@ -9630,7 +9155,7 @@
                 }
             },
             "source": 48,
-            "target": 177,
+            "target": 108,
             "key": 0
         },
         {
@@ -9651,7 +9176,7 @@
                 }
             },
             "source": 49,
-            "target": 178,
+            "target": 62,
             "key": 0
         },
         {
@@ -9669,7 +9194,7 @@
                 }
             },
             "source": 50,
-            "target": 179,
+            "target": 91,
             "key": 0
         },
         {
@@ -9687,7 +9212,7 @@
                 }
             },
             "source": 50,
-            "target": 180,
+            "target": 143,
             "key": 0
         },
         {
@@ -9714,7 +9239,7 @@
                 }
             },
             "source": 50,
-            "target": 181,
+            "target": 155,
             "key": 0
         },
         {
@@ -9732,7 +9257,7 @@
                 }
             },
             "source": 50,
-            "target": 182,
+            "target": 99,
             "key": 0
         },
         {
@@ -9750,7 +9275,7 @@
                 }
             },
             "source": 51,
-            "target": 183,
+            "target": 156,
             "key": 0
         },
         {
@@ -9768,7 +9293,7 @@
                 }
             },
             "source": 51,
-            "target": 184,
+            "target": 157,
             "key": 0
         },
         {
@@ -9786,7 +9311,7 @@
                 }
             },
             "source": 52,
-            "target": 185,
+            "target": 63,
             "key": 0
         },
         {
@@ -9804,7 +9329,7 @@
                 }
             },
             "source": 52,
-            "target": 186,
+            "target": 143,
             "key": 0
         },
         {
@@ -9822,7 +9347,7 @@
                 }
             },
             "source": 53,
-            "target": 187,
+            "target": 158,
             "key": 0
         },
         {
@@ -9836,7 +9361,7 @@
                 }
             },
             "source": 54,
-            "target": 188,
+            "target": 159,
             "key": 0
         },
         {
@@ -9850,7 +9375,7 @@
                 }
             },
             "source": 54,
-            "target": 189,
+            "target": 160,
             "key": 0
         },
         {
@@ -9898,7 +9423,7 @@
                 }
             },
             "source": 55,
-            "target": 190,
+            "target": 161,
             "key": 0
         },
         {
@@ -9912,7 +9437,7 @@
                 }
             },
             "source": 56,
-            "target": 191,
+            "target": 162,
             "key": 0
         },
         {
@@ -9930,7 +9455,7 @@
                 }
             },
             "source": 56,
-            "target": 192,
+            "target": 163,
             "key": 0
         },
         {
@@ -9960,7 +9485,7 @@
                 }
             },
             "source": 56,
-            "target": 193,
+            "target": 164,
             "key": 0
         },
         {
@@ -10089,7 +9614,7 @@
                 }
             },
             "source": 56,
-            "target": 194,
+            "target": 165,
             "key": 0
         },
         {
@@ -10103,7 +9628,7 @@
                 }
             },
             "source": 57,
-            "target": 195,
+            "target": 166,
             "key": 0
         },
         {
@@ -10142,7 +9667,7 @@
                 }
             },
             "source": 57,
-            "target": 196,
+            "target": 167,
             "key": 0
         },
         {
@@ -10172,7 +9697,7 @@
                 }
             },
             "source": 57,
-            "target": 197,
+            "target": 168,
             "key": 0
         },
         {
@@ -10186,7 +9711,7 @@
                 }
             },
             "source": 57,
-            "target": 198,
+            "target": 169,
             "key": 0
         },
         {
@@ -10200,7 +9725,7 @@
                 }
             },
             "source": 57,
-            "target": 199,
+            "target": 138,
             "key": 0
         },
         {
@@ -10214,7 +9739,7 @@
                 }
             },
             "source": 57,
-            "target": 200,
+            "target": 170,
             "key": 0
         },
         {
@@ -10228,7 +9753,7 @@
                 }
             },
             "source": 57,
-            "target": 201,
+            "target": 171,
             "key": 0
         },
         {
@@ -10246,7 +9771,7 @@
                 }
             },
             "source": 58,
-            "target": 202,
+            "target": 62,
             "key": 0
         },
         {
@@ -10276,7 +9801,7 @@
                 }
             },
             "source": 59,
-            "target": 203,
+            "target": 172,
             "key": 0
         },
         {
@@ -10294,7 +9819,7 @@
                 }
             },
             "source": 60,
-            "target": 204,
+            "target": 63,
             "key": 0
         },
         {
@@ -10447,7 +9972,7 @@
                 }
             },
             "source": 61,
-            "target": 205,
+            "target": 143,
             "key": 0
         },
         {
@@ -10735,7 +10260,7 @@
                 }
             },
             "source": 61,
-            "target": 206,
+            "target": 173,
             "key": 0
         },
         {
@@ -10749,7 +10274,7 @@
                 }
             },
             "source": 61,
-            "target": 207,
+            "target": 174,
             "key": 0
         },
         {
@@ -10782,7 +10307,7 @@
                 }
             },
             "source": 61,
-            "target": 208,
+            "target": 99,
             "key": 0
         },
         {
@@ -10815,7 +10340,7 @@
                 }
             },
             "source": 61,
-            "target": 209,
+            "target": 175,
             "key": 0
         },
         {
@@ -10829,7 +10354,7 @@
                 }
             },
             "source": 61,
-            "target": 210,
+            "target": 176,
             "key": 0
         },
         {
@@ -10847,7 +10372,7 @@
                 }
             },
             "source": 61,
-            "target": 211,
+            "target": 177,
             "key": 0
         },
         {
@@ -10861,7 +10386,7 @@
                 }
             },
             "source": 61,
-            "target": 212,
+            "target": 178,
             "key": 0
         }
     ]

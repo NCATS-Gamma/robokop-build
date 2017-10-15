@@ -1,0 +1,647 @@
+DOID:9352
+ HGNC:19217
+  polycystic ovary syndrome (EFO:0000660)
+ HGNC:3146
+  Hirschsprung's disease (DOID:10487)
+  Hirschsprung disease, cardiac defects, and autonomic dysfunction (OMIM:613870)
+ HGNC:4400
+  congenital stationary night blindness 1H (OMIM:617024)
+ HGNC:28867
+  gestational diabetes (EFO:0004593)
+ HGNC:812
+  keratosis follicularis (OMIM:124200)
+  acrokeratosis verruciformis (OMIM:101900)
+ HGNC:28917
+  gout (EFO:0004274)
+ HGNC:16925
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:6903
+  amino acid metabolic disorder (DOID:9252)
+  fatty liver disease (DOID:9452)
+  Hepatic methionine adenosyltransferase deficiency (OMIM:250850)
+ HGNC:5024
+  Fanconi renotubular syndrome 4 with maturity-onset diabetes of the young (OMIM:616026)
+  Renal cysts and diabetes syndrome (OMIM:137920)
+  maturity-onset diabetes of the young (DOID:0050524)
+  Maturity-Onset Diabetes of the Young, Type 1 (OMIM:125850)
+ HGNC:7762
+  Maturity-Onset Diabetes of the Young, Type 6 (OMIM:606394)
+  maturity-onset diabetes of the young (DOID:0050524)
+ HGNC:33527
+  permanent neonatal diabetes mellitus (OMIM:606176)
+  Silver-Russell syndrome (OMIM:180860)
+  Growth restriction, severe, with distinctive facies (OMIM:616489)
+  Maturity-Onset Diabetes of the Young, Type 10 (OMIM:613370)
+  Beckwith-Wiedemann syndrome (OMIM:130650)
+ HGNC:9395
+  adult T-cell leukemia (DOID:0050523)
+ HGNC:1509
+  Familial cancer of breast (OMIM:114480)
+  chronic lymphocytic leukemia (EFO:0000095)
+ HGNC:8620
+  Anterior Segment Dysgenesis 5 (OMIM:604229)
+  Foveal hypoplasia and presenile cataract syndrome (OMIM:136520)
+  Aniridia 1 (OMIM:106210)
+  WAGR syndrome (OMIM:194072)
+  Keratitis, hereditary (OMIM:148190)
+  Gillespie Syndrome (OMIM:206700)
+  Coloboma of Optic Nerve (OMIM:120430)
+  Coloboma of choroid and retina (Orphanet:98942)
+  Coloboma of iris (Orphanet:98944)
+  Foveal hypoplasia-presenile cataract syndrome (Orphanet:2253)
+ HGNC:11820
+  Wilson disease (OMIM:277900)
+ HGNC:3179
+  Mandibulofacial dysostosis with alopecia (OMIM:616367)
+ HGNC:11766
+  Muscular Dystrophy, Duchenne Type (OMIM:310200)
+  dry eye syndrome (DOID:10140)
+  Camurati-Engelmann disease (DOID:4997)
+ HGNC:8618
+  Maturity-onset diabetes of the young, type 9 (OMIM:612225)
+  maturity-onset diabetes of the young (DOID:0050524)
+ HGNC:16493
+  common variable immunodeficiency (DOID:12177)
+ HGNC:2850
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:6294
+  Beckwith-Wiedemann syndrome (OMIM:130650)
+  gout (EFO:0004274)
+  sudden infant death syndrome (OMIM:272120)
+ HGNC:2328
+  Carnitine palmitoyl transferase 1A deficiency (OMIM:255120)
+ HGNC:11920
+  chronic lymphocytic leukemia (EFO:0000095)
+  cutaneous T cell lymphoma (DOID:0060061)
+  diffuse large B-cell lymphoma (DOID:0050745)
+  autoimmune lymphoproliferative syndrome (DOID:6688)
+  Autoimmune lymphoproliferative syndrome (OMIM:601859)
+ HGNC:2577
+  Granulomatous Disease, Chronic, Autosomal Recessive, Cytochrome B-Negative (OMIM:233690)
+  chronic granulomatous disease (DOID:3265)
+ HGNC:28510
+  Diabetes mellitus, neonatal, with congenital hypothyroidism (OMIM:610199)
+ HGNC:12762
+  Wolfram syndrome (DOID:10632)
+  Cataract 41 (OMIM:116400)
+  Early-onset nuclear cataract (Orphanet:98991)
+  Wolfram-like syndrome, autosomal dominant (OMIM:614296)
+  Wolfram Syndrome 1 (OMIM:222300)
+ HGNC:7464
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:9236
+  Polycystic Kidney, Autosomal Dominant (MESH:D016891)
+  lipoatrophic diabetes (DOID:11712)
+ HGNC:59
+  maturity-onset diabetes of the young (DOID:0050524)
+  Diazoxide-resistant focal hyperinsulinism due to SUR1 deficiency (Orphanet:276598)
+  Autosomal dominant hyperinsulinism due to SUR1 deficiency (Orphanet:276575)
+  Persistent hyperinsulinemic hypoglycemia of infancy (OMIM:256450)
+  Autosomal recessive hyperinsulinism due to SUR1 deficiency (Orphanet:79643)
+  permanent neonatal diabetes mellitus (OMIM:606176)
+  Transient neonatal diabetes mellitus 2 (OMIM:610374)
+  gout (EFO:0004274)
+  DEND syndrome (Orphanet:79134)
+  transient neonatal diabetes mellitus (DOID:0060334)
+ HGNC:6481
+  Muscular Dystrophy, Congenital Merosin-Deficient, 1A (OMIM:607855)
+  Poretti-Boltshauser Syndrome (OMIM:615960)
+ HGNC:11892
+  Psoriatic arthritis, susceptibility to (OMIM:607507)
+  mitochondrial myopathy (DOID:699)
+ HGNC:5009
+  polycystic ovary syndrome (EFO:0000660)
+  Silver-Russell syndrome (OMIM:180860)
+ HGNC:6107
+  maturity-onset diabetes of the young (DOID:0050524)
+  Maturity-Onset Diabetes of the Young, Type 4 (OMIM:606392)
+  permanent neonatal diabetes mellitus (OMIM:606176)
+ HGNC:6081
+  polycystic ovary syndrome (DOID:11612)
+  fatty liver disease (DOID:9452)
+ HGNC:7873
+  Takayasu's arteritis (OMIM:207600)
+  psoriatic arthritis (DOID:9008)
+ HGNC:3236
+  Cowden syndrome 1 (OMIM:158350)
+  Neonatal inflammatory skin and bowel disease (Orphanet:294023)
+  Inflammatory skin and bowel disease, neonatal, 2 (OMIM:616069)
+  Polycystic Kidney Disease 4 With or Without Hepatic Disease (OMIM:263200)
+ HGNC:3180
+  Hirschsprung's disease (DOID:10487)
+  Hirschsprung disease 2 (OMIM:600155)
+  Abcd Syndrome (OMIM:600501)
+  Waardenburg-Shah syndrome (Orphanet:897)
+  Waardenburg Syndrome, Type 4A (OMIM:277580)
+  Waardenburg syndrome type 2 (Orphanet:895)
+ HGNC:8125
+  Huntington Disease (OMIM:143100)
+  Chromosome Aberrations (MESH:D002869)
+ HGNC:6554
+  familial hyperlipidemia (DOID:1168)
+  fatty liver disease (DOID:9452)
+  Obesity due to leptin receptor gene deficiency (OMIM:614963)
+  Diabetes, Gestational (MESH:D016640)
+ HGNC:11005
+  Glut1 Deficiency Syndrome 2 (OMIM:612126)
+  Epilepsy, childhood absence 1 (OMIM:600131)
+ HGNC:11006
+  fatty liver disease (DOID:9452)
+  Fanconi-Bickel syndrome (OMIM:227810)
+ HGNC:6619
+  Hepatic lipase deficiency (OMIM:614025)
+  Lipid Metabolism, Inborn Errors (MESH:D008052)
+  Hyperlipoproteinemias (MESH:D006951)
+  Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)
+ HGNC:1047
+  non-Hodgkin lymphoma (DOID:0060060)
+  Wilson disease (OMIM:277900)
+ HGNC:11179
+  Fatty Liver, Alcoholic (MESH:D005235)
+ HGNC:11630
+  renal hypomagnesemia 2 (OMIM:154020)
+  Renal cysts and diabetes syndrome (OMIM:137920)
+ HGNC:8840
+  Prolidase deficiency (OMIM:170100)
+ HGNC:21050
+  gestational diabetes (EFO:0004593)
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:4632
+  Chromosome Aberrations (MESH:D002869)
+ HGNC:9232
+  Hyperlipoproteinemias (MESH:D006951)
+  Fatty Liver, Alcoholic (MESH:D005235)
+ HGNC:3356
+  Obesity (OMIM:601665)
+  arterial calcification of infancy (DOID:0050644)
+  Arterial Calcification, Generalized, of Infancy, 1 (OMIM:208000)
+  pseudoxanthoma elasticum (DOID:2738)
+  autosomal recessive hypophosphatemic rickets (DOID:0050949)
+  Hypophosphatemic Rickets, Autosomal Recessive, 2 (OMIM:613312)
+  Cole Disease (OMIM:615522)
+ HGNC:992
+  Myeloma, Multiple (OMIM:254500)
+ HGNC:990
+  Osteochondrodysplasias (MESH:D010009)
+  non-Hodgkin lymphoma (DOID:0060060)
+  chronic lymphocytic leukemia (EFO:0000095)
+  diffuse large B-cell lymphoma (DOID:0050745)
+ HGNC:9668
+  gout (EFO:0004274)
+ HGNC:5141
+  hemochromatosis (DOID:2352)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:12712
+  ARC syndrome (DOID:0050763)
+  Arthrogryposis renal dysfunction cholestasis syndrome (OMIM:208085)
+ HGNC:6125
+  familial hyperlipidemia (DOID:1168)
+ HGNC:4195
+  maturity-onset diabetes of the young (DOID:0050524)
+  permanent neonatal diabetes mellitus (OMIM:606176)
+  Maturity-Onset Diabetes of the Young, Type 2 (OMIM:125851)
+  Hyperinsulinemic hypoglycemia familial 3 (OMIM:602485)
+ HGNC:14929
+  Infantile neuronal ceroid lipofuscinosis (Orphanet:79263)
+ HGNC:4553
+  fatty liver disease (DOID:9452)
+ HGNC:4901
+  fatty liver disease (DOID:9452)
+ HGNC:4192
+  Cushing syndrome due to macronodular adrenal hyperplasia (OMIM:219080)
+ HGNC:11132
+  Presynaptic congenital myasthenic syndromes (Orphanet:98914)
+  congenital myasthenic syndrome 18 (OMIM:616330)
+ HGNC:9291
+  PPARG-related familial partial lipodystrophy (OMIM:604367)
+ HGNC:7882
+  Hajdu-Cheney syndrome (OMIM:102500)
+  Hajdu-Cheney Syndrome (MESH:D031845)
+  Alagille syndrome due to a NOTCH2 point mutation (OMIM:610205)
+ HGNC:9237
+  gout (EFO:0004274)
+  Infantile neuronal ceroid lipofuscinosis (Orphanet:79263)
+ HGNC:4456
+  methylmalonic acidemia (DOID:14749)
+ HGNC:11917
+  Mycosis Fungoides (OMIM:254400)
+  Sezary's disease (DOID:8541)
+ HGNC:9642
+  B-cell lymphoma (DOID:707)
+  Hodgkin's lymphoma, lymphocytic-histiocytic predominance (DOID:8543)
+  Rett syndrome (DOID:1206)
+ HGNC:4922
+  Hemolytic anemia due to hexokinase deficiency (OMIM:235700)
+  Charcot-Marie-Tooth disease type 4G (OMIM:605285)
+ HGNC:6091
+  Leprechaunism syndrome (OMIM:246200)
+  Insulin-resistant diabetes mellitus AND acanthosis nigricans (OMIM:610549)
+  Pineal hyperplasia AND diabetes mellitus syndrome (OMIM:262190)
+ HGNC:28434
+  STAR syndrome (OMIM:300707)
+ HGNC:11916
+  TNF receptor-associated periodic fever syndrome (TRAPS) (OMIM:142680)
+  Behcet's syndrome (OMIM:109650)
+  Cystic Fibrosis (OMIM:219700)
+ HGNC:492
+  hereditary spherocytosis (DOID:12971)
+  Spherocytosis, Type 1 (OMIM:182900)
+ HGNC:392
+  familial partial lipodystrophy (DOID:0050440)
+ HGNC:6257
+  transient neonatal diabetes mellitus (DOID:0060334)
+  Maturity-onset diabetes of the young, type 13 (OMIM:616329)
+  maturity-onset diabetes of the young (DOID:0050524)
+  Autosomal recessive hyperinsulinism due to Kir6.2 deficiency (Orphanet:79644)
+  Autosomal dominant hyperinsulinism due to Kir6.2 deficiency (Orphanet:276580)
+  DEND syndrome (Orphanet:79134)
+  Transient neonatal diabetes mellitus 3 (OMIM:610582)
+  permanent neonatal diabetes mellitus (OMIM:606176)
+ HGNC:10809
+  Severe autosomal recessive muscular dystrophy of childhood - North African type (OMIM:253700)
+ HGNC:12518
+  fatty liver disease (DOID:9452)
+ HGNC:7876
+  familial hyperlipidemia (DOID:1168)
+ HGNC:236
+  Chorea, Benign Hereditary (OMIM:118700)
+ HGNC:13633
+  Diabetes, Gestational (MESH:D016640)
+ HGNC:6553
+  polycystic ovary syndrome (DOID:11612)
+  Diabetes, Gestational (MESH:D016640)
+  Obesity due to congenital leptin deficiency (OMIM:614962)
+  Hypercholesterolemia (MESH:D006937)
+  fatty liver disease (DOID:9452)
+ HGNC:11621
+  maturity-onset diabetes of the young (DOID:0050524)
+  Maturity-onset diabetes of the young, type 3 (OMIM:600496)
+ HGNC:7794
+  Immunodeficiency, Common Variable, 12 (OMIM:616576)
+  common variable immunodeficiency (DOID:12177)
+  primary hyperoxaluria (DOID:2977)
+ HGNC:24678
+  Growth Retardation, Developmental Delay, and Facial Dysmorphism (OMIM:612938)
+ HGNC:2596
+  methemoglobinemia (DOID:10783)
+  lymphoblastic lymphoma (DOID:0080147)
+  porphyria cutanea tarda (DOID:3132)
+ HGNC:3176
+  Hypercholesterolemia (MESH:D006937)
+ HGNC:1516
+  Behcet's syndrome (OMIM:109650)
+  diffuse large B-cell lymphoma (DOID:0050745)
+  Marfan syndrome (DOID:14323)
+  Acatalasemia (OMIM:614097)
+  Turner syndrome (DOID:3491)
+ HGNC:5344
+  Hypercholesterolemia (MESH:D006937)
+ HGNC:4196
+  gout (EFO:0004274)
+ HGNC:1583
+  Megalencephaly-polymicrogyria-postaxial polydactyly-hydrocephalus syndrome (Orphanet:83473)
+  Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1 (OMIM:603387)
+ HGNC:4165
+  holoprosencephaly (DOID:4621)
+  Microform holoprosencephaly (Orphanet:280200)
+ HGNC:11171
+  Prader-Willi syndrome (OMIM:176270)
+ HGNC:1406
+  autosomal dominant non-syndromic intellectual disability (DOID:0060307)
+  Mental retardation, autosomal dominant 10 (OMIM:614256)
+ HGNC:16698
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:1391
+  Primary Aldosteronism, Seizures, and Neurologic Abnormalities (OMIM:615474)
+ HGNC:11867
+  Sickle Cell Anemia (OMIM:603903)
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:10952
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:16700
+  46,Xy Sex Reversal 9 (OMIM:616067)
+  46,XY partial gonadal dysgenesis (Orphanet:251510)
+ HGNC:13503
+  Primrose syndrome (OMIM:259050)
+ HGNC:470
+  Adenosine monophosphate deaminase deficiency (Orphanet:45)
+  Erythrocyte AMP deaminase deficiency (OMIM:612874)
+ HGNC:6388
+  Microcephaly with or without chorioretinopathy, lymphedema, or mental retardation (OMIM:152950)
+ HGNC:1390
+  Brugada syndrome 3 (OMIM:611875)
+  Brugada syndrome (DOID:0050451)
+  Timothy Syndrome (OMIM:601005)
+ HGNC:18806
+  nonprogressive cerebellar atxia with mental retardation (OMIM:614756)
+  Tourette syndrome (EFO:0004895)
+ HGNC:25835
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:11164
+  Prader-Willi syndrome (OMIM:176270)
+ HGNC:28519
+  ataxia telangiectasia (OMIM:208900)
+ HGNC:28625
+  Leigh syndrome (OMIM:256000)
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:11272
+  Elliptocytosis 2 (OMIM:130600)
+  Pyropoikilocytosis, Hereditary (OMIM:266140)
+  Spherocytosis type 3 (OMIM:270970)
+  hereditary spherocytosis (DOID:12971)
+  hereditary elliptocytosis (DOID:2373)
+ HGNC:14124
+  Epilepsy, familial focal, with variable foci 3 (OMIM:617118)
+  Sickle Cell Anemia (OMIM:603903)
+  Familial focal epilepsy with variable foci (Orphanet:98820)
+ HGNC:1130
+  Myeloma, Multiple (OMIM:254500)
+ HGNC:2277
+  Charcot-Marie-Tooth Disease, Recessive Intermediate D (OMIM:616039)
+ HGNC:13221
+  hemoglobin E disease (DOID:5379)
+  polycystic ovary syndrome (DOID:11612)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:8781
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:535
+  sarcoidosis (DOID:11335)
+ HGNC:4886
+  Sporadic porphyria cutanea tarda (OMIM:176090)
+  Cystic Fibrosis (OMIM:219700)
+  Hemochromatosis type 1 (OMIM:235200)
+  Alzheimer Disease (OMIM:104300)
+  Porphyria Cutanea Tarda (OMIM:176100)
+  variegate porphyria (OMIM:176200)
+ HGNC:1869
+  Hyperalphalipoproteinemia 1 (OMIM:143470)
+  Hyperlipoproteinemias (MESH:D006951)
+  Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)
+  familial hyperlipidemia (DOID:1168)
+ HGNC:566
+  Hermansky-Pudlak Syndrome 2 (OMIM:608233)
+ HGNC:9608
+  Chondrodysplasia Blomstrand type (OMIM:215045)
+  Metaphyseal chondrodysplasia, Jansen type (OMIM:156400)
+  Eiken syndrome (OMIM:600002)
+  Ollier disease (DOID:4624)
+ HGNC:1665
+  Unverricht-Lundborg syndrome (OMIM:254800)
+  Epilepsy, Progressive Myoclonic, 4, With or Without Renal Failure (OMIM:254900)
+  Gaucher Disease, Type 1 (OMIM:230800)
+ HGNC:8776
+  gout (EFO:0004274)
+ HGNC:22962
+  autosomal recessive non-syndromic intellectual disability (DOID:0060308)
+  Cardiac anomalies-developmental delay-facial dysmorphism syndrome (OMIM:616789)
+ HGNC:17794
+  chronic lymphocytic leukemia (EFO:0000095)
+ HGNC:13922
+  atopic eczema (EFO:0000274)
+ HGNC:21575
+  Joubert Syndrome 3 (OMIM:608629)
+  Joubert syndrome (DOID:0050777)
+  Joubert syndrome with ocular defect (Orphanet:220493)
+ HGNC:603
+  Hypercholesterolemia, Familial (OMIM:143890)
+  familial hyperlipidemia (DOID:1168)
+  Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)
+  Hypercholesterolemia (MESH:D006937)
+  Behcet's syndrome (OMIM:109650)
+  fatty liver disease (DOID:9452)
+  Homozygous familial hypercholesterolemia (Orphanet:391665)
+  Vitamin E, Familial Isolated Deficiency of (OMIM:277460)
+ HGNC:6677
+  hyperlipoproteinemia type V (OMIM:144650)
+  Hyperlipidemia, Familial Combined (OMIM:144250)
+  familial hyperlipidemia (DOID:1168)
+  Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)
+  familial lipoprotein lipase deficiency (OMIM:238600)
+  Hypercholesterolemia (MESH:D006937)
+ HGNC:7866
+  proximal symphalangism (OMIM:185800)
+  Tarsal carpal coalition syndrome (OMIM:186570)
+  Brachydactyly, Type B2 (OMIM:611377)
+  Stapes ankylosis with broad thumb and toes (OMIM:184460)
+  multiple synostoses syndrome (DOID:0050794)
+  Multiple Synostoses Syndrome 1 (OMIM:186500)
+ HGNC:1514
+  Hypoparathyroidism, Familial Isolated (OMIM:146200)
+  familial hypocalciuric hypercalcemia 1 (OMIM:145980)
+  Neonatal severe hyperparathyroidism (OMIM:239200)
+  Bartter syndrome with hypocalcemia (Orphanet:263417)
+  Hypocalcemia, Autosomal Dominant 1 (OMIM:601198)
+ HGNC:6848
+  46,XY sex reversal, type 6 (OMIM:613762)
+  46 XY gonadal dysgenesis (DOID:14448)
+  46,XY partial gonadal dysgenesis (Orphanet:251510)
+ HGNC:42
+  Progressive intrahepatic cholestasis (OMIM:211600)
+  Afibrinogenemia (MESH:D000347)
+  Cholestasis, Progressive Familial Intrahepatic, 2 (OMIM:601847)
+  Sickle Cell Anemia (OMIM:603903)
+  Benign recurrent intrahepatic cholestasis 2 (OMIM:605479)
+ HGNC:25538
+  Leukoencephalopathy with brain stem and spinal cord involvement-high lactate syndrome (OMIM:611105)
+ HGNC:7413
+  Diaphyseal medullary stenosis with malignant fibrous histiocytoma (OMIM:112250)
+ HGNC:29426
+  Hennekam Lymphangiectasia-Lymphedema Syndrome 1 (OMIM:235510)
+  Hennekam syndrome (DOID:0060366)
+  Hydrops fetalis (Orphanet:1041)
+ HGNC:8743
+  Proprotein convertase 1/3 deficiency (OMIM:600955)
+ HGNC:29
+  gout (EFO:0004274)
+  Tangier Disease (OMIM:205400)
+  Familial hypoalphalipoproteinemia (OMIM:604091)
+  Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)
+ HGNC:10718
+  atopic dermatitis (DOID:3310)
+  Hypercholesterolemia (MESH:D006937)
+ HGNC:2528
+  Papillon-Lefevre Syndrome (OMIM:245000)
+  Haim-Munk Syndrome (OMIM:245010)
+ HGNC:5299
+  congenital adrenal hyperplasia (DOID:0050811)
+ HGNC:6446
+  Cirrhosis, Familial (OMIM:215600)
+ HGNC:6715
+  Weill-Marchesani syndrome (DOID:0050475)
+  GLC3B (OMIM:600975)
+  Microspherophakia And/Or Megalocornea, With Ectopia Lentis and With or Without Secondary Glaucoma (OMIM:251750)
+  Glaucoma 3, Primary Congenital, D (OMIM:613086)
+  primary congenital glaucoma (OMIM:231300)
+  Weill-Marchesani Syndrome 3 (OMIM:614819)
+  Marfan Syndrome (OMIM:154700)
+  Weill-Marchesani Syndrome 1 (OMIM:277600)
+ HGNC:6547
+  Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)
+  Hypercholesterolemia, Familial (OMIM:143890)
+  familial hyperlipidemia (DOID:1168)
+  Hypercholesterolemia (MESH:D006937)
+  fatty liver disease (DOID:9452)
+  Homozygous familial hypercholesterolemia (Orphanet:391665)
+ HGNC:7939
+  Atrial standstill (Orphanet:1344)
+ HGNC:11763
+  non-Hodgkin lymphoma (DOID:0060060)
+  beta thalassemia (DOID:12241)
+  chronic lymphocytic leukemia (DOID:1040)
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:3674
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:7576
+  hypertrophic cardiomyopathy 14 (OMIM:613251)
+  Cardiomyopathy, Familial Hypertrophic, 1 (OMIM:192600)
+ HGNC:1784
+  facioscapulohumeral muscular dystrophy (DOID:11727)
+ HGNC:130
+  chronic lymphocytic leukemia (EFO:0000095)
+  Aortic aneurysm, familial thoracic 6 (OMIM:611788)
+ HGNC:7207
+  Congenital disorder of glycosylation type 1F (OMIM:609180)
+ HGNC:2191
+  Punctate palmoplantar keratoderma type 1 (Orphanet:79501)
+ HGNC:17064
+  Hodgkins lymphoma (EFO:0000183)
+  multiple myeloma (EFO:0001378)
+  chronic lymphocytic leukemia (EFO:0000095)
+ HGNC:30372
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:10909
+  Aceruloplasminemia (OMIM:604290)
+  Hemochromatosis, Type 4 (OMIM:606069)
+  hemochromatosis (DOID:2352)
+ HGNC:7997
+  Hirschsprung's disease (DOID:10487)
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:10498
+  atopic dermatitis (DOID:3310)
+ HGNC:2859
+  Desmosterolosis (OMIM:602398)
+ HGNC:10778
+  Pyle metaphyseal dysplasia (OMIM:265900)
+ HGNC:2907
+  Kagami-Ogata Syndrome (OMIM:608149)
+ HGNC:12399
+  myofibrillar myopathy 3 (OMIM:609200)
+  autosomal dominant limb-girdle muscular dystrophy type 1A (OMIM:159000)
+ HGNC:11042
+  Myoclonic-atonic epilepsy (OMIM:616421)
+  Myoclonic-astastic epilepsy (Orphanet:1942)
+ HGNC:7720
+  Lethal multiple pterygium syndrome (OMIM:253290)
+  acute lymphoblastic leukemia (EFO:0000220)
+  Non-immune hydrops fetalis (OMIM:236750)
+ HGNC:2511
+  psoriatic arthritis (EFO:0003778)
+ HGNC:16636
+  Pheochromocytoma (OMIM:171300)
+  Hereditary pheochromocytoma-paraganglioma (Orphanet:29072)
+  Charcot-Marie-Tooth Disease, Axonal, Type 2A1 (OMIM:118210)
+ HGNC:5192
+  lymphangioleiomyomatosis (OMIM:606690)
+ Beckwith-Wiedemann syndrome (OMIM:130650)
+ Hemochromatosis type 1 (OMIM:235200)
+ Cirrhosis, Familial (OMIM:215600)
+ Silver-Russell syndrome (OMIM:180860)
+ Spherocytosis type 3 (OMIM:270970)
+ autosomal dominant limb-girdle muscular dystrophy type 1A (OMIM:159000)
+ chronic granulomatous disease (DOID:3265)
+ Leigh syndrome (OMIM:256000)
+ Hyperinsulinemic hypoglycemia familial 3 (OMIM:602485)
+ Persistent hyperinsulinemic hypoglycemia of infancy (OMIM:256450)
+ Leprechaunism syndrome (OMIM:246200)
+ familial hyperlipidemia (DOID:1168)
+ psoriatic arthritis (EFO:0003778)
+ porphyria cutanea tarda (DOID:3132)
+ acute lymphoblastic leukemia (EFO:0000220)
+ atopic eczema (EFO:0000274)
+ common variable immunodeficiency (DOID:12177)
+ Brugada syndrome (DOID:0050451)
+ Cholestasis, Progressive Familial Intrahepatic, 2 (OMIM:601847)
+ Hodgkins lymphoma (EFO:0000183)
+ Hirschsprung disease 2 (OMIM:600155)
+ hyperlipoproteinemia type V (OMIM:144650)
+ Cystic Fibrosis (OMIM:219700)
+ hereditary spherocytosis (DOID:12971)
+ Hirschsprung's disease (DOID:10487)
+ Pheochromocytoma (OMIM:171300)
+ B-cell lymphoma (DOID:707)
+ Porphyria Cutanea Tarda (OMIM:176100)
+ Wilson disease (OMIM:277900)
+ sarcoidosis (DOID:11335)
+ Turner syndrome (DOID:3491)
+ Hyperlipidemia, Familial Combined (OMIM:144250)
+ chronic lymphocytic leukemia (EFO:0000095)
+ gestational diabetes (EFO:0004593)
+ Sporadic porphyria cutanea tarda (OMIM:176090)
+ psoriatic arthritis (DOID:9008)
+ Severe autosomal recessive muscular dystrophy of childhood - North African type (OMIM:253700)
+ methemoglobinemia (DOID:10783)
+ Hypoparathyroidism, Familial Isolated (OMIM:146200)
+ polycystic ovary syndrome (DOID:11612)
+ pseudoxanthoma elasticum (DOID:2738)
+ polycystic ovary syndrome (EFO:0000660)
+ Growth restriction, severe, with distinctive facies (OMIM:616489)
+ Cataract 41 (OMIM:116400)
+ Hypocalcemia, Autosomal Dominant 1 (OMIM:601198)
+ Granulomatous Disease, Chronic, Autosomal Recessive, Cytochrome B-Negative (OMIM:233690)
+ beta thalassemia (DOID:12241)
+ Prader-Willi syndrome (OMIM:176270)
+ Immunodeficiency, Common Variable, 12 (OMIM:616576)
+ Hirschsprung disease, cardiac defects, and autonomic dysfunction (OMIM:613870)
+ Muscular Dystrophy, Duchenne Type (OMIM:310200)
+ holoprosencephaly (DOID:4621)
+ atopic dermatitis (DOID:3310)
+ keratosis follicularis (OMIM:124200)
+ Wolfram Syndrome 1 (OMIM:222300)
+ primary hyperoxaluria (DOID:2977)
+ Aortic aneurysm, familial thoracic 6 (OMIM:611788)
+ multiple myeloma (EFO:0001378)
+ hypertrophic cardiomyopathy 14 (OMIM:613251)
+ lipoatrophic diabetes (DOID:11712)
+ Hajdu-Cheney syndrome (OMIM:102500)
+ Myeloma, Multiple (OMIM:254500)
+ sudden infant death syndrome (OMIM:272120)
+ Brugada syndrome 3 (OMIM:611875)
+ Psoriatic arthritis, susceptibility to (OMIM:607507)
+ Chorea, Benign Hereditary (OMIM:118700)
+ chronic lymphocytic leukemia (DOID:1040)
+ Takayasu's arteritis (OMIM:207600)
+ mitochondrial myopathy (DOID:699)
+ familial partial lipodystrophy (DOID:0050440)
+ Obesity (OMIM:601665)
+ fatty liver disease (DOID:9452)
+ Gaucher Disease, Type 1 (OMIM:230800)
+ Huntington Disease (OMIM:143100)
+ Sickle Cell Anemia (OMIM:603903)
+ diffuse large B-cell lymphoma (DOID:0050745)
+ Wolfram-like syndrome, autosomal dominant (OMIM:614296)
+ Alzheimer Disease (OMIM:104300)
+ Polycystic Kidney Disease 4 With or Without Hepatic Disease (OMIM:263200)
+ Hypercholesterolemia, Familial (OMIM:143890)
+ cutaneous T cell lymphoma (DOID:0060061)
+ Cardiomyopathy, Familial Hypertrophic, 1 (OMIM:192600)
+ hemochromatosis (DOID:2352)
+ familial lipoprotein lipase deficiency (OMIM:238600)
+ Tangier Disease (OMIM:205400)
+ Pineal hyperplasia AND diabetes mellitus syndrome (OMIM:262190)
+ ataxia telangiectasia (OMIM:208900)
+ Benign recurrent intrahepatic cholestasis 2 (OMIM:605479)
+ Timothy Syndrome (OMIM:601005)
+ Progressive intrahepatic cholestasis (OMIM:211600)
+ Familial cancer of breast (OMIM:114480)
+ PPARG-related familial partial lipodystrophy (OMIM:604367)
+ Hemochromatosis, Type 4 (OMIM:606069)
+ gout (EFO:0004274)
+ lymphangioleiomyomatosis (OMIM:606690)
+ Hodgkin's lymphoma, lymphocytic-histiocytic predominance (DOID:8543)
+ Hypercholesterolemia, Autosomal Dominant, Type B (OMIM:144010)
+ Acatalasemia (OMIM:614097)
+ Spherocytosis, Type 1 (OMIM:182900)
+ dry eye syndrome (DOID:10140)
+ Familial hypoalphalipoproteinemia (OMIM:604091)
+ congenital adrenal hyperplasia (DOID:0050811)
+ Wolfram syndrome (DOID:10632)

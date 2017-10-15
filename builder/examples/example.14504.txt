@@ -1,0 +1,43 @@
+DOID:14504
+ HGNC:7897
+  Niemann-Pick Disease, Type C1 (OMIM:257220)
+ HGNC:30099
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:14537
+  Niemann-Pick Disease, Type C2 (OMIM:607625)
+ HGNC:9006
+  Anterior segment mesenchymal dysgenesis (OMIM:107250)
+  Anterior segment dysgenesis (Orphanet:88632)
+  microphthalmia (DOID:10629)
+  Cataract 11, Multiple Types (OMIM:610623)
+  Early-onset posterior polar cataract (Orphanet:98993)
+ HGNC:11120
+  Ceroid lipofuscinosis neuronal 6 (OMIM:601780)
+  Niemann-Pick disease type A (OMIM:257200)
+  Niemann-Pick disease, type B (OMIM:607616)
+  Niemann-Pick disease (DOID:14504)
+ HGNC:4298
+  atopic dermatitis (DOID:3310)
+  Osteochondrodysplasias (MESH:D010009)
+  atopic eczema (EFO:0000274)
+  Gm1-Gangliosidosis, Type 2 (OMIM:230600)
+  gangliosidosis GM1 (DOID:3322)
+  Gm1-Gangliosidosis, Type 1 (OMIM:230500)
+  GM1 gangliosidosis type 3 (OMIM:230650)
+  Mucopolysaccharidosis type 4B (OMIM:253010)
+ HGNC:4878
+  Tay-Sachs disease (OMIM:272800)
+  Familial dysautonomia (OMIM:223900)
+ Ceroid lipofuscinosis neuronal 6 (OMIM:601780)
+ Niemann-Pick disease, type B (OMIM:607616)
+ GM1 gangliosidosis type 3 (OMIM:230650)
+ Gm1-Gangliosidosis, Type 1 (OMIM:230500)
+ Familial dysautonomia (OMIM:223900)
+ Niemann-Pick disease type A (OMIM:257200)
+ Niemann-Pick disease (DOID:14504)
+ Gm1-Gangliosidosis, Type 2 (OMIM:230600)
+ Mucopolysaccharidosis type 4B (OMIM:253010)
+ Niemann-Pick Disease, Type C2 (OMIM:607625)
+ Niemann-Pick Disease, Type C1 (OMIM:257220)
+ gangliosidosis GM1 (DOID:3322)
+ Tay-Sachs disease (OMIM:272800)

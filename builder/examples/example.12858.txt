@@ -1,0 +1,129 @@
+DOID:12858
+ HGNC:4851
+  Huntington Disease (OMIM:143100)
+  Juvenile Huntington disease (Orphanet:248111)
+ HGNC:14203
+  Huntington disease-like 2 (OMIM:606438)
+ HGNC:1912
+  Familial infantile myasthenia (OMIM:254210)
+  Presynaptic congenital myasthenic syndromes (Orphanet:98914)
+  Myasthenic syndrome, congenital, 21, presynaptic (OMIM:617239)
+ HGNC:4585
+  Epilepsy, Rolandic (MESH:D019305)
+  Landau-Kleffner syndrome (OMIM:245570)
+  Rolandic epilepsy-speech dyspraxia syndrome (Orphanet:163721)
+  Continuous spikes and waves during sleep (Orphanet:725)
+  benign epilepsy with centrotemporal spikes (OMIM:117100)
+ HGNC:3023
+  Hyperprolactinemia (OMIM:615555)
+  Dystonia 11, Myoclonic (OMIM:159900)
+ HGNC:7808
+  Hereditary sensory and autonomic neuropathy type 5 (OMIM:608654)
+ HGNC:4235
+  Alexander Disease (OMIM:203450)
+  Infantile neuronal ceroid lipofuscinosis (Orphanet:79263)
+ HGNC:3776
+  Mental Retardation, X-Linked, Associated With Fragile Site Fraxe (OMIM:309548)
+ HGNC:8820
+  Spinocerebellar Ataxia 23 (OMIM:610245)
+ HGNC:4232
+  Hirschsprung's disease (DOID:10487)
+  Pheochromocytoma (OMIM:171300)
+  Hirschsprung disease 3 (OMIM:613711)
+  congenital central hypoventilation syndrome (OMIM:209880)
+ HGNC:11138
+  Parkinson disease 1 (OMIM:168601)
+  autosomal recessive early-onset Parkinson disease 15 (OMIM:260300)
+  Gaucher's disease (DOID:1926)
+  Wilson disease (OMIM:277900)
+ HGNC:11179
+  Fatty Liver, Alcoholic (MESH:D005235)
+ HGNC:1033
+  congenital central hypoventilation syndrome (OMIM:209880)
+  WAGR syndrome (OMIM:194072)
+ HGNC:644
+  Hypospadias 1, X-Linked (OMIM:300633)
+  Spinal and Bulbar Muscular Atrophy, X-Linked 1 (OMIM:313200)
+  Androgen Insensitivity Syndrome (OMIM:300068)
+  Diabetes, Gestational (MESH:D016640)
+  Complete androgen insensitivity syndrome (Orphanet:99429)
+ HGNC:14929
+  Infantile neuronal ceroid lipofuscinosis (Orphanet:79263)
+ HGNC:11588
+  spinocerebellar ataxia type 17 (OMIM:607136)
+ HGNC:2159
+  Huntington Disease (OMIM:143100)
+ HGNC:2348
+  Rubinstein-Taybi Syndrome 1 (OMIM:180849)
+  Rubinstein-Taybi syndrome due to 16p13.3 microdeletion (OMIM:610543)
+  Sezary's disease (DOID:8541)
+  follicular lymphoma (DOID:0050873)
+ HGNC:9237
+  gout (EFO:0004274)
+  Infantile neuronal ceroid lipofuscinosis (Orphanet:79263)
+ HGNC:10940
+  Epileptic encephalopathy, early infantile, 41 (OMIM:617105)
+ HGNC:12926
+  Postaxial polydactyly type A6 (OMIM:615226)
+ HGNC:2903
+  polycystic ovary syndrome (DOID:11612)
+  Williams-Beuren syndrome (OMIM:194050)
+ HGNC:4586
+  Mental Retardation, Autosomal Dominant 6, With or Without Seizures (OMIM:613970)
+  Epileptic encephalopathy, early infantile, 27 (OMIM:616139)
+  West syndrome (DOID:0050562)
+  autosomal dominant non-syndromic intellectual disability (DOID:0060307)
+ HGNC:9966
+  nephroblastoma (OMIM:194070)
+  Wilms tumor 6 (OMIM:616806)
+ HGNC:4580
+  autosomal recessive non-syndromic intellectual disability (DOID:0060308)
+  Mental Retardation, Autosomal Recessive 6 (OMIM:611092)
+ HGNC:3033
+  Dentatorubral pallidoluysian atrophy (OMIM:125370)
+ HGNC:7106
+  Machado-Joseph disease (OMIM:109150)
+ HGNC:6834
+  Huntington Disease (OMIM:143100)
+  Pheochromocytoma (OMIM:171300)
+ HGNC:17313
+  Huntington Disease (OMIM:143100)
+ HGNC:8768
+  Combined Oxidative Phosphorylation Deficiency 6 (OMIM:300816)
+  Spondyloepimetaphyseal Dysplasia, X-Linked, With Mental Deterioration (OMIM:300232)
+  Huntington Disease (OMIM:143100)
+  X-linked hereditary sensory and autonomic neuropathy with deafness (OMIM:300614)
+  Cowchock Syndrome (OMIM:310490)
+ HGNC:3040
+  Down Syndrome (OMIM:190685)
+  Huntington Disease (OMIM:143100)
+ HGNC:8125
+  Huntington Disease (OMIM:143100)
+  Chromosome Aberrations (MESH:D002869)
+ HGNC:11007
+  Huntington Disease (OMIM:143100)
+  lipid storage disease (DOID:9455)
+ HGNC:6833
+  Monoamine oxidase A deficiency (OMIM:300615)
+  Huntington Disease (OMIM:143100)
+  Pheochromocytoma (OMIM:171300)
+ HGNC:3553
+  Huntington Disease (OMIM:143100)
+ HGNC:21528
+  Huntington Disease (OMIM:143100)
+ Spinal and Bulbar Muscular Atrophy, X-Linked 1 (OMIM:313200)
+ lipid storage disease (DOID:9455)
+ Infantile neuronal ceroid lipofuscinosis (Orphanet:79263)
+ autosomal recessive early-onset Parkinson disease 15 (OMIM:260300)
+ Down Syndrome (OMIM:190685)
+ Hirschsprung's disease (DOID:10487)
+ polycystic ovary syndrome (DOID:11612)
+ gout (EFO:0004274)
+ Rubinstein-Taybi Syndrome 1 (OMIM:180849)
+ Pheochromocytoma (OMIM:171300)
+ Machado-Joseph disease (OMIM:109150)
+ Rubinstein-Taybi syndrome due to 16p13.3 microdeletion (OMIM:610543)
+ Wilson disease (OMIM:277900)
+ Hirschsprung disease 3 (OMIM:613711)
+ Gaucher's disease (DOID:1926)
+ Dentatorubral pallidoluysian atrophy (OMIM:125370)

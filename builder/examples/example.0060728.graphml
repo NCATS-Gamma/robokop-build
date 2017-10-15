@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="relation" attr.type="string" for="edge" id="d11" />
+  <key attr.name="publications" attr.type="string" for="edge" id="d10" />
+  <key attr.name="key" attr.type="long" for="edge" id="d9" />
+  <key attr.name="properties" attr.type="string" for="edge" id="d8" />
+  <key attr.name="edge_source" attr.type="string" for="edge" id="d7" />
+  <key attr.name="edge_type" attr.type="string" for="edge" id="d6" />
+  <key attr.name="mondo_identifiers" attr.type="string" for="node" id="d5" />
+  <key attr.name="label" attr.type="string" for="node" id="d4" />
+  <key attr.name="mesh_identifiers" attr.type="string" for="node" id="d3" />
+  <key attr.name="layer_number" attr.type="long" for="node" id="d2" />
+  <key attr.name="node_type" attr.type="string" for="node" id="d1" />
+  <key attr.name="identifier" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="DOID:0060728">
+      <data key="d0">DOID:0060728</data>
+      <data key="d1">D</data>
+      <data key="d2">0</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:17646">
+      <data key="d0">HGNC:17646</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="NGLY1-deficiency (OMIM:615273)">
+      <data key="d0">OMIM:615273</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">NGLY1-deficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <edge source="DOID:0060728" target="HGNC:17646">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:17646" target="NGLY1-deficiency (OMIM:615273)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+  </graph>
+</graphml>
