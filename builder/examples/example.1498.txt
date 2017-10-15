@@ -1,0 +1,60 @@
+DOID:1498
+ HGNC:4379
+  familial hypocalciuric hypercalcemia 2 (OMIM:145981)
+  Hypocalcemia, Autosomal Dominant 1 (OMIM:601198)
+  Hypocalcemia, Autosomal Dominant 2 (OMIM:615361)
+ HGNC:11935
+  X-linked acrogigantism due to Xq26 microduplication (OMIM:300942)
+  Immunodeficiency with hyper IgM type 1 (OMIM:308230)
+ HGNC:9360
+  Malignant lymphoma, non-Hodgkin (OMIM:605027)
+  FHL1 (OMIM:267700)
+  Hemophagocytic lymphohistiocytosis, familial, 2 (OMIM:603553)
+ HGNC:3331
+  Emery-Dreifuss Muscular Dystrophy 1, X-Linked (OMIM:310300)
+ HGNC:1884
+  Hemochromatosis type 1 (OMIM:235200)
+  Tourette Syndrome (OMIM:137580)
+  Cystic Fibrosis (OMIM:219700)
+  Vas Deferens, Congenital Bilateral Aplasia of (OMIM:277180)
+  Pancreatitis, Hereditary (OMIM:167800)
+  gout (EFO:0004274)
+ HGNC:8754
+  Spondylometaphyseal dysplasia with cone-rod dystrophy (OMIM:608940)
+  Leber congenital amaurosis (DOID:14791)
+ HGNC:12811
+  McLeod neuroacanthocytosis syndrome (OMIM:300842)
+  neuroacanthocytosis (DOID:0050765)
+ HGNC:12693
+  Down Syndrome (OMIM:190685)
+ HGNC:27230
+  Roberts syndrome (OMIM:268300)
+  Sc Phocomelia Syndrome (OMIM:269000)
+ HGNC:9817
+  Familial cancer of breast (OMIM:114480)
+  Fanconi Anemia, Complementation Group R (OMIM:617244)
+  Fanconi anemia (DOID:13636)
+ HGNC:11244
+  Pancreatitis, Hereditary (OMIM:167800)
+ HGNC:4389
+  Ohtahara syndrome (DOID:0050709)
+  Epileptic Encephalopathy, Early Infantile, 17 (OMIM:615473)
+ HGNC:1698
+  Agammaglobulinemia 3, Autosomal Recessive (OMIM:613501)
+  Agammaglobulinemia, non-Bruton type (OMIM:601495)
+  diffuse large B-cell lymphoma (DOID:0050745)
+ HGNC:25716
+  cytochrome-c oxidase deficiency disease (OMIM:220110)
+ HGNC:11450
+  methylmalonic acidemia (DOID:14749)
+ HGNC:7871
+  Mental Retardation, X-Linked, Syndromic 34 (OMIM:300967)
+ HGNC:7758
+  progressive myoclonus epilepsy (DOID:891)
+  glycoproteinosis (OMIM:256550)
+  Sialidosis type 1 (Orphanet:812)
+ HGNC:2605
+  Cerebrotendinous Xanthomatosis (OMIM:213700)
+ Cystic Fibrosis (OMIM:219700)
+ Malignant lymphoma, non-Hodgkin (OMIM:605027)
+ gout (EFO:0004274)

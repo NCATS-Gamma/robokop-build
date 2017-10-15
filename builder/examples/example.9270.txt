@@ -9,5 +9,3 @@ DOID:9270
  HGNC:5147
   Hawkinsinuria (OMIM:140350)
   tyrosinemia type III (OMIM:276710)
- HGNC:4892
-  Alkaptonuria (OMIM:203500)

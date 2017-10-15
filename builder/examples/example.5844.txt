@@ -1,0 +1,244 @@
+DOID:5844
+ HGNC:3467
+  Familial cancer of breast (OMIM:114480)
+ HGNC:3231
+  orofaciodigital syndrome III (OMIM:258850)
+ HGNC:4492
+  common variable immunodeficiency (DOID:12177)
+ HGNC:11766
+  Muscular Dystrophy, Duchenne Type (OMIM:310200)
+  dry eye syndrome (DOID:10140)
+  Camurati-Engelmann disease (DOID:4997)
+ HGNC:7939
+  Atrial standstill (Orphanet:1344)
+ HGNC:338
+  non-syndromic X-linked intellectual disability (DOID:0050776)
+  Cystic Fibrosis (OMIM:219700)
+ HGNC:4893
+  gout (EFO:0004274)
+ HGNC:7176
+  Marfan syndrome (DOID:14323)
+ HGNC:3542
+  Thrombophilia due to activated protein C resistance (OMIM:188055)
+  Factor V deficiency (OMIM:227400)
+ HGNC:5992
+  mitochondrial myopathy (DOID:699)
+  chronic progressive external ophthalmoplegia (DOID:12558)
+  atopic dermatitis (DOID:3310)
+ HGNC:7576
+  hypertrophic cardiomyopathy 14 (OMIM:613251)
+  Cardiomyopathy, Familial Hypertrophic, 1 (OMIM:192600)
+ HGNC:5423
+  fatty liver disease (DOID:9452)
+  Vogt-Koyanagi-Harada disease (DOID:12297)
+ HGNC:11100
+  Familial rhabdoid tumor (Orphanet:231108)
+  Rhabdoid tumor predisposition syndrome 2 (OMIM:613325)
+  Burkitt lymphoma (OMIM:113970)
+  Coffin-Siris syndrome (DOID:1925)
+  Mental Retardation, Autosomal Dominant 16 (OMIM:614609)
+  Sezary's disease (DOID:8541)
+ HGNC:2488
+  Conotruncal Heart Malformations (OMIM:217095)
+  Hypothyroidism, congenital, nongoitrous, 5 (OMIM:225250)
+  Familial progressive cardiac conduction defect (OMIM:113900)
+  Thyroid ectopia (Orphanet:95712)
+  Athyreosis (Orphanet:95713)
+  Aortic valve disorder (OMIM:109730)
+ HGNC:11892
+  Psoriatic arthritis, susceptibility to (OMIM:607507)
+  mitochondrial myopathy (DOID:699)
+ HGNC:6709
+  Psoriatic arthritis, susceptibility to (OMIM:607507)
+ HGNC:613
+  cerebral amyloid angiopathy (DOID:9246)
+  hyperlipoproteinemia type III (DOID:3145)
+  Wilson disease (OMIM:277900)
+  Alzheimer Disease 4 (OMIM:606889)
+  Alzheimer's disease 2 (OMIM:104310)
+  familial hyperlipidemia (DOID:1168)
+ HGNC:7873
+  Takayasu's arteritis (OMIM:207600)
+  psoriatic arthritis (DOID:9008)
+ HGNC:4617
+  Ceroid lipofuscinosis neuronal 6 (OMIM:601780)
+  mantle cell lymphoma (DOID:0050746)
+ HGNC:4311
+  amino acid metabolic disorder (DOID:9252)
+  Gamma-Glutamylcysteine Synthetase Deficiency, Hemolytic Anemia Due to (OMIM:230450)
+ HGNC:5238
+  spinocerebellar ataxia type 17 (OMIM:607136)
+ HGNC:6535
+  Glycogen Storage Disease 11 (OMIM:612933)
+ HGNC:11610
+  Muscular Dystrophy, Limb-Girdle, Type 2G (OMIM:601954)
+ HGNC:130
+  chronic lymphocytic leukemia (EFO:0000095)
+  Aortic aneurysm, familial thoracic 6 (OMIM:611788)
+ HGNC:11179
+  Fatty Liver, Alcoholic (MESH:D005235)
+ HGNC:3531
+  Congenital factor XIII deficiency (Orphanet:331)
+  Factor xiii, a subunit, deficiency of (OMIM:613225)
+  factor XIII deficiency (DOID:2211)
+ HGNC:5962
+  Wilson disease (OMIM:277900)
+  atopic dermatitis (DOID:3310)
+ HGNC:992
+  Myeloma, Multiple (OMIM:254500)
+ HGNC:959
+  polycystic ovary syndrome (DOID:11612)
+  ALL (OMIM:613065)
+  cutaneous T cell lymphoma (DOID:0060061)
+ HGNC:990
+  Osteochondrodysplasias (MESH:D010009)
+  non-Hodgkin lymphoma (DOID:0060060)
+  chronic lymphocytic leukemia (EFO:0000095)
+  diffuse large B-cell lymphoma (DOID:0050745)
+ HGNC:9958
+  Bartter disease (DOID:445)
+  Hyperuricemic Nephropathy, Familial Juvenile, 2 (OMIM:613092)
+  Liddle Syndrome (OMIM:177200)
+ HGNC:6996
+  Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations (OMIM:613443)
+  Frontotemporal Dementia (OMIM:600274)
+  5q14.3 microdeletion syndrome (Orphanet:228384)
+ HGNC:9052
+  Alzheimer Disease (OMIM:104300)
+  Quebec platelet disorder (OMIM:601709)
+ HGNC:5141
+  hemochromatosis (DOID:2352)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:3535
+  prothrombin deficiency (OMIM:613679)
+  Hypoprothrombinemias (MESH:D007020)
+  fatty liver disease (DOID:9452)
+  Hemochromatosis type 1 (OMIM:235200)
+ HGNC:7577
+  Cardiomyopathy, Familial Hypertrophic, 1 (OMIM:192600)
+  Laing early-onset distal myopathy (OMIM:160500)
+  Congenital myopathy (OMIM:255300)
+  Classic multiminicore myopathy (Orphanet:324604)
+  MYH7-related late-onset scapuloperoneal muscular dystrophy (OMIM:181430)
+ HGNC:2707
+  glycogen storage disease V (OMIM:232600)
+ HGNC:18124
+  platelet-type bleeding disorder 8 (OMIM:609821)
+ HGNC:6541
+  Glycogen storage disease due to lactate dehydrogenase H-subunit deficiency (OMIM:614128)
+ HGNC:10484
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:7166
+  Nodulosis-arthropathy-osteolysis syndrome (Orphanet:85196)
+ HGNC:7979
+  Pseudohypoaldosteronism, Type I, Autosomal Dominant (OMIM:177735)
+  Hypertension, Early-Onset, Autosomal Dominant, With Severe Exacerbation 1N Pregnancy (OMIM:605115)
+ HGNC:6342
+  Acute Undifferentiated Leukemia (OMIM:601626)
+ HGNC:11071
+  Lichtenstein-Knorr Syndrome (OMIM:616291)
+ HGNC:6156
+  platelet-type bleeding disorder 16 (OMIM:187800)
+  Glanzmann's thrombasthenia (OMIM:273800)
+  Autosomal dominant macrothrombocytopenia (Orphanet:140957)
+ HGNC:5209
+  Apparent Mineralocorticoid Excess (OMIM:218030)
+  Mineralocorticoid Excess Syndrome, Apparent (MESH:D043204)
+ HGNC:9237
+  gout (EFO:0004274)
+  Infantile neuronal ceroid lipofuscinosis (Orphanet:79263)
+ HGNC:2499
+  Hypercholesterolemia (MESH:D006937)
+ HGNC:11947
+  Cardiomyopathy, Familial Hypertrophic, 7 (OMIM:613690)
+ HGNC:4250
+  Glutathionuria (OMIM:231950)
+ HGNC:795
+  hereditary breast ovarian cancer (DOID:5683)
+  ataxia telangiectasia (OMIM:208900)
+  chronic lymphocytic leukemia (DOID:1040)
+  Familial cancer of breast (OMIM:114480)
+ HGNC:23663
+  Hereditary combined deficiency of vitamin K-dependent clotting factors (OMIM:277450)
+  Coumarin Resistance (OMIM:122700)
+  Vitamin K-Dependent Clotting Factors, Combined Deficiency Of, 2 (OMIM:607473)
+ HGNC:4173
+  46,XY partial gonadal dysgenesis (Orphanet:251510)
+  Testicular anomalies with or without congenital heart disease (OMIM:615542)
+ HGNC:10500
+  Down Syndrome (OMIM:190685)
+ HGNC:6357
+  Kallikrein, Decreased Urinary Activity of (OMIM:615953)
+ HGNC:7876
+  familial hyperlipidemia (DOID:1168)
+ HGNC:8602
+  Conotruncal heart malformations (Orphanet:2445)
+ HGNC:8778
+  Brachydactyly-arterial hypertension syndrome (OMIM:112410)
+ HGNC:4274
+  craniometaphyseal dysplasia (DOID:0080033)
+  Oculodentodigital Dysplasia, Autosomal Recessive (OMIM:257850)
+  Craniometaphyseal dysplasia, autosomal recessive type (OMIM:218400)
+  Syndactyly, Type 3 (OMIM:186100)
+  Erythrokeratodermia variabilis (OMIM:133200)
+ HGNC:1516
+  Behcet's syndrome (OMIM:109650)
+  diffuse large B-cell lymphoma (DOID:0050745)
+  Marfan syndrome (DOID:14323)
+  Acatalasemia (OMIM:614097)
+  Turner syndrome (DOID:3491)
+ HGNC:5344
+  Hypercholesterolemia (MESH:D006937)
+ cerebral amyloid angiopathy (DOID:9246)
+ atopic dermatitis (DOID:3310)
+ Cystic Fibrosis (OMIM:219700)
+ fatty liver disease (DOID:9452)
+ Alzheimer Disease (OMIM:104300)
+ Myeloma, Multiple (OMIM:254500)
+ Cardiomyopathy, Familial Hypertrophic, 1 (OMIM:192600)
+ polycystic ovary syndrome (DOID:11612)
+ Hemochromatosis type 1 (OMIM:235200)
+ Thrombophilia due to activated protein C resistance (OMIM:188055)
+ chronic lymphocytic leukemia (EFO:0000095)
+ Conotruncal Heart Malformations (OMIM:217095)
+ diffuse large B-cell lymphoma (DOID:0050745)
+ Factor V deficiency (OMIM:227400)
+ Hypothyroidism, congenital, nongoitrous, 5 (OMIM:225250)
+ common variable immunodeficiency (DOID:12177)
+ factor XIII deficiency (DOID:2211)
+ prothrombin deficiency (OMIM:613679)
+ Glanzmann's thrombasthenia (OMIM:273800)
+ Cardiomyopathy, Familial Hypertrophic, 7 (OMIM:613690)
+ mantle cell lymphoma (DOID:0050746)
+ glycogen storage disease V (OMIM:232600)
+ Alzheimer Disease 4 (OMIM:606889)
+ Factor xiii, a subunit, deficiency of (OMIM:613225)
+ psoriatic arthritis (DOID:9008)
+ Takayasu's arteritis (OMIM:207600)
+ ALL (OMIM:613065)
+ Down Syndrome (OMIM:190685)
+ Sickle Cell Anemia (OMIM:603903)
+ Behcet's syndrome (OMIM:109650)
+ Familial cancer of breast (OMIM:114480)
+ amino acid metabolic disorder (DOID:9252)
+ Marfan syndrome (DOID:14323)
+ Aortic aneurysm, familial thoracic 6 (OMIM:611788)
+ acute lymphoblastic leukemia (EFO:0000220)
+ Muscular Dystrophy, Limb-Girdle, Type 2G (OMIM:601954)
+ familial hyperlipidemia (DOID:1168)
+ Muscular Dystrophy, Duchenne Type (OMIM:310200)
+ hyperlipoproteinemia type III (DOID:3145)
+ mitochondrial myopathy (DOID:699)
+ Psoriatic arthritis, susceptibility to (OMIM:607507)
+ Alzheimer's disease 2 (OMIM:104310)
+ Aortic valve disorder (OMIM:109730)
+ hemochromatosis (DOID:2352)
+ Acute Undifferentiated Leukemia (OMIM:601626)
+ Turner syndrome (DOID:3491)
+ hypertrophic cardiomyopathy 14 (OMIM:613251)
+ gout (EFO:0004274)
+ chronic lymphocytic leukemia (DOID:1040)
+ Burkitt lymphoma (OMIM:113970)
+ Familial progressive cardiac conduction defect (OMIM:113900)
+ Wilson disease (OMIM:277900)
+ Bartter disease (DOID:445)

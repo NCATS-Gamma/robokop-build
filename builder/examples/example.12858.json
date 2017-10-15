@@ -1,0 +1,5119 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "id": {
+                "identifier": "DOID:12858",
+                "node_type": "D",
+                "layer_number": 0,
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D006816",
+                        "label": "Juvenile Huntington Disease",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Huntington Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:4851",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:14203",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:1912",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:4585",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:3023",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:7808",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:4235",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:3776",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:8820",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:4232",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:11138",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:11179",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:1033",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:644",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:14929",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:11588",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:2159",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:2348",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:9237",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:10940",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:12926",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:2903",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:4586",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:9966",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:4580",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:3033",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:7106",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:6834",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:17313",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:8768",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:3040",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:8125",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:11007",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:6833",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:3553",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:21528",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:143100",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_143100",
+                    "http://www.orpha.net/ORDO/Orphanet_248111"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D006816",
+                        "label": "Juvenile Huntington Disease",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Huntington Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:248111",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_143100"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D006816",
+                        "label": "Juvenile Huntington Disease",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "UMLS",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Huntington Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:606438",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_606438"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:254210",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:3635",
+                    "http://purl.obolibrary.org/obo/OMIM_254210",
+                    "http://www.orpha.net/ORDO/Orphanet_98914"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D020294",
+                        "label": "Myasthenic Syndromes, Congenital, Slow Channel",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Myasthenic Syndromes, Congenital"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:98914",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_254210",
+                    "http://purl.obolibrary.org/obo/OMIM_615120",
+                    "http://purl.obolibrary.org/obo/OMIM_616330"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:617239",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:3635",
+                    "http://purl.obolibrary.org/obo/OMIM_617239",
+                    "http://www.orpha.net/ORDO/Orphanet_98914"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "MESH:D019305",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_117100"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:245570",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_117100",
+                    "http://www.orpha.net/ORDO/Orphanet_163721",
+                    "http://www.orpha.net/ORDO/Orphanet_725",
+                    "http://purl.obolibrary.org/obo/OMIM_245570"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D018887",
+                        "label": "Landau-Kleffner Syndrome",
+                        "sourcePrefixes": [
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Landau-Kleffner Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:163721",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_245570",
+                    "http://purl.obolibrary.org/obo/OMIM_300643"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:725",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_245570"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:117100",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_117100"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:615555",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://www.orpha.net/ORDO/Orphanet_397685"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:159900",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_159900"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C536096",
+                        "label": "Myoclonic dystonia",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Myoclonic dystonia"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:608654",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0050548",
+                    "http://purl.obolibrary.org/obo/OMIM_608654"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D000699",
+                        "label": "Pain Insensitivity, Congenital",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Pain Insensitivity, Congenital"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:203450",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://www.orpha.net/ORDO/Orphanet_363717",
+                    "http://www.orpha.net/ORDO/Orphanet_363722",
+                    "http://purl.obolibrary.org/obo/OMIM_203450"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D038261",
+                        "label": "Alexander Disease",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Alexander Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:79263",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_256730",
+                    "http://purl.obolibrary.org/obo/OMIM_214200"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C537948",
+                        "label": "Ceroid lipofuscinosis, neuronal 1, infantile",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Ceroid lipofuscinosis, neuronal 1, infantile"
+                    },
+                    {
+                        "curie": "MeSH:D009472",
+                        "label": "Adult Neuronal Ceroid Lipofuscinosis",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "UMLS",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Neuronal Ceroid-Lipofuscinoses"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:309548",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_300624",
+                    "http://purl.obolibrary.org/obo/OMIM_309548"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:610245",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_610245"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C537201",
+                        "label": "Spinocerebellar ataxia 23",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Spinocerebellar ataxia 23"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:10487",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:10487"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D006627",
+                        "label": "Aganglionosis, Colonic",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Hirschsprung Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:171300",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_171300",
+                    "http://www.orpha.net/ORDO/Orphanet_29072"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D010673",
+                        "label": "Pheochromocytoma, Extra-Adrenal",
+                        "sourcePrefixes": [
+                            "EFO"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Pheochromocytoma"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:613711",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:10487"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D006627",
+                        "label": "Aganglionosis, Colonic",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hirschsprung Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:209880",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_209880",
+                    "http://www.orpha.net/ORDO/Orphanet_99803"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C536209",
+                        "label": "Cchs With Hirschsprung Disease",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Congenital central hypoventilation syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:168601",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_260300"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:260300",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_260300"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D010300",
+                        "label": "Parkinson Disease",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Parkinson Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:1926",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:1926"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D005776",
+                        "label": "Gaucher Disease, Type 1",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Gaucher Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:277900",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_277900"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D006527",
+                        "label": "Hepatic Form of Wilson Disease",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hepatolenticular Degeneration"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "MESH:D005235",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:9452"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:194072",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_194072"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C538295",
+                        "label": "Monosomy 11 p11 p12",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Chromosome 11p, partial deletion"
+                    },
+                    {
+                        "curie": "MeSH:D017624",
+                        "label": "WAGR Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "WAGR Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:300633",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_300633"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D007021",
+                        "label": "Hypospadias",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Hypospadias"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:313200",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_313200",
+                    "http://purl.obolibrary.org/obo/MESH_C537017"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D055534",
+                        "label": "Bulbo-Spinal Atrophy, X-Linked",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Bulbo-Spinal Atrophy, X-Linked"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:300068",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://www.orpha.net/ORDO/Orphanet_99429",
+                    "http://purl.obolibrary.org/obo/OMIM_300068"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D013734",
+                        "label": "Testicular Feminization",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Androgen-Insensitivity Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "MESH:D016640",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_125851"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:99429",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_300068",
+                    "http://purl.obolibrary.org/obo/OMIM_300274"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:607136",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_607136"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:180849",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:1933",
+                    "http://purl.obolibrary.org/obo/OMIM_180849"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D012415",
+                        "label": "Rubinstein-Taybi Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Rubinstein-Taybi Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:610543",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:1933",
+                    "http://purl.obolibrary.org/obo/OMIM_610543"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D012415",
+                        "label": "Rubinstein-Taybi Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Rubinstein-Taybi Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:8541",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:8541"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D012751",
+                        "label": "Sezary Syndrome",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Sezary Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:0050873",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0050873"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D008224",
+                        "label": "Lymphoma, Follicular, Grade 3",
+                        "sourcePrefixes": [
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Lymphoma, Follicular"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "EFO:0004274",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:13189"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D015210",
+                        "label": "Arthritis, Gouty",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Arthritis, Gouty"
+                    },
+                    {
+                        "curie": "MeSH:D006073",
+                        "label": "Gout",
+                        "sourcePrefixes": [
+                            "EFO"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Gout"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:617105",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:308",
+                    "http://www.orpha.net/ORDO/Orphanet_442835"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:615226",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://www.orpha.net/ORDO/Orphanet_93334"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:11612",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:11612"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D011085",
+                        "label": "Sclerocystic Ovaries",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Polycystic Ovary Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:194050",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_194050"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D021921",
+                        "label": "Aortic Stenosis, Supravalvular",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "ONTONEO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Aortic Stenosis, Supravalvular"
+                    },
+                    {
+                        "curie": "MeSH:D018980",
+                        "label": "Williams Syndrome",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Williams Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:613970",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0060307"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:616139",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0050562"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:0050562",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0050562"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:0060307",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0060307"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:194070",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_194070"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009396",
+                        "label": "Wilms Tumor",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Wilms Tumor"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:616806",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_194070"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009396",
+                        "label": "Wilms Tumor",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Wilms Tumor"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:0060308",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0060308"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:611092",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0060308",
+                    "http://purl.obolibrary.org/obo/OMIM_611092"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:125370",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:891",
+                    "http://purl.obolibrary.org/obo/OMIM_125370"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D020191",
+                        "label": "May-White Syndrome",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Myoclonic Epilepsies, Progressive"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:109150",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_109150"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D017827",
+                        "label": "Machado-Joseph Disease Type III",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Machado-Joseph Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:300816",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0060286",
+                    "http://purl.obolibrary.org/obo/OMIM_300816"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:300232",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_300232"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:300614",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_300614"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:310490",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_310490"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:190685",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_190685"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D004314",
+                        "label": "Trisomy 21, Meiotic Nondisjunction",
+                        "sourcePrefixes": [
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Down Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "MESH:D002869",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:0080014"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:9455",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:9455"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D008064",
+                        "label": "Lipidoses",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Lipidoses"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:300615",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_300615"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:C563156",
+                        "label": "Brunner Syndrome",
+                        "sourcePrefixes": [
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Brunner Syndrome"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 666,
+                        "label": "Data Source",
+                        "term": "JensenLab Knowledge GHR",
+                        "href": null
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 1,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 1,
+            "key": 1
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 1,
+            "key": 2
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 2,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 3,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 11409,
+                        "label": "IDG Target Family",
+                        "term": "Ion Channel",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 4,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1783,
+                        "label": "IDG Target Family",
+                        "term": "GPCR",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 5,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 6,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 7,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 229,
+                        "label": "IDG Target Family",
+                        "term": "Transcription Factor",
+                        "href": null
+                    },
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 8,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 9,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 10,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 10,
+            "key": 1
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 11,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 12,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 13,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    },
+                    {
+                        "id": 130845,
+                        "label": "IDG Target Family",
+                        "term": "Nuclear Receptor",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 14,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    },
+                    {
+                        "id": 27950,
+                        "label": "IDG Target Family",
+                        "term": "Epigenetic",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 15,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 16,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1783,
+                        "label": "IDG Target Family",
+                        "term": "GPCR",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 17,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 1783,
+                        "label": "IDG Target Family",
+                        "term": "GPCR",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 17,
+            "key": 1
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    },
+                    {
+                        "id": 27950,
+                        "label": "IDG Target Family",
+                        "term": "Epigenetic",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 18,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 19,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    },
+                    {
+                        "id": 84288,
+                        "label": "IDG Target Family",
+                        "term": "Transporter",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 20,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 228,
+                        "label": "IDG Development Level",
+                        "term": "Tdark",
+                        "href": null
+                    },
+                    {
+                        "id": 229,
+                        "label": "IDG Target Family",
+                        "term": "Transcription Factor",
+                        "href": null
+                    },
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 21,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 22,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 11409,
+                        "label": "IDG Target Family",
+                        "term": "Ion Channel",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 23,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 229,
+                        "label": "IDG Target Family",
+                        "term": "Transcription Factor",
+                        "href": null
+                    },
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 24,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 11409,
+                        "label": "IDG Target Family",
+                        "term": "Ion Channel",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 25,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 26,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 27,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 28,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 26059,
+                        "label": "IDG Target Family",
+                        "term": "Kinase",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 29,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 30,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 31,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 32,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    },
+                    {
+                        "id": 84288,
+                        "label": "IDG Target Family",
+                        "term": "Transporter",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 33,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    },
+                    {
+                        "id": 14969,
+                        "label": "IDG Development Level",
+                        "term": "Tclin",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 34,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 35,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 36,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20090128,
+                        "pmid": 19154005,
+                        "title": "Microsatellite repeat instability and neurological disease."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 66,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19900404,
+                        "pmid": 2137963
+                    },
+                    {
+                        "date": 19851213,
+                        "pmid": 6242404
+                    },
+                    {
+                        "date": 19750218,
+                        "pmid": 4279212,
+                        "title": "Erythrocyte-membrane proteins in Spielmeyer-Vogt's disease and Huntington's chorea."
+                    },
+                    {
+                        "date": 19730315,
+                        "pmid": 4265109
+                    },
+                    {
+                        "date": 19691021,
+                        "pmid": 4241251
+                    },
+                    {
+                        "date": 19681220,
+                        "pmid": 4234947
+                    },
+                    {
+                        "date": 19741024,
+                        "title": "The clinical incidence of myoclonus.",
+                        "pmid": 4277685
+                    },
+                    {
+                        "date": 19680215,
+                        "title": "The rationale of genetic counseling.",
+                        "pmid": 4229313
+                    },
+                    {
+                        "date": 19670626,
+                        "pmid": 4225751,
+                        "title": "Some congenital defects of the nervous system."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 96,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150101,
+                        "pmid": 25091425
+                    },
+                    {
+                        "date": 19941205,
+                        "pmid": 7969795,
+                        "title": "Analysis of glial fibrillary acidic protein in the cerebrospinal fluid of children investigated for encephalopathy."
+                    },
+                    {
+                        "date": 19931115,
+                        "pmid": 8404954,
+                        "title": "Validation of quantitative brain dopamine D2 receptor imaging with a conventional single-head SPET camera."
+                    },
+                    {
+                        "date": 19840709,
+                        "pmid": 6233527
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 52,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20160713,
+                        "pmid": 27405156
+                    },
+                    {
+                        "date": 20160615,
+                        "pmid": 27302727,
+                        "title": "Natural Compounds Preventing Neurodegenerative Diseases Through Autophagic Activation."
+                    },
+                    {
+                        "date": 20160429,
+                        "pmid": 27125067,
+                        "title": "ETHICAL AND GENETIC ASPECTS REGARDING PRESYMPTOMATIC TESTING FOR NEURODEGENERATIVE DISEASES."
+                    },
+                    {
+                        "date": 20160410,
+                        "pmid": 27037912
+                    },
+                    {
+                        "date": 20151215,
+                        "pmid": 26663180,
+                        "title": "microRNAs and Neurodegenerative Diseases."
+                    },
+                    {
+                        "date": 20151120,
+                        "pmid": 26575483
+                    },
+                    {
+                        "date": 20151117,
+                        "pmid": 26569220
+                    },
+                    {
+                        "date": 20151105,
+                        "pmid": 26538832
+                    },
+                    {
+                        "date": 20150930,
+                        "pmid": 26418401
+                    },
+                    {
+                        "date": 20150926,
+                        "pmid": 26408163,
+                        "title": "Endocannabinoids and Neurodegenerative Disorders: Parkinson's Disease, Huntington's Chorea, Alzheimer's Disease, and Others."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 60,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20140325,
+                        "pmid": 24458030,
+                        "title": "Inverse and direct cancer comorbidity in people with central nervous system disorders: a meta-analysis of cancer incidence in 577,013 participants of 50 observational studies."
+                    },
+                    {
+                        "date": 20110610,
+                        "pmid": 21514357,
+                        "title": "Striatum-hippocampus balance: from physiological behavior to interneuronal pathology."
+                    },
+                    {
+                        "date": 20080801,
+                        "pmid": 18669399,
+                        "title": "Genes and chromosomes. Part 4--Genetic anomalies and disorders."
+                    },
+                    {
+                        "date": 20031117,
+                        "pmid": 14613594,
+                        "title": "Cholinesterase inhibitors in non-Alzheimer dementias."
+                    },
+                    {
+                        "date": 20030514,
+                        "pmid": 12745628
+                    },
+                    {
+                        "date": 20020722,
+                        "pmid": 12134182,
+                        "title": "Endogenous sodium-potassium ATPase inhibition related biochemical cascade in trisomy 21 and Huntington's disease: neural regulation of genomic function."
+                    },
+                    {
+                        "date": 20020618,
+                        "pmid": 12070670,
+                        "title": "Calpain activation in neurodegenerative diseases: confocal immunofluorescence study with antibodies specifically recognizing the active form of calpain 2."
+                    },
+                    {
+                        "date": 20011219,
+                        "pmid": 11767798
+                    },
+                    {
+                        "date": 19990824,
+                        "pmid": 10415146,
+                        "title": "Alzheimer's disease and down syndrome: from meiosis to dementia."
+                    },
+                    {
+                        "date": 19981106,
+                        "pmid": 9697113,
+                        "title": "PEP-19 immunohistochemistry defines the basal ganglia and associated structures in the adult human brain, and is dramatically reduced in Huntington's disease."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 94,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20091222,
+                        "pmid": 20027720
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 55,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20080711,
+                        "pmid": 18616893
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 78,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19710607,
+                        "pmid": 4251840,
+                        "title": "[Hyperuricemia and gout in childhood (Lesch-Nyhan syndrome)]."
+                    },
+                    {
+                        "date": 19690318,
+                        "pmid": 4236745
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 75,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20090707,
+                        "pmid": 19508697,
+                        "title": "Epigenetic dysregulation in cognitive disorders."
+                    },
+                    {
+                        "date": 20060814,
+                        "pmid": 16786226
+                    },
+                    {
+                        "date": 19781227,
+                        "title": "Diseases described by Ohioans.",
+                        "pmid": 151840
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 71,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20060601,
+                        "pmid": 16738245
+                    },
+                    {
+                        "date": 20050630,
+                        "pmid": 15988392,
+                        "title": "[Psychological aspects of genetic diagnosis of endocrine tumors]."
+                    },
+                    {
+                        "date": 20020218,
+                        "pmid": 11733534,
+                        "title": "Expression of full-length polyglutamine-expanded Huntingtin disrupts growth factor receptor signaling in rat pheochromocytoma (PC12) cells."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 56,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20160615,
+                        "pmid": 27302727,
+                        "title": "Natural Compounds Preventing Neurodegenerative Diseases Through Autophagic Activation."
+                    },
+                    {
+                        "date": 20151109,
+                        "pmid": 26141599,
+                        "title": "Differential recruitment of UBQLN2 to nuclear inclusions in the polyglutamine diseases HD and SCA3."
+                    },
+                    {
+                        "date": 20141127,
+                        "pmid": 25104854,
+                        "title": "Deactivation of TBP contributes to SCA17 pathogenesis."
+                    },
+                    {
+                        "date": 20141107,
+                        "pmid": 25217582,
+                        "title": "RAN translation and frameshifting as translational challenges at simple repeats of human neurodegenerative disorders."
+                    },
+                    {
+                        "date": 20140611,
+                        "pmid": 24548080
+                    },
+                    {
+                        "date": 20140121,
+                        "pmid": 23889603,
+                        "title": "TDP-43 pathology in polyglutamine diseases: with reference to amyotrphic lateral sclerosis."
+                    },
+                    {
+                        "date": 20131008,
+                        "pmid": 23887934,
+                        "title": "RNA duplexes with abasic substitutions are potent and allele-selective inhibitors of huntingtin and ataxin-3 expression."
+                    },
+                    {
+                        "date": 20121122,
+                        "pmid": 23171848,
+                        "title": "Dysregulation of core components of SCF complex in poly-glutamine disorders."
+                    },
+                    {
+                        "date": 20120402,
+                        "pmid": 22318854
+                    },
+                    {
+                        "date": 20111031,
+                        "pmid": 21795378,
+                        "title": "CAG repeats mimic CUG repeats in the misregulation of alternative splicing"
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 89,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20090707,
+                        "pmid": 19508697,
+                        "title": "Epigenetic dysregulation in cognitive disorders."
+                    },
+                    {
+                        "date": 20060814,
+                        "pmid": 16786226
+                    },
+                    {
+                        "date": 19781227,
+                        "title": "Diseases described by Ohioans.",
+                        "pmid": 151840
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 72,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150119,
+                        "pmid": 25378206,
+                        "title": "Case report: concurrent Wilson disease and Huntington disease: lightning can strike twice."
+                    },
+                    {
+                        "date": 19631201,
+                        "pmid": 13955592,
+                        "title": "[Quasi-experimental reproduction of paralysis of Westphal's disease. Case study]."
+                    },
+                    {
+                        "date": 19631201,
+                        "pmid": 13955817,
+                        "title": "[A case of familial periodic paralysis (Westphal's disease). Clinical, humoral and electromyographic study during induced paralytic attacks]."
+                    },
+                    {
+                        "date": 19611201,
+                        "pmid": 13771846,
+                        "title": "[On the present-day concept of Westphal's disease. Familial or sporadic periodic paralysis with hypokalemia caused by the intracellular transfer of extracellular potassium]."
+                    },
+                    {
+                        "date": 20150520,
+                        "pmid": 24024832
+                    },
+                    {
+                        "date": 20140429,
+                        "pmid": 24772751
+                    },
+                    {
+                        "date": 20081016,
+                        "title": "Neurodegenerative diseases.",
+                        "pmid": 18922294
+                    },
+                    {
+                        "date": 20080425,
+                        "pmid": 18437637,
+                        "title": "[Morphological magnetic resonance imaging: its value for the diagnosis of neurodegenerative diseases]."
+                    },
+                    {
+                        "date": 20060614,
+                        "pmid": 16723212
+                    },
+                    {
+                        "date": 20050916,
+                        "title": "[Movement disorders].",
+                        "pmid": 16164072
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 62,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20091222,
+                        "pmid": 20027720
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 57,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19831123,
+                        "pmid": 6226121,
+                        "title": "Inherited disorders in the Afrikaner population of southern Africa. Part I. Historical and demographic background, cardiovascular, neurological, metabolic and intestinal conditions."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 61,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20140512,
+                        "pmid": 24816443
+                    },
+                    {
+                        "date": 20130704,
+                        "pmid": 23812307
+                    },
+                    {
+                        "date": 20120402,
+                        "pmid": 22318854
+                    },
+                    {
+                        "date": 20110822,
+                        "pmid": 21757738
+                    },
+                    {
+                        "date": 20110714,
+                        "pmid": 21755113
+                    },
+                    {
+                        "date": 20110714,
+                        "pmid": 21755114
+                    },
+                    {
+                        "date": 20100401,
+                        "pmid": 20231860
+                    },
+                    {
+                        "date": 20090824,
+                        "pmid": 19697886
+                    },
+                    {
+                        "date": 20060921,
+                        "pmid": 16988654
+                    },
+                    {
+                        "date": 20040705,
+                        "pmid": 15233265,
+                        "title": "[Gene diagnosis of patients with chorea]."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 88,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:17018277"
+                    },
+                    {
+                        "id": "PMID:20154343"
+                    },
+                    {
+                        "id": "PMID:18831068"
+                    },
+                    {
+                        "id": "PMID:16137562"
+                    },
+                    {
+                        "id": "PMID:21867705"
+                    },
+                    {
+                        "id": "PMID:8401587"
+                    },
+                    {
+                        "id": "PMID:19094060"
+                    },
+                    {
+                        "id": "PMID:20929960"
+                    },
+                    {
+                        "id": "PMID:17925440"
+                    },
+                    {
+                        "id": "PMID:15218539"
+                    },
+                    {
+                        "id": "PMID:8755937"
+                    },
+                    {
+                        "id": "PMID:15312898"
+                    },
+                    {
+                        "id": "PMID:19476553"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 1,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 1,
+            "target": 38,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:11694876"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 2,
+            "target": 39,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:12756141"
+                    },
+                    {
+                        "id": "PMID:11172068"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 3,
+            "target": 40,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 3,
+            "target": 41,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:27590285"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 3,
+            "target": 42,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:23933819"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 43,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:24828792"
+                    },
+                    {
+                        "id": "PMID:26806548"
+                    },
+                    {
+                        "id": "PMID:23933819"
+                    },
+                    {
+                        "id": "PMID:7574460"
+                    },
+                    {
+                        "id": "PMID:23933818"
+                    },
+                    {
+                        "id": "PMID:20890276"
+                    },
+                    {
+                        "id": "PMID:26648591"
+                    },
+                    {
+                        "id": "PMID:23933820"
+                    },
+                    {
+                        "id": "PMID:16537520"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 44,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 4,
+            "target": 45,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 4,
+            "target": 46,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 4,
+            "target": 47,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:19339912"
+                    },
+                    {
+                        "id": "PMID:15286066"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 5,
+            "target": 48,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 5,
+            "target": 49,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:15131306"
+                    },
+                    {
+                        "id": "PMID:20978020"
+                    },
+                    {
+                        "id": "PMID:14976160"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 6,
+            "target": 50,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21917775"
+                    },
+                    {
+                        "id": "PMID:24742911"
+                    },
+                    {
+                        "id": "PMID:18388212"
+                    },
+                    {
+                        "id": "PMID:23634874"
+                    },
+                    {
+                        "id": "PMID:19418047"
+                    },
+                    {
+                        "id": "PMID:17703343"
+                    },
+                    {
+                        "id": "PMID:17894839"
+                    },
+                    {
+                        "id": "PMID:18584981"
+                    },
+                    {
+                        "id": "PMID:14550921"
+                    },
+                    {
+                        "id": "PMID:18495313"
+                    },
+                    {
+                        "id": "PMID:12638020"
+                    },
+                    {
+                        "id": "PMID:16240361"
+                    },
+                    {
+                        "id": "PMID:1250985"
+                    },
+                    {
+                        "id": "PMID:16217707"
+                    },
+                    {
+                        "id": "PMID:19672978"
+                    },
+                    {
+                        "id": "PMID:12026242"
+                    },
+                    {
+                        "id": "PMID:20849398"
+                    },
+                    {
+                        "id": "PMID:21270471"
+                    },
+                    {
+                        "id": "PMID:18079314"
+                    },
+                    {
+                        "id": "PMID:18054694"
+                    },
+                    {
+                        "id": "PMID:21533827"
+                    },
+                    {
+                        "id": "PMID:17438228"
+                    },
+                    {
+                        "id": "PMID:17043438"
+                    },
+                    {
+                        "id": "PMID:22818990"
+                    },
+                    {
+                        "id": "PMID:17110673"
+                    },
+                    {
+                        "id": "PMID:21165639"
+                    },
+                    {
+                        "id": "PMID:18653683"
+                    },
+                    {
+                        "id": "PMID:12581808"
+                    },
+                    {
+                        "id": "PMID:11867077"
+                    },
+                    {
+                        "id": "PMID:20562394"
+                    },
+                    {
+                        "id": "PMID:12944715"
+                    },
+                    {
+                        "id": "PMID:15732098"
+                    },
+                    {
+                        "id": "PMID:15732097"
+                    },
+                    {
+                        "id": "PMID:24306001"
+                    },
+                    {
+                        "id": "PMID:22198646"
+                    },
+                    {
+                        "id": "PMID:23743246"
+                    },
+                    {
+                        "id": "PMID:11567214"
+                    },
+                    {
+                        "id": "PMID:22302460"
+                    },
+                    {
+                        "id": "PMID:14557587"
+                    },
+                    {
+                        "id": "PMID:19618846"
+                    },
+                    {
+                        "id": "PMID:12368989"
+                    },
+                    {
+                        "id": "PMID:17960815"
+                    },
+                    {
+                        "id": "PMID:23903069"
+                    },
+                    {
+                        "id": "PMID:16168595"
+                    },
+                    {
+                        "id": "PMID:15477559"
+                    },
+                    {
+                        "id": "PMID:24045243"
+                    },
+                    {
+                        "id": "PMID:16168593"
+                    },
+                    {
+                        "id": "PMID:18217876"
+                    },
+                    {
+                        "id": "PMID:23185175"
+                    },
+                    {
+                        "id": "PMID:15675360"
+                    },
+                    {
+                        "id": "PMID:18581469"
+                    },
+                    {
+                        "id": "PMID:22510744"
+                    },
+                    {
+                        "id": "PMID:18684770"
+                    },
+                    {
+                        "id": "PMID:15696488"
+                    },
+                    {
+                        "id": "PMID:17805552"
+                    },
+                    {
+                        "id": "PMID:18402384"
+                    },
+                    {
+                        "id": "PMID:21822933"
+                    },
+                    {
+                        "id": "PMID:17509491"
+                    },
+                    {
+                        "id": "PMID:17629821"
+                    },
+                    {
+                        "id": "PMID:16826512"
+                    },
+                    {
+                        "id": "PMID:23706596"
+                    },
+                    {
+                        "id": "PMID:15465095"
+                    },
+                    {
+                        "id": "PMID:22619055"
+                    },
+                    {
+                        "id": "PMID:23925719"
+                    },
+                    {
+                        "id": "PMID:12447932"
+                    },
+                    {
+                        "id": "PMID:11595337"
+                    },
+                    {
+                        "id": "PMID:21041050"
+                    },
+                    {
+                        "id": "PMID:12034796"
+                    },
+                    {
+                        "id": "PMID:1941292"
+                    },
+                    {
+                        "id": "PMID:15030911"
+                    },
+                    {
+                        "id": "PMID:17985264"
+                    },
+                    {
+                        "id": "PMID:21987397"
+                    },
+                    {
+                        "id": "PMID:19444543"
+                    },
+                    {
+                        "id": "PMID:23254569"
+                    },
+                    {
+                        "id": "PMID:21572052"
+                    },
+                    {
+                        "id": "PMID:16996408"
+                    },
+                    {
+                        "id": "PMID:219025661"
+                    },
+                    {
+                        "id": "PMID:24188966"
+                    },
+                    {
+                        "id": "PMID:21132324"
+                    },
+                    {
+                        "id": "PMID:12975300"
+                    },
+                    {
+                        "id": "PMID:11138011"
+                    },
+                    {
+                        "id": "PMID:15390001"
+                    },
+                    {
+                        "id": "PMID:16505300"
+                    },
+                    {
+                        "id": "PMID:23149175"
+                    },
+                    {
+                        "id": "PMID:19128991"
+                    },
+                    {
+                        "id": "PMID:17383133"
+                    },
+                    {
+                        "id": "PMID:22566711"
+                    },
+                    {
+                        "id": "PMID:24427505"
+                    },
+                    {
+                        "id": "PMID:17934883"
+                    },
+                    {
+                        "id": "PMID:22488673"
+                    },
+                    {
+                        "id": "PMID:17156703"
+                    },
+                    {
+                        "id": "PMID:12034785"
+                    },
+                    {
+                        "id": "PMID:11587071"
+                    },
+                    {
+                        "id": "PMID:18004641"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 7,
+            "target": 51,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21224254"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 7,
+            "target": 52,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21739600"
+                    },
+                    {
+                        "id": "PMID:8673085"
+                    },
+                    {
+                        "id": "PMID:8334699"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 8,
+            "target": 53,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 9,
+            "target": 54,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 10,
+            "target": 55,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:9215674"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 10,
+            "target": 56,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:8896569"
+                    },
+                    {
+                        "id": "PMID:8896568"
+                    },
+                    {
+                        "id": "PMID:8968758"
+                    },
+                    {
+                        "id": "PMID:9359036"
+                    },
+                    {
+                        "id": "PMID:10917288"
+                    },
+                    {
+                        "id": "PMID:9497256"
+                    },
+                    {
+                        "id": "PMID:9215674"
+                    },
+                    {
+                        "id": "PMID:12640453"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 10,
+            "target": 57,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:8896569"
+                    },
+                    {
+                        "id": "PMID:8896568"
+                    },
+                    {
+                        "id": "PMID:9497256"
+                    },
+                    {
+                        "id": "PMID:9215674"
+                    },
+                    {
+                        "id": "PMID:12640453"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 10,
+            "target": 58,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:9462735"
+                    },
+                    {
+                        "id": "PMID:18195271"
+                    },
+                    {
+                        "id": "PMID:14593171"
+                    },
+                    {
+                        "id": "PMID:11261505"
+                    },
+                    {
+                        "id": "PMID:23427326"
+                    },
+                    {
+                        "id": "PMID:11376188"
+                    },
+                    {
+                        "id": "PMID:18704525"
+                    },
+                    {
+                        "id": "PMID:17625105"
+                    },
+                    {
+                        "id": "PMID:10417297"
+                    },
+                    {
+                        "id": "PMID:17251522"
+                    },
+                    {
+                        "id": "PMID:9197268"
+                    },
+                    {
+                        "id": "PMID:24936070"
+                    },
+                    {
+                        "id": "PMID:14755720"
+                    },
+                    {
+                        "id": "PMID:16358335"
+                    },
+                    {
+                        "id": "PMID:20437567"
+                    },
+                    {
+                        "id": "PMID:20340137"
+                    },
+                    {
+                        "id": "PMID:17489854"
+                    },
+                    {
+                        "id": "PMID:19632874"
+                    },
+                    {
+                        "id": "PMID:18852445"
+                    },
+                    {
+                        "id": "PMID:9827625"
+                    },
+                    {
+                        "id": "PMID:18852449"
+                    },
+                    {
+                        "id": "PMID:24158909"
+                    },
+                    {
+                        "id": "PMID:18852448"
+                    },
+                    {
+                        "id": "PMID:24158904"
+                    },
+                    {
+                        "id": "PMID:15451224"
+                    },
+                    {
+                        "id": "PMID:15451225"
+                    },
+                    {
+                        "id": "PMID:9506559"
+                    },
+                    {
+                        "id": "PMID:9499430"
+                    },
+                    {
+                        "id": "PMID:23526723"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 11,
+            "target": 59,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 11,
+            "target": 60,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:19576930"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 11,
+            "target": 61,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:23519153"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 11,
+            "target": 62,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:19951287"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 12,
+            "target": 63,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 13,
+            "target": 58,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 13,
+            "target": 64,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:8683794"
+                    },
+                    {
+                        "id": "PMID:8097257"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 14,
+            "target": 65,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:11436124"
+                    },
+                    {
+                        "id": "PMID:18252782"
+                    },
+                    {
+                        "id": "PMID:11266016"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 14,
+            "target": 66,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:8096390"
+                    },
+                    {
+                        "id": "PMID:10323385"
+                    },
+                    {
+                        "id": "PMID:1303262"
+                    },
+                    {
+                        "id": "PMID:1569163"
+                    },
+                    {
+                        "id": "PMID:3186717"
+                    },
+                    {
+                        "id": "PMID:11579211"
+                    },
+                    {
+                        "id": "PMID:2293020"
+                    },
+                    {
+                        "id": "PMID:2339702"
+                    },
+                    {
+                        "id": "PMID:1720929"
+                    },
+                    {
+                        "id": "PMID:7537149"
+                    },
+                    {
+                        "id": "PMID:11889162"
+                    },
+                    {
+                        "id": "PMID:9360511"
+                    },
+                    {
+                        "id": "PMID:8809734"
+                    },
+                    {
+                        "id": "PMID:8325932"
+                    },
+                    {
+                        "id": "PMID:8450040"
+                    },
+                    {
+                        "id": "PMID:4061484"
+                    },
+                    {
+                        "id": "PMID:8626869"
+                    },
+                    {
+                        "id": "PMID:8990010"
+                    },
+                    {
+                        "id": "PMID:8450042"
+                    },
+                    {
+                        "id": "PMID:11397856"
+                    },
+                    {
+                        "id": "PMID:2332504"
+                    },
+                    {
+                        "id": "PMID:12213902"
+                    },
+                    {
+                        "id": "PMID:10323251"
+                    },
+                    {
+                        "id": "PMID:1307250"
+                    },
+                    {
+                        "id": "PMID:2594783"
+                    },
+                    {
+                        "id": "PMID:1609793"
+                    },
+                    {
+                        "id": "PMID:8281139"
+                    },
+                    {
+                        "id": "PMID:11788673"
+                    },
+                    {
+                        "id": "PMID:12466388"
+                    },
+                    {
+                        "id": "PMID:12908100"
+                    },
+                    {
+                        "id": "PMID:3216866"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 14,
+            "target": 67,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:20421132"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 14,
+            "target": 68,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 14,
+            "target": 69,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21224254"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 15,
+            "target": 52,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:12805114"
+                    },
+                    {
+                        "id": "PMID:14755733"
+                    },
+                    {
+                        "id": "PMID:11313753"
+                    },
+                    {
+                        "id": "PMID:14985389"
+                    },
+                    {
+                        "id": "PMID:14756671"
+                    },
+                    {
+                        "id": "PMID:10484774"
+                    },
+                    {
+                        "id": "PMID:11448935"
+                    },
+                    {
+                        "id": "PMID:15521976"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 16,
+            "target": 70,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:20929960"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 17,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:26486927"
+                    },
+                    {
+                        "id": "PMID:26633545"
+                    },
+                    {
+                        "id": "PMID:20684013"
+                    },
+                    {
+                        "id": "PMID:12566391"
+                    },
+                    {
+                        "id": "PMID:12114483"
+                    },
+                    {
+                        "id": "PMID:7630403"
+                    },
+                    {
+                        "id": "PMID:11331617"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 18,
+            "target": 71,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 18,
+            "target": 72,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:26551667"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 18,
+            "target": 73,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:24362818"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 18,
+            "target": 74,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:22179738"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 19,
+            "target": 75,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21224254"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 19,
+            "target": 52,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:27476654"
+                    },
+                    {
+                        "id": "PMID:23934111"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 20,
+            "target": 76,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:23160277"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 21,
+            "target": 77,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21411543"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 22,
+            "target": 78,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:20952458"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 22,
+            "target": 79,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:23160955"
+                    },
+                    {
+                        "id": "PMID:20890276"
+                    },
+                    {
+                        "id": "PMID:24272827"
+                    },
+                    {
+                        "id": "PMID:16537520"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 23,
+            "target": 80,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:24272827"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 23,
+            "target": 81,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 23,
+            "target": 82,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 23,
+            "target": 83,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:26551668"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 24,
+            "target": 84,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:26551668"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000841",
+                    "label": "likely_pathogenic_for_condition"
+                }
+            },
+            "source": 24,
+            "target": 85,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 25,
+            "target": 86,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:25039795"
+                    },
+                    {
+                        "id": "PMID:17847003"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 25,
+            "target": 87,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:8325628"
+                    },
+                    {
+                        "id": "PMID:8136840"
+                    },
+                    {
+                        "id": "PMID:7996992"
+                    },
+                    {
+                        "id": "PMID:7951323"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 26,
+            "target": 88,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:7874163"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 27,
+            "target": 89,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21075085"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 28,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:22569243"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 28,
+            "target": 56,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21652713"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 29,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 30,
+            "target": 90,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 30,
+            "target": 91,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:12930891"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 30,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 30,
+            "target": 92,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 30,
+            "target": 93,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:15906378"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 31,
+            "target": 94,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:19270310"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 31,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:19857538"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 32,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:24036326"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 32,
+            "target": 95,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 33,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:15342952"
+                    },
+                    {
+                        "id": "PMID:16919414"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 33,
+            "target": 96,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:24169519"
+                    },
+                    {
+                        "id": "PMID:8211186"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 34,
+            "target": 97,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21075085"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 34,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:22569243"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 34,
+            "target": 56,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:20929960"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 35,
+            "target": 37,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:12930891"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 36,
+            "target": 37,
+            "key": 0
+        }
+    ]
+}

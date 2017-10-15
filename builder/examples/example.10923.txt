@@ -1,0 +1,106 @@
+DOID:10923
+ HGNC:1142
+  Sarcoidosis 2 (OMIM:612387)
+  sarcoidosis (DOID:11335)
+ HGNC:7104
+  Combined oxidative phosphorylation deficiency 31 (OMIM:617228)
+ HGNC:13221
+  hemoglobin E disease (DOID:5379)
+  polycystic ovary syndrome (DOID:11612)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:3377
+  hereditary elliptocytosis (DOID:2373)
+  Elliptocytosis 1 (OMIM:611804)
+ HGNC:12530
+  Hyperbilirubinemia, Transient Familial Neonatal (OMIM:237900)
+  Hodgkin's lymphoma, lymphocytic-histiocytic predominance (DOID:8543)
+  Crigler-Najjar syndrome type 2 (OMIM:606785)
+  Gilbert syndrome (OMIM:143500)
+  kernicterus (DOID:2382)
+  Crigler-Najjar syndrome type 1 (OMIM:218800)
+ HGNC:19599
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:12538
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:4832
+  Cyanosis, transient neonatal (OMIM:613977)
+ HGNC:4823
+  Hemoglobin H Disease (OMIM:613978)
+  alpha thalassemia-intellectual disability syndrome type 1 (OMIM:141750)
+  Hb Bart's hydrops fetalis (Orphanet:163596)
+  Heinz Body Anemias (OMIM:140700)
+  methemoglobinemia (DOID:10783)
+  alpha Thalassemia (OMIM:604131)
+ HGNC:12663
+  Hypercholesterolemia (MESH:D006937)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:6345
+  Anemia, Congenital Dyserythropoietic, Type 4 (OMIM:613673)
+ HGNC:10588
+  Ohtahara syndrome (DOID:0050709)
+  Benign familial neonatal-infantile seizures (OMIM:607745)
+  Epileptic Encephalopathy, Early Infantile, 11 (OMIM:613721)
+  benign familial infantile epilepsy (DOID:0060169)
+  Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)
+  West syndrome (DOID:0050562)
+  Benign familial neonatal-infantile seizures (Orphanet:140927)
+ HGNC:4827
+  Sickle Cell Anemia (OMIM:603903)
+  Beta-Thalassemia (OMIM:613985)
+  alpha Thalassemia (OMIM:604131)
+  beta thalassemia (DOID:12241)
+  Beta-Thalassemia, Dominant Inclusion Body Type (OMIM:603902)
+  HBD (OMIM:146350)
+  hemoglobinopathy (DOID:2860)
+  hemoglobin E disease (DOID:5379)
+ HGNC:1424
+  congenital hypoplastic anemia (DOID:1342)
+  Epileptic encephalopathy, early infantile, 50 (OMIM:616457)
+  hereditary spherocytosis (DOID:12971)
+  beta thalassemia (DOID:12241)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:7940
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:14124
+  Epilepsy, familial focal, with variable foci 3 (OMIM:617118)
+  Sickle Cell Anemia (OMIM:603903)
+  Familial focal epilepsy with variable foci (Orphanet:98820)
+ HGNC:11892
+  Psoriatic arthritis, susceptibility to (OMIM:607507)
+  mitochondrial myopathy (DOID:699)
+ HGNC:12563
+  beta thalassemia (DOID:12241)
+  Orotic Aciduria (OMIM:258900)
+  congenital hypoplastic anemia (DOID:1342)
+  Sickle Cell Anemia (OMIM:603903)
+  hereditary spherocytosis (DOID:12971)
+ HGNC:5141
+  hemochromatosis (DOID:2352)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:2867
+  hereditary spherocytosis (DOID:12971)
+  Sickle Cell Anemia (OMIM:603903)
+  Postaxial Acrofacial Dysostosis (OMIM:263750)
+  beta thalassemia (DOID:12241)
+ hemoglobinopathy (DOID:2860)
+ Anemia, Congenital Dyserythropoietic, Type 4 (OMIM:613673)
+ alpha thalassemia-intellectual disability syndrome type 1 (OMIM:141750)
+ Sarcoidosis 2 (OMIM:612387)
+ Crigler-Najjar syndrome type 1 (OMIM:218800)
+ hemochromatosis (DOID:2352)
+ mitochondrial myopathy (DOID:699)
+ Sickle Cell Anemia (OMIM:603903)
+ Beta-Thalassemia (OMIM:613985)
+ Hodgkin's lymphoma, lymphocytic-histiocytic predominance (DOID:8543)
+ hereditary elliptocytosis (DOID:2373)
+ Elliptocytosis 1 (OMIM:611804)
+ Hemoglobin H Disease (OMIM:613978)
+ Beta-Thalassemia, Dominant Inclusion Body Type (OMIM:603902)
+ Gilbert syndrome (OMIM:143500)
+ alpha Thalassemia (OMIM:604131)
+ beta thalassemia (DOID:12241)
+ Crigler-Najjar syndrome type 2 (OMIM:606785)
+ sarcoidosis (DOID:11335)
+ hereditary spherocytosis (DOID:12971)
+ methemoglobinemia (DOID:10783)
+ kernicterus (DOID:2382)

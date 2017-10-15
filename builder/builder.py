@@ -110,11 +110,9 @@ class KnowledgeGraph:
     def add_relationships( self, subject, relations, object_type, object_layer ):
         """Add new relationships and nodes to the graph"""
         for relation, object_node in relations:
-            self.add_node( object_node, object_layer )
-            #We expect relation to be a dict, passing it in as **relation means that the dict
-            # will be interpreted as keyword arguments.  That will allow the keys/values to be attributes
-            # of the edge.
-            #self.graph.add_edge( subject, object_node, object = relation )
+            # The thing we want to add might already exist in the
+            # graph.  Whatever we get back is the right thing to use.
+            object_node = self.add_node( object_node, object_layer )
             self.graph.add_edge( subject, object_node, object = relation )
     def prune(self):
         """Backwards prune.
@@ -231,8 +229,8 @@ def main_test():
     #Our test cases are defined as a doid and a name.  The name is from the NCATS FOA. The DOID
     # was looked up by hand.
     test_cases = ( \
-                  ('1470'  ,'major depressive disorder'), \
                   ('4325',  'ebola'), \
+                  ('1470'  ,'major depressive disorder'), \
                   ('11476' ,'osteoporosis'), \
                   ('12365' ,'malaria'), \
                   ('10573' ,'osteomalacia'), \

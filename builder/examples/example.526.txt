@@ -1,0 +1,222 @@
+DOID:526
+ HGNC:9772
+  fragile X syndrome (OMIM:300624)
+ HGNC:9585
+  Gorlin syndrome (OMIM:109400)
+  Microform holoprosencephaly (Orphanet:280200)
+ HGNC:3288
+  mantle cell lymphoma (DOID:0050746)
+ HGNC:591
+  MALT lymphoma (OMIM:137245)
+  fatty liver disease (DOID:9452)
+ HGNC:8157
+  Distal hereditary motor neuropathy, Jerash type (OMIM:605726)
+ HGNC:8941
+  Alpha-1-Antitrypsin Deficiency (OMIM:613490)
+ HGNC:5246
+  Myeloma, Multiple (OMIM:254500)
+  Distal hereditary motor neuropathy type 2 (Orphanet:139525)
+  Neuronopathy, Distal Hereditary Motor, Type 2B (OMIM:608634)
+  Charcot-Marie-Tooth Disease, Axonal, Type 2F (OMIM:606595)
+ HGNC:399
+  Ehlers-Danlos Syndrome, Type Vii, Autosomal Dominant (OMIM:130060)
+ HGNC:10618
+  Muscular Dystrophy, Duchenne Type (OMIM:310200)
+ HGNC:5438
+  Lymphoproliferative syndrome 1, X-linked (OMIM:308240)
+  adrenoleukodystrophy (DOID:10588)
+  adult T-cell leukemia (DOID:0050523)
+  Tuberous sclerosis 2 (OMIM:613254)
+ HGNC:10907
+  sarcoidosis (DOID:11335)
+  atopic dermatitis (DOID:3310)
+ HGNC:10610
+  atopic dermatitis (DOID:3310)
+ HGNC:1604
+  atopic dermatitis (DOID:3310)
+ HGNC:6037
+  multiple myeloma (EFO:0001378)
+ HGNC:6973
+  Li-Fraumeni syndrome (DOID:3012)
+ HGNC:600
+  Amyloidosis, Familial Visceral (OMIM:105200)
+  Behcet's syndrome (OMIM:109650)
+  Vitamin E, Familial Isolated Deficiency of (OMIM:277460)
+ HGNC:17340
+  Retinitis Pigmentosa 13 (OMIM:600059)
+  retinitis pigmentosa (DOID:10584)
+ HGNC:9255
+  osteogenesis imperfecta type 3 (OMIM:259420)
+  osteogenesis imperfecta type 4 (OMIM:166220)
+  Osteogenesis imperfecta type 9 (OMIM:259440)
+  osteogenesis imperfecta type 2 (OMIM:166210)
+ HGNC:6922
+  Mannose-Binding Lectin Deficiency (OMIM:614372)
+  Diabetes, Gestational (MESH:D016640)
+ HGNC:1618
+  Hereditary sensory and autonomic neuropathy with spastic paraplegia (OMIM:256840)
+ HGNC:1784
+  facioscapulohumeral muscular dystrophy (DOID:11727)
+ HGNC:5962
+  Wilson disease (OMIM:277900)
+  atopic dermatitis (DOID:3310)
+ HGNC:959
+  polycystic ovary syndrome (DOID:11612)
+  ALL (OMIM:613065)
+  cutaneous T cell lymphoma (DOID:0060061)
+ HGNC:5141
+  hemochromatosis (DOID:2352)
+  Sickle Cell Anemia (OMIM:603903)
+ HGNC:6001
+  adult T-cell leukemia (DOID:0050523)
+ HGNC:16912
+  Bowen-Conradi Syndrome (OMIM:211180)
+ HGNC:14929
+  Infantile neuronal ceroid lipofuscinosis (Orphanet:79263)
+ HGNC:5261
+  Spastic Paraplegia 13, Autosomal Dominant (OMIM:605280)
+  Leukodystrophy, hypomyelinating, 4 (OMIM:612233)
+ HGNC:1653
+  cutaneous T cell lymphoma (DOID:0060061)
+  Mycosis Fungoides (OMIM:254400)
+  adult T-cell leukemia (DOID:0050523)
+  Sezary's disease (DOID:8541)
+ HGNC:4933
+  B Acute Lymphoblastic Leukemia (Orphanet:99860)
+  psoriatic arthritis (DOID:9008)
+ HGNC:9534
+  fatty liver disease (DOID:9452)
+ HGNC:4932
+  Behcet's syndrome (OMIM:109650)
+  atopic eczema (EFO:0000274)
+ HGNC:5253
+  anaplastic large cell lymphoma (DOID:0050744)
+ HGNC:12453
+  Acute Undifferentiated Leukemia (OMIM:601626)
+ HGNC:17103
+  Muscular Dystrophy, Limb-Girdle, Type 1F (OMIM:608423)
+ HGNC:18674
+  Acute Undifferentiated Leukemia (OMIM:601626)
+ HGNC:15925
+  Aicardi-Goutieres syndrome (DOID:0050629)
+  Aicardi Goutieres syndrome 5 (OMIM:612952)
+ HGNC:15971
+  Familial cancer of breast (OMIM:114480)
+ HGNC:2505
+  Mycosis Fungoides (OMIM:254400)
+  cutaneous T cell lymphoma (DOID:0060061)
+  adult T-cell leukemia (DOID:0050523)
+  Sezary's disease (DOID:8541)
+  Autoimmune lymphoproliferative syndrome due to CTLA4 haploinsuffiency (OMIM:616100)
+ HGNC:12565
+  cone-rod dystrophy (DOID:0050572)
+  retinitis pigmentosa (DOID:10584)
+ HGNC:11766
+  Muscular Dystrophy, Duchenne Type (OMIM:310200)
+  dry eye syndrome (DOID:10140)
+  Camurati-Engelmann disease (DOID:4997)
+ HGNC:6024
+  Lymphoblastic Leukemia, Acute, With Lymphomatous Features (OMIM:247640)
+  acute T cell leukemia (DOID:5603)
+ HGNC:11920
+  chronic lymphocytic leukemia (EFO:0000095)
+  cutaneous T cell lymphoma (DOID:0060061)
+  diffuse large B-cell lymphoma (DOID:0050745)
+  autoimmune lymphoproliferative syndrome (DOID:6688)
+  Autoimmune lymphoproliferative syndrome (OMIM:601859)
+ HGNC:11763
+  non-Hodgkin lymphoma (DOID:0060060)
+  beta thalassemia (DOID:12241)
+  chronic lymphocytic leukemia (DOID:1040)
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:10637
+  atopic dermatitis (DOID:3310)
+ HGNC:10632
+  primary hyperoxaluria (DOID:2977)
+  atopic dermatitis (DOID:3310)
+ HGNC:11922
+  Autosomal recessive lymphoproliferative disease (Orphanet:238505)
+ HGNC:11936
+  familial combined hyperlipidemia (DOID:13809)
+  Autoimmune lymphoproliferative syndrome (OMIM:601859)
+  autoimmune lymphoproliferative syndrome (DOID:6688)
+ HGNC:6106
+  adult T-cell leukemia (DOID:0050523)
+  Immunodysregulation, Polyendocrinopathy, and Enteropathy, X-Linked (OMIM:304790)
+  polycystic ovary syndrome (DOID:11612)
+ HGNC:4540
+  atopic dermatitis (DOID:3310)
+ HGNC:1678
+  Muscular Dystrophy, Duchenne Type (OMIM:310200)
+ HGNC:20202
+  Retinal Cone Dystrophy 4 (OMIM:610478)
+  cone-rod dystrophy (DOID:0050572)
+ HGNC:11311
+  46,XX ovotesticular disorder of sex development (Orphanet:2138)
+  46,XY partial gonadal dysgenesis (Orphanet:251510)
+  46,XX sex reversal, type 1 (OMIM:400045)
+  46 XY gonadal dysgenesis (DOID:14448)
+  46,Xy Sex Reversal 1 (OMIM:400044)
+ HGNC:6025
+  fatty liver disease (DOID:9452)
+  psoriatic arthritis (DOID:9008)
+  Behcet's syndrome (OMIM:109650)
+ HGNC:1602
+  Behcet's syndrome (OMIM:109650)
+ HGNC:1608
+  adult T-cell leukemia (DOID:0050523)
+ HGNC:2336
+  Common variable immunodeficiency 2 (OMIM:240500)
+  common variable immunodeficiency (DOID:12177)
+  Immunodeficiency, Common Variable, 7 (OMIM:614699)
+ HGNC:1705
+  neoplasm of mature B-cells (EFO:0000096)
+  Myeloma, Multiple (OMIM:254500)
+ HGNC:1304
+  Familial glucocorticoid deficiency (OMIM:202200)
+ HGNC:10017
+  acute lymphoblastic leukemia (EFO:0000220)
+ HGNC:1499
+  hyperhomocysteinemia (DOID:9279)
+ HGNC:5344
+  Hypercholesterolemia (MESH:D006937)
+ atopic dermatitis (DOID:3310)
+ polycystic ovary syndrome (DOID:11612)
+ cutaneous T cell lymphoma (DOID:0060061)
+ acute T cell leukemia (DOID:5603)
+ retinitis pigmentosa (DOID:10584)
+ chronic lymphocytic leukemia (EFO:0000095)
+ diffuse large B-cell lymphoma (DOID:0050745)
+ ALL (OMIM:613065)
+ beta thalassemia (DOID:12241)
+ common variable immunodeficiency (DOID:12177)
+ chronic lymphocytic leukemia (DOID:1040)
+ adrenoleukodystrophy (DOID:10588)
+ hyperhomocysteinemia (DOID:9279)
+ acute lymphoblastic leukemia (EFO:0000220)
+ fatty liver disease (DOID:9452)
+ Common variable immunodeficiency 2 (OMIM:240500)
+ sarcoidosis (DOID:11335)
+ psoriatic arthritis (DOID:9008)
+ Myeloma, Multiple (OMIM:254500)
+ adult T-cell leukemia (DOID:0050523)
+ Immunodeficiency, Common Variable, 7 (OMIM:614699)
+ mantle cell lymphoma (DOID:0050746)
+ fragile X syndrome (OMIM:300624)
+ Sezary's disease (DOID:8541)
+ Retinitis Pigmentosa 13 (OMIM:600059)
+ dry eye syndrome (DOID:10140)
+ Muscular Dystrophy, Duchenne Type (OMIM:310200)
+ hemochromatosis (DOID:2352)
+ Wilson disease (OMIM:277900)
+ Behcet's syndrome (OMIM:109650)
+ Sickle Cell Anemia (OMIM:603903)
+ atopic eczema (EFO:0000274)
+ multiple myeloma (EFO:0001378)
+ Familial cancer of breast (OMIM:114480)
+ Acute Undifferentiated Leukemia (OMIM:601626)
+ Tuberous sclerosis 2 (OMIM:613254)
+ neoplasm of mature B-cells (EFO:0000096)
+ Mycosis Fungoides (OMIM:254400)
+ Alpha-1-Antitrypsin Deficiency (OMIM:613490)
+ Lymphoproliferative syndrome 1, X-linked (OMIM:308240)

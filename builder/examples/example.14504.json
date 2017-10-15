@@ -1,0 +1,3070 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "id": {
+                "identifier": "DOID:14504",
+                "node_type": "D",
+                "layer_number": 0,
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009542",
+                        "label": "Niemann-Pick Diseases",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Niemann-Pick Diseases"
+                    },
+                    {
+                        "curie": "MeSH:D052556",
+                        "label": "Niemann-Pick Disease, Type C1",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type C"
+                    },
+                    {
+                        "curie": "MeSH:D052536",
+                        "label": "Niemann-Pick Disease, Type A",
+                        "sourcePrefixes": [
+                            "EFO"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type A"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:7897",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:30099",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:14537",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:9006",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:11120",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:4298",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "HGNC:4878",
+                "node_type": "G",
+                "layer_number": 1,
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:257220",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:14504",
+                    "http://www.orpha.net/ORDO/Orphanet_646"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009542",
+                        "label": "Niemann-Pick Diseases",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Diseases"
+                    },
+                    {
+                        "curie": "MeSH:D052556",
+                        "label": "Niemann-Pick Disease, Type C1",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type C"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:11612",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:11612"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D011085",
+                        "label": "Sclerocystic Ovaries",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Polycystic Ovary Syndrome"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:607625",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:14504",
+                    "http://www.orpha.net/ORDO/Orphanet_646",
+                    "http://purl.obolibrary.org/obo/OMIM_607625"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D052556",
+                        "label": "Niemann-Pick Disease, Type C1",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type C"
+                    },
+                    {
+                        "curie": "MeSH:D009542",
+                        "label": "Niemann-Pick Diseases",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Diseases"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:107250",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_107250",
+                    "http://www.orpha.net/ORDO/Orphanet_88632"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:88632",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_107250"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:10629",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:10629"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D008850",
+                        "label": "Microphthalmos",
+                        "sourcePrefixes": [
+                            "DOID",
+                            "BAO"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Microphthalmos"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:610623",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_610623",
+                    "http://purl.obolibrary.org/obo/OMIM_601371"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "Orphanet:98993",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_115650",
+                    "http://purl.obolibrary.org/obo/OMIM_116600",
+                    "http://purl.obolibrary.org/obo/OMIM_601885",
+                    "http://purl.obolibrary.org/obo/OMIM_605387",
+                    "http://purl.obolibrary.org/obo/OMIM_610623",
+                    "http://purl.obolibrary.org/obo/OMIM_613763",
+                    "http://purl.obolibrary.org/obo/OMIM_612968"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:601780",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_601780",
+                    "http://www.orpha.net/ORDO/Orphanet_168491",
+                    "http://www.orpha.net/ORDO/Orphanet_79262"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009472",
+                        "label": "Adult Neuronal Ceroid Lipofuscinosis",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Neuronal Ceroid-Lipofuscinoses"
+                    },
+                    {
+                        "curie": "MeSH:C537950",
+                        "label": "",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:257200",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_257200",
+                    "DOID:14504"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009542",
+                        "label": "Niemann-Pick Diseases",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Diseases"
+                    },
+                    {
+                        "curie": "MeSH:D052556",
+                        "label": "Niemann-Pick Disease, Type C1",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type C"
+                    },
+                    {
+                        "curie": "MeSH:D052536",
+                        "label": "Niemann-Pick Disease, Type A",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type A"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:607616",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_607616",
+                    "DOID:14504",
+                    "http://www.orpha.net/ORDO/Orphanet_99022"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009542",
+                        "label": "Niemann-Pick Diseases",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Diseases"
+                    },
+                    {
+                        "curie": "MeSH:D052537",
+                        "label": "Niemann-Pick Disease, Type E",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type B"
+                    },
+                    {
+                        "curie": "MeSH:D052556",
+                        "label": "Niemann-Pick Disease, Type C1",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type C"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:14504",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:14504"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009542",
+                        "label": "Niemann-Pick Diseases",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Niemann-Pick Diseases"
+                    },
+                    {
+                        "curie": "MeSH:D052556",
+                        "label": "Niemann-Pick Disease, Type C1",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type C"
+                    },
+                    {
+                        "curie": "MeSH:D052536",
+                        "label": "Niemann-Pick Disease, Type A",
+                        "sourcePrefixes": [
+                            "EFO"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Niemann-Pick Disease, Type A"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:3310",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:3310"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D003876",
+                        "label": "Eczema, Infantile",
+                        "sourcePrefixes": [
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Dermatitis, Atopic"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "MESH:D010009",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:12721",
+                    "DOID:2256",
+                    "http://purl.obolibrary.org/obo/OMIM_239100"
+                ],
+                "mesh_identifiers": []
+            }
+        },
+        {
+            "id": {
+                "identifier": "EFO:0000274",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:3310"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D003876",
+                        "label": "Eczema, Infantile",
+                        "sourcePrefixes": [
+                            "EFO"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Dermatitis, Atopic"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:230600",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:3322",
+                    "http://purl.obolibrary.org/obo/OMIM_230600"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D016537",
+                        "label": "Gangliosidosis, Generalized GM1, Type 1",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Gangliosidosis, GM1"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "DOID:3322",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:3322"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D016537",
+                        "label": "Gangliosidosis, Generalized GM1, Type 1",
+                        "sourcePrefixes": [
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 1,
+                        "chemotext_mesh_label": "Gangliosidosis, GM1"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:230500",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:3322",
+                    "http://purl.obolibrary.org/obo/OMIM_230500"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D016537",
+                        "label": "Gangliosidosis, Generalized GM1, Type 1",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Gangliosidosis, GM1"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:230650",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:3322",
+                    "http://purl.obolibrary.org/obo/OMIM_230650"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D016537",
+                        "label": "Gangliosidosis, Generalized GM1, Type 1",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Gangliosidosis, GM1"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:253010",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "DOID:12804",
+                    "http://purl.obolibrary.org/obo/OMIM_253010"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D009085",
+                        "label": "Mucopolysaccharidosis Type IV B",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Mucopolysaccharidosis IV"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:272800",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_272800"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D013661",
+                        "label": "Hexosaminidase alpha-Subunit Deficiency (Variant B)",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Tay-Sachs Disease"
+                    }
+                ]
+            }
+        },
+        {
+            "id": {
+                "identifier": "OMIM:223900",
+                "node_type": "D",
+                "layer_number": 2,
+                "mondo_identifiers": [
+                    "http://purl.obolibrary.org/obo/OMIM_223900"
+                ],
+                "mesh_identifiers": [
+                    {
+                        "curie": "MeSH:D004402",
+                        "label": "Dysautonomia, Familial",
+                        "sourcePrefixes": [
+                            "EFO",
+                            "Orphanet",
+                            "BAO",
+                            "DOID"
+                        ],
+                        "targetPrefix": "MeSH",
+                        "distance": 2,
+                        "chemotext_mesh_label": "Dysautonomia, Familial"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 666,
+                        "label": "Data Source",
+                        "term": "JensenLab Knowledge GHR",
+                        "href": null
+                    },
+                    {
+                        "id": 671,
+                        "label": "Data Source",
+                        "term": "JensenLab Knowledge UniProtKB-KW",
+                        "href": "http://diseases.jensenlab.org"
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 1,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 1,
+            "key": 1
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 1,
+            "key": 2
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 228,
+                        "label": "IDG Development Level",
+                        "term": "Tdark",
+                        "href": null
+                    },
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 2,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    },
+                    {
+                        "id": 666,
+                        "label": "Data Source",
+                        "term": "JensenLab Knowledge GHR",
+                        "href": null
+                    },
+                    {
+                        "id": 671,
+                        "label": "Data Source",
+                        "term": "JensenLab Knowledge UniProtKB-KW",
+                        "href": "http://diseases.jensenlab.org"
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 3,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 229,
+                        "label": "IDG Target Family",
+                        "term": "Transcription Factor",
+                        "href": null
+                    },
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 4,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 666,
+                        "label": "Data Source",
+                        "term": "JensenLab Knowledge GHR",
+                        "href": null
+                    },
+                    {
+                        "id": 671,
+                        "label": "Data Source",
+                        "term": "JensenLab Knowledge UniProtKB-KW",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 5,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 630,
+                        "label": "Data Source",
+                        "term": "DisGeNET",
+                        "href": "http://www.disgenet.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 5,
+            "key": 1
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 6,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 1782,
+                        "label": "IDG Development Level",
+                        "term": "Tchem",
+                        "href": null
+                    },
+                    {
+                        "id": 3795,
+                        "label": "IDG Target Family",
+                        "term": "Enzyme",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 7,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20151127,
+                        "pmid": 26609772
+                    },
+                    {
+                        "date": 19650701,
+                        "pmid": 14272650,
+                        "title": "[THE QUANTITATIVE DETERMINATION OF GANGLIOSIDES AND THEIR NEURAMINIC ACID-FREE DERIVATIVES IN INFANTILE, JUVENILE AND FORMS OF AMAUROTIC IDIOCY AND AN UNUSUAL LATE INFANTILE BIOCHEMICAL FORM]."
+                    },
+                    {
+                        "date": 19541201,
+                        "pmid": 13104153
+                    },
+                    {
+                        "date": 19541201,
+                        "pmid": 13098333
+                    },
+                    {
+                        "date": 20030516,
+                        "pmid": 12751467
+                    },
+                    {
+                        "date": 20021217,
+                        "pmid": 12483881,
+                        "title": "[Inherited metabolic disorders accompanied with epileptic manifestations]."
+                    },
+                    {
+                        "date": 19960925,
+                        "pmid": 8723110
+                    },
+                    {
+                        "date": 19951011,
+                        "pmid": 7668362
+                    },
+                    {
+                        "date": 19930305,
+                        "pmid": 8428616,
+                        "title": "Erythrophagocytosis by cultured skin fibroblasts from patients with hereditary metabolic disorders."
+                    },
+                    {
+                        "date": 19910326,
+                        "pmid": 1847293,
+                        "title": "[Sweat gland pathology in neurodegenerative disorders]."
+                    },
+                    {
+                        "date": 20120510,
+                        "pmid": 22573281
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 16,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20090629,
+                        "pmid": 19405096,
+                        "title": "Identification and characterization of SMPD1 mutations causing Niemann-Pick types A and B in Spanish patients."
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    },
+                    {
+                        "date": 20071126,
+                        "pmid": 17961863,
+                        "title": "[Niemann-Pick diseases in adults]."
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20160112,
+                        "pmid": 25764212
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20160805,
+                        "title": "Types A and B Niemann-Pick Disease.",
+                        "pmid": 27491215
+                    },
+                    {
+                        "date": 20160119,
+                        "pmid": 26499107
+                    },
+                    {
+                        "date": 20150820,
+                        "pmid": 26287674,
+                        "title": "Evaluation of Aminoglycoside and Non-Aminoglycoside Compounds for Stop-Codon Readthrough Therapy in Four Lysosomal Storage Diseases."
+                    },
+                    {
+                        "date": 20150618,
+                        "pmid": 26084044
+                    },
+                    {
+                        "date": 20150519,
+                        "pmid": 25987176
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    },
+                    {
+                        "date": 20071010,
+                        "pmid": 17632693
+                    },
+                    {
+                        "date": 20100203,
+                        "pmid": 19819171,
+                        "title": "CCL18 as an alternative marker in Gaucher and Niemann-Pick disease with chitotriosidase deficiency."
+                    },
+                    {
+                        "date": 20100719,
+                        "pmid": 20386867
+                    },
+                    {
+                        "date": 20110829,
+                        "pmid": 21771947
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 18,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150909,
+                        "pmid": 26314267,
+                        "title": "[Lysosomal storage diseases: A brief summary]."
+                    },
+                    {
+                        "date": 19650601,
+                        "pmid": 14261015
+                    },
+                    {
+                        "date": 19650201,
+                        "pmid": 14209687,
+                        "title": "FAMILIAL NEUROVISCERAL LIPIDOSIS. AN ANALYSIS OF EIGHT CASES OF A SYNDROME PREVIOUSLY REPORTED AS \"HURLER-VARIANT,\" \"PSEUDO-HURLER,\" AND \"TAY-SACHS DISEASE WITH VISCERAL INVOLVEMENT\"."
+                    },
+                    {
+                        "date": 20080828,
+                        "pmid": 18751922
+                    },
+                    {
+                        "date": 20000908,
+                        "pmid": 10559968,
+                        "title": "Cholesterol modulates membrane traffic along the endocytic pathway in sphingolipid-storage diseases."
+                    },
+                    {
+                        "date": 20050808,
+                        "pmid": 16086072
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 26,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150909,
+                        "pmid": 26314267,
+                        "title": "[Lysosomal storage diseases: A brief summary]."
+                    },
+                    {
+                        "date": 19650601,
+                        "pmid": 14261015
+                    },
+                    {
+                        "date": 19650201,
+                        "pmid": 14209687,
+                        "title": "FAMILIAL NEUROVISCERAL LIPIDOSIS. AN ANALYSIS OF EIGHT CASES OF A SYNDROME PREVIOUSLY REPORTED AS \"HURLER-VARIANT,\" \"PSEUDO-HURLER,\" AND \"TAY-SACHS DISEASE WITH VISCERAL INVOLVEMENT\"."
+                    },
+                    {
+                        "date": 20080828,
+                        "pmid": 18751922
+                    },
+                    {
+                        "date": 20000908,
+                        "pmid": 10559968,
+                        "title": "Cholesterol modulates membrane traffic along the endocytic pathway in sphingolipid-storage diseases."
+                    },
+                    {
+                        "date": 20050808,
+                        "pmid": 16086072
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 25,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20091022,
+                        "pmid": 19815695,
+                        "title": "Development of genomic DNA reference materials for genetic testing of disorders common in people of ashkenazi jewish descent."
+                    },
+                    {
+                        "date": 20050912,
+                        "title": "Systemic diseases and the lung.",
+                        "pmid": 16153567
+                    },
+                    {
+                        "date": 20031029,
+                        "pmid": 14582604
+                    },
+                    {
+                        "date": 19750909,
+                        "pmid": 4533482,
+                        "title": "Various genetic traits and diseases among the Jewish ethnic groups."
+                    },
+                    {
+                        "date": 19720608,
+                        "pmid": 4947356,
+                        "title": "Jewish migration in its historical perspective."
+                    },
+                    {
+                        "date": 19710813,
+                        "pmid": 5090327,
+                        "title": "Paradoxical frequencies of recessive disorders in Ashkenazic Jews."
+                    },
+                    {
+                        "date": 19711221,
+                        "pmid": 5634002,
+                        "title": "Inherited neurologic diseases of Ashkenazic Jewry: demographic data suggesting non-random gene frequencies."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 29,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 17,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 19,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150909,
+                        "pmid": 26314267,
+                        "title": "[Lysosomal storage diseases: A brief summary]."
+                    },
+                    {
+                        "date": 19650601,
+                        "pmid": 14261015
+                    },
+                    {
+                        "date": 19650201,
+                        "pmid": 14209687,
+                        "title": "FAMILIAL NEUROVISCERAL LIPIDOSIS. AN ANALYSIS OF EIGHT CASES OF A SYNDROME PREVIOUSLY REPORTED AS \"HURLER-VARIANT,\" \"PSEUDO-HURLER,\" AND \"TAY-SACHS DISEASE WITH VISCERAL INVOLVEMENT\"."
+                    },
+                    {
+                        "date": 20080828,
+                        "pmid": 18751922
+                    },
+                    {
+                        "date": 20000908,
+                        "pmid": 10559968,
+                        "title": "Cholesterol modulates membrane traffic along the endocytic pathway in sphingolipid-storage diseases."
+                    },
+                    {
+                        "date": 20050808,
+                        "pmid": 16086072
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 23,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 19641201,
+                        "pmid": 14183005
+                    },
+                    {
+                        "date": 20080411,
+                        "pmid": 18402399,
+                        "title": "[How does the landscape change in lysosomal storage disease]."
+                    },
+                    {
+                        "date": 20040812,
+                        "pmid": 15305357
+                    },
+                    {
+                        "date": 19870304,
+                        "pmid": 3939596,
+                        "title": "A method for enrichment of hybrid somatic cells: complementation studies in certain lysosomal enzymopathies."
+                    },
+                    {
+                        "date": 19840406,
+                        "pmid": 6421563
+                    },
+                    {
+                        "date": 19790526,
+                        "title": "Radiology of pediatric syndromes.",
+                        "pmid": 217568
+                    },
+                    {
+                        "date": 19730525,
+                        "pmid": 4266580
+                    },
+                    {
+                        "date": 19720407,
+                        "pmid": 4257932,
+                        "title": "[Clinical and biochemical study of some hereditary metabolic diseases with nervous system lesions]."
+                    },
+                    {
+                        "date": 19691218,
+                        "pmid": 4242467
+                    },
+                    {
+                        "date": 19681120,
+                        "pmid": 4234430,
+                        "title": "[The ultrastructure of the liver in various thesaurismoses]."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 27,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 10,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20150309,
+                        "pmid": 25748406,
+                        "title": "[Three Chinese children with Niemann-Pick disease type C with neonatal cholestasis as initial presentation]."
+                    },
+                    {
+                        "date": 20140110,
+                        "pmid": 24190732
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20110725,
+                        "pmid": 21704157,
+                        "title": "Niemann-Pick Type C1 deficiency in microglia does not cause neuron death in vitro."
+                    },
+                    {
+                        "date": 20100423,
+                        "pmid": 20412078
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20130702,
+                        "pmid": 23817360
+                    },
+                    {
+                        "date": 20060914,
+                        "pmid": 16972172
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 8,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150909,
+                        "pmid": 26314267,
+                        "title": "[Lysosomal storage diseases: A brief summary]."
+                    },
+                    {
+                        "date": 19650601,
+                        "pmid": 14261015
+                    },
+                    {
+                        "date": 19650201,
+                        "pmid": 14209687,
+                        "title": "FAMILIAL NEUROVISCERAL LIPIDOSIS. AN ANALYSIS OF EIGHT CASES OF A SYNDROME PREVIOUSLY REPORTED AS \"HURLER-VARIANT,\" \"PSEUDO-HURLER,\" AND \"TAY-SACHS DISEASE WITH VISCERAL INVOLVEMENT\"."
+                    },
+                    {
+                        "date": 20080828,
+                        "pmid": 18751922
+                    },
+                    {
+                        "date": 20000908,
+                        "pmid": 10559968,
+                        "title": "Cholesterol modulates membrane traffic along the endocytic pathway in sphingolipid-storage diseases."
+                    },
+                    {
+                        "date": 20050808,
+                        "pmid": 16086072
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 24,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "chemotext",
+                "edge_type": "support",
+                "publications": [
+                    {
+                        "date": 20150831,
+                        "pmid": 26175473
+                    },
+                    {
+                        "date": 19651101,
+                        "pmid": 14324331
+                    },
+                    {
+                        "date": 19651101,
+                        "pmid": 14324332
+                    },
+                    {
+                        "date": 19651101,
+                        "pmid": 14324330
+                    },
+                    {
+                        "date": 19650801,
+                        "pmid": 14293651,
+                        "title": "OCULAR MANIFESTATIONS IN TAY-SACHS' AND NIEMANN-PICK'S DISEASES. (A CLINICAL, PATHOLOGICAL, HISTOCHEMICAL AND BIOCHEMICAL INVESTIGATION)."
+                    },
+                    {
+                        "date": 19650701,
+                        "pmid": 14277566
+                    },
+                    {
+                        "date": 19650701,
+                        "pmid": 14272650,
+                        "title": "[THE QUANTITATIVE DETERMINATION OF GANGLIOSIDES AND THEIR NEURAMINIC ACID-FREE DERIVATIVES IN INFANTILE, JUVENILE AND FORMS OF AMAUROTIC IDIOCY AND AN UNUSUAL LATE INFANTILE BIOCHEMICAL FORM]."
+                    },
+                    {
+                        "date": 19650601,
+                        "pmid": 14261015
+                    },
+                    {
+                        "date": 19650401,
+                        "pmid": 14246098,
+                        "title": "LIPID HISTOCHEMISTRY AND ELECTRON MICROSCOPY IN ADULT NIEMANN-PICK DISEASE."
+                    },
+                    {
+                        "date": 19650201,
+                        "pmid": 14209687,
+                        "title": "FAMILIAL NEUROVISCERAL LIPIDOSIS. AN ANALYSIS OF EIGHT CASES OF A SYNDROME PREVIOUSLY REPORTED AS \"HURLER-VARIANT,\" \"PSEUDO-HURLER,\" AND \"TAY-SACHS DISEASE WITH VISCERAL INVOLVEMENT\"."
+                    },
+                    {
+                        "date": 20131223,
+                        "pmid": 24359846,
+                        "title": "Solving for x: accelerators could speed search for rare disease therapies."
+                    }
+                ]
+            },
+            "source": 0,
+            "target": 28,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:16098014"
+                    },
+                    {
+                        "id": "PMID:22065762"
+                    },
+                    {
+                        "id": "PMID:17160617"
+                    },
+                    {
+                        "id": "PMID:19013089"
+                    },
+                    {
+                        "id": "PMID:11333381"
+                    },
+                    {
+                        "id": "PMID:26206375"
+                    },
+                    {
+                        "id": "PMID:15465421"
+                    },
+                    {
+                        "id": "PMID:25131710"
+                    },
+                    {
+                        "id": "PMID:27139891"
+                    },
+                    {
+                        "id": "PMID:24676439"
+                    },
+                    {
+                        "id": "PMID:20826119"
+                    },
+                    {
+                        "id": "PMID:23653225"
+                    },
+                    {
+                        "id": "PMID:11182931"
+                    },
+                    {
+                        "id": "PMID:12401890"
+                    },
+                    {
+                        "id": "PMID:23430855"
+                    },
+                    {
+                        "id": "PMID:26981555"
+                    },
+                    {
+                        "id": "PMID:11479732"
+                    },
+                    {
+                        "id": "PMID:15459971"
+                    },
+                    {
+                        "id": "PMID:19206179"
+                    },
+                    {
+                        "id": "PMID:15130691"
+                    },
+                    {
+                        "id": "PMID:15596783"
+                    },
+                    {
+                        "id": "PMID:21245028"
+                    },
+                    {
+                        "id": "PMID:23773996"
+                    },
+                    {
+                        "id": "PMID:19744920"
+                    },
+                    {
+                        "id": "PMID:11545687"
+                    },
+                    {
+                        "id": "PMID:19223215"
+                    },
+                    {
+                        "id": "PMID:23142039"
+                    },
+                    {
+                        "id": "PMID:4795418"
+                    },
+                    {
+                        "id": "PMID:24915861"
+                    },
+                    {
+                        "id": "PMID:22326530"
+                    },
+                    {
+                        "id": "PMID:24035292"
+                    },
+                    {
+                        "id": "PMID:20718790"
+                    },
+                    {
+                        "id": "PMID:11754101"
+                    },
+                    {
+                        "id": "PMID:22704015"
+                    },
+                    {
+                        "id": "PMID:24570279"
+                    },
+                    {
+                        "id": "PMID:18216017"
+                    },
+                    {
+                        "id": "PMID:22750297"
+                    },
+                    {
+                        "id": "PMID:10480349"
+                    },
+                    {
+                        "id": "PMID:24386122"
+                    },
+                    {
+                        "id": "PMID:9211849"
+                    },
+                    {
+                        "id": "PMID:26937389"
+                    },
+                    {
+                        "id": "PMID:17003072"
+                    },
+                    {
+                        "id": "PMID:9802331"
+                    },
+                    {
+                        "id": "PMID:23433426"
+                    },
+                    {
+                        "id": "PMID:25236789"
+                    },
+                    {
+                        "id": "PMID:12955717"
+                    },
+                    {
+                        "id": "PMID:22216111"
+                    },
+                    {
+                        "id": "PMID:19609713"
+                    },
+                    {
+                        "id": "PMID:3378364"
+                    },
+                    {
+                        "id": "PMID:16126423"
+                    },
+                    {
+                        "id": "PMID:12205649"
+                    },
+                    {
+                        "id": "PMID:9634529"
+                    },
+                    {
+                        "id": "PMID:11349231"
+                    },
+                    {
+                        "id": "PMID:12408188"
+                    },
+                    {
+                        "id": "PMID:23774949"
+                    },
+                    {
+                        "id": "PMID:23146215"
+                    },
+                    {
+                        "id": "PMID:22505584"
+                    },
+                    {
+                        "id": "PMID:12974729"
+                    },
+                    {
+                        "id": "PMID:22476655"
+                    },
+                    {
+                        "id": "PMID:22676771"
+                    },
+                    {
+                        "id": "PMID:26666848"
+                    },
+                    {
+                        "id": "PMID:16720792"
+                    },
+                    {
+                        "id": "PMID:23427322"
+                    },
+                    {
+                        "id": "PMID:10521297"
+                    },
+                    {
+                        "id": "PMID:19900398"
+                    },
+                    {
+                        "id": "PMID:24001525"
+                    },
+                    {
+                        "id": "PMID:19252935"
+                    },
+                    {
+                        "id": "PMID:12554680"
+                    },
+                    {
+                        "id": "PMID:19307542"
+                    },
+                    {
+                        "id": "PMID:10521290"
+                    },
+                    {
+                        "id": "PMID:16778374"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 1,
+            "target": 8,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:21411543"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 2,
+            "target": 9,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:11125141"
+                    },
+                    {
+                        "id": "PMID:12447927"
+                    },
+                    {
+                        "id": "PMID:17470133"
+                    },
+                    {
+                        "id": "PMID:11567215"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 3,
+            "target": 10,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:9620774"
+                    },
+                    {
+                        "id": "PMID:18989383"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 11,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 4,
+            "target": 12,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:16565358"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 13,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:15286169"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 4,
+            "target": 14,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 4,
+            "target": 15,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 5,
+            "target": 16,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:15545621"
+                    },
+                    {
+                        "id": "PMID:8499909"
+                    },
+                    {
+                        "id": "PMID:21454466"
+                    },
+                    {
+                        "id": "PMID:12712061"
+                    },
+                    {
+                        "id": "PMID:14681755"
+                    },
+                    {
+                        "id": "PMID:1718266"
+                    },
+                    {
+                        "id": "PMID:7762557"
+                    },
+                    {
+                        "id": "PMID:19405096"
+                    },
+                    {
+                        "id": "PMID:15241805"
+                    },
+                    {
+                        "id": "PMID:15234149"
+                    },
+                    {
+                        "id": "PMID:17876723"
+                    },
+                    {
+                        "id": "PMID:23412609"
+                    },
+                    {
+                        "id": "PMID:1391960"
+                    },
+                    {
+                        "id": "PMID:2023926"
+                    },
+                    {
+                        "id": "PMID:1840600"
+                    },
+                    {
+                        "id": "PMID:17011332"
+                    },
+                    {
+                        "id": "PMID:23356216"
+                    },
+                    {
+                        "id": "PMID:8053910"
+                    },
+                    {
+                        "id": "PMID:16642440"
+                    },
+                    {
+                        "id": "PMID:26981555"
+                    },
+                    {
+                        "id": "PMID:1301192"
+                    },
+                    {
+                        "id": "PMID:12556236"
+                    },
+                    {
+                        "id": "PMID:8680412"
+                    },
+                    {
+                        "id": "PMID:23252888"
+                    },
+                    {
+                        "id": "PMID:23430949"
+                    },
+                    {
+                        "id": "PMID:12369017"
+                    },
+                    {
+                        "id": "PMID:15221801"
+                    },
+                    {
+                        "id": "PMID:15877209"
+                    },
+                    {
+                        "id": "PMID:21098024"
+                    },
+                    {
+                        "id": "PMID:16264060"
+                    },
+                    {
+                        "id": "PMID:17360762"
+                    },
+                    {
+                        "id": "PMID:23430884"
+                    },
+                    {
+                        "id": "PMID:18052040"
+                    },
+                    {
+                        "id": "PMID:18625664"
+                    },
+                    {
+                        "id": "PMID:18815062"
+                    },
+                    {
+                        "id": "PMID:1885770"
+                    },
+                    {
+                        "id": "PMID:1618760"
+                    },
+                    {
+                        "id": "PMID:22818240"
+                    },
+                    {
+                        "id": "PMID:9266408"
+                    },
+                    {
+                        "id": "PMID:22796693"
+                    },
+                    {
+                        "id": "PMID:24767253"
+                    },
+                    {
+                        "id": "PMID:16151905"
+                    },
+                    {
+                        "id": "PMID:27338287"
+                    },
+                    {
+                        "id": "PMID:16010684"
+                    },
+                    {
+                        "id": "PMID:24718843"
+                    },
+                    {
+                        "id": "PMID:26851525"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 5,
+            "target": 17,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:1301192"
+                    },
+                    {
+                        "id": "PMID:8499909"
+                    },
+                    {
+                        "id": "PMID:12694237"
+                    },
+                    {
+                        "id": "PMID:1885770"
+                    },
+                    {
+                        "id": "PMID:12369017"
+                    },
+                    {
+                        "id": "PMID:8401540"
+                    },
+                    {
+                        "id": "PMID:12607113"
+                    },
+                    {
+                        "id": "PMID:15877209"
+                    },
+                    {
+                        "id": "PMID:9266408"
+                    },
+                    {
+                        "id": "PMID:11932991"
+                    },
+                    {
+                        "id": "PMID:8225311"
+                    },
+                    {
+                        "id": "PMID:19405096"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 5,
+            "target": 18,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:12631268"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 5,
+            "target": 19,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:23042114"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 6,
+            "target": 20,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:817853"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 6,
+            "target": 21,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:23042114"
+                    }
+                ],
+                "relation": {
+                    "typeid": "RO:0002326",
+                    "label": "contributes to"
+                }
+            },
+            "source": 6,
+            "target": 22,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:26646981"
+                    },
+                    {
+                        "id": "PMID:1907800"
+                    },
+                    {
+                        "id": "PMID:19472408"
+                    },
+                    {
+                        "id": "PMID:25600812"
+                    },
+                    {
+                        "id": "PMID:17664528"
+                    },
+                    {
+                        "id": "PMID:8112731"
+                    },
+                    {
+                        "id": "PMID:16617000"
+                    },
+                    {
+                        "id": "PMID:12644936"
+                    },
+                    {
+                        "id": "PMID:25443580"
+                    },
+                    {
+                        "id": "PMID:8068159"
+                    },
+                    {
+                        "id": "PMID:21520340"
+                    },
+                    {
+                        "id": "PMID:9203065"
+                    },
+                    {
+                        "id": "PMID:8213816"
+                    },
+                    {
+                        "id": "PMID:1928092"
+                    },
+                    {
+                        "id": "PMID:1909089"
+                    },
+                    {
+                        "id": "PMID:16626397"
+                    },
+                    {
+                        "id": "PMID:25557439"
+                    },
+                    {
+                        "id": "PMID:16941474"
+                    },
+                    {
+                        "id": "PMID:1487238"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 6,
+            "target": 23,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002607",
+                    "label": "is marker for"
+                }
+            },
+            "source": 6,
+            "target": 24,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:1907800"
+                    },
+                    {
+                        "id": "PMID:19472408"
+                    },
+                    {
+                        "id": "PMID:8652017"
+                    },
+                    {
+                        "id": "PMID:1606711"
+                    },
+                    {
+                        "id": "PMID:25443580"
+                    },
+                    {
+                        "id": "PMID:8198123"
+                    },
+                    {
+                        "id": "PMID:21520340"
+                    },
+                    {
+                        "id": "PMID:24156116"
+                    },
+                    {
+                        "id": "PMID:1928092"
+                    },
+                    {
+                        "id": "PMID:10737981"
+                    },
+                    {
+                        "id": "PMID:16626397"
+                    },
+                    {
+                        "id": "PMID:8199591"
+                    },
+                    {
+                        "id": "PMID:16941474"
+                    },
+                    {
+                        "id": "PMID:8500799"
+                    },
+                    {
+                        "id": "PMID:26646981"
+                    },
+                    {
+                        "id": "PMID:25600812"
+                    },
+                    {
+                        "id": "PMID:17664528"
+                    },
+                    {
+                        "id": "PMID:16617000"
+                    },
+                    {
+                        "id": "PMID:8112731"
+                    },
+                    {
+                        "id": "PMID:17309651"
+                    },
+                    {
+                        "id": "PMID:8068159"
+                    },
+                    {
+                        "id": "PMID:9203065"
+                    },
+                    {
+                        "id": "PMID:8213816"
+                    },
+                    {
+                        "id": "PMID:15986423"
+                    },
+                    {
+                        "id": "PMID:1909089"
+                    },
+                    {
+                        "id": "PMID:10338095"
+                    },
+                    {
+                        "id": "PMID:25557439"
+                    },
+                    {
+                        "id": "PMID:1487238"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 6,
+            "target": 25,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:26646981"
+                    },
+                    {
+                        "id": "PMID:6791574"
+                    },
+                    {
+                        "id": "PMID:1907800"
+                    },
+                    {
+                        "id": "PMID:19472408"
+                    },
+                    {
+                        "id": "PMID:25600812"
+                    },
+                    {
+                        "id": "PMID:16617000"
+                    },
+                    {
+                        "id": "PMID:17664528"
+                    },
+                    {
+                        "id": "PMID:8112731"
+                    },
+                    {
+                        "id": "PMID:25443580"
+                    },
+                    {
+                        "id": "PMID:8068159"
+                    },
+                    {
+                        "id": "PMID:8198123"
+                    },
+                    {
+                        "id": "PMID:21520340"
+                    },
+                    {
+                        "id": "PMID:9203065"
+                    },
+                    {
+                        "id": "PMID:8213816"
+                    },
+                    {
+                        "id": "PMID:1928092"
+                    },
+                    {
+                        "id": "PMID:1909089"
+                    },
+                    {
+                        "id": "PMID:16626397"
+                    },
+                    {
+                        "id": "PMID:1353343"
+                    },
+                    {
+                        "id": "PMID:25557439"
+                    },
+                    {
+                        "id": "PMID:16941474"
+                    },
+                    {
+                        "id": "PMID:1487238"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 6,
+            "target": 26,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:10841810"
+                    },
+                    {
+                        "id": "PMID:8500799"
+                    },
+                    {
+                        "id": "PMID:26646981"
+                    },
+                    {
+                        "id": "PMID:11511921"
+                    },
+                    {
+                        "id": "PMID:19472408"
+                    },
+                    {
+                        "id": "PMID:25600812"
+                    },
+                    {
+                        "id": "PMID:17664528"
+                    },
+                    {
+                        "id": "PMID:16617000"
+                    },
+                    {
+                        "id": "PMID:8112731"
+                    },
+                    {
+                        "id": "PMID:25443580"
+                    },
+                    {
+                        "id": "PMID:8068159"
+                    },
+                    {
+                        "id": "PMID:21520340"
+                    },
+                    {
+                        "id": "PMID:9203065"
+                    },
+                    {
+                        "id": "PMID:8213816"
+                    },
+                    {
+                        "id": "PMID:1928092"
+                    },
+                    {
+                        "id": "PMID:16626397"
+                    },
+                    {
+                        "id": "PMID:7586649"
+                    },
+                    {
+                        "id": "PMID:25557439"
+                    },
+                    {
+                        "id": "PMID:1487238"
+                    },
+                    {
+                        "id": "PMID:16941474"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000840",
+                    "label": "pathogenic_for_condition"
+                }
+            },
+            "source": 6,
+            "target": 27,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [
+                    {
+                        "id": "PMID:8328462"
+                    },
+                    {
+                        "id": "PMID:1384323"
+                    },
+                    {
+                        "id": "PMID:9222766"
+                    },
+                    {
+                        "id": "PMID:23035047"
+                    },
+                    {
+                        "id": "PMID:14577003"
+                    },
+                    {
+                        "id": "PMID:16088929"
+                    },
+                    {
+                        "id": "PMID:18490185"
+                    },
+                    {
+                        "id": "PMID:24518553"
+                    },
+                    {
+                        "id": "PMID:9150157"
+                    },
+                    {
+                        "id": "PMID:7749419"
+                    },
+                    {
+                        "id": "PMID:2837213"
+                    },
+                    {
+                        "id": "PMID:1837283"
+                    },
+                    {
+                        "id": "PMID:11161796"
+                    },
+                    {
+                        "id": "PMID:20100466"
+                    },
+                    {
+                        "id": "PMID:9272736"
+                    },
+                    {
+                        "id": "PMID:22723944"
+                    },
+                    {
+                        "id": "PMID:21937992"
+                    },
+                    {
+                        "id": "PMID:22390110"
+                    },
+                    {
+                        "id": "PMID:8490625"
+                    },
+                    {
+                        "id": "PMID:1301190"
+                    },
+                    {
+                        "id": "PMID:11392526"
+                    },
+                    {
+                        "id": "PMID:8444467"
+                    },
+                    {
+                        "id": "PMID:25287655"
+                    },
+                    {
+                        "id": "PMID:1825014"
+                    },
+                    {
+                        "id": "PMID:2140574"
+                    },
+                    {
+                        "id": "PMID:7837766"
+                    },
+                    {
+                        "id": "PMID:21228398"
+                    },
+                    {
+                        "id": "PMID:1301958"
+                    },
+                    {
+                        "id": "PMID:2144098"
+                    },
+                    {
+                        "id": "PMID:7858168"
+                    },
+                    {
+                        "id": "PMID:1322637"
+                    },
+                    {
+                        "id": "PMID:22789865"
+                    },
+                    {
+                        "id": "PMID:7063277"
+                    },
+                    {
+                        "id": "PMID:15714079"
+                    },
+                    {
+                        "id": "PMID:22441121"
+                    },
+                    {
+                        "id": "PMID:803011"
+                    },
+                    {
+                        "id": "PMID:1827944"
+                    },
+                    {
+                        "id": "PMID:2141777"
+                    },
+                    {
+                        "id": "PMID:2294750"
+                    },
+                    {
+                        "id": "PMID:8488832"
+                    },
+                    {
+                        "id": "PMID:2934978"
+                    },
+                    {
+                        "id": "PMID:6959123"
+                    },
+                    {
+                        "id": "PMID:19091716"
+                    },
+                    {
+                        "id": "PMID:21567908"
+                    },
+                    {
+                        "id": "PMID:2973464"
+                    },
+                    {
+                        "id": "PMID:1827945"
+                    },
+                    {
+                        "id": "PMID:16698036"
+                    },
+                    {
+                        "id": "PMID:3837850"
+                    },
+                    {
+                        "id": "PMID:27896118"
+                    },
+                    {
+                        "id": "PMID:17015493"
+                    },
+                    {
+                        "id": "PMID:14727180"
+                    },
+                    {
+                        "id": "PMID:7551830"
+                    },
+                    {
+                        "id": "PMID:17237499"
+                    },
+                    {
+                        "id": "PMID:22344438"
+                    },
+                    {
+                        "id": "PMID:2848800"
+                    },
+                    {
+                        "id": "PMID:8352284"
+                    },
+                    {
+                        "id": "PMID:23852624"
+                    },
+                    {
+                        "id": "PMID:1307230"
+                    },
+                    {
+                        "id": "PMID:2522679"
+                    },
+                    {
+                        "id": "PMID:14566483"
+                    },
+                    {
+                        "id": "PMID:8326491"
+                    },
+                    {
+                        "id": "PMID:8445615"
+                    },
+                    {
+                        "id": "PMID:2531748"
+                    },
+                    {
+                        "id": "PMID:1387685"
+                    },
+                    {
+                        "id": "PMID:6236221"
+                    },
+                    {
+                        "id": "PMID:1269177"
+                    },
+                    {
+                        "id": "PMID:22975760"
+                    },
+                    {
+                        "id": "PMID:14648242"
+                    },
+                    {
+                        "id": "PMID:2970528"
+                    },
+                    {
+                        "id": "PMID:3362213"
+                    },
+                    {
+                        "id": "PMID:8257995"
+                    },
+                    {
+                        "id": "PMID:26633545"
+                    },
+                    {
+                        "id": "PMID:1532289"
+                    },
+                    {
+                        "id": "PMID:1483696"
+                    },
+                    {
+                        "id": "PMID:1833974"
+                    },
+                    {
+                        "id": "PMID:20363167"
+                    },
+                    {
+                        "id": "PMID:24767253"
+                    },
+                    {
+                        "id": "PMID:1830584"
+                    },
+                    {
+                        "id": "PMID:1301938"
+                    },
+                    {
+                        "id": "PMID:2824459"
+                    },
+                    {
+                        "id": "PMID:10083731"
+                    },
+                    {
+                        "id": "PMID:2954459"
+                    }
+                ],
+                "relation": {
+                    "typeid": "GENO:0000841",
+                    "label": "likely_pathogenic_for_condition"
+                }
+            },
+            "source": 7,
+            "target": 28,
+            "key": 0
+        },
+        {
+            "object": {
+                "edge_source": "biolink",
+                "edge_type": "queried",
+                "publications": [],
+                "relation": {
+                    "typeid": "RO:0002200",
+                    "label": "has phenotype"
+                }
+            },
+            "source": 7,
+            "target": 29,
+            "key": 0
+        }
+    ]
+}

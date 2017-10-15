@@ -50,8 +50,6 @@ DOID:10573
  HGNC:2932
   autosomal recessive hypophosphatemic rickets (DOID:0050949)
   Autosomal recessive hypophosphatemic vitamin D refractory rickets (OMIM:241520)
- HGNC:1437
-  Down Syndrome (OMIM:190685)
  HGNC:6344
   Familial hyperphosphatemic tumoral calcinosis/Hyperphosphatemic hyperostosis syndrome (OMIM:211900)
  HGNC:438
@@ -63,12 +61,18 @@ DOID:10573
  HGNC:4125
   Familial hyperphosphatemic tumoral calcinosis/Hyperphosphatemic hyperostosis syndrome (OMIM:211900)
  Sickle Cell Anemia (OMIM:603903)
- Sickle Cell Anemia (OMIM:603903)
- chronic lymphocytic leukemia (DOID:1040)
- Hypocalcemic vitamin D-dependent rickets (OMIM:264700)
- Obesity (OMIM:601665)
- Infantile hypophosphatasia (OMIM:241500)
  Vitamin D-Dependent Rickets, Type 2A (OMIM:277440)
- Hypophosphatasia, Childhood (OMIM:241510)
+ Hypophosphatemic Rickets, X-Linked Dominant (OMIM:307800)
+ Infantile hypophosphatasia (OMIM:241500)
+ Renal tubular acidosis, distal, autosomal recessive (OMIM:602722)
+ FRTS1 (OMIM:134600)
+ Obesity (OMIM:601665)
  gout (EFO:0004274)
+ chronic lymphocytic leukemia (DOID:1040)
+ pseudoxanthoma elasticum (DOID:2738)
+ Hypoparathyroidism, Familial Isolated (OMIM:146200)
+ Hypophosphatasia, Childhood (OMIM:241510)
+ Down Syndrome (OMIM:190685)
  adult hypophosphatasia (OMIM:146300)
+ Hypocalcemic vitamin D-dependent rickets (OMIM:264700)
+ Fanconi Renotubular Syndrome 2 (OMIM:613388)
