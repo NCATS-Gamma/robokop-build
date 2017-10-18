@@ -2,7 +2,7 @@ from greent.chemotext import Chemotext
 from greent.oxo import OXO
 import json
 import logging
-from graph_components import KEdge
+from reasoner.graph_components import KEdge
 
 CHEMOTEXT_MESH_KEY = 'chemotext_mesh_label'
 

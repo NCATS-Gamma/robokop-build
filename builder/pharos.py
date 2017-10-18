@@ -1,7 +1,7 @@
 import requests
 import logging
 from csv import DictReader
-from graph_components import KNode,KEdge
+from reasoner.graph_components import KNode,KEdge
 from collections import defaultdict
 
 def translate(subject_node):
@@ -28,6 +28,7 @@ def get_target_hgnc(target_id):
 
     The call does not return the actual name for the gene, so we do not provide it.
     There are numerous other synonyms that we could also cache, but I don't see much benefit here"""
+    print('https://pharos.nih.gov/idg/api/v1/targets(%d)/synonyms' % target_id)
     r = requests.get('https://pharos.nih.gov/idg/api/v1/targets(%d)/synonyms' % target_id)
     result = r.json()
     for synonym in result:
@@ -42,6 +43,7 @@ def disease_get_gene(subject):
     pharosids = translate(subject)
     original_edge_nodes=[]
     for pharosid in pharosids:
+        print('https://pharos.nih.gov/idg/api/v1/diseases(%s)?view=full' % pharosid)
         r = requests.get('https://pharos.nih.gov/idg/api/v1/diseases(%s)?view=full' % pharosid)
         result = r.json()
         for link in result['links']:

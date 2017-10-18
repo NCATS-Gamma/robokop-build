@@ -1,5 +1,7 @@
 from WorldGraph import WorldGraph
-from graph_components import KNode,KEdge,elements_to_json
+from WorldGraph import WorldGraphFactory
+from reasoner.graph_components import KNode,KEdge,elements_to_json
+import argparse
 import networkx as nx
 from networkx.readwrite.json_graph.node_link import node_link_data
 import json
@@ -95,11 +97,13 @@ class KnowledgeGraph:
                 raise(Exception("no subject"))
             for subject in subjects:
                 object_type = self.layer_types[ op.object_layer ]
+                #print ("worldgraph.query")
                 relationships,success = \
                         self.worldgraph.query( subject, object_type )
                 #keep track of success == False which indicates missing queries
                 #if not success:
                 #    complain, and work around hole.
+                print (relationships)
                 self.add_relationships( subject, relationships, object_type, op.object_layer )
         self.logger.debug('Query Complete')
     def get_nodes(self, layer_number):
@@ -222,10 +226,25 @@ def run_query(query, output_path, worldgraph):
     kgraph.write()
        
 def main_test():
+
+    
+    parser = argparse.ArgumentParser(description='Protokop.')
+    parser.add_argument('--data', help='Name of the data layer to use [default|greent]', default='default')
+    args = parser.parse_args()
+    print (args.data)
+
+    
     """Run a series of test cases from the NCATS FOA"""
     logger = logging.getLogger('application')
     logger.setLevel(level = logging.DEBUG)
-    worldgraph = WorldGraph('config.std')
+
+    if args.data == 'default':
+        worldgraph = WorldGraph('config.std')
+    elif args.data == 'greent':
+        worldgraph = WorldGraphFactory.create (config='greent.conf', worldgraph_type="greent")
+    else:
+        raise ValueError ("No such data source type: %s" % args.data)
+        
     #Our test cases are defined as a doid and a name.  The name is from the NCATS FOA. The DOID
     # was looked up by hand.
     test_cases = ( \
@@ -250,6 +269,9 @@ def main_test():
                   ('2055'  ,'Post-Truamatic Stress Disorder'), \
                   ('0060728' ,'Deficiency of N-glycanase 1'), \
                   ('0050741' ,'Alcohol Dependence') )
+
+#    test_cases = ( ('13810' ,'Hypercholesterolemia'),  ('00000' ,'0000000' )) 
+
     for doid, disease_name in test_cases:
         print('Running test case: %s (DOID:%s)' % (disease_name,doid) )
         query = '(D;DOID:%s)-G-GC' % doid

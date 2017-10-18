@@ -1,7 +1,7 @@
 import requests
 import urllib
 from mondo import Mondo
-from graph_components import KNode,KEdge
+from reasoner.graph_components import KNode,KEdge
 import logging
 
 def gene_get_disease(gene_node):
@@ -9,6 +9,7 @@ def gene_get_disease(gene_node):
     #TODO: we're assuming that gene_node.identifier is a valid curie for calling inti biolink - validate
     ehgnc = urllib.parse.quote_plus(gene_node.identifier)
     logging.getLogger('application').debug('Biolink: %s' % ehgnc)
+    print ('https://api.monarchinitiative.org/api/bioentity/gene/%s/diseases' % ehgnc)
     r = requests.get('https://api.monarchinitiative.org/api/bioentity/gene/%s/diseases' % ehgnc).json()
     edge_nodes = []
     #TODO:  Do I just want to suck in everything?  It's probably smarter, but for now it's mostly nulls
