@@ -7,44 +7,21 @@
             "id": {
                 "identifier": "DOID:4325",
                 "node_type": "D",
-                "layer_number": 0,
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D019142",
-                        "label": "Hemorrhagic Fever, Ebola",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 1,
-                        "chemotext_mesh_label": "Hemorrhagic Fever, Ebola"
-                    }
-                ]
+                "layer_number": 0
             }
         },
         {
             "id": {
                 "identifier": "HGNC:7897",
                 "node_type": "G",
-                "layer_number": 1,
-                "mesh_identifiers": []
+                "layer_number": 1
             }
         },
         {
             "id": {
                 "identifier": "HGNC:30922",
                 "node_type": "G",
-                "layer_number": 1,
-                "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "HGNC:16361",
-                "node_type": "G",
-                "layer_number": 1,
-                "mesh_identifiers": []
+                "layer_number": 1
             }
         },
         {
@@ -55,32 +32,6 @@
                 "mondo_identifiers": [
                     "DOID:14504",
                     "http://www.orpha.net/ORDO/Orphanet_646"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D009542",
-                        "label": "Niemann-Pick Diseases",
-                        "sourcePrefixes": [
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2,
-                        "chemotext_mesh_label": "Niemann-Pick Diseases"
-                    },
-                    {
-                        "curie": "MeSH:D052556",
-                        "label": "Niemann-Pick Disease, Type C1",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2,
-                        "chemotext_mesh_label": "Niemann-Pick Disease, Type C"
-                    }
                 ]
             }
         },
@@ -91,8 +42,7 @@
                 "layer_number": 2,
                 "mondo_identifiers": [
                     "DOID:0060308"
-                ],
-                "mesh_identifiers": []
+                ]
             }
         },
         {
@@ -102,57 +52,6 @@
                 "layer_number": 2,
                 "mondo_identifiers": [
                     "DOID:0060308"
-                ],
-                "mesh_identifiers": []
-            }
-        },
-        {
-            "id": {
-                "identifier": "DOID:0110827",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:0110827"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D052245",
-                        "label": "Usher Syndromes",
-                        "sourcePrefixes": [
-                            "DOID",
-                            "UMLS"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2,
-                        "chemotext_mesh_label": "Usher Syndromes"
-                    }
-                ]
-            }
-        },
-        {
-            "id": {
-                "identifier": "OMIM:611383",
-                "node_type": "D",
-                "layer_number": 2,
-                "mondo_identifiers": [
-                    "DOID:0050439",
-                    "DOID:0110827",
-                    "http://purl.obolibrary.org/obo/OMIM_611383"
-                ],
-                "mesh_identifiers": [
-                    {
-                        "curie": "MeSH:D052245",
-                        "label": "Usher Syndromes",
-                        "sourcePrefixes": [
-                            "EFO",
-                            "Orphanet",
-                            "BAO",
-                            "DOID"
-                        ],
-                        "targetPrefix": "MeSH",
-                        "distance": 2,
-                        "chemotext_mesh_label": "Usher Syndromes"
-                    }
                 ]
             }
         }
@@ -213,6 +112,35 @@
                 ]
             },
             "source": 0,
+            "target": 1,
+            "key": 1
+        },
+        {
+            "object": {
+                "edge_source": "pharos",
+                "edge_type": "queried",
+                "properties": [
+                    {
+                        "id": 250,
+                        "label": "Data Source",
+                        "term": "JensenLab Text Mining",
+                        "href": "http://diseases.jensenlab.org"
+                    },
+                    {
+                        "id": 635,
+                        "label": "IDG Development Level",
+                        "term": "Tbio",
+                        "href": null
+                    },
+                    {
+                        "id": 636,
+                        "label": "IDG Target Family",
+                        "term": "Non-IDG",
+                        "href": null
+                    }
+                ]
+            },
+            "source": 0,
             "target": 2,
             "key": 0
         },
@@ -242,24 +170,8 @@
                 ]
             },
             "source": 0,
-            "target": 3,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "chemotext",
-                "edge_type": "support",
-                "publications": [
-                    {
-                        "date": 20110916,
-                        "pmid": 21866103,
-                        "title": "Ebola virus entry requires the cholesterol transporter Niemann-Pick C1"
-                    }
-                ]
-            },
-            "source": 0,
-            "target": 4,
-            "key": 0
+            "target": 2,
+            "key": 1
         },
         {
             "object": {
@@ -486,7 +398,7 @@
                 }
             },
             "source": 1,
-            "target": 4,
+            "target": 3,
             "key": 0
         },
         {
@@ -507,7 +419,7 @@
                 }
             },
             "source": 2,
-            "target": 5,
+            "target": 4,
             "key": 0
         },
         {
@@ -521,42 +433,7 @@
                 }
             },
             "source": 2,
-            "target": 6,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [],
-                "relation": {
-                    "typeid": "RO:0002200",
-                    "label": "has phenotype"
-                }
-            },
-            "source": 3,
-            "target": 7,
-            "key": 0
-        },
-        {
-            "object": {
-                "edge_source": "biolink",
-                "edge_type": "queried",
-                "publications": [
-                    {
-                        "id": "PMID:22147658"
-                    },
-                    {
-                        "id": "PMID:17171570"
-                    }
-                ],
-                "relation": {
-                    "typeid": "RO:0002607",
-                    "label": "is marker for"
-                }
-            },
-            "source": 3,
-            "target": 8,
+            "target": 5,
             "key": 0
         }
     ]
