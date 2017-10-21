@@ -16,7 +16,7 @@ class Operation():
 
 def is_valid_layer_type(lt):
     """Defines the allowed set of layer types"""
-    return lt in ('S','G','P','A','PH','D','GC')
+    return lt in ('S','G','P','A','PH','D','GC', 'C')
 
 #TODO: Need to sort out the representation of nodes/edges more carefullly.  
 class KnowledgeGraph:
@@ -103,7 +103,7 @@ class KnowledgeGraph:
                 #keep track of success == False which indicates missing queries
                 #if not success:
                 #    complain, and work around hole.
-                print (relationships)
+                #self.logger.debug ("relationships %s", relationships)
                 self.add_relationships( subject, relationships, object_type, op.object_layer )
         self.logger.debug('Query Complete')
     def get_nodes(self, layer_number):
@@ -231,7 +231,7 @@ def main_test():
     parser = argparse.ArgumentParser(description='Protokop.')
     parser.add_argument('--data', help='Name of the data layer to use [default|greent]', default='default')
     args = parser.parse_args()
-    print (args.data)
+    print ("Data Layer:{}".format(args.data))
 
     
     """Run a series of test cases from the NCATS FOA"""
@@ -270,13 +270,35 @@ def main_test():
                   ('0060728' ,'Deficiency of N-glycanase 1'), \
                   ('0050741' ,'Alcohol Dependence') )
 
-#    test_cases = ( ('13810' ,'Hypercholesterolemia'),  ('00000' ,'0000000' )) 
+    test_cases = ( \
+                   ('2841'  ,'Asthma'), \
+                   ('2841'  ,'Asthma') )
+    for m in [ ]:
+        logging.getLogger (m).setLevel (logging.DEBUG)
 
     for doid, disease_name in test_cases:
         print('Running test case: %s (DOID:%s)' % (disease_name,doid) )
+
         query = '(D;DOID:%s)-G-GC' % doid
         output = 'examples/example.%s' % doid
         run_query(query, output, worldgraph)
 
+        '''
+        # gene->anatomy
+        query = '(D;DOID:%s)-G-A' % doid
+        output = 'examples/example.%s' % doid
+        run_query(query, output, worldgraph)
+        
+        # gene->cell
+        query = '(D;DOID:%s)-G-C' % doid
+        output = 'examples/example.%s' % doid
+        run_query(query, output, worldgraph)
+
+        # gene->pathway
+        query = '(D;DOID:%s)-G-P' % doid
+        output = 'examples/example.%s' % doid
+        run_query(query, output, worldgraph)
+        '''
+        
 if __name__ == '__main__':
     main_test()

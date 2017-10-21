@@ -55,48 +55,17 @@ class WorldGraphFactory:
         }[worldgraph_type](config)
 
 class GreenWorldGraph(WorldGraph):
+
     def __init__(self, configFile):
         super(GreenWorldGraph, self).__init__(configFile)
-        self.translator = Rosetta (greentConf=configFile)
-        self.type_to_greent_map = {
-            "S"  : [ "c2b2r_drug_id" ],
-            "G"  : [ "c2b2r_gene", "hgnc_id" ],
-            "P"  : [ "c2b2r_pathway" ],
-            "A"  : [ "hetio_cell" ], # anatomy, tissue
-            "PH" : [ ],
-            "D"  : [ "mesh_disease_id", "mesh_disease_name", "pharos_disease_id", "doid" ],
-            "GC" : [ "genetic_condition" ]
-        }
+        self.translator = Rosetta (greentConf=configFile, override={ "async" : True })
+        
     def query(self, subject_node, object_type):
-        result = []
-        greent_node_types = self.type2greent (subject_node.node_type)
-        greent_object_types = self.type2greent (object_type)
-        for L in greent_node_types:
-            for R in greent_object_types:
-                translation = Translation (obj=subject_node, type_a=L, type_b=R)
-                logger.debug ("        translation: %s" % translation)
-                data = self.translator.translate (thing=translation.obj,
-                                                  source=translation.type_a,
-                                                  target=translation.type_b)
-                result += data if isinstance(data,list) else []
-            #print ("------> result: {}".format (result))
+        result = [ ]
+        translations = self.translator.get_translations (subject_node, object_type)
+        for translation in translations:
+            data = self.translator.translate (thing=translation.obj,
+                                              source=translation.type_a,
+                                              target=translation.type_b)
+            result += data if isinstance(data,list) else []
         return result, len(result) > 0
-    def support_query(self, subject_node, object_node):
-        pass
-
-    # ---
-    def type2greent0 (self, input_type):
-        result = None
-        intermediate = self.type_to_greent_map[input_type] \
-                       if input_type in self.type_to_greent_map else None
-        print ("inermediate {}".format (intermediate))
-        if intermediate:
-            result = self.greent.translator.mox_resolve[intermediate](None).obj_type \
-                     if intermediate in self.greent.translator.mox_resolve else None
-            
-        print ("-- {}".format (result))
-        return result
-
-    def type2greent (self, input_type):
-        return self.type_to_greent_map[input_type] \
-            if input_type in self.type_to_greent_map else [ ]
