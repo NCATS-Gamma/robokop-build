@@ -25,6 +25,36 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:1964">
+      <data key="d0">HGNC:1964</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:4088">
+      <data key="d0">HGNC:4088</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:4597">
+      <data key="d0">HGNC:4597</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:5295">
+      <data key="d0">HGNC:5295</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:4599">
+      <data key="d0">HGNC:4599</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:4162">
       <data key="d0">HGNC:4162</data>
       <data key="d1">G</data>
@@ -61,8 +91,20 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:894">
+      <data key="d0">HGNC:894</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:11049">
       <data key="d0">HGNC:11049</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:256">
+      <data key="d0">HGNC:256</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -75,6 +117,12 @@
     </node>
     <node id="HGNC:11740">
       <data key="d0">HGNC:11740</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:20692">
+      <data key="d0">HGNC:20692</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -97,6 +145,12 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:9445">
+      <data key="d0">HGNC:9445</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:3373">
       <data key="d0">HGNC:3373</data>
       <data key="d1">G</data>
@@ -115,14 +169,32 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:7955">
+      <data key="d0">HGNC:7955</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:8156">
       <data key="d0">HGNC:8156</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:250">
+      <data key="d0">HGNC:250</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:251">
       <data key="d0">HGNC:251</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:402">
+      <data key="d0">HGNC:402</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -139,8 +211,32 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:4080">
+      <data key="d0">HGNC:4080</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:7208">
+      <data key="d0">HGNC:7208</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:1957">
+      <data key="d0">HGNC:1957</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:2159">
       <data key="d0">HGNC:2159</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:4600">
+      <data key="d0">HGNC:4600</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -157,8 +253,20 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:3025">
+      <data key="d0">HGNC:3025</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:2228">
       <data key="d0">HGNC:2228</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:5286">
+      <data key="d0">HGNC:5286</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -169,8 +277,20 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:404">
+      <data key="d0">HGNC:404</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:10940">
       <data key="d0">HGNC:10940</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:5302">
+      <data key="d0">HGNC:5302</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -187,8 +307,32 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="HGNC:2345">
+      <data key="d0">HGNC:2345</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:5293">
+      <data key="d0">HGNC:5293</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:1959">
+      <data key="d0">HGNC:1959</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="HGNC:2355">
       <data key="d0">HGNC:2355</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:17513">
+      <data key="d0">HGNC:17513</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -225,6 +369,12 @@
     </node>
     <node id="HGNC:11050">
       <data key="d0">HGNC:11050</data>
+      <data key="d1">G</data>
+      <data key="d2">1</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HGNC:4581">
+      <data key="d0">HGNC:4581</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -271,14 +421,14 @@
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:11528">
-      <data key="d0">HGNC:11528</data>
+    <node id="HGNC:4173">
+      <data key="d0">HGNC:4173</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="HGNC:4173">
-      <data key="d0">HGNC:4173</data>
+    <node id="HGNC:10839">
+      <data key="d0">HGNC:10839</data>
       <data key="d1">G</data>
       <data key="d2">1</data>
       <data key="d3">See JSON for details</data>
@@ -302,6 +452,70 @@
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Pheochromocytoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="sudden cardiac arrest (EFO:0004278)">
+      <data key="d0">EFO:0004278</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">sudden cardiac arrest</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Lung Neoplasm (MESH:D008175)">
+      <data key="d0">MESH:D008175</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Lung Neoplasm</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Isodicentric Chromosome 15 Syndrome (MESH:C580205)">
+      <data key="d0">MESH:C580205</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Isodicentric Chromosome 15 Syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="HIV-1 infection (EFO:0000180)">
+      <data key="d0">EFO:0000180</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">HIV-1 infection</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="obesity (DOID:9970)">
+      <data key="d0">DOID:9970</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">obesity</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="AOMS1 (OMIM:605552)">
+      <data key="d0">OMIM:605552</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">AOMS1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="unipolar depression (EFO:0003761)">
+      <data key="d0">EFO:0003761</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">unipolar depression</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="breast carcinoma (EFO:0000305)">
+      <data key="d0">EFO:0000305</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">breast carcinoma</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -345,14 +559,6 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Epilepsy, Rolandic (MESH:D019305)">
-      <data key="d0">MESH:D019305</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Epilepsy, Rolandic</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
     <node id="Landau-Kleffner syndrome (OMIM:245570)">
       <data key="d0">OMIM:245570</data>
       <data key="d1">D</data>
@@ -374,6 +580,14 @@
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Continuous spikes and waves during sleep</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Early-onset epileptic encephalopathy and intellectual disability due to GRIN2A mutation (Orphanet:289266)">
+      <data key="d0">Orphanet:289266</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Early-onset epileptic encephalopathy and intellectual disability due to GRIN2A mutation</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -401,6 +615,62 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="Kidney Calculi (MESH:D007669)">
+      <data key="d0">MESH:D007669</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Kidney Calculi</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Femur Head Necrosis (MESH:D005271)">
+      <data key="d0">MESH:D005271</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Femur Head Necrosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Proopiomelanocortin Deficiency (OMIM:609734)">
+      <data key="d0">OMIM:609734</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Proopiomelanocortin Deficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Depressive Disorder (MESH:D003866)">
+      <data key="d0">MESH:D003866</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Depressive Disorder</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Cerebral Hemorrhage (MESH:D002543)">
+      <data key="d0">MESH:D002543</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Cerebral Hemorrhage</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="long QT syndrome (DOID:2843)">
+      <data key="d0">DOID:2843</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">long QT syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Obesity (OMIM:601665)">
+      <data key="d0">OMIM:601665</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Obesity</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="Hyperprolactinemia (OMIM:615555)">
       <data key="d0">OMIM:615555</data>
       <data key="d1">D</data>
@@ -417,11 +687,83 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="nicotine dependence (DOID:0050742)">
+      <data key="d0">DOID:0050742</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">nicotine dependence</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Small cell lung cancer (OMIM:182280)">
+      <data key="d0">OMIM:182280</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Small cell lung cancer</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hereditary central diabetes insipidus (OMIM:125700)">
+      <data key="d0">OMIM:125700</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hereditary central diabetes insipidus</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Arrhythmias, Cardiac (MESH:D001145)">
+      <data key="d0">MESH:D001145</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Arrhythmias, Cardiac</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Tobacco addiction, susceptibility to (OMIM:188890)">
+      <data key="d0">OMIM:188890</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Tobacco addiction, susceptibility to</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="Parkinsonism-Dystonia, Infantile (OMIM:613135)">
       <data key="d0">OMIM:613135</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Parkinsonism-Dystonia, Infantile</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="esophageal cancer (DOID:5041)">
+      <data key="d0">DOID:5041</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">esophageal cancer</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="lung adenocarcinoma (DOID:3910)">
+      <data key="d0">DOID:3910</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">lung adenocarcinoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Dense deposit disease (Orphanet:93571)">
+      <data key="d0">Orphanet:93571</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Dense deposit disease</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="angioedema (DOID:1558)">
+      <data key="d0">DOID:1558</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">angioedema</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -433,6 +775,22 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="Hyperthyroxinemia, Familial Dysalbuminemic (OMIM:615999)">
+      <data key="d0">OMIM:615999</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hyperthyroxinemia, Familial Dysalbuminemic</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Congenital analbuminemia (OMIM:616000)">
+      <data key="d0">OMIM:616000</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Congenital analbuminemia</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="Atransferrinemia (OMIM:209300)">
       <data key="d0">OMIM:209300</data>
       <data key="d1">D</data>
@@ -441,11 +799,43 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="hereditary hemochromatosis (EFO:0006513)">
+      <data key="d0">EFO:0006513</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">hereditary hemochromatosis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Attention deficit-hyperactivity disorder 7 (OMIM:613003)">
+      <data key="d0">OMIM:613003</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Attention deficit-hyperactivity disorder 7</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="endogenous depression (OMIM:608516)">
+      <data key="d0">OMIM:608516</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">endogenous depression</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="Glutathionuria (OMIM:231950)">
       <data key="d0">OMIM:231950</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Glutathionuria</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="acute myeloid leukemia (DOID:9119)">
+      <data key="d0">DOID:9119</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">acute myeloid leukemia</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -465,6 +855,14 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="Amyotrophic lateral sclerosis type 1 (OMIM:105400)">
+      <data key="d0">OMIM:105400</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Amyotrophic lateral sclerosis type 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="Epilepsy, Myoclonic Juvenile (OMIM:254770)">
       <data key="d0">OMIM:254770</data>
       <data key="d1">D</data>
@@ -481,11 +879,59 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="prostatic hypertrophy (DOID:11132)">
+      <data key="d0">DOID:11132</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">prostatic hypertrophy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Parkinsonian Disorders (MESH:D020734)">
+      <data key="d0">MESH:D020734</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Parkinsonian Disorders</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Galactorrhea (OMIM:230300)">
+      <data key="d0">OMIM:230300</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Galactorrhea</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Pituitary Adenoma, Prolactin-Secreting (OMIM:600634)">
+      <data key="d0">OMIM:600634</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Pituitary Adenoma, Prolactin-Secreting</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Growth Hormone-Secreting Pituitary Adenoma (MESH:D049912)">
+      <data key="d0">MESH:D049912</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Growth Hormone-Secreting Pituitary Adenoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="Rubinstein-Taybi syndrome due to EP300 haploinsufficiency (OMIM:613684)">
       <data key="d0">OMIM:613684</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Rubinstein-Taybi syndrome due to EP300 haploinsufficiency</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="breast carcinoma (DOID:3459)">
+      <data key="d0">DOID:3459</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">breast carcinoma</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -497,11 +943,51 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="medulloblastoma (OMIM:155255)">
+      <data key="d0">OMIM:155255</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">medulloblastoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Squamous cell carcinoma of the head and neck (OMIM:275355)">
+      <data key="d0">OMIM:275355</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Squamous cell carcinoma of the head and neck</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="Rubinstein-Taybi syndrome (DOID:1933)">
       <data key="d0">DOID:1933</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Rubinstein-Taybi syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Stevens-Johnson syndrome (DOID:0050426)">
+      <data key="d0">DOID:0050426</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Stevens-Johnson syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="endometrial cancer (DOID:1380)">
+      <data key="d0">DOID:1380</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">endometrial cancer</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="esophagus squamous cell carcinoma (DOID:3748)">
+      <data key="d0">DOID:3748</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">esophagus squamous cell carcinoma</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -521,11 +1007,19 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="chronic lymphocytic leukemia (EFO:0000095)">
-      <data key="d0">EFO:0000095</data>
+    <node id="cerebral infarction (DOID:3526)">
+      <data key="d0">DOID:3526</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">chronic lymphocytic leukemia</data>
+      <data key="d4">cerebral infarction</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Parkinson Disease, Late-Onset (OMIM:168600)">
+      <data key="d0">OMIM:168600</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Parkinson Disease, Late-Onset</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -537,11 +1031,27 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="Tremor, Hereditary Essential, 1 (OMIM:190300)">
+      <data key="d0">OMIM:190300</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Tremor, Hereditary Essential, 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="Tourette Syndrome (MESH:D005879)">
       <data key="d0">MESH:D005879</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Tourette Syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="pathological gambling (OMIM:606349)">
+      <data key="d0">OMIM:606349</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">pathological gambling</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -553,11 +1063,115 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="morbid obesity (DOID:11981)">
+      <data key="d0">DOID:11981</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">morbid obesity</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Bulimia nervosa 2 (OMIM:610269)">
+      <data key="d0">OMIM:610269</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Bulimia nervosa 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="WAGR syndrome (OMIM:194072)">
       <data key="d0">OMIM:194072</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">WAGR syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Obsessive-Compulsive Disorder (OMIM:164230)">
+      <data key="d0">OMIM:164230</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Obsessive-Compulsive Disorder</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="BULN1 (OMIM:607499)">
+      <data key="d0">OMIM:607499</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">BULN1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="obesity (EFO:0001073)">
+      <data key="d0">EFO:0001073</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">obesity</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="middle cerebral artery infarction (DOID:3525)">
+      <data key="d0">DOID:3525</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">middle cerebral artery infarction</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Congenital communicating hydrocephalus (Orphanet:269505)">
+      <data key="d0">Orphanet:269505</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Congenital communicating hydrocephalus</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hydrocephalus, Nonsyndromic, Autosomal Recessive 2 (OMIM:615219)">
+      <data key="d0">OMIM:615219</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hydrocephalus, Nonsyndromic, Autosomal Recessive 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="nicotine dependence (EFO:0003768)">
+      <data key="d0">EFO:0003768</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">nicotine dependence</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="lung adenocarcinoma (EFO:0000571)">
+      <data key="d0">EFO:0000571</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">lung adenocarcinoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="lung carcinoma (EFO:0001071)">
+      <data key="d0">EFO:0001071</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">lung carcinoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="squamous cell lung carcinoma (EFO:0000708)">
+      <data key="d0">EFO:0000708</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">squamous cell lung carcinoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Rare carcinoma of pancreas (Orphanet:217074)">
+      <data key="d0">Orphanet:217074</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Rare carcinoma of pancreas</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -577,6 +1191,38 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="Attention deficit hyperactivity disorder (OMIM:143465)">
+      <data key="d0">OMIM:143465</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Attention deficit hyperactivity disorder</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="CIHL (OMIM:613290)">
+      <data key="d0">OMIM:613290</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">CIHL</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="PAND1 (OMIM:167870)">
+      <data key="d0">OMIM:167870</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">PAND1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hepatocellular carcinoma (OMIM:114550)">
+      <data key="d0">OMIM:114550</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hepatocellular carcinoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <node id="22q11.2 deletion syndrome (Orphanet:567)">
       <data key="d0">Orphanet:567</data>
       <data key="d1">D</data>
@@ -593,11 +1239,43 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Obesity (OMIM:601665)">
-      <data key="d0">OMIM:601665</data>
+    <node id="Periodic Fever, Menstrual Cycle-Dependent (OMIM:614674)">
+      <data key="d0">OMIM:614674</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Obesity</data>
+      <data key="d4">Periodic Fever, Menstrual Cycle-Dependent</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="metabolic syndrome (EFO:0000195)">
+      <data key="d0">EFO:0000195</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">metabolic syndrome</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="stroke (EFO:0000712)">
+      <data key="d0">EFO:0000712</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">stroke</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Alcohol Sensitivity, Acute (OMIM:610251)">
+      <data key="d0">OMIM:610251</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Alcohol Sensitivity, Acute</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="brain aneurysm (EFO:0003870)">
+      <data key="d0">EFO:0003870</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">brain aneurysm</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -622,6 +1300,54 @@
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Epilepsy, nocturnal frontal lobe, type 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Angiomatoid Fibrous Histiocytoma (OMIM:612160)">
+      <data key="d0">OMIM:612160</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Angiomatoid Fibrous Histiocytoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="ANON1 (OMIM:606788)">
+      <data key="d0">OMIM:606788</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">ANON1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="small cell lung carcinoma (EFO:0000702)">
+      <data key="d0">EFO:0000702</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">small cell lung carcinoma</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="pituitary apoplexy (DOID:1129)">
+      <data key="d0">DOID:1129</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">pituitary apoplexy</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Deafness, autosomal dominant 68 (OMIM:616707)">
+      <data key="d0">OMIM:616707</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Deafness, autosomal dominant 68</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="autosomal dominant nonsyndromic deafness (DOID:0050564)">
+      <data key="d0">DOID:0050564</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">autosomal dominant nonsyndromic deafness</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -657,11 +1383,19 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="gout (EFO:0004274)">
-      <data key="d0">EFO:0004274</data>
+    <node id="Testicular Germ Cell Tumor (EFO:1000566)">
+      <data key="d0">EFO:1000566</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">gout</data>
+      <data key="d4">Testicular Germ Cell Tumor</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="estrogen-receptor negative breast cancer (EFO:1000650)">
+      <data key="d0">EFO:1000650</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">estrogen-receptor negative breast cancer</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -697,11 +1431,19 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="non-Hodgkin lymphoma (DOID:0060060)">
-      <data key="d0">DOID:0060060</data>
+    <node id="Non-alcoholic Fatty Liver Disease (MESH:D065626)">
+      <data key="d0">MESH:D065626</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">non-Hodgkin lymphoma</data>
+      <data key="d4">Non-alcoholic Fatty Liver Disease</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Carcinoma, Non-Small-Cell Lung (MESH:D002289)">
+      <data key="d0">MESH:D002289</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Carcinoma, Non-Small-Cell Lung</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -710,6 +1452,14 @@
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Fatty Liver, Alcoholic</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Anxiety (OMIM:607834)">
+      <data key="d0">OMIM:607834</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Anxiety</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -769,11 +1519,11 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Follicle-stimulating hormone deficiency, isolated (OMIM:229070)">
-      <data key="d0">OMIM:229070</data>
+    <node id="lateral medullary syndrome (DOID:3522)">
+      <data key="d0">DOID:3522</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Follicle-stimulating hormone deficiency, isolated</data>
+      <data key="d4">lateral medullary syndrome</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -782,6 +1532,22 @@
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">Parkinson disease 1</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Parkinson Disease 4, Autosomal Dominant (OMIM:605543)">
+      <data key="d0">OMIM:605543</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Parkinson Disease 4, Autosomal Dominant</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Hereditary late-onset Parkinson disease (Orphanet:411602)">
+      <data key="d0">Orphanet:411602</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Hereditary late-onset Parkinson disease</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -809,11 +1575,19 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="acute lymphoblastic leukemia (EFO:0000220)">
-      <data key="d0">EFO:0000220</data>
+    <node id="Dementia, Lewy Body (OMIM:127750)">
+      <data key="d0">OMIM:127750</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">acute lymphoblastic leukemia</data>
+      <data key="d4">Dementia, Lewy Body</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Growth Hormone Deficiency, Isolated Partial (OMIM:615925)">
+      <data key="d0">OMIM:615925</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Growth Hormone Deficiency, Isolated Partial</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -833,27 +1607,11 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
-    <node id="Kallmann syndrome (DOID:3614)">
-      <data key="d0">DOID:3614</data>
+    <node id="Ventricular septal defect 1 (OMIM:614429)">
+      <data key="d0">OMIM:614429</data>
       <data key="d1">D</data>
       <data key="d2">2</data>
-      <data key="d4">Kallmann syndrome</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="hypogonadotropic hypogonadism (DOID:0090070)">
-      <data key="d0">DOID:0090070</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">hypogonadotropic hypogonadism</data>
-      <data key="d5">See JSON for details</data>
-      <data key="d3">See JSON for details</data>
-    </node>
-    <node id="Hypogonadotropic hypogonadism 11 with or without anosmia (OMIM:614840)">
-      <data key="d0">OMIM:614840</data>
-      <data key="d1">D</data>
-      <data key="d2">2</data>
-      <data key="d4">Hypogonadotropic hypogonadism 11 with or without anosmia</data>
+      <data key="d4">Ventricular septal defect 1</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -862,6 +1620,38 @@
       <data key="d1">D</data>
       <data key="d2">2</data>
       <data key="d4">46,XY partial gonadal dysgenesis</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="atrial heart septal defect 2 (OMIM:607941)">
+      <data key="d0">OMIM:607941</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">atrial heart septal defect 2</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="familial atrial fibrillation (DOID:0050650)">
+      <data key="d0">DOID:0050650</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">familial atrial fibrillation</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Atrioventricular septal defect 4 (OMIM:614430)">
+      <data key="d0">OMIM:614430</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Atrioventricular septal defect 4</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
+    <node id="Tetralogy of Fallot (OMIM:187500)">
+      <data key="d0">OMIM:187500</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">Tetralogy of Fallot</data>
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
@@ -913,7 +1703,45 @@
       <data key="d5">See JSON for details</data>
       <data key="d3">See JSON for details</data>
     </node>
+    <node id="estrogen-receptor positive breast cancer (EFO:1000649)">
+      <data key="d0">EFO:1000649</data>
+      <data key="d1">D</data>
+      <data key="d2">2</data>
+      <data key="d4">estrogen-receptor positive breast cancer</data>
+      <data key="d5">See JSON for details</data>
+      <data key="d3">See JSON for details</data>
+    </node>
     <edge source="DOID:0050741" target="HGNC:6834">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:1964">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:4088">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:4597">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:5295">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:4599">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
@@ -955,11 +1783,29 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:894">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:11049">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:256">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:256">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
     </edge>
     <edge source="DOID:0050741" target="HGNC:399">
       <data key="d6">queried</data>
@@ -979,6 +1825,12 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">1</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:20692">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:4251">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
@@ -992,6 +1844,12 @@
       <data key="d9">0</data>
     </edge>
     <edge source="DOID:0050741" target="HGNC:4075">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:9445">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
@@ -1021,6 +1879,18 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:7955">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:7955">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:8156">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
@@ -1033,6 +1903,24 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">1</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:250">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:250">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:250">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">2</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:251">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
@@ -1044,6 +1932,12 @@
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:402">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
     </edge>
     <edge source="DOID:0050741" target="HGNC:3024">
       <data key="d6">queried</data>
@@ -1057,7 +1951,37 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:4080">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:7208">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:1957">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:1957">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:2159">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:4600">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
@@ -1075,6 +1999,12 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:3025">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:2228">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
@@ -1087,13 +2017,37 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">1</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:5286">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:18129">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:404">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:404">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:10940">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:5302">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
@@ -1117,7 +2071,43 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:2345">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:5293">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:5293">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:1959">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:1959">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">1</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:2355">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="HGNC:17513">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
@@ -1183,6 +2173,12 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">1</data>
     </edge>
+    <edge source="DOID:0050741" target="HGNC:4581">
+      <data key="d6">queried</data>
+      <data key="d7">pharos</data>
+      <data key="d8">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="DOID:0050741" target="HGNC:18243">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
@@ -1225,13 +2221,13 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="HGNC:11528">
+    <edge source="DOID:0050741" target="HGNC:4173">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="HGNC:4173">
+    <edge source="DOID:0050741" target="HGNC:10839">
       <data key="d6">queried</data>
       <data key="d7">pharos</data>
       <data key="d8">See JSON for details</data>
@@ -1243,49 +2239,37 @@
       <data key="d8">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="Leber Congenital Amaurosis 13 (OMIM:612712)">
+    <edge source="DOID:0050741" target="esophageal cancer (DOID:5041)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="polycystic ovary syndrome (DOID:11612)">
+    <edge source="DOID:0050741" target="metabolic syndrome (EFO:0000195)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="chronic lymphocytic leukemia (EFO:0000095)">
+    <edge source="DOID:0050741" target="Dementia, Lewy Body (OMIM:127750)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="common variable immunodeficiency (DOID:12177)">
+    <edge source="DOID:0050741" target="Bulimia nervosa 2 (OMIM:610269)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="gout (EFO:0004274)">
+    <edge source="DOID:0050741" target="morbid obesity (DOID:11981)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="22q11.2 deletion syndrome (Orphanet:567)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="Retinitis Pigmentosa (OMIM:268000)">
+    <edge source="DOID:0050741" target="Tetralogy of Fallot (OMIM:187500)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
@@ -1297,61 +2281,13 @@
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="hyperhomocysteinemia (DOID:9279)">
+    <edge source="DOID:0050741" target="Leber Congenital Amaurosis 13 (OMIM:612712)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="DOID:0050741" target="acute lymphoblastic leukemia (EFO:0000220)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="Pheochromocytoma (OMIM:171300)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="fatty liver disease (DOID:9452)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="Obesity (OMIM:601665)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="autosomal recessive early-onset Parkinson disease 15 (OMIM:260300)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="Epileptic Encephalopathy, Early Infantile, 19 (OMIM:615744)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="Wilson disease (OMIM:277900)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="Epilepsy, Idiopathic Generalized, Susceptibility To, 13 (OMIM:611136)">
-      <data key="d6">support</data>
-      <data key="d7">chemotext</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="DOID:0050741" target="sudden infant death syndrome (OMIM:272120)">
+    <edge source="DOID:0050741" target="Parkinson Disease 4, Autosomal Dominant (OMIM:605543)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
@@ -1363,13 +2299,313 @@
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="DOID:0050741" target="hyperhomocysteinemia (DOID:9279)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="stroke (EFO:0000712)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="small cell lung carcinoma (EFO:0000702)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Obesity (OMIM:601665)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Tobacco addiction, susceptibility to (OMIM:188890)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Amyotrophic lateral sclerosis type 1 (OMIM:105400)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="polycystic ovary syndrome (DOID:11612)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Epilepsy, Idiopathic Generalized, Susceptibility To, 13 (OMIM:611136)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="AOMS1 (OMIM:605552)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Dense deposit disease (Orphanet:93571)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="sudden cardiac arrest (EFO:0004278)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Wilson disease (OMIM:277900)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="medulloblastoma (OMIM:155255)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="middle cerebral artery infarction (DOID:3525)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="angioedema (DOID:1558)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="prostatic hypertrophy (DOID:11132)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="cerebral infarction (DOID:3526)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="22q11.2 deletion syndrome (Orphanet:567)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Pituitary Adenoma, Prolactin-Secreting (OMIM:600634)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="lung carcinoma (EFO:0001071)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="sudden infant death syndrome (OMIM:272120)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Hydrocephalus, Nonsyndromic, Autosomal Recessive 2 (OMIM:615219)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="obesity (EFO:0001073)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Pheochromocytoma (OMIM:171300)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="DOID:0050741" target="Gaucher's disease (DOID:1926)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="DOID:0050741" target="brain aneurysm (EFO:0003870)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Ventricular septal defect 1 (OMIM:614429)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="atrial heart septal defect 2 (OMIM:607941)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Atrioventricular septal defect 4 (OMIM:614430)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Tremor, Hereditary Essential, 1 (OMIM:190300)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Retinitis Pigmentosa (OMIM:268000)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="breast carcinoma (DOID:3459)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Small cell lung cancer (OMIM:182280)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="breast carcinoma (EFO:0000305)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="endometrial cancer (DOID:1380)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Hepatocellular carcinoma (OMIM:114550)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="acute myeloid leukemia (DOID:9119)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="fatty liver disease (DOID:9452)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="DOID:0050741" target="DiGeorge syndrome (OMIM:188400)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="common variable immunodeficiency (DOID:12177)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Stevens-Johnson syndrome (DOID:0050426)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="nicotine dependence (DOID:0050742)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Epileptic Encephalopathy, Early Infantile, 19 (OMIM:615744)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Rare carcinoma of pancreas (Orphanet:217074)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Parkinson Disease, Late-Onset (OMIM:168600)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="obesity (DOID:9970)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="BULN1 (OMIM:607499)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="nicotine dependence (EFO:0003768)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="autosomal recessive early-onset Parkinson disease 15 (OMIM:260300)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="long QT syndrome (DOID:2843)">
+      <data key="d6">support</data>
+      <data key="d7">chemotext</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="DOID:0050741" target="Hereditary central diabetes insipidus (OMIM:125700)">
       <data key="d6">support</data>
       <data key="d7">chemotext</data>
       <data key="d10">See JSON for details</data>
@@ -1383,6 +2619,62 @@
       <data key="d9">0</data>
     </edge>
     <edge source="HGNC:6834" target="Pheochromocytoma (OMIM:171300)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1964" target="sudden cardiac arrest (EFO:0004278)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1964" target="Lung Neoplasm (MESH:D008175)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4088" target="Isodicentric Chromosome 15 Syndrome (MESH:C580205)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4597" target="HIV-1 infection (EFO:0000180)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5295" target="obesity (DOID:9970)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5295" target="AOMS1 (OMIM:605552)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4599" target="unipolar depression (EFO:0003761)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4599" target="breast carcinoma (EFO:0000305)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1424,7 +2716,7 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:4585" target="Epilepsy, Rolandic (MESH:D019305)">
+    <edge source="HGNC:4585" target="HIV-1 infection (EFO:0000180)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1432,6 +2724,13 @@
       <data key="d9">0</data>
     </edge>
     <edge source="HGNC:4585" target="Landau-Kleffner syndrome (OMIM:245570)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4585" target="unipolar depression (EFO:0003761)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1446,6 +2745,13 @@
       <data key="d9">0</data>
     </edge>
     <edge source="HGNC:4585" target="Continuous spikes and waves during sleep (Orphanet:725)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4585" target="Early-onset epileptic encephalopathy and intellectual disability due to GRIN2A mutation (Orphanet:289266)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1473,6 +2779,55 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:9201" target="Kidney Calculi (MESH:D007669)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9201" target="Femur Head Necrosis (MESH:D005271)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9201" target="Proopiomelanocortin Deficiency (OMIM:609734)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9201" target="Depressive Disorder (MESH:D003866)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9201" target="Cerebral Hemorrhage (MESH:D002543)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9201" target="long QT syndrome (DOID:2843)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9201" target="Obesity (OMIM:601665)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:3023" target="Hyperprolactinemia (OMIM:615555)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
@@ -1487,7 +2842,70 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:3023" target="nicotine dependence (DOID:0050742)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:894" target="Small cell lung cancer (OMIM:182280)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:894" target="Hereditary central diabetes insipidus (OMIM:125700)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:894" target="Arrhythmias, Cardiac (MESH:D001145)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11049" target="Tobacco addiction, susceptibility to (OMIM:188890)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:11049" target="Parkinsonism-Dystonia, Infantile (OMIM:613135)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:256" target="esophageal cancer (DOID:5041)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:399" target="lung adenocarcinoma (DOID:3910)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:399" target="Dense deposit disease (Orphanet:93571)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:399" target="angioedema (DOID:1558)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1501,7 +2919,77 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:399" target="Hyperthyroxinemia, Familial Dysalbuminemic (OMIM:615999)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:399" target="Depressive Disorder (MESH:D003866)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:399" target="Congenital analbuminemia (OMIM:616000)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11740" target="lung adenocarcinoma (DOID:3910)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:11740" target="Atransferrinemia (OMIM:209300)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11740" target="obesity (DOID:9970)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11740" target="hereditary hemochromatosis (EFO:0006513)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11740" target="fatty liver disease (DOID:9452)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:20692" target="Depressive Disorder (MESH:D003866)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:20692" target="Attention deficit-hyperactivity disorder 7 (OMIM:613003)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:20692" target="endogenous depression (OMIM:608516)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1522,6 +3010,13 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:238" target="acute myeloid leukemia (DOID:9119)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:4075" target="Epileptic Encephalopathy, Early Infantile, 6 (OMIM:607208)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
@@ -1530,6 +3025,13 @@
       <data key="d9">0</data>
     </edge>
     <edge source="HGNC:4075" target="Epileptic Encephalopathy, Early Infantile, 19 (OMIM:615744)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4075" target="Amyotrophic lateral sclerosis type 1 (OMIM:105400)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1550,7 +3052,56 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:9445" target="prostatic hypertrophy (DOID:11132)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9445" target="Parkinsonian Disorders (MESH:D020734)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9445" target="Galactorrhea (OMIM:230300)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9445" target="Pituitary Adenoma, Prolactin-Secreting (OMIM:600634)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9445" target="Growth Hormone-Secreting Pituitary Adenoma (MESH:D049912)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:9445" target="Hyperprolactinemia (OMIM:615555)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:3373" target="Rubinstein-Taybi syndrome due to EP300 haploinsufficiency (OMIM:613684)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3373" target="breast carcinoma (DOID:3459)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1564,7 +3115,70 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:3373" target="lung adenocarcinoma (DOID:3910)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3373" target="medulloblastoma (OMIM:155255)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3373" target="Squamous cell carcinoma of the head and neck (OMIM:275355)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:3373" target="Rubinstein-Taybi syndrome (DOID:1933)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3373" target="Stevens-Johnson syndrome (DOID:0050426)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3373" target="Small cell lung cancer (OMIM:182280)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3373" target="endometrial cancer (DOID:1380)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3373" target="obesity (DOID:9970)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3373" target="esophagus squamous cell carcinoma (DOID:3748)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:8820" target="Parkinsonian Disorders (MESH:D020734)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1585,7 +3199,49 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:8156" target="chronic lymphocytic leukemia (EFO:0000095)">
+    <edge source="HGNC:7955" target="cerebral infarction (DOID:3526)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:8156" target="HIV-1 infection (EFO:0000180)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:250" target="obesity (DOID:9970)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:250" target="cerebral infarction (DOID:3526)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:250" target="esophagus squamous cell carcinoma (DOID:3748)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:250" target="esophageal cancer (DOID:5041)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:251" target="Parkinson Disease, Late-Onset (OMIM:168600)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1599,7 +3255,28 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:402" target="Parkinsonian Disorders (MESH:D020734)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3024" target="Tremor, Hereditary Essential, 1 (OMIM:190300)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:3024" target="Tourette Syndrome (MESH:D005879)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:3024" target="pathological gambling (OMIM:606349)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1613,6 +3290,20 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:1033" target="morbid obesity (DOID:11981)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1033" target="Bulimia nervosa 2 (OMIM:610269)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:1033" target="WAGR syndrome (OMIM:194072)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
@@ -1620,7 +3311,140 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:1033" target="Obsessive-Compulsive Disorder (OMIM:164230)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1033" target="BULN1 (OMIM:607499)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1033" target="obesity (EFO:0001073)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1033" target="nicotine dependence (DOID:0050742)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1033" target="Tobacco addiction, susceptibility to (OMIM:188890)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4080" target="middle cerebral artery infarction (DOID:3525)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7208" target="Congenital communicating hydrocephalus (Orphanet:269505)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:7208" target="Hydrocephalus, Nonsyndromic, Autosomal Recessive 2 (OMIM:615219)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1957" target="nicotine dependence (DOID:0050742)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1957" target="Tobacco addiction, susceptibility to (OMIM:188890)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1957" target="nicotine dependence (EFO:0003768)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1957" target="lung adenocarcinoma (EFO:0000571)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1957" target="lung carcinoma (EFO:0001071)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1957" target="squamous cell lung carcinoma (EFO:0000708)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2159" target="obesity (DOID:9970)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:2159" target="Huntington Disease (OMIM:143100)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2159" target="Rare carcinoma of pancreas (Orphanet:217074)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4600" target="unipolar depression (EFO:0003761)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4600" target="HIV-1 infection (EFO:0000180)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4600" target="Small cell lung cancer (OMIM:182280)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1655,7 +3479,42 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:3025" target="Attention deficit hyperactivity disorder (OMIM:143465)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2228" target="CIHL (OMIM:613290)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2228" target="breast carcinoma (DOID:3459)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2228" target="PAND1 (OMIM:167870)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:2228" target="Pheochromocytoma (OMIM:171300)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2228" target="Hepatocellular carcinoma (OMIM:114550)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1676,7 +3535,70 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:5286" target="Periodic Fever, Menstrual Cycle-Dependent (OMIM:614674)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:18129" target="esophageal cancer (DOID:5041)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:18129" target="Obesity (OMIM:601665)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:18129" target="Depressive Disorder (MESH:D003866)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:404" target="metabolic syndrome (EFO:0000195)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:404" target="esophagus squamous cell carcinoma (DOID:3748)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:404" target="stroke (EFO:0000712)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:404" target="Alcohol Sensitivity, Acute (OMIM:610251)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:404" target="esophageal cancer (DOID:5041)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:404" target="brain aneurysm (EFO:0003870)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1690,7 +3612,21 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:5302" target="Depressive Disorder (MESH:D003866)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:4250" target="Glutathionuria (OMIM:231950)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1958" target="Tobacco addiction, susceptibility to (OMIM:188890)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1711,7 +3647,112 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:1958" target="nicotine dependence (EFO:0003768)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2345" target="Angiomatoid Fibrous Histiocytoma (OMIM:612160)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5293" target="Obsessive-Compulsive Disorder (OMIM:164230)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5293" target="obesity (DOID:9970)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5293" target="endogenous depression (OMIM:608516)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:5293" target="ANON1 (OMIM:606788)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1959" target="Tobacco addiction, susceptibility to (OMIM:188890)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1959" target="nicotine dependence (DOID:0050742)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1959" target="lung carcinoma (EFO:0001071)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1959" target="lung adenocarcinoma (EFO:0000571)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:1959" target="small cell lung carcinoma (EFO:0000702)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2355" target="pituitary apoplexy (DOID:1129)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2355" target="Depressive Disorder (MESH:D003866)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:2355" target="autosomal dominant nocturnal frontal lobe epilepsy (DOID:0060681)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:17513" target="Deafness, autosomal dominant 68 (OMIM:616707)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:17513" target="autosomal dominant nonsyndromic deafness (DOID:0050564)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1746,7 +3787,14 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:16714" target="gout (EFO:0004274)">
+    <edge source="HGNC:16714" target="Testicular Germ Cell Tumor (EFO:1000566)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:16714" target="estrogen-receptor negative breast cancer (EFO:1000650)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1795,14 +3843,28 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:2631" target="non-Hodgkin lymphoma (DOID:0060060)">
+    <edge source="HGNC:2631" target="Lung Neoplasm (MESH:D008175)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:2631" target="gout (EFO:0004274)">
+    <edge source="HGNC:2631" target="Non-alcoholic Fatty Liver Disease (MESH:D065626)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2631" target="Carcinoma, Non-Small-Cell Lung (MESH:D002289)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:2631" target="obesity (DOID:9970)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1823,7 +3885,42 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:2631" target="Hepatocellular carcinoma (OMIM:114550)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11050" target="Anxiety (OMIM:607834)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11050" target="Obsessive-Compulsive Disorder (OMIM:164230)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:11050" target="sudden infant death syndrome (OMIM:272120)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11050" target="Depressive Disorder (MESH:D003866)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4581" target="Small cell lung cancer (OMIM:182280)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1879,7 +3976,7 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:3964" target="Follicle-stimulating hormone deficiency, isolated (OMIM:229070)">
+    <edge source="HGNC:3964" target="lateral medullary syndrome (DOID:3522)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1887,6 +3984,27 @@
       <data key="d9">0</data>
     </edge>
     <edge source="HGNC:11138" target="Parkinson disease 1 (OMIM:168601)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11138" target="Parkinson Disease 4, Autosomal Dominant (OMIM:605543)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11138" target="Hereditary late-onset Parkinson disease (Orphanet:411602)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:11138" target="Parkinsonian Disorders (MESH:D020734)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1907,6 +4025,13 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:11138" target="Parkinson Disease, Late-Onset (OMIM:168600)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:11138" target="Wilson disease (OMIM:277900)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
@@ -1914,7 +4039,21 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:8781" target="acute lymphoblastic leukemia (EFO:0000220)">
+    <edge source="HGNC:11138" target="Dementia, Lewy Body (OMIM:127750)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:8781" target="acute myeloid leukemia (DOID:9119)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4267" target="Growth Hormone Deficiency, Isolated Partial (OMIM:615925)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1935,21 +4074,14 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11528" target="Kallmann syndrome (DOID:3614)">
+    <edge source="HGNC:4173" target="Ventricular septal defect 1 (OMIM:614429)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
-    <edge source="HGNC:11528" target="hypogonadotropic hypogonadism (DOID:0090070)">
-      <data key="d6">queried</data>
-      <data key="d7">biolink</data>
-      <data key="d10">See JSON for details</data>
-      <data key="d11">See JSON for details</data>
-      <data key="d9">0</data>
-    </edge>
-    <edge source="HGNC:11528" target="Hypogonadotropic hypogonadism 11 with or without anosmia (OMIM:614840)">
+    <edge source="HGNC:4173" target="Testicular Germ Cell Tumor (EFO:1000566)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -1963,7 +4095,42 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:4173" target="atrial heart septal defect 2 (OMIM:607941)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4173" target="familial atrial fibrillation (DOID:0050650)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4173" target="Atrioventricular septal defect 4 (OMIM:614430)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:4173" target="Tetralogy of Fallot (OMIM:187500)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:4173" target="Testicular anomalies with or without congenital heart disease (OMIM:615542)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:10839" target="AOMS1 (OMIM:605552)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>
@@ -2005,7 +4172,21 @@
       <data key="d11">See JSON for details</data>
       <data key="d9">0</data>
     </edge>
+    <edge source="HGNC:15465" target="unipolar depression (EFO:0003761)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
     <edge source="HGNC:15465" target="Leber Congenital Amaurosis 13 (OMIM:612712)">
+      <data key="d6">queried</data>
+      <data key="d7">biolink</data>
+      <data key="d10">See JSON for details</data>
+      <data key="d11">See JSON for details</data>
+      <data key="d9">0</data>
+    </edge>
+    <edge source="HGNC:15465" target="estrogen-receptor positive breast cancer (EFO:1000649)">
       <data key="d6">queried</data>
       <data key="d7">biolink</data>
       <data key="d10">See JSON for details</data>

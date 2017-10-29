@@ -1,7 +1,7 @@
 from ontobio.ontol_factory import OntologyFactory
 
 #TODO: LOOKUP all the terms that map to this... or use an ancestor call that doesn't require such stuff (i.e. that handles this)
-GENETIC_DISEASE=['DOID:630','http://purl.obolibrary.org/obo/EFO_0000508']
+GENETIC_DISEASE=('DOID:630','http://purl.obolibrary.org/obo/EFO_0000508')
 #GENETIC_DISEASE='EFO:0000508'
 MONOGENIC_DISEASE='DOID:0050177'
 
@@ -40,7 +40,7 @@ class Mondo():
         else:
             obj_ids = self.ont.xrefs(obj_id, bidirectional=True)
         return obj_ids
-    def has_ancestor(self,obj, term):
+    def has_ancestor(self,obj, terms):
         """Given an object and a term in MONDO, determine whether the term is an ancestor of the object.
         
         The object is a KNode representing a disease.
@@ -57,16 +57,13 @@ class Mondo():
         return_objects=[]
         for obj_id in obj_ids:
             ancestors = self.ont.ancestors(obj_id)
-            if GENETIC_DISEASE in ancestors:
-                return_objects.append( obj_id )
+            for term in terms:
+                if term in ancestors:
+                    return_objects.append( obj_id )
         return len(return_objects) > 0, return_objects
     def is_genetic_disease(self,obj):
         """Checks mondo to find whether the subject has DOID:630 as an ancestor"""
-        for g_disease in GENETIC_DISEASE:
-            has, objs = self.has_ancestor(obj,g_disease)
-            if has:
-                return has,objs
-        return False,[]
+        return self.has_ancestor(obj,GENETIC_DISEASE)
     def is_monogenic_disease(self,obj):
         """Checks mondo to find whether the subject has DOID:0050177 as an ancestor"""
         return self.has_ancestor(obj, MONOGENIC_DISEASE)
@@ -74,8 +71,9 @@ class Mondo():
 def test():
     m = Mondo()
     from reasoner.graph_components import KNode,KEdge
-    #alc_sens = KNode('OMIM:610251','D')
-    #print(m.is_genetic_disease(alc_sens))
+    alc_sens = KNode('OMIM:610251','D')
+    print(m.is_genetic_disease(alc_sens))
+    print('------')
     huntingtons = KNode('DOID:12858','D')
     print(m.is_genetic_disease(huntingtons))
 
