@@ -4,7 +4,8 @@
 DRUG='Drug'
 GENE='Gene'
 PATHWAY='Pathway'
-FUNCTION='Function'
+PROCESS='BiologicalProcess'
+CELL='Cell'
 ANATOMY='Anatomy'
 PHENOTYPE='Phenotype'
 DISEASE='Disease'
@@ -12,7 +13,7 @@ GENETIC_CONDITION='GeneticCondition'
 DRUG_NAME = 'NAME.DRUG'
 DISEASE_NAME = 'NAME.DISEASE'
 
-user_types = [DRUG, GENE, PATHWAY, FUNCTION, ANATOMY, PHENOTYPE, DISEASE, GENETIC_CONDITION, DRUG_NAME, DISEASE_NAME]
+user_types = [DRUG, GENE, PATHWAY, PROCESS, CELL, ANATOMY, PHENOTYPE, DISEASE, GENETIC_CONDITION, DRUG_NAME, DISEASE_NAME]
 
 class Transition():
     def __init__(self, last_type, next_type, min_path_length, max_path_length):
@@ -37,6 +38,7 @@ class Transition():
         for i in range(t_number):
             withline += ', d{0}, Syn{0}'.format(i)
         withline += ',\n'
+        #TODO: now synonym is a property, switch to use that rather than type.
         withline += '''reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN weight ELSE weight + 1 END ) as d{0},
 reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN weight + 1 ELSE weight END ) as Syn{0}'''.format(t_number)
         if (self.min_path_length == self.max_path_length):
@@ -66,6 +68,9 @@ class LinearUserQuery():
         self.node_types=[ ]
         self.add_node( start_type )
         self.transitions = [ ]
+    def get_start_node( self ):
+        node = self.node_types[0]
+        return '{0}:{1}'.format(node,self.start_value), node
     def add_node(self,node_type):
         """Add a node to the node list, validating the type"""
         if node_type not in user_types:
@@ -131,8 +136,12 @@ class LinearUserQuery():
         dsum = '+'.join( dvars )
         ssum = '+'.join( svars )
         sumup = '''WITH {0}, {1}, {2},\n {3} as TD,\n {4} as TS'''.format(pathstring, dstring, sstring, dsum, ssum)
-        rets = 'RETURN {0}, TD, TS ORDER BY TD ASC, TS ASC LIMIT 5'.format(pathstring)
+        next_width = '''WITH {0}, TD, TS,'''.format(pathstring)
+        getmin = ' min(TD) as minTD\n WHERE TD = minTD'
+        rets = 'RETURN {0} ORDER BY TS ASC LIMIT 5'.format(pathstring)
         cypherbuffer.append(sumup)
+        cypherbuffer.append(next_width)
+        cypherbuffer.append(getmin)
         cypherbuffer.append(rets)
         return '\n'.join(cypherbuffer)
 
@@ -164,7 +173,8 @@ def test_3a():
     query = LinearUserQuery("imatinib", DRUG_NAME )
     query.add_transition(DRUG)
     query.add_transition(GENE)
-    query.add_transition(FUNCTION)
+    query.add_transition(PROCESS)
+    query.add_transition(CELL)
     cypher = query.generate_cypher()
     print(cypher)
 

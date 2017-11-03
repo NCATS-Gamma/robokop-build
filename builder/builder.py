@@ -1,20 +1,21 @@
 from reasoner.graph_components import KNode,KEdge,elements_to_json
-from userquery import LinearUserQuery
+from greent.rosetta import Rosetta
+import userquery
 import argparse
 import networkx as nx
 from networkx.readwrite.json_graph.node_link import node_link_data
 import logging
 import sys
 
-#TODO: Need to sort out the representation of nodes/edges more carefullly.  
 class KnowledgeGraph:
-    def __init__(self, userquery):
+    def __init__(self, userquery, rosetta):
         """KnowledgeGraph is a local version of the query results. 
         After full processing, it gets pushed to neo4j.
         """
         self.logger = logging.getLogger('application')
         self.graph = nx.MultiDiGraph()
         self.userquery = userquery
+        self.rosetta = rosetta
     def add_node(self,node,layer_number):
         """Add an unattached node to a particular query layer.
         
@@ -34,6 +35,12 @@ class KnowledgeGraph:
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
         #GreenT wants a cypherquery to find transitions, and a starting point
+        cypher = self.userquery.generate_cypher()
+        identifier, ntype = self.userquery.get_start_node()
+        start_node = KNode( identifier, ntype )
+        #Fire this to rosetta, collect the result
+        resultgraph = self.rosetta.graph([(None, start_node)],query=cypher)
+        print(resultgraph)
         self.logger.debug('Query Complete')
     def get_nodes(self, layer_number):
         """Returns the nodes in the given layer of the graph"""
@@ -143,9 +150,9 @@ class KnowledgeGraph:
 
 def run_query(query, output_path):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
-    kgraph = KnowledgeGraph(query)
-    #kgraph = KnowledgeGraph(query, worldgraph)
-    #kgraph.execute()
+    rosetta = Rosetta()
+    kgraph = KnowledgeGraph( query, rosetta )
+    kgraph.execute()
     #kgraph.prune()
     #kgraph.support()
     #kgraph.export('%s.graphml' % output_path, 'graphml')
@@ -199,6 +206,15 @@ def main_test():
         output = 'examples/example.%s' % doid
         run_query(query, output, worldgraph)
 
+def question1(diseasename):
+    query = userquery.LinearUserQuery(diseasename,userquery.DISEASE_NAME)
+    query.add_transition(userquery.DISEASE)
+    query.add_transition(userquery.GENE)
+    query.add_transition(userquery.GENETIC_CONDITION)
+    run_query(query,'.')
+   
+def test():
+    question1('Ebola Virus Infection')
 
 if __name__ == '__main__':
-    main_test()
+    test()
