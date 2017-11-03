@@ -1,76 +1,21 @@
-from WorldGraph import WorldGraph
-from WorldGraph import WorldGraphFactory
 from reasoner.graph_components import KNode,KEdge,elements_to_json
+from greent.rosetta import Rosetta
+import userquery
 import argparse
 import networkx as nx
 from networkx.readwrite.json_graph.node_link import node_link_data
-import json
 import logging
 import sys
 
-class Operation():
-    def __init__(self, layer0, layer1):
-        self.subject_layer = layer0
-        self.object_layer = layer1
-        self.completed = False
-
-def is_valid_layer_type(lt):
-    """Defines the allowed set of layer types"""
-    return lt in ('S','G','P','A','PH','D','GC')
-
-#TODO: Need to sort out the representation of nodes/edges more carefullly.  
 class KnowledgeGraph:
-    def __init__(self, querystring, wg):
-        """Convert a string defining a path query into a sequence of Query objects.
-
-        A query string is defined as a - delimited list of node types defined as:
-        S: Substance, Compound, Drug
-        G: Gene, Target
-        P: Pathway
-        A: Anatomy, Cell Type, Tissue
-        PH: Phenotype
-        D: Disease
-        GC: Genetic Condition (subclass of Disease)
-
-        Nodes can also define a particular object.  Parentheses denote that this
-        will be a specific object.  Inside the parentheses, the object is
-        given as Type;Curie, so that a particular disease with DOID of 1470 is
-        defined as:
-        (D;DOID:1470)
-
-        A valid query must have a fixed node at the beginning, and it may have a 
-        fixed node at the end.  These restrictions may be relaxed in the future.
-
-        Given a such a path, the results from the previous query become the
-        input to the subsequent query.
+    def __init__(self, userquery, rosetta):
+        """KnowledgeGraph is a local version of the query results. 
+        After full processing, it gets pushed to neo4j.
         """
         self.logger = logging.getLogger('application')
         self.graph = nx.MultiDiGraph()
-        self.worldgraph = wg
-        layer_def_list = querystring.split('-')
-        self.layer_types = []
-        for layer_number, layer_def in enumerate(layer_def_list):
-            if layer_number == 0:
-                #TODO: should be smarter, handle errors
-                layer_type, layer_example = layer_def[1:-1].split(';')
-            #TODO: need to handle fixed endpoint
-            else:
-                layer_type = layer_def
-                layer_example = None
-            if not is_valid_layer_type(layer_type):
-                raise Error(layer_type)
-            self.layer_types.append(layer_type)
-            if layer_example is not None:
-                root = KNode(layer_example, layer_type)
-                self.add_node(root, layer_number)
-        self.operations = []
-        #This is going to be a sequential set of operations. Right
-        # now, it's a bit dumb, but later it may be useful to define.
-        for i in range(len(self.layer_types)-1):
-            self.operations.append( Operation( i, i+1 ) )
-        #In the future, we might want to check and amke sure that
-        # we have certain node types, but not now
-        #validate_operations()
+        self.userquery = userquery
+        self.rosetta = rosetta
     def add_node(self,node,layer_number):
         """Add an unattached node to a particular query layer.
         
@@ -89,22 +34,13 @@ class KnowledgeGraph:
     def execute(self):
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
-        for op in self.operations:
-            self.logger.debug('Creating layer: %d' % op.object_layer)
-            subjects = self.get_nodes(op.subject_layer)
-            if len(subjects) == 0:
-                #TODO: Clean
-                raise(Exception("no subject"))
-            for subject in subjects:
-                object_type = self.layer_types[ op.object_layer ]
-                #print ("worldgraph.query")
-                relationships,success = \
-                        self.worldgraph.query( subject, object_type )
-                #keep track of success == False which indicates missing queries
-                #if not success:
-                #    complain, and work around hole.
-                print (relationships)
-                self.add_relationships( subject, relationships, object_type, op.object_layer )
+        #GreenT wants a cypherquery to find transitions, and a starting point
+        cypher = self.userquery.generate_cypher()
+        identifier, ntype = self.userquery.get_start_node()
+        start_node = KNode( identifier, ntype )
+        #Fire this to rosetta, collect the result
+        resultgraph = self.rosetta.graph([(None, start_node)],query=cypher)
+        print(resultgraph)
         self.logger.debug('Query Complete')
     def get_nodes(self, layer_number):
         """Returns the nodes in the given layer of the graph"""
@@ -212,42 +148,33 @@ class KnowledgeGraph:
         else:
             self.logger.error('Invalid export format: %s' % fmt)
 
-def run_query(query, output_path, worldgraph):
+def run_query(query, output_path):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
-    kgraph = KnowledgeGraph(query, worldgraph)
+    rosetta = Rosetta()
+    kgraph = KnowledgeGraph( query, rosetta )
     kgraph.execute()
-    kgraph.prune()
-    kgraph.support()
-    kgraph.export('%s.graphml' % output_path, 'graphml')
-    kgraph.export('%s.json' % output_path, 'json')
-    #Write to both file and stdout
-    with open('%s.txt' % output_path, 'w') as output_stream:
-        kgraph.write(output_stream = output_stream)
-    kgraph.write()
+    #kgraph.prune()
+    #kgraph.support()
+    #kgraph.export('%s.graphml' % output_path, 'graphml')
+    #kgraph.export('%s.json' % output_path, 'json')
+    ##Write to both file and stdout
+    #with open('%s.txt' % output_path, 'w') as output_stream:
+    #    kgraph.write(output_stream = output_stream)
+    #kgraph.write()
        
 def main_test():
-
-    
     parser = argparse.ArgumentParser(description='Protokop.')
     parser.add_argument('--data', help='Name of the data layer to use [default|greent]', default='default')
     args = parser.parse_args()
     print (args.data)
-
     
     """Run a series of test cases from the NCATS FOA"""
     logger = logging.getLogger('application')
     logger.setLevel(level = logging.DEBUG)
 
-    if args.data == 'default':
-        worldgraph = WorldGraph('config.std')
-    elif args.data == 'greent':
-        worldgraph = WorldGraphFactory.create (config='greent.conf', worldgraph_type="greent")
-    else:
-        raise ValueError ("No such data source type: %s" % args.data)
-        
     #Our test cases are defined as a doid and a name.  The name is from the NCATS FOA. The DOID
     # was looked up by hand.
-    test_cases = ( \
+    '''test_cases = ( \
                   ('4325',  'ebola'), \
                   ('1470'  ,'major depressive disorder'), \
                   ('11476' ,'osteoporosis'), \
@@ -269,14 +196,25 @@ def main_test():
                   ('2055'  ,'Post-Truamatic Stress Disorder'), \
                   ('0060728' ,'Deficiency of N-glycanase 1'), \
                   ('0050741' ,'Alcohol Dependence') )
-
-#    test_cases = ( ('13810' ,'Hypercholesterolemia'),  ('00000' ,'0000000' )) 
+'''
+    test_cases = ( ('0050741' ,'Alcohol Dependence') , )
 
     for doid, disease_name in test_cases:
         print('Running test case: %s (DOID:%s)' % (disease_name,doid) )
         query = '(D;DOID:%s)-G-GC' % doid
+        #output = 'examples_gt/example.%s' % doid
         output = 'examples/example.%s' % doid
         run_query(query, output, worldgraph)
 
+def question1(diseasename):
+    query = userquery.LinearUserQuery(diseasename,userquery.DISEASE_NAME)
+    query.add_transition(userquery.DISEASE)
+    query.add_transition(userquery.GENE)
+    query.add_transition(userquery.GENETIC_CONDITION)
+    run_query(query,'.')
+   
+def test():
+    question1('Ebola Virus Infection')
+
 if __name__ == '__main__':
-    main_test()
+    test()
