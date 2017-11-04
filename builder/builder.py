@@ -6,6 +6,7 @@ import networkx as nx
 from networkx.readwrite.json_graph.node_link import node_link_data
 import logging
 import sys
+from neo4j.v1 import GraphDatabase
 
 class KnowledgeGraph:
     def __init__(self, userquery, rosetta):
@@ -16,44 +17,60 @@ class KnowledgeGraph:
         self.graph = nx.MultiDiGraph()
         self.userquery = userquery
         self.rosetta = rosetta
-    def add_node(self,node,layer_number):
-        """Add an unattached node to a particular query layer.
-        
-        If the node already exists, we don't want to add it, we just
-        return the node that was in the graph already.  If it isn't then
-        we add it and return newly added node"""
-        #TODO: what if the node already exists?
-        previous = list(filter(lambda x: x.identifier == node.identifier, \
-                self.graph.nodes()) )
-        if len(previous) == 1:
-            if previous[0].layer_number == layer_number:
-                return previous[0]
-        node.layer_number = layer_number
-        self.graph.add_node(node)
-        return node
+        #node_map is a map from identifiers to the node associated.  It's useful because
+        # we are collapsing nodes along synonym edges, so each node might asked for in
+        # multiple different ways.
+        self.node_map = {}
+        uri = 'bolt://localhost:7687'
+        self.driver = GraphDatabase.driver(uri,encrypted=False)
     def execute(self):
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
         #GreenT wants a cypherquery to find transitions, and a starting point
         cypher = self.userquery.generate_cypher()
+        #print(cypher)
         identifier, ntype = self.userquery.get_start_node()
         start_node = KNode( identifier, ntype )
         #Fire this to rosetta, collect the result
-        resultgraph = self.rosetta.graph([(None, start_node)],query=cypher)
-        print(resultgraph)
+        result_graph = self.rosetta.graph([(None, start_node)],query=cypher)
+        self.add_edges( result_graph )
         self.logger.debug('Query Complete')
-    def get_nodes(self, layer_number):
-        """Returns the nodes in the given layer of the graph"""
-        nodes = list(filter(lambda x: x.layer_number == layer_number, \
-                self.graph.nodes()) )
-        return nodes
-    def add_relationships( self, subject, relations, object_type, object_layer ):
-        """Add new relationships and nodes to the graph"""
-        for relation, object_node in relations:
-            # The thing we want to add might already exist in the
-            # graph.  Whatever we get back is the right thing to use.
-            object_node = self.add_node( object_node, object_layer )
-            self.graph.add_edge( subject, object_node, object = relation )
+    def add_edges( self, edge_list ):
+        """Add a list of edges (and the associated nodes) to the graph."""
+        for edge in edge_list:
+            if edge.is_synonym:
+                source = self.find_node(edge.source_node)
+                target = self.find_node(edge.target_node)
+                if source is None and target is None:
+                    raise Exception('Synonym between two new terms')
+                if source is not None and target is not None:
+                    raise Exception('synonym between two existing nodes not yet implemented')
+                if target is not None:
+                    source, target = target, source
+                source.add_synonym(edge.target_node)
+                self.node_map[ edge.target_node.identifier ] = source
+            else:
+                #Found an edge between nodes. Add nodes if needed.
+                source_node = self.add_or_find_node(edge.source_node)
+                target_node = self.add_or_find_node(edge.target_node)
+                edge.source_node=source_node
+                edge.target_node=target_node
+                #Now the nodes are translated to the canonical identifiers, make the edge
+                self.graph.add_edge(source_node, target_node, object=edge)
+    def find_node(self,node):
+        """If node exists in graph, return it, otherwise, return None"""
+        if node.identifier in self.node_map:
+            return self.node_map[node.identifier]
+        return None
+    def add_or_find_node(self, node):
+        """Find a node that already exists in the graph, checking for synonyms. If not found, create it & add to graph"""
+        fnode = self.find_node(node)
+        if fnode is not None:
+            return fnode
+        else:
+            self.graph.add_node(node)
+            self.node_map[node.identifier] = node
+            return node
     def prune(self):
         """Backwards prune.
         This is probably overkill - we might want to allow hops over missing nodes, etc
@@ -118,49 +135,38 @@ class KnowledgeGraph:
             children = self.graph.successors(root)
             for child in children:
                 self.write(child,level+1, output_stream)
-    def export(self, output_path, fmt='json'):
-        """Export in a format that can be read by other tools.
+    def export(self,resultname):
+        """Export to neo4j database."""
+        self.logger.info("Writing to neo4j with label {}".format(resultname))
+        session = self.driver.session()
+        #If we have this query already, overwrite it...
+        session.run('MATCH (a:%s) DETACH DELETE a' % resultname)
+        #Now add all the nodes
+        for node in self.graph.nodes():
+            #TODO: get a name correctly
+            session.run("CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, meta: {meta}})" % resultname, \
+                {"id": node.identifier, "name": node.identifier, "node_type": node.node_type, "meta": 'coming soon'})
+        for edge in self.graph.edges(data=True):
+            aid = edge[0].identifier
+            bid = edge[1].identifier
+            ke = edge[2]['object']
+            session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s]->(b) return r" % \
+                    (resultname,resultname, ke.edge_function),\
+                    { "aid": aid, "bid": bid } )
+        session.close()
 
-        JSON is probably the most straightforward/accurate and it can be reloaded into 
-             a networkx format using node_link_graph.
-        GraphML is an XML based method of writing graphs.  The only reason for exporting it
-            is so that cytoscape can read it for visualization.  If we have a smarter vis
-            then this should be removed.  The real problem with GraphML is that it can't handle
-            json arrays in the properties, so we have to escape them."""
-        if fmt == 'json':
-            js = node_link_data( self.graph )
-            with open(output_path,'w') as outf:
-                json.dump(js, outf, indent=4, default=elements_to_json)
-        elif fmt == 'graphml':
-            #GraphML can't handle structure.  The goal here is just to make some simple visualizations
-            # so it won't be a full representation.
-            #TODO:  But maybe we can do json.dumps on the values?
-            export_graph = nx.MultiDiGraph()
-            name_remap = {}
-            for node in self.graph.nodes():
-                node_id, node_props = node.get_exportable()
-                export_graph.add_node(node_id, **node_props)
-                name_remap[node]=node_id
-            for edge in self.graph.edges(data=True):
-                exportable_edge_props = edge[2]['object'].get_exportable()
-                export_graph.add_edge( name_remap[edge[0]], name_remap[edge[1]], **exportable_edge_props)
-            nx.write_graphml(export_graph, output_path)
-        else:
-            self.logger.error('Invalid export format: %s' % fmt)
-
-def run_query(query, output_path):
+def run_query(query, result_name, output_path, prune=True):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
     rosetta = Rosetta()
     kgraph = KnowledgeGraph( query, rosetta )
     kgraph.execute()
-    #kgraph.prune()
-    #kgraph.support()
-    #kgraph.export('%s.graphml' % output_path, 'graphml')
-    #kgraph.export('%s.json' % output_path, 'json')
-    ##Write to both file and stdout
+    #if prune:
+    #    kgraph.prune()
+    kgraph.support()
+    kgraph.export(result_name)
+    #This isn't working right now, leave out....
     #with open('%s.txt' % output_path, 'w') as output_stream:
     #    kgraph.write(output_stream = output_stream)
-    #kgraph.write()
        
 def main_test():
     parser = argparse.ArgumentParser(description='Protokop.')
@@ -211,7 +217,7 @@ def question1(diseasename):
     query.add_transition(userquery.DISEASE)
     query.add_transition(userquery.GENE)
     query.add_transition(userquery.GENETIC_CONDITION)
-    run_query(query,'.')
+    run_query(query,'Query1_{}'.format('_'.join(diseasename.split())) , '.')
    
 def test():
     question1('Ebola Virus Infection')
