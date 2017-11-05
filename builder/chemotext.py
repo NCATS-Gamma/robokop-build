@@ -1,5 +1,6 @@
-from greent.chemotext import Chemotext
-from greent.oxo import OXO
+#from greent.chemotext import Chemotext
+#from greent.oxo import OXO
+#from greent.service import GreenT
 import json
 import logging
 from reasoner.graph_components import KEdge
@@ -22,7 +23,7 @@ def OXOdise_term(term):
         return term
     return ':'.join(iri_term.split('_'))
 
-def convert_to_mesh(term):
+def convert_to_mesh(term,greent):
     """Use OXO to convert an id(doid, etc) to MeSH"""
     logging.getLogger('application').debug('convert_to_mesh %s' % term)
     #Check to see if we already have a MeSH curie
@@ -30,7 +31,7 @@ def convert_to_mesh(term):
         return [term]
     #sometimes terms are not good for OXO, like http://purl.obolibrary.org/obo/OMIM_603903. OXO expects OMIM:603903
     term = OXOdise_term(term)
-    oxo = OXO()
+    oxo = greent.oxo
     response = oxo.query([ term ])
     #ugly, and probably wrong
     search_results = response['_embedded']['searchResults'][0]['mappingResponseList']
@@ -42,10 +43,10 @@ def convert_to_mesh(term):
     if len(meshes) == 0:
         logging.getLogger('application').warn('No MeSH ID found for term: %s' % term)
     for mesh in meshes:
-        add_chemotext_term(mesh)
+        add_chemotext_term(mesh, greent)
     return meshes
 
-def add_chemotext_term(mesh_info):
+def add_chemotext_term(mesh_info,greent):
     """Look up the chemotext version of this mesh ID and attach it to the mesh structure.
 
     We retrive MESH ids from OXO and we get a dict back with a "curie" and a "label".
@@ -54,7 +55,7 @@ def add_chemotext_term(mesh_info):
     see if its a "name" in chemotext, and if not, then look for the name that has this as a
     synonym."""
     logging.getLogger('application').debug(' Check chemotext for %s' % mesh_info['label'])
-    ctext = Chemotext( )
+    ctext = greent.chemotext
     label = mesh_info['label']
     #First, see if we get back anything using the term as a name
     response = ctext.query( query="MATCH (d:Term) WHERE d.name='%s' RETURN d" % (label))
@@ -80,18 +81,18 @@ def add_chemotext_term(mesh_info):
             logging.getLogger('application').warn("Cannot find chemotext synonym for %s" % label)
             mesh_info[CHEMOTEXT_MESH_KEY] = ''
 
-def get_mesh_terms(node):
+def get_mesh_terms(node, greent):
     MESH_KEY = 'mesh_identifiers'
     if MESH_KEY not in node.properties:
-        node.properties[MESH_KEY] =  convert_to_mesh( node.identifier ) 
+        node.properties[MESH_KEY] =  convert_to_mesh( node.identifier, greent ) 
     return node.properties[MESH_KEY]
 
-def term_to_term(node_a,node_b, limit = 10):
+def term_to_term(node_a,node_b,greent,limit = 10000):
     """Given two terms, find articles in chemotext that connect them, and return as a KEdge.
     If nothing is found, return None"""
-    meshes_a = get_mesh_terms(node_a)
-    meshes_b = get_mesh_terms(node_b)
-    ctext = Chemotext( )
+    meshes_a = get_mesh_terms(node_a, greent)
+    meshes_b = get_mesh_terms(node_b, greent)
+    ctext = greent.chemotext
     articles=[]
     for ma in meshes_a:
         label_a = ma[CHEMOTEXT_MESH_KEY]
@@ -102,7 +103,10 @@ def term_to_term(node_a,node_b, limit = 10):
                 for data in result['data']:
                     articles += data['row']
     if len(articles) > 0:
-        return KEdge( 'chemotext', 'support', { 'publications': articles } )
+        ke= KEdge( 'chemotext', 'term_to_term', { 'publications': articles } )
+        ke.source_node = node_a
+        ke.target_node = node_b
+        return ke
     return None
 
 def test_mesh_conversion(nodeid):

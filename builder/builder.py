@@ -1,6 +1,7 @@
 from reasoner.graph_components import KNode,KEdge,elements_to_json
 from reasoner import node_types 
 from greent.rosetta import Rosetta
+import chemotext
 import userquery
 import argparse
 import networkx as nx
@@ -39,28 +40,32 @@ class KnowledgeGraph:
         result_graph = list(OrderedDict.fromkeys( result_graph ) )
         self.add_edges( result_graph )
         self.logger.debug('Query Complete')
+    def add_synonymous_edge(self, edge):
+        source = self.find_node(edge.source_node)
+        target = self.find_node(edge.target_node)
+        if source is None and target is None:
+            raise Exception('Synonym between two new terms')
+        if source is not None and target is not None:
+            raise Exception('synonym between two existing nodes not yet implemented')
+        if target is not None:
+            source, target = target, source
+        source.add_synonym(edge.target_node)
+        self.node_map[ edge.target_node.identifier ] = source
+    def add_nonsynonymous_edge(self,edge):
+        #Found an edge between nodes. Add nodes if needed.
+        source_node = self.add_or_find_node(edge.source_node)
+        target_node = self.add_or_find_node(edge.target_node)
+        edge.source_node=source_node
+        edge.target_node=target_node
+        #Now the nodes are translated to the canonical identifiers, make the edge
+        self.graph.add_edge(source_node, target_node, object=edge)
     def add_edges( self, edge_list ):
         """Add a list of edges (and the associated nodes) to the graph."""
         for edge in edge_list:
             if edge.is_synonym:
-                source = self.find_node(edge.source_node)
-                target = self.find_node(edge.target_node)
-                if source is None and target is None:
-                    raise Exception('Synonym between two new terms')
-                if source is not None and target is not None:
-                    raise Exception('synonym between two existing nodes not yet implemented')
-                if target is not None:
-                    source, target = target, source
-                source.add_synonym(edge.target_node)
-                self.node_map[ edge.target_node.identifier ] = source
+                self.add_synonymous_edge(edge)
             else:
-                #Found an edge between nodes. Add nodes if needed.
-                source_node = self.add_or_find_node(edge.source_node)
-                target_node = self.add_or_find_node(edge.target_node)
-                edge.source_node=source_node
-                edge.target_node=target_node
-                #Now the nodes are translated to the canonical identifiers, make the edge
-                self.graph.add_edge(source_node, target_node, object=edge)
+                self.add_nonsynonymous_edge(edge)
     def find_node(self,node):
         """If node exists in graph, return it, otherwise, return None"""
         if node.identifier in self.node_map:
@@ -80,7 +85,6 @@ class KnowledgeGraph:
         self.logger.debug('Pruning Graph')
         removed = True
         keep_types = self.userquery.get_terminal_types()
-        print( "Keep: {}".format(keep_types) )
         n_pruned = 0
         while removed:
             removed = False
@@ -91,10 +95,22 @@ class KnowledgeGraph:
                     to_remove.append(node)
             for node in to_remove:
                 removed=True
-                print(' Drop node: {}'.format(node.identifier))
                 n_pruned += 1
                 self.graph.remove_node(node)
         self.logger.debug('Pruned {} nodes.'.format(n_pruned) )
+    def get_terminal_nodes(self):
+        """Return the nodes at the beginning or end of a query"""
+        #TODO: Currently doing via type.  Probably need to mark these instead.
+        start_type, end_type = self.userquery.get_terminal_types()
+        start_nodes = []
+        end_nodes = []
+        nodes = self.graph.nodes()
+        for node in nodes:
+            if node.node_type == start_type:
+                start_nodes.append( node )
+            elif node.node_type == end_type:
+                end_nodes.append( node )
+        return start_nodes, end_nodes
     def support(self):
         """Look for extra information connecting nodes."""
         #TODO: how do we want to handle support edges
@@ -110,8 +126,7 @@ class KnowledgeGraph:
         #
         # Generate paths, (unique) edges along paths
         self.logger.debug('Building Support')
-        start_nodes = self.get_nodes(0)
-        end_nodes = self.get_nodes( len(self.layer_types) - 1 )
+        start_nodes, end_nodes = self.get_terminal_nodes()
         links_to_check = set()
         for start_node in start_nodes:
             for end_node in end_nodes:
@@ -123,11 +138,13 @@ class KnowledgeGraph:
         # Check each edge, add any support found.
         n_supported = 0
         for source,target in links_to_check:
-            support_edge = self.worldgraph.support_query(source,target)
+            print(' Checking: {} {}'.format(source.identifier, target.identifier))
+            support_edge = chemotext.term_to_term(source,target, self.rosetta.core)
             if support_edge is not None:
                 n_supported += 1
-                self.graph.add_edge( source , target, object = support_edge )
-        self.logger.debug('Support Completed.  Added %d edges' % n_supported)
+                print ('  -Adding support edge')
+                self.add_nonsynonymous_edge( support_edge )
+        self.logger.debug('Support Completed.  Added {} edges'.format( n_supported) )
     def write(self,root=None,level=-1,output_stream = sys.stdout):
         """Write the graph as a tree to stdout"""
         #TODO: add other output stream
@@ -170,7 +187,7 @@ def run_query(query, result_name, output_path, prune=True):
     kgraph.execute()
     if prune:
         kgraph.prune()
-    #kgraph.support()
+    kgraph.support()
     kgraph.export(result_name)
     #This isn't working right now, leave out....
     #with open('%s.txt' % output_path, 'w') as output_stream:
