@@ -1,4 +1,5 @@
 from reasoner.graph_components import KNode,KEdge,elements_to_json
+from reasoner import node_types 
 from greent.rosetta import Rosetta
 import userquery
 import argparse
@@ -7,6 +8,7 @@ from networkx.readwrite.json_graph.node_link import node_link_data
 import logging
 import sys
 from neo4j.v1 import GraphDatabase
+from collections import OrderedDict
 
 class KnowledgeGraph:
     def __init__(self, userquery, rosetta):
@@ -33,6 +35,8 @@ class KnowledgeGraph:
         start_node = KNode( identifier, ntype )
         #Fire this to rosetta, collect the result
         result_graph = self.rosetta.graph([(None, start_node)],query=cypher)
+        #result_graph contains duplicate edges.  Remove them, while preserving order:
+        result_graph = list(OrderedDict.fromkeys( result_graph ) )
         self.add_edges( result_graph )
         self.logger.debug('Query Complete')
     def add_edges( self, edge_list ):
@@ -72,21 +76,25 @@ class KnowledgeGraph:
             self.node_map[node.identifier] = node
             return node
     def prune(self):
-        """Backwards prune.
-        This is probably overkill - we might want to allow hops over missing nodes, etc
-        but for now it reduces the number of supports that we want to try to build"""
+        """Recursively remove any nodes of degree 1."""
         self.logger.debug('Pruning Graph')
-        nlayers = len(self.layer_types)
-        #Don't remove terminal nodes, but back up one and remove
-        #Don't remove query node either
+        removed = True
+        keep_types = self.userquery.get_terminal_types()
+        print( "Keep: {}".format(keep_types) )
         n_pruned = 0
-        for level in range( nlayers -2, 0, -1):
-            nodes = self.get_nodes(level)
-            for node in nodes:
-                if self.graph.out_degree(node) == 0:
-                    n_pruned += 1
-                    self.graph.remove_node(node)
-        self.logger.debug('Pruned %d nodes.' % n_pruned)
+        while removed:
+            removed = False
+            to_remove = []
+            for node in self.graph.nodes():
+                if self.graph.degree(node) == 1 and node.node_type not in keep_types:
+                    print(node.node_type, node.node_type in keep_types)
+                    to_remove.append(node)
+            for node in to_remove:
+                removed=True
+                print(' Drop node: {}'.format(node.identifier))
+                n_pruned += 1
+                self.graph.remove_node(node)
+        self.logger.debug('Pruned {} nodes.'.format(n_pruned) )
     def support(self):
         """Look for extra information connecting nodes."""
         #TODO: how do we want to handle support edges
@@ -160,9 +168,9 @@ def run_query(query, result_name, output_path, prune=True):
     rosetta = Rosetta()
     kgraph = KnowledgeGraph( query, rosetta )
     kgraph.execute()
-    #if prune:
-    #    kgraph.prune()
-    kgraph.support()
+    if prune:
+        kgraph.prune()
+    #kgraph.support()
     kgraph.export(result_name)
     #This isn't working right now, leave out....
     #with open('%s.txt' % output_path, 'w') as output_stream:
@@ -213,10 +221,10 @@ def main_test():
         run_query(query, output, worldgraph)
 
 def question1(diseasename):
-    query = userquery.LinearUserQuery(diseasename,userquery.DISEASE_NAME)
-    query.add_transition(userquery.DISEASE)
-    query.add_transition(userquery.GENE)
-    query.add_transition(userquery.GENETIC_CONDITION)
+    query = userquery.LinearUserQuery(diseasename,node_types.DISEASE_NAME)
+    query.add_transition(node_types.DISEASE)
+    query.add_transition(node_types.GENE)
+    query.add_transition(node_types.GENETIC_CONDITION)
     run_query(query,'Query1_{}'.format('_'.join(diseasename.split())) , '.')
    
 def test():

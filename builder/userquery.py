@@ -1,19 +1,7 @@
+from reasoner.node_types import node_types, DRUG_NAME, DISEASE_NAME
 
 #Allowed user-level types
 #TODO: Line up with steve, have in one place?
-DRUG='Drug'
-GENE='Gene'
-PATHWAY='Pathway'
-PROCESS='BiologicalProcess'
-CELL='Cell'
-ANATOMY='Anatomy'
-PHENOTYPE='Phenotype'
-DISEASE='Disease'
-GENETIC_CONDITION='GeneticCondition'
-DRUG_NAME = 'NAME.DRUG'
-DISEASE_NAME = 'NAME.DISEASE'
-
-user_types = [DRUG, GENE, PATHWAY, PROCESS, CELL, ANATOMY, PHENOTYPE, DISEASE, GENETIC_CONDITION, DRUG_NAME, DISEASE_NAME]
 
 class Transition():
     def __init__(self, last_type, next_type, min_path_length, max_path_length):
@@ -71,10 +59,12 @@ class LinearUserQuery():
     def get_start_node( self ):
         node = self.node_types[0]
         return '{0}:{1}'.format(node,self.start_value), node
+    def get_terminal_types( self ):
+        return self.node_types[0], self.node_types[-1]
     def add_node(self,node_type):
         """Add a node to the node list, validating the type"""
-        if node_type not in user_types:
-            raise Exception('node type must be one of userquery.user_types')
+        if node_type not in node_types:
+            raise Exception('node type must be one of reasoner.node_types')
         self.node_types.append(node_type)
     def add_transition(self, next_type, min_path_length=1, max_path_length=1, end_value=None):
         """Add another required node type to the path.
@@ -92,7 +82,7 @@ class LinearUserQuery():
         an end value will result in an exception.  If this is the terminal node, but it does not have a specified value, then no 
         end_value needs to be specified.
 
-        arguments: next_type: type of the output node from the transition.  Must be an element of userquery.user_types.
+        arguments: next_type: type of the output node from the transition.  Must be an element of reasoner.node_types.
                    min_path_length: The minimum number of non-synonym transitions to get from the previous node to the added node
                    max_path_length: The maximum number of non-synonym transitions to get from the previous node to the added node
                    end_value: Value of this node (if this is the terminal node, otherwise None)
@@ -148,6 +138,7 @@ class LinearUserQuery():
 
 def test_1():
     """Try to generate a Question 1 style query using this general device and fully specifying path."""
+    from reasoner.node_types import DISEASE, GENE
     query = LinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(GENE)
@@ -159,6 +150,7 @@ def test_1():
 
 def test_2():
     """Try to generate a Question 1 style query using this general device without fully specifying path."""
+    from reasoner.node_types import DISEASE, GENETIC_CONDITION
     query = LinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     #Say we go from disease to gc through something, but don't say what
@@ -170,6 +162,7 @@ def test_2():
     
 def test_3a():
     """Try to generate a Question 2 style query using this general device fully specifying path."""
+    from reasoner.node_types import DRUG, GENE, PROCESS, CELL
     query = LinearUserQuery("imatinib", DRUG_NAME )
     query.add_transition(DRUG)
     query.add_transition(GENE)
@@ -180,6 +173,7 @@ def test_3a():
 
 def test_3b():
     """Try to generate the other half of a Q2 query"""
+    from reasoner.node_types import DISEASE, PHENOTYPE
     query = LinearUserQuery("asthma", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(PHENOTYPE)
