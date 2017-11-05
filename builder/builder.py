@@ -169,8 +169,8 @@ class KnowledgeGraph:
             #TODO: get a name correctly
             prepare_for_output(node,self.rosetta.core)
             print( '----\n{} {}\n properties:{}\n synonyms:{}'.format(node.identifier, node.label, node.properties, node.synonyms))
-            session.run("CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, meta: {meta}})" % resultname, \
-                {"id": node.identifier, "name": node.label, "node_type": node.node_type, "meta": 'coming soon'})
+            session.run("CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})" % resultname, \
+                    {"id": node.identifier, "name": node.label, "node_type": node.node_type, "syn": list(node.synonyms), "meta": ''})
         for edge in self.graph.edges(data=True):
             aid = edge[0].identifier
             bid = edge[1].identifier
@@ -181,7 +181,11 @@ class KnowledgeGraph:
         session.close()
 
 def prepare_for_output(node,gt):
+    node.synonyms.update( [mi['curie'] for mi in node.properties['mesh_identifiers']] )
     if node.node_type == node_types.DISEASE or node.node_type == node_types.GENETIC_CONDITION:
+        if 'mondo_identifiers' in node.properties:
+            print('  yep')
+            node.synonyms.update(node.properties['mondo_identifiers'])
         node.label = gt.mondo.get_label( node.identifier )
     elif node.node_type == node_types.DISEASE_NAME or node.node_type == node_types.DRUG_NAME:
         node.label = node.identifier.split(':')[-1]
