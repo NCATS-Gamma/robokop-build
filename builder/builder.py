@@ -91,7 +91,6 @@ class KnowledgeGraph:
             to_remove = []
             for node in self.graph.nodes():
                 if self.graph.degree(node) == 1 and node.node_type not in keep_types:
-                    print(node.node_type, node.node_type in keep_types)
                     to_remove.append(node)
             for node in to_remove:
                 removed=True
@@ -138,7 +137,6 @@ class KnowledgeGraph:
         # Check each edge, add any support found.
         n_supported = 0
         for source,target in links_to_check:
-            print(' Checking: {} {}'.format(source.identifier, target.identifier))
             support_edge = chemotext.term_to_term(source,target, self.rosetta.core)
             if support_edge is not None:
                 n_supported += 1
@@ -169,8 +167,10 @@ class KnowledgeGraph:
         #Now add all the nodes
         for node in self.graph.nodes():
             #TODO: get a name correctly
+            prepare_for_output(node,self.rosetta.core)
+            print( '----\n{} {}\n properties:{}\n synonyms:{}'.format(node.identifier, node.label, node.properties, node.synonyms))
             session.run("CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, meta: {meta}})" % resultname, \
-                {"id": node.identifier, "name": node.identifier, "node_type": node.node_type, "meta": 'coming soon'})
+                {"id": node.identifier, "name": node.label, "node_type": node.node_type, "meta": 'coming soon'})
         for edge in self.graph.edges(data=True):
             aid = edge[0].identifier
             bid = edge[1].identifier
@@ -179,6 +179,16 @@ class KnowledgeGraph:
                     (resultname,resultname, ke.edge_function),\
                     { "aid": aid, "bid": bid } )
         session.close()
+
+def prepare_for_output(node,gt):
+    if node.node_type == node_types.DISEASE or node.node_type == node_types.GENETIC_CONDITION:
+        node.label = gt.mondo.get_label( node.identifier )
+    elif node.node_type == node_types.DISEASE_NAME or node.node_type == node_types.DRUG_NAME:
+        node.label = node.identifier.split(':')[-1]
+    elif node.node_type == node_types.GENE and node.identifier.startswith('HGNC:'):
+        node.label = gt.hgnc.get_name( node )
+    else:
+        node.label = node.identifier
 
 def run_query(query, result_name, output_path, prune=True):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
