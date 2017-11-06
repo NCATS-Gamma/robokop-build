@@ -103,7 +103,7 @@ def term_to_term(node_a,node_b,greent,limit = 10000):
                 for data in result['data']:
                     articles += data['row']
     if len(articles) > 0:
-        ke= KEdge( 'chemotext', 'term_to_term', { 'publications': articles } )
+        ke= KEdge( 'chemotext', 'term_to_term', { 'publications': articles }, is_support = True )
         ke.source_node = node_a
         ke.target_node = node_b
         return ke

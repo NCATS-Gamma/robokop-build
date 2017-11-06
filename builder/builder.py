@@ -140,7 +140,7 @@ class KnowledgeGraph:
             support_edge = chemotext.term_to_term(source,target, self.rosetta.core)
             if support_edge is not None:
                 n_supported += 1
-                print ('  -Adding support edge')
+                self.logger.debug ('  -Adding support edge from {} to {}'.format(source.identifier, target.identifier) )
                 self.add_nonsynonymous_edge( support_edge )
         self.logger.debug('Support Completed.  Added {} edges'.format( n_supported) )
     def write(self,root=None,level=-1,output_stream = sys.stdout):
@@ -160,6 +160,7 @@ class KnowledgeGraph:
                 self.write(child,level+1, output_stream)
     def export(self,resultname):
         """Export to neo4j database."""
+        #TODO: lots of this should probably go in the KNode and KEdge objects?
         self.logger.info("Writing to neo4j with label {}".format(resultname))
         session = self.driver.session()
         #If we have this query already, overwrite it...
@@ -167,24 +168,30 @@ class KnowledgeGraph:
         #Now add all the nodes
         for node in self.graph.nodes():
             #TODO: get a name correctly
-            prepare_for_output(node,self.rosetta.core)
-            print( '----\n{} {}\n properties:{}\n synonyms:{}'.format(node.identifier, node.label, node.properties, node.synonyms))
+            prepare_node_for_output(node,self.rosetta.core)
+            #print( '----\n{} {}\n properties:{}\n synonyms:{}'.format(node.identifier, node.label, node.properties, node.synonyms))
             session.run("CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})" % resultname, \
                     {"id": node.identifier, "name": node.label, "node_type": node.node_type, "syn": list(node.synonyms), "meta": ''})
         for edge in self.graph.edges(data=True):
             aid = edge[0].identifier
             bid = edge[1].identifier
             ke = edge[2]['object']
-            session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s]->(b) return r" % \
-                    (resultname,resultname, ke.edge_function),\
-                    { "aid": aid, "bid": bid } )
+            if ke.is_support:
+                label = 'Support'
+            else:
+                label = 'Result'
+            prepare_edge_for_output(ke)
+            #print( '----\nEdge {} {}\n properties:{}\n'.format(aid, bid, ke.properties))
+            session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" % \
+                    (resultname,resultname, label),\
+                    { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label } )
         session.close()
 
-def prepare_for_output(node,gt):
+#TODO: push to node, ...
+def prepare_node_for_output(node,gt):
     node.synonyms.update( [mi['curie'] for mi in node.properties['mesh_identifiers']] )
     if node.node_type == node_types.DISEASE or node.node_type == node_types.GENETIC_CONDITION:
         if 'mondo_identifiers' in node.properties:
-            print('  yep')
             node.synonyms.update(node.properties['mondo_identifiers'])
         node.label = gt.mondo.get_label( node.identifier )
     elif node.node_type == node_types.DISEASE_NAME or node.node_type == node_types.DRUG_NAME:
@@ -193,6 +200,27 @@ def prepare_for_output(node,gt):
         node.label = gt.hgnc.get_name( node )
     else:
         node.label = node.identifier
+
+#Push to edge...
+def prepare_edge_for_output(edge):
+    #We should settle on a format for PMIDs.  Do we always lookup / include e.g. title? Or does UI do that?
+    pmidlist = []
+    if 'publications' in edge.properties:
+        for pub in edge.properties['publications']:
+            #v. brittle. Should be put into the edge creation...
+            if 'pmid' in pub:
+                pmidlist.append('PMID:{}'.format(pub['pmid']))
+            elif 'id' in pub:
+                pmidlist.append(pub['id'])
+        del edge.properties['publications']
+    edge.pmidlist = pmidlist
+    if 'relation' in edge.properties:
+        edge.typed_relation_id = edge.properties['relation']['typeid']
+        edge.typed_relation_label = edge.properties['relation']['label']
+    else:
+        edge.typed_relation_id = ''
+        edge.typed_relation_label = ''
+
 
 def run_query(query, result_name, output_path, prune=True):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
