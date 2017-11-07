@@ -81,7 +81,10 @@ class KnowledgeGraph:
             self.node_map[node.identifier] = node
             return node
     def prune(self):
-        """Recursively remove any nodes of degree 1."""
+        """Recursively remove poorly connected nodes.  In particular, each (non-terminal) node must be connected to two different kinds of nodes."""
+        #TODO, that is maybe a bit too much.  You can't have disease-gene-disease for instance !
+        # But degree is not enough because you can have A and B both go to C but C doesn't go anywhere.
+        # Probably need to interact with the query to decide whether this node is prunable or not.
         self.logger.debug('Pruning Graph')
         removed = True
         keep_types = self.userquery.get_terminal_types()
@@ -90,7 +93,12 @@ class KnowledgeGraph:
             removed = False
             to_remove = []
             for node in self.graph.nodes():
-                if self.graph.degree(node) == 1 and node.node_type not in keep_types:
+                if node.node_type in keep_types:
+                    continue
+                #Graph is directed.  graph.neighbors only returns successors 
+                neighbors = self.graph.successors(node) + self.graph.predecessors(node)
+                neighbor_types = set( [ neighbor.node_type for neighbor in neighbors ] )
+                if len(neighbor_types) < 2 :
                     to_remove.append(node)
             for node in to_remove:
                 removed=True
@@ -189,7 +197,8 @@ class KnowledgeGraph:
 
 #TODO: push to node, ...
 def prepare_node_for_output(node,gt):
-    node.synonyms.update( [mi['curie'] for mi in node.properties['mesh_identifiers']] )
+    if 'mesh_identifiers' in node.properties:
+        node.synonyms.update( [mi['curie'] for mi in node.properties['mesh_identifiers']] )
     if node.node_type == node_types.DISEASE or node.node_type == node_types.GENETIC_CONDITION:
         if 'mondo_identifiers' in node.properties:
             node.synonyms.update(node.properties['mondo_identifiers'])
@@ -229,7 +238,7 @@ def run_query(query, result_name, output_path, prune=True):
     kgraph.execute()
     if prune:
         kgraph.prune()
-    kgraph.support()
+    #kgraph.support()
     kgraph.export(result_name)
     #This isn't working right now, leave out....
     #with open('%s.txt' % output_path, 'w') as output_stream:
@@ -286,8 +295,28 @@ def question1(diseasename):
     query.add_transition(node_types.GENETIC_CONDITION)
     run_query(query,'Query1_{}'.format('_'.join(diseasename.split())) , '.')
    
+def question2a(drugname):
+    query = userquery.LinearUserQuery(drugname,node_types.DRUG_NAME)
+    query.add_transition(node_types.DRUG)
+    query.add_transition(node_types.GENE)
+    query.add_transition(node_types.PROCESS)
+    query.add_transition(node_types.CELL)
+    query.add_transition(node_types.ANATOMY)
+    print( query.generate_cypher())
+    run_query(query,'Query2a_{}'.format('_'.join(drugname.split())) , '.', prune=True)
+
+def question2b(diseasename):
+    query = userquery.LinearUserQuery(diseasename,node_types.DISEASE_NAME)
+    query.add_transition(node_types.DISEASE)
+    query.add_transition(node_types.PHENOTYPE)
+    query.add_transition(node_types.ANATOMY)
+    print( query.generate_cypher())
+    run_query(query,'Query2b_{}'.format('_'.join(diseasename.split())) , '.', prune=True)
+
 def test():
-    question1('Ebola Virus Infection')
+    #question1('Ebola Virus Infection')
+    #question2a('imatinib')
+    question2b('asthma')
 
 if __name__ == '__main__':
     test()

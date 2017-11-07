@@ -138,13 +138,11 @@ class LinearUserQuery():
 
 def test_1():
     """Try to generate a Question 1 style query using this general device and fully specifying path."""
-    from reasoner.node_types import DISEASE, GENE
+    from reasoner.node_types import DISEASE, GENE, GENETIC_CONDITION
     query = LinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(GENE)
-    #For now GC is DISEASE
-    #query.add_transition(GENETIC_CONDITION)
-    query.add_transition(DISEASE)
+    query.add_transition(GENETIC_CONDITION)
     cypher = query.generate_cypher()
     print(cypher)
 
@@ -153,30 +151,29 @@ def test_2():
     from reasoner.node_types import DISEASE, GENETIC_CONDITION
     query = LinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
-    #Say we go from disease to gc through something, but don't say what
-    #For now GC is DISEASE
-    #query.add_transition(GENETIC_CONDITION, min_path_length=2, max_path_length=2)
-    query.add_transition(DISEASE, min_path_length=2, max_path_length=2)
+    query.add_transition(GENETIC_CONDITION, min_path_length=2, max_path_length=2)
     cypher = query.generate_cypher()
     print(cypher)
     
 def test_3a():
     """Try to generate a Question 2 style query using this general device fully specifying path."""
-    from reasoner.node_types import DRUG, GENE, PROCESS, CELL
+    from reasoner.node_types import DRUG, GENE, PROCESS, CELL, ANATOMY
     query = LinearUserQuery("imatinib", DRUG_NAME )
     query.add_transition(DRUG)
     query.add_transition(GENE)
     query.add_transition(PROCESS)
     query.add_transition(CELL)
+    query.add_transition(ANATOMY)
     cypher = query.generate_cypher()
     print(cypher)
 
 def test_3b():
     """Try to generate the other half of a Q2 query"""
-    from reasoner.node_types import DISEASE, PHENOTYPE
+    from reasoner.node_types import DISEASE, PHENOTYPE, ANATOMY
     query = LinearUserQuery("asthma", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(PHENOTYPE)
+    query.add_transition(ANATOMY)
     cypher = query.generate_cypher()
     print(cypher)
  
