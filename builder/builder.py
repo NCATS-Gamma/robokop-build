@@ -30,15 +30,16 @@ class KnowledgeGraph:
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
         #GreenT wants a cypherquery to find transitions, and a starting point
-        cypher = self.userquery.generate_cypher()
-        #print(cypher)
-        identifier, ntype = self.userquery.get_start_node()
-        start_node = KNode( identifier, ntype )
-        #Fire this to rosetta, collect the result
-        result_graph = self.rosetta.graph([(None, start_node)],query=cypher)
-        #result_graph contains duplicate edges.  Remove them, while preserving order:
-        result_graph = list(OrderedDict.fromkeys( result_graph ) )
-        self.add_edges( result_graph )
+        cyphers = self.userquery.generate_cypher()
+        starts  = self.userquery.get_start_node()
+        for cypher, start in zip(cyphers,starts):
+            identifier, ntype = start
+            start_node = KNode( identifier, ntype )
+            #Fire this to rosetta, collect the result
+            result_graph = self.rosetta.graph([(None, start_node)],query=cypher)
+            #result_graph contains duplicate edges.  Remove them, while preserving order:
+            result_graph = list(OrderedDict.fromkeys( result_graph ) )
+            self.add_edges( result_graph )
         self.logger.debug('Query Complete')
     def add_synonymous_edge(self, edge):
         source = self.find_node(edge.source_node)
@@ -302,7 +303,6 @@ def question2a(drugname):
     query.add_transition(node_types.PROCESS)
     query.add_transition(node_types.CELL)
     query.add_transition(node_types.ANATOMY)
-    print( query.generate_cypher())
     run_query(query,'Query2a_{}'.format('_'.join(drugname.split())) , '.', prune=True)
 
 def question2b(diseasename):
@@ -310,7 +310,6 @@ def question2b(diseasename):
     query.add_transition(node_types.DISEASE)
     query.add_transition(node_types.PHENOTYPE)
     query.add_transition(node_types.ANATOMY)
-    print( query.generate_cypher())
     run_query(query,'Query2b_{}'.format('_'.join(diseasename.split())) , '.', prune=True)
 
 def test():

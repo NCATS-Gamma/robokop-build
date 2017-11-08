@@ -35,6 +35,26 @@ reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN wei
             withline += '\nWHERE d{0} >= {1} AND d{0} <= {2}'.format(t_number, self.min_path_length, self.max_path_length)
         return withline
 
+class TwoSidedLinearUserQuery():
+    """Constructs a query that is fixed at either end.
+
+    When this occurs, we are going to treat it as a pair of OneSidedLinearUserQueries that 
+    extend inward from the end points and meet in the middle"""
+    def __init__(self, left_query, right_query):
+        """To construct a two sided query, pass in two one-sided query"""
+        #TODO: we want creation of this object to be a bit more dynamic
+        if self.query1.node_types[-1] != self.query.node_types[-1]:
+            raise ValueError('The left and right queries must end with the same node type')
+        self.query1 = left_query
+        self.query2 = right_query
+    def get_terminal_types( self ):
+        return self.query1.node_types[0], self.query2.node_types[0]
+    def generate_cypher(self):
+        return self.query1.generate_cypher() + self.query2.generate_cypher()
+    def get_start(self):
+        return self.query1.get_start() + self.query2.get_start()
+
+
 class OneSidedLinearUserQuery():
     """A class for constructing linear paths through a series of knowledge sources.
 
@@ -58,7 +78,7 @@ class OneSidedLinearUserQuery():
         self.transitions = [ ]
     def get_start_node( self ):
         node = self.node_types[0]
-        return '{0}:{1}'.format(node,self.start_value), node
+        return ['{0}:{1}'.format(node,self.start_value), node]
     def get_terminal_types( self ):
         return self.node_types[0], self.node_types[-1]
     def add_node(self,node_type):
@@ -133,7 +153,7 @@ class OneSidedLinearUserQuery():
         cypherbuffer.append(next_width)
         cypherbuffer.append(getmin)
         cypherbuffer.append(rets)
-        return '\n'.join(cypherbuffer)
+        return ['\n'.join(cypherbuffer)]
 
 
 def test_1():
