@@ -204,12 +204,13 @@ def prepare_node_for_output(node,gt):
         if 'mondo_identifiers' in node.properties:
             node.synonyms.update(node.properties['mondo_identifiers'])
         node.label = gt.mondo.get_label( node.identifier )
-    elif node.node_type == node_types.DISEASE_NAME or node.node_type == node_types.DRUG_NAME:
-        node.label = node.identifier.split(':')[-1]
-    elif node.node_type == node_types.GENE and node.identifier.startswith('HGNC:'):
-        node.label = gt.hgnc.get_name( node )
-    else:
-        node.label = node.identifier
+    if node.label is None:
+        if node.node_type == node_types.DISEASE_NAME or node.node_type == node_types.DRUG_NAME:
+            node.label = node.identifier.split(':')[-1]
+        elif node.node_type == node_types.GENE and node.identifier.startswith('HGNC:'):
+            node.label = gt.hgnc.get_name( node )
+        else:
+            node.label = node.identifier
 
 #Push to edge...
 def prepare_edge_for_output(edge):
