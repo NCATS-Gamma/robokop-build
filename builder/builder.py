@@ -32,9 +32,7 @@ class KnowledgeGraph:
         #GreenT wants a cypherquery to find transitions, and a starting point
         cyphers = self.userquery.generate_cypher()
         starts  = self.userquery.get_start_node()
-        print (starts)
         for cypher, start in zip(cyphers,starts):
-            print(start)
             identifier, ntype = start
             start_node = KNode( identifier, ntype )
             #Fire this to rosetta, collect the result
@@ -314,8 +312,25 @@ def question2b(diseasename):
     query.add_transition(node_types.ANATOMY)
     run_query(query,'Query2b_{}'.format('_'.join(diseasename.split())) , '.', prune=True)
 
+def question2(drugname, diseasename):
+    lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
+    lquery.add_transition(node_types.DRUG)
+    lquery.add_transition(node_types.GENE)
+    lquery.add_transition(node_types.PROCESS)
+    lquery.add_transition(node_types.CELL)
+    lquery.add_transition(node_types.ANATOMY)
+    rquery = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)
+    rquery.add_transition(node_types.DISEASE)
+    rquery.add_transition(node_types.PHENOTYPE)
+    rquery.add_transition(node_types.ANATOMY)
+    query = userquery.TwoSidedLinearUserQuery( lquery, rquery )
+    outdisease = '_'.join(diseasename.split())
+    outdrug     = '_'.join(drugname.split())
+    run_query(query,'Query2_{}_{}'.format(outdisease, outdrug) , '.', prune=True)
+
 def test():
-    question1('Ebola Virus Infection')
+    #question1('Ebola Virus Infection')
+    question2('imatinib','asthma')
     #question2a('imatinib')
     #question2b('asthma')
 
