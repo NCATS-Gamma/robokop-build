@@ -289,14 +289,14 @@ def main_test():
         run_query(query, output, worldgraph)
 
 def question1(diseasename):
-    query = userquery.LinearUserQuery(diseasename,node_types.DISEASE_NAME)
+    query = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)
     query.add_transition(node_types.DISEASE)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.GENETIC_CONDITION)
     run_query(query,'Query1_{}'.format('_'.join(diseasename.split())) , '.')
    
 def question2a(drugname):
-    query = userquery.LinearUserQuery(drugname,node_types.DRUG_NAME)
+    query = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
     query.add_transition(node_types.DRUG)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.PROCESS)
@@ -306,7 +306,7 @@ def question2a(drugname):
     run_query(query,'Query2a_{}'.format('_'.join(drugname.split())) , '.', prune=True)
 
 def question2b(diseasename):
-    query = userquery.LinearUserQuery(diseasename,node_types.DISEASE_NAME)
+    query = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)
     query.add_transition(node_types.DISEASE)
     query.add_transition(node_types.PHENOTYPE)
     query.add_transition(node_types.ANATOMY)

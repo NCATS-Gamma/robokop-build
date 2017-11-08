@@ -35,7 +35,7 @@ reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN wei
             withline += '\nWHERE d{0} >= {1} AND d{0} <= {2}'.format(t_number, self.min_path_length, self.max_path_length)
         return withline
 
-class LinearUserQuery():
+class OneSidedLinearUserQuery():
     """A class for constructing linear paths through a series of knowledge sources.
 
     We have a set of knowledge sources that can be considered as a graph.  Each edge in the graph represents
@@ -139,7 +139,7 @@ class LinearUserQuery():
 def test_1():
     """Try to generate a Question 1 style query using this general device and fully specifying path."""
     from reasoner.node_types import DISEASE, GENE, GENETIC_CONDITION
-    query = LinearUserQuery("Ebola infection", DISEASE_NAME )
+    query = OneSidedLinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(GENE)
     query.add_transition(GENETIC_CONDITION)
@@ -149,7 +149,7 @@ def test_1():
 def test_2():
     """Try to generate a Question 1 style query using this general device without fully specifying path."""
     from reasoner.node_types import DISEASE, GENETIC_CONDITION
-    query = LinearUserQuery("Ebola infection", DISEASE_NAME )
+    query = OneSidedLinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(GENETIC_CONDITION, min_path_length=2, max_path_length=2)
     cypher = query.generate_cypher()
@@ -158,7 +158,7 @@ def test_2():
 def test_3a():
     """Try to generate a Question 2 style query using this general device fully specifying path."""
     from reasoner.node_types import DRUG, GENE, PROCESS, CELL, ANATOMY
-    query = LinearUserQuery("imatinib", DRUG_NAME )
+    query = OneSidedLinearUserQuery("imatinib", DRUG_NAME )
     query.add_transition(DRUG)
     query.add_transition(GENE)
     query.add_transition(PROCESS)
@@ -170,7 +170,7 @@ def test_3a():
 def test_3b():
     """Try to generate the other half of a Q2 query"""
     from reasoner.node_types import DISEASE, PHENOTYPE, ANATOMY
-    query = LinearUserQuery("asthma", DISEASE_NAME )
+    query = OneSidedLinearUserQuery("asthma", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(PHENOTYPE)
     query.add_transition(ANATOMY)
