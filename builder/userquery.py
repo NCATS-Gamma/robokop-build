@@ -78,7 +78,7 @@ class OneSidedLinearUserQuery():
         self.transitions = [ ]
     def get_start_node( self ):
         node = self.node_types[0]
-        return ['{0}:{1}'.format(node,self.start_value), node]
+        return [ ('{0}:{1}'.format(node,self.start_value), node) ]
     def get_terminal_types( self ):
         return self.node_types[0], self.node_types[-1]
     def add_node(self,node_type):

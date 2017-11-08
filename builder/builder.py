@@ -32,7 +32,9 @@ class KnowledgeGraph:
         #GreenT wants a cypherquery to find transitions, and a starting point
         cyphers = self.userquery.generate_cypher()
         starts  = self.userquery.get_start_node()
+        print (starts)
         for cypher, start in zip(cyphers,starts):
+            print(start)
             identifier, ntype = start
             start_node = KNode( identifier, ntype )
             #Fire this to rosetta, collect the result
@@ -313,9 +315,9 @@ def question2b(diseasename):
     run_query(query,'Query2b_{}'.format('_'.join(diseasename.split())) , '.', prune=True)
 
 def test():
-    #question1('Ebola Virus Infection')
+    question1('Ebola Virus Infection')
     #question2a('imatinib')
-    question2b('asthma')
+    #question2b('asthma')
 
 if __name__ == '__main__':
     test()
