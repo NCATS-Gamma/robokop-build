@@ -35,7 +35,27 @@ reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN wei
             withline += '\nWHERE d{0} >= {1} AND d{0} <= {2}'.format(t_number, self.min_path_length, self.max_path_length)
         return withline
 
-class LinearUserQuery():
+class TwoSidedLinearUserQuery():
+    """Constructs a query that is fixed at either end.
+
+    When this occurs, we are going to treat it as a pair of OneSidedLinearUserQueries that 
+    extend inward from the end points and meet in the middle"""
+    def __init__(self, left_query, right_query):
+        """To construct a two sided query, pass in two one-sided query"""
+        #TODO: we want creation of this object to be a bit more dynamic
+        if left_query.node_types[-1] != right_query.node_types[-1]:
+            raise ValueError('The left and right queries must end with the same node type')
+        self.query1 = left_query
+        self.query2 = right_query
+    def get_terminal_types( self ):
+        return self.query1.node_types[0], self.query2.node_types[0]
+    def generate_cypher(self):
+        return self.query1.generate_cypher() + self.query2.generate_cypher()
+    def get_start_node(self):
+        return self.query1.get_start_node() + self.query2.get_start_node()
+
+
+class OneSidedLinearUserQuery():
     """A class for constructing linear paths through a series of knowledge sources.
 
     We have a set of knowledge sources that can be considered as a graph.  Each edge in the graph represents
@@ -58,7 +78,7 @@ class LinearUserQuery():
         self.transitions = [ ]
     def get_start_node( self ):
         node = self.node_types[0]
-        return '{0}:{1}'.format(node,self.start_value), node
+        return [ ('{0}:{1}'.format(node,self.start_value), node) ]
     def get_terminal_types( self ):
         return self.node_types[0], self.node_types[-1]
     def add_node(self,node_type):
@@ -133,13 +153,13 @@ class LinearUserQuery():
         cypherbuffer.append(next_width)
         cypherbuffer.append(getmin)
         cypherbuffer.append(rets)
-        return '\n'.join(cypherbuffer)
+        return ['\n'.join(cypherbuffer)]
 
 
 def test_1():
     """Try to generate a Question 1 style query using this general device and fully specifying path."""
     from reasoner.node_types import DISEASE, GENE, GENETIC_CONDITION
-    query = LinearUserQuery("Ebola infection", DISEASE_NAME )
+    query = OneSidedLinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(GENE)
     query.add_transition(GENETIC_CONDITION)
@@ -149,7 +169,7 @@ def test_1():
 def test_2():
     """Try to generate a Question 1 style query using this general device without fully specifying path."""
     from reasoner.node_types import DISEASE, GENETIC_CONDITION
-    query = LinearUserQuery("Ebola infection", DISEASE_NAME )
+    query = OneSidedLinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(GENETIC_CONDITION, min_path_length=2, max_path_length=2)
     cypher = query.generate_cypher()
@@ -158,7 +178,7 @@ def test_2():
 def test_3a():
     """Try to generate a Question 2 style query using this general device fully specifying path."""
     from reasoner.node_types import DRUG, GENE, PROCESS, CELL, ANATOMY
-    query = LinearUserQuery("imatinib", DRUG_NAME )
+    query = OneSidedLinearUserQuery("imatinib", DRUG_NAME )
     query.add_transition(DRUG)
     query.add_transition(GENE)
     query.add_transition(PROCESS)
@@ -170,7 +190,7 @@ def test_3a():
 def test_3b():
     """Try to generate the other half of a Q2 query"""
     from reasoner.node_types import DISEASE, PHENOTYPE, ANATOMY
-    query = LinearUserQuery("asthma", DISEASE_NAME )
+    query = OneSidedLinearUserQuery("asthma", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(PHENOTYPE)
     query.add_transition(ANATOMY)
