@@ -1,4 +1,4 @@
-from reasoner.node_types import node_types, DRUG_NAME, DISEASE_NAME
+from greent.node_types import node_types, DRUG_NAME, DISEASE_NAME
 
 #Allowed user-level types
 #TODO: Line up with steve, have in one place?

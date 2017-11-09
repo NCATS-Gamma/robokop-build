@@ -1,10 +1,7 @@
-#from greent.chemotext import Chemotext
-#from greent.oxo import OXO
-#from greent.service import GreenT
 import json
 import logging
-from reasoner.graph_components import KEdge
-from reasoner import node_types
+from greent.graph_components import KEdge
+from greent import node_types
 
 def add_mesh( nodes ):
     pass
@@ -167,17 +164,22 @@ def process_all():
                     exit()
 
 def read_synonyms():
+    from datetime import datetime
+    start = datetime.now()
     smap = {}
     with open('chemotext.words.txt','r') as infile:
         h = infile.readline()
         for line in infile:
             x = line.strip().split('\t')
             smap[x[0]] = x[1]
-    print( len(smap) )
+    end = datetime.now()
+    print( len(smap),'terms' )
+    print( 'Loaded in {}'.format(end-start ))
 
 if __name__ == '__main__':
-    #read_synonyms()
+    #get_all()
     #process_all()
+    read_synonyms()
     #test_mesh_conversion('DOID:1470')
     #add_chemotext_term({'label': 'Marble Bone Disease'})
     #print( term_to_term('DOID:4325', 'DOID:14504') )

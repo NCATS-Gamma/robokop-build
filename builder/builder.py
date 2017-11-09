@@ -1,5 +1,5 @@
-from reasoner.graph_components import KNode,KEdge,elements_to_json
-from reasoner import node_types 
+from greent.graph_components import KNode,KEdge,elements_to_json
+from greent import node_types 
 from greent.rosetta import Rosetta
 import chemotext
 import userquery
@@ -141,7 +141,7 @@ class KnowledgeGraph:
         # Generate paths, (unique) edges along paths
         self.logger.debug('Building Support')
         start_nodes, end_nodes = self.get_terminal_nodes()
-        chemotext.add_mesh( graph.nodes() )
+        #chemotext.add_mesh( self.graph.nodes() )
         links_to_check = set()
         for start_node in start_nodes:
             for end_node in end_nodes:
@@ -342,8 +342,8 @@ def question2(drugname, diseasename):
     run_query(query,'Query2_{}_{}_support'.format(outdisease, outdrug) , '.', prune=True)
 
 def test():
-    #question1('Ebola Virus Infection')
-    question2('imatinib','asthma')
+    question1('Ebola Virus Infection')
+    #question2('imatinib','asthma')
     #question2a('imatinib')
     #question2b('asthma')
 
