@@ -14,7 +14,6 @@ def add_chemotext_terms(nodes,greent):
             cterm = ctext.get_chemotext_term( label )
             if cterm is None:
                 logging.getLogger('application').warn("Cannot find chemotext synonym for %s (%s)" % (label,mesh_info['curie']))
-                print("Cannot find chemotext synonym for %s (%s)" % (label, mesh_info['curie']))
             else:
                 mesh_info[ CHEMOTEXT_MESH_KEY ] = cterm
 
@@ -42,7 +41,6 @@ def term_to_term(node_a,node_b,greent,limit = 10000):
                 for data in result['data']:
                     articles += data['row']
     end = datetime.now()
-    print('chemotext: {} to {}: {} ({})'.format(meshes_a, meshes_b, len(articles), end-start))
     logging.getLogger('application').debug('chemotext: {} to {}: {} ({})'.format(meshes_a, meshes_b, len(articles), end-start))
     if len(articles) > 0:
         ke= KEdge( 'chemotext', 'term_to_term', { 'publications': articles }, is_support = True )
