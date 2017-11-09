@@ -30,16 +30,17 @@ class KnowledgeGraph:
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
         #GreenT wants a cypherquery to find transitions, and a starting point
-        cyphers = self.userquery.generate_cypher()
-        starts  = self.userquery.get_start_node()
-        for cypher, start in zip(cyphers,starts):
+        cyphers  = self.userquery.generate_cypher()
+        starts   = self.userquery.get_start_node()
+        reverses = self.userquery.get_reversed()
+        for cypher, start, reverse in zip(cyphers,starts,reverses):
             identifier, ntype = start
             start_node = KNode( identifier, ntype )
             #Fire this to rosetta, collect the result
             result_graph = self.rosetta.graph([(None, start_node)],query=cypher)
             #result_graph contains duplicate edges.  Remove them, while preserving order:
             result_graph = list(OrderedDict.fromkeys( result_graph ) )
-            self.add_edges( result_graph )
+            self.add_edges( result_graph , reverse )
         self.logger.debug('Query Complete')
     def add_synonymous_edge(self, edge):
         source = self.find_node(edge.source_node)
@@ -52,21 +53,26 @@ class KnowledgeGraph:
             source, target = target, source
         source.add_synonym(edge.target_node)
         self.node_map[ edge.target_node.identifier ] = source
-    def add_nonsynonymous_edge(self,edge):
+    def add_nonsynonymous_edge(self,edge, reverse_edges = False):
         #Found an edge between nodes. Add nodes if needed.
         source_node = self.add_or_find_node(edge.source_node)
         target_node = self.add_or_find_node(edge.target_node)
         edge.source_node=source_node
         edge.target_node=target_node
         #Now the nodes are translated to the canonical identifiers, make the edge
-        self.graph.add_edge(source_node, target_node, object=edge)
-    def add_edges( self, edge_list ):
+        if reverse_edges:
+            edge.properties['reversed'] = True
+            self.graph.add_edge(target_node, source_node, object=edge)
+        else:
+            edge.properties['reversed'] = False
+            self.graph.add_edge(source_node, target_node, object=edge)
+    def add_edges( self, edge_list , reverse_edges):
         """Add a list of edges (and the associated nodes) to the graph."""
         for edge in edge_list:
             if edge.is_synonym:
                 self.add_synonymous_edge(edge)
             else:
-                self.add_nonsynonymous_edge(edge)
+                self.add_nonsynonymous_edge(edge, reverse_edges)
     def find_node(self,node):
         """If node exists in graph, return it, otherwise, return None"""
         if node.identifier in self.node_map:
@@ -135,6 +141,7 @@ class KnowledgeGraph:
         # Generate paths, (unique) edges along paths
         self.logger.debug('Building Support')
         start_nodes, end_nodes = self.get_terminal_nodes()
+        chemotext.add_mesh( graph.nodes() )
         links_to_check = set()
         for start_node in start_nodes:
             for end_node in end_nodes:
@@ -233,16 +240,21 @@ def prepare_edge_for_output(edge):
     else:
         edge.typed_relation_id = ''
         edge.typed_relation_label = ''
+    edge.reversed = edge.properties['reversed']
 
 
 def run_query(query, result_name, output_path, prune=True):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
+    logger = logging.getLogger('application')
+    logger.setLevel(level = logging.DEBUG)
+    logger.debug('Run {}'.format(result_name))
+    #
     rosetta = Rosetta()
     kgraph = KnowledgeGraph( query, rosetta )
     kgraph.execute()
     if prune:
         kgraph.prune()
-    #kgraph.support()
+    kgraph.support()
     kgraph.export(result_name)
     #This isn't working right now, leave out....
     #with open('%s.txt' % output_path, 'w') as output_stream:
@@ -254,10 +266,6 @@ def main_test():
     args = parser.parse_args()
     print (args.data)
     
-    """Run a series of test cases from the NCATS FOA"""
-    logger = logging.getLogger('application')
-    logger.setLevel(level = logging.DEBUG)
-
     #Our test cases are defined as a doid and a name.  The name is from the NCATS FOA. The DOID
     # was looked up by hand.
     '''test_cases = ( \
@@ -316,6 +324,8 @@ def question2b(diseasename):
     run_query(query,'Query2b_{}'.format('_'.join(diseasename.split())) , '.', prune=True)
 
 def question2(drugname, diseasename):
+
+
     lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
     lquery.add_transition(node_types.DRUG)
     lquery.add_transition(node_types.GENE)
@@ -329,7 +339,7 @@ def question2(drugname, diseasename):
     query = userquery.TwoSidedLinearUserQuery( lquery, rquery )
     outdisease = '_'.join(diseasename.split())
     outdrug     = '_'.join(drugname.split())
-    run_query(query,'Query2_{}_{}'.format(outdisease, outdrug) , '.', prune=True)
+    run_query(query,'Query2_{}_{}_support'.format(outdisease, outdrug) , '.', prune=True)
 
 def test():
     #question1('Ebola Virus Infection')

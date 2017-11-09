@@ -53,6 +53,8 @@ class TwoSidedLinearUserQuery():
         return self.query1.generate_cypher() + self.query2.generate_cypher()
     def get_start_node(self):
         return self.query1.get_start_node() + self.query2.get_start_node()
+    def get_reversed(self):
+        return [False, True]
 
 
 class OneSidedLinearUserQuery():
@@ -81,6 +83,8 @@ class OneSidedLinearUserQuery():
         return [ ('{0}:{1}'.format(node,self.start_value), node) ]
     def get_terminal_types( self ):
         return self.node_types[0], self.node_types[-1]
+    def get_reversed(self):
+        return [False]
     def add_node(self,node_type):
         """Add a node to the node list, validating the type"""
         if node_type not in node_types:

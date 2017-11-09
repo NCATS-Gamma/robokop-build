@@ -4,6 +4,10 @@
 import json
 import logging
 from reasoner.graph_components import KEdge
+from reasoner import node_types
+
+def add_mesh( nodes ):
+    pass
 
 CHEMOTEXT_MESH_KEY = 'chemotext_mesh_label'
 
@@ -42,6 +46,7 @@ def convert_to_mesh(term,greent):
             logging.getLogger('application').debug('  got %s(%s)' % (result['label'], result['curie']))
     if len(meshes) == 0:
         logging.getLogger('application').warn('No MeSH ID found for term: %s' % term)
+        print('no mesh {}'.format(term))
     for mesh in meshes:
         add_chemotext_term(mesh, greent)
     return meshes
@@ -84,14 +89,23 @@ def add_chemotext_term(mesh_info,greent):
 def get_mesh_terms(node, greent):
     MESH_KEY = 'mesh_identifiers'
     if MESH_KEY not in node.properties:
-        node.properties[MESH_KEY] =  convert_to_mesh( node.identifier, greent ) 
+        if node.node_type == node_types.DRUG:
+            #TODO: Find a way (that is up-to-date) to actually get mesh terms for these guys.
+            logging.getLogger('application').debug('Trying to use drug name: {} as MeSH term'.format(node.label.title()))
+            mesh = {'curie':'', 'label':node.label.title()}
+            add_chemotext_term( mesh, greent )
+            node.add_mesh_identifier( mesh  )
+        else:
+            node.properties[MESH_KEY] =  convert_to_mesh( node.identifier, greent ) 
     return node.properties[MESH_KEY]
 
 def term_to_term(node_a,node_b,greent,limit = 10000):
     """Given two terms, find articles in chemotext that connect them, and return as a KEdge.
     If nothing is found, return None"""
+    print('Node: {}, Node: {}'.format(node_a.identifier, node_b.identifier))
     meshes_a = get_mesh_terms(node_a, greent)
     meshes_b = get_mesh_terms(node_b, greent)
+    print('Meshes: {}, {}'.format(meshes_a, meshes_b))
     ctext = greent.chemotext
     articles=[]
     for ma in meshes_a:
@@ -102,6 +116,7 @@ def term_to_term(node_a,node_b,greent,limit = 10000):
             for result in response['results']:
                 for data in result['data']:
                     articles += data['row']
+    print('{} to {}: {}'.format(meshes_a, meshes_b, len(articles)))
     if len(articles) > 0:
         ke= KEdge( 'chemotext', 'term_to_term', { 'publications': articles }, is_support = True )
         ke.source_node = node_a
@@ -116,8 +131,54 @@ def test_mesh_conversion(nodeid):
     print(node.properties)
     get_mesh_terms(node)
 
+def get_all():
+    from greent.rosetta import Rosetta
+    rosetta=Rosetta()
+    ctext = rosetta.core.chemotext
+    response = ctext.query( query="MATCH (d:Term) RETURN d")
+    import json
+    with open('chemotext.dump.json','w') as outfile:
+        json.dump(response,outfile,indent=2)
+
+def process_all():
+    import json
+    with open('chemotext.dump.json','r') as infile:
+        ctext = json.load(infile)
+    with open('chemotext.words.txt','w') as outfile:
+        outfile.write('QUERY\tKEY\n')
+        res = ctext['results'][0]
+        n = 0
+        for datum in res['data']:
+            rows = datum['row']
+            for row in rows:
+                n+=1
+                try:
+                    rowtype = row['type']
+                    meshname = row['name'].upper()
+                    if 'synonyms' in row:
+                        rowsyn  = row['synonyms']
+                    else:
+                        rowsyn = []
+                    outfile.write('{}\t{}\n'.format(meshname, meshname))
+                    for syn in rowsyn:
+                        outfile.write('{}\t{}\n'.format(syn.upper(), meshname) )
+                except KeyError:
+                    print( json.dumps(row, indent=4) )
+                    exit()
+
+def read_synonyms():
+    smap = {}
+    with open('chemotext.words.txt','r') as infile:
+        h = infile.readline()
+        for line in infile:
+            x = line.strip().split('\t')
+            smap[x[0]] = x[1]
+    print( len(smap) )
+
 if __name__ == '__main__':
-    test_mesh_conversion('DOID:1470')
+    #read_synonyms()
+    #process_all()
+    #test_mesh_conversion('DOID:1470')
     #add_chemotext_term({'label': 'Marble Bone Disease'})
     #print( term_to_term('DOID:4325', 'DOID:14504') )
     #print term_to_term('DOID:4325', 'http://www.orpha.net/ORDO/Orphanet_646')
