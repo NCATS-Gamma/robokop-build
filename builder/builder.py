@@ -3,6 +3,7 @@ from greent import node_types
 from greent.rosetta import Rosetta
 import chemotext
 import userquery
+import mesh
 import argparse
 import networkx as nx
 from networkx.readwrite.json_graph.node_link import node_link_data
@@ -141,7 +142,8 @@ class KnowledgeGraph:
         # Generate paths, (unique) edges along paths
         self.logger.debug('Building Support')
         start_nodes, end_nodes = self.get_terminal_nodes()
-        #chemotext.add_mesh( self.graph.nodes() )
+        mesh.add_mesh( self.graph.nodes(), self.rosetta.core )
+        chemotext.add_chemotext_terms( self.graph.nodes(), self.rosetta.core )
         links_to_check = set()
         for start_node in start_nodes:
             for end_node in end_nodes:
@@ -152,13 +154,16 @@ class KnowledgeGraph:
                             links_to_check.add(link)
         # Check each edge, add any support found.
         n_supported = 0
+        self.logger.debug('Number of pairs to check: {}'.format( len( links_to_check) ) )
+        overall_start = dt.now()
         for source,target in links_to_check:
             support_edge = chemotext.term_to_term(source,target, self.rosetta.core)
             if support_edge is not None:
                 n_supported += 1
                 self.logger.debug ('  -Adding support edge from {} to {}'.format(source.identifier, target.identifier) )
                 self.add_nonsynonymous_edge( support_edge )
-        self.logger.debug('Support Completed.  Added {} edges'.format( n_supported) )
+        overall_end = dt.now()
+        self.logger.debug('Support Completed.  Added {} edges in {}'.format( n_supported, overall_end-overall_start) )
     def write(self,root=None,level=-1,output_stream = sys.stdout):
         """Write the graph as a tree to stdout"""
         #TODO: add other output stream
@@ -205,8 +210,7 @@ class KnowledgeGraph:
 
 #TODO: push to node, ...
 def prepare_node_for_output(node,gt):
-    if 'mesh_identifiers' in node.properties:
-        node.synonyms.update( [mi['curie'] for mi in node.properties['mesh_identifiers']] )
+    node.synonyms.update( [mi['curie'] for mi in node.mesh_identifiers if mi['curie'] != ''] )
     if node.node_type == node_types.DISEASE or node.node_type == node_types.GENETIC_CONDITION:
         if 'mondo_identifiers' in node.properties:
             node.synonyms.update(node.properties['mondo_identifiers'])
@@ -324,8 +328,6 @@ def question2b(diseasename):
     run_query(query,'Query2b_{}'.format('_'.join(diseasename.split())) , '.', prune=True)
 
 def question2(drugname, diseasename):
-
-
     lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
     lquery.add_transition(node_types.DRUG)
     lquery.add_transition(node_types.GENE)
@@ -342,8 +344,8 @@ def question2(drugname, diseasename):
     run_query(query,'Query2_{}_{}_support'.format(outdisease, outdrug) , '.', prune=True)
 
 def test():
-    question1('Ebola Virus Infection')
-    #question2('imatinib','asthma')
+    #question1('Ebola Virus Infection')
+    question2('imatinib','asthma')
     #question2a('imatinib')
     #question2b('asthma')
 
