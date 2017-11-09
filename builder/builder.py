@@ -154,18 +154,14 @@ class KnowledgeGraph:
                             links_to_check.add(link)
         # Check each edge, add any support found.
         n_supported = 0
-        self.logger.debug('Pairs to check: {}'.format( len( links_to_check) ) )
-        from datetime import datetime as dt
+        self.logger.debug('Number of pairs to check: {}'.format( len( links_to_check) ) )
         overall_start = dt.now()
         for source,target in links_to_check:
-            start = dt.now()
             support_edge = chemotext.term_to_term(source,target, self.rosetta.core)
             if support_edge is not None:
                 n_supported += 1
                 self.logger.debug ('  -Adding support edge from {} to {}'.format(source.identifier, target.identifier) )
                 self.add_nonsynonymous_edge( support_edge )
-            end = dt.now()
-            self.logger.debug('    {}'.format(end-start))
         overall_end = dt.now()
         self.logger.debug('Support Completed.  Added {} edges in {}'.format( n_supported, overall_end-overall_start) )
     def write(self,root=None,level=-1,output_stream = sys.stdout):
