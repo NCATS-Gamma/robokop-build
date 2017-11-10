@@ -11,6 +11,7 @@ import logging
 import sys
 from neo4j.v1 import GraphDatabase
 from collections import OrderedDict
+from importlib import import_module
 
 class KnowledgeGraph:
     def __init__(self, userquery, rosetta):
@@ -126,8 +127,9 @@ class KnowledgeGraph:
             elif node.node_type == end_type:
                 end_nodes.append( node )
         return start_nodes, end_nodes
-    def support(self):
+    def support(self, support_module_names):
         """Look for extra information connecting nodes."""
+        support_modules = [import_module(module_name) for module_name in support_module_names]
         #TODO: how do we want to handle support edges
         # Questions: Are they new edges even if we have an edge already, or do we integrate
         #            Do we look for edges within a layer, e.g. to identify similar concepts
@@ -142,8 +144,6 @@ class KnowledgeGraph:
         # Generate paths, (unique) edges along paths
         self.logger.debug('Building Support')
         start_nodes, end_nodes = self.get_terminal_nodes()
-        mesh.add_mesh( self.graph.nodes(), self.rosetta.core )
-        chemotext.add_chemotext_terms( self.graph.nodes(), self.rosetta.core )
         links_to_check = set()
         for start_node in start_nodes:
             for end_node in end_nodes:
@@ -155,30 +155,16 @@ class KnowledgeGraph:
         # Check each edge, add any support found.
         n_supported = 0
         self.logger.debug('Number of pairs to check: {}'.format( len( links_to_check) ) )
-        overall_start = dt.now()
+        for supporter in support_modules:
+            supporter.prepare( self.graph.nodes(), self.rosetta.core )
         for source,target in links_to_check:
-            support_edge = chemotext.term_to_term(source,target, self.rosetta.core)
-            if support_edge is not None:
-                n_supported += 1
-                self.logger.debug ('  -Adding support edge from {} to {}'.format(source.identifier, target.identifier) )
-                self.add_nonsynonymous_edge( support_edge )
-        overall_end = dt.now()
-        self.logger.debug('Support Completed.  Added {} edges in {}'.format( n_supported, overall_end-overall_start) )
-    def write(self,root=None,level=-1,output_stream = sys.stdout):
-        """Write the graph as a tree to stdout"""
-        #TODO: add other output stream
-        if root is None:
-            [root] = self.get_nodes(0)
-            self.write(root, 0, output_stream)
-        else:
-            lprefix = []
-            for n in range(level):
-                lprefix += [' ']
-            prefix = ''.join(lprefix)
-            output_stream.write( '%s%s\n' % (prefix, root.get_shortname() ) )
-            children = self.graph.successors(root)
-            for child in children:
-                self.write(child,level+1, output_stream)
+            for supporter in support_modules:
+                support_edge = supporter.term_to_term(source,target, self.rosetta.core)
+                if support_edge is not None:
+                    n_supported += 1
+                    self.logger.debug ('  -Adding support edge from {} to {}'.format(source.identifier, target.identifier) )
+                    self.add_nonsynonymous_edge( support_edge )
+        self.logger.debug('Support Completed.  Added {} edges.'.format( n_supported ))
     def export(self,resultname):
         """Export to neo4j database."""
         #TODO: lots of this should probably go in the KNode and KEdge objects?
@@ -188,9 +174,7 @@ class KnowledgeGraph:
         session.run('MATCH (a:%s) DETACH DELETE a' % resultname)
         #Now add all the nodes
         for node in self.graph.nodes():
-            #TODO: get a name correctly
             prepare_node_for_output(node,self.rosetta.core)
-            #print( '----\n{} {}\n properties:{}\n synonyms:{}'.format(node.identifier, node.label, node.properties, node.synonyms))
             session.run("CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})" % resultname, \
                     {"id": node.identifier, "name": node.label, "node_type": node.node_type, "syn": list(node.synonyms), "meta": ''})
         for edge in self.graph.edges(data=True):
@@ -202,7 +186,6 @@ class KnowledgeGraph:
             else:
                 label = 'Result'
             prepare_edge_for_output(ke)
-            #print( '----\nEdge {} {}\n properties:{}\n'.format(aid, bid, ke.properties))
             session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" % \
                     (resultname,resultname, label),\
                     { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label } )
@@ -247,87 +230,27 @@ def prepare_edge_for_output(edge):
     edge.reversed = edge.properties['reversed']
 
 
-def run_query(query, result_name, output_path, prune=True):
+def run_query(query, supports, result_name, output_path, prune=True):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
     logger = logging.getLogger('application')
     logger.setLevel(level = logging.DEBUG)
     logger.debug('Run {}'.format(result_name))
-    #
     rosetta = Rosetta()
     kgraph = KnowledgeGraph( query, rosetta )
     kgraph.execute()
     if prune:
         kgraph.prune()
-    kgraph.support()
+    kgraph.support(supports)
     kgraph.export(result_name)
-    #This isn't working right now, leave out....
-    #with open('%s.txt' % output_path, 'w') as output_stream:
-    #    kgraph.write(output_stream = output_stream)
        
-def main_test():
-    parser = argparse.ArgumentParser(description='Protokop.')
-    parser.add_argument('--data', help='Name of the data layer to use [default|greent]', default='default')
-    args = parser.parse_args()
-    print (args.data)
-    
-    #Our test cases are defined as a doid and a name.  The name is from the NCATS FOA. The DOID
-    # was looked up by hand.
-    '''test_cases = ( \
-                  ('4325',  'ebola'), \
-                  ('1470'  ,'major depressive disorder'), \
-                  ('11476' ,'osteoporosis'), \
-                  ('12365' ,'malaria'), \
-                  ('10573' ,'osteomalacia'), \
-                  ('9270'  ,'alkaptonuria'), \
-                  ('526'   ,'HIV'), \
-                  ('1498'  ,'cholera'), \
-                  ('13810' ,'Hypercholesterolemia'), \
-                  ('9352'  ,'Diabetes Mellitus, Type 2'), \
-                  ('2841'  ,'Asthma'), \
-                  ('4989'  ,'Chronic Pancreatitis(?)'), \
-                  ('10652' ,'Alzheimer Disease'), \
-                  ('5844'  ,'Myocardial Infarction'), \
-                  ('11723' ,'Duchenne Muscular Dystrophy'), \
-                  ('14504' ,'Niemann Pick Type C'), \
-                  ('12858' ,'Huntington Disease'), \
-                  ('10923' ,'Sickle Cell Disease'), \
-                  ('2055'  ,'Post-Truamatic Stress Disorder'), \
-                  ('0060728' ,'Deficiency of N-glycanase 1'), \
-                  ('0050741' ,'Alcohol Dependence') )
-'''
-    test_cases = ( ('0050741' ,'Alcohol Dependence') , )
-
-    for doid, disease_name in test_cases:
-        print('Running test case: %s (DOID:%s)' % (disease_name,doid) )
-        query = '(D;DOID:%s)-G-GC' % doid
-        #output = 'examples_gt/example.%s' % doid
-        output = 'examples/example.%s' % doid
-        run_query(query, output, worldgraph)
-
-def question1(diseasename):
+def question1(diseasename,supports):
     query = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)
     query.add_transition(node_types.DISEASE)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.GENETIC_CONDITION)
-    run_query(query,'Query1_{}'.format('_'.join(diseasename.split())) , '.')
+    run_query(query,supports,'Query1_{}_{}'.format('_'.join(diseasename.split()),'+'.join(supports)) , '.')
    
-def question2a(drugname):
-    query = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
-    query.add_transition(node_types.DRUG)
-    query.add_transition(node_types.GENE)
-    query.add_transition(node_types.PROCESS)
-    query.add_transition(node_types.CELL)
-    query.add_transition(node_types.ANATOMY)
-    run_query(query,'Query2a_{}'.format('_'.join(drugname.split())) , '.', prune=True)
-
-def question2b(diseasename):
-    query = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)
-    query.add_transition(node_types.DISEASE)
-    query.add_transition(node_types.PHENOTYPE)
-    query.add_transition(node_types.ANATOMY)
-    run_query(query,'Query2b_{}'.format('_'.join(diseasename.split())) , '.', prune=True)
-
-def question2(drugname, diseasename):
+def question2(drugname, diseasename, supports):
     lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
     lquery.add_transition(node_types.DRUG)
     lquery.add_transition(node_types.GENE)
@@ -341,7 +264,7 @@ def question2(drugname, diseasename):
     query = userquery.TwoSidedLinearUserQuery( lquery, rquery )
     outdisease = '_'.join(diseasename.split())
     outdrug     = '_'.join(drugname.split())
-    run_query(query,'Query2_{}_{}_support'.format(outdisease, outdrug) , '.', prune=True)
+    run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '+'.join(supports)) , '.', prune=True)
 
 def test():
     #question1('Ebola Virus Infection')
@@ -349,5 +272,22 @@ def test():
     #question2a('imatinib')
     #question2b('asthma')
 
+def main_test():
+    parser = argparse.ArgumentParser(description='Protokop.')
+    parser.add_argument('-s', '--support', help='Name of the support system', action='append', choices=['chemotext','chemotext2','cdw'], required=True)
+    parser.add_argument('-q', '--question', help='Shortcut for certain questions (1=Disease/GeneticCondition, 2=COP)', choices=[1,2], required=True, type=int)
+    parser.add_argument('--start', help='Text to initiate query', required = True)
+    parser.add_argument('--end', help='Text to finalize query', required = False)
+    args = parser.parse_args()
+    if args.question == 1:
+        if args.end is not None:
+            print('--end argument not supported for question 1.  Ignoring')
+        question1( args.start, args.support )
+    elif args.question == 2:
+        if args.end is None:
+            print('--end required for question 2. Exiting')
+            sys.exit(1)
+        question2(args.start, args.end, args.support)
+
 if __name__ == '__main__':
-    test()
+    main_test()
