@@ -8,19 +8,21 @@ from greent import node_types
 def prepare(nodes, greent):
     greent.chemotext2 = chemotext2.Chemotext2( ServiceContext.create_context() )
     
-badwords = set(['disease','virus','infection','fever','syndrome','hemorrhagic',\
-                'gene','cell','system','tissue','non',\
+badwords = set(['disease','virus','infection','fever','syndrome','hemorrhagic','disorder',\
+                'gene','cell','system','tissue','non','positive','negative','receptor',\
                 'type','severe','perinatal','form','adult','onset','nonsyndromic','syndromic',\
                 'syndrome','infantile','juvenile','early','late','chronic','rare',\
                 'autosomal','dominant','recessive', 'congenital','hereditary','familial',\
-                'male','female','with','single','mutation','isolated'])
+                'male','female','with','without','single','mutation','isolated','absence','group', \
+                'susceptibility','plus','essential','distal','and','during','continuous',\
+                'due','deficiency','extensive','large','small','pro','partial','complete'])
 
 def generate_phrases(phrase):
     """From a phrase, find the 1 or 2 word queries into chemotext"""
     #Adding the individual words when the phrase is longer than 1 has problems.  For instance
     # something like 'Ebola virus' vs 'neimann-pick disease' will end up doing queries
     # of 'virus' vs 'disease' which will give a big score, but is meaningless
-    punctuation='()-,'
+    punctuation='()-,;./'
     for p in punctuation:
         phrase = ' '.join( phrase.split(p) )
     words = phrase.split() #on whitespace
@@ -45,6 +47,8 @@ def term_to_term(node_a,node_b,greent,limit = 10000):
     bestb = ''
     for p_a in phrases_a:
         for p_b in phrases_b:
+            if p_a == p_b:
+                continue
             r = greent.chemotext2.get_semantic_similarity( p_a, p_b )
             if r > maxr:
                 maxr = r
