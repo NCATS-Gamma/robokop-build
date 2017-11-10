@@ -9,10 +9,11 @@ def prepare(nodes, greent):
     greent.chemotext2 = chemotext2.Chemotext2( ServiceContext.create_context() )
     
 badwords = set(['disease','virus','infection','fever','syndrome','hemorrhagic',\
-                'gene','cell','system','tissue',\
+                'gene','cell','system','tissue','non',\
                 'type','severe','perinatal','form','adult','onset','nonsyndromic','syndromic',\
-                'syndrome','infantile','juvenile','early','late',\
-                'autosomal','dominant','recessive'])
+                'syndrome','infantile','juvenile','early','late','chronic','rare',\
+                'autosomal','dominant','recessive', 'congenital','hereditary','familial',\
+                'male','female','with','single','mutation','isolated'])
 
 def generate_phrases(phrase):
     """From a phrase, find the 1 or 2 word queries into chemotext"""
