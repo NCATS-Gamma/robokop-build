@@ -127,6 +127,12 @@ class KnowledgeGraph:
             elif node.node_type == end_type:
                 end_nodes.append( node )
         return start_nodes, end_nodes
+    def enhance(self):
+        """Enhance nodes,edges with good labels and properties"""
+        #TODO: it probably makes sense to push this stuff into the KNode itself
+        self.logger.debug('Enhancing nodes with labels')
+        for node in self.graph.nodes():
+            prepare_node_for_output(node,self.rosetta.core)
     def support(self, support_module_names):
         """Look for extra information connecting nodes."""
         support_modules = [import_module(module_name) for module_name in support_module_names]
@@ -174,7 +180,6 @@ class KnowledgeGraph:
         session.run('MATCH (a:%s) DETACH DELETE a' % resultname)
         #Now add all the nodes
         for node in self.graph.nodes():
-            prepare_node_for_output(node,self.rosetta.core)
             session.run("CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})" % resultname, \
                     {"id": node.identifier, "name": node.label, "node_type": node.node_type, "syn": list(node.synonyms), "meta": ''})
         for edge in self.graph.edges(data=True):
@@ -186,9 +191,15 @@ class KnowledgeGraph:
             else:
                 label = 'Result'
             prepare_edge_for_output(ke)
-            session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" % \
-                    (resultname,resultname, label),\
-                    { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label } )
+            if ke.edge_source == 'chemotext2':
+                session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" % \
+                        (resultname,resultname, label),\
+                        { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label, 'sim':ke.properties['similarity'] , 'terms':ke.properties['terms'] } )
+
+            else:
+                session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" % \
+                        (resultname,resultname, label),\
+                        { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label } )
         session.close()
 
 #TODO: push to node, ...
@@ -207,6 +218,7 @@ def prepare_node_for_output(node,gt):
             node.label = gt.hgnc.get_name( node )
         else:
             node.label = node.identifier
+    logging.getLogger('application').debug(node.label)
 
 #Push to edge...
 def prepare_edge_for_output(edge):
@@ -240,6 +252,7 @@ def run_query(query, supports, result_name, output_path, prune=True):
     kgraph.execute()
     if prune:
         kgraph.prune()
+    kgraph.enhance()
     kgraph.support(supports)
     kgraph.export(result_name)
        
@@ -248,7 +261,7 @@ def question1(diseasename,supports):
     query.add_transition(node_types.DISEASE)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.GENETIC_CONDITION)
-    run_query(query,supports,'Query1_{}_{}'.format('_'.join(diseasename.split()),'+'.join(supports)) , '.')
+    run_query(query,supports,'Query1_{}_{}'.format('_'.join(diseasename.split()),'_'.join(supports)) , '.')
    
 def question2(drugname, diseasename, supports):
     lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
@@ -264,7 +277,7 @@ def question2(drugname, diseasename, supports):
     query = userquery.TwoSidedLinearUserQuery( lquery, rquery )
     outdisease = '_'.join(diseasename.split())
     outdrug     = '_'.join(drugname.split())
-    run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '+'.join(supports)) , '.', prune=True)
+    run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', prune=True)
 
 def test():
     #question1('Ebola Virus Infection')
