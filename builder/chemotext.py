@@ -2,8 +2,13 @@ import json
 import logging
 from greent.graph_components import KEdge
 from greent import node_types
+import mesh
 
 CHEMOTEXT_MESH_KEY = 'chemotext_mesh_label'
+
+def prepare(nodes, greent):
+    mesh.add_mesh( nodes,  greent )
+    add_chemotext_terms( nodes, greent )
 
 def add_chemotext_terms(nodes,greent):
     """For each mesh term in a node, find out what chemotext calls that thing so we can query for it"""
