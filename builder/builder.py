@@ -36,6 +36,8 @@ class KnowledgeGraph:
         starts   = self.userquery.get_start_node()
         reverses = self.userquery.get_reversed()
         for cypher, start, reverse in zip(cyphers,starts,reverses):
+            self.logger.debug('CYPHER')
+            self.logger.debug(cypher)
             identifier, ntype = start
             start_node = KNode( identifier, ntype )
             #Fire this to rosetta, collect the result
@@ -44,18 +46,48 @@ class KnowledgeGraph:
             result_graph = list(OrderedDict.fromkeys( result_graph ) )
             self.add_edges( result_graph , reverse )
         self.logger.debug('Query Complete')
+    def merge( self, source, target ):
+        """Source and target are both members of the graph, and we've found that they are
+        synonyms.  Remove target, and attach all of target's edges to source"""
+        source.add_synonym( target )
+        nodes_from_target = self.graph.successors(target)
+        for s in nodes_from_target:
+            #b/c this is a multidigraph, this is actually a map where the edges are the values
+            kedgemap = self.graph.get_edge_data(target, s)
+            for i in kedgemap.values():
+                kedge = i['object']
+                print( kedge )
+                #The node being removed is the source in these edges, replace it
+                kedge.source_node = source
+                self.graph.add_edge( source, s, object = kedge )
+        nodes_to_target = self.graph.predecessors(target)
+        for p in nodes_to_target:
+            kedgemap = self.graph.get_edge_data(target, p)
+            for i in kedgemap.values():
+                kedge = i['object']
+                print( kedge )
+                kedge.target_node = source
+                self.graph.add_edge(p, source, object = kedge )
+        self.graph.remove_node(target)
+        #now, any synonym that was mapping to the old target should be remapped to source
+        for k in self.node_map:
+            if self.node_map[k] == target:
+                self.node_map[k] = source
     def add_synonymous_edge(self, edge):
+        self.logger.debug(' Synonymous')
         source = self.find_node(edge.source_node)
         target = self.find_node(edge.target_node)
         if source is None and target is None:
             raise Exception('Synonym between two new terms')
         if source is not None and target is not None:
-            raise Exception('synonym between two existing nodes not yet implemented')
+            self.merge( source, target )
+            return
         if target is not None:
             source, target = target, source
         source.add_synonym(edge.target_node)
         self.node_map[ edge.target_node.identifier ] = source
     def add_nonsynonymous_edge(self,edge, reverse_edges = False):
+        self.logger.debug(' New Nonsynonymous')
         #Found an edge between nodes. Add nodes if needed.
         source_node = self.add_or_find_node(edge.source_node)
         target_node = self.add_or_find_node(edge.target_node)
@@ -65,12 +97,15 @@ class KnowledgeGraph:
         if reverse_edges:
             edge.properties['reversed'] = True
             self.graph.add_edge(target_node, source_node, object=edge)
+            self.logger.debug( 'Edge: {}'.format( self.graph.get_edge_data(target_node, source_node)))
         else:
             edge.properties['reversed'] = False
             self.graph.add_edge(source_node, target_node, object=edge)
+            self.logger.debug( 'Edge: {}'.format( self.graph.get_edge_data(source_node, target_node)))
     def add_edges( self, edge_list , reverse_edges):
         """Add a list of edges (and the associated nodes) to the graph."""
         for edge in edge_list:
+            self.logger.debug( 'Edge: {} -> {}'.format(edge.source_node.identifier,edge.target_node.identifier))
             if edge.is_synonym:
                 self.add_synonymous_edge(edge)
             else:

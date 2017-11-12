@@ -4,9 +4,16 @@ from greent.graph_components import KEdge
 from greent.service import ServiceContext
 from greent import chemotext2
 from greent import node_types
+#import nltk
 
 def prepare(nodes, greent):
     greent.chemotext2 = chemotext2.Chemotext2( ServiceContext.create_context() )
+#    from nltk.corpus import brown
+#    try:
+#        w = brown.words()
+#    except:
+#        logging.getLogger('application').info('Downloading nltk files')
+#        nltk.download('book')
     
 badwords = set(['disease','virus','infection','fever','syndrome','hemorrhagic','disorder',\
                 'gene','cell','system','tissue','non','positive','negative','receptor',\
@@ -15,7 +22,8 @@ badwords = set(['disease','virus','infection','fever','syndrome','hemorrhagic','
                 'autosomal','dominant','recessive', 'congenital','hereditary','familial',\
                 'male','female','with','without','single','mutation','isolated','absence','group', \
                 'susceptibility','plus','essential','distal','and','during','continuous',\
-                'due','deficiency','extensive','large','small','pro','partial','complete'])
+                'due','deficiency','extensive','large','small','pro','partial','complete','morbid', \
+                'central','distal','middle','deficit','defect','status','rhythm','like'])
 
 def generate_phrases(phrase):
     """From a phrase, find the 1 or 2 word queries into chemotext"""
