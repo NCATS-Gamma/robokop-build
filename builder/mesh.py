@@ -7,14 +7,18 @@ def add_mesh( nodes, greent ):
         add_mesh_to_node(node, greent)
 
 def query_oxo( node, greent , distance=2):
-    response = greent.oxo.query([ node.identifier ], distance=distance)
-    search_results = response['_embedded']['searchResults'][0]['mappingResponseList']
-    added = False
-    for result in search_results:
-        if result['targetPrefix'] == 'MeSH':
-            added = True
-            node.mesh_identifiers.append( result )
-    return added
+    try:
+        response = greent.oxo.query([ node.identifier ], distance=distance)
+        search_results = response['_embedded']['searchResults'][0]['mappingResponseList']
+        added = False
+        for result in search_results:
+            if result['targetPrefix'] == 'MeSH':
+                added = True
+                node.mesh_identifiers.append( result )
+        return added
+    except:
+        logging.getLogger('application').error('OXO ERROR.  Input: {} {}'.format(node.identifier, distance) )
+        return False
 
 def add_mesh_to_node( node, greent ):
     split_curie = node.identifier.split(':')
@@ -24,7 +28,6 @@ def add_mesh_to_node( node, greent ):
             added = query_oxo(node, greent, distance=3)
             if not added:
                 logging.getLogger('application').warn('No MeSH ID found for term: %s' % node.identifier)
-                print(node.identifier)
     elif node.identifier.startswith('NAME.'):
         #We don't want mesh terms for these nodes - they represent query inputs, not real identified entities.
         return
@@ -34,5 +37,5 @@ def add_mesh_to_node( node, greent ):
         # label (drugname) and hope for the best.
         node.mesh_identifiers.append( {'curie': '', 'label': node.label} )
     else:
-        print( 'BAD CURIE:',split_curie[0] )
+        logging.getLogger('application').warn( 'OXO does not recognize CURIE:',split_curie[0] )
 

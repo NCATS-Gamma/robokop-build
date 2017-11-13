@@ -53,19 +53,23 @@ class KnowledgeGraph:
         nodes_from_target = self.graph.successors(target)
         for s in nodes_from_target:
             #b/c this is a multidigraph, this is actually a map where the edges are the values
+            self.logger.debug('Node s: {}'.format(s))
             kedgemap = self.graph.get_edge_data(target, s)
+            if kedgemap is None:
+                self.logger.error('s?')
             for i in kedgemap.values():
                 kedge = i['object']
-                print( kedge )
                 #The node being removed is the source in these edges, replace it
                 kedge.source_node = source
                 self.graph.add_edge( source, s, object = kedge )
         nodes_to_target = self.graph.predecessors(target)
         for p in nodes_to_target:
-            kedgemap = self.graph.get_edge_data(target, p)
+            self.logger.debug('Node p: {}'.format(p))
+            kedgemap = self.graph.get_edge_data(p, target)
+            if kedgemap is None:
+                self.logger.error('p?')
             for i in kedgemap.values():
                 kedge = i['object']
-                print( kedge )
                 kedge.target_node = source
                 self.graph.add_edge(p, source, object = kedge )
         self.graph.remove_node(target)
@@ -77,9 +81,14 @@ class KnowledgeGraph:
         self.logger.debug(' Synonymous')
         source = self.find_node(edge.source_node)
         target = self.find_node(edge.target_node)
+        self.logger.debug('Source: {}'.format(source))
+        self.logger.debug('Target: {}'.format(target))
         if source is None and target is None:
             raise Exception('Synonym between two new terms')
         if source is not None and target is not None:
+            if source == target:
+                self.logger.debug('Alredy merged')
+                return
             self.merge( source, target )
             return
         if target is not None:
@@ -208,6 +217,10 @@ class KnowledgeGraph:
         self.logger.debug('Support Completed.  Added {} edges.'.format( n_supported ))
     def export(self,resultname):
         """Export to neo4j database."""
+        #Just make sure that resultname is not going to bork up neo4j
+        resultname=''.join(resultname.split('-'))
+        resultname=''.join(resultname.split(' '))
+        resultname=''.join(resultname.split(','))
         #TODO: lots of this should probably go in the KNode and KEdge objects?
         self.logger.info("Writing to neo4j with label {}".format(resultname))
         session = self.driver.session()
@@ -320,6 +333,13 @@ def test():
     #question2a('imatinib')
     #question2b('asthma')
 
+def quicktest(drugname):
+    lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
+    lquery.add_transition(node_types.DRUG)
+    lquery.add_transition(node_types.GENE)
+    lquery.add_transition(node_types.PROCESS)
+    run_query(lquery,['chemotext'],'Testq', '.')
+
 def main_test():
     parser = argparse.ArgumentParser(description='Protokop.')
     parser.add_argument('-s', '--support', help='Name of the support system', action='append', choices=['chemotext','chemotext2','cdw'], required=True)
@@ -339,3 +359,4 @@ def main_test():
 
 if __name__ == '__main__':
     main_test()
+    #quicktest('ADAPALENE')
