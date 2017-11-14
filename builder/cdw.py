@@ -17,7 +17,7 @@ class CDWSupport():
 
     def prepare(self,nodes):
         for node in nodes:
-            if node.node_type == node_types.DISEASE or node.node_type == node_types.GENETIC_CONDITION:
+            if (node.node_type == node_types.DISEASE) or (node.node_type == node_types.GENETIC_CONDITION):
                 split_curie = node.identifier.split(':')
                 if self.oxo.is_valid_curie_prefix( split_curie[0] ):
                     results = self.oxo.get_specific_synonym_expanding( node.identifier, 'ICD9CM' )
@@ -29,6 +29,9 @@ class CDWSupport():
                             if ( '-' in r['curie'] ):
                                 logging.getLogger('application').warn('ICD9 has a dash: {}'.format(r['curie']) )
                             node.synonyms.add( r['curie'] )
+                else:
+                    logging.getLogger('application').warn('Bad curie?')
+
 
     def read_icd9(self):
         #TODO: see that the files are available or pull them
@@ -75,21 +78,34 @@ class CDWSupport():
             return
         co_occurrences = []
         for icd9a in icd9_a:
-            if icd9a not in icd9_codes():
+            if icd9a not in self.icd9_codes:
                 logging.getLogger('application').debug('Dont have data for {}'.format(icd9a))
                 continue
             for icd9b in icd9_b:
-                if icd9b not in icd9_codes():
+                if icd9b not in self.icd9_codes:
                     logging.getLogger('application').debug('Dont have data for {}'.format(icd9b))
                     continue
                 #Now we have nodes that both have ICD9 codees and the both map to our results!
                 k = (icd9a, icd9b)
-                if k not in icd9_paircounts:
+                if k not in self.icd9_paircounts:
                     #There were less than 11 shared counts.
                     co_occurences.append( (k, {'c1': None, 'c2': None, 'c': '<11', 'p':None}) )
                 else:
-                    co_occurences.append( (k, icd9_paircounts[k] ) )
+                    co_occurences.append( (k, self.icd9_paircounts[k] ) )
         if len(co_occurences) > 0:
             return self.make_edge(co_occurences)
         return None
 
+def test():
+    from greent.rosetta import Rosetta
+    from greent.graph_components import KNode
+    from greent import node_types
+    rosetta = Rosetta()
+    gt = rosetta.core
+    cdw = CDWSupport(gt)
+    #node = KNode( 'MESH:D008175', node_type=node_types.GENETIC_CONDITION )
+    node = KNode( 'DOID:9352', node_type=node_types.DISEASE )
+    cdw.prepare( [node] )
+
+if __name__ == '__main__':
+    test()
