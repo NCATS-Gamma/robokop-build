@@ -179,7 +179,8 @@ class KnowledgeGraph:
             prepare_node_for_output(node,self.rosetta.core)
     def support(self, support_module_names):
         """Look for extra information connecting nodes."""
-        support_modules = [import_module(module_name) for module_name in support_module_names]
+        supporters = [import_module(module_name).get_supporter(self.rosetta.core)
+                      for module_name in support_module_names]
         #TODO: how do we want to handle support edges
         # Questions: Are they new edges even if we have an edge already, or do we integrate
         #            Do we look for edges within a layer, e.g. to identify similar concepts
@@ -205,7 +206,7 @@ class KnowledgeGraph:
         # Check each edge, add any support found.
         n_supported = 0
         self.logger.debug('Number of pairs to check: {}'.format( len( links_to_check) ) )
-        for supporter in support_modules:
+        for supporter in supporters:
             supporter.prepare( self.graph.nodes(), self.rosetta.core )
         for source,target in links_to_check:
             for supporter in support_modules:
@@ -302,7 +303,7 @@ def run_query(query, supports, result_name, output_path, prune=True):
         kgraph.prune()
     kgraph.enhance()
     kgraph.support(supports)
-    kgraph.export(result_name)
+    #kgraph.export(result_name)
        
 def question1(diseasename,supports):
     query = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)
