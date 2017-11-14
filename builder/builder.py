@@ -209,7 +209,7 @@ class KnowledgeGraph:
         for supporter in supporters:
             supporter.prepare( self.graph.nodes() )
         for source,target in links_to_check:
-            for supporter in support_modules:
+            for supporter in supporters:
                 support_edge = supporter.term_to_term(source,target)
                 if support_edge is not None:
                     n_supported += 1
@@ -250,6 +250,7 @@ class KnowledgeGraph:
                         (resultname,resultname, label),\
                         { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label } )
         session.close()
+        self.logger.info("Wrote {} nodes.".format( len(self.graph.nodes()) ) )
 
 #TODO: push to node, ...
 def prepare_node_for_output(node,gt):
@@ -303,7 +304,7 @@ def run_query(query, supports, result_name, output_path, prune=True):
         kgraph.prune()
     kgraph.enhance()
     kgraph.support(supports)
-    #kgraph.export(result_name)
+    kgraph.export(result_name)
        
 def question1(diseasename,supports):
     query = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)

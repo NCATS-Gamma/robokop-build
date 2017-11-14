@@ -13,7 +13,7 @@ class CDWSupport():
     def __init__(self,greent):
         self.oxo = greent.oxo
         self.total = 269332
-        read_icd9()
+        self.read_icd9()
 
     def prepare(self,nodes):
         for node in nodes:
@@ -25,6 +25,7 @@ class CDWSupport():
                         logging.getLogger('application').warn('No ICD9 found for term: %s' % node.identifier)
                     else:
                         for r in results:
+                            logging.getLogger('application').debug('ICD9 for {}: {}'.format( node.identifier, r['curie']))
                             if ( '-' in r['curie'] ):
                                 logging.getLogger('application').warn('ICD9 has a dash: {}'.format(r['curie']) )
                             node.synonyms.add( r['curie'] )
@@ -51,7 +52,7 @@ class CDWSupport():
                 'c1' : x[3],
                 'c2' : x[4],
                 'c'  : x[6],
-                'e'  : float(x[3]) * float(x[4]) / total,  #expected counts
+                'e'  : float(x[3]) * float(x[4]) / self.total,  #expected counts
                 'p'  : x[9]}
                 self.icd9_paircounts[k1] = data
                 self.icd9_paircounts[k2] = data

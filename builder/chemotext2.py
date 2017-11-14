@@ -24,10 +24,10 @@ class Chemotext2Support():
                     'due','deficiency','extensive','large','small','pro','partial','complete','morbid', \
                     'central','distal','middle','deficit','defect','status','rhythm','like'])
 
-    def prepare(nodes):
+    def prepare(self,nodes):
         pass
      
-    def generate_phrases(phrase):
+    def generate_phrases(self,phrase):
         """From a phrase, find the 1 or 2 word queries into chemotext"""
         #Adding the individual words when the phrase is longer than 1 has problems.  For instance
         # something like 'Ebola virus' vs 'neimann-pick disease' will end up doing queries
@@ -42,7 +42,7 @@ class Chemotext2Support():
         return goodwords
 
 
-    def term_to_term(node_a,node_b,limit = 10000):
+    def term_to_term(self,node_a,node_b,limit = 10000):
         """Given two terms, find articles in chemotext that connect them, and return as a KEdge.
         If nothing is found, return None"""
         if node_a.node_type == node_types.DISEASE_NAME or node_b.node_type == node_types.DISEASE_NAME:

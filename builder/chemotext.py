@@ -12,10 +12,11 @@ CHEMOTEXT_MESH_KEY = 'chemotext_mesh_label'
 class ChemotextSupport():
 
     def __init__(self,greent):
+        self.greent = greent
         self.ctext = greent.chemotext
 
     def prepare(self,nodes):
-        mesh.add_mesh( nodes )
+        mesh.add_mesh( nodes, self.greent )
         self.add_chemotext_terms( nodes )
 
     def add_chemotext_terms(self,nodes):
