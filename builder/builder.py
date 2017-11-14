@@ -207,10 +207,10 @@ class KnowledgeGraph:
         n_supported = 0
         self.logger.debug('Number of pairs to check: {}'.format( len( links_to_check) ) )
         for supporter in supporters:
-            supporter.prepare( self.graph.nodes(), self.rosetta.core )
+            supporter.prepare( self.graph.nodes() )
         for source,target in links_to_check:
             for supporter in support_modules:
-                support_edge = supporter.term_to_term(source,target, self.rosetta.core)
+                support_edge = supporter.term_to_term(source,target)
                 if support_edge is not None:
                     n_supported += 1
                     self.logger.debug ('  -Adding support edge from {} to {}'.format(source.identifier, target.identifier) )
