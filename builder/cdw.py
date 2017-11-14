@@ -92,8 +92,8 @@ class CDWSupport():
                     co_occurences.append( (k, {'c1': None, 'c2': None, 'c': '<11', 'p':None}) )
                 else:
                     co_occurences.append( (k, self.icd9_paircounts[k] ) )
-        if len(co_occurences) > 0:
-            return self.make_edge(co_occurences)
+        if len(co_occurrences) > 0:
+            return self.make_edge(co_occurrences)
         return None
 
 def test():
