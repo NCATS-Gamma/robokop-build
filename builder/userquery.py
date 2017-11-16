@@ -37,25 +37,61 @@ reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN wei
 
 class TwoSidedLinearUserQuery():
     """Constructs a query that is fixed at either end.
-
     When this occurs, we are going to treat it as a pair of OneSidedLinearUserQueries that 
     extend inward from the end points and meet in the middle"""
     def __init__(self, left_query, right_query):
         """To construct a two sided query, pass in two one-sided query"""
         #TODO: we want creation of this object to be a bit more dynamic
-        if left_query.node_types[-1] != right_query.node_types[-1]:
-            raise ValueError('The left and right queries must end with the same node type')
+        #if left_query.node_types[-1] != right_query.node_types[-1]:
+        #    raise ValueError('The left and right queries must end with the same node type')
         self.query1 = left_query
         self.query2 = right_query
     def get_terminal_types( self ):
-        return self.query1.node_types[0], self.query2.node_types[0]
+        return [self.query1.get_terminal_types()[0], self.query2.get_terminal_types()[0]]
     def generate_cypher(self):
         return self.query1.generate_cypher() + self.query2.generate_cypher()
     def get_start_node(self):
         return self.query1.get_start_node() + self.query2.get_start_node()
     def get_reversed(self):
-        return [False, True]
+        rleft = self.query1.get_reversed()
+        rright = [True for r in self.query2.get_reversed() ]
+        return rleft +rright
+    def get_lookups(self):
+        return self.query1.get_lookups() + self.query2.get_lookups()
 
+
+class OneSidedLinearUserQuerySet():
+    """A set of one-sided queries that will be run together.  Used to compose two sided queries"""
+    def __init__(self, start_values, start_type, lookup_node):
+        self.lookup_node = lookup_node
+        self.queries = []
+        for svalue in start_values:
+            self.queries.append( OneSidedLinearUserQuery( svalue, start_type ) )
+    def get_lookups(self):
+        return [self.lookup_node for i in self.queries ]
+    def get_start_node(self):
+        snodes = [ q.get_start_node() for q in self.queries ]
+        return sum( snodes, [] )
+    def get_terminal_types(self):
+        ttypes=[ set(), set() ]
+        for q in self.queries:
+            qt = q.get_terminal_types()
+            for i in (0,1):
+                ttypes[i].update(qt[i])
+        return ttypes
+    def get_reversed(self):
+        return [False for q in self.queries]
+    def add_node(self,node_type):
+        for q in self.queries:
+            q.add_node(node_type)
+    def add_transition(self, next_type, min_path_length=1, max_path_length=1, end_value=None):
+        for q in self.queries:
+            q.add_transition(next_type, min_path_length, max_path_length, end_value)
+    def generate_cypher(self):
+        cyphers = []
+        for q in self.queries:
+            cyphers += q.generate_cypher()
+        return cyphers
 
 class OneSidedLinearUserQuery():
     """A class for constructing linear paths through a series of knowledge sources.
@@ -80,15 +116,20 @@ class OneSidedLinearUserQuery():
         self.transitions = [ ]
     def get_start_node( self ):
         node = self.node_types[0]
-        return [ ('{0}:{1}'.format(node,self.start_value), node) ]
+        if node in (DISEASE_NAME, DRUG_NAME):
+            return [ ('{0}:{1}'.format(node,self.start_value), node) ]
+        return [ (self.start_value, node) ]
     def get_terminal_types( self ):
-        return self.node_types[0], self.node_types[-1]
+        """Returns a two element array.  The first element is a set of starting terminal types. 
+        The second element is a set of ending terminal types"""
+        return [set([self.node_types[0]]), set([self.node_types[-1]])]
     def get_reversed(self):
         return [False]
     def add_node(self,node_type):
         """Add a node to the node list, validating the type"""
+        #Our start node is more specific than this...  Need to have another validation method
         if node_type not in node_types:
-            raise Exception('node type must be one of reasoner.node_types')
+            raise Exception('node type must be one of greent.node_types')
         self.node_types.append(node_type)
     def add_transition(self, next_type, min_path_length=1, max_path_length=1, end_value=None):
         """Add another required node type to the path.
@@ -125,12 +166,13 @@ class OneSidedLinearUserQuery():
     def generate_cypher(self):
         """generate a cypher query to generate paths through the data sources"""
         cypherbuffer = ['MATCH']
-        # p0=(n0{name:"NAME.DISEASE})-[*1..6]->(n1:Disease)
         paths_parts = []
         for t_number, transition in enumerate(self.transitions):
             paths_parts.append( transition.generate_cypher_pathstring(t_number) )
         cypherbuffer.append( ',\n'.join(paths_parts) )
         cypherbuffer.append( 'WHERE' )
+        curie_prefix = self.start_value.split(':')[0]
+        cypherbuffer.append('n0.name="{}" AND'.format(curie_prefix))
         # NONE (r in relationships(p0) WHERE type(r) = "UNKNOWN"
         no_unknowns = []
         for t_number, transition in enumerate(self.transitions):
@@ -160,9 +202,28 @@ class OneSidedLinearUserQuery():
         return ['\n'.join(cypherbuffer)]
 
 
+
+def test_1_new():
+    """Try to generate a Question 1 style query using this general device and fully specifying path."""
+    from greent.node_types import DISEASE, GENE, GENETIC_CONDITION
+    query = OneSidedLinearUserQuery("DOID:123", DISEASE )
+    query.add_transition(GENE)
+    query.add_transition(GENETIC_CONDITION)
+    cypher = query.generate_cypher()
+    print(cypher[0])
+
+def test_2_new():
+    """Try to generate a Question 1 style query using this general device and fully specifying path."""
+    from greent.node_types import DISEASE, GENE, GENETIC_CONDITION
+    query = OneSidedLinearUserQuery("DOID:123", DISEASE )
+    query.add_transition(GENETIC_CONDITION,min_path_length=2, max_path_length=2)
+    cypher = query.generate_cypher()
+    print(cypher[0])
+
+
 def test_1():
     """Try to generate a Question 1 style query using this general device and fully specifying path."""
-    from reasoner.node_types import DISEASE, GENE, GENETIC_CONDITION
+    from greent.node_types import DISEASE, GENE, GENETIC_CONDITION
     query = OneSidedLinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(GENE)
@@ -172,7 +233,7 @@ def test_1():
 
 def test_2():
     """Try to generate a Question 1 style query using this general device without fully specifying path."""
-    from reasoner.node_types import DISEASE, GENETIC_CONDITION
+    from greent.node_types import DISEASE, GENETIC_CONDITION
     query = OneSidedLinearUserQuery("Ebola infection", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(GENETIC_CONDITION, min_path_length=2, max_path_length=2)
@@ -181,7 +242,7 @@ def test_2():
     
 def test_3a():
     """Try to generate a Question 2 style query using this general device fully specifying path."""
-    from reasoner.node_types import DRUG, GENE, PROCESS, CELL, ANATOMY
+    from greent.node_types import DRUG, GENE, PROCESS, CELL, ANATOMY
     query = OneSidedLinearUserQuery("imatinib", DRUG_NAME )
     query.add_transition(DRUG)
     query.add_transition(GENE)
@@ -193,7 +254,7 @@ def test_3a():
 
 def test_3b():
     """Try to generate the other half of a Q2 query"""
-    from reasoner.node_types import DISEASE, PHENOTYPE, ANATOMY
+    from greent.node_types import DISEASE, PHENOTYPE, ANATOMY
     query = OneSidedLinearUserQuery("asthma", DISEASE_NAME )
     query.add_transition(DISEASE)
     query.add_transition(PHENOTYPE)
@@ -203,13 +264,13 @@ def test_3b():
  
 if __name__ == '__main__':
     print('---Query 1: Specified---------')
-    test_1()
+    test_1_new()
     print('---Query 1: Un-specified---------')
-    test_2()
-    print('---Query 2: Part 1------------')
-    test_3a()
-    print('---Query 2: Part 2------------')
-    test_3b()
+    test_2_new()
+    #print('---Query 2: Part 1------------')
+    #test_3a()
+    #print('---Query 2: Part 2------------')
+    #test_3b()
 
 #########
 #

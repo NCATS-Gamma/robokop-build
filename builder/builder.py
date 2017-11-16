@@ -12,6 +12,7 @@ import sys
 from neo4j.v1 import GraphDatabase
 from collections import OrderedDict
 from importlib import import_module
+from lookup_utils import lookup_disease_by_name, lookup_drug_by_name
 
 class KnowledgeGraph:
     def __init__(self, userquery, rosetta):
@@ -35,11 +36,17 @@ class KnowledgeGraph:
         cyphers  = self.userquery.generate_cypher()
         starts   = self.userquery.get_start_node()
         reverses = self.userquery.get_reversed()
-        for cypher, start, reverse in zip(cyphers,starts,reverses):
+        lookups  = self.userquery.get_lookups()
+        for cypher, start, reverse,lookup in zip(cyphers,starts,reverses,lookups):
+            self.logger.debug(start)
             self.logger.debug('CYPHER')
             self.logger.debug(cypher)
             identifier, ntype = start
             start_node = KNode( identifier, ntype )
+            kedge = KEdge( 'lookup', 'lookup' )
+            kedge.source_node = lookup
+            kedge.target_node = start_node
+            self.add_nonsynonymous_edge( kedge )
             #Fire this to rosetta, collect the result
             result_graph = self.rosetta.graph([(None, start_node)],query=cypher)
             #result_graph contains duplicate edges.  Remove them, while preserving order:
@@ -140,7 +147,13 @@ class KnowledgeGraph:
         # Probably need to interact with the query to decide whether this node is prunable or not.
         self.logger.debug('Pruning Graph')
         removed = True
-        keep_types = self.userquery.get_terminal_types()
+        #make the set of types that we don't want to prune.  These are the end points (both text and id versions).
+        ttypes = self.userquery.get_terminal_types()
+        keep_types = set()
+        keep_types.update(ttypes[0])
+        keep_types.update(ttypes[1])
+        keep_types.add( node_types.DISEASE_NAME )
+        keep_types.add( node_types.DRUG_NAME )
         n_pruned = 0
         while removed:
             removed = False
@@ -161,14 +174,14 @@ class KnowledgeGraph:
     def get_terminal_nodes(self):
         """Return the nodes at the beginning or end of a query"""
         #TODO: Currently doing via type.  Probably need to mark these instead.
-        start_type, end_type = self.userquery.get_terminal_types()
+        start_types, end_types = self.userquery.get_terminal_types()
         start_nodes = []
         end_nodes = []
         nodes = self.graph.nodes()
         for node in nodes:
-            if node.node_type == start_type:
+            if node.node_type in start_types:
                 start_nodes.append( node )
-            elif node.node_type == end_type:
+            elif node.node_type in end_types:
                 end_nodes.append( node )
         return start_nodes, end_nodes
     def enhance(self):
@@ -198,18 +211,23 @@ class KnowledgeGraph:
         links_to_check = set()
         for start_node in start_nodes:
             for end_node in end_nodes:
-                for path in nx.all_shortest_paths(self.graph,source=start_node,target=end_node):
-                    for n_i,source in enumerate(path):
-                        for n_j in range(n_i + 1, len(path) ):
-                            link=( source, path[n_j] )
-                            links_to_check.add(link)
+                try:
+                    for path in nx.all_shortest_paths(self.graph,source=start_node,target=end_node):
+                        for n_i,source in enumerate(path):
+                            for n_j in range(n_i + 1, len(path) ):
+                                link=( source, path[n_j] )
+                                links_to_check.add(link)
+                except:
+                    self.logger.error('No paths from {} to {}'.format(start_node.identifier, end_node.identifier) )
+        self.logger.debug('Number of pairs to check: {}'.format( len( links_to_check) ) )
+        if len(links_to_check) == 0:
+            self.logger.error('No paths across the data.  Exiting without writing.')
+            sys.exit(1)
         # Check each edge, add any support found.
         n_supported = 0
-        self.logger.debug('Number of pairs to check: {}'.format( len( links_to_check) ) )
         for supporter in supporters:
             supporter.prepare( self.graph.nodes() )
-        for source,target in links_to_check:
-            for supporter in supporters:
+            for source,target in links_to_check:
                 support_edge = supporter.term_to_term(source,target)
                 if support_edge is not None:
                     n_supported += 1
@@ -237,6 +255,8 @@ class KnowledgeGraph:
             ke = edge[2]['object']
             if ke.is_support:
                 label = 'Support'
+            elif ke.edge_source == 'lookup':  #TODO: make this an edge prop
+                label = 'Lookup'
             else:
                 label = 'Result'
             prepare_edge_for_output(ke)
@@ -266,6 +286,8 @@ def prepare_node_for_output(node,gt):
             node.label = gt.hgnc.get_name( node )
         elif node.node_type == node_types.GENE and node.identifier.upper().startswith('NCBIGENE:'):
             node.label = gt.hgnc.get_name( node )
+        elif node.node_type == node_types.CELL and node.identifier.upper().startswith('CL:'):
+            node.label = gt.uberongraph.cell_get_cellname( node.identifier )[0]['cellLabel']
         else:
             node.label = node.identifier
     logging.getLogger('application').debug(node.label)
@@ -292,13 +314,9 @@ def prepare_edge_for_output(edge):
     edge.reversed = edge.properties['reversed']
 
 
-def run_query(query, supports, result_name, output_path, prune=True):
+def run_query(querylist, supports, result_name, output_path, rosetta, prune=True):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
-    logger = logging.getLogger('application')
-    logger.setLevel(level = logging.DEBUG)
-    logger.debug('Run {}'.format(result_name))
-    rosetta = Rosetta()
-    kgraph = KnowledgeGraph( query, rosetta )
+    kgraph = KnowledgeGraph( querylist, rosetta )
     kgraph.execute()
     if prune:
         kgraph.prune()
@@ -306,34 +324,28 @@ def run_query(query, supports, result_name, output_path, prune=True):
     kgraph.support(supports)
     kgraph.export(result_name)
        
-def question1(diseasename,supports):
-    query = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)
-    query.add_transition(node_types.DISEASE)
+def question1(disease_name, disease_identifiers, supports,rosetta):
+    name_node = KNode( disease_name, node_types.DISEASE_NAME )
+    query = userquery.OneSidedLinearUserQuerySet(disease_identifiers,node_types.DISEASE, name_node)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.GENETIC_CONDITION)
-    run_query(query,supports,'Query1_{}_{}'.format('_'.join(diseasename.split()),'_'.join(supports)) , '.')
+    run_query(query,supports,'Query1_{}_{}'.format('_'.join(disease_name.split()),'_'.join(supports)) , '.', rosetta)
    
-def question2(drugname, diseasename, supports):
-    lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
-    lquery.add_transition(node_types.DRUG)
+def question2(drug_name, disease_name, drug_ids, disease_ids, supports, rosetta):
+    drug_name_node = KNode(drug_name, node_types.DRUG_NAME )
+    lquery = userquery.OneSidedLinearUserQuerySet(drug_ids,node_types.DRUG,drug_name_node)
     lquery.add_transition(node_types.GENE)
     lquery.add_transition(node_types.PROCESS)
     lquery.add_transition(node_types.CELL)
     lquery.add_transition(node_types.ANATOMY)
-    rquery = userquery.OneSidedLinearUserQuery(diseasename,node_types.DISEASE_NAME)
-    rquery.add_transition(node_types.DISEASE)
+    disease_name_node = KNode(disease_name, node_types.DISEASE_NAME )
+    rquery = userquery.OneSidedLinearUserQuerySet(disease_ids,node_types.DISEASE,disease_name_node)
     rquery.add_transition(node_types.PHENOTYPE)
     rquery.add_transition(node_types.ANATOMY)
     query = userquery.TwoSidedLinearUserQuery( lquery, rquery )
-    outdisease = '_'.join(diseasename.split())
-    outdrug     = '_'.join(drugname.split())
-    run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', prune=True)
-
-def test():
-    #question1('Ebola Virus Infection')
-    question2('imatinib','asthma')
-    #question2a('imatinib')
-    #question2b('asthma')
+    outdisease = '_'.join(disease_name.split())
+    outdrug    = '_'.join(drug_name.split())
+    run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', rosetta, prune=True)
 
 def quicktest(drugname):
     lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
@@ -342,6 +354,12 @@ def quicktest(drugname):
     lquery.add_transition(node_types.PROCESS)
     run_query(lquery,['chemotext'],'Testq', '.')
 
+def setup():    
+    logger = logging.getLogger('application')
+    logger.setLevel(level = logging.DEBUG)
+    rosetta = Rosetta()
+    return rosetta
+
 def main_test():
     parser = argparse.ArgumentParser(description='Protokop.')
     parser.add_argument('-s', '--support', help='Name of the support system', action='append', choices=['chemotext','chemotext2','cdw'], required=True)
@@ -349,15 +367,23 @@ def main_test():
     parser.add_argument('--start', help='Text to initiate query', required = True)
     parser.add_argument('--end', help='Text to finalize query', required = False)
     args = parser.parse_args()
+    rosetta = setup()
     if args.question == 1:
         if args.end is not None:
             print('--end argument not supported for question 1.  Ignoring')
-        question1( args.start, args.support )
+        disease_ids = lookup_disease_by_name( args.start, rosetta.core )
+        if len(disease_ids) == 0:
+            sys.exit(1)
+        question1( args.start, disease_ids, args.support ,rosetta)
     elif args.question == 2:
         if args.end is None:
             print('--end required for question 2. Exiting')
             sys.exit(1)
-        question2(args.start, args.end, args.support)
+        drug_ids    = lookup_drug_by_name( args.start , rosetta.core )
+        disease_ids = lookup_disease_by_name( args.end, rosetta.core )
+        if len(disease_ids) == 0 or len(drug_ids) == 0:
+            sys.exit(1)
+        question2(args.start, args.end, drug_ids, disease_ids, args.support, rosetta)
 
 if __name__ == '__main__':
     main_test()

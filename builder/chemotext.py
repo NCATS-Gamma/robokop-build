@@ -28,6 +28,7 @@ class ChemotextSupport():
                 if cterm is None:
                     logging.getLogger('application').warn("Cannot find chemotext synonym for %s (%s)" % (label,mesh_info['curie']))
                 else:
+                    logging.getLogger('application').debug('node: {}, chemotext: {}'.format(node.identifier, cterm) )
                     mesh_info[ CHEMOTEXT_MESH_KEY ] = cterm
 
     def get_mesh_labels(self,node):
