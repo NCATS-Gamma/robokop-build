@@ -17,7 +17,7 @@ def add_mesh_to_node( node, greent ):
                 for mesh in results:
                     node.mesh_identifiers.append( mesh )
         except:
-            logger.warn( 'Error calling oxo with {}, MeSH'.format(node.identifier))
+            logging.getLogger('application').warn( 'Error calling oxo with {}, MeSH'.format(node.identifier))
     elif node.identifier.startswith('NAME.'):
         #We don't want mesh terms for these nodes - they represent query inputs, not real identified entities.
         return
