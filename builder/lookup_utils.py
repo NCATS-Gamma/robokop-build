@@ -1,5 +1,15 @@
 import logging
 
+def lookup_phenotype_by_name( name, greent ):
+    """Return type is a list of HPO identifiers."""
+    logger=logging.getLogger('application')
+    #This performs a case-insensitive exact match, and also inverts comma-ed names
+    hpo_ids =  greent.hpo.search( name )
+    if len(hpo_ids) == 0:
+        logger.error('Could not convert phenotype name: {}.'.format(name))
+    return hpo_ids
+
+
 def lookup_disease_by_name( disease_name, greent ):
     """We can have different parameterizations if necessary.
     Here, we first get a mondo ID.  Then we try to turn that into
@@ -9,7 +19,7 @@ def lookup_disease_by_name( disease_name, greent ):
     #This performs a case-insensitive exact match, and also inverts comma-ed names
     mondo_ids =  greent.mondo.search( disease_name )
     if len(mondo_ids) == 0:
-        logger.error('Could not convert disease name: {}. Exiting.'.format(disease_name))
+        logger.error('Could not convert disease name: {}.'.format(disease_name))
         return []
     logging.getLogger('application').debug('Found mondo identifiers for {}'.format(disease_name))
     for mid in mondo_ids:
@@ -26,7 +36,7 @@ def lookup_disease_by_name( disease_name, greent ):
     if len(efos) > 0:
         logger.debug('Returning: {}'.format(' '.join(efos)))
         return efos
-    logger.error('For disease name: "{}" found mondo ID(s): {}, but could not transform to another identifier system. Exiting.'.format(disease_name, ';'.join(mondo_ids)))
+    logger.error('For disease name: "{}" found mondo ID(s): {}, but could not transform to another identifier system.'.format(disease_name, ';'.join(mondo_ids)))
     return []
     
 

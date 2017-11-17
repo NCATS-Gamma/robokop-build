@@ -353,6 +353,22 @@ def question2(drug_name, disease_name, drug_ids, disease_ids, supports, rosetta 
     outdrug    = '_'.join(drug_name.split())
     run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', rosetta, prune=True)
 
+def question2a(drug_name, phenotype_name, drug_ids, phenotype_ids, supports, rosetta ):
+    drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
+    #TODO: clean up name type.  We can probably just drop to "NAME" since we're not using the graph to
+    # get names...
+    p_name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,disease_name), node_types.DISEASE_NAME )
+    query = UserQuery(drug_ids,node_types.DRUG,drug_name_node)
+    query.add_transition(node_types.GENE)
+    query.add_transition(node_types.PROCESS)
+    query.add_transition(node_types.CELL)
+    query.add_transition(node_types.ANATOMY)
+    query.add_transition(node_types.PHENOTYPE, end_values = phenotype_ids)
+    query.add_end_lookup_node(p_name_node)
+    outdisease = '_'.join(disease_name.split())
+    outdrug    = '_'.join(drug_name.split())
+    run_query(query,supports,'Query2a_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', rosetta, prune=True)
+
 def quicktest(drugname):
     lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
     lquery.add_transition(node_types.DRUG)
@@ -387,9 +403,17 @@ def main_test():
             sys.exit(1)
         drug_ids    = lookup_drug_by_name( args.start , rosetta.core )
         disease_ids = lookup_disease_by_name( args.end, rosetta.core )
-        if len(disease_ids) == 0 or len(drug_ids) == 0:
+        if len(drug_ids) == 0:
             sys.exit(1)
-        question2(args.start, args.end, drug_ids, disease_ids, args.support, rosetta)
+        if len(disease_ids) > 0:
+            question2(args.start, args.end, drug_ids, disease_ids, args.support, rosetta)
+        else:
+            #Maybe the 'disease' is really a phenotype
+            phenotype_ids = lookup_phenotype_by_name( args.end, rosetta.core )
+            if len(phenotype_ids) == 0:
+                sys.exit(1)
+            #It is a phenotype!
+            question2a(args.start, args.end, drug_ids, phenotype_ids, args.support, rosetta)
 
 if __name__ == '__main__':
     main_test()
