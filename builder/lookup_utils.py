@@ -16,12 +16,15 @@ def lookup_disease_by_name( disease_name, greent ):
         logger.debug('  {}  {}'.format(mid, greent.mondo.get_label(mid)))
     doids = sum([ greent.mondo.mondo_get_doid( r ) for r in mondo_ids], [] )
     if len(doids) > 0:
+        logger.debug('Returning: {}'.format(' '.join(doids)))
         return doids
     umls = sum([ greent.mondo.mondo_get_umls( r ) for r in mondo_ids], [] )
     if len(umls) > 0:
+        logger.debug('Returning: {}'.format(' '.join(umls)))
         return umls
     efos = sum([ greent.mondo.mondo_get_efo( r ) for r in mondo_ids], [] )
     if len(efos) > 0:
+        logger.debug('Returning: {}'.format(' '.join(efos)))
         return efos
     logger.error('For disease name: "{}" found mondo ID(s): {}, but could not transform to another identifier system. Exiting.'.format(disease_name, ';'.join(mondo_ids)))
     return []

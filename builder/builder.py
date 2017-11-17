@@ -2,7 +2,7 @@ from greent.graph_components import KNode,KEdge,elements_to_json
 from greent import node_types 
 from greent.rosetta import Rosetta
 import chemotext
-import userquery
+from userquery import UserQuery
 import mesh
 import argparse
 import networkx as nx
@@ -23,6 +23,9 @@ class KnowledgeGraph:
         self.graph = nx.MultiDiGraph()
         self.userquery = userquery
         self.rosetta = rosetta
+        if not self.userquery.compile_query( self.rosetta ):
+            self.logger.error('Query fails. Exiting.')
+            sys.exit(1)
         #node_map is a map from identifiers to the node associated.  It's useful because
         # we are collapsing nodes along synonym edges, so each node might asked for in
         # multiple different ways.
@@ -325,24 +328,27 @@ def run_query(querylist, supports, result_name, output_path, rosetta, prune=True
     kgraph.export(result_name)
        
 def question1(disease_name, disease_identifiers, supports,rosetta):
-    name_node = KNode( disease_name, node_types.DISEASE_NAME )
-    query = userquery.OneSidedLinearUserQuerySet(disease_identifiers,node_types.DISEASE, name_node)
+    name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,disease_name), node_types.DISEASE_NAME )
+    query = UserQuery(disease_identifiers,node_types.DISEASE, name_node)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.GENETIC_CONDITION)
     run_query(query,supports,'Query1_{}_{}'.format('_'.join(disease_name.split()),'_'.join(supports)) , '.', rosetta)
    
-def question2(drug_name, disease_name, drug_ids, disease_ids, supports, rosetta):
-    drug_name_node = KNode(drug_name, node_types.DRUG_NAME )
-    lquery = userquery.OneSidedLinearUserQuerySet(drug_ids,node_types.DRUG,drug_name_node)
-    lquery.add_transition(node_types.GENE)
-    lquery.add_transition(node_types.PROCESS)
-    lquery.add_transition(node_types.CELL)
-    lquery.add_transition(node_types.ANATOMY)
-    disease_name_node = KNode(disease_name, node_types.DISEASE_NAME )
-    rquery = userquery.OneSidedLinearUserQuerySet(disease_ids,node_types.DISEASE,disease_name_node)
-    rquery.add_transition(node_types.PHENOTYPE)
-    rquery.add_transition(node_types.ANATOMY)
-    query = userquery.TwoSidedLinearUserQuery( lquery, rquery )
+def build_question2(drug_name, disease_name, drug_ids, disease_ids ):
+    drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
+    disease_name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,disease_name), node_types.DISEASE_NAME )
+    query = UserQuery(drug_ids,node_types.DRUG,drug_name_node)
+    query.add_transition(node_types.GENE)
+    query.add_transition(node_types.PROCESS)
+    query.add_transition(node_types.CELL)
+    query.add_transition(node_types.ANATOMY)
+    query.add_transition(node_types.PHENOTYPE)
+    query.add_transition(node_types.DISEASE, end_values = disease_ids)
+    query.add_end_lookup_node(disease_name_node)
+    return query
+
+def question2(drug_name, disease_name, drug_ids, disease_ids, supports, rosetta ):
+    query = build_question2(drug_name, disease_name, drug_ids, disease_ids)
     outdisease = '_'.join(disease_name.split())
     outdrug    = '_'.join(drug_name.split())
     run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', rosetta, prune=True)
