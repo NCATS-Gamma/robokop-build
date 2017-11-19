@@ -12,7 +12,7 @@ import sys
 from neo4j.v1 import GraphDatabase
 from collections import OrderedDict
 from importlib import import_module
-from lookup_utils import lookup_disease_by_name, lookup_drug_by_name
+from lookup_utils import lookup_disease_by_name, lookup_drug_by_name, lookup_phenotype_by_name
 
 class KnowledgeGraph:
     def __init__(self, userquery, rosetta):
@@ -357,7 +357,7 @@ def question2a(drug_name, phenotype_name, drug_ids, phenotype_ids, supports, ros
     drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
     #TODO: clean up name type.  We can probably just drop to "NAME" since we're not using the graph to
     # get names...
-    p_name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,disease_name), node_types.DISEASE_NAME )
+    p_name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,phenotype_name), node_types.DISEASE_NAME )
     query = UserQuery(drug_ids,node_types.DRUG,drug_name_node)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.PROCESS)
@@ -365,7 +365,7 @@ def question2a(drug_name, phenotype_name, drug_ids, phenotype_ids, supports, ros
     query.add_transition(node_types.ANATOMY)
     query.add_transition(node_types.PHENOTYPE, end_values = phenotype_ids)
     query.add_end_lookup_node(p_name_node)
-    outdisease = '_'.join(disease_name.split())
+    outdisease = '_'.join(phenotype_name.split())
     outdrug    = '_'.join(drug_name.split())
     run_query(query,supports,'Query2a_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', rosetta, prune=True)
 

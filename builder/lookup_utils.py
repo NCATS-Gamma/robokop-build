@@ -7,6 +7,8 @@ def lookup_phenotype_by_name( name, greent ):
     hpo_ids =  greent.hpo.search( name )
     if len(hpo_ids) == 0:
         logger.error('Could not convert phenotype name: {}.'.format(name))
+    else:
+        logger.debug('Found ids for phenotype name: {} {}.'.format(name,' '.join(hpo_ids)))
     return hpo_ids
 
 
