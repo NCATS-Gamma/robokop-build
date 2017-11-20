@@ -13,6 +13,7 @@ from neo4j.v1 import GraphDatabase
 from collections import OrderedDict
 from importlib import import_module
 from lookup_utils import lookup_disease_by_name, lookup_drug_by_name, lookup_phenotype_by_name
+from collections import defaultdict
 
 class KnowledgeGraph:
     def __init__(self, userquery, rosetta):
@@ -56,6 +57,12 @@ class KnowledgeGraph:
             result_graph = list(OrderedDict.fromkeys( result_graph ) )
             self.add_edges( result_graph , reverse )
         self.logger.debug('Query Complete')
+    def print_types(self):
+        counts = defaultdict(int)
+        for node in self.graph.nodes:
+            counts[ node.node_type ] += 1
+        for node_type in counts:
+            self.logger.info('{}: {}'.format(node_type, counts[node_type]))
     def merge( self, source, target ):
         """Source and target are both members of the graph, and we've found that they are
         synonyms.  Remove target, and attach all of target's edges to source"""
@@ -321,6 +328,7 @@ def run_query(querylist, supports, result_name, output_path, rosetta, prune=True
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
     kgraph = KnowledgeGraph( querylist, rosetta )
     kgraph.execute()
+    kgraph.print_types()
     if prune:
         kgraph.prune()
     kgraph.enhance()
@@ -355,8 +363,7 @@ def question2(drug_name, disease_name, drug_ids, disease_ids, supports, rosetta 
 
 def question2a(drug_name, phenotype_name, drug_ids, phenotype_ids, supports, rosetta ):
     drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
-    #TODO: clean up name type.  We can probably just drop to "NAME" since we're not using the graph to
-    # get names...
+    #TODO: clean up name type.  We can probably just drop to "NAME" since we're not using the graph to get names...
     p_name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,phenotype_name), node_types.DISEASE_NAME )
     query = UserQuery(drug_ids,node_types.DRUG,drug_name_node)
     query.add_transition(node_types.GENE)
