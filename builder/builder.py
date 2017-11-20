@@ -59,7 +59,7 @@ class KnowledgeGraph:
         self.logger.debug('Query Complete')
     def print_types(self):
         counts = defaultdict(int)
-        for node in self.graph.nodes:
+        for node in self.graph.nodes():
             counts[ node.node_type ] += 1
         for node_type in counts:
             self.logger.info('{}: {}'.format(node_type, counts[node_type]))
