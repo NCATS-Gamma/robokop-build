@@ -1,11 +1,14 @@
 Disease
 Osteoporosis
-Human Immunodeficiency Virus Infection
+#Human Immunodeficiency Virus Infection
+HIV Infection
 Cholera
-Ebola Virus Infection
+#Ebola Virus Infection
+Ebola Virus Disease
 Malaria
 Osteomalacia
-Hypercholesterolemia
+#Hypercholesterolemia
+Familial Hypercholesterolemia
 Diabetes Mellitus, Type 2
 Asthma
 Chronic Pancreatitis
@@ -14,8 +17,10 @@ Myocardial Infarction
 Duchenne Muscular Dystrophy
 Deficiency of N-glycanase 1
 Alcohol Dependence
-Major Depression
-Niemann Pick Type C
+#Major Depression
+Recurrent Major Depression
+#Niemann Pick Type C
+Niemann-Pick Disease Type C
 Huntington Disease
 Alkaptonuria
 Sickle Cell Disease
