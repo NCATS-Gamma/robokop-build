@@ -344,6 +344,7 @@ def run_query(querylist, supports, result_name, rosetta, output_path='.', prune=
     kgraph.support(supports)
     kgraph.export(result_name)
        
+"""
 def question1(disease_name, disease_identifiers, supports,rosetta):
     name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,disease_name), node_types.DISEASE_NAME )
     query = UserQuery(disease_identifiers,node_types.DISEASE, name_node)
@@ -391,6 +392,7 @@ def quicktest(drugname):
     lquery.add_transition(node_types.GENE)
     lquery.add_transition(node_types.PROCESS)
     run_query(lquery,['chemotext'],'Testq', )
+"""
 
 def generate_query(pathway,start_node,start_identifiers,end_node=None,end_identifiers=None):
     start, middle, end = pathway[0], pathway[1:-1], pathway[-1]
@@ -506,6 +508,7 @@ def main():
         pathway = args.pathway
     run(pathway, args.start, args.end, args.label, args.support)
 
+"""
 def main_test():
     parser = argparse.ArgumentParser(description='Protokop.')
     parser.add_argument('-s', '--support', help='Name of the support system', action='append', choices=['chemotext','chemotext2','cdw'], required=True)
@@ -538,8 +541,7 @@ def main_test():
                 sys.exit(1)
             #It is a phenotype!
             question2a(args.start, args.end, drug_ids, phenotype_ids, args.support, rosetta)
+"""
 
 if __name__ == '__main__':
     main()
-    #main_test()
-    #quicktest('ADAPALENE')
