@@ -1,4 +1,5 @@
 import logging
+from greent import node_types
 
 def lookup_phenotype_by_name( name, greent ):
     """Return type is a list of HPO identifiers."""
@@ -60,6 +61,16 @@ def lookup_drug_by_name( drug_name, greent ):
     logger.debug( drug_ids )
     return drug_ids
 
+
+def lookup_identifier( name, name_type, greent ):
+    if name_type == node_types.DRUG:
+        return lookup_drug_by_name( name, greent )
+    elif name_type == node_types.DISEASE:
+        return lookup_disease_by_name( name, greent )
+    elif name_type == node_types.PHENOTYPE:
+        return lookup_phenotype_by_name( name, greent )
+    else:
+        raise ValueError('Only Drugs, Diseases, and Phenotypes may be used as named nodes')
 
 def test():
     from greent.rosetta import Rosetta

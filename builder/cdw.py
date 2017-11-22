@@ -3,6 +3,7 @@ import os
 import logging
 from greent.graph_components import KEdge
 from greent import node_types
+from greent.util import Text
 
 
 def get_supporter(greent):
@@ -36,13 +37,13 @@ class CDWSupport():
     def read_icd9(self):
         #TODO: see that the files are available or pull them
         fname = os.path.join( os.path.dirname(__file__), 'AllDxCounts.txt')
-        self.icd9_codes=set()
+        self.icd9_codes={}
         with open(fname, 'r') as infile:
             h = infile.readline()
             for line in infile:
                 x = line.strip().split('|')
                 icd_code = x[0]
-                self.icd9_codes.add(icd_code)
+                self.icd9_codes[icd_code] = int(x[1])
         self.icd9_paircounts = {}
         fname = os.path.join( os.path.dirname(__file__), 'ICD_Combo_Chi2.txt')
         with open(fname,'r') as infile:
@@ -60,10 +61,10 @@ class CDWSupport():
                 self.icd9_paircounts[k1] = data
                 self.icd9_paircounts[k2] = data
 
-    def make_edge(self,cooc_list):
+    def make_edge(self,cooc_list, node_a, node_b):
         k,c = cooc_list[0]
         #TODO: fix this up with details
-        c[ 'icd9': list(k) ]
+        c[ 'icd9' ] = list(k) 
         ke= KEdge( 'cdw', 'term_to_term', c,  is_support = True )
         ke.source_node = node_a
         ke.target_node = node_b
@@ -77,11 +78,13 @@ class CDWSupport():
             #can't do co-occurence unless we get icd9 codes
             return
         co_occurrences = []
-        for icd9a in icd9_a:
+        for icd9a_curie in icd9_a:
+            icd9a = Text.un_curie(icd9a_curie)
             if icd9a not in self.icd9_codes:
                 logging.getLogger('application').debug('Dont have data for {}'.format(icd9a))
                 continue
-            for icd9b in icd9_b:
+            for icd9b_curie in icd9_b:
+                icd9b = Text.un_curie(icd9b_curie)
                 if icd9b not in self.icd9_codes:
                     logging.getLogger('application').debug('Dont have data for {}'.format(icd9b))
                     continue
@@ -89,11 +92,14 @@ class CDWSupport():
                 k = (icd9a, icd9b)
                 if k not in self.icd9_paircounts:
                     #There were less than 11 shared counts.
-                    co_occurences.append( (k, {'c1': None, 'c2': None, 'c': '<11', 'p':None}) )
+                    counta = self.icd9_codes[icd9a]
+                    countb = self.icd9_codes[icd9b]
+                    expected = float(counta) * float(countb) / self.total
+                    co_occurrences.append( (k, {'c1': counta, 'c2': countb, 'c': '<11', 'e': expected, 'p':None}) )
                 else:
-                    co_occurences.append( (k, self.icd9_paircounts[k] ) )
+                    co_occurrences.append( (k, self.icd9_paircounts[k] ) )
         if len(co_occurrences) > 0:
-            return self.make_edge(co_occurrences)
+            return self.make_edge(co_occurrences, node_a, node_b)
         return None
 
 def test():
@@ -107,5 +113,20 @@ def test():
     node = KNode( 'DOID:9352', node_type=node_types.DISEASE )
     cdw.prepare( [node] )
 
+def test_edge():
+    from greent.rosetta import Rosetta
+    from greent.graph_components import KNode
+    from greent import node_types
+    rosetta = Rosetta()
+    gt = rosetta.core
+    cdw = CDWSupport(gt)
+    #node = KNode( 'MESH:D008175', node_type=node_types.GENETIC_CONDITION )
+    nodea = KNode( 'DOID:11476', node_type=node_types.DISEASE )
+    nodeb = KNode( 'Orphanet:90318', node_type=node_types.DISEASE )
+    cdw.prepare( [nodea,nodeb] )
+    e = cdw.term_to_term( nodea,nodeb) 
+    print (e)
+
+
 if __name__ == '__main__':
-    test()
+    test_edge()

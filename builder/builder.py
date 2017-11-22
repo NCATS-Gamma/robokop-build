@@ -1,5 +1,5 @@
 from greent.graph_components import KNode,KEdge,elements_to_json
-from greent import node_types 
+from greent import node_types
 from greent.rosetta import Rosetta
 import chemotext
 from userquery import UserQuery
@@ -12,8 +12,10 @@ import sys
 from neo4j.v1 import GraphDatabase
 from collections import OrderedDict
 from importlib import import_module
-from lookup_utils import lookup_disease_by_name, lookup_drug_by_name, lookup_phenotype_by_name
+#from lookup_utils import lookup_disease_by_name, lookup_drug_by_name, lookup_phenotype_by_name
+from lookup_utils import lookup_identifier
 from collections import defaultdict
+from pathlex import tokenize_path
 
 class KnowledgeGraph:
     def __init__(self, userquery, rosetta):
@@ -274,7 +276,10 @@ class KnowledgeGraph:
                 session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" % \
                         (resultname,resultname, label),\
                         { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label, 'sim':ke.properties['similarity'] , 'terms':ke.properties['terms'] } )
-
+            elif ke.edge_source == 'cdw':
+                session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, source_counts: {c1}, target_counts: {c2}, shared_counts: {c}, expected_counts: {e}, p_value:{p}} ]->(b) return r" % \
+                        (resultname,resultname, label),\
+                        { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label, 'c1': ke.properties['c1'], 'c2': ke.properties['c2'], 'c': ke.properties['c'], 'e': ke.properties['e'], 'p': ke.properties['p']} )
             else:
                 session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" % \
                         (resultname,resultname, label),\
@@ -288,7 +293,11 @@ def prepare_node_for_output(node,gt):
     if node.node_type == node_types.DISEASE or node.node_type == node_types.GENETIC_CONDITION:
         if 'mondo_identifiers' in node.properties:
             node.synonyms.update(node.properties['mondo_identifiers'])
-        node.label = gt.mondo.get_label( node.identifier )
+        try:
+            node.label = gt.mondo.get_label( node.identifier )
+        except:
+            if node.label is None:
+                node.label = node.identifier
     if node.label is None:
         if node.node_type == node_types.DISEASE_NAME or node.node_type == node_types.DRUG_NAME:
             node.label = node.identifier.split(':')[-1]
@@ -324,7 +333,7 @@ def prepare_edge_for_output(edge):
     edge.reversed = edge.properties['reversed']
 
 
-def run_query(querylist, supports, result_name, output_path, rosetta, prune=True):
+def run_query(querylist, supports, result_name, rosetta, output_path='.', prune=True):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
     kgraph = KnowledgeGraph( querylist, rosetta )
     kgraph.execute()
@@ -340,7 +349,7 @@ def question1(disease_name, disease_identifiers, supports,rosetta):
     query = UserQuery(disease_identifiers,node_types.DISEASE, name_node)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.GENETIC_CONDITION)
-    run_query(query,supports,'Query1_{}_{}'.format('_'.join(disease_name.split()),'_'.join(supports)) , '.', rosetta)
+    run_query(query,supports,'Query1_{}_{}'.format('_'.join(disease_name.split()),'_'.join(supports)) ,  rosetta)
    
 def build_question2(drug_name, disease_name, drug_ids, disease_ids ):
     drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
@@ -359,7 +368,7 @@ def question2(drug_name, disease_name, drug_ids, disease_ids, supports, rosetta 
     query = build_question2(drug_name, disease_name, drug_ids, disease_ids)
     outdisease = '_'.join(disease_name.split())
     outdrug    = '_'.join(drug_name.split())
-    run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', rosetta, prune=True)
+    run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , rosetta, prune=True)
 
 def question2a(drug_name, phenotype_name, drug_ids, phenotype_ids, supports, rosetta ):
     drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
@@ -374,20 +383,128 @@ def question2a(drug_name, phenotype_name, drug_ids, phenotype_ids, supports, ros
     query.add_end_lookup_node(p_name_node)
     outdisease = '_'.join(phenotype_name.split())
     outdrug    = '_'.join(drug_name.split())
-    run_query(query,supports,'Query2a_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , '.', rosetta, prune=True)
+    run_query(query,supports,'Query2a_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , rosetta, prune=True)
 
 def quicktest(drugname):
     lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
     lquery.add_transition(node_types.DRUG)
     lquery.add_transition(node_types.GENE)
     lquery.add_transition(node_types.PROCESS)
-    run_query(lquery,['chemotext'],'Testq', '.')
+    run_query(lquery,['chemotext'],'Testq', )
+
+def generate_query(pathway,start_node,start_identifiers,end_node=None,end_identifiers=None):
+    start, middle, end = pathway[0], pathway[1:-1], pathway[-1]
+    query = UserQuery(start_identifiers, start.nodetype, start_node)
+    print(start.nodetype)
+    for transition in middle:
+        print( transition )
+        query.add_transition(transition.nodetype, transition.min_path_length, transition.max_path_length)
+    print( end )
+    query.add_transition(end.nodetype, end.min_path_length, end.max_path_length, end_values = end_identifiers)
+    if end_node is not None:
+        query.add_end_lookup_node(end_node)
+    return query
+
+def generate_name_node( name, nodetype ):
+    if nodetype == node_types.DRUG:
+        return KNode( '{}.{}'.format(node_types.DRUG_NAME,name), node_types.DRUG_NAME )
+    elif nodetype == node_types.DISEASE or nodetype == node_types.PHENOTYPE:
+        return KNode( '{}.{}'.format(node_types.DISEASE_NAME,name), node_types.DISEASE_NAME )
+
+
+def run(pathway, start_name, end_name, label, supports):
+    """Programmatic interface.  Pathway defined as in the command-line input."""
+    #TODO: move to a more structured pathway description (such as json)
+    steps = tokenize_path(pathway)
+    #start_type = node_types.type_codes[pathway[0]]
+    start_type = steps[0].nodetype
+    rosetta = setup()
+    start_identifiers = lookup_identifier( start_name, start_type , rosetta.core)
+    start_node = generate_name_node( start_name, start_type )
+    if end_name is not None:
+        #end_type = node_types.type_codes[pathway[-1]]
+        end_type = steps[-1].nodetype
+        end_identifiers = lookup_identifier( end_name, end_type, rosetta.core )
+        end_node= generate_name_node( start_name, start_type )
+    else:
+        end_node =None
+        end_identifiers = None
+    query = generate_query(steps,start_node,start_identifiers,end_node,end_identifiers)
+    run_query(query, supports, label, rosetta, prune=True)
 
 def setup():    
     logger = logging.getLogger('application')
     logger.setLevel(level = logging.DEBUG)
     rosetta = Rosetta()
     return rosetta
+
+helpstring="""Execute a query across all configured data sources.  The query is defined 
+using the -p argument, which takes a string.  Each character in the string 
+represents one high-level type of node that will be sequentially included 
+denoted as:
+S: Substance (Drug)
+G: Gene
+P: Process (Pathway)
+C: Cell Type
+A: Anatomical Feature
+T: Phenotype
+D: Disease
+X: Genetic Condition
+
+It is also possible to specify indirect transitions by including 
+parenthetical values between these letters containing the number of 
+allowed type transitions. A default (direct) transition would
+be denoted (1-1), but it is not necessary to include between
+every node.
+
+Examples:
+    DGX        Go directly from Disease, to Gene, to Genetic Condition.
+    D(1-2)X    Go from Disease to Genetic Condition, either directly (1)
+               or via another node (of any type) in between
+    SGPCATD    Construct a Clinical Outcome Pathway, moving from a Drug 
+               to a Gene to a Process to a Cell Type to an Anatomical 
+               Feature to a Phenotype to a Disease. Each with no 
+               intermediary nodes
+    SG(2-5)D   Go from a Drug to a Gene, through 2 to 5 other transitions, and 
+               to a Disease.
+"""
+
+def main():
+    parser = argparse.ArgumentParser(description=helpstring,
+                                    formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('-s', '--support', help='Name of the support system', 
+                                           action='append', 
+                                           choices=['chemotext','chemotext2','cdw'], 
+                                           required=True)
+    parser.add_argument('-p', '--pathway', help='Defines the query pathway (see description). Cannot be used with -q', required=False)
+    parser.add_argument('-q', '--question', help='Shortcut for certain questions (1=Disease/GeneticCondition, 2=COP, 3=COP ending in Phenotype). Cannot be used with -p', 
+                                            choices=[1,2], 
+                                            required=False, 
+                                            type=int)
+    parser.add_argument('--start', help='Text to initiate query', required = True)
+    parser.add_argument('--end', help='Text to finalize query', required = False)
+    parser.add_argument('-l', '--label', help='Label for result in neo4j. Will overwrite.', 
+                                         required = True)
+    args = parser.parse_args()
+    if args.pathway is not None and args.question is not None:
+        print('Cannot specify both question and pathway. Exiting.')
+        sys.exit(1)
+    if args.question is not None:
+        if args.question == 1:
+            pathway = 'DGX'
+            if args.end is not None:
+                print('--end argument not supported for question 1.  Ignoring')
+        elif args.question == 2:
+            pathway = 'SGPCATD'
+        elif args.question == 3:
+            pathway = 'SGPCAT'
+        if args.question in (2,3):
+            if args.end is None:
+                print('--end required for question 2. Exiting')
+                sys.exit(1)
+    else:
+        pathway = args.pathway
+    run(pathway, args.start, args.end, args.label, args.support)
 
 def main_test():
     parser = argparse.ArgumentParser(description='Protokop.')
@@ -423,5 +540,6 @@ def main_test():
             question2a(args.start, args.end, drug_ids, phenotype_ids, args.support, rosetta)
 
 if __name__ == '__main__':
-    main_test()
+    main()
+    #main_test()
     #quicktest('ADAPALENE')
