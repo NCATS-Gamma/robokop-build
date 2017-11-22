@@ -344,55 +344,6 @@ def run_query(querylist, supports, result_name, rosetta, output_path='.', prune=
     kgraph.support(supports)
     kgraph.export(result_name)
        
-"""
-def question1(disease_name, disease_identifiers, supports,rosetta):
-    name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,disease_name), node_types.DISEASE_NAME )
-    query = UserQuery(disease_identifiers,node_types.DISEASE, name_node)
-    query.add_transition(node_types.GENE)
-    query.add_transition(node_types.GENETIC_CONDITION)
-    run_query(query,supports,'Query1_{}_{}'.format('_'.join(disease_name.split()),'_'.join(supports)) ,  rosetta)
-   
-def build_question2(drug_name, disease_name, drug_ids, disease_ids ):
-    drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
-    disease_name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,disease_name), node_types.DISEASE_NAME )
-    query = UserQuery(drug_ids,node_types.DRUG,drug_name_node)
-    query.add_transition(node_types.GENE)
-    query.add_transition(node_types.PROCESS)
-    query.add_transition(node_types.CELL)
-    query.add_transition(node_types.ANATOMY)
-    query.add_transition(node_types.PHENOTYPE)
-    query.add_transition(node_types.DISEASE, end_values = disease_ids)
-    query.add_end_lookup_node(disease_name_node)
-    return query
-
-def question2(drug_name, disease_name, drug_ids, disease_ids, supports, rosetta ):
-    query = build_question2(drug_name, disease_name, drug_ids, disease_ids)
-    outdisease = '_'.join(disease_name.split())
-    outdrug    = '_'.join(drug_name.split())
-    run_query(query,supports,'Query2_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , rosetta, prune=True)
-
-def question2a(drug_name, phenotype_name, drug_ids, phenotype_ids, supports, rosetta ):
-    drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
-    #TODO: clean up name type.  We can probably just drop to "NAME" since we're not using the graph to get names...
-    p_name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,phenotype_name), node_types.DISEASE_NAME )
-    query = UserQuery(drug_ids,node_types.DRUG,drug_name_node)
-    query.add_transition(node_types.GENE)
-    query.add_transition(node_types.PROCESS)
-    query.add_transition(node_types.CELL)
-    query.add_transition(node_types.ANATOMY)
-    query.add_transition(node_types.PHENOTYPE, end_values = phenotype_ids)
-    query.add_end_lookup_node(p_name_node)
-    outdisease = '_'.join(phenotype_name.split())
-    outdrug    = '_'.join(drug_name.split())
-    run_query(query,supports,'Query2a_{}_{}_{}'.format(outdisease, outdrug, '_'.join(supports)) , rosetta, prune=True)
-
-def quicktest(drugname):
-    lquery = userquery.OneSidedLinearUserQuery(drugname,node_types.DRUG_NAME)
-    lquery.add_transition(node_types.DRUG)
-    lquery.add_transition(node_types.GENE)
-    lquery.add_transition(node_types.PROCESS)
-    run_query(lquery,['chemotext'],'Testq', )
-"""
 
 def generate_query(pathway,start_node,start_identifiers,end_node=None,end_identifiers=None):
     start, middle, end = pathway[0], pathway[1:-1], pathway[-1]
@@ -415,7 +366,14 @@ def generate_name_node( name, nodetype ):
 
 
 def run(pathway, start_name, end_name, label, supports):
-    """Programmatic interface.  Pathway defined as in the command-line input."""
+    """Programmatic interface.  Pathway defined as in the command-line input.
+       Arguments:
+         Pathway: A string defining the query.  See command line help for details
+         start_name: The name of the entity at one end of the query
+         end_name: The name of the entity at the other end of the query. Can be None.
+         label: the label desginating the result in neo4j
+         support: array strings designating support modules to apply
+    """
     #TODO: move to a more structured pathway description (such as json)
     steps = tokenize_path(pathway)
     #start_type = node_types.type_codes[pathway[0]]
@@ -508,40 +466,6 @@ def main():
         pathway = args.pathway
     run(pathway, args.start, args.end, args.label, args.support)
 
-"""
-def main_test():
-    parser = argparse.ArgumentParser(description='Protokop.')
-    parser.add_argument('-s', '--support', help='Name of the support system', action='append', choices=['chemotext','chemotext2','cdw'], required=True)
-    parser.add_argument('-q', '--question', help='Shortcut for certain questions (1=Disease/GeneticCondition, 2=COP)', choices=[1,2], required=True, type=int)
-    parser.add_argument('--start', help='Text to initiate query', required = True)
-    parser.add_argument('--end', help='Text to finalize query', required = False)
-    args = parser.parse_args()
-    rosetta = setup()
-    if args.question == 1:
-        if args.end is not None:
-            print('--end argument not supported for question 1.  Ignoring')
-        disease_ids = lookup_disease_by_name( args.start, rosetta.core )
-        if len(disease_ids) == 0:
-            sys.exit(1)
-        question1( args.start, disease_ids, args.support ,rosetta)
-    elif args.question == 2:
-        if args.end is None:
-            print('--end required for question 2. Exiting')
-            sys.exit(1)
-        drug_ids    = lookup_drug_by_name( args.start , rosetta.core )
-        disease_ids = lookup_disease_by_name( args.end, rosetta.core )
-        if len(drug_ids) == 0:
-            sys.exit(1)
-        if len(disease_ids) > 0:
-            question2(args.start, args.end, drug_ids, disease_ids, args.support, rosetta)
-        else:
-            #Maybe the 'disease' is really a phenotype
-            phenotype_ids = lookup_phenotype_by_name( args.end, rosetta.core )
-            if len(phenotype_ids) == 0:
-                sys.exit(1)
-            #It is a phenotype!
-            question2a(args.start, args.end, drug_ids, phenotype_ids, args.support, rosetta)
-"""
 
 if __name__ == '__main__':
     main()
