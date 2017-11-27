@@ -1,6 +1,7 @@
 from greent.graph_components import KNode,KEdge,elements_to_json
 from greent import node_types
 from greent.rosetta import Rosetta
+from greent.util import Text
 import chemotext
 from userquery import UserQuery
 import mesh
@@ -44,11 +45,12 @@ class KnowledgeGraph:
         reverses = self.userquery.get_reversed()
         lookups  = self.userquery.get_lookups()
         for cypher, start, reverse,lookup in zip(cyphers,starts,reverses,lookups):
+            input_name = Text.un_curie(lookup.identifier)
             self.logger.debug(start)
             self.logger.debug('CYPHER')
             self.logger.debug(cypher)
             identifier, ntype = start
-            start_node = KNode( identifier, ntype )
+            start_node = KNode( identifier, ntype, label=input_name )
             kedge = KEdge( 'lookup', 'lookup' )
             kedge.source_node = lookup
             kedge.target_node = start_node
@@ -360,9 +362,9 @@ def generate_query(pathway,start_node,start_identifiers,end_node=None,end_identi
 
 def generate_name_node( name, nodetype ):
     if nodetype == node_types.DRUG:
-        return KNode( '{}.{}'.format(node_types.DRUG_NAME,name), node_types.DRUG_NAME )
+        return KNode( '{}:{}'.format(node_types.DRUG_NAME,name), node_types.DRUG_NAME )
     elif nodetype == node_types.DISEASE or nodetype == node_types.PHENOTYPE:
-        return KNode( '{}.{}'.format(node_types.DISEASE_NAME,name), node_types.DISEASE_NAME )
+        return KNode( '{}:{}'.format(node_types.DISEASE_NAME,name), node_types.DISEASE_NAME )
 
 
 def run(pathway, start_name, end_name, label, supports):
@@ -438,7 +440,7 @@ def main():
                                            required=True)
     parser.add_argument('-p', '--pathway', help='Defines the query pathway (see description). Cannot be used with -q', required=False)
     parser.add_argument('-q', '--question', help='Shortcut for certain questions (1=Disease/GeneticCondition, 2=COP, 3=COP ending in Phenotype). Cannot be used with -p', 
-                                            choices=[1,2], 
+                                            choices=[1,2,3], 
                                             required=False, 
                                             type=int)
     parser.add_argument('--start', help='Text to initiate query', required = True)

@@ -21,9 +21,10 @@ def add_mesh_to_node( node, greent ):
     elif node.identifier.startswith('NAME.'):
         #We don't want mesh terms for these nodes - they represent query inputs, not real identified entities.
         return
-    elif node.identifier.startswith('PUBCHEM'):
+    #elif node.identifier.startswith('PUBCHEM') or node.identifier.startswith('PHAROS.DRUG') or node.identifier.startswith('CTD'):
+    elif node.node_type == node_types.DRUG:
         #TODO:
-        #We don't currently have a great way to convert pubchem to mesh.  We're going to try to just use the 
+        #We don't currently have a great way to convert drugs to mesh.  We're going to try to just use the 
         # label (drugname) and hope for the best.
         node.mesh_identifiers.append( {'curie': '', 'label': node.label} )
     else:
