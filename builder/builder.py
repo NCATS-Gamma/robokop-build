@@ -44,9 +44,10 @@ class KnowledgeGraph:
         starts   = self.userquery.get_start_node()
         reverses = self.userquery.get_reversed()
         lookups  = self.userquery.get_lookups()
-        for cypher, start, reverse,lookup in zip(cyphers,starts,reverses,lookups):
+        for cypher, start, reverse, lookup in zip(cyphers,starts,reverses,lookups):
             input_name = Text.un_curie(lookup.identifier)
             self.logger.debug(start)
+            self.logger.debug(input_name)
             self.logger.debug('CYPHER')
             self.logger.debug(cypher)
             identifier, ntype = start
@@ -387,7 +388,7 @@ def run(pathway, start_name, end_name, label, supports):
         #end_type = node_types.type_codes[pathway[-1]]
         end_type = steps[-1].nodetype
         end_identifiers = lookup_identifier( end_name, end_type, rosetta.core )
-        end_node= generate_name_node( start_name, start_type )
+        end_node= generate_name_node( end_name, end_type )
     else:
         end_node =None
         end_identifiers = None
