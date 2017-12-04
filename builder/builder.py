@@ -1,13 +1,10 @@
-from greent.graph_components import KNode,KEdge,elements_to_json
+from greent.graph_components import KNode,KEdge
 from greent import node_types
 from greent.rosetta import Rosetta
 from greent.util import Text
-import chemotext
 from userquery import UserQuery
-import mesh
 import argparse
 import networkx as nx
-from networkx.readwrite.json_graph.node_link import node_link_data
 import logging
 import sys
 from neo4j.v1 import GraphDatabase
