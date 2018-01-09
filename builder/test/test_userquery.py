@@ -209,6 +209,7 @@ def test_dgd(rosetta):
     query = UserQuery(drug_ids,node_types.DRUG,drug_name_node)
     query.add_transition(node_types.GENE)
     query.add_transition(node_types.DISEASE, end_values = disease_ids)
+    query.add_end_lookup_node(disease_name_node)
     assert query.compile_query(rosetta)
 
 def build_question2(drug_name, disease_name, drug_ids, disease_ids ):
