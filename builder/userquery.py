@@ -11,7 +11,10 @@ class Transition():
     def get_fstring(self,ntype):
         if ntype == DRUG_NAME or ntype == DISEASE_NAME:
             return 'n{0}{{name:"{1}"}}'
-        return 'n{0}:{1}'
+        if ntype is None:
+            return 'n{0}'
+        else:
+            return 'n{0}:{1}'
     def generate_cypher_pathstring(self, t_number):
         fstring = self.get_fstring( self.in_type )
         self.in_node = fstring.format( t_number, self.in_type )
@@ -93,9 +96,10 @@ class UserQuery():
         #List of user-level types that we must pass through
         self.add_node( start_type )
     def add_node(self,node_type):
-        """Add a node to the node list, validating the type"""
+        """Add a node to the node list, validating the type
+           20180108: node_type may be None"""
         #Our start node is more specific than this...  Need to have another validation method
-        if node_type not in node_types:
+        if node_type is not None and node_type not in node_types:
             raise Exception('node type must be one of greent.node_types')
         self.definition.node_types.append(node_type)
     def add_transition(self, next_type, min_path_length=1, max_path_length=1, end_values=None):
