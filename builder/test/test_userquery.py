@@ -199,6 +199,20 @@ def test_query_two(rosetta):
     query.add_end_lookup_node(disease_name_node)
     assert query.compile_query(rosetta)
 
+def test_d_unknown_d(rosetta):
+    drug_name = 'test_drug'
+    drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
+    drug_ids = ['CTD:Lisinopril', 'PHAROS.DRUG:128029', 'PUBCHEM:5362119']
+    disease_name = 'test_disease'
+    disease_name_node = KNode( '{}.{}'.format(node_types.DISEASE_NAME,disease_name), node_types.DISEASE_NAME )
+    disease_ids = ['DOID:4325']
+    query = UserQuery(drug_ids,node_types.DRUG,drug_name_node)
+    query.add_transition(node_types.DISEASE, min_path_length=1, max_path_length=2, end_values = disease_ids)
+    query.add_end_lookup_node(disease_name_node)
+    assert query.compile_query(rosetta)
+
+
+
 def test_dgd(rosetta):
     drug_name = 'test_drug'
     drug_name_node = KNode( '{}.{}'.format(node_types.DRUG_NAME,drug_name), node_types.DRUG_NAME )
