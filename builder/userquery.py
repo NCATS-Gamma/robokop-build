@@ -1,12 +1,14 @@
 from greent.node_types import node_types, DRUG_NAME, DISEASE_NAME
 
 
-class Transition():
+class Transition:
     def __init__(self, last_type, next_type, min_path_length, max_path_length):
         self.in_type = last_type
         self.out_type = next_type
         self.min_path_length = min_path_length
         self.max_path_length = max_path_length
+        self.in_node = None
+        self.out_node = None
 
     def generate_reverse(self):
         return Transition(self.out_type, self.in_type, self.min_path_length, self.max_path_length)
@@ -25,7 +27,8 @@ class Transition():
         fstring = self.get_fstring(self.out_type)
         self.out_node = fstring.format(t_number + 1, self.out_type)
         pstring = 'p{0}=({1})-[*{2}..{3}]->({4})'
-        # TODO: how to set max path here.  It's our max_path, plus some slop for synonyms.  Assuming 1 synonym per translation (and some slop?)?
+        # TODO: how to set max path here.  It's our max_path, plus some slop for synonyms.
+        # Assuming 1 synonym per translation (and some slop?)?
         return pstring.format(t_number, self.in_node, self.min_path_length, 2 * self.max_path_length + 2, self.out_node)
 
     def generate_cypher_withstring(self, t_number, pathstring):
@@ -37,7 +40,7 @@ class Transition():
         withline += '''reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN weight ELSE weight + 1 END ) as d{0},
 reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN weight + 1 ELSE weight END ) as Syn{0}'''.format(
             t_number)
-        if (self.min_path_length == self.max_path_length):
+        if self.min_path_length == self.max_path_length:
             withline += '\nWHERE d{0} = {1}'.format(t_number, self.min_path_length)
         else:
             withline += '\nWHERE d{0} >= {1} AND d{0} <= {2}'.format(t_number, self.min_path_length,
@@ -45,7 +48,7 @@ reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN wei
         return withline
 
 
-class QueryDefinition():
+class QueryDefinition:
     """Defines a query"""
 
     # TODO: start_type probably doesn't need its own property?
@@ -95,11 +98,12 @@ class QueryDefinition():
         return self.generate_left_query_def(i), self.generate_right_query_def(i)
 
 
-class UserQuery():
+class UserQuery:
     """This is the class that the rest of builder uses to interact with a query."""
 
     def __init__(self, start_values, start_type, lookup_node):
         """Create an instance of UserQuery. Takes a starting value and the type of that value"""
+        self.query = None
         self.definition = QueryDefinition()
         # Value for the original node
         self.definition.start_values = start_values
@@ -166,7 +170,6 @@ class UserQuery():
     def compile_query(self, rosetta):
         """Based on the type of inputs that we have, create the appropriate form of query,
         and check that it can be satisfied by the typegraph"""
-        self.query = None
         if self.definition.end_values is None:
             # this is a one sided graph
             self.query = OneSidedLinearUserQuerySet(self.definition)
@@ -200,7 +203,7 @@ class UserQuery():
         return self.query.get_lookups()
 
 
-class TwoSidedLinearUserQuerySet():
+class TwoSidedLinearUserQuerySet:
     """A composition of multiple two sided linear queries."""
 
     def __init__(self):
@@ -230,7 +233,7 @@ class TwoSidedLinearUserQuerySet():
         return sum([q.get_lookups() for q in self.queries], [])
 
 
-class TwoSidedLinearUserQuery():
+class TwoSidedLinearUserQuery:
     """Constructs a query that is fixed at either end.
     When this occurs, we are going to treat it as a pair of OneSidedLinearUserQueries that 
     extend inward from the end points and meet in the middle"""
@@ -265,7 +268,7 @@ class TwoSidedLinearUserQuery():
         return self.query1.compile_query(rosetta) and self.query2.compile_query(rosetta)
 
 
-class OneSidedLinearUserQuerySet():
+class OneSidedLinearUserQuerySet:
     """A set of one-sided queries that will be run together.  Used to compose two sided queries"""
 
     def __init__(self, query_definition):
@@ -275,6 +278,7 @@ class OneSidedLinearUserQuerySet():
             self.queries.append(OneSidedLinearUserQuery(svalue, query_definition))
 
     def get_lookups(self):
+        #This is just a way to get the lookup node for every query to be the same
         return [self.lookup_node for i in self.queries]
 
     def get_start_node(self):
@@ -314,7 +318,7 @@ class OneSidedLinearUserQuerySet():
         return cyphers
 
 
-class OneSidedLinearUserQuery():
+class OneSidedLinearUserQuery:
     """A class for constructing linear paths through a series of knowledge sources.
 
     We have a set of knowledge sources that can be considered as a graph.  Each edge in the graph represents
@@ -345,7 +349,8 @@ class OneSidedLinearUserQuery():
         The second element is a set of ending terminal types"""
         return [set([self.node_types[0]]), set([self.node_types[-1]])]
 
-    def get_reversed(self):
+    @staticmethod
+    def get_reversed():
         return [False]
 
     def compile_query(self, rosetta):
@@ -405,7 +410,8 @@ class OneSidedLinearUserQuery():
 #
 ###
 
-# This example query shows how to go from Disease name to Disease, but having to go through one other kind of node first (since d1 > 1)
+# This example query shows how to go from Disease name to Disease, but having to go through one
+# #other kind of node first (since d1 > 1)
 q1 = '''MATCH  p=(startNode{name:"NAME.DISEASE"})-[*1..6]->(endNode:Disease)
       WHERE NONE (r in relationships(p) WHERE type(r) = "UNKNOWN")
       WITH p,
