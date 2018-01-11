@@ -275,8 +275,9 @@ class KnowledgeGraph:
         session.run('MATCH (a:%s) DETACH DELETE a' % resultname)
         # Now add all the nodes
         for node in self.graph.nodes():
-            session.run("CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
-                        % resultname,
+            type_label = ''.join(node.node_type.split('.'))
+            session.run("CREATE (a:%s:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
+                        % (resultname, type_label),
                         {"id": node.identifier, "name": node.label, "node_type": node.node_type,
                          "syn": list(node.synonyms), "meta": ''})
         for edge in self.graph.edges(data=True):
@@ -292,17 +293,26 @@ class KnowledgeGraph:
                 label = 'Result'
             prepare_edge_for_output(ke)
             if ke.edge_source == 'chemotext2':
-                session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" %
-                        (resultname,resultname, label),
-                        { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label, 'sim':ke.properties['similarity'] , 'terms':ke.properties['terms'] } )
+                session.run(
+                    "MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" %
+                    (resultname, resultname, label),
+                    {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
+                     "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label,
+                     'sim': ke.properties['similarity'], 'terms': ke.properties['terms']})
             elif ke.edge_source == 'cdw':
-                session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, source_counts: {c1}, target_counts: {c2}, shared_counts: {c}, expected_counts: {e}, p_value:{p}} ]->(b) return r" %
-                        (resultname,resultname, label),
-                        { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label, 'c1': ke.properties['c1'], 'c2': ke.properties['c2'], 'c': ke.properties['c'], 'e': ke.properties['e'], 'p': ke.properties['p']} )
+                session.run(
+                    "MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, source_counts: {c1}, target_counts: {c2}, shared_counts: {c}, expected_counts: {e}, p_value:{p}} ]->(b) return r" %
+                    (resultname, resultname, label),
+                    {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
+                     "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label,
+                     'c1': ke.properties['c1'], 'c2': ke.properties['c2'], 'c': ke.properties['c'],
+                     'e': ke.properties['e'], 'p': ke.properties['p']})
             else:
-                session.run("MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" %
-                        (resultname,resultname, label),
-                        { "aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function, "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label } )
+                session.run(
+                    "MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" %
+                    (resultname, resultname, label),
+                    {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
+                     "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label})
         session.close()
         self.logger.info("Wrote {} nodes.".format(len(self.graph.nodes())))
 
