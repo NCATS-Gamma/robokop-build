@@ -13,7 +13,8 @@ class Transition:
     def generate_reverse(self):
         return Transition(self.out_type, self.in_type, self.min_path_length, self.max_path_length)
 
-    def get_fstring(self, ntype):
+    @staticmethod
+    def get_fstring(ntype):
         if ntype == DRUG_NAME or ntype == DISEASE_NAME:
             return 'n{0}{{name:"{1}"}}'
         if ntype is None:
