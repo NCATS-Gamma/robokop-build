@@ -411,53 +411,43 @@ class OneSidedLinearUserQuery:
 #
 ###
 
-# This example query shows how to go from Disease name to Disease, but having to go through one
-# #other kind of node first (since d1 > 1)
-q1 = '''MATCH  p=(startNode{name:"NAME.DISEASE"})-[*1..6]->(endNode:Disease)
-      WHERE NONE (r in relationships(p) WHERE type(r) = "UNKNOWN")
-      WITH p,
-           reduce(weight=0, r in relationships(p) | CASE type(r)
-                                                   WHEN "SYNONYM" THEN weight
-                                                   ELSE weight + 1
-                                                   END 
-           ) as d1,
-           reduce(weight=0, r in relationships(p) | CASE type(r)
-                                                    WHEN "SYNONYM" THEN weight + 1
-                                                    ELSE weight 
-           END  ) as Syn1
-      WHERE d1 > 1
-      RETURN p AS shortestPath, d1, Syn1
-      ORDER BY d1 ASC, Syn1 ASC
-      LIMIT 5'''
-# Go from Disease to Gene to Pathway, Nothing in between
-q2 = '''MATCH  p1=(n1:Disease)-[*1..4]->(n2:Gene), p2=(n2:Gene)-[*1..4]->(n3:Pathway)
-      WHERE NONE (r in relationships(p1) WHERE type(r) = "UNKNOWN")
-      AND NONE (r in relationships(p2) WHERE type(r) = "UNKNOWN")
-      WITH p1, p2,
-           reduce(weight=0, r in relationships(p1) | CASE type(r)
-                                                   WHEN "SYNONYM" THEN weight
-                                                   ELSE weight + 1
-                                                   END 
-           ) as d1,
-           reduce(weight=0, r in relationships(p1) | CASE type(r)
-                                                    WHEN "SYNONYM" THEN weight + 1
-                                                    ELSE weight 
-           END  ) as Syn1
-      WHERE d1 = 1
-      WITH p1, p2, d1, Syn1,
-           reduce(weight=0, r in relationships(p2) | CASE type(r)
-                                                   WHEN "SYNONYM" THEN weight
-                                                   ELSE weight + 1
-                                                   END 
-           ) as d2,
-           reduce(weight=0, r in relationships(p2) | CASE type(r)
-                                                    WHEN "SYNONYM" THEN weight + 1
-                                                    ELSE weight 
-           END  ) as Syn2
-      WHERE d2 = 1
-      WITH p1, p2, d1, d2, Syn1, Syn2,
-           d1 + d2 as TD,
-           Syn1 + Syn2 as TS
-      RETURN p1 , p2, d1, Syn1, d2, Syn2, TD, TS
-      ORDER BY TD ASC, TS ASC
-      LIMIT 5'''
+## New style
+# First, we are removing "UNKNOWN" predicates, so we can drop that filtering
+# Second, we are adding "translation" transitions between concepts to help find paths at the concept level
+
+# So now, we can do this in two stages: Fill in unspecified nodes by querying the concept-level graph
+# Then, fill in the actual transitions and synonyms going through the types returned from the concept-query.
+
+#This is an example of how to build the path at the concept level. Here we are going from 
+# a name to a substance.  Then through 1 to 3 translation edges to a phenotype.  In this case 1 would 
+# mean direct, 2 would mean a single intermediate node, and 3 would mean 2 intermediate nodes.
+# We are finding shortest paths (so we prefer direct, but would take more) and we are finding all shortest,
+# so if the shortest path is via one node, and there are two ways to do that then we get both.
+# Finally we go from substance directly to phenotype.
+# The return is a list of concept-paths that make explicit the hidden nodes in the shortest paths
+# and check that we can actually do the traversal at the concept level.
+new_q1='''
+match 
+p1=(nc:Concept)-[r3:translation]->(n:Concept),
+p=allShortestPaths((n:Concept)-[r:translation*1..3]->(m:Concept)),
+q=(m)-[r2:translation]->(:Concept) 
+where nc.name = "Name" 
+and n.name="Substance" 
+and m.name="Phenotype" 
+return p1,p,q
+'''
+
+# Once we have identified a concept path, we need to fill it in with actual type translations.
+# Here, we have decided to go name->substance->gene->disease->phenotype.
+# For each type translation, we first go between 0 and 1 synonyms to get to the id type that we want.
+# 0 is included in case we dont need to do the transition, in wich case nodes e.g. n2a and n2 would be the same
+# then we transition to the next type via an unspecified transition.
+new_q2= '''match p=
+(n:Type:Name)-[r]->
+(n2:Type:Substance)-[:SYNONYM*0..1]-(n2a:Type:Substance)-[]->
+(n3:Type:Gene)-[:SYNONYM*0..1]-(n4:Type:Gene)-[]->
+(n5:Type:Disease)-[:SYNONYM*0..1]-(n6:Type:Disease)-[]->
+(n7:Type:Phenotype) 
+return p'''
+
+

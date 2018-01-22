@@ -31,6 +31,49 @@ def test_simple_query(rosetta):
     assert len(reverse) == 1
     assert not reverse[0]
 
+def test_simple_query_with_unspecified(rosetta):
+    disease_name = 'test_name'
+    did = 'DOID:123'
+    disease_identifiers = [did]
+    name_node = KNode('{}:{}'.format(node_types.DISEASE_NAME, disease_name), node_types.DISEASE_NAME)
+    qd = UserQuery(disease_identifiers, node_types.DISEASE, name_node)
+    qd.add_transition(node_types.UNSPECIFIED)
+    qd.add_transition(node_types.GENETIC_CONDITION)
+    assert qd.compile_query(rosetta)
+    cyphers = qd.generate_cypher()
+    assert len(cyphers) == 1
+    start_nodes = qd.get_start_node()
+    assert len(start_nodes) == 1
+    assert start_nodes[0][0] == did
+    lookups = qd.get_lookups()
+    assert len(lookups) == 1
+    assert lookups[0].identifier == '{}:{}'.format(node_types.DISEASE_NAME, disease_name)
+    reverse = qd.get_reversed()
+    assert len(reverse) == 1
+    assert not reverse[0]
+
+def test_simple_query_with_unspecified_at_end(rosetta):
+    disease_name = 'test_name'
+    did = 'DOID:123'
+    disease_identifiers = [did]
+    name_node = KNode('{}:{}'.format(node_types.DISEASE_NAME, disease_name), node_types.DISEASE_NAME)
+    qd = UserQuery(disease_identifiers, node_types.DISEASE, name_node)
+    qd.add_transition(node_types.GENE)
+    qd.add_transition(node_types.UNSPECIFIED)
+    assert qd.compile_query(rosetta)
+    cyphers = qd.generate_cypher()
+    assert len(cyphers) == 1
+    start_nodes = qd.get_start_node()
+    assert len(start_nodes) == 1
+    assert start_nodes[0][0] == did
+    lookups = qd.get_lookups()
+    assert len(lookups) == 1
+    assert lookups[0].identifier == '{}:{}'.format(node_types.DISEASE_NAME, disease_name)
+    reverse = qd.get_reversed()
+    assert len(reverse) == 1
+    assert not reverse[0]
+
+
 
 def test_failing_query(rosetta):
     """IN the current set of edges, there is no gene->anatomy service. If we add one this teset will fail"""
