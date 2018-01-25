@@ -23,7 +23,7 @@ class Transition:
         else:
             return 'n{0}:{1}'
 
-    def generate_concept_cypher_pathstring(self,t_number):
+    def generate_concept_cypher_pathstring(self, t_number):
         start = f'(n{t_number}:Concept)'
         end = f'(n{t_number+1}:Concept)'
         if self.max_path_length > 1:
@@ -47,7 +47,6 @@ class Transition:
         for i in range(t_number):
             withline += ', d{0}, Syn{0}'.format(i)
         withline += ',\n'
-        # TODO: now synonym is a property, switch to use that rather than type.
         withline += '''reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN weight ELSE weight + 1 END ) as d{0},
 reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN weight + 1 ELSE weight END ) as Syn{0}'''.format(
             t_number)
@@ -62,8 +61,6 @@ reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN wei
 class QueryDefinition:
     """Defines a query"""
 
-    # TODO: start_type probably doesn't need its own property?
-    # TODO: potential integration point with UI
     def __init__(self):
         self.start_values = None
         self.start_type = None
@@ -106,7 +103,7 @@ class QueryDefinition:
         return right_def
 
     def generate_paired_query(self, i):
-        return self.generate_left_query_def(i), self.generate_right_query_def(i)
+        return [(self.generate_left_query_def(i), self.generate_right_query_def(i))]
 
 
 class UserQuery:
@@ -188,8 +185,11 @@ class UserQuery:
             # this is a two sided graph, we need to check every possible split point.
             # Temporarily, this does not include a single end-to-end path, but is always a pair of
             # one sided queries
-            all_possible_query_defs = [self.definition.generate_paired_query(i) for i in
-                                       range(1, len(self.definition.transitions))]
+            all_possible_query_defs = []
+            for i in range(1,len(self.definition.transitions)):
+                all_possible_query_defs += self.definition.generate_paired_query(i)
+            #all_possible_query_defs = [self.definition.generate_paired_query(i) for i in
+            #                           range(1, len(self.definition.transitions))]
             all_possible_queries = [TwoSidedLinearUserQuery(OneSidedLinearUserQuerySet(l),
                                                             OneSidedLinearUserQuerySet(r))
                                     for l, r in all_possible_query_defs]
@@ -289,7 +289,7 @@ class OneSidedLinearUserQuerySet:
             self.queries.append(OneSidedLinearUserQuery(svalue, query_definition))
 
     def get_lookups(self):
-        #This is just a way to get the lookup node for every query to be the same
+        # This is just a way to get the lookup node for every query to be the same
         return [self.lookup_node for i in self.queries]
 
     def get_start_node(self):
@@ -366,8 +366,8 @@ class OneSidedLinearUserQuery:
 
     def compile_query(self, rosetta):
         """Determine whether there is a path through the data that can satisfy this query"""
-        #programs = rosetta.type_graph.get_transitions(self.generate_cypher()[0])
-        #return len(programs) > 0
+        # programs = rosetta.type_graph.get_transitions(self.generate_cypher()[0])
+        # return len(programs) > 0
         cypher = self.generate_concept_cypher()
         print(cypher)
         paths = rosetta.type_graph.run_cypher_query(cypher)
@@ -379,13 +379,13 @@ class OneSidedLinearUserQuery:
             fullcypher = self.generate_type_cypher(concept_names)
             print(fullcypher)
             programs += rosetta.type_graph.get_transitions(fullcypher)
-        return len(programs)>0
+        return len(programs) > 0
 
-    def generate_type_cypher(self,concept_names):
+    def generate_type_cypher(self, concept_names):
         start_curie = Text.get_curie(self.start_value)
         buffer = f'MATCH p=(n0:Type)-[:SYNONYM*0..2]-(n0a:Type:{concept_names[0]})-[]->\n'
-        for count,c_name in enumerate(concept_names[1:-1]):
-            c = count+1
+        for count, c_name in enumerate(concept_names[1:-1]):
+            c = count + 1
             buffer += f'(n{c}:Type:{c_name})-[:SYNONYM*0..2]-(n{c}a:Type:{c_name})-[]->\n'
         buffer += f'(n{len(concept_names)-1}:Type:{concept_names[-1]})\n'
         buffer += f'WHERE n0.name = "{start_curie}"\n'
@@ -394,8 +394,8 @@ class OneSidedLinearUserQuery:
 
     @staticmethod
     def extract_concept_nodes(path):
-        names = [ segment[0]['name'] for segment in path ]
-        names.append( path[-1][-1]['name'] )
+        names = [segment[0]['name'] for segment in path]
+        names.append(path[-1][-1]['name'])
         return names
 
     def generate_concept_cypher(self):
@@ -411,12 +411,11 @@ class OneSidedLinearUserQuery:
             if nodetype != UNSPECIFIED:
                 wheres.append(f'n{t_number}.name = "{nodetype}"')
         cypherbuffer.append('\nAND '.join(wheres))
-        ps = [ f'p{t}' for t in range(len(self.transitions))]
+        ps = [f'p{t}' for t in range(len(self.transitions))]
         cypherbuffer.append('\nRETURN ')
         cypherbuffer.append(','.join(ps))
         cypherbuffer.append('\n')
         return ''.join(cypherbuffer)
-
 
     def generate_cypher(self, end_value=None):
         """generate a cypher query to generate paths through the data sources. Optionally, callers can
@@ -470,14 +469,15 @@ class OneSidedLinearUserQuery:
 #
 ###
 
-## New style
+######
+# New style
 # First, we are removing "UNKNOWN" predicates, so we can drop that filtering
 # Second, we are adding "translation" transitions between concepts to help find paths at the concept level
 
 # So now, we can do this in two stages: Fill in unspecified nodes by querying the concept-level graph
 # Then, fill in the actual transitions and synonyms going through the types returned from the concept-query.
 
-#This is an example of how to build the path at the concept level. Here we are going from 
+# This is an example of how to build the path at the concept level. Here we are going from
 # a name to a substance.  Then through 1 to 3 translation edges to a phenotype.  In this case 1 would 
 # mean direct, 2 would mean a single intermediate node, and 3 would mean 2 intermediate nodes.
 # We are finding shortest paths (so we prefer direct, but would take more) and we are finding all shortest,
@@ -485,7 +485,7 @@ class OneSidedLinearUserQuery:
 # Finally we go from substance directly to phenotype.
 # The return is a list of concept-paths that make explicit the hidden nodes in the shortest paths
 # and check that we can actually do the traversal at the concept level.
-new_q1='''
+new_q1 = '''
 match 
 p1=(nc:Concept)-[r3:translation]->(n:Concept),
 p=allShortestPaths((n:Concept)-[r:translation*1..3]->(m:Concept)),
@@ -501,12 +501,10 @@ return p1,p,q
 # For each type translation, we first go between 0 and 1 synonyms to get to the id type that we want.
 # 0 is included in case we dont need to do the transition, in wich case nodes e.g. n2a and n2 would be the same
 # then we transition to the next type via an unspecified transition.
-new_q2= '''match p=
+new_q2 = '''match p=
 (n:Type:Name)-[r]->
 (n2:Type:Substance)-[:SYNONYM*0..1]-(n2a:Type:Substance)-[]->
 (n3:Type:Gene)-[:SYNONYM*0..1]-(n4:Type:Gene)-[]->
 (n5:Type:Disease)-[:SYNONYM*0..1]-(n6:Type:Disease)-[]->
 (n7:Type:Phenotype) 
 return p'''
-
-

@@ -204,7 +204,7 @@ def test_generate_set(rosetta):
     query.add_transition(node_types.DISEASE, end_values=disease_identifiers)
     query.add_end_lookup_node(disease_name_node)
     d = query.definition
-    l, r = d.generate_paired_query(4)
+    l, r = d.generate_paired_query(4)[0]
     assert len(l.transitions) == 4
     assert len(r.transitions) == 2
     lq = OneSidedLinearUserQuerySet(l)
