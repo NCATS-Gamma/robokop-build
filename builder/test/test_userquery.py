@@ -143,8 +143,9 @@ def test_query_set_different_one_valid_ids(rosetta):
     qd.add_transition(node_types.GENE)
     qd.add_transition(node_types.GENETIC_CONDITION)
     assert qd.compile_query(rosetta)
-    cyphers = qd.generate_cypher()
-    assert len(cyphers) == 1
+    #generate_cypher is no longer relevant
+    #cyphers = qd.generate_cypher()
+    #assert len(cyphers) == 1
     start_nodes = qd.get_start_node()
     assert len(start_nodes) == 1
     assert start_nodes[0][0] == disease_identifiers[0]

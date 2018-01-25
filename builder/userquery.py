@@ -1,4 +1,5 @@
-from greent.node_types import node_types, DRUG_NAME, DISEASE_NAME
+from greent.node_types import node_types, DRUG_NAME, DISEASE_NAME, UNSPECIFIED
+from greent.util import Text
 
 
 class Transition:
@@ -21,6 +22,15 @@ class Transition:
             return 'n{0}'
         else:
             return 'n{0}:{1}'
+
+    def generate_concept_cypher_pathstring(self,t_number):
+        start = f'(n{t_number}:Concept)'
+        end = f'(n{t_number+1}:Concept)'
+        if self.max_path_length > 1:
+            pstring = f'allShortestPaths({start}-[:translation*{self.min_path_length}..{self.max_path_length}]->{end})'
+        else:
+            pstring = f'p{t_number}={start}-[:translation]->{end}'
+        return pstring
 
     def generate_cypher_pathstring(self, t_number):
         fstring = self.get_fstring(self.in_type)
@@ -356,8 +366,57 @@ class OneSidedLinearUserQuery:
 
     def compile_query(self, rosetta):
         """Determine whether there is a path through the data that can satisfy this query"""
-        programs = rosetta.type_graph.get_transitions(self.generate_cypher()[0])
-        return len(programs) > 0
+        #programs = rosetta.type_graph.get_transitions(self.generate_cypher()[0])
+        #return len(programs) > 0
+        cypher = self.generate_concept_cypher()
+        print(cypher)
+        paths = rosetta.type_graph.run_cypher_query(cypher)
+        if len(paths) == 0:
+            return False
+        concept_name_lists = [self.extract_concept_nodes(path) for path in paths.rows]
+        programs = []
+        for concept_names in concept_name_lists:
+            fullcypher = self.generate_type_cypher(concept_names)
+            print(fullcypher)
+            programs += rosetta.type_graph.get_transitions(fullcypher)
+        return len(programs)>0
+
+    def generate_type_cypher(self,concept_names):
+        start_curie = Text.get_curie(self.start_value)
+        buffer = f'MATCH p=(n0:Type)-[:SYNONYM*0..2]-(n0a:Type:{concept_names[0]})-[]->\n'
+        for count,c_name in enumerate(concept_names[1:-1]):
+            c = count+1
+            buffer += f'(n{c}:Type:{c_name})-[:SYNONYM*0..2]-(n{c}a:Type:{c_name})-[]->\n'
+        buffer += f'(n{len(concept_names)-1}:Type:{concept_names[-1]})\n'
+        buffer += f'WHERE n0.name = "{start_curie}"\n'
+        buffer += 'return p'
+        return buffer
+
+    @staticmethod
+    def extract_concept_nodes(path):
+        names = [ segment[0]['name'] for segment in path ]
+        names.append( path[-1][-1]['name'] )
+        return names
+
+    def generate_concept_cypher(self):
+        """Generate a cypher query to find paths through the concept-level map."""
+        cypherbuffer = ['MATCH\n']
+        paths_parts = []
+        for t_number, transition in enumerate(self.transitions):
+            paths_parts.append(transition.generate_concept_cypher_pathstring(t_number))
+        cypherbuffer.append(',\n'.join(paths_parts))
+        cypherbuffer.append('\nWHERE\n')
+        wheres = []
+        for t_number, nodetype in enumerate(self.node_types):
+            if nodetype != UNSPECIFIED:
+                wheres.append(f'n{t_number}.name = "{nodetype}"')
+        cypherbuffer.append('\nAND '.join(wheres))
+        ps = [ f'p{t}' for t in range(len(self.transitions))]
+        cypherbuffer.append('\nRETURN ')
+        cypherbuffer.append(','.join(ps))
+        cypherbuffer.append('\n')
+        return ''.join(cypherbuffer)
+
 
     def generate_cypher(self, end_value=None):
         """generate a cypher query to generate paths through the data sources. Optionally, callers can
