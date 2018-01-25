@@ -280,6 +280,20 @@ def test_d_unknown_d(rosetta):
     query.add_end_lookup_node(disease_name_node)
     assert query.compile_query(rosetta)
 
+def test_d_unknown_p(rosetta):
+    """currently we lack sources that would allow this to succeed.  If this test starts passing it is because there is
+    now a path going (drug)->(something)<-(phenotype)"""
+    drug_name = 'test_drug'
+    drug_name_node = KNode('{}.{}'.format(node_types.DRUG_NAME, drug_name), node_types.DRUG_NAME)
+    drug_ids = ['CTD:Lisinopril', 'PHAROS.DRUG:128029', 'PUBCHEM:5362119']
+    phenotype_name = 'test_phenotype'
+    phenotype_name_node = KNode('{}.{}'.format(node_types.PHENOTYPE_NAME, phenotype_name), node_types.PHENOTYPE_NAME)
+    phenotype_ids = ['HP:4325']
+    query = UserQuery(drug_ids, node_types.DRUG, drug_name_node)
+    query.add_transition(node_types.PHENOTYPE, min_path_length=1, max_path_length=2, end_values=phenotype_ids)
+    query.add_end_lookup_node(phenotype_name_node)
+    assert not query.compile_query(rosetta)
+
 
 def test_dgd(rosetta):
     drug_name = 'test_drug'

@@ -331,7 +331,14 @@ class TwoSidedLinearUserQuery:
 
     def compile_query(self, rosetta):
         """Determine whether there is a path through the data that can satisfy this query"""
-        return self.query1.compile_query(rosetta) and self.query2.compile_query(rosetta)
+        individuals_ok = self.query1.compile_query(rosetta) and self.query2.compile_query(rosetta)
+        if not individuals_ok:
+            return False
+        #Each side is traversable, but do they share a common endpoint?
+        concepts_1 = self.query1.get_final_concepts()
+        concepts_2 = self.query2.get_final_concepts()
+        return len( concepts_1.intersection(concepts_2)) > 0
+
 
 
 class OneSidedLinearUserQuerySet:
@@ -358,6 +365,12 @@ class OneSidedLinearUserQuerySet:
             for i in (0, 1):
                 ttypes[i].update(qt[i])
         return ttypes
+
+    def get_final_concepts(self):
+        fc = set()
+        for q in self.queries:
+            fc.update(q.get_final_concepts())
+        return fc
 
     def get_reversed(self):
         return [False for q in self.queries]
@@ -403,6 +416,7 @@ class OneSidedLinearUserQuery:
         self.start_type = query_definition.start_type
         self.node_types = query_definition.node_types
         self.transitions = query_definition.transitions
+        self.final_concepts=set()
 
     def get_start_node(self):
         node = self.node_types[0]
@@ -419,6 +433,9 @@ class OneSidedLinearUserQuery:
     def get_reversed():
         return [False]
 
+    def get_final_concepts(self):
+        return self.final_concepts
+
     def compile_query(self, rosetta):
         """Determine whether there is a path through the data that can satisfy this query"""
         # programs = rosetta.type_graph.get_transitions(self.generate_cypher()[0])
@@ -431,6 +448,7 @@ class OneSidedLinearUserQuery:
         concept_name_lists = [self.extract_concept_nodes(path) for path in paths.rows]
         programs = []
         for concept_names in concept_name_lists:
+            self.final_concepts.add( concept_names[-1] )
             fullcypher = self.generate_type_cypher(concept_names)
             #print(fullcypher)
             programs += rosetta.type_graph.get_transitions(fullcypher)
