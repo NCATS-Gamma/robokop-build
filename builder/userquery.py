@@ -27,7 +27,7 @@ class Transition:
         start = f'(n{t_number}:Concept)'
         end = f'(n{t_number+1}:Concept)'
         if self.max_path_length > 1:
-            pstring = f'allShortestPaths({start}-[:translation*{self.min_path_length}..{self.max_path_length}]->{end})'
+            pstring = f'p{t_number}=allShortestPaths({start}-[:translation*{self.min_path_length}..{self.max_path_length}]->{end})'
         else:
             pstring = f'p{t_number}={start}-[:translation]->{end}'
         return pstring
@@ -72,8 +72,8 @@ class QueryDefinition:
 
     def generate_left_query_def(self, i):
         """Generate a query definition starting at the left and moving in i steps
-           input: 0 < i < len(transitions) """
-        if i < 1 or i >= len(self.transitions):
+           input: 0 <= i < len(transitions) """
+        if i < 0 or i > len(self.transitions):
             raise ValueError("Invalid break point: {}".format(i))
         left_def = QueryDefinition()
         left_def.start_values = self.start_values
@@ -89,7 +89,7 @@ class QueryDefinition:
            input: 0 < i < len(transitions) 
            output: A query definition complementary to generate_left_query_def(i)
            """
-        if i < 1 or i >= len(self.transitions):
+        if i < 0 or i > len(self.transitions):
             raise ValueError("Invalid break point: {}".format(i))
         right_def = QueryDefinition()
         right_def.start_values = self.end_values
@@ -103,6 +103,54 @@ class QueryDefinition:
         return right_def
 
     def generate_paired_query(self, i):
+        """From a Two Sided Query Definition, create two One Sided Query Definitions.
+        The split is performed at the i-th node, which must occur in both sides."""
+        return self.generate_paired_query_sharing_node(i) + self.generate_paired_query_splitting_transition(i)
+
+    def generate_paired_query_splitting_transition(self, i):
+        """Split along a transitions if in contains untyped nodes"""
+        transition = self.transitions[i]
+        if transition.max_path_length == 1:
+            # Not splittable
+            return []
+        # It is splittable, but there are multiple ways to split.
+        splits = []
+        # First, what's the fewest number of nodes along this transition.  We don't care about 0 (no transition nodes,
+        # so splits handled by shared nodes splits).  That is, 0 might be true, but then we don't need to do anything.
+        # So set the lowest bid at 1.
+        minimum_nodes = max(1, transition.min_path_length - 1)
+        # Let's say that we are going to allow from 1 to 3 extra nodes.  We must have 1 node in common.
+        # Then, if l is the number of (extra) nodes on the left path, and r is the number on the right,
+        # we could have the following for (l,r):
+        # Common node only: (0,0)           nodes_to_spread = 0
+        # Common + 1: (1,0), (0,1)          nodes_to_spread = 1
+        # Common + 2: (2,0), (1,1), (0,2)   nodes_to_spread = 2
+        for nodes_to_spread in range(minimum_nodes - 1, transition.max_path_length - 1):
+            for num_on_left in range(0, nodes_to_spread + 1):
+                num_on_right = nodes_to_spread - num_on_left
+                splits.append(self.split_at_transition(i, num_on_left, num_on_right))
+        return splits
+
+    def split_at_transition(self, transition_i, num_on_left, num_on_right):
+        """Given a transition number and the exact number of nodes to include on each side, return a
+        pair of one-sided query definitions"""
+        # Generate_left_query and generate_right_query take a parameter (i) which is the index of the shared
+        # nodes between the query.  Here we want to create queries that don't share a node.  That means that
+        # the left query will have nodes 0 to i, and the right query will have i+1 to N.
+        # We do want them to share a node, so we will add an untyped node and an extra transition.
+        leftq = self.generate_left_query_def(transition_i)
+        rightq = self.generate_right_query_def(transition_i + 1)
+        leftq.transitions.append(Transition(leftq.node_types[-1], UNSPECIFIED, num_on_left - 1, num_on_left - 1))
+        rightq.transitions.append(Transition(leftq.node_types[-1], UNSPECIFIED, num_on_right - 1, num_on_right - 1))
+        leftq.node_types.append(UNSPECIFIED)
+        rightq.node_types.append(UNSPECIFIED)
+        return (leftq, rightq)
+
+    def generate_paired_query_sharing_node(self, i):
+        """From a Two Sided Query Definition, create two One Sided Query Definitions.
+        The split is performed at the i-th node, which must occur in both sides."""
+        if i == 0:
+            return []
         return [(self.generate_left_query_def(i), self.generate_right_query_def(i))]
 
 
@@ -149,11 +197,11 @@ class UserQuery:
         terminal node, but it does not have a specified value, then no
         end_value needs to be specified.
 
-        arguments: next_type: type of the output node from the transition.  
+        arguments: next_type: type of the output node from the transition.
                               Must be an element of reasoner.node_types.
-                   min_path_length: The minimum number of non-synonym transitions 
+                   min_path_length: The minimum number of non-synonym transitions
                                     to get from the previous node to the added node
-                   max_path_length: The maximum number of non-synonym transitions to get 
+                   max_path_length: The maximum number of non-synonym transitions to get
                                     from the previous node to the added node
                    end_value: Value of this node (if this is the terminal node, otherwise None)
         """
@@ -185,10 +233,17 @@ class UserQuery:
             # this is a two sided graph, we need to check every possible split point.
             # Temporarily, this does not include a single end-to-end path, but is always a pair of
             # one sided queries
+            # TODO: REvisit
+            # This approach of building two single sided queries works, but is somewhat flawed when we
+            # allow for variable-length paths.   We end up splitting the one query into two queries and
+            # optimizing each query, but that doesn't mean that we get the optimal solution.  Also, it means
+            # that we need to do some extra checking that the node types are the same at either end of the
+            # queries and handle synonyms between them.
+            # It might be an improvement to let cypher handle all of this (if possible?) in one large query
             all_possible_query_defs = []
-            for i in range(1,len(self.definition.transitions)):
+            for i in range(0, len(self.definition.transitions)):
                 all_possible_query_defs += self.definition.generate_paired_query(i)
-            #all_possible_query_defs = [self.definition.generate_paired_query(i) for i in
+            # all_possible_query_defs = [self.definition.generate_paired_query(i) for i in
             #                           range(1, len(self.definition.transitions))]
             all_possible_queries = [TwoSidedLinearUserQuery(OneSidedLinearUserQuerySet(l),
                                                             OneSidedLinearUserQuerySet(r))
@@ -246,7 +301,7 @@ class TwoSidedLinearUserQuerySet:
 
 class TwoSidedLinearUserQuery:
     """Constructs a query that is fixed at either end.
-    When this occurs, we are going to treat it as a pair of OneSidedLinearUserQueries that 
+    When this occurs, we are going to treat it as a pair of OneSidedLinearUserQueries that
     extend inward from the end points and meet in the middle"""
 
     def __init__(self, left_query, right_query):
@@ -338,7 +393,7 @@ class OneSidedLinearUserQuery:
 
     To execute queries, we need to define a path through this graph, but the user should not be tasked with this.
     Instead, the user generates a high-level description of the kind of path that they want to execute, and
-    it gets turned into a cypher query on the knowledge source graph.  
+    it gets turned into a cypher query on the knowledge source graph.
 
     This class represents the user-level query"""
 
@@ -356,7 +411,7 @@ class OneSidedLinearUserQuery:
         return [(self.start_value, node)]
 
     def get_terminal_types(self):
-        """Returns a two element array.  The first element is a set of starting terminal types. 
+        """Returns a two element array.  The first element is a set of starting terminal types.
         The second element is a set of ending terminal types"""
         return [set([self.node_types[0]]), set([self.node_types[-1]])]
 
@@ -369,7 +424,7 @@ class OneSidedLinearUserQuery:
         # programs = rosetta.type_graph.get_transitions(self.generate_cypher()[0])
         # return len(programs) > 0
         cypher = self.generate_concept_cypher()
-        print(cypher)
+        #print(cypher)
         paths = rosetta.type_graph.run_cypher_query(cypher)
         if len(paths) == 0:
             return False
@@ -377,7 +432,7 @@ class OneSidedLinearUserQuery:
         programs = []
         for concept_names in concept_name_lists:
             fullcypher = self.generate_type_cypher(concept_names)
-            print(fullcypher)
+            #print(fullcypher)
             programs += rosetta.type_graph.get_transitions(fullcypher)
         return len(programs) > 0
 
