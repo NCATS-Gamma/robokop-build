@@ -427,6 +427,8 @@ class OneSidedLinearUserQuery:
     def get_terminal_types(self):
         """Returns a two element array.  The first element is a set of starting terminal types.
         The second element is a set of ending terminal types"""
+        print ("GET TERMINAL TYPES")
+        print( ','.join( self.node_types ) )
         return [set([self.node_types[0]]), set([self.node_types[-1]])]
 
     @staticmethod
@@ -438,21 +440,30 @@ class OneSidedLinearUserQuery:
 
     def compile_query(self, rosetta):
         """Determine whether there is a path through the data that can satisfy this query"""
-        # programs = rosetta.type_graph.get_transitions(self.generate_cypher()[0])
-        # return len(programs) > 0
+        cyphers = self.create_cypher(rosetta)
+        if len(cyphers) == 0:
+            return False
+        programs = []
+        for cypher in cyphers:
+            programs += rosetta.type_graph.get_transitions(cypher)
+        return len(programs) > 0
+
+    def create_cypher(self,rosetta):
         cypher = self.generate_concept_cypher()
         #print(cypher)
         paths = rosetta.type_graph.run_cypher_query(cypher)
         if len(paths) == 0:
-            return False
+            return []
         concept_name_lists = [self.extract_concept_nodes(path) for path in paths.rows]
-        programs = []
+        self.cyphers = []
         for concept_names in concept_name_lists:
             self.final_concepts.add( concept_names[-1] )
             fullcypher = self.generate_type_cypher(concept_names)
-            #print(fullcypher)
-            programs += rosetta.type_graph.get_transitions(fullcypher)
-        return len(programs) > 0
+            self.cyphers.append(fullcypher)
+        return self.cyphers
+
+    def generate_cypher(self):
+        return self.cyphers
 
     def generate_type_cypher(self, concept_names):
         start_curie = Text.get_curie(self.start_value)
@@ -490,7 +501,7 @@ class OneSidedLinearUserQuery:
         cypherbuffer.append('\n')
         return ''.join(cypherbuffer)
 
-    def generate_cypher(self, end_value=None):
+    def old_generate_cypher(self, end_value=None):
         """generate a cypher query to generate paths through the data sources. Optionally, callers can
         pass a specified end_value for the type-graph traversal."""
         cypherbuffer = ['MATCH']

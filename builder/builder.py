@@ -172,6 +172,9 @@ class KnowledgeGraph:
         removed = True
         # make the set of types that we don't want to prune.  These are the end points (both text and id versions).
         ttypes = self.userquery.get_terminal_types()
+        if node_types.UNSPECIFIED in ttypes[1]:
+            #Any kind of end node will match, so stop
+            return
         keep_types = set()
         keep_types.update(ttypes[0])
         keep_types.update(ttypes[1])
@@ -444,6 +447,7 @@ A: Anatomical Feature
 T: Phenotype
 D: Disease
 X: Genetic Condition
+?: Unspecified Node
 
 It is also possible to specify indirect transitions by including 
 parenthetical values between these letters containing the number of 
