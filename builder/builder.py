@@ -191,7 +191,11 @@ class KnowledgeGraph:
                 neighbors = self.graph.successors(node) + self.graph.predecessors(node)
                 neighbor_types = set([neighbor.node_type for neighbor in neighbors])
                 if len(neighbor_types) < 2:
-                    to_remove.append(node)
+                    #TODO: this is a little hacky and only covers some of the cases.
+                    query_neighbor_types = self.userquery.get_neighbor_types(node.node_type)
+                    graph_neighbor_type = list(neighbor_types)[0]
+                    if (graph_neighbor_type, graph_neighbor_type) not in query_neighbor_types:
+                        to_remove.append(node)
             for node in to_remove:
                 removed = True
                 n_pruned += 1
@@ -208,7 +212,7 @@ class KnowledgeGraph:
         for node in nodes:
             if node.node_type in start_types:
                 start_nodes.append(node)
-            elif node.node_type in end_types:
+            if node.node_type in end_types:
                 end_nodes.append(node)
         return start_nodes, end_nodes
 
@@ -238,6 +242,8 @@ class KnowledgeGraph:
         self.logger.debug('Building Support')
         start_nodes, end_nodes = self.get_terminal_nodes()
         links_to_check = set()
+        self.logger.debug("Number of start nodes: {}".format(len(start_nodes)))
+        self.logger.debug("Number of end nodes: {}".format(len(end_nodes)))
         for start_node in start_nodes:
             for end_node in end_nodes:
                 try:

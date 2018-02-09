@@ -30,6 +30,11 @@ def test_simple_query(rosetta):
     reverse = qd.get_reversed()
     assert len(reverse) == 1
     assert not reverse[0]
+    ntypes = qd.get_neighbor_types(node_types.GENE)
+    assert len(ntypes) == 1
+    neighbors = list(ntypes)[0]
+    assert node_types.DISEASE in neighbors
+    assert node_types.GENETIC_CONDITION in neighbors
 
 def test_simple_query_with_unspecified(rosetta):
     disease_name = 'test_name'
@@ -51,6 +56,13 @@ def test_simple_query_with_unspecified(rosetta):
     reverse = qd.get_reversed()
     assert len(reverse) == 1
     assert not reverse[0]
+    #Currently, an unspecified node doesn't get "filled in" so it's hard to do this with.
+    ntypes = qd.get_neighbor_types(node_types.GENE)
+    assert len(ntypes) == 0
+    #assert len(ntypes) == 1
+    #neighbors = list(ntypes)[0]
+    #assert node_types.DISEASE in neighbors
+    #assert node_types.GENETIC_CONDITION in neighbors
 
 def test_simple_query_with_unspecified_at_end(rosetta):
     disease_name = 'test_name'
@@ -72,6 +84,12 @@ def test_simple_query_with_unspecified_at_end(rosetta):
     reverse = qd.get_reversed()
     #assert len(reverse) == 1
     assert not reverse[0]
+    ntypes = qd.get_neighbor_types(node_types.GENE)
+    assert len(ntypes) == 1
+    neighbors = list(ntypes)[0]
+    assert node_types.DISEASE in neighbors
+    #UNSPECIFIED DOESN"T GET FILLED IN - it stays unspecified.
+    #assert node_types.GENETIC_CONDITION in neighbors
 
 
 
@@ -186,6 +204,25 @@ def test_two_sided_query_compose(rosetta):
     twolqs.add_query(twolq, rosetta)
     # the two sided set checks out
     assert twolqs.compile_query(rosetta)
+    #Test left q
+    ntypes = twolqs.get_neighbor_types(node_types.GENE)
+    assert len(ntypes) == 1
+    neighbors = list(ntypes)[0]
+    assert node_types.DRUG in neighbors
+    assert node_types.PROCESS in neighbors
+    #test right q
+    ntypes = twolqs.get_neighbor_types(node_types.PHENOTYPE)
+    assert len(ntypes) == 1
+    neighbors = list(ntypes)[0]
+    assert node_types.DISEASE in neighbors
+    assert node_types.ANATOMY in neighbors
+    #Join spot
+    ntypes = twolqs.get_neighbor_types(node_types.ANATOMY)
+    assert len(ntypes) == 1
+    neighbors = list(ntypes)[0]
+    assert node_types.PHENOTYPE in neighbors
+    assert node_types.CELL in neighbors
+
 
 
 def test_generate_set(rosetta):

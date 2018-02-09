@@ -268,6 +268,8 @@ class UserQuery:
     def get_lookups(self):
         return self.query.get_lookups()
 
+    def get_neighbor_types(self, node_type):
+        return self.query.get_neighbor_types(node_type)
 
 class TwoSidedLinearUserQuerySet:
     """A composition of multiple two sided linear queries."""
@@ -297,6 +299,14 @@ class TwoSidedLinearUserQuerySet:
 
     def get_lookups(self):
         return sum([q.get_lookups() for q in self.queries], [])
+
+    def get_neighbor_types(self, node_type):
+        return_set = set()
+        for q in self.queries:
+            return_set.update( q.get_neighbor_types(node_type))
+        return return_set
+
+
 
 
 class TwoSidedLinearUserQuery:
@@ -339,6 +349,32 @@ class TwoSidedLinearUserQuery:
         concepts_2 = self.query2.get_final_concepts()
         return len( concepts_1.intersection(concepts_2)) > 0
 
+    def get_neighbor_types(self, node_type):
+        neighbor_types = set()
+        left = self.query1.get_neighbor_types(node_type)
+        right =self.query2.get_neighbor_types(node_type)
+        left_ends = set()
+        right_ends = set()
+        for pair in left:
+            if None in pair:
+                left_ends.add(pair)
+            else:
+                neighbor_types.add(pair)
+        for pair in right:
+            if None in pair:
+                right_ends.add(pair)
+            else:
+                neighbor_types.add(pair)
+        for le in left_ends:
+            for re in right_ends:
+                good_left = le[0]
+                if good_left is None:
+                    good_left = le[1]
+                good_right = re[0]
+                if good_right is None:
+                    good_right = re[1]
+                neighbor_types.add( (good_left, good_right) )
+        return neighbor_types
 
 
 class OneSidedLinearUserQuerySet:
@@ -396,6 +432,11 @@ class OneSidedLinearUserQuerySet:
             cyphers += q.generate_cypher()
         return cyphers
 
+    def get_neighbor_types(self, node_type):
+        ntypes = set()
+        for q in self.queries:
+            ntypes.update(q.get_neighbor_types(node_type))
+        return ntypes
 
 class OneSidedLinearUserQuery:
     """A class for constructing linear paths through a series of knowledge sources.
@@ -430,6 +471,19 @@ class OneSidedLinearUserQuery:
         print ("GET TERMINAL TYPES")
         print( ','.join( self.node_types ) )
         return [set([self.node_types[0]]), set([self.node_types[-1]])]
+
+    def get_neighbor_types(self, query_node_type):
+        neighbor_types = set()
+        for node_number, node_type in enumerate(self.node_types):
+            if node_number == 0:
+                continue
+            if node_type == query_node_type:
+                if node_number == len(self.node_types) - 1:
+                    pair =  (self.node_types[node_number-1], None)
+                else:
+                    pair =  (self.node_types[node_number-1], self.node_types[node_number+1])
+                neighbor_types.add(pair)
+        return neighbor_types
 
     @staticmethod
     def get_reversed():
@@ -471,7 +525,9 @@ class OneSidedLinearUserQuery:
         for count, c_name in enumerate(concept_names[1:-1]):
             c = count + 1
             buffer += f'(n{c}:Type:{c_name})-[:SYNONYM*0..2]-(n{c}a:Type:{c_name})-[]->\n'
-        buffer += f'(n{len(concept_names)-1}:Type:{concept_names[-1]})\n'
+        c = len(concept_names) - 1
+        #We add an extra synonym step at the end to help stitch together different arms of the query.
+        buffer += f'(n{c}:Type:{concept_names[-1]})-[:SYNONYM*0..1]-(n{c}a:Type:{concept_names[-1]})\n'
         buffer += f'WHERE n0.name = "{start_curie}"\n'
         buffer += 'return p'
         return buffer

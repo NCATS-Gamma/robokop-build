@@ -26,9 +26,9 @@ class ChemotextSupport():
                 label = mesh_info['label']
                 cterm = self.ctext.get_chemotext_term( label )
                 if cterm is None:
-                    logging.getLogger('application').warn("Cannot find chemotext synonym for %s (%s)" % (label,mesh_info['curie']))
+                    logging.getLogger('application').warn("Cannot find chemotext synonym for %s (%s) %s" % (label,mesh_info['curie'],node.identifier))
                 else:
-                    logging.getLogger('application').debug('node: {}, chemotext: {}'.format(node.identifier, cterm) )
+                    logging.getLogger('application').debug('node: {}, label: {}, chemotext: {}'.format(node.identifier, label, cterm) )
                     mesh_info[ CHEMOTEXT_MESH_KEY ] = cterm
 
     def get_mesh_labels(self,node):
@@ -74,6 +74,19 @@ def test():
     support.add_chemotext_terms( [node] )
     import json
     print( json.dumps( node.mesh_identifiers[0] ,indent=4) )
+
+def test2():
+    from greent.rosetta import Rosetta
+    rosetta = Rosetta()
+    gt = rosetta.core
+    support = ChemotextSupport(gt)
+    from greent.graph_components import KNode
+    node_a = KNode('CTD:1,2-linoleoylphosphatidylcholine', node_type = node_types.DRUG, label='1,2-linoleoylphosphatidylcholine')
+    node_b = KNode('CTD:Hydrogen Peroxide', node_type = node_types.DRUG, label='Hydrogen Peroxide')
+    #node.mesh_identifiers.append( { 'curie': 'MeSH:D004485', 'label': 'Eczema' } )
+    #support.add_chemotext_terms( [node] )
+    #import json
+    #print( json.dumps( node.mesh_identifiers[0] ,indent=4) )
 
 if __name__ == '__main__':
     test()
