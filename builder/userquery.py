@@ -286,7 +286,12 @@ class TwoSidedLinearUserQuerySet:
         return len(self.queries) > 0
 
     def get_terminal_types(self):
-        return sum([q.get_terminal_types() for q in self.queries], [])
+        types = [set(), set()]
+        for q in self.queries:
+            terminal_types = q.get_terminal_types()
+            types[0].update(terminal_types[0])
+            types[1].update(terminal_types[1])
+        return types
 
     def generate_cypher(self):
         return sum([q.generate_cypher() for q in self.queries], [])

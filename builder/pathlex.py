@@ -7,7 +7,7 @@ tokens = (
     "EDGE"
 )
 
-t_NODE = (r"S|G|P|C|A|D|X|T|\?")
+t_NODE = (r"S|G|P|C|A|D|X|T|W|\?")
 
 def t_EDGE(t):
     r"\(\d+\-\d+\)"

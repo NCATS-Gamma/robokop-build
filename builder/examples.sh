@@ -15,7 +15,8 @@
 
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -q 2 --start "AZELASTINE" --end "Rhinitis, Allergic, Perennial" -l test_AZELASTINE
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGD" --start "Ozone" --end "Asthma" -l CQ2_Simplified
-PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGS" --start "Ozone"  -l CQ3_Ozone
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGWGD" --start "Ozone" --end "Asthma" -l CQ2_PW
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGS" --start "Ozone"  -l CQ3_Ozone
 
 #Same as the above query, but not using the -q 2 shortcut
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -p "SGPCATD" --start "PRAMIPEXOLE" --end "Restless Legs Syndrome" -l test2
