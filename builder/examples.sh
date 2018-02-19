@@ -18,6 +18,7 @@
 
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SG" --start "Ozone" -l Ozone_gene
 PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGD" --start "Ozone" --end "Asthma" -l Ozone_Gene_Asthma
+
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGWGD" --start "Ozone" --end "Asthma" -l CQ2_PW
 
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGD" --start "Particulate Matter" --end "Asthma" -l CQ2_Particulates_Simplified
