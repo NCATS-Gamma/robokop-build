@@ -510,16 +510,17 @@ class OneSidedLinearUserQuery:
     def create_cypher(self,rosetta):
         cypher = self.generate_concept_cypher()
         #print(cypher)
-        paths = rosetta.type_graph.run_cypher_query(cypher)
-        if len(paths) == 0:
-            return []
-        concept_name_lists = [self.extract_concept_nodes(path) for path in paths.rows]
-        self.cyphers = []
-        for concept_names in concept_name_lists:
-            self.final_concepts.add( concept_names[-1] )
-            fullcypher = self.generate_type_cypher(concept_names)
-            self.cyphers.append(fullcypher)
+        self.cyphers = rosetta.type_graph.run_cypher_query(cypher)
         return self.cyphers
+        #if len(paths) == 0:
+        #    return []
+        #concept_name_lists = [self.extract_concept_nodes(path) for path in paths.rows]
+        #self.cyphers = []
+        #for concept_names in concept_name_lists:
+        #    self.final_concepts.add( concept_names[-1] )
+        #    fullcypher = self.generate_type_cypher(concept_names)
+        #    self.cyphers.append(fullcypher)
+        #return self.cyphers
 
     def generate_cypher(self):
         return self.cyphers
