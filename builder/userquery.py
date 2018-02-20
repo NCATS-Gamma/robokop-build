@@ -499,21 +499,21 @@ class OneSidedLinearUserQuery:
 
     def compile_query(self, rosetta):
         """Determine whether there is a path through the data that can satisfy this query"""
-        cyphers = self.create_cypher(rosetta)
-        if len(cyphers) == 0:
+        self.cyphers = [self.generate_concept_cypher()]
+        if len(self.cyphers) == 0:
             return False
         programs = []
-        for cypher in cyphers:
+        for cypher in self.cyphers:
+            print(cypher)
             programs += rosetta.type_graph.get_transitions(cypher)
         return len(programs) > 0
 
-    def create_cypher(self,rosetta):
-        cypher = self.generate_concept_cypher()
-        #print(cypher)
-        self.cyphers = rosetta.type_graph.run_cypher_query(cypher)
-        return self.cyphers
-        #if len(paths) == 0:
-        #    return []
+#    def create_cypher(self,rosetta):
+#        self.cyphers = [self.generate_concept_cypher()]
+#        paths = rosetta.type_graph.run_cypher_query(cypher)
+#        if len(paths) == 0:
+#            return []
+#        return [cypher]
         #concept_name_lists = [self.extract_concept_nodes(path) for path in paths.rows]
         #self.cyphers = []
         #for concept_names in concept_name_lists:
