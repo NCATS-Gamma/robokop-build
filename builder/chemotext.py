@@ -1,43 +1,43 @@
 import json
 import logging
 from greent.graph_components import KEdge
+from greent.util import Text
 from greent import node_types
 import mesh
+from collections import defaultdict
 
 def get_supporter(greent):
     return ChemotextSupport(greent)
 
-CHEMOTEXT_MESH_KEY = 'chemotext_mesh_label'
+#CHEMOTEXT_MESH_KEY = 'chemotext_mesh_label'
 
 class ChemotextSupport():
 
     def __init__(self,greent):
         self.greent = greent
         self.ctext = greent.chemotext
+        self.identifier_to_label = defaultdict(list)
 
     def prepare(self,nodes):
-        mesh.add_mesh( nodes, self.greent )
+        #With synonymization, mesh should already be added wherever it can be.
+#        mesh.add_mesh( nodes, self.greent )
         self.add_chemotext_terms( nodes )
 
     def add_chemotext_terms(self,nodes):
         """For each mesh term in a node, find out what chemotext calls that thing so we can query for it"""
         for node in nodes:
-            for mesh_info in node.mesh_identifiers:
-                label = mesh_info['label']
-                cterm = self.ctext.get_chemotext_term( label )
+            mesh_identifiers = list( filter( lambda x: Text.get_curie(x)=='MESH', node.synonyms))
+            for mesh_id in mesh_identifiers:
+                bare_id = Text.un_curie(mesh_id)
+                cterm = self.ctext.get_chemotext_term_from_meshid( bare_id )
                 if cterm is None:
-                    logging.getLogger('application').warn("Cannot find chemotext synonym for %s (%s) %s" % (label,mesh_info['curie'],node.identifier))
+                    logging.getLogger('application').warn("Cannot find chemotext synonym for %s (%s) %s" % (bare_id,mesh_id,node.identifier))
                 else:
-                    logging.getLogger('application').debug('node: {}, label: {}, chemotext: {}'.format(node.identifier, label, cterm) )
-                    mesh_info[ CHEMOTEXT_MESH_KEY ] = cterm
+                    logging.getLogger('application').debug('node: {}, label: {}, chemotext: {}'.format(node.identifier, bare_id, cterm) )
+                    self.identifier_to_label[node.identifier].append(cterm)
 
     def get_mesh_labels(self,node):
-        labels = set()
-        mids = node.mesh_identifiers
-        for mid in mids:
-            if CHEMOTEXT_MESH_KEY in mid:
-                labels.add(mid[CHEMOTEXT_MESH_KEY])
-        return labels
+        return self.identifier_to_label[ node.identifier ]
 
     def term_to_term(self,node_a,node_b,limit = 10000):
         """Given two terms, find articles in chemotext that connect them, and return as a KEdge.
