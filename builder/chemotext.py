@@ -25,15 +25,18 @@ class ChemotextSupport():
 
     def add_chemotext_terms(self,nodes):
         """For each mesh term in a node, find out what chemotext calls that thing so we can query for it"""
+        logging.getLogger('application').debug('{} nodes'.format(len(nodes) ))
         for node in nodes:
+            logging.getLogger('application').debug('node: {}'.format(node.identifier) )
             mesh_identifiers = list( filter( lambda x: Text.get_curie(x)=='MESH', node.synonyms))
             for mesh_id in mesh_identifiers:
+                logging.getLogger('application').debug('  mesh_id: {}'.format(mesh_id) )
                 bare_id = Text.un_curie(mesh_id)
                 cterm = self.ctext.get_chemotext_term_from_meshid( bare_id )
                 if cterm is None:
-                    logging.getLogger('application').warn("Cannot find chemotext synonym for %s (%s) %s" % (bare_id,mesh_id,node.identifier))
+                    logging.getLogger('application').warn("  Cannot find chemotext synonym for %s (%s) %s" % (bare_id,mesh_id,node.identifier))
                 else:
-                    logging.getLogger('application').debug('node: {}, label: {}, chemotext: {}'.format(node.identifier, bare_id, cterm) )
+                    logging.getLogger('application').debug('  node: {}, label: {}, chemotext: {}'.format(node.identifier, bare_id, cterm) )
                     self.identifier_to_label[node.identifier].append(cterm)
 
     def get_mesh_labels(self,node):

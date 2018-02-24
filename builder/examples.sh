@@ -5,13 +5,13 @@
 #Start at Ebola, support with chemotext, chemotext2 and cdw
 #Label in neo4j will be "test1"
 #PYTHONPATH=../../robokop-interfaces python builder.py -s cdw -s chemotext2 -s chemotext -q 1 --start "Ebola Virus Disease" -l test1_new 
-PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 1 --start "Ebola Virus Disease" -l test1_syn 
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 1 --start "Ebola Virus Disease" -l test1_syn 
 
 #Type 2 query (Substance/Gene/Process/Cell/Anatomy/Phenotype/Disease)
 #Start at PRAMIPEXOLE, end at Restless Legs Syndrom
 #support with chemotext and chemotext2
 #Label in neo4j will be "test2"
-#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -q 2 --start "PRAMIPEXOLE" --end "Restless Legs Syndrome" -l test_PRAMIPEXOLE
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "ARTEMETHER" --end "Malaria" -l test_ARTEMETHER_syn
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -q 2 --start "KETOROLAC" --end "Pain" -l test_KETOLORAC
 
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -q 2 --start "AZELASTINE" --end "Rhinitis, Allergic, Perennial" -l test_AZELASTINE
