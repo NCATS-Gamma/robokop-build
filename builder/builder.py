@@ -44,12 +44,13 @@ class KnowledgeGraph:
         lookups  = self.userquery.get_lookups()
         for cypher, start, reverse, lookup in zip(cyphers, starts, reverses, lookups):
             input_name = Text.un_curie(lookup.identifier)
-            self.logger.debug(start)
-            self.logger.debug(input_name)
-            self.logger.debug('CYPHER')
-            self.logger.debug(cypher)
+        #    self.logger.debug(start)
+        #    self.logger.debug(input_name)
+        #    self.logger.debug('CYPHER')
+        #    self.logger.debug(cypher)
             identifier, ntype = start
             start_node = KNode(identifier, ntype, label=input_name)
+            self.rosetta.synonymizer.synonymize(start_node)
             kedge = KEdge('lookup', 'lookup')
             kedge.source_node = lookup
             kedge.target_node = start_node
@@ -71,6 +72,7 @@ class KnowledgeGraph:
     def merge(self, source, target):
         """Source and target are both members of the graph, and we've found that they are
         synonyms.  Remove target, and attach all of target's edges to source"""
+        self.logger.debug('Merging {} and {}'.format( source.identifier, target.identifier ) )
         source.add_synonym(target)
         nodes_from_target = self.graph.successors(target)
         for s in nodes_from_target:
@@ -101,6 +103,8 @@ class KnowledgeGraph:
                 self.node_map[k] = source
 
     def add_synonymous_edge(self, edge):
+        self.logger.error('There should be no add_synonymous_edge anymore')
+        raise Exception('Nonnononon')
         self.logger.debug(' Synonymous')
         source = self.find_node(edge.source_node)
         target = self.find_node(edge.target_node)
@@ -127,14 +131,32 @@ class KnowledgeGraph:
         edge.source_node = source_node
         edge.target_node = target_node
         # Now the nodes are translated to the canonical identifiers, make the edge
+        #TODO: YUCK FIX
         if reverse_edges:
             edge.properties['reversed'] = True
-            self.graph.add_edge(target_node, source_node, object=edge)
-            self.logger.debug('Edge: {}'.format(self.graph.get_edge_data(target_node, source_node)))
+            #We might already have this edge due to multiple "programs" running
+            #Because it is a multigraph, graph[node][node] returns a map where the values are the edges
+            try:
+                potential_edges = [ x['object'] for x in self.graph[target_node][source_node].values()]
+            except KeyError:
+                potential_edges = set()
+            if edge not in potential_edges:
+                self.graph.add_edge(target_node, source_node, object=edge)
+                self.logger.debug('Edge: {}'.format(self.graph.get_edge_data(target_node, source_node)))
+            else:
+                self.logger.debug('Not adding repeating edge')
         else:
             edge.properties['reversed'] = False
-            self.graph.add_edge(source_node, target_node, object=edge)
-            self.logger.debug('Edge: {}'.format(self.graph.get_edge_data(source_node, target_node)))
+            try:
+                potential_edges = [ x['object'] for x in self.graph[source_node][target_node].values() ]
+                self.logger.debug("HMMM",potential_edges)
+            except KeyError:
+                potential_edges = set()
+            if edge not in potential_edges:
+                self.graph.add_edge(source_node, target_node, object=edge)
+                self.logger.debug('Edge: {}'.format(self.graph.get_edge_data(source_node, target_node)))
+            else:
+                self.logger.debug('Not adding repeating edge')
 
     def add_edges(self, edge_list, reverse_edges):
         """Add a list of edges (and the associated nodes) to the graph."""
@@ -149,17 +171,26 @@ class KnowledgeGraph:
         """If node exists in graph, return it, otherwise, return None"""
         if node.identifier in self.node_map:
             return self.node_map[node.identifier]
+        for syn in node.synonyms:
+            if syn in self.node_map:
+                return self.node_map[syn]
         return None
 
     def add_or_find_node(self, node):
+        self.logger.debug("Add or find {}.  Synonyms: {}".format(node.identifier, ','.join(list(node.synonyms))))
         """Find a node that already exists in the graph, checking for synonyms.
         If not found, create it & add to graph"""
         fnode = self.find_node(node)
         if fnode is not None:
+            self.logger.debug (' found it')
+            fnode.add_synonyms(node.synonyms)
             return fnode
         else:
+            self.logger.debug (' didnt find it. Adding.')
             self.graph.add_node(node)
             self.node_map[node.identifier] = node
+            for s in node.synonyms:
+                self.node_map[s] = node
             return node
 
     def prune(self):
@@ -328,6 +359,8 @@ class KnowledgeGraph:
 
 # TODO: push to node, ...
 def prepare_node_for_output(node, gt):
+    logging.getLogger('application').debug('Prepare: {}'.format(node.identifier))
+    logging.getLogger('application').debug('  Synonyms: {}'.format(' '.join(list(node.synonyms))))
     node.synonyms.update([mi['curie'] for mi in node.mesh_identifiers if mi['curie'] != ''])
     if node.node_type == node_types.DISEASE or node.node_type == node_types.GENETIC_CONDITION:
         if 'mondo_identifiers' in node.properties:
@@ -430,6 +463,7 @@ def run(pathway, start_name, end_name, label, supports):
     else:
         end_node = None
         end_identifiers = None
+    print ("Start identifiers: "+'..'.join(start_identifiers))
     query = generate_query(steps, start_node, start_identifiers, end_node, end_identifiers)
     run_query(query, supports, label, rosetta, prune=True)
 
