@@ -348,12 +348,11 @@ class TwoSidedLinearUserQuery:
         """Determine whether there is a path through the data that can satisfy this query"""
         individuals_ok = self.query1.compile_query(rosetta) and self.query2.compile_query(rosetta)
         if not individuals_ok:
-            print("Bad individual")
+            #print("Bad individual")
             return False
         #Each side is traversable, but do they share a common endpoint?
         concepts_1 = self.query1.get_final_concepts()
         concepts_2 = self.query2.get_final_concepts()
-        print("HEHEY",concepts_1,concepts_2)
         return len( concepts_1.intersection(concepts_2)) > 0
 
     def get_neighbor_types(self, node_type):
@@ -475,8 +474,6 @@ class OneSidedLinearUserQuery:
     def get_terminal_types(self):
         """Returns a two element array.  The first element is a set of starting terminal types.
         The second element is a set of ending terminal types"""
-        print ("GET TERMINAL TYPES")
-        print( ','.join( self.node_types ) )
         return [set([self.node_types[0]]), set([self.node_types[-1]])]
 
     def get_neighbor_types(self, query_node_type):
@@ -506,10 +503,9 @@ class OneSidedLinearUserQuery:
             return False
         programs = []
         for cypher in self.cyphers:
-            print(cypher)
             programs += rosetta.type_graph.get_transitions(cypher)
-            if len(programs) > 0:
-                print( programs[0])
+            #if len(programs) > 0:
+            #    print( programs[0])
             for program in programs:
                 self.final_concepts.add( program[-1]['next_type'] )
         return len(programs) > 0
