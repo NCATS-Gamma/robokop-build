@@ -348,6 +348,7 @@ class TwoSidedLinearUserQuery:
         """Determine whether there is a path through the data that can satisfy this query"""
         individuals_ok = self.query1.compile_query(rosetta) and self.query2.compile_query(rosetta)
         if not individuals_ok:
+            #print("Bad individual")
             return False
         #Each side is traversable, but do they share a common endpoint?
         concepts_1 = self.query1.get_final_concepts()
@@ -473,8 +474,6 @@ class OneSidedLinearUserQuery:
     def get_terminal_types(self):
         """Returns a two element array.  The first element is a set of starting terminal types.
         The second element is a set of ending terminal types"""
-        print ("GET TERMINAL TYPES")
-        print( ','.join( self.node_types ) )
         return [set([self.node_types[0]]), set([self.node_types[-1]])]
 
     def get_neighbor_types(self, query_node_type):
@@ -499,27 +498,31 @@ class OneSidedLinearUserQuery:
 
     def compile_query(self, rosetta):
         """Determine whether there is a path through the data that can satisfy this query"""
-        cyphers = self.create_cypher(rosetta)
-        if len(cyphers) == 0:
+        self.cyphers = [self.generate_concept_cypher()]
+        if len(self.cyphers) == 0:
             return False
         programs = []
-        for cypher in cyphers:
+        for cypher in self.cyphers:
             programs += rosetta.type_graph.get_transitions(cypher)
+            #if len(programs) > 0:
+            #    print( programs[0])
+            for program in programs:
+                self.final_concepts.add( program[-1]['next_type'] )
         return len(programs) > 0
 
-    def create_cypher(self,rosetta):
-        cypher = self.generate_concept_cypher()
-        #print(cypher)
-        paths = rosetta.type_graph.run_cypher_query(cypher)
-        if len(paths) == 0:
-            return []
-        concept_name_lists = [self.extract_concept_nodes(path) for path in paths.rows]
-        self.cyphers = []
-        for concept_names in concept_name_lists:
-            self.final_concepts.add( concept_names[-1] )
-            fullcypher = self.generate_type_cypher(concept_names)
-            self.cyphers.append(fullcypher)
-        return self.cyphers
+#    def create_cypher(self,rosetta):
+#        self.cyphers = [self.generate_concept_cypher()]
+#        paths = rosetta.type_graph.run_cypher_query(cypher)
+#        if len(paths) == 0:
+#            return []
+#        return [cypher]
+        #concept_name_lists = [self.extract_concept_nodes(path) for path in paths.rows]
+        #self.cyphers = []
+        #for concept_names in concept_name_lists:
+        #    self.final_concepts.add( concept_names[-1] )
+        #    fullcypher = self.generate_type_cypher(concept_names)
+        #    self.cyphers.append(fullcypher)
+        #return self.cyphers
 
     def generate_cypher(self):
         return self.cyphers

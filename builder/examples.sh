@@ -4,19 +4,38 @@
 #Type 1 query (Disease/Gene/GeneticCondition)
 #Start at Ebola, support with chemotext, chemotext2 and cdw
 #Label in neo4j will be "test1"
-#PYTHONPATH=../../robokop-interfaces python builder.py -s cdw -s chemotext2 -s chemotext -q 1 --start "Ebola Virus Disease" -l test1 
+#PYTHONPATH=../../robokop-interfaces python builder.py -s cdw -s chemotext2 -s chemotext -q 1 --start "Ebola Virus Disease" -l test1_new 
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 1 --start "Ebola Virus Disease" -l test1_syn 
 
 #Type 2 query (Substance/Gene/Process/Cell/Anatomy/Phenotype/Disease)
 #Start at PRAMIPEXOLE, end at Restless Legs Syndrom
 #support with chemotext and chemotext2
 #Label in neo4j will be "test2"
-#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -q 2 --start "PRAMIPEXOLE" --end "Restless Legs Syndrome" -l test_PRAMIPEXOLE
-#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -q 2 --start "KETOROLAC" --end "Pain" -l test_KETOLORAC
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "ARTEMETHER" --end "Malaria" -l test_ARTEMETHER_syn
 
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SG" --start "CELECOXIB" -l test_substance_syn
+
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "MECLIZINE" --end "Motion Sickness" -l test_MECLIZINE
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "KETOCONAZOLE" --end "Candidiasis, Cutaneous" -l test_KETOCONAZOLE
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "TACRINE" --end "Alzheimer Disease" -l test_TACRINE
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "KETOROLAC" --end "Pain" -l test_KETOROLAC
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "AZELASTINE" --end "Rhinitis, Allergic, Perennial" -l test_AZELASTINE
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "SORAFENIB" --end "Carcinoma, Renal Cell" -l test_SORAFENIB
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "CELECOXIB" --end "Arthritis, Rheumatoid" -l test_CELECOXIB
+
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -q 2 --start "KETOROLAC" --end "Pain" -l test_KETOLORAC
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -q 2 --start "AZELASTINE" --end "Rhinitis, Allergic, Perennial" -l test_AZELASTINE
-#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGD" --start "Ozone" --end "Asthma" -l CQ2_Simplified
-PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGWGD" --start "Ozone" --end "Asthma" -l CQ2_PW
+
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SG" --start "Ozone" -l Ozone_gene
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGD" --start "Ozone" --end "Asthma" -l Ozone_Gene_Asthma
+
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGWGD" --start "Ozone" --end "Asthma" -l CQ2_PW
+
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGD" --start "Particulate Matter" --end "Asthma" -l CQ2_Particulates_Simplified
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGWGD" --start "Particulate Matter" --end "Asthma" -l CQ2_Particulates_PW
+
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGS" --start "Ozone"  -l CQ3_Ozone
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SGS" --start "Particulate Matter"  -l CQ3_ParticulateMatter
 
 #Same as the above query, but not using the -q 2 shortcut
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext2 -s chemotext -p "SGPCATD" --start "PRAMIPEXOLE" --end "Restless Legs Syndrome" -l test2
