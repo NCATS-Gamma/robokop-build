@@ -149,7 +149,6 @@ class KnowledgeGraph:
             edge.properties['reversed'] = False
             try:
                 potential_edges = [ x['object'] for x in self.graph[source_node][target_node].values() ]
-                self.logger.debug("HMMM",potential_edges)
             except KeyError:
                 potential_edges = set()
             if edge not in potential_edges:
