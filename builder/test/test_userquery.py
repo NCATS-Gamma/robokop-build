@@ -1,7 +1,7 @@
 import pytest
 from greent.graph_components import KNode
 from greent import node_types
-from builder.userquery import UserQuery, TwoSidedLinearUserQuery, TwoSidedLinearUserQuerySet, OneSidedLinearUserQuerySet
+from builder.userquery import UserQuery
 
 
 @pytest.fixture(scope='module')
@@ -18,6 +18,7 @@ def test_simple_query(rosetta):
     qd = UserQuery(disease_identifiers, node_types.DISEASE, name_node)
     qd.add_transition(node_types.GENE)
     qd.add_transition(node_types.GENETIC_CONDITION)
+    print( qd.generate_cypher() )
     assert qd.compile_query(rosetta)
     cyphers = qd.generate_cypher()
     assert len(cyphers) == 1
@@ -27,9 +28,6 @@ def test_simple_query(rosetta):
     lookups = qd.get_lookups()
     assert len(lookups) == 1
     assert lookups[0].identifier == '{}:{}'.format(node_types.DISEASE_NAME, disease_name)
-    reverse = qd.get_reversed()
-    assert len(reverse) == 1
-    assert not reverse[0]
     ntypes = qd.get_neighbor_types(node_types.GENE)
     assert len(ntypes) == 1
     neighbors = list(ntypes)[0]
@@ -175,53 +173,6 @@ def test_query_set_different_one_valid_ids(rosetta):
     assert not reverse[0]
 
 
-def test_two_sided_query_compose(rosetta):
-    """Create a 2sided query, composing it by hand.Mimics what should happen
-    automatically in a 2 sided user query"""
-    drug_name = 'test_drug'
-    drug_name_node = KNode('{}.{}'.format(node_types.DRUG_NAME, drug_name), node_types.DRUG_NAME)
-    drug_identifiers = ['CTD:123']
-    disease_name = 'test_disease'
-    disease_name_node = KNode('{}.{}'.format(node_types.DISEASE_NAME, disease_name), node_types.DISEASE_NAME)
-    disease_identifiers = ['DOID:123']
-    # This will create a OneSidedQuerySet
-    queryl = UserQuery(drug_identifiers, node_types.DRUG, drug_name_node)
-    queryl.add_transition(node_types.GENE)
-    queryl.add_transition(node_types.PROCESS)
-    queryl.add_transition(node_types.CELL)
-    queryl.add_transition(node_types.ANATOMY)
-    # this is another
-    queryr = UserQuery(disease_identifiers, node_types.DISEASE, disease_name_node)
-    queryr.add_transition(node_types.PHENOTYPE)
-    queryr.add_transition(node_types.ANATOMY)
-    # The individual queries check out
-    assert queryl.compile_query(rosetta)
-    assert queryr.compile_query(rosetta)
-    # The two sided checks out
-    twolq = TwoSidedLinearUserQuery(queryl.query, queryr.query)
-    assert twolq.compile_query(rosetta)
-    twolqs = TwoSidedLinearUserQuerySet()
-    twolqs.add_query(twolq, rosetta)
-    # the two sided set checks out
-    assert twolqs.compile_query(rosetta)
-    #Test left q
-    ntypes = twolqs.get_neighbor_types(node_types.GENE)
-    assert len(ntypes) == 1
-    neighbors = list(ntypes)[0]
-    assert node_types.DRUG in neighbors
-    assert node_types.PROCESS in neighbors
-    #test right q
-    ntypes = twolqs.get_neighbor_types(node_types.PHENOTYPE)
-    assert len(ntypes) == 1
-    neighbors = list(ntypes)[0]
-    assert node_types.DISEASE in neighbors
-    assert node_types.ANATOMY in neighbors
-    #Join spot
-    ntypes = twolqs.get_neighbor_types(node_types.ANATOMY)
-    assert len(ntypes) == 1
-    neighbors = list(ntypes)[0]
-    assert node_types.PHENOTYPE in neighbors
-    assert node_types.CELL in neighbors
 
 
 
@@ -244,14 +195,6 @@ def test_generate_set(rosetta):
     l, r = d.generate_paired_query(4)[0]
     assert len(l.transitions) == 4
     assert len(r.transitions) == 2
-    lq = OneSidedLinearUserQuerySet(l)
-    rq = OneSidedLinearUserQuerySet(r)
-    # print(lq.generate_cypher()[0])
-    # print()
-    # print(rq.generate_cypher()[0])
-    #print(rq.generate_cypher()[0])
-    assert lq.compile_query(rosetta)
-    assert rq.compile_query(rosetta)
 
 
 def test_query_two_sided_queryset(rosetta):

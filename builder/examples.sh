@@ -13,7 +13,6 @@
 #Label in neo4j will be "test2"
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "ARTEMETHER" --end "Malaria" -l test_ARTEMETHER_syn
 
-#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p "SG" --start "CELECOXIB" -l test_substance_syn
 
 PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "MECLIZINE" --end "Motion Sickness" -l test_MECLIZINE
 PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "KETOCONAZOLE" --end "Candidiasis, Cutaneous" -l test_KETOCONAZOLE
