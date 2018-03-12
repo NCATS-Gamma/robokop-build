@@ -1,6 +1,6 @@
+from program import Program
 from greent.node_types import node_types, DRUG_NAME, DISEASE_NAME, UNSPECIFIED
 from greent.util import Text
-
 
 class Transition:
     def __init__(self, last_type, next_type, min_path_length, max_path_length):
@@ -24,39 +24,17 @@ class Transition:
             return 'n{0}:{1}'
 
     def generate_concept_cypher_pathstring(self, t_number):
-        start = f'(n{t_number}:Concept)'
-        end = f'(n{t_number+1}:Concept)'
+        end   = f'(c{t_number+1}:Concept {{name: "{self.out_type}" }})'
+        pstring = ''
+        if t_number == 0:
+            start = f'(c{t_number}:Concept {{name: "{self.in_type}" }})\n'
+            pstring += start
         if self.max_path_length > 1:
-            pstring = f'p{t_number}=allShortestPaths({start}-[:translation*{self.min_path_length}..{self.max_path_length}]->{end})'
+            pstring += f'-[:translation*{self.min_path_length}..{self.max_path_length}]-\n'
         else:
-            pstring = f'p{t_number}={start}-[:translation]->{end}'
+            pstring += '--\n'
+        pstring += f'{end}\n'
         return pstring
-
-    def generate_cypher_pathstring(self, t_number):
-        fstring = self.get_fstring(self.in_type)
-        self.in_node = fstring.format(t_number, self.in_type)
-        fstring = self.get_fstring(self.out_type)
-        self.out_node = fstring.format(t_number + 1, self.out_type)
-        pstring = 'p{0}=({1})-[*{2}..{3}]->({4})'
-        # TODO: how to set max path here.  It's our max_path, plus some slop for synonyms.
-        # Assuming 1 synonym per translation (and some slop?)?
-        return pstring.format(t_number, self.in_node, self.min_path_length, 2 * self.max_path_length + 2, self.out_node)
-
-    def generate_cypher_withstring(self, t_number, pathstring):
-        withline = 'WITH {}'.format(pathstring)
-        for i in range(t_number):
-            withline += ', d{0}, Syn{0}'.format(i)
-        withline += ',\n'
-        withline += '''reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN weight ELSE weight + 1 END ) as d{0},
-reduce(weight=0, r in relationships(p{0}) | CASE type(r) WHEN "SYNONYM" THEN weight + 1 ELSE weight END ) as Syn{0}'''.format(
-            t_number)
-        if self.min_path_length == self.max_path_length:
-            withline += '\nWHERE d{0} = {1}'.format(t_number, self.min_path_length)
-        else:
-            withline += '\nWHERE d{0} >= {1} AND d{0} <= {2}'.format(t_number, self.min_path_length,
-                                                                     self.max_path_length)
-        return withline
-
 
 class QueryDefinition:
     """Defines a query"""
@@ -69,90 +47,6 @@ class QueryDefinition:
         self.transitions = []
         self.start_lookup_node = None
         self.end_lookup_node = None
-
-    def generate_left_query_def(self, i):
-        """Generate a query definition starting at the left and moving in i steps
-           input: 0 <= i < len(transitions) """
-        if i < 0 or i > len(self.transitions):
-            raise ValueError("Invalid break point: {}".format(i))
-        left_def = QueryDefinition()
-        left_def.start_values = self.start_values
-        left_def.start_type = self.start_type
-        left_def.node_types = self.node_types[:i + 1]
-        left_def.transitions = self.transitions[:i]
-        left_def.start_lookup_node = self.start_lookup_node
-        return left_def
-
-    def generate_right_query_def(self, i):
-        """Generate a query definition starting at the right and going to a node i 
-           steps from the left end. 
-           input: 0 < i < len(transitions) 
-           output: A query definition complementary to generate_left_query_def(i)
-           """
-        if i < 0 or i > len(self.transitions):
-            raise ValueError("Invalid break point: {}".format(i))
-        right_def = QueryDefinition()
-        right_def.start_values = self.end_values
-        right_def.start_type = self.node_types[-1]
-        right_def.node_types = self.node_types[i:]
-        right_def.transitions = self.transitions[i:]
-        right_def.start_lookup_node = self.end_lookup_node
-        right_def.node_types.reverse()
-        right_def.transitions.reverse()
-        right_def.transitions = [t.generate_reverse() for t in right_def.transitions]
-        return right_def
-
-    def generate_paired_query(self, i):
-        """From a Two Sided Query Definition, create two One Sided Query Definitions.
-        The split is performed at the i-th node, which must occur in both sides."""
-        return self.generate_paired_query_sharing_node(i) + self.generate_paired_query_splitting_transition(i)
-
-    def generate_paired_query_splitting_transition(self, i):
-        """Split along a transitions if in contains untyped nodes"""
-        transition = self.transitions[i]
-        if transition.max_path_length == 1:
-            # Not splittable
-            return []
-        # It is splittable, but there are multiple ways to split.
-        splits = []
-        # First, what's the fewest number of nodes along this transition.  We don't care about 0 (no transition nodes,
-        # so splits handled by shared nodes splits).  That is, 0 might be true, but then we don't need to do anything.
-        # So set the lowest bid at 1.
-        minimum_nodes = max(1, transition.min_path_length - 1)
-        # Let's say that we are going to allow from 1 to 3 extra nodes.  We must have 1 node in common.
-        # Then, if l is the number of (extra) nodes on the left path, and r is the number on the right,
-        # we could have the following for (l,r):
-        # Common node only: (0,0)           nodes_to_spread = 0
-        # Common + 1: (1,0), (0,1)          nodes_to_spread = 1
-        # Common + 2: (2,0), (1,1), (0,2)   nodes_to_spread = 2
-        for nodes_to_spread in range(minimum_nodes - 1, transition.max_path_length - 1):
-            for num_on_left in range(0, nodes_to_spread + 1):
-                num_on_right = nodes_to_spread - num_on_left
-                splits.append(self.split_at_transition(i, num_on_left, num_on_right))
-        return splits
-
-    def split_at_transition(self, transition_i, num_on_left, num_on_right):
-        """Given a transition number and the exact number of nodes to include on each side, return a
-        pair of one-sided query definitions"""
-        # Generate_left_query and generate_right_query take a parameter (i) which is the index of the shared
-        # nodes between the query.  Here we want to create queries that don't share a node.  That means that
-        # the left query will have nodes 0 to i, and the right query will have i+1 to N.
-        # We do want them to share a node, so we will add an untyped node and an extra transition.
-        leftq = self.generate_left_query_def(transition_i)
-        rightq = self.generate_right_query_def(transition_i + 1)
-        leftq.transitions.append(Transition(leftq.node_types[-1], UNSPECIFIED, num_on_left - 1, num_on_left - 1))
-        rightq.transitions.append(Transition(leftq.node_types[-1], UNSPECIFIED, num_on_right - 1, num_on_right - 1))
-        leftq.node_types.append(UNSPECIFIED)
-        rightq.node_types.append(UNSPECIFIED)
-        return (leftq, rightq)
-
-    def generate_paired_query_sharing_node(self, i):
-        """From a Two Sided Query Definition, create two One Sided Query Definitions.
-        The split is performed at the i-th node, which must occur in both sides."""
-        if i == 0:
-            return []
-        return [(self.generate_left_query_def(i), self.generate_right_query_def(i))]
-
 
 class UserQuery:
     """This is the class that the rest of builder uses to interact with a query."""
@@ -223,226 +117,45 @@ class UserQuery:
     def add_end_lookup_node(self, lookup_node):
         self.definition.end_lookup_node = lookup_node
 
-    def compile_query(self, rosetta):
-        """Based on the type of inputs that we have, create the appropriate form of query,
-        and check that it can be satisfied by the typegraph"""
+    def generate_cypher(self):
+        """Generate a cypher query to find paths through the concept-level map."""
+        cypherbuffer = ['MATCH p=\n']
+        paths_parts = []
+        for t_number, transition in enumerate(self.definition.transitions):
+            paths_parts.append(transition.generate_concept_cypher_pathstring(t_number))
+        cypherbuffer.append( ''.join(paths_parts) )
+        last_node_i = len(self.definition.transitions)
+        cypherbuffer.append(f'WITH p,c0,c{last_node_i}\n')
         if self.definition.end_values is None:
-            # this is a one sided graph
-            self.query = OneSidedLinearUserQuerySet(self.definition)
+            cypherbuffer.append(f'MATCH q=(c0:Concept)-[:translation*0..{last_node_i}]->(c{last_node_i}:Concept)\n')
         else:
-            # this is a two sided graph, we need to check every possible split point.
-            # Temporarily, this does not include a single end-to-end path, but is always a pair of
-            # one sided queries
-            # TODO: REvisit
-            # This approach of building two single sided queries works, but is somewhat flawed when we
-            # allow for variable-length paths.   We end up splitting the one query into two queries and
-            # optimizing each query, but that doesn't mean that we get the optimal solution.  Also, it means
-            # that we need to do some extra checking that the node types are the same at either end of the
-            # queries and handle synonyms between them.
-            # It might be an improvement to let cypher handle all of this (if possible?) in one large query
-            all_possible_query_defs = []
-            for i in range(0, len(self.definition.transitions)):
-                all_possible_query_defs += self.definition.generate_paired_query(i)
-            # all_possible_query_defs = [self.definition.generate_paired_query(i) for i in
-            #                           range(1, len(self.definition.transitions))]
-            all_possible_queries = [TwoSidedLinearUserQuery(OneSidedLinearUserQuerySet(l),
-                                                            OneSidedLinearUserQuerySet(r))
-                                    for l, r in all_possible_query_defs]
-            self.query = TwoSidedLinearUserQuerySet()
-            for query in all_possible_queries:
-                self.query.add_query(query, rosetta)
-        return self.query.compile_query(rosetta)
+            cypherbuffer.append(f'MATCH q=(c0:Concept)-[:translation*0..{last_node_i}]->()<-[:translation*0..{last_node_i}]-(c{last_node_i}:Concept)\n')
+        cypherbuffer.append('WHERE p=q\n')
+        cypherbuffer.append('RETURN p, EXTRACT( r in relationships(p) | startNode(r) ) \n')
+        return ''.join(cypherbuffer)
 
-    def get_terminal_types(self):
+    def compile_query(self, rosetta):
+        self.cypher = self.generate_cypher()
+        plans = rosetta.type_graph.get_transitions(self.cypher)
+        self.programs = [Program(plan, self.definition, rosetta, i) for i,plan in enumerate(plans)]
+        return len(self.programs) > 0
+
+    def get_programs(self):
+        return self.programs
+
+    def get_terminal_nodes(self):
+        starts = set()
+        ends = set()
         return self.query.get_terminal_types()
-
-    def generate_cypher(self):
-        return self.query.generate_cypher()
-
-    def get_start_node(self):
-        return self.query.get_start_node()
-
-    def get_reversed(self):
-        return self.query.get_reversed()
-
-    def get_lookups(self):
-        return self.query.get_lookups()
-
-    def get_neighbor_types(self, node_type):
-        return self.query.get_neighbor_types(node_type)
-
-class TwoSidedLinearUserQuerySet:
-    """A composition of multiple two sided linear queries."""
-
-    def __init__(self):
-        self.queries = []
-
-    def add_query(self, query, rosetta):
-        if query.compile_query(rosetta):
-            self.queries.append(query)
-
-    def compile_query(self, rosetta):
-        # by construction, we only accept queries that compile so don't re-check
-        return len(self.queries) > 0
-
-    def get_terminal_types(self):
-        types = [set(), set()]
-        for q in self.queries:
-            terminal_types = q.get_terminal_types()
-            types[0].update(terminal_types[0])
-            types[1].update(terminal_types[1])
-        return types
-
-    def generate_cypher(self):
-        return sum([q.generate_cypher() for q in self.queries], [])
-
-    def get_start_node(self):
-        return sum([q.get_start_node() for q in self.queries], [])
-
-    def get_reversed(self):
-        return sum([q.get_reversed() for q in self.queries], [])
-
-    def get_lookups(self):
-        return sum([q.get_lookups() for q in self.queries], [])
-
-    def get_neighbor_types(self, node_type):
-        return_set = set()
-        for q in self.queries:
-            return_set.update( q.get_neighbor_types(node_type))
-        return return_set
-
-
-
-
-class TwoSidedLinearUserQuery:
-    """Constructs a query that is fixed at either end.
-    When this occurs, we are going to treat it as a pair of OneSidedLinearUserQueries that
-    extend inward from the end points and meet in the middle"""
-
-    def __init__(self, left_query, right_query):
-        """To construct a two sided query, pass in two one-sided query"""
-        # TODO: we want creation of this object to be a bit more dynamic
-        # if left_query.node_types[-1] != right_query.node_types[-1]:
-        #    raise ValueError('The left and right queries must end with the same node type')
-        self.query1 = left_query
-        self.query2 = right_query
-
-    def get_terminal_types(self):
-        return [self.query1.get_terminal_types()[0], self.query2.get_terminal_types()[0]]
-
-    def generate_cypher(self):
-        return self.query1.generate_cypher() + self.query2.generate_cypher()
-
-    def get_start_node(self):
-        return self.query1.get_start_node() + self.query2.get_start_node()
-
-    def get_reversed(self):
-        rleft = self.query1.get_reversed()
-        rright = [True for r in self.query2.get_reversed()]
-        return rleft + rright
-
-    def get_lookups(self):
-        return self.query1.get_lookups() + self.query2.get_lookups()
-
-    def compile_query(self, rosetta):
-        """Determine whether there is a path through the data that can satisfy this query"""
-        individuals_ok = self.query1.compile_query(rosetta) and self.query2.compile_query(rosetta)
-        if not individuals_ok:
-            #print("Bad individual")
-            return False
-        #Each side is traversable, but do they share a common endpoint?
-        concepts_1 = self.query1.get_final_concepts()
-        concepts_2 = self.query2.get_final_concepts()
-        return len( concepts_1.intersection(concepts_2)) > 0
-
-    def get_neighbor_types(self, node_type):
-        neighbor_types = set()
-        left = self.query1.get_neighbor_types(node_type)
-        right =self.query2.get_neighbor_types(node_type)
-        left_ends = set()
-        right_ends = set()
-        for pair in left:
-            if None in pair:
-                left_ends.add(pair)
-            else:
-                neighbor_types.add(pair)
-        for pair in right:
-            if None in pair:
-                right_ends.add(pair)
-            else:
-                neighbor_types.add(pair)
-        for le in left_ends:
-            for re in right_ends:
-                good_left = le[0]
-                if good_left is None:
-                    good_left = le[1]
-                good_right = re[0]
-                if good_right is None:
-                    good_right = re[1]
-                neighbor_types.add( (good_left, good_right) )
-        return neighbor_types
-
-
-class OneSidedLinearUserQuerySet:
-    """A set of one-sided queries that will be run together.  Used to compose two sided queries"""
-
-    def __init__(self, query_definition):
-        self.lookup_node = query_definition.start_lookup_node
-        self.queries = []
-        for svalue in query_definition.start_values:
-            self.queries.append(OneSidedLinearUserQuery(svalue, query_definition))
-
-    def get_lookups(self):
-        # This is just a way to get the lookup node for every query to be the same
-        return [self.lookup_node for i in self.queries]
-
-    def get_start_node(self):
-        snodes = [q.get_start_node() for q in self.queries]
-        return sum(snodes, [])
-
-    def get_terminal_types(self):
-        ttypes = [set(), set()]
-        for q in self.queries:
-            qt = q.get_terminal_types()
-            for i in (0, 1):
-                ttypes[i].update(qt[i])
-        return ttypes
-
-    def get_final_concepts(self):
-        fc = set()
-        for q in self.queries:
-            fc.update(q.get_final_concepts())
-        return fc
-
-    def get_reversed(self):
-        return [False for q in self.queries]
-
-    def add_node(self, node_type):
-        for q in self.queries:
-            q.add_node(node_type)
-
-    def add_transition(self, next_type, min_path_length=1, max_path_length=1, end_value=None):
-        for q in self.queries:
-            q.add_transition(next_type, min_path_length, max_path_length, end_value)
-
-    def compile_query(self, rosetta):
-        """Determine whether there is a path through the data that can satisfy this query"""
-        # remove any queries that don't compile
-        self.queries = list(filter(lambda q: q.compile_query(rosetta), self.queries))
-        # is anything left?
-        return len(self.queries) > 0
-
-    def generate_cypher(self):
-        cyphers = []
-        for q in self.queries:
-            cyphers += q.generate_cypher()
-        return cyphers
-
-    def get_neighbor_types(self, node_type):
-        ntypes = set()
-        for q in self.queries:
-            ntypes.update(q.get_neighbor_types(node_type))
-        return ntypes
+#
+#    def get_start_node(self):
+#        return self.query.get_start_node()
+#
+#    def get_lookups(self):
+#        return self.query.get_lookups()
+#
+#    def get_neighbor_types(self, node_type):
+#        return self.query.get_neighbor_types(node_type)
 
 class OneSidedLinearUserQuery:
     """A class for constructing linear paths through a series of knowledge sources.
@@ -617,42 +330,32 @@ class OneSidedLinearUserQuery:
 #
 ###
 
-######
-# New style
-# First, we are removing "UNKNOWN" predicates, so we can drop that filtering
-# Second, we are adding "translation" transitions between concepts to help find paths at the concept level
-
-# So now, we can do this in two stages: Fill in unspecified nodes by querying the concept-level graph
-# Then, fill in the actual transitions and synonyms going through the types returned from the concept-query.
-
-# This is an example of how to build the path at the concept level. Here we are going from
-# a name to a substance.  Then through 1 to 3 translation edges to a phenotype.  In this case 1 would 
-# mean direct, 2 would mean a single intermediate node, and 3 would mean 2 intermediate nodes.
-# We are finding shortest paths (so we prefer direct, but would take more) and we are finding all shortest,
-# so if the shortest path is via one node, and there are two ways to do that then we get both.
-# Finally we go from substance directly to phenotype.
-# The return is a list of concept-paths that make explicit the hidden nodes in the shortest paths
-# and check that we can actually do the traversal at the concept level.
-new_q1 = '''
-match 
-p1=(nc:Concept)-[r3:translation]->(n:Concept),
-p=allShortestPaths((n:Concept)-[r:translation*1..3]->(m:Concept)),
-q=(m)-[r2:translation]->(:Concept) 
-where nc.name = "Name" 
-and n.name="Substance" 
-and m.name="Phenotype" 
-return p1,p,q
+'''
+MATCH 
+q=(x:Concept{name: "Substance"})--
+(w0:Concept{name:   "Gene"})-
+[r0*1..2]-
+(w1:Concept{name:   "Cell"})-
+[r1*1..2]-
+(w2:Concept{name:   "Phenotype"})--
+(y:Concept{name:   "Disease"})
+with q,x,y MATCH
+p=(x:Concept)-[zebra*0..6]->()<-[macaroni*0..6]-(y:Concept)
+where p=q
+return p
 '''
 
-# Once we have identified a concept path, we need to fill it in with actual type translations.
-# Here, we have decided to go name->substance->gene->disease->phenotype.
-# For each type translation, we first go between 0 and 1 synonyms to get to the id type that we want.
-# 0 is included in case we dont need to do the transition, in wich case nodes e.g. n2a and n2 would be the same
-# then we transition to the next type via an unspecified transition.
-new_q2 = '''match p=
-(n:Type:Name)-[r]->
-(n2:Type:Substance)-[:SYNONYM*0..1]-(n2a:Type:Substance)-[]->
-(n3:Type:Gene)-[:SYNONYM*0..1]-(n4:Type:Gene)-[]->
-(n5:Type:Disease)-[:SYNONYM*0..1]-(n6:Type:Disease)-[]->
-(n7:Type:Phenotype) 
-return p'''
+
+#Here is stashing a further upgrade that Patrick made to the query to allow for branches as well:
+'''
+MATCH 
+q0=(a:Concept{name: "Substance"})--(:Concept{name: "Gene"})--(j:Concept{name: "Anatomy"}),
+q1=(j)--(:Concept{name: "Cell"})--(b:Concept{name: "BiologicalProcess"}),
+q2=(j)--(:Concept{name: "Phenotype"})--(c:Concept{name: "Disease"})
+with j,a,b,c,q0,q1,q2
+match p0=(a)-[ra0*0..2]->()<-[rj0*0..2]-(j),
+p1=(j)-[rb1*0..2]->()<-[rj1*0..2]-(b),
+p2=(j)-[rc2*0..2]->()<-[rj2*0..2]-(c)
+where p0=q0 and p1=q1 and p2=q2 and not (length(rj0)>0 and length(rj1)>0 and length(rj2)>0)
+return nodes(p0)+nodes(p1)+nodes(p2) as nodes, relationships(p0)+relationships(p1)+relationships(p2) as rels
+'''

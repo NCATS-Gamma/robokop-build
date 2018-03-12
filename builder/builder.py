@@ -38,28 +38,28 @@ class KnowledgeGraph:
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
         # GreenT wants a cypher query to find transitions, and a starting point
-        cyphers  = self.userquery.generate_cypher()
-        starts   = self.userquery.get_start_node()
-        reverses = self.userquery.get_reversed()
-        lookups  = self.userquery.get_lookups()
-        for cypher, start, reverse, lookup in zip(cyphers, starts, reverses, lookups):
-            input_name = Text.un_curie(lookup.identifier)
-        #    self.logger.debug(start)
-        #    self.logger.debug(input_name)
-        #    self.logger.debug('CYPHER')
-        #    self.logger.debug(cypher)
-            identifier, ntype = start
-            start_node = KNode(identifier, ntype, label=input_name)
-            self.rosetta.synonymizer.synonymize(start_node)
-            kedge = KEdge('lookup', 'lookup')
-            kedge.source_node = lookup
-            kedge.target_node = start_node
-            self.add_nonsynonymous_edge(kedge)
+#        cyphers = self.userquery.generate_cypher()
+#        starts = self.userquery.get_start_node()
+#        reverses = self.userquery.get_reversed()
+#        lookups = self.userquery.get_lookups()
+#
+#        for cypher, start, reverse, lookup in zip(cyphers, starts, reverses, lookups):
+        self.logger.debug('Run Programs')
+        for program in self.userquery.get_programs():
+            #TODO: All this goes in the program or run_program?
+            #input_name = Text.un_curie(program.lookup.identifier)
+            #start_node = KNode(identifier, ntype, label=input_name)
+            #self.rosetta.synonymizer.synonymize(start_node)
+            #kedge = KEdge('lookup', 'lookup')
+            #kedge.source_node = program.get_lookup()
+            #kedge.target_node = start_node
+            #self.add_nonsynonymous_edge(kedge)
             # Fire this to rosetta, collect the result
-            result_graph = self.rosetta.graph([(None, start_node)], query=cypher)
+            result_graph = program.run_program( )
+            #result_graph = self.rosetta.graph([(None, start_node)], query=cypher)
             # result_graph contains duplicate edges.  Remove them, while preserving order:
-            result_graph = list(OrderedDict.fromkeys(result_graph))
-            self.add_edges(result_graph, reverse)
+            #result_graph = list(OrderedDict.fromkeys(result_graph))
+            self.add_edges(result_graph)
         self.logger.debug('Query Complete')
 
     def print_types(self):
@@ -72,7 +72,7 @@ class KnowledgeGraph:
     def merge(self, source, target):
         """Source and target are both members of the graph, and we've found that they are
         synonyms.  Remove target, and attach all of target's edges to source"""
-        self.logger.debug('Merging {} and {}'.format( source.identifier, target.identifier ) )
+        self.logger.debug('Merging {} and {}'.format(source.identifier, target.identifier))
         source.add_synonym(target)
         nodes_from_target = self.graph.successors(target)
         for s in nodes_from_target:
@@ -131,13 +131,13 @@ class KnowledgeGraph:
         edge.source_node = source_node
         edge.target_node = target_node
         # Now the nodes are translated to the canonical identifiers, make the edge
-        #TODO: YUCK FIX
+        # TODO: YUCK FIX
         if reverse_edges:
             edge.properties['reversed'] = True
-            #We might already have this edge due to multiple "programs" running
-            #Because it is a multigraph, graph[node][node] returns a map where the values are the edges
+            # We might already have this edge due to multiple "programs" running
+            # Because it is a multigraph, graph[node][node] returns a map where the values are the edges
             try:
-                potential_edges = [ x['object'] for x in self.graph[target_node][source_node].values()]
+                potential_edges = [x['object'] for x in self.graph[target_node][source_node].values()]
             except KeyError:
                 potential_edges = set()
             if edge not in potential_edges:
@@ -148,7 +148,7 @@ class KnowledgeGraph:
         else:
             edge.properties['reversed'] = False
             try:
-                potential_edges = [ x['object'] for x in self.graph[source_node][target_node].values() ]
+                potential_edges = [x['object'] for x in self.graph[source_node][target_node].values()]
             except KeyError:
                 potential_edges = set()
             if edge not in potential_edges:
@@ -157,7 +157,7 @@ class KnowledgeGraph:
             else:
                 self.logger.debug('Not adding repeating edge')
 
-    def add_edges(self, edge_list, reverse_edges):
+    def add_edges(self, edge_list, reverse_edges=False):
         """Add a list of edges (and the associated nodes) to the graph."""
         for edge in edge_list:
             self.logger.debug('Edge: {} -> {}'.format(edge.source_node.identifier, edge.target_node.identifier))
@@ -181,11 +181,11 @@ class KnowledgeGraph:
         If not found, create it & add to graph"""
         fnode = self.find_node(node)
         if fnode is not None:
-            self.logger.debug (' found it')
+            self.logger.debug(' found it')
             fnode.add_synonyms(node.synonyms)
             return fnode
         else:
-            self.logger.debug (' didnt find it. Adding.')
+            self.logger.debug(' didnt find it. Adding.')
             self.graph.add_node(node)
             self.node_map[node.identifier] = node
             for s in node.synonyms:
@@ -203,7 +203,7 @@ class KnowledgeGraph:
         # make the set of types that we don't want to prune.  These are the end points (both text and id versions).
         ttypes = self.userquery.get_terminal_types()
         if node_types.UNSPECIFIED in ttypes[1]:
-            #Any kind of end node will match, so stop
+            # Any kind of end node will match, so stop
             return
         keep_types = set()
         keep_types.update(ttypes[0])
@@ -221,7 +221,7 @@ class KnowledgeGraph:
                 neighbors = self.graph.successors(node) + self.graph.predecessors(node)
                 neighbor_types = set([neighbor.node_type for neighbor in neighbors])
                 if len(neighbor_types) < 2:
-                    #TODO: this is a little hacky and only covers some of the cases.
+                    # TODO: this is a little hacky and only covers some of the cases.
                     query_neighbor_types = self.userquery.get_neighbor_types(node.node_type)
                     graph_neighbor_type = list(neighbor_types)[0]
                     if (graph_neighbor_type, graph_neighbor_type) not in query_neighbor_types:
@@ -232,19 +232,19 @@ class KnowledgeGraph:
                 self.graph.remove_node(node)
         self.logger.debug('Pruned {} nodes.'.format(n_pruned))
 
-    def get_terminal_nodes(self):
-        """Return the nodes at the beginning or end of a query"""
-        # TODO: Currently doing via type.  Probably need to mark these instead.
-        start_types, end_types = self.userquery.get_terminal_types()
-        start_nodes = []
-        end_nodes = []
-        nodes = self.graph.nodes()
-        for node in nodes:
-            if node.node_type in start_types:
-                start_nodes.append(node)
-            if node.node_type in end_types:
-                end_nodes.append(node)
-        return start_nodes, end_nodes
+#    def get_terminal_nodes(self):
+#        """Return the nodes at the beginning or end of a query"""
+#        # TODO: Currently doing via type.  Probably need to mark these instead.
+#        start_types, end_types = self.userquery.get_terminal_types()
+#        start_nodes = []
+#        end_nodes = []
+#        nodes = self.graph.nodes()
+#        for node in nodes:
+#            if node.node_type in start_types:
+#                start_nodes.append(node)
+#            if node.node_type in end_types:
+#                end_nodes.append(node)
+#        return start_nodes, end_nodes
 
     def enhance(self):
         """Enhance nodes,edges with good labels and properties"""
@@ -270,20 +270,22 @@ class KnowledgeGraph:
         #
         # Generate paths, (unique) edges along paths
         self.logger.debug('Building Support')
-        start_nodes, end_nodes = self.get_terminal_nodes()
-        links_to_check = set()
-        self.logger.debug("Number of start nodes: {}".format(len(start_nodes)))
-        self.logger.debug("Number of end nodes: {}".format(len(end_nodes)))
-        for start_node in start_nodes:
-            for end_node in end_nodes:
-                try:
-                    for path in nx.all_shortest_paths(self.graph, source=start_node, target=end_node):
-                        for n_i, source in enumerate(path):
-                            for n_j in range(n_i + 1, len(path)):
-                                link = (source, path[n_j])
-                                links_to_check.add(link)
-                except:
-                    self.logger.error('No paths from {} to {}'.format(start_node.identifier, end_node.identifier))
+        links_to_check = self.generate_links_from_paths()
+        #links_to_check = self.generate_all_links()
+
+        #start_nodes, end_nodes = self.userquery.get_terminal_nodes()
+        #self.logger.debug("Number of start nodes: {}".format(len(start_nodes)))
+        #self.logger.debug("Number of end nodes: {}".format(len(end_nodes)))
+        #for start_node in start_nodes:
+        #    for end_node in end_nodes:
+        #        try:
+        #            for path in nx.all_shortest_paths(self.graph, source=start_node, target=end_node):
+        #                for n_i, source in enumerate(path):
+        #                    for n_j in range(n_i + 1, len(path)):
+        #                        link = (source, path[n_j])
+        #                        links_to_check.add(link)
+        #        except:
+        #            self.logger.error('No paths from {} to {}'.format(start_node.identifier, end_node.identifier))
         self.logger.debug('Number of pairs to check: {}'.format(len(links_to_check)))
         if len(links_to_check) == 0:
             self.logger.error('No paths across the data.  Exiting without writing.')
@@ -301,6 +303,44 @@ class KnowledgeGraph:
                     self.add_nonsynonymous_edge(support_edge)
         self.logger.debug('Support Completed.  Added {} edges.'.format(n_supported))
 
+    def generate_links_from_paths(self):
+        """This is going to assume that the first node is 0, which is bogus, but this is temp until support plan is figured out"""
+        links_to_check = set()
+        for program in self.userquery.get_programs():
+            ancestors = defaultdict(set)
+            current_nodes = set()
+            program_number = program.program_number
+            for node in self.graph.nodes():
+                if 0 in node.contexts[program_number]: #start node
+                    current_nodes.add(node)
+            path = program.get_path_descriptor()
+            nodenum = 0
+            while nodenum in path:
+                next_context,direction = path[nodenum]
+                self.logger.debug('Nodenum: {} {}'.format(nodenum,next_context))
+                next_nodes = set()
+                for node in current_nodes:
+                    self.logger.debug(' Current Node: {}'.format(node.identifier))
+                    if direction > 0:
+                        others = self.graph.successors(node)
+                    else:
+                        others = self.graph.predecessors(node)
+                    for other in others:
+                        self.logger.debug('  Testing other: {} {}=?={}'.format(other.identifier, other.contexts[program_number], next_context))
+                        if next_context in other.contexts[program_number]:
+                            self.logger.debug('Adding context for {}'.format(other))
+                            ancestors[other].add(node)
+                            ancestors[other].update(ancestors[node])
+                            next_nodes.add(other)
+                nodenum = next_context
+                current_nodes = next_nodes
+            for key in ancestors:
+                self.logger.debug("Ancestorkey {}".format(key))
+                for a in ancestors[key]:
+                    links_to_check.add( (key, a) )
+        return links_to_check
+
+
     def export(self, resultname):
         """Export to neo4j database."""
         # Just make sure that resultname is not going to bork up neo4j
@@ -315,10 +355,11 @@ class KnowledgeGraph:
         # Now add all the nodes
         for node in self.graph.nodes():
             type_label = ''.join(node.node_type.split('.'))
-            session.run("CREATE (a:%s:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
-                        % (resultname, type_label),
-                        {"id": node.identifier, "name": node.label, "node_type": node.node_type,
-                         "syn": list(node.synonyms), "meta": ''})
+            session.run(
+                "CREATE (a:%s:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
+                % (resultname, type_label),
+                {"id": node.identifier, "name": node.label, "node_type": node.node_type,
+                 "syn": list(node.synonyms), "meta": ''})
         for edge in self.graph.edges(data=True):
             aid = edge[0].identifier
             bid = edge[1].identifier
@@ -410,12 +451,12 @@ def run_query(querylist, supports, result_name, rosetta, prune=True):
     kgraph = KnowledgeGraph(querylist, rosetta)
     kgraph.execute()
     kgraph.print_types()
-    if prune:
-        kgraph.prune()
+    #if prune:
+    #    kgraph.prune()
     kgraph.enhance()
     kgraph.support(supports)
     kgraph.export(result_name)
-       
+
 
 def generate_query(pathway, start_node, start_identifiers, end_node=None, end_identifiers=None):
     start, middle, end = pathway[0], pathway[1:-1], pathway[-1]
@@ -462,7 +503,7 @@ def run(pathway, start_name, end_name, label, supports):
     else:
         end_node = None
         end_identifiers = None
-    print ("Start identifiers: "+'..'.join(start_identifiers))
+    print("Start identifiers: " + '..'.join(start_identifiers))
     query = generate_query(steps, start_node, start_identifiers, end_node, end_identifiers)
     run_query(query, supports, label, rosetta, prune=True)
 
@@ -510,7 +551,7 @@ Examples:
 def main():
     parser = argparse.ArgumentParser(description=helpstring,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('-s', '--support', help='Name of the support system', 
+    parser.add_argument('-s', '--support', help='Name of the support system',
                         action='append',
                         choices=['chemotext', 'chemotext2', 'cdw'],
                         required=True)
@@ -523,7 +564,7 @@ def main():
                         type=int)
     parser.add_argument('--start', help='Text to initiate query', required=True)
     parser.add_argument('--end', help='Text to finalize query', required=False)
-    parser.add_argument('-l', '--label', help='Label for result in neo4j. Will overwrite.', 
+    parser.add_argument('-l', '--label', help='Label for result in neo4j. Will overwrite.',
                         required=True)
     args = parser.parse_args()
     pathway = None

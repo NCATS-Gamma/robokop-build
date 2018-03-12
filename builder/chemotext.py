@@ -40,11 +40,13 @@ class ChemotextSupport():
                     self.identifier_to_label[node.identifier].append(cterm)
 
     def get_mesh_labels(self,node):
+        logging.getLogger('application').debug('{} to {}'.format(node.identifier, self.identifier_to_label[node.identifier]))
         return self.identifier_to_label[ node.identifier ]
 
     def term_to_term(self,node_a,node_b,limit = 10000):
         """Given two terms, find articles in chemotext that connect them, and return as a KEdge.
         If nothing is found, return None"""
+        logging.getLogger('application').debug('identifiers: {} to {}'.format(node_a.identifier, node_b.identifier))
         meshes_a = self.get_mesh_labels(node_a)
         meshes_b = self.get_mesh_labels(node_b)
         articles=[]
