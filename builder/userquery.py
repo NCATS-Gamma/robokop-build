@@ -1,3 +1,4 @@
+from program import Program
 from greent.node_types import node_types, DRUG_NAME, DISEASE_NAME, UNSPECIFIED
 from greent.util import Text
 
@@ -136,14 +137,16 @@ class UserQuery:
     def compile_query(self, rosetta):
         self.cypher = self.generate_cypher()
         plans = rosetta.type_graph.get_transitions(self.cypher)
-        self.programs = [Program(plan, self.definition, rosetta) for plan in self.plans]
+        self.programs = [Program(plan, self.definition, rosetta, i) for i,plan in enumerate(plans)]
         return len(self.programs) > 0
 
     def get_programs(self):
-        return []
+        return self.programs
 
-    #def get_terminal_types(self):
-    #    return self.query.get_terminal_types()
+    def get_terminal_nodes(self):
+        starts = set()
+        ends = set()
+        return self.query.get_terminal_types()
 #
 #    def get_start_node(self):
 #        return self.query.get_start_node()
