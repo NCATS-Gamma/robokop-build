@@ -8,7 +8,6 @@ from greent.util import LoggingUtil
 
 logger = LoggingUtil.init_logging(__file__, level=logging.DEBUG)
 
-
 class Program:
 
     def __init__(self, plan, query_definition, rosetta, program_number):
@@ -78,6 +77,7 @@ class Program:
                 logger.debug(log_text)
                 with requests_cache.enabled("rosetta_cache"):
                     results = op(source_node)
+                logger.debug('returned')
                 newnodes = []
                 for r in results:
                     edge = r[0]
@@ -85,9 +85,12 @@ class Program:
                         edge.predicate = link['link']
                         edge.source_node = source_node
                         edge.target_node = r[1]
+                        logger.debug('     {}'.format(edge.target_node.identifier))
                         self.linked_results.append(edge)
                         newnodes.append(r[1])
+                logger.debug('add nodes')
                 self.add_instance_nodes(newnodes,next_context)
+                logger.debug('done')
             except Exception as e:
                 traceback.print_exc()
                 logger.error("Error invoking> {0}".format(log_text))
