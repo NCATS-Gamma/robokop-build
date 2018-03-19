@@ -23,6 +23,7 @@ class Program:
         self.end_nodes = []
 
     def initialize_instance_nodes(self, query_definition):
+        logger.debug("Initializing program {}".format(self.program_number))
         t_node_ids = self.get_fixed_concept_nodes()
         self.start_nodes = [KNode(start_identifier, self.concept_nodes[t_node_ids[0]]) for start_identifier in
                      query_definition.start_values]
@@ -64,6 +65,7 @@ class Program:
     def run_program(self):
         """Loop over unused nodes, send them to the appropriate operator, and collect the results.
         Keep going until there's no nodes left to process."""
+        logger.debug("Running program {}".format(self.program_number))
         while len(self.unused_instance_nodes) > 0:
             source_node, context = self.unused_instance_nodes.pop()
             if context not in self.transitions:
@@ -77,7 +79,6 @@ class Program:
                 logger.debug(log_text)
                 with requests_cache.enabled("rosetta_cache"):
                     results = op(source_node)
-                logger.debug('returned')
                 newnodes = []
                 for r in results:
                     edge = r[0]
@@ -88,12 +89,11 @@ class Program:
                         logger.debug('     {}'.format(edge.target_node.identifier))
                         self.linked_results.append(edge)
                         newnodes.append(r[1])
-                logger.debug('add nodes')
                 self.add_instance_nodes(newnodes,next_context)
-                logger.debug('done')
             except Exception as e:
                 traceback.print_exc()
                 logger.error("Error invoking> {0}".format(log_text))
+            logger.debug(" {} nodes remaining.".format(len(self.unused_instance_nodes)))
         return self.linked_results
 
     def get_results(self):

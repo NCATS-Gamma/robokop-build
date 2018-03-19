@@ -125,17 +125,22 @@ class UserQuery:
             paths_parts.append(transition.generate_concept_cypher_pathstring(t_number))
         cypherbuffer.append( ''.join(paths_parts) )
         last_node_i = len(self.definition.transitions)
+        cypherbuffer.append('FOREACH (n in relationships(p) | SET n.marked = TRUE)\n')
         cypherbuffer.append(f'WITH p,c0,c{last_node_i}\n')
         if self.definition.end_values is None:
-            cypherbuffer.append(f'MATCH q=(c0:Concept)-[:translation*0..{last_node_i}]->(c{last_node_i}:Concept)\n')
+            cypherbuffer.append(f'MATCH q=(c0:Concept)-[*0..{last_node_i} {{marked:True}}]->(c{last_node_i}:Concept)\n')
         else:
-            cypherbuffer.append(f'MATCH q=(c0:Concept)-[:translation*0..{last_node_i}]->()<-[:translation*0..{last_node_i}]-(c{last_node_i}:Concept)\n')
+            cypherbuffer.append(f'MATCH q=(c0:Concept)-[*0..{last_node_i} {{marked:True}}]->()<-[*0..{last_node_i} {{marked:True}}]-(c{last_node_i}:Concept)\n')
         cypherbuffer.append('WHERE p=q\n')
+        #This is to make sure that we don't get caught up in is_a and other funky relations:
+        cypherbuffer.append('AND ALL( r in relationships(p) WHERE  EXISTS(r.op) )')
+        cypherbuffer.append('FOREACH (n in relationships(p) | SET n.marked = FALSE)\n')
         cypherbuffer.append('RETURN p, EXTRACT( r in relationships(p) | startNode(r) ) \n')
         return ''.join(cypherbuffer)
 
     def compile_query(self, rosetta):
         self.cypher = self.generate_cypher()
+        print(self.cypher)
         plans = rosetta.type_graph.get_transitions(self.cypher)
         self.programs = [Program(plan, self.definition, rosetta, i) for i,plan in enumerate(plans)]
         return len(self.programs) > 0
