@@ -6,7 +6,7 @@ from collections import defaultdict
 from greent.graph_components import KNode, KEdge
 from greent.util import LoggingUtil
 
-logger = LoggingUtil.init_logging(__file__, level=logging.DEBUG)
+logger = LoggingUtil.init_logging(__file__, level=logging.DEBUG, format = 'long')
 
 class Program:
 
