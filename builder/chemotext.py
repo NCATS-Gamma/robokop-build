@@ -1,15 +1,12 @@
-import json
 import logging
 from greent.graph_components import KEdge
 from greent.util import Text
 from greent import node_types
-import mesh
 from collections import defaultdict
 
 def get_supporter(greent):
     return ChemotextSupport(greent)
 
-#CHEMOTEXT_MESH_KEY = 'chemotext_mesh_label'
 
 class ChemotextSupport():
 
@@ -19,8 +16,6 @@ class ChemotextSupport():
         self.identifier_to_label = defaultdict(list)
 
     def prepare(self,nodes):
-        #With synonymization, mesh should already be added wherever it can be.
-#        mesh.add_mesh( nodes, self.greent )
         self.add_chemotext_terms( nodes )
 
     def add_chemotext_terms(self,nodes):
