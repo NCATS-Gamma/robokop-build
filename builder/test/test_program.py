@@ -52,4 +52,3 @@ def test_two_sided_query(rosetta):
     assert path[4] == (5,-1)
     assert path[5] == (6,-1)
     assert len(path) == 6
-
