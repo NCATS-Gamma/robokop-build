@@ -73,7 +73,7 @@ class Program:
             link = self.transitions[context]
             next_context = link['to']
             op = self.rosetta.get_ops(link['op'])
-            log_text = "  -- {0}({1})".format('op', source_node.identifier)
+            log_text = "  -- {0}({1})".format(link['op'], source_node.identifier)
             try:
                 results = None
                 logger.debug(log_text)
