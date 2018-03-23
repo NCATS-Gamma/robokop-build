@@ -511,7 +511,7 @@ def run(pathway, start_name, end_name, label, supports):
 def setup():
     logger = logging.getLogger('application')
     logger.setLevel(level=logging.DEBUG)
-    rosetta = Rosetta()
+    rosetta = Rosetta(debug=True)
     return rosetta
 
 

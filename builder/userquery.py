@@ -1,6 +1,8 @@
-from program import Program
+#from program import Program
 from greent.node_types import node_types, DRUG_NAME, DISEASE_NAME, UNSPECIFIED
 from greent.util import Text
+from greent.program import Program
+from greent.program import QueryDefinition
 
 class Transition:
     def __init__(self, last_type, next_type, min_path_length, max_path_length):
@@ -35,7 +37,7 @@ class Transition:
             pstring += '--\n'
         pstring += f'{end}\n'
         return pstring
-
+'''
 class QueryDefinition:
     """Defines a query"""
 
@@ -47,7 +49,7 @@ class QueryDefinition:
         self.transitions = []
         self.start_lookup_node = None
         self.end_lookup_node = None
-
+'''
 class UserQuery:
     """This is the class that the rest of builder uses to interact with a query."""
 
