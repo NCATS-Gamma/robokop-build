@@ -137,7 +137,7 @@ class UserQuery:
         #This is to make sure that we don't get caught up in is_a and other funky relations.:
         cypherbuffer.append('AND ALL( r in relationships(p) WHERE  EXISTS(r.op) )')
         cypherbuffer.append('FOREACH (n in relationships(p) | SET n.marked = FALSE)\n')
-        cypherbuffer.append('RETURN p, EXTRACT( r in relationships(p) | startNode(r) ) \n')
+        cypherbuffer.append('RETURN p\n')
         return ''.join(cypherbuffer)
 
     def compile_query(self, rosetta):

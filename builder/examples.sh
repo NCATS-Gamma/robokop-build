@@ -4,15 +4,15 @@
 #Type 1 query (Disease/Gene/GeneticCondition)
 #Start at Ebola, support with chemotext, chemotext2 and cdw
 #Label in neo4j will be "test1"
-#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 1 --start "Ebola Virus Disease" -l test1_program_b
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 1 --start "Ebola Virus Disease" -l test1_program_x
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 1 --start "Ebola Virus Disease" -l test1_syn 
 
 #Type 2 query (Substance/Gene/Process/Cell/Anatomy/Phenotype/Disease)
 #Start at PRAMIPEXOLE, end at Restless Legs Syndrom
 #support with chemotext and chemotext2
 #Label in neo4j will be "test2"
-#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "ARTEMETHER" --end "Malaria" -l test_ARTEMETHER_program_b
-PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p SG --start "ARTEMETHER" -l test_ARTEMETHER
+PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "ARTEMETHER" --end "Malaria" -l test_ARTEMETHER_program_c
+#PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -p SGPC --start "ARTEMETHER" -l test_ARTEMETHER
 
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "MECLIZINE" --end "Motion Sickness" -l test_MECLIZINE_program
 #PYTHONPATH=../../robokop-interfaces python builder.py -s chemotext -q 2 --start "KETOCONAZOLE" --end "Candidiasis, Cutaneous" -l test_KETOCONAZOLE
