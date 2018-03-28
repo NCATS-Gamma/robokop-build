@@ -439,7 +439,7 @@ def generate_name_node(name, nodetype):
         return KNode('{}:{}'.format(node_types.DISEASE_NAME, name), node_types.DISEASE_NAME)
 
 
-def run(pathway, start_name, end_name, label, supports):
+def run(pathway, start_name, end_name, label, supports, config):
     """Programmatic interface.  Pathway defined as in the command-line input.
        Arguments:
          pathway: A string defining the query.  See command line help for details
@@ -447,12 +447,13 @@ def run(pathway, start_name, end_name, label, supports):
          end_name: The name of the entity at the other end of the query. Can be None.
          label: the label designating the result in neo4j
          supports: array strings designating support modules to apply
+         config: Rosettta environment configuration. 
     """
     # TODO: move to a more structured pathway description (such as json)
     steps = tokenize_path(pathway)
     # start_type = node_types.type_codes[pathway[0]]
     start_type = steps[0].nodetype
-    rosetta = setup()
+    rosetta = setup(config)
     start_identifiers = lookup_identifier(start_name, start_type, rosetta.core)
     start_node = generate_name_node(start_name, start_type)
     if end_name is not None:
@@ -468,10 +469,10 @@ def run(pathway, start_name, end_name, label, supports):
     run_query(query, supports, label, rosetta, prune=False)
 
 
-def setup():
+def setup(config):
     logger = logging.getLogger('application')
     logger.setLevel(level=logging.DEBUG)
-    rosetta = Rosetta(debug=True)
+    rosetta = Rosetta(greentConf=config,debug=True)
     return rosetta
 
 
@@ -522,6 +523,8 @@ def main():
                         choices=[1, 2, 3],
                         required=False,
                         type=int)
+    parser.add_argument('-c', '--config', help='Rosetta environment configuration file.',
+                        default='greent.conf')
     parser.add_argument('--start', help='Text to initiate query', required=True)
     parser.add_argument('--end', help='Text to finalize query', required=False)
     parser.add_argument('-l', '--label', help='Label for result in neo4j. Will overwrite.',
@@ -546,7 +549,7 @@ def main():
                 sys.exit(1)
     else:
         pathway = args.pathway
-    run(pathway, args.start, args.end, args.label, args.support)
+    run(pathway, args.start, args.end, args.label, args.support, config=args.config)
 
 
 if __name__ == '__main__':
