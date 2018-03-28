@@ -29,9 +29,12 @@ class KnowledgeGraph:
         #  we are collapsing nodes along synonym edges, so each node might asked for in
         #  multiple different ways.
         self.node_map = {}
-        uri = 'bolt://localhost:7687'
-        self.driver = GraphDatabase.driver(uri, encrypted=False)
 
+        #uri = 'bolt://localhost:7687'
+        #self.driver = GraphDatabase.driver(uri, encrypted=False)
+        # Use the same database connection as the type_graph.
+        self.driver = self.rosetta.type_graph.driver
+        
     def execute(self):
         """Execute the query that defines the graph"""
         self.logger.debug('Executing Query')
