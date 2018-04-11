@@ -421,25 +421,16 @@ def run_query(querylist, supports, result_name, rosetta, prune=False):
     kgraph.export(result_name)
 
 
-def generate_query(pathway, start_node, start_identifiers, end_node=None, end_identifiers=None):
+def generate_query(pathway, start_identifiers, end_identifiers=None):
     start, middle, end = pathway[0], pathway[1:-1], pathway[-1]
-    query = UserQuery(start_identifiers, start.nodetype, start_node)
+    query = UserQuery(start_identifiers, start.nodetype)
     print(start.nodetype)
     for transition in middle:
         print(transition)
         query.add_transition(transition.nodetype, transition.min_path_length, transition.max_path_length)
     print(end)
     query.add_transition(end.nodetype, end.min_path_length, end.max_path_length, end_values=end_identifiers)
-    if end_node is not None:
-        query.add_end_lookup_node(end_node)
     return query
-
-
-def generate_name_node(name, nodetype):
-    if nodetype == node_types.DRUG:
-        return KNode('{}:{}'.format(node_types.DRUG_NAME, name), node_types.DRUG_NAME)
-    elif nodetype == node_types.DISEASE or nodetype == node_types.PHENOTYPE:
-        return KNode('{}:{}'.format(node_types.DISEASE_NAME, name), node_types.DISEASE_NAME)
 
 
 def run(pathway, start_name, end_name, label, supports, config):
@@ -458,17 +449,14 @@ def run(pathway, start_name, end_name, label, supports, config):
     start_type = steps[0].nodetype
     rosetta = setup(config)
     start_identifiers = lookup_identifier(start_name, start_type, rosetta.core)
-    start_node = generate_name_node(start_name, start_type)
     if end_name is not None:
         # end_type = node_types.type_codes[pathway[-1]]
         end_type = steps[-1].nodetype
         end_identifiers = lookup_identifier(end_name, end_type, rosetta.core)
-        end_node = generate_name_node(end_name, end_type)
     else:
-        end_node = None
         end_identifiers = None
     print("Start identifiers: " + '..'.join(start_identifiers))
-    query = generate_query(steps, start_node, start_identifiers, end_node, end_identifiers)
+    query = generate_query(steps, start_identifiers, end_identifiers)
     run_query(query, supports, label, rosetta, prune=False)
 
 

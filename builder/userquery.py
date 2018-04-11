@@ -53,7 +53,7 @@ class QueryDefinition:
 class UserQuery:
     """This is the class that the rest of builder uses to interact with a query."""
 
-    def __init__(self, start_values, start_type, lookup_node):
+    def __init__(self, start_values, start_type):
         """Create an instance of UserQuery. Takes a starting value and the type of that value"""
         self.query = None
         self.definition = QueryDefinition()
@@ -61,8 +61,6 @@ class UserQuery:
         self.definition.start_values = start_values
         self.definition.start_type = start_type
         self.definition.end_values = None
-        # The term used to create the initial point
-        self.definition.start_lookup_node = lookup_node
         # List of user-level types that we must pass through
         self.add_node(start_type)
 
@@ -115,9 +113,6 @@ class UserQuery:
         # Add the end_value
         if end_values is not None:
             self.definition.end_values = end_values
-
-    def add_end_lookup_node(self, lookup_node):
-        self.definition.end_lookup_node = lookup_node
 
     def generate_cypher(self):
         """Generate a cypher query to find paths through the concept-level map."""
