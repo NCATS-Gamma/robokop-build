@@ -12,6 +12,68 @@ from lookup_utils import lookup_identifier
 from collections import defaultdict
 from pathlex import tokenize_path
 
+def export_edge(edge,session):
+    """The approach of updating edges will be to erase an old one and replace it in whole.   There's no real
+    reason to worry about preserving information from an old edge.
+    What defines the edge are the identifiers of its nodes, and the source.function that created it."""
+    aid = edge[0].identifier
+    bid = edge[1].identifier
+    ke  = edge[2]['object']
+    #Delete any old edge
+    session.run("MATCH (a {id: {aid}})-[r {source:{source}, function:{function}}]-(b {id:{bid}}) DELETE r",
+                {'aid': aid, 'bid': bid, 'source': ke.edge_source, 'function': ke.edge_function} )
+    #Now write the new edge....
+    if ke.is_support:
+        label = 'Support'
+    elif ke.edge_source == 'lookup':
+        #       TODO: make this an edge prop
+        label = 'Lookup'
+    else:
+        label = 'Result'
+    prepare_edge_for_output(ke)
+    if ke.edge_source == 'chemotext2':
+        session.run(
+            "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" %
+            (label,),
+            {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
+             "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label,
+             'sim': ke.properties['similarity'], 'terms': ke.properties['terms']})
+    elif ke.edge_source == 'cdw':
+        session.run(
+            "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, source_counts: {c1}, target_counts: {c2}, shared_counts: {c}, expected_counts: {e}, p_value:{p}} ]->(b) return r" %
+            (label, ),
+            {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
+             "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label,
+             'c1': ke.properties['c1'], 'c2': ke.properties['c2'], 'c': ke.properties['c'],
+             'e': ke.properties['e'], 'p': ke.properties['p']})
+    else:
+        session.run(
+            "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" %
+            (label, ),
+            {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
+             "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label})
+
+def export_node(node, session):
+    """Utility for writing updated nodes.  Goes in node?"""
+    result = session.run("MATCH (a {id: {id}}) RETURN a", {"id": node.identifier})
+    original_record = result.peek()
+    if not original_record:
+        syns = list(node.synonyms)
+        syns.sort()
+        session.run(
+            "CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, equivalent_identifiers: {syn}})"
+            % (node.node_type),
+            {"id": node.identifier, "name": node.label, "node_type": node.node_type, "syn": syns })
+    else:
+        original_node = original_record['a']
+        if node.node_type not in original_node.labels:
+            #Note: You can't use query parameterization on node labels in neo4j - UGH
+            session.run("MATCH (a {id: {identifier} }) SET a:%s" % (node.node_type,), identifier = node.identifier)
+        new_syns = list(node.synonyms)
+        new_syns.sort()
+        if original_node['name'] != node.label or original_node['synonyms'] != new_syns:
+            session.run("MATCH (a {id: {identifier} }) SET a.name = {name}, a.equivalent_identifiers= {synonyms}",
+                        identifier = node.identifier, name = node.label, synonyms = new_syns)
 
 class KnowledgeGraph:
     def __init__(self, userquery, rosetta):
@@ -307,18 +369,6 @@ class KnowledgeGraph:
                     links_to_check.add( (key, a) )
         return links_to_check
 
-    def export_node(self, node, session):
-        result = session.run("MATCH (a {id: {id}}) RETURN a", {"id": node.identifier})
-        original_node = result.peek()
-        if not original_node:
-            session.run(
-                "CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
-                % (node.node_type),
-                {"id": node.identifier, "name": node.label, "node_type": node.node_type,
-                 "syn": list(node.synonyms), "meta": ''})
-        else:
-            pass
-
     def export(self):
         """Export to neo4j database."""
         # TODO: lots of this should probably go in the KNode and KEdge objects?
@@ -326,46 +376,9 @@ class KnowledgeGraph:
         session = self.driver.session()
         # Now add all the nodes
         for node in self.graph.nodes():
-            self.export_node(node, session)
-            type_label = ''.join(node.node_type.split('.'))
-#            session.run(
-#                "CREATE (a:%s:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
-#                % (resultname, type_label),
-#                {"id": node.identifier, "name": node.label, "node_type": node.node_type,
-#                 "syn": list(node.synonyms), "meta": ''})
+            export_node(node, session)
         for edge in self.graph.edges(data=True):
-            aid = edge[0].identifier
-            bid = edge[1].identifier
-            ke = edge[2]['object']
-            if ke.is_support:
-                label = 'Support'
-            elif ke.edge_source == 'lookup':
-                #       TODO: make this an edge prop
-                label = 'Lookup'
-            else:
-                label = 'Result'
-            prepare_edge_for_output(ke)
-            if ke.edge_source == 'chemotext2':
-                session.run(
-                    "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" %
-                    (label,),
-                    {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
-                     "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label,
-                     'sim': ke.properties['similarity'], 'terms': ke.properties['terms']})
-            elif ke.edge_source == 'cdw':
-                session.run(
-                    "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, source_counts: {c1}, target_counts: {c2}, shared_counts: {c}, expected_counts: {e}, p_value:{p}} ]->(b) return r" %
-                    (label, ),
-                    {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
-                     "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label,
-                     'c1': ke.properties['c1'], 'c2': ke.properties['c2'], 'c': ke.properties['c'],
-                     'e': ke.properties['e'], 'p': ke.properties['p']})
-            else:
-                session.run(
-                    "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" %
-                    (label, ),
-                    {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
-                     "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label})
+            export_edge(edge,session)
         session.close()
         self.logger.info("Wrote {} nodes.".format(len(self.graph.nodes())))
 
