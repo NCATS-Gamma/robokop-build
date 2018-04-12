@@ -219,6 +219,10 @@ class KnowledgeGraph:
         # TODO: it probably makes sense to push this stuff into the KNode itself
         self.logger.debug('Enhancing nodes with labels')
         for node in self.graph.nodes():
+            from greent.util import Text
+            if Text.get_curie(node.identifier) == 'DOID':
+                print('NOOO {}'.format(node.identifier))
+                exit()
             prepare_node_for_output(node, self.rosetta.core)
 
     def support(self, support_module_names):
@@ -303,26 +307,32 @@ class KnowledgeGraph:
                     links_to_check.add( (key, a) )
         return links_to_check
 
-
-    def export(self, resultname):
-        """Export to neo4j database."""
-        # Just make sure that resultname is not going to bork up neo4j
-        resultname = ''.join(resultname.split('-'))
-        resultname = ''.join(resultname.split(' '))
-        resultname = ''.join(resultname.split(','))
-        # TODO: lots of this should probably go in the KNode and KEdge objects?
-        self.logger.info("Writing to neo4j with label {}".format(resultname))
-        session = self.driver.session()
-        # If we have this query already, overwrite it...
-        session.run('MATCH (a:%s) DETACH DELETE a' % resultname)
-        # Now add all the nodes
-        for node in self.graph.nodes():
-            type_label = ''.join(node.node_type.split('.'))
+    def export_node(self, node, session):
+        result = session.run("MATCH (a {id: {id}}) RETURN a", {"id": node.identifier})
+        original_node = result.peek()
+        if not original_node:
             session.run(
-                "CREATE (a:%s:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
-                % (resultname, type_label),
+                "CREATE (a:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
+                % (node.node_type),
                 {"id": node.identifier, "name": node.label, "node_type": node.node_type,
                  "syn": list(node.synonyms), "meta": ''})
+        else:
+
+
+    def export(self):
+        """Export to neo4j database."""
+        # TODO: lots of this should probably go in the KNode and KEdge objects?
+        self.logger.info("Writing to neo4j")
+        session = self.driver.session()
+        # Now add all the nodes
+        for node in self.graph.nodes():
+            self.export_node(node, session)
+            type_label = ''.join(node.node_type.split('.'))
+#            session.run(
+#                "CREATE (a:%s:%s {id: {id}, name: {name}, node_type: {node_type}, synonyms: {syn}, meta: {meta}})"
+#                % (resultname, type_label),
+#                {"id": node.identifier, "name": node.label, "node_type": node.node_type,
+#                 "syn": list(node.synonyms), "meta": ''})
         for edge in self.graph.edges(data=True):
             aid = edge[0].identifier
             bid = edge[1].identifier
@@ -337,15 +347,15 @@ class KnowledgeGraph:
             prepare_edge_for_output(ke)
             if ke.edge_source == 'chemotext2':
                 session.run(
-                    "MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" %
-                    (resultname, resultname, label),
+                    "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" %
+                    (label,),
                     {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
                      "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label,
                      'sim': ke.properties['similarity'], 'terms': ke.properties['terms']})
             elif ke.edge_source == 'cdw':
                 session.run(
-                    "MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, source_counts: {c1}, target_counts: {c2}, shared_counts: {c}, expected_counts: {e}, p_value:{p}} ]->(b) return r" %
-                    (resultname, resultname, label),
+                    "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, source_counts: {c1}, target_counts: {c2}, shared_counts: {c}, expected_counts: {e}, p_value:{p}} ]->(b) return r" %
+                    (label, ),
                     {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
                      "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label,
                      'c1': ke.properties['c1'], 'c2': ke.properties['c2'], 'c': ke.properties['c'],
@@ -418,7 +428,7 @@ def run_query(querylist, supports, result_name, rosetta, prune=False):
         kgraph.prune()
     kgraph.enhance()
     kgraph.support(supports)
-    kgraph.export(result_name)
+    kgraph.export()
 
 
 def generate_query(pathway, start_node, start_identifiers, end_node=None, end_identifiers=None):
