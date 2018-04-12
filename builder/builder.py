@@ -317,7 +317,7 @@ class KnowledgeGraph:
                 {"id": node.identifier, "name": node.label, "node_type": node.node_type,
                  "syn": list(node.synonyms), "meta": ''})
         else:
-
+            pass
 
     def export(self):
         """Export to neo4j database."""
@@ -362,8 +362,8 @@ class KnowledgeGraph:
                      'e': ke.properties['e'], 'p': ke.properties['p']})
             else:
                 session.run(
-                    "MATCH (a:%s), (b:%s) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" %
-                    (resultname, resultname, label),
+                    "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}} ]->(b) return r" %
+                    (label, ),
                     {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
                      "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label})
         session.close()
