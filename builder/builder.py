@@ -214,9 +214,12 @@ class KnowledgeGraph:
         """If node exists in graph, return it, otherwise, return None"""
         if node.identifier in self.node_map:
             return self.node_map[node.identifier]
-        for syn in node.synonyms:
-            if syn in self.node_map:
-                return self.node_map[syn]
+        #We need to be less promiscuous here.   One thing that can happen is that OMIMs can unify what we consider
+        # diseases and what we consider genes.  For now, we'll assume that our synonymization/normalization is working
+        # well and # we don't have to sweat this.
+        #for syn in node.synonyms:
+        #    if syn in self.node_map:
+        #        return self.node_map[syn]
         return None
 
     def add_or_find_node(self, node):
