@@ -307,8 +307,8 @@ class KnowledgeGraph:
         #
         # Generate paths, (unique) edges along paths
         self.logger.debug('Building Support')
-        links_to_check = self.generate_links_from_paths()
-        #links_to_check = self.generate_all_links()
+        #links_to_check = self.generate_links_from_paths()
+        links_to_check = self.generate_all_links()
         self.logger.debug('Number of pairs to check: {}'.format(len(links_to_check)))
         if len(links_to_check) == 0:
             self.logger.error('No paths across the data.  Exiting without writing.')
@@ -531,7 +531,8 @@ def main():
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('-s', '--support', help='Name of the support system',
                         action='append',
-                        choices=['chemotext', 'chemotext2', 'cdw'],
+                        #choices=['chemotext', 'chemotext2', 'cdw'],
+                        choices=['omnicorp', 'cdw'],
                         required=True)
     parser.add_argument('-p', '--pathway', help='Defines the query pathway (see description). Cannot be used with -q',
                         required=False)
