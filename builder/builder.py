@@ -418,6 +418,8 @@ def prepare_edge_for_output(edge):
             # v. brittle. Should be put into the edge creation...
             if 'pmid' in pub:
                 pmidlist.append('PMID:{}'.format(pub['pmid']))
+            elif isinstance(pub,str) and pub.startswith('https://www.ncbi.nlm.nih.gov/pubmed/'):
+                pmidlist.append('PMID:{}'.format(pub.split('/')[-1]))
             elif 'id' in pub:
                 pmidlist.append(pub['id'])
         del edge.properties['publications']
@@ -528,7 +530,7 @@ def main():
     parser.add_argument('-s', '--support', help='Name of the support system',
                         action='append',
                         #choices=['chemotext', 'chemotext2', 'cdw'],
-                        choices=['omnicorp', 'cdw'],
+                        choices=['omnicorp', 'chemotext', 'cdw'],
                         required=True)
     parser.add_argument('-p', '--pathway', help='Defines the query pathway (see description). Cannot be used with -q',
                         required=False)
