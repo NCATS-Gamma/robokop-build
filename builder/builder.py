@@ -255,8 +255,6 @@ class KnowledgeGraph:
         keep_types = set()
         keep_types.update(ttypes[0])
         keep_types.update(ttypes[1])
-        keep_types.add(node_types.DISEASE_NAME)
-        keep_types.add(node_types.DRUG_NAME)
         n_pruned = 0
         while removed:
             removed = False
@@ -400,9 +398,7 @@ def prepare_node_for_output(node, gt):
             if node.label is None:
                 node.label = node.identifier
     if node.label is None:
-        if node.node_type == node_types.DISEASE_NAME or node.node_type == node_types.DRUG_NAME:
-            node.label = node.identifier.split(':')[-1]
-        elif node.node_type == node_types.GENE and node.identifier.startswith('HGNC:'):
+        if node.node_type == node_types.GENE and node.identifier.startswith('HGNC:'):
             node.label = gt.hgnc.get_name(node)
         elif node.node_type == node_types.GENE and node.identifier.upper().startswith('NCBIGENE:'):
             node.label = gt.hgnc.get_name(node)
