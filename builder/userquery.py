@@ -1,5 +1,5 @@
 #from program import Program
-from greent.node_types import node_types, DRUG_NAME, DISEASE_NAME, UNSPECIFIED
+from greent.node_types import node_types, UNSPECIFIED
 from greent.util import Text
 from greent.program import Program
 from greent.program import QueryDefinition
@@ -18,8 +18,6 @@ class Transition:
 
     @staticmethod
     def get_fstring(ntype):
-        if ntype == DRUG_NAME or ntype == DISEASE_NAME:
-            return 'n{0}{{name:"{1}"}}'
         if ntype is None:
             return 'n{0}'
         else:
