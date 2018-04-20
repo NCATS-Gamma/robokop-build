@@ -11,6 +11,7 @@ from importlib import import_module
 from lookup_utils import lookup_identifier
 from collections import defaultdict
 from pathlex import tokenize_path
+import calendar
 
 def export_edge(edge,session):
     """The approach of updating edges will be to erase an old one and replace it in whole.   There's no real
@@ -20,17 +21,34 @@ def export_edge(edge,session):
     bid = edge[1].identifier
     ke  = edge[2]['object']
     #Delete any old edge
-    session.run("MATCH (a {id: {aid}})-[r {source:{source}, function:{function}}]-(b {id:{bid}}) DELETE r",
-                {'aid': aid, 'bid': bid, 'source': ke.edge_source, 'function': ke.edge_function} )
+    session.run("MATCH (a {id: {aid}})-[r {source:{source}}]-(b {id:{bid}}) DELETE r",
+                {'aid': aid, 'bid': bid, 'source': ke.edge_source} )
     #Now write the new edge....
-    if ke.is_support:
-        label = 'Support'
-    elif ke.edge_source == 'lookup':
-        #       TODO: make this an edge prop
-        label = 'Lookup'
-    else:
-        label = 'Result'
-    prepare_edge_for_output(ke)
+    label=ke.standard_predicate_id
+    if label is None:
+        print(ke)
+        exit()
+    #note that we can't use the CURIE as the label, because the : in the curie screws up the cypher :(
+    session.run (
+        '''MATCH (a), (b) where a.id = {aid} AND b.id={bid} CREATE (a)-[r:%s {edge_source: {source}, ctime:{ctime}, 
+           standard_label:{standard_label}, original_predicate_id:{original_predicate_id}, 
+           original_predicate_label:{original_predicate_label}, publications:{publications}, url: {url},
+           input_identifiers: {input}}]->(b) return r''' % ('_'.join(label.split(':')),),
+        {'aid': aid, 'bid': bid, 'source': ke.edge_source, 'ctime': calendar.timegm(ke.ctime.timetuple()),
+         'standard_label': ke.standard_predicate_label,
+         'original_predicate_id': ke.predicate_id, 'original_predicate_label': ke.predicate_label,
+         'publications': ke.publications, 'url' : ke.url, 'input': ke.input_id}
+    )
+    #if ke.is_support:
+    #    label = 'Support'
+    #elif ke.edge_source == 'lookup':
+    #    #       TODO: make this an edge prop
+    #    label = 'Lookup'
+    #else:
+    #    label = 'Result'
+    #prepare_edge_for_output(ke)
+    '''
+    lets make this all less hinky
     if ke.edge_source == 'chemotext2':
         session.run(
             "MATCH (a), (b) WHERE a.id={aid} AND b.id={bid} CREATE (a)-[r:%s {source: {source}, function: {function}, pmids: {pmids}, onto_relation_id: {ontoid}, onto_relation_label: {ontolabel}, similarity: {sim}, terms:{terms}} ]->(b) return r" %
@@ -52,6 +70,8 @@ def export_edge(edge,session):
             (label, ),
             {"aid": aid, "bid": bid, "source": ke.edge_source, "function": ke.edge_function,
              "pmids": ke.pmidlist, "ontoid": ke.typed_relation_id, "ontolabel": ke.typed_relation_label})
+             '''
+
 
 def export_node(node, session):
     """Utility for writing updated nodes.  Goes in node?"""
@@ -146,6 +166,7 @@ class KnowledgeGraph:
             if self.node_map[k] == target:
                 self.node_map[k] = source
 
+    '''
     def add_synonymous_edge(self, edge):
         self.logger.error('There should be no add_synonymous_edge anymore')
         raise Exception('Nonnononon')
@@ -166,6 +187,7 @@ class KnowledgeGraph:
             source, target = target, source
         source.add_synonym(edge.target_node)
         self.node_map[edge.target_node.identifier] = source
+    '''
 
     def add_nonsynonymous_edge(self, edge, reverse_edges=False):
         self.logger.debug(' New Nonsynonymous')
@@ -177,6 +199,8 @@ class KnowledgeGraph:
         # Now the nodes are translated to the canonical identifiers, make the edge
         # TODO: YUCK FIX
         if reverse_edges:
+            self.logger.error("No reversing edges any more!")
+            exit(1)
             edge.properties['reversed'] = True
             # We might already have this edge due to multiple "programs" running
             # Because it is a multigraph, graph[node][node] returns a map where the values are the edges
@@ -205,10 +229,7 @@ class KnowledgeGraph:
         """Add a list of edges (and the associated nodes) to the graph."""
         for edge in edge_list:
             self.logger.debug('Edge: {} -> {}'.format(edge.source_node.identifier, edge.target_node.identifier))
-            if edge.is_synonym:
-                self.add_synonymous_edge(edge)
-            else:
-                self.add_nonsynonymous_edge(edge, reverse_edges)
+            self.add_nonsynonymous_edge(edge, reverse_edges)
 
     def find_node(self, node):
         """If node exists in graph, return it, otherwise, return None"""
@@ -316,7 +337,15 @@ class KnowledgeGraph:
         for supporter in supporters:
             supporter.prepare(self.graph.nodes())
             for source, target in links_to_check:
-                support_edge = supporter.term_to_term(source, target)
+                key = f"{supporter.__class__.__name__}({source.identifier},{target.identifier})"
+                log_text = "  -- {key}"
+                support_edge = self.rosetta.cache.get (key)
+                if support_edge is not None:
+                    self.logger.info (f"cache hit: {key} {support_edge}")
+                else:
+                    self.logger.info (f"exec op: {key}")
+                    support_edge = supporter.term_to_term(source, target)
+                    self.rosetta.cache.set (key, support_edge)
                 if support_edge is not None:
                     n_supported += 1
                     self.logger.debug('  -Adding support edge from {} to {}'.
@@ -408,7 +437,7 @@ def prepare_node_for_output(node, gt):
             node.label = node.identifier
     logging.getLogger('application').debug(node.label)
 
-
+'''
 # Push to edge...
 def prepare_edge_for_output(edge):
     # We should settle on a format for PMIDs.  Do we always lookup / include e.g. title? Or does UI do that?
@@ -431,6 +460,7 @@ def prepare_edge_for_output(edge):
         edge.typed_relation_id = ''
         edge.typed_relation_label = ''
     edge.reversed = edge.properties['reversed']
+    '''
 
 
 def run_query(querylist, supports, result_name, rosetta, prune=False):
