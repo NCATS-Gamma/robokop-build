@@ -463,7 +463,7 @@ def prepare_edge_for_output(edge):
     '''
 
 
-def run_query(querylist, supports, result_name, rosetta, prune=False):
+def run_query(querylist, supports, rosetta, prune=False):
     """Given a query, create a knowledge graph though querying external data sources.  Export the graph"""
     kgraph = KnowledgeGraph(querylist, rosetta)
     kgraph.execute()
@@ -487,7 +487,7 @@ def generate_query(pathway, start_identifiers, end_identifiers=None):
     return query
 
 
-def run(pathway, start_name, end_name, label, supports, config):
+def run(pathway, start_name, end_name,  supports, config):
     """Programmatic interface.  Pathway defined as in the command-line input.
        Arguments:
          pathway: A string defining the query.  See command line help for details
@@ -511,7 +511,7 @@ def run(pathway, start_name, end_name, label, supports, config):
         end_identifiers = None
     print("Start identifiers: " + '..'.join(start_identifiers))
     query = generate_query(steps, start_identifiers, end_identifiers)
-    run_query(query, supports, label, rosetta, prune=False)
+    run_query(query, supports, rosetta, prune=False)
 
 
 def setup(config):
@@ -573,8 +573,6 @@ def main():
                         default='greent.conf')
     parser.add_argument('--start', help='Text to initiate query', required=True)
     parser.add_argument('--end', help='Text to finalize query', required=False)
-    parser.add_argument('-l', '--label', help='Label for result in neo4j. Will overwrite.',
-                        required=True)
     args = parser.parse_args()
     pathway = None
     if args.pathway is not None and args.question is not None:
@@ -595,7 +593,7 @@ def main():
                 sys.exit(1)
     else:
         pathway = args.pathway
-    run(pathway, args.start, args.end, args.label, args.support, config=args.config)
+    run(pathway, args.start, args.end, args.support, config=args.config)
 
 
 if __name__ == '__main__':
