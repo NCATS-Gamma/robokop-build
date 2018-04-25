@@ -366,7 +366,6 @@ class KnowledgeGraph:
                 links_to_check.add( (node_i, node_j) )
         return links_to_check
 
-
     def generate_links_from_paths(self):
         """This is going to assume that the first node is 0, which is bogus, but this is temp until support plan is figured out"""
         links_to_check = set()
