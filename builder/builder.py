@@ -260,6 +260,10 @@ class KnowledgeGraph:
                 self.node_map[s] = node
             return node
 
+    '''
+    Changes to userquery leave this no longer implemented.  We may wish to re-enable it in the future, but for now
+    let's kill it
+    
     def prune(self):
         """Recursively remove poorly connected nodes.  In particular, each (non-terminal) node
         must be connected to two different kinds of nodes."""
@@ -297,6 +301,7 @@ class KnowledgeGraph:
                 n_pruned += 1
                 self.graph.remove_node(node)
         self.logger.debug('Pruned {} nodes.'.format(n_pruned))
+    '''
 
     def enhance(self):
         """Enhance nodes,edges with good labels and properties"""
@@ -468,8 +473,8 @@ def run_query(querylist, supports, rosetta, prune=False):
     kgraph = KnowledgeGraph(querylist, rosetta)
     kgraph.execute()
     kgraph.print_types()
-    if prune:
-        kgraph.prune()
+    #if prune:
+    #    kgraph.prune()
     kgraph.enhance()
     kgraph.support(supports)
     kgraph.export()
