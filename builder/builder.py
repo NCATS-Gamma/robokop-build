@@ -228,7 +228,10 @@ class KnowledgeGraph:
     def add_edges(self, edge_list, reverse_edges=False):
         """Add a list of edges (and the associated nodes) to the graph."""
         for edge in edge_list:
-            self.logger.debug('Edge: {} -> {}'.format(edge.source_node.identifier, edge.target_node.identifier))
+            try:
+                self.logger.debug('Edge: {} -> {}'.format(edge.source_node.identifier, edge.target_node.identifier))
+            except:
+
             self.add_nonsynonymous_edge(edge, reverse_edges)
 
     def find_node(self, node):
